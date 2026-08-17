@@ -12,9 +12,11 @@ data/processed/*
 !data/raw/*.kmz
 !data/raw/*.kml
 
-# Rendered outputs
+# Rendered outputs — the maps themselves are the deliverable, so keep them.
 outputs/*
 !outputs/.gitkeep
+!outputs/*.png
+!outputs/*.html
 
 # Python
 __pycache__/
