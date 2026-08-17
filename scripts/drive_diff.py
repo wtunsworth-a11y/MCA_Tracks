@@ -44,7 +44,16 @@ def main():
         elif local[name] != size:
             changed.append((name, local[name], size))
 
-    extra = sorted(set(local) - set(drive) - {"drive-download-20260817T080903Z-1-001.zip"})
+    # A .kml extracted from an oversized .kmz by slim_kmz.py is derived, not
+    # stray, so it should not be reported as unexpected.
+    derived = {
+        name
+        for name in local
+        if name.endswith(".kml") and f"{Path(name).stem}.kmz" in drive
+    }
+    extra = sorted(
+        set(local) - set(drive) - derived - {"drive-download-20260817T080903Z-1-001.zip"}
+    )
 
     print(f"Drive: {len(drive)} files    local data/raw: {len(local)} files\n")
 

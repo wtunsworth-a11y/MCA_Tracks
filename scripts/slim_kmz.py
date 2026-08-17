@@ -15,8 +15,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw"
 
-# Anything smaller is fine as-is; the pipeline reads KMZ directly.
-THRESHOLD_BYTES = 40 * 1024 * 1024
+# Anything smaller is fine as-is; the pipeline reads KMZ directly. Well below
+# GitHub's 100 MB limit on purpose: a KMZ past a few MB is carrying photos, and
+# there is no reason to keep those in git when the geometry is a few tens of KB.
+THRESHOLD_BYTES = 5 * 1024 * 1024
 IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png", ".gif", ".webp")
 
 
@@ -46,6 +48,25 @@ def slim(path):
     return out
 
 
+def ignore_original(path):
+    """Add the fat original to .gitignore so it never enters the repo.
+
+    data/raw/*.kmz is un-ignored generally, so each photo-laden file needs its
+    own exclusion. Doing it here keeps the rule beside the reason for it.
+    """
+    gitignore = ROOT / ".gitignore"
+    entry = f"data/raw/{path.name}"
+    text = gitignore.read_text() if gitignore.exists() else ""
+    if entry in text:
+        return
+    marker = "# Photo-laden KMZ originals — geometry is committed as the extracted .kml\n"
+    if marker not in text:
+        text += f"\n{marker}"
+    text += f"{entry}\n"
+    gitignore.write_text(text)
+    print(f"    added to .gitignore: {entry}")
+
+
 def main():
     targets = [
         p
@@ -58,7 +79,8 @@ def main():
 
     print(f"Extracting geometry from {len(targets)} oversized KMZ file(s):")
     for path in targets:
-        slim(path)
+        if slim(path) is not None:
+            ignore_original(path)
 
 
 if __name__ == "__main__":
