@@ -9,11 +9,13 @@ Writes data/processed/tracks.gpkg (layer "tracks") and a CSV summary.
 
 import re
 import warnings
+import zipfile
 from pathlib import Path
 
 import geopandas as gpd
 import pandas as pd
 import pyogrio
+from shapely.geometry import LineString, MultiLineString
 
 warnings.filterwarnings("ignore")
 
@@ -29,8 +31,11 @@ PNG_TZ = "Pacific/Port_Moresby"  # UTC+10, no DST — GPX times are UTC
 # fall back to the filename when we hit one of these.
 PLACEHOLDER_NAMES = {"track infinity", "saved track", ""}
 DEVICE_CODE = re.compile(r"^[A-Z]{3,6}\s*-\s*[A-Z0-9]{6,}$", re.I)
-# Leading "2026-02-04 09:35" style timestamp, with or without trailing text.
+# "2026-02-04 09:35" style timestamps, which Locus appends or prepends to
+# names. The date is already carried in its own column, so drop it from the
+# label at either end.
 LEADING_TIMESTAMP = re.compile(r"^\d{4}-\d{2}-\d{2}[ T]\d{2}[:.]\d{2}(:\d{2})?\s*")
+TRAILING_TIMESTAMP = re.compile(r"\s*\d{4}-\d{2}-\d{2}[ T]\d{2}[:.]\d{2}(:\d{2})?\s*$")
 
 
 def clean_name(value, fallback, desc=None):
@@ -41,9 +46,13 @@ def clean_name(value, fallback, desc=None):
     the filename.
     """
     text = "" if value is None or (isinstance(value, float) and pd.isna(value)) else str(value).strip()
+    # Some names carry a literal backslash-n from the recording app.
+    text = re.sub(r"\s*\\n\s*", " ", text).strip()
 
     if text and not DEVICE_CODE.match(text) and text.lower() not in PLACEHOLDER_NAMES:
-        stripped = LEADING_TIMESTAMP.sub("", text).strip()
+        stripped = TRAILING_TIMESTAMP.sub("", LEADING_TIMESTAMP.sub("", text)).strip()
+        # Trailing punctuation left behind by names written as sentences.
+        stripped = stripped.rstrip(" .:-")
         if stripped and not stripped.lower().startswith("saved track"):
             return stripped
 
@@ -66,6 +75,52 @@ def nice_fallback(path):
     return " ".join(parts).replace("-", " – ") if parts else stem
 
 
+def kml_text(path):
+    """Raw KML from a .kml or the doc.kml inside a .kmz."""
+    if path.suffix.lower() == ".kmz":
+        with zipfile.ZipFile(path) as z:
+            names = [i.filename for i in z.infolist() if i.filename.lower().endswith(".kml")]
+            if not names:
+                return None
+            preferred = next((n for n in names if n.lower() == "doc.kml"), names[0])
+            return z.read(preferred).decode("utf8", errors="replace")
+    return path.read_text(encoding="utf8", errors="replace")
+
+
+def parse_kml_lines(path):
+    """Rebuild line geometry from raw KML, dropping degenerate parts.
+
+    Some recordings contain a Placemark whose MultiGeometry holds a one-point
+    LineString alongside the real track. GEOS rejects the whole feature over
+    that stub, which silently loses an entire track, so parse the coordinate
+    blocks directly and keep only the parts with at least two points.
+    """
+    text = kml_text(path)
+    if not text:
+        return None, None
+
+    name_match = re.search(r"<name>\s*(.*?)\s*</name>", text, re.S)
+    name = name_match.group(1).strip() if name_match else None
+
+    parts = []
+    for block in re.findall(r"<coordinates>(.*?)</coordinates>", text, re.S):
+        coords = []
+        for token in block.split():
+            bits = token.split(",")
+            if len(bits) >= 2:
+                try:
+                    coords.append((float(bits[0]), float(bits[1])))
+                except ValueError:
+                    continue
+        if len(coords) >= 2:
+            parts.append(LineString(coords))
+
+    if not parts:
+        return None, name
+    geom = parts[0] if len(parts) == 1 else MultiLineString(parts)
+    return geom, name
+
+
 def gpx_dates(path):
     """Earliest/latest timestamp from a GPX's track_points, if it has any."""
     try:
@@ -81,10 +136,14 @@ def gpx_dates(path):
 
 
 def load(path):
-    """Return a list of normalised single-row frames for one source file."""
+    """Normalise one source file into (line rows, point rows).
+
+    Point-geometry sources are kept apart: a photo-waypoint record is not a
+    track and must not be counted as one.
+    """
     suffix = path.suffix.lower()
     fallback = nice_fallback(path)
-    rows = []
+    rows, point_rows = [], []
 
     if suffix == ".gpx":
         layers = "tracks"
@@ -96,7 +155,21 @@ def load(path):
     layer_list = [layers] if isinstance(layers, str) else layers
 
     for layer in layer_list:
-        gdf = gpd.read_file(path, layer=layer)
+        try:
+            gdf = gpd.read_file(path, layer=layer)
+        except Exception as exc:
+            if suffix not in (".kml", ".kmz"):
+                print(f"  !! {path.name} [{layer}] unreadable: {type(exc).__name__}: {exc}")
+                continue
+            geom, parsed_name = parse_kml_lines(path)
+            if geom is None:
+                print(f"  !! {path.name} [{layer}] unreadable and unparseable: {exc}")
+                continue
+            print(f"  ~~ {path.name}: recovered by dropping degenerate part(s)")
+            gdf = gpd.GeoDataFrame(
+                [{"name": parsed_name, "geometry": geom}], geometry="geometry", crs=WGS84
+            )
+
         if gdf.empty:
             continue
         gdf = gdf[gdf.geometry.notna()]
@@ -110,34 +183,64 @@ def load(path):
             if len(gdf) > 1:
                 name = f"{name} (seg {idx + 1})"
 
-            rows.append(
-                {
-                    "name": name,
-                    # Keep whatever the file itself claimed, so overriding a
-                    # device code or app default never loses provenance.
-                    "source_name": None if name_field is None else str(name_field).strip(),
-                    "source_file": path.name,
-                    "format": suffix.lstrip("."),
-                    "activity": row.get("locus_activity"),
-                    "start_time": start,
-                    "end_time": end,
-                    "geometry": row.geometry,
-                }
-            )
-    return rows
+            record = {
+                "name": name,
+                # Keep whatever the file itself claimed, so overriding a
+                # device code or app default never loses provenance.
+                "source_name": None if name_field is None else str(name_field).strip(),
+                "source_file": path.name,
+                "format": suffix.lstrip("."),
+                "activity": row.get("locus_activity"),
+                "start_time": start,
+                "end_time": end,
+                "geometry": row.geometry,
+            }
+            if row.geometry.geom_type in ("Point", "MultiPoint"):
+                point_rows.append(record)
+            else:
+                rows.append(record)
+
+    return rows, point_rows
 
 
 def main():
     PROCESSED.mkdir(parents=True, exist_ok=True)
     files = sorted(p for p in RAW.iterdir() if p.suffix.lower() in {".gpkg", ".gpx", ".kmz", ".kml"})
 
-    rows = []
+    # An oversized KMZ is committed as an extracted .kml (scripts/slim_kmz.py).
+    # Reading both would count the same track twice.
+    extracted = {p.stem for p in files if p.suffix.lower() == ".kml"}
+    skipped = [p for p in files if p.suffix.lower() == ".kmz" and p.stem in extracted]
+    for path in skipped:
+        print(f"{path.name}: skipped — superseded by {path.stem}.kml")
+    files = [p for p in files if p not in skipped]
+
+    rows, point_rows = [], []
     for path in files:
-        found = load(path)
-        print(f"{path.name}: {len(found)} feature(s)")
+        found, points = load(path)
+        note = f"{len(found)} line feature(s)"
+        if points:
+            note += f", {len(points)} point feature(s) held aside"
+        print(f"{path.name}: {note}")
         rows.extend(found)
+        point_rows.extend(points)
 
     tracks = gpd.GeoDataFrame(rows, geometry="geometry", crs=WGS84)
+
+    # The same recording can be exported more than once under different
+    # filenames — identical geometry, only the export timestamp differs. Keep
+    # one copy so lengths do not double-count, but say what was dropped.
+    tracks["_geom_key"] = tracks.geometry.to_wkb().map(hash)
+    dupe_keys = tracks["_geom_key"].duplicated(keep=False)
+    if dupe_keys.any():
+        print("\nDUPLICATE GEOMETRY — identical tracks found in more than one file:")
+        for _, grp in tracks[dupe_keys].groupby("_geom_key"):
+            kept = grp.iloc[0]
+            print(f"  keeping  {kept['source_file']}  ({kept['name']})")
+            for _, row in grp.iloc[1:].iterrows():
+                print(f"  dropping {row['source_file']}  (same geometry)")
+    tracks = tracks.drop_duplicates(subset="_geom_key", keep="first").drop(columns="_geom_key")
+    tracks = tracks.reset_index(drop=True)
 
     # Lengths need a projected CRS; degrees are meaningless as distance.
     projected = tracks.to_crs(UTM55S)
@@ -159,6 +262,15 @@ def main():
     out_gpkg = PROCESSED / "tracks.gpkg"
     # Datetime columns with tz confuse some GPKG writers; keep the string form.
     tracks.drop(columns=["start_time", "end_time"]).to_file(out_gpkg, layer="tracks", driver="GPKG")
+
+    if point_rows:
+        points = gpd.GeoDataFrame(point_rows, geometry="geometry", crs=WGS84)
+        points = points.drop(columns=["start_time", "end_time"])
+        points.to_file(out_gpkg, layer="waypoints", driver="GPKG")
+        by_source = points.groupby("source_file").size()
+        print(f"\n{len(points)} point feature(s) written to layer 'waypoints' (not counted as tracks):")
+        for src, count in by_source.items():
+            print(f"  {src}: {count}")
 
     summary = tracks[
         ["name", "source_name", "source_file", "format", "activity", "date", "length_km", "vertices"]

@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Russell_Muraba_Trek_Record_2</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="108523402">
+		<IconStyle>
+			<Icon><href>files/108523402.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1735844866">
+		<IconStyle>
+			<Icon><href>files/1735844866.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="240293149">
+		<IconStyle>
+			<Icon><href>files/240293149.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1097035764">
+		<IconStyle>
+			<Icon><href>files/-1097035764.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-132406964">
+		<IconStyle>
+			<Icon><href>files/-132406964.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1069136710">
+		<IconStyle>
+			<Icon><href>files/1069136710.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1484143482">
+		<IconStyle>
+			<Icon><href>files/1484143482.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1718644286">
+		<IconStyle>
+			<Icon><href>files/1718644286.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1910748587">
+		<IconStyle>
+			<Icon><href>files/-1910748587.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1685763887">
+		<IconStyle>
+			<Icon><href>files/-1685763887.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-907964659">
+		<IconStyle>
+			<Icon><href>files/-907964659.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1497263407">
+		<IconStyle>
+			<Icon><href>files/1497263407.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="802363677">
+		<IconStyle>
+			<Icon><href>files/802363677.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1400034539">
+		<IconStyle>
+			<Icon><href>files/-1400034539.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="275379316">
+		<IconStyle>
+			<Icon><href>files/275379316.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="2123248161">
+		<IconStyle>
+			<Icon><href>files/2123248161.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="765688874">
+		<IconStyle>
+			<Icon><href>files/765688874.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="356392484">
+		<IconStyle>
+			<Icon><href>files/356392484.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="523672167">
+		<IconStyle>
+			<Icon><href>files/523672167.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-358205267">
+		<IconStyle>
+			<Icon><href>files/-358205267.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1484203141">
+		<IconStyle>
+			<Icon><href>files/1484203141.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="958392921">
+		<IconStyle>
+			<Icon><href>files/958392921.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1384638471">
+		<IconStyle>
+			<Icon><href>files/1384638471.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-836736885">
+		<IconStyle>
+			<Icon><href>files/-836736885.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1663902719">
+		<IconStyle>
+			<Icon><href>files/1663902719.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+<Placemark>
+	<name>2026-07-28 15:28:48 Trek leading to Bareji River</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/p_2026-07-28_15-_20260728_152903.jpg" target="_blank"><img src="files/p_2026-07-28_15-_20260728_152903.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">677 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">3.6 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">80 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.7 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-28 15:29:21</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1484203141</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/p_2026-07-28_15-_20260728_152903.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3937298,-9.1433044,677.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T15:29:21Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-28 15:39:21 Tangal Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038185.jpg" target="_blank"><img src="files/1000038185.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">669 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">355 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.3 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 17:48:09</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#356392484</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038185.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3966467,-9.1470117,669.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T15:39:45Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-28 15:56:29 Baring Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038186.jpg" target="_blank"><img src="files/1000038186.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">669 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.3 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">236 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.2 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-08-01 14:38:37</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#523672167</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038186.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3979520,-9.1483597,669.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T15:56:50Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-28 16:10:35 Ruwo Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038187.jpg" target="_blank"><img src="files/1000038187.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">680 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">15.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">234 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.9 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-28 16:10:55</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-132406964</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038187.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3995842,-9.1531422,680.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T16:10:54Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-28 16:12:32 Javan Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/p_2026-07-28_16-_20260728_161253.jpg" target="_blank"><img src="files/p_2026-07-28_16-_20260728_161253.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">691 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.3 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">201 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.3 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-28 16:13:06</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1497263407</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/p_2026-07-28_16-_20260728_161253.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4001495,-9.1533265,691.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T16:13:06Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-28 16:27:36 Nenjan Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038188.jpg" target="_blank"><img src="files/1000038188.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">649 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.1 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">60 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">5 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-28 16:27:55</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#240293149</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038188.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4028983,-9.1562301,649.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T16:27:55Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-28 16:33:52 Sarap Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/p_2026-07-28_16-_20260728_163405.jpg" target="_blank"><img src="files/p_2026-07-28_16-_20260728_163405.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">643 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.6 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">154 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">4.2 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-28 16:34:32</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-836736885</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/p_2026-07-28_16-_20260728_163405.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4033584,-9.1584334,643.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T16:34:32Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-28 20:20:45 Bareji River</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038231.jpg" target="_blank"><img src="files/1000038231.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000038230.jpg" target="_blank"><img src="files/1000038230.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">365 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">268 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.0 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 08:12:59</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1484143482</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038231.jpg</lc:attachment>
+		<lc:attachment>files/1000038230.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3974833,-9.1909467,365.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-28T20:21:03Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 08:24:47 Tuberi River</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/p_2026-07-29_08-_20260729_082503.jpg" target="_blank"><img src="files/p_2026-07-29_08-_20260729_082503.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000038243.jpg" target="_blank"><img src="files/1000038243.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">356 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">5.2 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">150 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 08:28:26</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1910748587</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/p_2026-07-29_08-_20260729_082503.jpg</lc:attachment>
+		<lc:attachment>files/1000038243.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3992302,-9.1915745,356.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T08:25:16Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 09:33:32 Toma Community School</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038272.jpg" target="_blank"><img src="files/1000038272.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000038273.jpg" target="_blank"><img src="files/1000038273.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">387 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">1.3 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">50 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.9 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 09:33:52</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#275379316</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038272.jpg</lc:attachment>
+		<lc:attachment>files/1000038273.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4006683,-9.2070122,387.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T09:33:51Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 11:18:01 Humon River</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/p_2026-07-29_11-_20260729_111815.jpg" target="_blank"><img src="files/p_2026-07-29_11-_20260729_111815.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">368 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">313 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 11:18:26</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-907964659</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/p_2026-07-29_11-_20260729_111815.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4019283,-9.1902800,368.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T11:18:26Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 13:46:32 Humon Waterfall</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038325.jpg" target="_blank"><img src="files/1000038325.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000038327.jpg" target="_blank"><img src="files/1000038327.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">405 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">1.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">145 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.0 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 13:46:57</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1069136710</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038325.jpg</lc:attachment>
+		<lc:attachment>files/1000038327.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4015023,-9.1883699,405.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T13:46:57Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 14:27:52 Moisarat dry Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038338.jpg" target="_blank"><img src="files/1000038338.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000038339.jpg" target="_blank"><img src="files/1000038339.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">463 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">15.9 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">110 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">7 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 14:28:55</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#765688874</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038338.jpg</lc:attachment>
+		<lc:attachment>files/1000038339.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4063102,-9.1795982,463.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T14:28:14Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 15:01:52 Dry Creek (name unknown)</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038340.jpg" target="_blank"><img src="files/1000038340.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">547 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">5.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">352 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">8 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 15:02:21</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#802363677</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038340.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4077487,-9.1701047,547.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T15:02:20Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 17:05:34 Ruo Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/p_2026-07-29_17-_20260729_170548.jpg" target="_blank"><img src="files/p_2026-07-29_17-_20260729_170548.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">680 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">2.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">89 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.6 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 17:12:23</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1384638471</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/p_2026-07-29_17-_20260729_170548.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3970857,-9.1528409,680.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T17:05:57Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-29 17:25:08 Itapsal Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038341.jpg" target="_blank"><img src="files/1000038341.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">658 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">6.4 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">100 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.6 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-29 17:26:36</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1400034539</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038341.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3964680,-9.1499533,658.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-29T17:25:21Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-30 11:49:43 Munbon Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038535.jpg" target="_blank"><img src="files/1000038535.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">609 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">3.5 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">215 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.6 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-30 11:50:26</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1685763887</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038535.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3782396,-9.1535182,609.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-30T11:50:25Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-30 12:19:31 Njaun Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038537.jpg" target="_blank"><img src="files/1000038537.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">564 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">282 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-30 12:19:50</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#2123248161</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038537.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3763333,-9.1621067,564.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-30T12:19:49Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-30 12:35:22 Main Trek continues to Toma</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038538.jpg" target="_blank"><img src="files/1000038538.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">558 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">140 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.2 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-30 14:24:15</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1097035764</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038538.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3777100,-9.1703450,558.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-30T12:35:54Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-30 12:49:53 Karan Waterfall</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038539.jpg" target="_blank"><img src="files/1000038539.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">516 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">1.3 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">332 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.0 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-30 12:50:28</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1718644286</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038539.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3790966,-9.1692351,516.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-30T12:50:27Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-07-30 12:53:19 Karan Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038546.jpg" target="_blank"><img src="files/1000038546.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000038545.jpg" target="_blank"><img src="files/1000038545.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">519 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">4.4 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">96 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.4 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-07-30 12:53:42</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#958392921</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038546.jpg</lc:attachment>
+		<lc:attachment>files/1000038545.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3790881,-9.1688580,519.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-07-30T12:53:42Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-08-01 14:14:46 Gwahamal trek to Mahum mountain</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038889.jpg" target="_blank"><img src="files/1000038889.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">715 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">6.2 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">78 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">4.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-08-01 14:15:43</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#108523402</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038889.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4026903,-9.1436560,715.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-08-01T14:15:43Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-08-01 14:25:00 Tatam dry Creek</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038890.jpg" target="_blank"><img src="files/1000038890.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">763 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">25.3 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">301 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">6 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-08-01 14:25:19</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1735844866</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038890.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4031433,-9.1466286,763.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-08-01T14:25:19Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>2026-08-01 14:59:18 Manengsaval Garden House</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000038893.jpg" target="_blank"><img src="files/1000038893.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">693 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">1.3 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">274 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.8 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-08-01 15:01:40</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-358205267</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000038893.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3981360,-9.1488911,693.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-08-01T14:59:47Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Sweat Bees</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000028659.jpg" target="_blank"><img src="files/1000028659.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000028651.jpg" target="_blank"><img src="files/1000028651.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+St Columba's Parish - Sakarina
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">825 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">41 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.8 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-06-21 11:10:28</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1663902719</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000028659.jpg</lc:attachment>
+		<lc:attachment>files/1000028651.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3703767,-9.0675533,825.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-01-28T09:25:06Z</when>
+	</gx:TimeStamp>
+</Placemark>
+</Document>
+</kml>

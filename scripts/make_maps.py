@@ -9,6 +9,7 @@ categorical palette can separate (the validated all-pairs ceiling is four), so
 identity is carried by direct labels and popups instead of hue.
 """
 
+import textwrap
 import warnings
 from pathlib import Path
 
@@ -40,6 +41,9 @@ INK_SECONDARY = "#52514e"
 INK_MUTED = "#898781"
 SURFACE = "#fcfcfb"
 GRIDLINE = "#e1e0d9"
+
+# How many of the longest tracks get a name on the overview map.
+LABEL_COUNT = 8
 
 CATEGORY_BY_FORMAT = {
     "gpx": "GPS track log (GPX)",
@@ -128,17 +132,24 @@ def static_map(gdf):
         subset.plot(ax=ax, color="#ffffff", linewidth=4.0, zorder=2)
         subset.plot(ax=ax, color=color, linewidth=2.0, zorder=3)
 
-    # Direct labels: one per track group, nudged apart so the southern cluster
-    # stays readable, with leader lines back to the track they name.
+    # Selective direct labels: with two dozen tracks, labelling every one turns
+    # the map into a wall of text. Name the longest few here; the facet view
+    # and the HTML map identify the rest.
+    lengths = proj.groupby("group")["length_km"].sum().sort_values(ascending=False)
+    labelled = set(lengths.head(LABEL_COUNT).index)
+
     texts = []
     for group, rows in proj.groupby("group"):
+        if group not in labelled:
+            continue
         point = rows.geometry.union_all().representative_point()
         total_km = rows["length_km"].sum()
         texts.append(
             ax.text(
                 point.x,
                 point.y,
-                f"{group}\n{total_km:,.1f} km",
+                # Survey names run long; wrap so labels stay inside the axes.
+                "\n".join(textwrap.wrap(group, width=26)) + f"\n{total_km:,.1f} km",
                 fontsize=8.5,
                 color=INK_PRIMARY,
                 linespacing=1.35,
@@ -231,8 +242,11 @@ def small_multiples(gdf):
     minx, miny, maxx, maxy = proj.total_bounds
     pad = max(maxx - minx, maxy - miny) * 0.04
 
-    ncols, nrows = 4, 2
-    fig, axes = plt.subplots(nrows, ncols, figsize=(13.5, 9.5), facecolor=SURFACE)
+    ncols = 5
+    nrows = -(-len(groups) // ncols)  # ceiling division
+    fig, axes = plt.subplots(
+        nrows, ncols, figsize=(3.3 * ncols, 4.5 * nrows), facecolor=SURFACE, squeeze=False
+    )
     focus_color = "#2a78d6"  # categorical slot 1
 
     for ax, group in zip(axes.flat, groups):
@@ -246,7 +260,8 @@ def small_multiples(gdf):
 
         total_km = rows["length_km"].sum()
         date = rows["date"].dropna().iloc[0] if rows["date"].notna().any() else "no date"
-        ax.set_title(group, fontsize=10, color=INK_PRIMARY, loc="left", pad=20)
+        title = group if len(group) <= 34 else group[:33].rstrip() + "…"
+        ax.set_title(title, fontsize=9.5, color=INK_PRIMARY, loc="left", pad=20)
         ax.text(
             0.0,
             1.012,

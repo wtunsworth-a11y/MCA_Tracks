@@ -20,6 +20,9 @@ Open the HTML in a browser; the basemap tiles load client-side.
 ## Pipeline
 
 ```
+export GOOGLE_OAUTH_TOKEN='ya29...'  # see scripts/fetch_from_drive.sh header
+./scripts/fetch_from_drive.sh        # pull anything new from Drive into data/raw
+python3 scripts/slim_kmz.py          # extract geometry from photo-laden KMZ files
 python3 scripts/inspect_sources.py   # report structure of everything in data/raw
 python3 scripts/merge_tracks.py      # normalise to data/processed/tracks.gpkg
 python3 scripts/make_maps.py         # render the three outputs
@@ -27,20 +30,67 @@ python3 scripts/make_maps.py         # render the three outputs
 
 Requires `geopandas`, `matplotlib`, `folium`, `adjustText`.
 
+### Getting files from Drive
+
+`drive.google.com` is blocked from the sandbox, but **`www.googleapis.com` is
+not** — so the Drive API works with an access token and no local step:
+
+1. https://developers.google.com/oauthplayground/, scope
+   `https://www.googleapis.com/auth/drive.readonly`
+2. Authorise, exchange for tokens, copy the `ya29...` access token
+3. `export GOOGLE_OAUTH_TOKEN='ya29...' && ./scripts/fetch_from_drive.sh`
+
+Tokens last about an hour and are read from the environment only — never
+written to disk. `scripts/sync_from_drive.sh` does the same job from your own
+machine via rclone if you would rather not mint a token.
+
+`scripts/drive_diff.py` reports what is in Drive but not yet in `data/raw`,
+against the listing in `data/drive_manifest.tsv`.
+
 ## The data
 
-Seven source files, 12 features, 7 real-world tracks, 252 km total. Everything
+26 source files → **24 tracks, 373 km**, plus 25 photo waypoints. Everything
 arrived in WGS84 (EPSG:4326); lengths are computed in EPSG:32755 (UTM zone 55S).
+See `data/processed/tracks_summary.csv` for the full table.
+
+Longest ten:
 
 | Track | Source | Travelled | Recorded |
 | ----- | ------ | --------- | -------- |
 | Popondetta to Anatua Road | KMZ | 151.0 km | — |
 | Jorua to Girua Track | KMZ | 40.9 km | — |
 | Gadzot Road | GPX | 29.5 km | 2025-11-16 |
+| David's track record from Jorura to Afore | KMZ | 23.1 km | — |
+| Cropping Calendar Survey Track to Kuhara | GPX | 16.2 km | 2025-12-12 |
+| David Jajiba's track recording, Gora to Jorura | KMZ | 16.2 km | — |
 | Kiara to Grid 63 and back | GPX | 15.9 km | 2026-04-18 |
+| Afore Guest house | GPX | 11.6 km | 2026-02-01 |
+| David's track record, Itokama to Umuate | KMZ | 9.5 km | — |
 | Koruwo to Anatua 1 | GPX | 9.1 km | 2026-02-01 |
-| Sakarina–Numba–Kaura (6 segments) | GPKG | 4.3 km | — |
-| Anatua to Serefuna | GPX | 1.8 km | 2026-02-04 |
+
+Many tracks come from a **Cropping Calendar Survey** and are named accordingly;
+one (`Anatua-Gadzot-Umbuwara`) is recorded as cycling rather than walking.
+
+### Things the pipeline handles automatically
+
+- **Degenerate geometry.** `Itokama_to_Umuate_Davids_track_record.kmz` holds one
+  Placemark with two LineStrings: a one-point stub and the real 756-point track.
+  GEOS rejects the whole feature over the stub, silently losing the track, so
+  the merge falls back to parsing the KML directly and keeps only parts with two
+  or more points. Worth 9.5 km that would otherwise have vanished.
+- **Duplicate recordings.** `Kaura_to_Koeno_2025-12-09_08-25.gpx` and
+  `Kaura_to_Kuhara_2025-12-09_08-25.gpx` have byte-identical geometry and
+  timestamps; they differ only in the Locus export time in their metadata. The
+  merge drops one and reports it. **Note the filenames disagree with the
+  content** — both embed the name "Kaura to Kuhara", so the `Koeno` filename
+  looks wrong and is worth correcting at source.
+- **Oversized KMZ.** `Russell_Muraba_Trek_Record_2.kmz` is 141 MB, of which 57
+  JPEGs; its `doc.kml` is 43 KB. `scripts/slim_kmz.py` extracts the geometry,
+  the `.kml` is committed, and the original is gitignored (it exceeds GitHub's
+  100 MB blob limit). Re-fetch it if the photos are needed.
+- **Points vs lines.** That same file is 25 *points* — photo waypoints, not a
+  track. They go to a separate `waypoints` layer and are excluded from track
+  counts and lengths.
 
 ### Things to know before using this
 
@@ -66,12 +116,11 @@ arrived in WGS84 (EPSG:4326); lengths are computed in EPSG:32755 (UTM zone 55S).
 
 ### Map design note
 
-Colour encodes *provenance* (GPX / KMZ / GPKG), not individual track. Seven
-tracks exceed what a categorical palette can keep separable — the validated
-all-pairs ceiling is four slots — so individual identity is carried by direct
-labels on the overview, by the facet panels, and by tooltips in the HTML. A
-consequence: the two KMZ tracks share a colour on the overview, which is what
-the facet view is for.
+Colour encodes *provenance* (GPX / KMZ / GPKG), not individual track. Two dozen
+tracks are far past what a categorical palette can keep separable — the
+validated all-pairs ceiling is four slots — so identity is carried by the facet
+panels and by tooltips in the HTML. The overview direct-labels only the eight
+longest (`LABEL_COUNT` in `make_maps.py`); labelling all 24 makes it unreadable.
 
 ## Layout
 

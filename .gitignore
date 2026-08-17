@@ -12,6 +12,11 @@ data/processed/*
 !data/raw/*.kmz
 !data/raw/*.kml
 
+# Photo-laden KMZ: 141 MB of JPEGs, past GitHub's 100 MB blob limit. Its
+# geometry is committed as the extracted .kml (see scripts/slim_kmz.py);
+# re-fetch the original with scripts/fetch_from_drive.sh if the photos matter.
+data/raw/Russell_Muraba_Trek_Record_2.kmz
+
 # Rendered outputs — the maps themselves are the deliverable, so keep them.
 outputs/*
 !outputs/.gitkeep

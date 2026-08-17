@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="Locus Map, Android"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+ xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
+ xmlns:gpxtrkx="http://www.garmin.com/xmlschemas/TrackStatsExtension/v1"
+ xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2"
+ xmlns:locus="https://www.locusmap.app">
+	<metadata>
+		<desc>File with points/tracks from Locus Map/4.31.3</desc>
+		<time>2026-02-25T08:28:59.642Z</time>
+	</metadata>
+<trk>
+	<name> Cropping Calendar Survey 
+Track 2 from Kuhara Village to Kaura 2025-12-17 09:16</name>
+	<extensions>
+		<line xmlns="http://www.topografix.com/GPX/gpx_style/0/2">
+			<color>0000FF</color>
+			<opacity>0.70</opacity>
+			<width>6.0</width>
+			<extensions>
+				<locus:lsColorBase>#B30000FF</locus:lsColorBase>
+				<locus:lsWidth>6.0</locus:lsWidth>
+				<locus:lsUnits>PIXELS</locus:lsUnits>
+			</extensions>
+		</line>
+		<locus:activity>walking</locus:activity>
+	</extensions>
+<trkseg>
+<trkpt lat="-8.9629060" lon="148.4222263">
+	<ele>619.94</ele>
+	<time>2025-12-16T23:16:59.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9645820" lon="148.4228391">
+	<ele>634.11</ele>
+	<time>2025-12-16T23:20:38.000Z</time>
+	<hdop>3.79</hdop>
+	<extensions>
+		<gpxtpx:TrackPointExtension>
+			<gpxtpx:course>145.2</gpxtpx:course>
+		</gpxtpx:TrackPointExtension>
+	</extensions>
+</trkpt>
+<trkpt lat="-8.9646809" lon="148.4228969">
+	<ele>633.19</ele>
+	<time>2025-12-16T23:20:48.000Z</time>
+	<hdop>3.79</hdop>
+	<extensions>
+		<gpxtpx:TrackPointExtension>
+			<gpxtpx:course>158.9</gpxtpx:course>
+		</gpxtpx:TrackPointExtension>
+	</extensions>
+</trkpt>
+<trkpt lat="-8.9647687" lon="148.4229208">
+	<ele>633.96</ele>
+	<time>2025-12-16T23:20:59.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9648350" lon="148.4229886">
+	<ele>634.44</ele>
+	<time>2025-12-16T23:21:54.000Z</time>
+	<hdop>3.79</hdop>
+	<extensions>
+		<gpxtpx:TrackPointExtension>
+			<gpxtpx:course>135.1</gpxtpx:course>
+		</gpxtpx:TrackPointExtension>
+	</extensions>
+</trkpt>
+<trkpt lat="-8.9682421" lon="148.4232081">
+	<ele>667.63</ele>
+	<time>2025-12-16T23:39:58.000Z</time>
+	<hdop>3.79</hdop>
+	<extensions>
+		<gpxtpx:TrackPointExtension>
+			<gpxtpx:course>195.6</gpxtpx:course>
+		</gpxtpx:TrackPointExtension>
+	</extensions>
+</trkpt>
+<trkpt lat="-8.9737780" lon="148.4260057">
+	<ele>802.93</ele>
+	<time>2025-12-17T00:05:02.000Z</time>
+	<hdop>4.21</hdop>
+</trkpt>
+<trkpt lat="-8.9777559" lon="148.4237669">
+	<ele>673.54</ele>
+	<time>2025-12-17T00:44:17.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9775572" lon="148.4238468">
+	<ele>674.82</ele>
+	<time>2025-12-17T01:10:02.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9775176" lon="148.4244574">
+	<ele>701.63</ele>
+	<time>2025-12-17T01:20:32.000Z</time>
+	<hdop>3.89</hdop>
+</trkpt>
+<trkpt lat="-8.9797480" lon="148.4263971">
+	<ele>688.14</ele>
+	<time>2025-12-17T01:57:03.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9810173" lon="148.4230650">
+	<ele>648.73</ele>
+	<time>2025-12-17T02:25:58.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9810544" lon="148.4231564">
+	<ele>656.71</ele>
+	<time>2025-12-17T02:27:36.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9803527" lon="148.4210641">
+	<ele>648.32</ele>
+	<time>2025-12-17T02:45:04.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9804041" lon="148.4209844">
+	<ele>646.54</ele>
+	<time>2025-12-17T02:56:53.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+<trkpt lat="-8.9803480" lon="148.4209106">
+	<ele>641.73</ele>
+	<time>2025-12-17T02:57:18.000Z</time>
+	<hdop>3.79</hdop>
+	<extensions>
+		<gpxtpx:TrackPointExtension>
+			<gpxtpx:course>324.1</gpxtpx:course>
+		</gpxtpx:TrackPointExtension>
+	</extensions>
+</trkpt>
+<trkpt lat="-8.9810535" lon="148.4232090">
+	<ele>631.07</ele>
+	<time>2025-12-17T04:27:13.000Z</time>
+	<hdop>4.22</hdop>
+</trkpt>
+<trkpt lat="-8.9814892" lon="148.4259851">
+	<ele>694.85</ele>
+	<time>2025-12-17T04:37:43.000Z</time>
+	<hdop>3.79</hdop>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
