@@ -4,6 +4,14 @@ data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
+# Exceptions: source tracks, committed deliberately so the sandbox can read
+# them (it has no network route to Google Drive). Review before making this
+# repo public — these carry precise location data.
+!data/raw/*.gpkg
+!data/raw/*.gpx
+!data/raw/*.kmz
+!data/raw/*.kml
+
 # Rendered outputs
 outputs/*
 !outputs/.gitkeep
