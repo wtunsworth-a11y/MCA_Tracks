@@ -230,7 +230,7 @@ def apply_name_overrides(villages):
     if not path.exists():
         return villages
 
-    overrides = pd.read_csv(path)
+    overrides = pd.read_csv(path, comment="#")
     required = {"lon", "lat", "village"}
     if not required <= set(overrides.columns):
         print(f"  !! {path.name} needs columns {sorted(required)}; ignoring")

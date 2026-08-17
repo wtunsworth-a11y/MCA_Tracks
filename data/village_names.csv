@@ -1,0 +1,14 @@
+# Ground-truth corrections to inferred village locations.
+# The nearest inferred cluster to each lon/lat takes the given name.
+# Set drop=yes to remove a cluster whose name is wrong and unknown.
+#
+# Popondetta: the inference put it 40 km too far south because the roads were
+# recorded plateau-to-coast, inverting "A to B". The northern road terminus at
+# 148.2347,-8.7683 is within ~250 m of the actual town, and is the endpoint two
+# separate road tracks name Popondetta. CONFIRM THIS before relying on it.
+lon,lat,village,drop
+148.234675,-8.768269,Popondetta,
+# This southern cluster is definitely not Popondetta. It is an endpoint of the
+# Anatua-Gadzot-Umbuwara track, and Anatua and Gadzot are already located
+# nearby, so the true name is unclear — dropped rather than guessed at.
+148.273363,-9.121077,,yes

@@ -37,3 +37,6 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Photo-laden KMZ originals — geometry is committed as the extracted .kml
+data/raw/Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Umbara_2026-06-29_15-34_.kmz

@@ -53,7 +53,7 @@ def clean_name(value, fallback, desc=None):
     if text and not DEVICE_CODE.match(text) and text.lower() not in PLACEHOLDER_NAMES:
         stripped = TRAILING_TIMESTAMP.sub("", LEADING_TIMESTAMP.sub("", text)).strip()
         # Trailing punctuation left behind by names written as sentences.
-        stripped = stripped.rstrip(" .:-")
+        stripped = stripped.rstrip(" .:-,;")
         if stripped and not stripped.lower().startswith("saved track"):
             return stripped
 
@@ -120,7 +120,7 @@ def apply_overrides(tracks):
     if not override_path.exists():
         return tracks
 
-    overrides = pd.read_csv(override_path)
+    overrides = pd.read_csv(override_path, comment="#")
     if not {"name", "type"} <= set(overrides.columns):
         print(f"  !! {override_path.name} needs 'name' and 'type' columns; ignoring")
         return tracks
