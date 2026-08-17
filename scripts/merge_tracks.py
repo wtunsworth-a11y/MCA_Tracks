@@ -46,8 +46,9 @@ def clean_name(value, fallback, desc=None):
     the filename.
     """
     text = "" if value is None or (isinstance(value, float) and pd.isna(value)) else str(value).strip()
-    # Some names carry a literal backslash-n from the recording app.
-    text = re.sub(r"\s*\\n\s*", " ", text).strip()
+    # Names arrive with real newlines and with literal backslash-n from the
+    # recording app; collapse both, plus any run of whitespace.
+    text = re.sub(r"\s+", " ", text.replace("\\n", " ")).strip()
 
     if text and not DEVICE_CODE.match(text) and text.lower() not in PLACEHOLDER_NAMES:
         stripped = TRAILING_TIMESTAMP.sub("", LEADING_TIMESTAMP.sub("", text)).strip()
@@ -73,6 +74,67 @@ def nice_fallback(path):
     while parts and (parts[-1][:1].isdigit() and ("-" in parts[-1] or parts[-1].isdigit())):
         parts.pop()
     return " ".join(parts).replace("-", " – ") if parts else stem
+
+
+# Track types, ordered by the disturbance intensity they imply: a vehicle road
+# carries far more than a seasonal garden path.
+TYPE_ROAD = "Road"
+TYPE_VILLAGE = "Village-to-village track"
+TYPE_GARDEN = "Garden / survey track"
+TYPE_ORDER = [TYPE_ROAD, TYPE_VILLAGE, TYPE_GARDEN]
+
+GARDEN_PATTERNS = re.compile(r"cropping\s+cal[ae]nd[ae]r|crop\s+calendar|zone\s+six", re.I)
+# "Gadzot Road" is a road; "Track from Awaru to Sigara Road" is a track that
+# ends at one. The leading "Track from ..." is what separates them.
+TRACK_TO_ROAD = re.compile(r"^\s*(track|path)\b.*\bto\b.*\broad\b", re.I)
+ROAD_PATTERN = re.compile(r"\broad\b", re.I)
+
+
+def classify(name, source_file):
+    """Best-guess track type from its name, plus a confidence flag.
+
+    Returns (type, certain). Names are the only signal available, so anything
+    ambiguous is marked uncertain and listed for review rather than trusted.
+    """
+    text = f"{name} {source_file}"
+
+    if GARDEN_PATTERNS.search(text):
+        return TYPE_GARDEN, True
+
+    if ROAD_PATTERN.search(name):
+        # A track *to* a road is not itself a road.
+        if TRACK_TO_ROAD.search(name):
+            return TYPE_VILLAGE, False
+        return TYPE_ROAD, True
+
+    # Endpoints that are plainly not villages — a plot, a facility, a resource.
+    if re.search(r"\bgrid\s*\d+|guest\s*house|water\s+source", name, re.I):
+        return TYPE_GARDEN, False
+
+    return TYPE_VILLAGE, True
+
+
+def apply_overrides(tracks):
+    """Let data/track_types.csv override the name-derived guess."""
+    override_path = ROOT / "data" / "track_types.csv"
+    if not override_path.exists():
+        return tracks
+
+    overrides = pd.read_csv(override_path)
+    if not {"name", "type"} <= set(overrides.columns):
+        print(f"  !! {override_path.name} needs 'name' and 'type' columns; ignoring")
+        return tracks
+
+    mapping = dict(zip(overrides["name"], overrides["type"]))
+    hit = tracks["name"].isin(mapping)
+    if hit.any():
+        tracks.loc[hit, "type"] = tracks.loc[hit, "name"].map(mapping)
+        tracks.loc[hit, "type_certain"] = True
+        print(f"\napplied {hit.sum()} override(s) from {override_path.name}")
+    unknown = set(mapping) - set(tracks["name"])
+    for name in sorted(unknown):
+        print(f"  !! override for unknown track name: {name!r}")
+    return tracks
 
 
 def kml_text(path):
@@ -257,6 +319,11 @@ def main():
     tracks["date"] = local_start.dt.strftime("%Y-%m-%d")
     tracks["start_local"] = local_start.dt.strftime("%Y-%m-%d %H:%M")
 
+    classified = tracks.apply(lambda r: classify(r["name"], r["source_file"]), axis=1)
+    tracks["type"] = [c[0] for c in classified]
+    tracks["type_certain"] = [c[1] for c in classified]
+    tracks = apply_overrides(tracks)
+
     tracks = tracks.sort_values("length_km", ascending=False).reset_index(drop=True)
 
     out_gpkg = PROCESSED / "tracks.gpkg"
@@ -273,8 +340,29 @@ def main():
             print(f"  {src}: {count}")
 
     summary = tracks[
-        ["name", "source_name", "source_file", "format", "activity", "date", "length_km", "vertices"]
+        [
+            "name",
+            "type",
+            "type_certain",
+            "source_name",
+            "source_file",
+            "format",
+            "activity",
+            "date",
+            "length_km",
+            "vertices",
+        ]
     ]
+
+    print("\nTrack types:")
+    for kind in TYPE_ORDER:
+        subset = tracks[tracks["type"] == kind]
+        print(f"  {kind:26} {len(subset):>3}")
+    unsure = tracks[~tracks["type_certain"]]
+    if len(unsure):
+        print(f"\n{len(unsure)} classification(s) to check — override in data/track_types.csv:")
+        for _, row in unsure.iterrows():
+            print(f"  [{row['type']}] {row['name']}")
     summary.to_csv(PROCESSED / "tracks_summary.csv", index=False)
 
     print(f"\n{len(tracks)} tracks, {tracks['length_km'].sum():.1f} km total")

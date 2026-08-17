@@ -24,7 +24,8 @@ export GOOGLE_OAUTH_TOKEN='ya29...'  # see scripts/fetch_from_drive.sh header
 ./scripts/fetch_from_drive.sh        # pull anything new from Drive into data/raw
 python3 scripts/slim_kmz.py          # extract geometry from photo-laden KMZ files
 python3 scripts/inspect_sources.py   # report structure of everything in data/raw
-python3 scripts/merge_tracks.py      # normalise to data/processed/tracks.gpkg
+python3 scripts/merge_tracks.py      # normalise + classify to data/processed/tracks.gpkg
+python3 scripts/infer_villages.py    # derive village points from track endpoints
 python3 scripts/make_maps.py         # render the three outputs
 ```
 
@@ -114,13 +115,69 @@ one (`Anatua-Gadzot-Umbuwara`) is recorded as cycling rather than walking.
   were resolved from `desc` or the filename, and the original is kept in the
   `source_name` column.
 
+## Track types
+
+Every track is classified as **Road**, **Village-to-village track** or
+**Garden / survey track** — the distinction that matters for reading
+disturbance, since a vehicle road and a seasonal garden path are not
+comparable pressures.
+
+Classification is derived from track names, which is a heuristic, not ground
+truth. Anything ambiguous is flagged (`type_certain = False` in the summary)
+and listed when `merge_tracks.py` runs. **To correct one, add a row to
+`data/track_types.csv` with `name,type`** — overrides win and are reported.
+
+Known ambiguities: a name like "Track from Awaru to Sigara Road" describes a
+track that *ends at* a road, not a road itself, so it is classed as a track;
+"Afore Guest house", "Water Source" and "Kiara to Grid 63" have endpoints that
+are not villages, so they are classed as garden/survey. Check these six.
+
+## Inferred village locations
+
+Villages were never surveyed directly, but the tracks encode them:
+`scripts/infer_villages.py` takes each track's first and last point, clusters
+endpoints within 300 m, proposes a name from the track's own name, and takes
+the majority within each cluster. Output: `data/processed/villages.gpkg`
+(layer `villages`) and `villages.csv`, each row carrying its evidence.
+
+**Treat this as a hypothesis to ground-truth, not a result.** The known
+weaknesses:
+
+- **Direction is unrecoverable.** "A to B" is assumed to run A→B. When a track
+  was walked B→A both names invert. Where several tracks disagree the majority
+  wins (Anatua, backed by four tracks, beat a single contradicting one), but a
+  name with no competitor stays wrong. **`Popondetta` is currently placed in
+  the south-west; the real town is at the north-west end of that road.** Fix it
+  via the override below.
+- **Confidence varies enormously.** `Kaura` is backed by 7 tracks; most places
+  rest on one. The `tracks`, `agreeing` and `confidence` columns say which is
+  which, and the map draws single-track places as hollow markers.
+- **`Sakarina` sits at 0.20 confidence** — that cluster is a genuine hub where
+  Sakarina, Kaura and Kuhara endpoints all converge, and the name is contested.
+- **Not every endpoint is a village.** Some are gardens, water sources or a
+  guest house. Nine clusters are unnamed or disputed and go unlabelled.
+
+**To correct a name**, add a row to `data/village_names.csv`:
+
+```csv
+lon,lat,village,drop
+148.2141,-8.7674,Popondetta,
+148.3000,-9.1000,,yes
+```
+
+The nearest inferred cluster to each coordinate takes that name; `drop = yes`
+removes a bogus cluster. Overrides are reported when the script runs.
+
 ### Map design note
 
-Colour encodes *provenance* (GPX / KMZ / GPKG), not individual track. Two dozen
-tracks are far past what a categorical palette can keep separable — the
-validated all-pairs ceiling is four slots — so identity is carried by the facet
-panels and by tooltips in the HTML. The overview direct-labels only the eight
-longest (`LABEL_COUNT` in `make_maps.py`); labelling all 24 makes it unreadable.
+Colour encodes **track type**, and line weight follows it too — roads heaviest,
+garden paths lightest — so the disturbance hierarchy reads without the legend.
+Three types sit inside the validated all-pairs palette ceiling of four slots.
+
+The overview labels **villages**, not tracks: two dozen track names is a wall of
+text, and place names are what make the network legible. Filled markers are
+places two or more tracks agree on; hollow markers rest on a single track.
+Individual tracks are identified in the facet grid and by tooltips in the HTML.
 
 ## Layout
 
