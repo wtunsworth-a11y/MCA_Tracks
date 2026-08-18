@@ -36,8 +36,15 @@ def main():
 
     local = {p.name: p.stat().st_size for p in RAW.iterdir() if p.is_file() and p.name != ".gitkeep"}
 
+    # Notes and READMEs live in the folder too; they are not track data and
+    # cannot be fetched with alt=media, so they are listed separately.
+    track_exts = (".gpx", ".kmz", ".kml", ".gpkg")
+    non_track = sorted(n for n in drive if not n.lower().endswith(track_exts))
+
     missing, changed = [], []
     for name, row in sorted(drive.items()):
+        if not name.lower().endswith(track_exts):
+            continue
         size = int(row["size"])
         if name not in local:
             missing.append((name, size))
@@ -92,6 +99,12 @@ def main():
             print(f"  {human(size)}:")
             for n in sorted(names):
                 print(f"      {n}")
+        print()
+
+    if non_track:
+        print(f"NOT TRACK DATA — in the folder, not fetched ({len(non_track)}):")
+        for name in non_track:
+            print(f"  {name}")
         print()
 
     if not missing and not changed:

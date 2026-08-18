@@ -31,6 +31,13 @@ declare -a FAILURES=()
 while IFS=$'\t' read -r name size modified id; do
   [[ "$name" == "name" || -z "${id:-}" ]] && continue
 
+  # Google-native files (Docs/Sheets) are not binary downloads — alt=media
+  # returns an error for them — and they are not track data anyway. Skip.
+  case "${name,,}" in
+    *.gpx|*.kmz|*.kml|*.gpkg) ;;
+    *) skipped=$((skipped + 1)); continue ;;
+  esac
+
   target="$DEST/$name"
   if [[ -f "$target" && "$(stat -c%s "$target")" == "$size" ]]; then
     skipped=$((skipped + 1))
