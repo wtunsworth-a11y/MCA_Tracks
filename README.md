@@ -50,24 +50,24 @@ against the listing in `data/drive_manifest.tsv`.
 
 ## The data
 
-26 source files → **24 tracks, 373 km**, plus 25 photo waypoints. Everything
+28 source files → **28 tracks, 602 km**, plus 25 photo waypoints. Everything
 arrived in WGS84 (EPSG:4326); lengths are computed in EPSG:32755 (UTM zone 55S).
 See `data/processed/tracks_summary.csv` for the full table.
 
 Longest ten:
 
-| Track | Source | Travelled | Recorded |
-| ----- | ------ | --------- | -------- |
-| Popondetta to Anatua Road | KMZ | 151.0 km | — |
-| Jorua to Girua Track | KMZ | 40.9 km | — |
-| Gadzot Road | GPX | 29.5 km | 2025-11-16 |
-| David's track record from Jorura to Afore | KMZ | 23.1 km | — |
-| Cropping Calendar Survey Track to Kuhara | GPX | 16.2 km | 2025-12-12 |
-| David Jajiba's track recording, Gora to Jorura | KMZ | 16.2 km | — |
-| Kiara to Grid 63 and back | GPX | 15.9 km | 2026-04-18 |
-| Afore Guest house | GPX | 11.6 km | 2026-02-01 |
-| David's track record, Itokama to Umuate | KMZ | 9.5 km | — |
-| Koruwo to Anatua 1 | GPX | 9.1 km | 2026-02-01 |
+| Track | Type | Source | Travelled | Recorded |
+| ----- | ---- | ------ | --------- | -------- |
+| Popondetta to Anatua Road | Road | KMZ | 151.0 km | — |
+| Road Track - Popondetta to Sakarina Junction | Road | GPX | 148.6 km | 2025-07-04 |
+| Itokama to Afore Road | Road | GPX | 46.9 km | 2025-07-04 |
+| Jorua to Girua Track | Village-to-village track | KMZ | 40.9 km | — |
+| Gadzot Road | Road | GPX | 29.5 km | 2025-11-16 |
+| road track save | Road | GPX | 27.9 km | 2025-07-04 |
+| David's track record from Jorura to Afore | Village-to-village track | KMZ | 23.1 km | — |
+| David Jajiba's : Track recording from Gora to Jorura | Village-to-village track | KMZ | 16.2 km | — |
+| Cropping Calendar Survey Track to Kuhara | Garden / survey track | GPX | 16.2 km | 2025-12-12 |
+| Kiara to Grid 63 and back | Garden / survey track | GPX | 15.9 km | 2026-04-18 |
 
 Many tracks come from a **Cropping Calendar Survey** and are named accordingly;
 one (`Anatua-Gadzot-Umbuwara`) is recorded as cycling rather than walking.
@@ -96,16 +96,16 @@ one (`Anatua-Gadzot-Umbuwara`) is recorded as cycling rather than walking.
 ### Things to know before using this
 
 - **Lengths are distance travelled, not route length.** Several tracks
-  backtrack. `Kiara to Grid 63 and back` begins and ends 520 m apart, so its
-  real trail is roughly half the 15.9 km logged. `Popondetta to Anatua Road`
-  and `Gadzot Road` both have end-to-end separation of only 0.26 × their
-  length. Don't quote these figures as trail distances without deciding how to
-  handle the doubling.
-- **The GeoPackage is a different kind of record.** Its six segments sit ~6 km
-  east of everything else with no overlap, span only 4.3 km across 173
-  vertices, and share a single name (`HBMS - 1108025Z6`, a device code). The
-  other sources reach 3,147 vertices for one track. Treat it as a separate
-  survey, not part of the same network.
+  backtrack: `Kiara to Grid 63 and back` begins and ends 520 m apart, and
+  `Popondetta to Anatua Road` and `Gadzot Road` both have end-to-end separation
+  of only 0.26 × their length. Point-to-point distances will be tabulated
+  separately (see Decisions), so `length_km` is a property of the recording,
+  not a trail distance — do not quote it as one.
+- **The GeoPackage is a different kind of record**, though it is in scope. Its
+  six segments sit ~6 km east of the rest with no overlap, span 4.3 km across
+  173 vertices, and share one device code (`HBMS - 1108025Z6`) as a name, where
+  other sources reach 3,147 vertices for a single track. Different capture
+  method, same network.
 - **Two tracks carry no timestamps** (both KMZ). The GPX files are Locus Map
   exports with per-point elevation, time and HDOP.
 - **Dates are PNG local time (UTC+10).** GPX timestamps are UTC, which pushes
@@ -145,10 +145,11 @@ weaknesses:
 
 - **Direction is unrecoverable.** "A to B" is assumed to run A→B. When a track
   was walked B→A both names invert. Where several tracks disagree the majority
-  wins (Anatua, backed by four tracks, beat a single contradicting one), but a
-  name with no competitor stays wrong. **`Popondetta` is currently placed in
-  the south-west; the real town is at the north-west end of that road.** Fix it
-  via the override below.
+  wins — Anatua, backed by four tracks, beat a single contradicting one — but a
+  name with no competitor stays wrong. **Popondetta was wrong for this reason
+  and is corrected in `data/village_names.csv`**, placed at the northern road
+  terminus, which matches the real town to ~250 m. That correction comes from
+  outside knowledge, not from these files.
 - **Confidence varies enormously.** `Kaura` is backed by 7 tracks; most places
   rest on one. The `tracks`, `agreeing` and `confidence` columns say which is
   which, and the map draws single-track places as hollow markers.
