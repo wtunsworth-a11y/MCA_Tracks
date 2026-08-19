@@ -192,9 +192,35 @@ Track files are committed here so the sandbox can read them — it has no networ
 route to Google Drive. **These carry precise location data; review before making
 this repository public.**
 
+## Decisions
+
+- **Distances will be tabulated point-to-point later**, not as along-track
+  lengths. So backtracking does not need collapsing and `length_km` stays as
+  distance travelled — treat it as a recording property, not a trail distance.
+- **Scope: everything inside the MCA boundary is in, plus tracks that connect
+  outward** (the roads down toward Popondetta, for instance). The
+  Sakarina–Numba–Kaura GeoPackage stays in on that basis, despite sitting ~6 km
+  east of the rest with no overlap.
+- **Village names will firm up as more recordings arrive.** Weak inferences are
+  flagged with their evidence rather than resolved by guesswork; more tracks
+  touching the same place will settle them by majority.
+- **Disturbance weights come later.** The `type` column on every track is ready
+  to carry them when they are decided.
+
 ## Open questions
 
-- Should backtracking be collapsed, so lengths read as trail distance?
-- Is the Sakarina–Numba–Kaura GeoPackage meant to be part of this network?
-- Are any of these tracks sensitive enough to generalise or withhold?
-- Is a printed figure needed, or is the interactive map the deliverable?
+- Six track types are flagged `type_certain = False` — the three
+  "Track from X to Y main road" cases (classed as tracks that *end at* a road,
+  not roads) plus `Afore Guest house`, `Water Source` and `Kiara to Grid 63`
+  (endpoints that are not villages). Override in `data/track_types.csv`.
+- **Popondetta** is placed at the northern road terminus from the real town's
+  coordinates, not from the track data. The one assertion on the map that did
+  not come from these files.
+- Are any tracks sensitive enough to generalise or withhold? The repo now holds
+  28 precise tracks and 28 inferred settlement locations.
+
+## Would help
+
+- **An MCA boundary polygon.** With it the pipeline could tag every track as
+  inside the conservation area or an outward connector, which is the
+  distinction named above and is likely to matter for the disturbance surface.
