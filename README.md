@@ -13,6 +13,7 @@ Source data: https://drive.google.com/drive/folders/1UR9_fpkrn_I2lCs8O2yZsC7u9xC
 | `outputs/managalas_tracks_facets.png` | One panel per track on a shared extent |
 | `outputs/managalas_tracks.html` | Interactive map — toggle tracks, OSM or satellite basemap |
 | `data/processed/tracks.gpkg` | All tracks merged into one layer (`tracks`) |
+| `data/processed/mca_boundary.gpkg` | Conservation area boundary from the gazetted survey points |
 | `data/processed/tracks_summary.csv` | Table of names, sources, dates, lengths |
 
 Open the HTML in a browser; the basemap tiles load client-side.
@@ -23,6 +24,7 @@ Open the HTML in a browser; the basemap tiles load client-side.
 export GOOGLE_OAUTH_TOKEN='ya29...'  # see scripts/fetch_from_drive.sh header
 ./scripts/fetch_from_drive.sh        # pull anything new from Drive into data/raw
 python3 scripts/slim_kmz.py          # extract geometry from photo-laden KMZ files
+python3 scripts/build_boundary.py    # MCA boundary polygon from survey coordinates
 python3 scripts/inspect_sources.py   # report structure of everything in data/raw
 python3 scripts/merge_tracks.py      # normalise + classify to data/processed/tracks.gpkg
 python3 scripts/infer_villages.py    # derive village points from track endpoints
@@ -192,6 +194,44 @@ Individual tracks are identified in the facet grid and by tooltips in the HTML.
 Track files are committed here so the sandbox can read them — it has no network
 route to Google Drive. **These carry precise location data; review before making
 this repository public.**
+
+## The MCA boundary
+
+There is no boundary shapefile in the Drive folder, but "Managalas CA boundary
+map with survey coordinates.pdf" carries the gazetted **20-point survey table**
+in degrees/minutes/seconds. `scripts/build_boundary.py` transcribes those points
+and builds the polygon: **2,126 km²**.
+
+It is the *survey* boundary — 20 points joined by straight lines — not a
+boundary following ridges or rivers, so calls very close to the edge are
+approximate.
+
+Every track is tagged `zone` in `tracks.gpkg`:
+
+| Zone | Count | |
+| ---- | ----- | - |
+| inside | 119 | |
+| crossing | 4 | Popondetta–Anatua Road, Popondetta–Sakarina Junction Road, Jorua–Girua, Marase–Vouka |
+| outside | 0 | |
+
+That matches the stated scope exactly: everything inside, plus a few outward
+connectors. It is also independent corroboration that the transcribed boundary
+is right — 119 of 123 tracks landing inside a polygon derived from a separate
+document is not a coincidence.
+
+### Survey coverage is uneven, and that matters for the gradient
+
+| Distance from a recorded track | Area | Share of MCA |
+| --- | --- | --- |
+| within 1 km | 442 km² | 21% |
+| within 2 km | 684 km² | 32% |
+| within 5 km | 1,183 km² | 56% |
+
+The recorded network sits almost entirely in the **north-east** of the
+conservation area. The southern and western portions have no tracks at all.
+For a disturbance gradient this is the difference between "no disturbance" and
+"not surveyed" — and the two must not be conflated. Absence of tracks in the
+south-west is absence of evidence.
 
 ## Decisions
 

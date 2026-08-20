@@ -46,6 +46,10 @@ CATEGORY_WIDTH = {
 
 VILLAGE_COLOR = "#0b0b0b"
 
+# Conservation-area boundary: recessive, never a data series.
+BOUNDARY_FILL = "#f2f1ec"
+BOUNDARY_EDGE = "#898781"
+
 INK_PRIMARY = "#0b0b0b"
 INK_SECONDARY = "#52514e"
 INK_MUTED = "#898781"
@@ -59,6 +63,12 @@ def load_tracks():
     gdf = gpd.read_file(PROCESSED / "tracks.gpkg", layer="tracks")
     gdf["category"] = gdf["type"]
     return gdf
+
+
+def load_boundary():
+    """MCA boundary polygon, if scripts/build_boundary.py has been run."""
+    path = PROCESSED / "mca_boundary.gpkg"
+    return gpd.read_file(path, layer="boundary") if path.exists() else None
 
 
 def load_villages(min_tracks=1):
@@ -129,12 +139,19 @@ def add_north_arrow(ax):
     )
 
 
-def static_map(gdf, villages=None):
+def static_map(gdf, villages=None, boundary=None):
     proj = gdf.to_crs(UTM55S)
     proj = label_groups(proj)
 
     fig, ax = plt.subplots(figsize=(9.5, 11), facecolor=SURFACE)
     ax.set_facecolor(SURFACE)
+
+    # Conservation area behind everything: a recessive wash plus a dashed edge,
+    # so it frames the network without competing with the track colours.
+    if boundary is not None and not boundary.empty:
+        bproj = boundary.to_crs(UTM55S)
+        bproj.plot(ax=ax, facecolor=BOUNDARY_FILL, edgecolor="none", zorder=0)
+        bproj.boundary.plot(ax=ax, color=BOUNDARY_EDGE, linewidth=1.4, linestyle=(0, (6, 3)), zorder=1)
 
     for category, color in CATEGORY_COLOR.items():
         subset = proj[proj["category"] == category]
@@ -153,6 +170,14 @@ def static_map(gdf, villages=None):
         vproj = villages.to_crs(UTM55S)
         for _, row in vproj.iterrows():
             strong = row["tracks"] >= 2
+            # Every place gets a marker; only corroborated ones get a name.
+            # Labelling all 50 buries the middle of the plateau in text.
+            if not strong:
+                ax.scatter(
+                    row.geometry.x, row.geometry.y, s=22,
+                    facecolor="#ffffff", edgecolor=VILLAGE_COLOR, linewidth=1.2, zorder=6,
+                )
+                continue
             ax.scatter(
                 row.geometry.x,
                 row.geometry.y,
@@ -178,7 +203,8 @@ def static_map(gdf, villages=None):
         adjust_text(
             texts,
             ax=ax,
-            expand=(1.2, 1.4),
+            expand=(1.15, 1.3),
+            max_move=40,
             arrowprops=dict(arrowstyle="-", color=INK_MUTED, lw=0.7, shrinkA=2, shrinkB=2),
         )
 
@@ -201,6 +227,11 @@ def static_map(gdf, villages=None):
         for category, color in CATEGORY_COLOR.items()
         if (proj["category"] == category).any()
     ]
+    if boundary is not None and not boundary.empty:
+        handles.append(
+            Line2D([0], [0], color=BOUNDARY_EDGE, lw=1.4, linestyle=(0, (6, 3)),
+                   label="MCA boundary (survey)")
+        )
     legend = ax.legend(
         handles=handles,
         loc="lower right",
@@ -315,7 +346,7 @@ def small_multiples(gdf):
     print(f"wrote {out}")
 
 
-def interactive_map(gdf, villages=None):
+def interactive_map(gdf, villages=None, boundary=None):
     import folium
 
     gdf = label_groups(gdf)
@@ -332,6 +363,17 @@ def interactive_map(gdf, villages=None):
 
     # One toggle per track type rather than per track: with two dozen tracks a
     # per-track layer list is unusable, and type is what the map is now about.
+    if boundary is not None and not boundary.empty:
+        folium.GeoJson(
+            boundary,
+            name="MCA boundary",
+            style_function=lambda _: {
+                "fillColor": "#898781", "color": "#4a4a48",
+                "weight": 2, "dashArray": "8,5", "fillOpacity": 0.08,
+            },
+            tooltip="Managalas Conservation Area (survey boundary)",
+        ).add_to(fmap)
+
     for category, color in CATEGORY_COLOR.items():
         subset = gdf[gdf["category"] == category]
         if subset.empty:
@@ -402,9 +444,10 @@ def main():
     OUTPUTS.mkdir(parents=True, exist_ok=True)
     gdf = load_tracks()
     villages = load_villages()
-    static_map(gdf, villages)
+    boundary = load_boundary()
+    static_map(gdf, villages, boundary)
     small_multiples(gdf)
-    interactive_map(gdf, villages)
+    interactive_map(gdf, villages, boundary)
 
 
 if __name__ == "__main__":

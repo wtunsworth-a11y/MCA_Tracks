@@ -8,6 +8,8 @@ Writes data/processed/tracks.gpkg (layer "tracks") and a CSV summary.
 """
 
 import re
+import sqlite3
+import struct
 import warnings
 import zipfile
 from pathlib import Path
@@ -183,6 +185,97 @@ def parse_kml_lines(path):
     return geom, name
 
 
+# GeoPackage geometry blobs: "GP" magic, version, flags, srs_id, then an
+# optional envelope whose size the flag bits encode, then plain WKB.
+GPKG_ENVELOPE_BYTES = {0: 0, 1: 32, 2: 48, 3: 48, 4: 64}
+
+
+def wkb_line_parts(data):
+    """Coordinate lists from a (Multi)LineString WKB, tolerating bad parts.
+
+    Shapely refuses the whole geometry when any part has a single point, so
+    parse the structure directly and let the caller drop the degenerate parts.
+    """
+    pos = 0
+
+    def read():
+        nonlocal pos
+        endian = "<" if data[pos] == 1 else ">"
+        pos += 1
+        gtype, = struct.unpack_from(endian + "I", data, pos)
+        pos += 4
+        has_z = bool(gtype & 0x80000000)
+        has_m = bool(gtype & 0x40000000)
+        t = gtype & 0x0FFFFFFF
+        if 1000 <= t < 2000:
+            has_z, t = True, t - 1000
+        elif 2000 <= t < 3000:
+            has_m, t = True, t - 2000
+        elif 3000 <= t < 4000:
+            has_z = has_m = True
+            t -= 3000
+        dims = 2 + has_z + has_m
+        count, = struct.unpack_from(endian + "I", data, pos)
+        pos += 4
+        if t == 2:  # LineString
+            coords = []
+            for _ in range(count):
+                values = struct.unpack_from(endian + "d" * dims, data, pos)
+                pos += 8 * dims
+                coords.append((values[0], values[1]))
+            return [coords]
+        if t == 5:  # MultiLineString
+            parts = []
+            for _ in range(count):
+                parts.extend(read())
+            return parts
+        raise ValueError(f"unsupported WKB geometry type {t}")
+
+    return read()
+
+
+def parse_gpkg_lines(path, layer):
+    """Rebuild a GeoPackage layer's line geometry, dropping degenerate parts."""
+    con = sqlite3.connect(path)
+    try:
+        row = con.execute(
+            "select table_name, column_name from gpkg_geometry_columns where table_name = ?",
+            (layer,),
+        ).fetchone()
+        if row is None:
+            return None
+        table, geom_col = row
+        columns = [r[1] for r in con.execute(f'PRAGMA table_info("{table}")')]
+        name_col = next((c for c in columns if c.lower() == "name"), None)
+        select = f'select "{geom_col}"' + (f', "{name_col}"' if name_col else "")
+        rows = con.execute(f'{select} from "{table}"').fetchall()
+    finally:
+        con.close()
+
+    records, dropped = [], 0
+    for entry in rows:
+        blob = entry[0]
+        if blob is None:
+            continue
+        header = 8 + GPKG_ENVELOPE_BYTES[(blob[3] >> 1) & 0x07]
+        try:
+            parts = wkb_line_parts(bytes(blob[header:]))
+        except Exception:
+            continue
+        good = [p for p in parts if len(p) >= 2]
+        dropped += len(parts) - len(good)
+        if not good:
+            continue
+        geom = LineString(good[0]) if len(good) == 1 else MultiLineString([LineString(p) for p in good])
+        records.append({"name": entry[1] if len(entry) > 1 else None, "geometry": geom})
+
+    if not records:
+        return None
+    if dropped:
+        print(f"  ~~ {path.name}: dropped {dropped} degenerate part(s)")
+    return gpd.GeoDataFrame(records, geometry="geometry", crs=WGS84)
+
+
 def gpx_dates(path):
     """Earliest/latest timestamp from a GPX's track_points, if it has any."""
     try:
@@ -220,6 +313,28 @@ def load(path):
         try:
             gdf = gpd.read_file(path, layer=layer)
         except Exception as exc:
+            if suffix == ".gpkg":
+                recovered = parse_gpkg_lines(path, layer)
+                if recovered is None:
+                    print(f"  !! {path.name} [{layer}] unreadable: {type(exc).__name__}: {exc}")
+                    continue
+                gdf = recovered
+                start = end = None
+                for idx, row in gdf.reset_index(drop=True).iterrows():
+                    name = clean_name(row.get("name"), fallback)
+                    if len(gdf) > 1:
+                        name = f"{name} (seg {idx + 1})"
+                    rows.append({
+                        "name": name,
+                        "source_name": None if row.get("name") is None else str(row["name"]).strip(),
+                        "source_file": path.name,
+                        "format": "gpkg",
+                        "activity": None,
+                        "start_time": None,
+                        "end_time": None,
+                        "geometry": row.geometry,
+                    })
+                continue
             if suffix not in (".kml", ".kmz"):
                 print(f"  !! {path.name} [{layer}] unreadable: {type(exc).__name__}: {exc}")
                 continue
@@ -263,6 +378,29 @@ def load(path):
                 rows.append(record)
 
     return rows, point_rows
+
+
+def tag_boundary_zone(tracks):
+    """Mark each track inside / crossing / outside the MCA boundary.
+
+    The scope rule is everything inside the conservation area plus the tracks
+    that connect outward, so which side of the line a track sits on is worth
+    carrying explicitly. Skips quietly if the boundary has not been built.
+    """
+    path = PROCESSED / "mca_boundary.gpkg"
+    if not path.exists():
+        tracks["zone"] = None
+        return tracks
+
+    polygon = gpd.read_file(path, layer="boundary").geometry.iloc[0]
+    within = tracks.geometry.within(polygon)
+    touching = tracks.geometry.intersects(polygon)
+    tracks["zone"] = [
+        "inside" if i else ("crossing" if t else "outside") for i, t in zip(within, touching)
+    ]
+    counts = tracks["zone"].value_counts()
+    print("\nBoundary zones: " + ", ".join(f"{k} {v}" for k, v in counts.items()))
+    return tracks
 
 
 def main():
@@ -318,6 +456,8 @@ def main():
     local_start = pd.to_datetime(tracks["start_time"], utc=True, errors="coerce").dt.tz_convert(PNG_TZ)
     tracks["date"] = local_start.dt.strftime("%Y-%m-%d")
     tracks["start_local"] = local_start.dt.strftime("%Y-%m-%d %H:%M")
+
+    tracks = tag_boundary_zone(tracks)
 
     classified = tracks.apply(lambda r: classify(r["name"], r["source_file"]), axis=1)
     tracks["type"] = [c[0] for c in classified]

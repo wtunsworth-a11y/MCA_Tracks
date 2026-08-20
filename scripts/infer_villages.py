@@ -53,6 +53,12 @@ STOPWORDS = {
     "villages", "primary", "school", "guest", "house", "water", "source",
     "grid", "connect", "connects", "davids", "david", "jajibas", "jajiba",
     "seg", "trek", "new", "guinea", "papua", "seg1", "part", "seq",
+    # Descriptors that attach to a place name rather than being one. Without
+    # these the parser invents places called "Short", "End" and "Alternate"
+    # out of names like "Short cut to Siribu village".
+    "junction", "river", "creek", "school", "community", "station", "hamlet",
+    "trail", "short", "cut", "end", "alternate", "feeder", "leading", "bush",
+    "shortcut", "high", "highschool", "camp", "bridge", "crossing",
 }
 
 
