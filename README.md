@@ -235,6 +235,10 @@ south-west is absence of evidence.
 
 ## Decisions
 
+- **No unsolicited analysis.** The dataset is still being collated. Report what
+  arrived and what the pipeline did; do not volunteer findings, patterns or
+  conclusions unless asked.
+
 - **Distances will be tabulated point-to-point later**, not as along-track
   lengths. So backtracking does not need collapsing and `length_km` stays as
   distance travelled — treat it as a recording property, not a trail distance.
