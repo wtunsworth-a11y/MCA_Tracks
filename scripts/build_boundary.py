@@ -1,90 +1,138 @@
-"""Build the Managalas Conservation Area boundary polygon.
+"""Build the Managalas Conservation Area boundary from the WDPA polygon.
 
-There is no boundary shapefile in the Drive folder — only PDFs. But
-"Managalas CA boundary map with survey coordinates.pdf" carries the gazetted
-20-point survey table in degrees/minutes/seconds, which is the authoritative
-description of the boundary. Those points are transcribed here.
+The authoritative boundary is the WDPA (World Database on Protected Areas)
+record for Managalas Conservation Area, published by UNEP-WCMC via Protected
+Planet. Nothing else is used — an earlier version of this script transcribed the
+20-point gazetted survey table out of a Drive PDF, which produced a straight-
+sided polygon that is not the boundary in use. That approach has been dropped.
 
-Important: this is the *survey* boundary — 20 points joined by straight lines,
-as gazetted. It is not a detailed boundary following ridges or rivers, so
-expect it to cut across terrain. Treat inside/outside calls near the edge as
-approximate, and replace this with a proper boundary layer if one exists.
+Protected Planet is not reachable from this sandbox (the proxy refuses the
+CONNECT), so the download is a manual step:
 
-Source: Drive file 1Vz53FTL9h92oJ0Wcj_U9aeUC04tXafJs
-Writes data/processed/mca_boundary.gpkg (layer "boundary").
+  1. https://www.protectedplanet.net/  ->  search "Managalas"
+  2. Download the protected area as shapefile or GeoJSON
+  3. Put the file (or the unzipped folder) in data/raw/
+
+This script then finds it and writes data/processed/mca_boundary.gpkg
+(layer "boundary"). Any vector format geopandas can read will do: .shp with its
+sidecars, .geojson, .json, .gpkg, .kml.
 """
 
+import sys
 import warnings
+import zipfile
 from pathlib import Path
 
 import geopandas as gpd
-from shapely.geometry import Polygon
+import pandas as pd
 
 warnings.filterwarnings("ignore")
 
 ROOT = Path(__file__).resolve().parent.parent
+RAW = ROOT / "data" / "raw"
 PROCESSED = ROOT / "data" / "processed"
 
 WGS84 = "EPSG:4326"
 UTM55S = "EPSG:32755"
 
-# (point, lon d m s, lat d m s) — latitudes are south, so negated below.
-SURVEY_POINTS = [
-    (1, (148, 2, 20.33736), (9, 22, 55.9956)),
-    (2, (148, 3, 54.24624), (9, 27, 39.77334)),
-    (3, (148, 6, 56.58732), (9, 28, 27.87906)),
-    (4, (148, 10, 55.63056), (9, 24, 18.174276)),
-    (5, (148, 16, 14.81232), (9, 22, 25.24602)),
-    (6, (148, 20, 23.16552), (9, 19, 36.860628)),
-    (7, (148, 23, 50.54712), (9, 16, 58.029888)),
-    (8, (148, 27, 58.29876), (9, 15, 42.1668)),
-    (9, (148, 34, 58.60308), (9, 11, 0.061764)),
-    (10, (148, 31, 5.89044), (9, 3, 36.7596)),
-    (11, (148, 25, 57.84564), (8, 59, 44.108844)),
-    (12, (148, 25, 19.98732), (8, 52, 31.407924)),
-    (13, (148, 16, 8.28408), (8, 51, 57.429648)),
-    (14, (148, 10, 22.3806), (8, 58, 38.066556)),
-    (15, (148, 6, 31.25412), (9, 3, 38.343852)),
-    (16, (148, 7, 59.11464), (9, 6, 24.283692)),
-    (17, (148, 10, 11.3016), (9, 7, 50.416176)),
-    (18, (148, 8, 13.3638), (9, 10, 5.541528)),
-    (19, (148, 7, 11.622), (9, 14, 32.633556)),
-    (20, (148, 3, 37.90836), (9, 19, 32.122236)),
-]
+# Filenames from Protected Planet are shaped like WDPA_WDOECM_Sep2026_Public_
+# 555637123_shp.zip, so match on the WDPA marker as well as on our own naming.
+NAME_HINTS = ("wdpa", "wdoecm", "managalas", "mca_boundary", "protectedplanet")
+VECTOR_SUFFIXES = (".shp", ".geojson", ".json", ".gpkg", ".kml", ".zip")
 
 
-def dms(degrees, minutes, seconds):
-    return degrees + minutes / 60 + seconds / 3600
+def candidates():
+    """Vector files in data/raw that look like a WDPA download."""
+    found = []
+    for path in sorted(RAW.rglob("*")):
+        if not path.is_file() or path.suffix.lower() not in VECTOR_SUFFIXES:
+            continue
+        haystack = str(path.relative_to(RAW)).lower()
+        if any(hint in haystack for hint in NAME_HINTS):
+            found.append(path)
+    return found
+
+
+def read_any(path):
+    """Read one candidate, looking inside a zip if that is what we were given."""
+    if path.suffix.lower() != ".zip":
+        return gpd.read_file(path)
+
+    # Protected Planet ships a zip; a WDPA shapefile zip often holds three
+    # layers (point, polygon, and a combined one). Take the polygons.
+    with zipfile.ZipFile(path) as zf:
+        inner = [n for n in zf.namelist() if n.lower().endswith((".shp", ".geojson"))]
+    if not inner:
+        raise ValueError(f"{path.name}: no .shp or .geojson inside")
+
+    frames = []
+    for name in inner:
+        try:
+            frame = gpd.read_file(f"zip://{path}!{name}")
+        except Exception:
+            continue
+        if not frame.empty and frame.geom_type.str.contains("Polygon").any():
+            frames.append(frame)
+    if not frames:
+        raise ValueError(f"{path.name}: no polygon layer inside")
+    return pd.concat(frames, ignore_index=True) if len(frames) > 1 else frames[0]
 
 
 def main():
-    coords = [(dms(*lon), -dms(*lat)) for _, lon, lat in SURVEY_POINTS]
-    polygon = Polygon(coords)
-    if not polygon.is_valid:
-        polygon = polygon.buffer(0)
+    sources = candidates()
+    if not sources:
+        print("No WDPA boundary file found in data/raw.")
+        print()
+        print("The MCA boundary is the WDPA polygon, and Protected Planet is not")
+        print("reachable from here, so it has to be downloaded by hand:")
+        print("  1. https://www.protectedplanet.net/ -> search 'Managalas'")
+        print("  2. download as shapefile or GeoJSON")
+        print("  3. drop it in data/raw/ (a .zip is fine) and re-run this script")
+        print()
+        print("Until then no boundary is drawn — better a map with no boundary")
+        print("than one with the wrong boundary.")
+        return 1
 
-    boundary = gpd.GeoDataFrame(
-        [{
-            "name": "Managalas Conservation Area",
-            "source": "survey coordinates, Managalas CA boundary map PDF",
-            "vertices": len(coords),
-        }],
-        geometry=[polygon],
+    boundary = None
+    for path in sources:
+        try:
+            frame = read_any(path)
+        except Exception as exc:
+            print(f"  !! {path.name}: {exc}")
+            continue
+        polygons = frame[frame.geom_type.str.contains("Polygon")]
+        if polygons.empty:
+            print(f"  -- {path.name}: no polygons, skipped")
+            continue
+        print(f"  ++ {path.relative_to(RAW)}: {len(polygons)} polygon feature(s)")
+        boundary = polygons.to_crs(WGS84) if polygons.crs else polygons.set_crs(WGS84)
+        break
+
+    if boundary is None:
+        print("!! found candidate files but none held a usable polygon")
+        return 1
+
+    # Several WDPA records can share a name (a designation plus its zones);
+    # dissolve to one outline so downstream inside/outside tests are simple.
+    merged = boundary.union_all()
+    out = gpd.GeoDataFrame(
+        [{"name": "Managalas Conservation Area", "source": "WDPA / Protected Planet"}],
+        geometry=[merged],
         crs=WGS84,
     )
-
-    area_km2 = boundary.to_crs(UTM55S).area.iloc[0] / 1e6
-    boundary["area_km2"] = round(area_km2, 1)
+    area_km2 = out.to_crs(UTM55S).area.iloc[0] / 1e6
+    out["area_km2"] = round(area_km2, 1)
 
     PROCESSED.mkdir(parents=True, exist_ok=True)
-    out = PROCESSED / "mca_boundary.gpkg"
-    boundary.to_file(out, layer="boundary", driver="GPKG")
+    target = PROCESSED / "mca_boundary.gpkg"
+    out.to_file(target, layer="boundary", driver="GPKG")
 
-    minx, miny, maxx, maxy = boundary.total_bounds
-    print(f"{len(coords)} survey points -> polygon, {area_km2:,.0f} km2")
+    minx, miny, maxx, maxy = out.total_bounds
+    print(f"WDPA boundary -> {area_km2:,.0f} km2")
     print(f"bounds  lon {minx:.4f} .. {maxx:.4f}   lat {miny:.4f} .. {maxy:.4f}")
-    print(f"wrote {out}")
+    print(f"wrote {target}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
