@@ -38,13 +38,18 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 import geopandas as gpd
 import numpy as np
 from PIL import Image
 from pyproj import Transformer
 from scipy import ndimage
 from shapely.geometry import LineString
+from skimage.measure import regionprops, label as sklabel
 from skimage.morphology import skeletonize, remove_small_objects
+
+from georef_t683 import face_bbox
 
 Image.MAX_IMAGE_PIXELS = None
 
@@ -63,9 +68,25 @@ BLACK = dict(val=110, sat=55)
 GRID_MASK_PX = 5        # half-width of the strip blanked around each grid line
 MIN_OBJECT_PX = 40      # specks below this are scanner noise
 MAX_BLOB_THICK = 9      # a run of ink thicker than this is a symbol, not a line
+# Lettering is the hard case: "RANGE" and "Garden" are drawn in strokes as thick
+# as a foot track, so thickness alone does not separate them. What does separate
+# them is shape. A track, or one dash of a dashed track, is long relative to its
+# width; a letter is not. A component that is both short and not elongated is
+# lettering and goes.
+TEXT_MAJOR_PX = 110     # a component longer than this is too big to be a letter
+# Measured, not guessed: over a lettering-heavy window the small components have
+# median elongation 1.6, over a dashed-track window 3.3 — but the tails overlap
+# badly (lettering p90 is 10.6, because I, l and the strokes of N and E are
+# themselves elongated). No single threshold separates them. 2.5 sits between the
+# medians and is a deliberate compromise: some lettering survives and some real
+# dashes are lost. This is why "approximate" foot tracks are flagged in the
+# output as the least reliable class, and why the solid classes are the ones to
+# trust.
+TEXT_ELONGATION = 2.5
 DASH_GAP_PX = 22        # ~140 m: longer than a dash gap, shorter than a real gap
 DASH_ANGLE_DEG = 35     # fragments must be roughly collinear to be joined
 MIN_LINE_PX = 60        # ~380 m: shorter than this is not a route
+FACE_INSET_PX = 26      # keeps the neatline and its graticule ticks out
 
 
 def load_fit(sheet):
@@ -125,7 +146,22 @@ def drop_blobs(mask):
     lab, n = ndimage.label(mask)
     bad = np.unique(lab[fat])
     bad = bad[bad > 0]
-    return mask & ~np.isin(lab, bad)
+    mask = mask & ~np.isin(lab, bad)
+    return drop_lettering(mask)
+
+
+def drop_lettering(mask):
+    """Remove map lettering, which thickness alone cannot separate from tracks."""
+    lab = sklabel(mask, connectivity=2)
+    drop = []
+    for r in regionprops(lab):
+        major = r.axis_major_length
+        minor = max(r.axis_minor_length, 1e-6)
+        if major < TEXT_MAJOR_PX and (major / minor) < TEXT_ELONGATION:
+            drop.append(r.label)
+    if not drop:
+        return mask
+    return mask & ~np.isin(lab, np.array(drop))
 
 
 def trace_skeleton(skel):
@@ -263,6 +299,19 @@ def digitise(sheet):
     H, W = rgb.shape[:2]
 
     red, black = ink_masks(rgb)
+
+    # Everything outside the printed face is marginalia — the sheet title, the
+    # legend, the reliability diagram, the grid-value labels — and all of it is
+    # ink of exactly the colours being looked for. Without this the legend boxes
+    # and the word SIBIUM end up in the output as tracks.
+    fx0, fx1, fy0, fy1 = face_bbox(rgb.astype(np.int16))
+    face = np.zeros(red.shape, bool)
+    face[int(fy0) + FACE_INSET_PX:int(fy1) - FACE_INSET_PX,
+         int(fx0) + FACE_INSET_PX:int(fx1) - FACE_INSET_PX] = True
+    red &= face
+    black &= face
+    print(f"  face x {fx0:.0f}..{fx1:.0f} y {fy0:.0f}..{fy1:.0f} "
+          f"(inset {FACE_INSET_PX} px)")
     print(f"  ink: red {red.mean()*100:.2f}%  black {black.mean()*100:.2f}%")
     raw = {"red": red.copy(), "black": black.copy()}   # before any cleaning
 
@@ -306,6 +355,11 @@ def digitise(sheet):
                 "photography_year": g.get("photography_year"),
                 "source": f"T683 sheet {sheet} {g.get('sheet_name')}",
                 "georef_rms_m": g["fit"]["residual_m"]["combined_rms"],
+                # Dashed black cannot be told from map lettering reliably; solid
+                # black and anything red can. Say so on the feature.
+                "reliability": ("lower - dashed black is not cleanly separable "
+                                "from map lettering"
+                                if (colour == "black" and dashed) else "good"),
                 "geometry": LineString(np.column_stack([lon, lat])),
             })
             kept += 1
