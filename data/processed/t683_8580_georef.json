@@ -1,0 +1,61 @@
+{
+ "sheet": 8580,
+ "file": "519_PNG_Oro_Popondetta_100K_8580_master.jpg",
+ "sheet_name": "Popondetta",
+ "photography_year": 1973,
+ "tracks_villages_current_to": 1973,
+ "currency_note": "reliability diagram: aerial photography 1973, stereophotogrammetric methods, track and village information interpreted from air photographs supplemented by patrol reports to 1973",
+ "series": "T683, PNG 1:100,000 Topographic Survey, RA Survey Corps",
+ "image_px": [
+  9504,
+  11221
+ ],
+ "graticule_extent_agd66": {
+  "west": 148.0,
+  "east": 148.5,
+  "south": -9.0,
+  "north": -8.5
+ },
+ "fit": {
+  "model": "affine, pixel -> AGD66 / AMG zone 55 (EPSG:20355)",
+  "easting_coeffs_x_y_1": [
+   6.385457836757183,
+   -0.005165507380240797,
+   607095.3103322595
+  ],
+  "northing_coeffs_x_y_1": [
+   -0.00011699437733741264,
+   -6.398643961054404,
+   9064104.885029742
+  ],
+  "fitted_on": "printed 1 km AMG grid crossings",
+  "crossings_used": [
+   269,
+   293
+  ],
+  "crossings_offered": [
+   310,
+   348
+  ],
+  "residual_m": {
+   "easting_rms": 50.3,
+   "easting_max": 183.07,
+   "northing_rms": 19.07,
+   "northing_max": 82.94,
+   "combined_rms": 53.79
+  },
+  "scale_m_per_px": [
+   6.3855,
+   6.3986
+  ],
+  "grid_rotation_deg": -0.001,
+  "scan_dpi": 398
+ },
+ "sheet_stated_accuracy_m": 32,
+ "accuracy_note": "the sheet states +/- 32 m from the original survey; the fit residual above is separate from and smaller than that, so +/- 32 m is the floor on any position digitised from this sheet",
+ "datum_note": "fit is to AGD66/AMG55; conversion to WGS84 is done by pyproj as a separate step and is about 200 m in this region, never folded into the fit",
+ "agd66_to_wgs84_shift_m": {
+  "east": 112.9,
+  "north": 164.1
+ }
+}

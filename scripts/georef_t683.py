@@ -72,6 +72,18 @@ SHEET_SOURCES = {
                     "stereophotogrammetric methods, track and village "
                     "information interpreted from air photographs "
                     "supplemented by patrol reports to 1974")},
+    8580: {"name": "Popondetta", "photography_year": 1973,
+           "tracks_villages_current_to": 1973,
+           "note": ("reliability diagram: aerial photography 1973, "
+                    "stereophotogrammetric methods, track and village "
+                    "information interpreted from air photographs "
+                    "supplemented by patrol reports to 1973")},
+    8679: {"name": "Musa", "photography_year": 1973,
+           "tracks_villages_current_to": 1973,
+           "note": ("reliability diagram: aerial photography 1973, "
+                    "stereophotogrammetric methods, track and village "
+                    "information interpreted from air photographs "
+                    "supplemented by patrol reports to 1973")},
 }
 
 DARK = 140

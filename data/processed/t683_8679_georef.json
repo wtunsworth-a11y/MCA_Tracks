@@ -1,0 +1,61 @@
+{
+ "sheet": 8679,
+ "file": "531_PNG_Oro_Musa_100K_8679_master.jpg",
+ "sheet_name": "Musa",
+ "photography_year": 1973,
+ "tracks_villages_current_to": 1973,
+ "currency_note": "reliability diagram: aerial photography 1973, stereophotogrammetric methods, track and village information interpreted from air photographs supplemented by patrol reports to 1973",
+ "series": "T683, PNG 1:100,000 Topographic Survey, RA Survey Corps",
+ "image_px": [
+  9584,
+  11186
+ ],
+ "graticule_extent_agd66": {
+  "west": 148.5,
+  "east": 149.0,
+  "south": -9.5,
+  "north": -9.0
+ },
+ "fit": {
+  "model": "affine, pixel -> AGD66 / AMG zone 55 (EPSG:20355)",
+  "easting_coeffs_x_y_1": [
+   6.379872030002886,
+   -0.03176560613249535,
+   661351.9926016086
+  ],
+  "northing_coeffs_x_y_1": [
+   -0.030876154550467248,
+   -6.4068760870163715,
+   9009095.8092253
+  ],
+  "fitted_on": "printed 1 km AMG grid crossings",
+  "crossings_used": [
+   289,
+   291
+  ],
+  "crossings_offered": [
+   312,
+   348
+  ],
+  "residual_m": {
+   "easting_rms": 45.11,
+   "easting_max": 130.63,
+   "northing_rms": 25.28,
+   "northing_max": 124.04,
+   "combined_rms": 51.71
+  },
+  "scale_m_per_px": [
+   6.3799,
+   6.407
+  ],
+  "grid_rotation_deg": -0.2773,
+  "scan_dpi": 398
+ },
+ "sheet_stated_accuracy_m": 32,
+ "accuracy_note": "the sheet states +/- 32 m from the original survey; the fit residual above is separate from and smaller than that, so +/- 32 m is the floor on any position digitised from this sheet",
+ "datum_note": "fit is to AGD66/AMG55; conversion to WGS84 is done by pyproj as a separate step and is about 200 m in this region, never folded into the fit",
+ "agd66_to_wgs84_shift_m": {
+  "east": 112.2,
+  "north": 164.7
+ }
+}
