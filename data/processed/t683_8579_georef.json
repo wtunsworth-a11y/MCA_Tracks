@@ -1,0 +1,61 @@
+{
+ "sheet": 8579,
+ "file": "521_PNG_Oro_Sibium_100K_8579_master.jpg",
+ "sheet_name": "Sibium",
+ "photography_year": 1973,
+ "tracks_villages_current_to": 1974,
+ "currency_note": "reliability diagram: aerial photography 1973, stereophotogrammetric methods, track and village information interpreted from air photographs supplemented by patrol reports to 1974",
+ "series": "T683, PNG 1:100,000 Topographic Survey, RA Survey Corps",
+ "image_px": [
+  9528,
+  11196
+ ],
+ "graticule_extent_agd66": {
+  "west": 148.0,
+  "east": 148.5,
+  "south": -9.5,
+  "north": -9.0
+ },
+ "fit": {
+  "model": "affine, pixel -> AGD66 / AMG zone 55 (EPSG:20355)",
+  "easting_coeffs_x_y_1": [
+   6.385861155310807,
+   -0.006459130586591755,
+   606846.4793077693
+  ],
+  "northing_coeffs_x_y_1": [
+   -0.004333129318028422,
+   -6.40788693784225,
+   9009064.939786246
+  ],
+  "fitted_on": "printed 1 km AMG grid crossings",
+  "crossings_used": [
+   286,
+   329
+  ],
+  "crossings_offered": [
+   308,
+   331
+  ],
+  "residual_m": {
+   "easting_rms": 44.39,
+   "easting_max": 126.95,
+   "northing_rms": 13.71,
+   "northing_max": 40.36,
+   "combined_rms": 46.46
+  },
+  "scale_m_per_px": [
+   6.3859,
+   6.4079
+  ],
+  "grid_rotation_deg": -0.0389,
+  "scan_dpi": 398
+ },
+ "sheet_stated_accuracy_m": 32,
+ "accuracy_note": "the sheet states +/- 32 m from the original survey; the fit residual above is separate from and smaller than that, so +/- 32 m is the floor on any position digitised from this sheet",
+ "datum_note": "fit is to AGD66/AMG55; conversion to WGS84 is done by pyproj as a separate step and is about 200 m in this region, never folded into the fit",
+ "agd66_to_wgs84_shift_m": {
+  "east": 112.8,
+  "north": 164.6
+ }
+}
