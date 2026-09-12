@@ -163,6 +163,47 @@ def node_key(pt, ndp=1):
     return (round(pt[0], ndp), round(pt[1], ndp))
 
 
+def bridge_gaps(G, max_gap_m=450.0):
+    """Join separate components whose loose ends nearly touch.
+
+    The gaps are in the recordings, not in the road: a GPS is switched off and
+    on again, or two people recorded overlapping halves of the same route. Left
+    unbridged they make the network into islands, and a real journey becomes
+    unroutable - the Siribu spur came out as its own island, so the only village
+    that could reach the Siribu stop was Siribu itself.
+
+    Only ends are joined, only across different components, and only under the
+    tolerance; the count and total length are reported so the amount of invented
+    connection is visible rather than hidden.
+    """
+    from scipy.spatial import cKDTree
+    ends = [n for n, d in G.degree() if d == 1]
+    if not ends:
+        return 0, 0.0
+    arr = np.array(ends)
+    tree = cKDTree(arr)
+    comp = {}
+    for ci, c in enumerate(nx.connected_components(G)):
+        for n in c:
+            comp[n] = ci
+    n_bridge, total = 0, 0.0
+    for i, a in enumerate(ends):
+        for j in tree.query_ball_point(arr[i], max_gap_m):
+            b = ends[j]
+            if a == b or comp.get(a) == comp.get(b):
+                continue
+            d = float(np.hypot(arr[i][0] - arr[j][0], arr[i][1] - arr[j][1]))
+            G.add_edge(a, b, weight=d, bridged=True)
+            # merge the two components so the next pair is judged correctly
+            ca, cb = comp[a], comp[b]
+            for k, vcomp in comp.items():
+                if vcomp == cb:
+                    comp[k] = ca
+            n_bridge += 1
+            total += d
+    return n_bridge, total
+
+
 def build_graph(lines_utm):
     """Node the lines at their crossings and return a weighted graph."""
     merged = unary_union(lines_utm)          # splits every line at intersections
@@ -209,6 +250,27 @@ def main():
     # is kept in its own file and merged here so it never gets confused with
     # something the speed test established, and so its provenance travels with
     # it into the output.
+    # Tracks someone has actually driven. The measurement had no timestamps for
+    # these and fell back to the 1973 sheets, which got them wrong; a person who
+    # has driven the route outranks that.
+    confirmed = ROOT / "data" / "reference" / "confirmed_roads.csv"
+    if confirmed.exists():
+        cf = pd.read_csv(confirmed, comment="#")
+        hit = tracks["name"].isin(cf["track_name"])
+        if hit.any():
+            reason = dict(zip(cf["track_name"], cf["reason"]))
+            promoted = tracks[hit].copy()
+            promoted["mode"] = "Motor road"
+            promoted["mode_evidence"] = promoted["name"].map(
+                lambda n: f"confirmed by field knowledge: {reason.get(n, '')}")
+            print(f"  + {len(promoted)} track(s) confirmed driveable, "
+                  f"{promoted['length_km'].sum():.2f} km:")
+            for _, r in promoted.iterrows():
+                print(f"      {r['name']}")
+            roads = gpd.GeoDataFrame(pd.concat([roads, promoted], ignore_index=True),
+                                     geometry="geometry", crs=roads.crs)
+            foot = foot[~foot["name"].isin(cf["track_name"])]
+
     supplied = ROOT / "data" / "reference" / "supplied_roads.geojson"
     if supplied.exists():
         extra = gpd.read_file(supplied)
@@ -236,11 +298,15 @@ def main():
     roads_u = roads.to_crs(UTM)
     foot_u = foot.to_crs(UTM)
     G, parts = build_graph(list(roads_u.geometry))
-    print(f"road graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+    nb, tb = bridge_gaps(G)
+    print(f"road graph: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges; "
+          f"{nb} recording gap(s) bridged, {tb/1000:.2f} km total")
 
     # a graph of everything walkable, for the villages the road does not reach
     Gw, _ = build_graph(list(roads_u.geometry) + list(foot_u.geometry))
-    print(f"walkable graph: {Gw.number_of_nodes()} nodes, {Gw.number_of_edges()} edges")
+    nbw, tbw = bridge_gaps(Gw)
+    print(f"walkable graph: {Gw.number_of_nodes()} nodes, {Gw.number_of_edges()} edges; "
+          f"{nbw} gap(s) bridged, {tbw/1000:.2f} km")
 
     # ---- stops -------------------------------------------------------------
     v_for_stops = pd.read_csv(ROOT / "data" / "MCA_Village_Locations.csv")
@@ -409,18 +475,23 @@ def main():
             polys.append({"day": d, "stop": s, "zones": z, "band_km": band,
                           "geometry": poly})
     sa = gpd.GeoDataFrame(polys, crs=UTM).to_crs(WGS84)
-    sa.to_file(OUT / ("mca_service_areas_upgraded.geojson" if upgraded
-                      else "mca_service_areas.geojson"), driver="GeoJSON")
-    print(f"wrote {OUT/'mca_service_areas.geojson'}  ({len(sa)} polygons)")
+    sa_name = ("mca_service_areas_upgraded.geojson" if upgraded
+               else "mca_service_areas.geojson")
+    sa.to_file(OUT / sa_name, driver="GeoJSON")
+    print(f"wrote {OUT/sa_name}  ({len(sa)} polygons)")
 
+    # The upgrade run is a what-if. It must not overwrite the delivered stops or
+    # the method record - doing so once left method.json claiming no stop was
+    # track-only, which is the opposite of what the delivered figures show.
     if not upgraded:
         stops.to_file(OUT / "mca_market_stops.geojson", driver="GeoJSON")
-    meta = {"crs_analysis": UTM, "crs_output": WGS84, "dem": dem.name,
-            "track_only_stops": sorted(track_only),
-            "walking_model": "Tobler hiking function",
-            "snap_max_m": SNAP_MAX_M, "service_bands_km": list(SERVICE_BANDS_KM),
-            "osm_available": False}
-    (OUT / "method.json").write_text(json.dumps(meta, indent=1))
+        meta = {"crs_analysis": UTM, "crs_output": WGS84, "dem": dem.name,
+                "track_only_stops": sorted(track_only),
+                "walking_model": "Tobler hiking function",
+                "snap_max_m": SNAP_MAX_M,
+                "service_bands_km": list(SERVICE_BANDS_KM),
+                "osm_available": False}
+        (OUT / "method.json").write_text(json.dumps(meta, indent=1))
     return 0
 
 

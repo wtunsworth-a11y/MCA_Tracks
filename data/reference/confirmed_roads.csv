@@ -1,0 +1,10 @@
+# Track features confirmed passable by vehicle by someone who has driven them.
+# These override the measured classification, which had no timestamps for either
+# and fell back to the 1973 sheets. Listed individually rather than by rule, so
+# the promotion is auditable and does not silently widen.
+#
+# The two below, with the supplied Siribu alignment, form the 3.36 km route from
+# the Ugunomu junction on the main road to Siribu village.
+track_name,reason
+"Feeder road to Siribu Village (seg 59)","Ugunomu to Siribu is passable by car; driven by the project lead, Sep 2026"
+"End of Siribu Village (seg 3)","Ugunomu to Siribu is passable by car; driven by the project lead, Sep 2026"

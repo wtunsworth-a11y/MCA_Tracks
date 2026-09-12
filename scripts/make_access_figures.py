@@ -65,12 +65,20 @@ def hillshade(dem_arr, az=315.0, alt=45.0, cell=30.0, z=2.0):
 def load():
     tracks = gpd.read_file(PROCESSED / "tracks.gpkg", layer="tracks").to_crs(UTM)
     roads = tracks[tracks["mode"] == "Motor road"]
+    confirmed = ROOT / "data" / "reference" / "confirmed_roads.csv"
+    if confirmed.exists():
+        cf = pd.read_csv(confirmed, comment="#")
+        hit = tracks["name"].isin(cf["track_name"])
+        roads = gpd.GeoDataFrame(pd.concat([roads, tracks[hit]], ignore_index=True),
+                                 geometry="geometry", crs=UTM)
     supplied = ROOT / "data" / "reference" / "supplied_roads.geojson"
     if supplied.exists():
         extra = gpd.read_file(supplied).to_crs(UTM)
         roads = gpd.GeoDataFrame(pd.concat([roads, extra], ignore_index=True),
                                  geometry="geometry", crs=UTM)
     foot = tracks[tracks["mode"] == "Foot track"]
+    if confirmed.exists():
+        foot = foot[~foot["name"].isin(cf["track_name"])]
     boundary = gpd.read_file(PROCESSED / "mca_boundary.gpkg", layer="boundary").to_crs(UTM)
     acc = pd.read_csv(OUT / "mca_village_access.csv")
     acc["zone"] = acc["zone"].astype(str)
@@ -189,6 +197,27 @@ def clamp_into_axes(ax, texts, frac=0.012):
             t.set_position((x + dx, y + dy))
 
 
+def marker_boxes(ax, xs, ys, sizes, pad_pt=1.5):
+    """Display-space boxes around point markers, for adjustText to avoid.
+
+    adjustText works in display coordinates when it is handed Text artists or
+    Bbox objects, but converts a PathCollection to data coordinates instead -
+    mixing the two produced non-finite values and a cKDTree error. So the
+    markers are turned into display-space Bboxes here rather than passed in as
+    collections.
+    """
+    from matplotlib.transforms import Bbox
+    px_per_pt = ax.figure.dpi / 72.0
+    boxes = []
+    for x, y, s in zip(np.asarray(xs), np.asarray(ys), np.asarray(sizes)):
+        if not (np.isfinite(x) and np.isfinite(y)):
+            continue
+        dx, dy = ax.transData.transform((x, y))
+        r = (np.sqrt(float(s)) / 2.0 + pad_pt) * px_per_pt
+        boxes.append(Bbox([[dx - r, dy - r], [dx + r, dy + r]]))
+    return boxes
+
+
 def village_sizes(hh):
     return 14 + np.sqrt(np.clip(hh, 0, None)) * 7.0
 
@@ -233,9 +262,10 @@ def figure_a(roads, foot, boundary, vg, stops):
     # placed by repulsion rather than at a fixed offset, which stacked them.
     # Afore is placed by hand in the open ground west of Toma, with a leader back
     # to the stop. Left to the repulsion it was pushed off the map entirely.
-    # West of Toma, and dropped south of Itokama's own label, which sits at the
-    # same latitude and was being overlapped.
-    afore_at = gpd.GeoSeries([Point(148.3585, -9.2205)], crs=WGS84).to_crs(UTM).iloc[0]
+    # West of Toma (148.4005 E), and dropped far enough south of Itokama's own
+    # label that the two boxes no longer touch - at -9.2205 the "Saturday" box
+    # clipped the descender of "Monday".
+    afore_at = gpd.GeoSeries([Point(148.3630, -9.2375)], crs=WGS84).to_crs(UTM).iloc[0]
 
     texts = []
     afore_ann = None
@@ -262,11 +292,27 @@ def figure_a(roads, foot, boundary, vg, stops):
                                        ec="none")))
     from adjustText import adjust_text
     # Keep them inside the frame and near their own point: left unconstrained,
-    # repulsion threw Afore and Gewoya clean off the map.
+    # repulsion threw Afore and Gewoya clean off the map. The village and stop
+    # markers go in as static objects too, so a label box does not come to rest
+    # on top of a dot it is not naming.
+    static = (marker_boxes(ax, served.geometry.x, served.geometry.y,
+                           village_sizes(served["households"]))
+              + marker_boxes(ax, roadless.geometry.x, roadless.geometry.y,
+                             village_sizes(roadless["households"]))
+              + marker_boxes(ax, road_stop.geometry.x, road_stop.geometry.y,
+                             np.full(len(road_stop), 118.0))
+              + marker_boxes(ax, track_stop.geometry.x, track_stop.geometry.y,
+                             np.full(len(track_stop), 132.0)))
+    if afore_ann is not None:
+        # Padded: the hand-placed box needs a clear margin, or Itokama's label
+        # comes to rest with its descenders inside it.
+        static.append(afore_ann.get_window_extent(
+            ax.figure.canvas.get_renderer()).expanded(1.18, 1.45))
     adjust_text(texts, ax=ax, expand=(1.12, 1.22), max_move=26,
                 ensure_inside_axes=True, expand_axes=False,
-                objects=[afore_ann] if afore_ann is not None else None,
+                objects=static,
                 force_text=(0.3, 0.45), force_pull=(0.35, 0.35),
+                force_static=(0.22, 0.30),
                 arrowprops=dict(arrowstyle="-", color="#9A9A9A", lw=0.6))
     clamp_into_axes(ax, texts)
 

@@ -6,7 +6,7 @@
 { "type": "Feature", "properties": { "day": "Monday", "stop": "Itokama", "zones": "1", "snap_m": 17.7, "access": "road", "upgradeable": "" }, "geometry": { "type": "Point", "coordinates": [ 148.2657, -9.2003 ] } },
 { "type": "Feature", "properties": { "day": "Tuesday", "stop": "Umbuara", "zones": "2", "snap_m": 39.9, "access": "road", "upgradeable": "" }, "geometry": { "type": "Point", "coordinates": [ 148.2731, -9.122 ] } },
 { "type": "Feature", "properties": { "day": "Wednesday", "stop": "Yoivi", "zones": "8", "snap_m": 27.5, "access": "track", "upgradeable": "yes" }, "geometry": { "type": "Point", "coordinates": [ 148.44, -9.13 ] } },
-{ "type": "Feature", "properties": { "day": "Thursday", "stop": "Siribu", "zones": "3 and 5", "snap_m": 1475.6, "access": "track", "upgradeable": "yes" }, "geometry": { "type": "Point", "coordinates": [ 148.32118, -9.091052 ] } },
+{ "type": "Feature", "properties": { "day": "Thursday", "stop": "Siribu", "zones": "3 and 5", "snap_m": 12.6, "access": "road", "upgradeable": "nan" }, "geometry": { "type": "Point", "coordinates": [ 148.32118, -9.091052 ] } },
 { "type": "Feature", "properties": { "day": "Friday", "stop": "Kaura", "zones": "6", "snap_m": 1395.8, "access": "road", "upgradeable": "" }, "geometry": { "type": "Point", "coordinates": [ 148.3775, -9.0632 ] } },
 { "type": "Feature", "properties": { "day": "Saturday", "stop": "Afore", "zones": "7a and 7b", "snap_m": 433.2, "access": "road", "upgradeable": "" }, "geometry": { "type": "Point", "coordinates": [ 148.3918, -9.143 ] } }
 ]
