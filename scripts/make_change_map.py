@@ -48,7 +48,10 @@ MOTOR = "#eb6834"
 FOOT = "#2a78d6"
 GARDEN = "#1baf7a"
 
-MOTOR_TYPES_OLD = {"Road", "Vehicle track"}
+# The 1973 panel shows the vehicle-track class only, as asked. The sheet's
+# separate "Road" class is held out rather than folded in - it is 32 km and can
+# be switched back on here if the motorised network as a whole is wanted.
+MOTOR_TYPES_OLD = {"Vehicle track"}
 MOTOR_TYPES_NEW = {"Road"}
 
 
@@ -84,7 +87,7 @@ def main():
     ylim = (miny - pad, maxy + pad)
 
     old_motor = old[old["type"].isin(MOTOR_TYPES_OLD)]
-    old_foot = old[old["type"] == "Foot track"]
+    old_foot = old.iloc[0:0]          # foot tracks held out of the 1973 panel
     new_motor = new[new["type"].isin(MOTOR_TYPES_NEW)]
     new_foot = new[new["type"] == "Village-to-village track"]
     new_garden = new[new["type"] == "Garden / survey track"]
@@ -94,12 +97,12 @@ def main():
         ax.set_facecolor(SURFACE)
 
     draw(axes[0], boundary,
-         [(old_foot, FOOT, 0.7), (old_motor, MOTOR, 1.7)],
-         "1973",
-         "T683 topographic survey · every track the surveyors mapped")
+         [(old_motor, MOTOR, 2.0)],
+         "1973 · vehicle tracks",
+         "T683 topographic survey · vehicle-track class only")
     draw(axes[1], boundary,
          [(new_garden, GARDEN, 1.2), (new_foot, FOOT, 1.5), (new_motor, MOTOR, 2.4)],
-         "2025–26",
+         "2025–26 · everything recorded",
          "GPS recordings · only journeys somebody happened to record")
 
     for ax in axes:
@@ -108,7 +111,7 @@ def main():
         ax.set_aspect("equal")
 
     handles = [
-        Line2D([], [], color=MOTOR, lw=2.6, label="Road / vehicle track"),
+        Line2D([], [], color=MOTOR, lw=2.6, label="Vehicle track (1973) · road (now)"),
         Line2D([], [], color=FOOT, lw=2.0, label="Foot / village-to-village track"),
         Line2D([], [], color=GARDEN, lw=1.8, label="Garden / survey track (2025–26 only)"),
         Line2D([], [], color=BOUNDARY_EDGE, lw=1.3, ls=(0, (6, 3)),
@@ -117,7 +120,7 @@ def main():
     fig.legend(handles=handles, loc="lower center", ncol=4, frameon=False,
                fontsize=9, bbox_to_anchor=(0.5, 0.045))
 
-    fig.suptitle("Managalas tracks: the 1973 survey and what has been recorded since",
+    fig.suptitle("Managalas: 1973 vehicle tracks against the network recorded since",
                  fontsize=15, color=INK, x=0.5, y=0.965, weight="bold")
     fig.text(0.5, 0.932,
              "Sheets Sibium, Popondetta and Musa · aerial photography 1973 · "
@@ -133,8 +136,10 @@ def main():
     fig.savefig(out, dpi=190, facecolor=SURFACE, bbox_inches="tight")
     print(f"wrote {out}")
 
-    print(f"\n1973  motorised {old_motor['length_km'].sum():7.0f} km  "
-          f"foot {old_foot['length_km'].sum():7.0f} km")
+    held = old[old["type"] == "Road"]["length_km"].sum()
+    print(f"\n1973  vehicle track {old_motor['length_km'].sum():6.0f} km   "
+          f"(held out: Road {held:.0f} km, "
+          f"Foot track {old[old['type']=='Foot track']['length_km'].sum():.0f} km)")
     print(f"now   motorised {new_motor['length_km'].sum():7.0f} km  "
           f"foot {new_foot['length_km'].sum():7.0f} km  "
           f"garden {new_garden['length_km'].sum():6.0f} km")
