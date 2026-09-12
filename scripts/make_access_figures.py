@@ -65,6 +65,11 @@ def hillshade(dem_arr, az=315.0, alt=45.0, cell=30.0, z=2.0):
 def load():
     tracks = gpd.read_file(PROCESSED / "tracks.gpkg", layer="tracks").to_crs(UTM)
     roads = tracks[tracks["mode"] == "Motor road"]
+    supplied = ROOT / "data" / "reference" / "supplied_roads.geojson"
+    if supplied.exists():
+        extra = gpd.read_file(supplied).to_crs(UTM)
+        roads = gpd.GeoDataFrame(pd.concat([roads, extra], ignore_index=True),
+                                 geometry="geometry", crs=UTM)
     foot = tracks[tracks["mode"] == "Foot track"]
     boundary = gpd.read_file(PROCESSED / "mca_boundary.gpkg", layer="boundary").to_crs(UTM)
     acc = pd.read_csv(OUT / "mca_village_access.csv")

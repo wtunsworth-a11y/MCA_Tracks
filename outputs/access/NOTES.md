@@ -99,6 +99,38 @@ They are removed from the road routing entirely — a stop a vehicle cannot reac
 cannot serve anyone by road. They remain market stops: people still walk in, and
 the walking figures still use them.
 
+### The supplied alignments, and what upgrading them would buy
+
+Two alignments were supplied directly and are held in
+`data/reference/supplied_roads.geojson`, separate from anything the speed test
+established, so their provenance travels with them:
+
+| | Length | Runs from | To |
+|---|---|---|---|
+| Siribu road | 1.24 km | the Ugunomu junction, which is on the main road | south toward Siribu |
+| Yoivi road | 1.20 km | the junction near Verayame | south-east toward the village |
+
+The Siribu alignment does continue to the village, contrary to a first reading
+here that it stopped 1.8 km short. It ends 394 m from *End of Siribu Village
+(seg 3)*, a 1.99 km segment that reaches within **13 m** of surveyed Siribu at a
+10.8 % gradient — well inside what a road here does. That segment had been
+classified a foot track on the 1973 fallback alone.
+
+Because status and alignment are different questions, both are reported:
+
+| Households | As now | If both upgraded | Gain |
+|---|---|---|---|
+| within 2 km of a stop by road | 1,357 (35.4 %) | **1,730 (45.1 %)** | +373 |
+| within 5 km | 2,079 (54.2 %) | **2,442 (63.6 %)** | +363 |
+| within 10 km | 2,459 (64.1 %) | **2,650 (69.1 %)** | +191 |
+
+Reachability at all is unchanged at 2,650 households: the villages concerned can
+already get to *some* road-served stop, just a much farther one. What upgrading
+buys is proximity, not access — about **370 households brought inside 2 km**.
+
+`--upgraded` on `build_access.py` writes the second scenario to
+`mca_village_access_upgraded.csv` and `mca_service_areas_upgraded.geojson`.
+
 ### Independent check on the network
 
 The brief states which villages the road must and must not reach. Nothing about

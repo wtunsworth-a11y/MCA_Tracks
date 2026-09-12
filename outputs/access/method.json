@@ -2,10 +2,7 @@
  "crs_analysis": "EPSG:32755",
  "crs_output": "EPSG:4326",
  "dem": "Copernicus DEM GLO-30 (30 m)",
- "track_only_stops": [
-  "Siribu",
-  "Yoivi"
- ],
+ "track_only_stops": [],
  "walking_model": "Tobler hiking function",
  "snap_max_m": 2000,
  "service_bands_km": [

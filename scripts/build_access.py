@@ -30,6 +30,7 @@ mca_service_areas.geojson
 """
 
 import json
+import sys
 import warnings
 from pathlib import Path
 
@@ -203,6 +204,18 @@ def main():
     tracks = gpd.read_file(PROCESSED / "tracks.gpkg", layer="tracks")
     roads = tracks[tracks["mode"] == "Motor road"].copy()
     foot = tracks[tracks["mode"] == "Foot track"].copy()
+
+    # Road geometry supplied directly rather than derived from a recording. It
+    # is kept in its own file and merged here so it never gets confused with
+    # something the speed test established, and so its provenance travels with
+    # it into the output.
+    supplied = ROOT / "data" / "reference" / "supplied_roads.geojson"
+    if supplied.exists():
+        extra = gpd.read_file(supplied)
+        print(f"  + {len(extra)} supplied road feature(s), "
+              f"{extra['length_km'].sum():.2f} km")
+        roads = gpd.GeoDataFrame(pd.concat([roads, extra], ignore_index=True),
+                                 geometry="geometry", crs=roads.crs)
     print(f"{len(roads)} road features ({roads['length_km'].sum():.0f} km), "
           f"{len(foot)} foot ({foot['length_km'].sum():.0f} km)")
 
@@ -252,6 +265,12 @@ def main():
     overrides = load_overrides()
     track_only = {k for k, v in overrides.items()
                   if str(v.get("access", "")).strip().lower() == "track"}
+    # --upgraded models the world in which the upgradeable stops have been
+    # upgraded, so the cost of not doing it can be stated as a number.
+    upgraded = "--upgraded" in sys.argv
+    if upgraded:
+        print("\n[UPGRADE SCENARIO] treating every upgradeable stop as road-served")
+        track_only = set()
     if track_only:
         print("\nfield-knowledge overrides (track access only, not road):")
         for k in sorted(track_only):
@@ -353,13 +372,19 @@ def main():
         })
 
     acc = pd.DataFrame(rows)
-    acc.to_csv(OUT / "mca_village_access.csv", index=False)
-    print(f"\nwrote {OUT/'mca_village_access.csv'}")
+    name = "mca_village_access_upgraded.csv" if upgraded else "mca_village_access.csv"
+    acc.to_csv(OUT / name, index=False)
+    print(f"\nwrote {OUT/name}")
 
     served = acc[acc.road_reachable == "yes"]
+    tot = acc["households"].sum()
     print(f"{len(served)} of {len(acc)} villages reachable by road; "
-          f"{served['households'].sum()} of {acc['households'].sum()} households "
-          f"({served['households'].sum()/acc['households'].sum()*100:.1f}%)")
+          f"{served['households'].sum()} of {tot} households "
+          f"({served['households'].sum()/tot*100:.1f}%)")
+    for band in (2, 5, 10):
+        m = served[pd.to_numeric(served["road_km"], errors="coerce") <= band]
+        print(f"    within {band:2d} km by road: {m['households'].sum():5d} "
+              f"({m['households'].sum()/tot*100:.1f}%)")
 
     # ---- service areas -----------------------------------------------------
     polys = []
@@ -384,10 +409,12 @@ def main():
             polys.append({"day": d, "stop": s, "zones": z, "band_km": band,
                           "geometry": poly})
     sa = gpd.GeoDataFrame(polys, crs=UTM).to_crs(WGS84)
-    sa.to_file(OUT / "mca_service_areas.geojson", driver="GeoJSON")
+    sa.to_file(OUT / ("mca_service_areas_upgraded.geojson" if upgraded
+                      else "mca_service_areas.geojson"), driver="GeoJSON")
     print(f"wrote {OUT/'mca_service_areas.geojson'}  ({len(sa)} polygons)")
 
-    stops.to_file(OUT / "mca_market_stops.geojson", driver="GeoJSON")
+    if not upgraded:
+        stops.to_file(OUT / "mca_market_stops.geojson", driver="GeoJSON")
     meta = {"crs_analysis": UTM, "crs_output": WGS84, "dem": dem.name,
             "track_only_stops": sorted(track_only),
             "walking_model": "Tobler hiking function",
