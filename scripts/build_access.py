@@ -75,6 +75,24 @@ MARKET_STOPS = [
 ]
 
 
+def load_overrides():
+    """Field knowledge that outranks the measurement.
+
+    The measured rules can say a vehicle was recorded passing close to a stop.
+    They cannot say whether that stop actually has road access: Yoivi's recorded
+    proximity is to a coordinate the brief rounded to two decimal places, about
+    1.1 km either way, and Siribu's nearest road is 1.5 km off. Somebody who
+    knows the ground says both have track access only, upgradeable to road. That
+    is recorded here and applied, rather than reached by quietly moving a
+    threshold until the numbers agreed.
+    """
+    path = ROOT / "data" / "access_overrides.csv"
+    if not path.exists():
+        return {}
+    df = pd.read_csv(path, comment="#")
+    return {r["stop"]: r for _, r in df.iterrows()}
+
+
 def reconcile_stops(village_df):
     """Prefer the surveyed position of a stop over a rounded one in the brief."""
     out, notes = [], []
@@ -231,8 +249,26 @@ def main():
     for (_, r), dd in zip(stops.iterrows(), stop_snap):
         print(f"  {r['day']:<10} {r['stop']:<9} {dd:7.0f} m")
 
+    overrides = load_overrides()
+    track_only = {k for k, v in overrides.items()
+                  if str(v.get("access", "")).strip().lower() == "track"}
+    if track_only:
+        print("\nfield-knowledge overrides (track access only, not road):")
+        for k in sorted(track_only):
+            print(f"  ! {k}: {overrides[k]['note']}")
+    stops["access"] = ["track" if r["stop"] in track_only else "road"
+                       for _, r in stops.iterrows()]
+    stops["upgradeable"] = [str(overrides[r["stop"]]["upgradeable"])
+                            if r["stop"] in overrides else ""
+                            for _, r in stops.iterrows()]
+
+    # A stop a vehicle cannot reach cannot serve anybody by road, so it is taken
+    # out of the road routing entirely. It stays a market: people still walk in,
+    # and the walking figures below still use it.
     dist_from_stop = {}
     for (d, s, *_), k in zip(stops_def, stop_nodes):
+        if s in track_only:
+            continue
         dist_from_stop[s] = nx.single_source_dijkstra_path_length(G, k, weight="weight")
 
     # ---- villages ----------------------------------------------------------
@@ -312,6 +348,7 @@ def main():
             "road_reachable": "yes" if best_stop else "no",
             "offroad_to_road_m": round(off),
             "walk_basis": wsrc,
+            "stop_access": ("track only" if nearest_name in track_only else "road"),
             "position_spread_km": round(vr["spread_km"], 2),
         })
 
@@ -327,6 +364,8 @@ def main():
     # ---- service areas -----------------------------------------------------
     polys = []
     for (d, s, lat, lon, z), k in zip(stops_def, stop_nodes):
+        if s not in dist_from_stop:
+            continue
         dmap = dist_from_stop[s]
         for band in SERVICE_BANDS_KM:
             segs = []
@@ -348,7 +387,9 @@ def main():
     sa.to_file(OUT / "mca_service_areas.geojson", driver="GeoJSON")
     print(f"wrote {OUT/'mca_service_areas.geojson'}  ({len(sa)} polygons)")
 
+    stops.to_file(OUT / "mca_market_stops.geojson", driver="GeoJSON")
     meta = {"crs_analysis": UTM, "crs_output": WGS84, "dem": dem.name,
+            "track_only_stops": sorted(track_only),
             "walking_model": "Tobler hiking function",
             "snap_max_m": SNAP_MAX_M, "service_bands_km": list(SERVICE_BANDS_KM),
             "osm_available": False}

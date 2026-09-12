@@ -207,14 +207,46 @@ def figure_a(roads, foot, boundary, vg, stops):
                edgecolor="#7B2018", linewidths=0.5, zorder=8)
 
     su = stops.to_crs(UTM)
-    ax.scatter(su.geometry.x, su.geometry.y, s=118, marker="o",
+    road_stop = su[su["access"] != "track"]
+    track_stop = su[su["access"] == "track"]
+    ax.scatter(road_stop.geometry.x, road_stop.geometry.y, s=118, marker="o",
                facecolor=CIRCUIT, edgecolor="#FFFFFF", linewidths=1.6, zorder=10)
+    # A stop a vehicle cannot reach is not the same thing as one it can, so it
+    # is not drawn as though it were: hollow, and named as upgradeable.
+    ax.scatter(track_stop.geometry.x, track_stop.geometry.y, s=132, marker="o",
+               facecolor="#FFFFFF", edgecolor=CIRCUIT, linewidths=2.2, zorder=10)
+
+    # The frame has to be fixed BEFORE any label is placed. Setting it afterwards
+    # meant the repulsion and the clamp both worked against matplotlib's
+    # autoscaled limits, which are wider than the final frame - which is how
+    # "Afore Saturday" ended up out in the right-hand margin.
+    ax.set_xlim(extent[0], extent[1])
+    ax.set_ylim(extent[2], extent[3])
+    ax.set_aspect("equal")
 
     # Six stops and nine roadless villages sit close together, so the labels are
     # placed by repulsion rather than at a fixed offset, which stacked them.
+    # Afore is placed by hand in the open ground west of Toma, with a leader back
+    # to the stop. Left to the repulsion it was pushed off the map entirely.
+    # West of Toma, and dropped south of Itokama's own label, which sits at the
+    # same latitude and was being overlapped.
+    afore_at = gpd.GeoSeries([Point(148.3585, -9.2205)], crs=WGS84).to_crs(UTM).iloc[0]
+
     texts = []
+    afore_ann = None
     for (_, r), p in zip(stops.iterrows(), su.geometry):
-        texts.append(ax.text(p.x, p.y, f"{r['stop']}\n{r['day']}", fontsize=8.2,
+        suffix = "\ntrack only" if r["access"] == "track" else ""
+        if r["stop"] == "Afore":
+            afore_ann = ax.annotate(f"{r['stop']}\n{r['day']}", xy=(p.x, p.y),
+                        xytext=(afore_at.x, afore_at.y), textcoords="data",
+                        fontsize=8.2, color=CIRCUIT, fontweight="bold", zorder=11,
+                        ha="center", va="center",
+                        arrowprops=dict(arrowstyle="-", color="#9A9A9A", lw=0.6),
+                        bbox=dict(boxstyle="round,pad=0.2", fc="#FFFFFFE0",
+                                  ec="none"))
+            continue
+        texts.append(ax.text(p.x, p.y, f"{r['stop']}\n{r['day']}{suffix}",
+                             fontsize=8.2,
                              color=CIRCUIT, fontweight="bold", zorder=11,
                              bbox=dict(boxstyle="round,pad=0.2", fc="#FFFFFFE0",
                                        ec="none")))
@@ -228,13 +260,11 @@ def figure_a(roads, foot, boundary, vg, stops):
     # repulsion threw Afore and Gewoya clean off the map.
     adjust_text(texts, ax=ax, expand=(1.12, 1.22), max_move=26,
                 ensure_inside_axes=True, expand_axes=False,
+                objects=[afore_ann] if afore_ann is not None else None,
                 force_text=(0.3, 0.45), force_pull=(0.35, 0.35),
                 arrowprops=dict(arrowstyle="-", color="#9A9A9A", lw=0.6))
     clamp_into_axes(ax, texts)
 
-    ax.set_xlim(extent[0], extent[1])
-    ax.set_ylim(extent[2], extent[3])
-    ax.set_aspect("equal")
     ax.set_axis_off()
     scalebar(ax); north_arrow(ax); inset(fig, boundary)
 
@@ -247,7 +277,9 @@ def figure_a(roads, foot, boundary, vg, stops):
         Line2D([], [], color=CIRCUIT, lw=2.0, label="Motorable road (GPS, driven)"),
         Line2D([], [], color="#7E7C76", lw=1.0, ls=(0, (3, 2)), label="Foot track (GPS, walked)"),
         Line2D([], [], marker="o", ls="", ms=8, mfc=CIRCUIT, mec="#FFFFFF",
-               label="Market stop"),
+               label="Market stop, road access"),
+        Line2D([], [], marker="o", ls="", ms=8, mfc="#FFFFFF", mec=CIRCUIT,
+               mew=2.0, label="Market stop, track only — upgradeable"),
         Line2D([], [], marker="o", ls="", ms=7, mfc=OTHER, mec="#8C8C8C",
                label="Village (sized by households)"),
         Line2D([], [], marker="o", ls="", ms=7, mfc=NOROAD, mec="#7B2018",
@@ -295,10 +327,15 @@ def figure_b(roads, foot, boundary, vg, sa, stops, acc):
                edgecolor="#7B2018", linewidths=0.5, zorder=8)
 
     su = stops.to_crs(UTM)
-    ax.scatter(su.geometry.x, su.geometry.y, s=110, facecolor=CIRCUIT,
+    rs = su[su["access"] != "track"]
+    ts = su[su["access"] == "track"]
+    ax.scatter(rs.geometry.x, rs.geometry.y, s=110, facecolor=CIRCUIT,
                edgecolor="#FFFFFF", linewidths=1.6, zorder=10)
+    ax.scatter(ts.geometry.x, ts.geometry.y, s=124, facecolor="#FFFFFF",
+               edgecolor=CIRCUIT, linewidths=2.2, zorder=10)
     for (_, r), p in zip(stops.iterrows(), su.geometry):
-        ax.annotate(r["stop"], (p.x, p.y), xytext=(8, 6), textcoords="offset points",
+        lab = r["stop"] + (" (track only)" if r["access"] == "track" else "")
+        ax.annotate(lab, (p.x, p.y), xytext=(8, 6), textcoords="offset points",
                     fontsize=8, color=CIRCUIT, fontweight="bold", zorder=11,
                     bbox=dict(boxstyle="round,pad=0.2", fc="#FFFFFFDD", ec="none"))
 
@@ -353,6 +390,8 @@ def figure_b(roads, foot, boundary, vg, sa, stops, acc):
                label="Village with no road access"),
         Line2D([], [], color=NOROAD, lw=1.1, ls=(0, (5, 3)),
                label="Walk-in route (footpath)"),
+        Line2D([], [], marker="o", ls="", ms=8, mfc="#FFFFFF", mec=CIRCUIT,
+               mew=2.0, label="Stop with track access only"),
     ]
     ax.legend(handles=handles, loc="lower right", frameon=False, fontsize=8,
               labelspacing=0.55)
@@ -373,9 +412,7 @@ def main():
     acc["zone"] = acc["zone"].astype(str)
     vdf = pd.read_csv(ROOT / "data" / "MCA_Village_Locations.csv")
     stops_def, _ = reconcile_stops(vdf)
-    stops = gpd.GeoDataFrame(
-        [{"day": d, "stop": s, "geometry": Point(lon, lat)}
-         for d, s, lat, lon, z in stops_def], crs=WGS84)
+    stops = gpd.read_file(OUT / "mca_market_stops.geojson")
 
     figure_a(roads, foot, boundary, vg, stops)
     figure_b(roads, foot, boundary, vg, sa, stops, acc)

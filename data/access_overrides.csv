@@ -1,0 +1,13 @@
+# Field knowledge that overrides the automated classification.
+# The measured rules cannot know what a road is *for*: a graded track that a
+# vehicle has been driven along is not the same as a road in use. Where someone
+# who knows the ground says otherwise, the ground wins, and it is written here
+# rather than by quietly bending a threshold until the answer comes out right.
+#
+# stop            the market stop or village the statement is about
+# access          road | track  — what it actually has now
+# upgradeable     yes | no      — whether the existing track could carry a road
+# note            the statement as given
+stop,access,upgradeable,note
+Yoivi,track,yes,"Track access only at present; could be upgraded to road access (field knowledge, Sep 2026)"
+Siribu,track,yes,"Track access only at present; could be upgraded to road access (field knowledge, Sep 2026)"

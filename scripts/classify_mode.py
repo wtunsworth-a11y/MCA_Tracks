@@ -66,6 +66,16 @@ DRIVE_MIN_KMH = 11.0
 # was 15.8 per cent. Allow a little headroom and treat anything beyond as not
 # motorable. One-sided on purpose: gentle gradient proves nothing on its own.
 MAX_ROAD_GRADIENT_PCT = 18.0
+# How much of a track must lie along a proven road before it is itself called
+# one. Set from the data, which is sharply bimodal: 23 of the 27 promotions sit
+# at 98-100 per cent - a second recording of the same road - and 4 sit at 68 to
+# 85 per cent, which is a foot track running alongside a road for part of its
+# way. At 0.60 the looser four were promoted, and one of them, named "Siribu
+# Bush Track", is what made Siribu look road-served when it is not.
+OVERLAP_MIN = 0.95
+# Likewise for the 1973 fallback. Exactly one feature was promoted by it, at 52
+# per cent, and that too was at Siribu.
+SURVEY_1973_MIN = 0.70
 FAST_POINT_KMH = 12.0     # a moving point above this is vehicle-like
 MIN_POINTS = 20
 MAX_GAP_S = 120
@@ -298,7 +308,7 @@ def main():
             g = tu.geometry.iloc[i]
             pts = [g.interpolate(x, normalized=True) for x in np.linspace(0, 1, 40)]
             share = float(np.mean([p.distance(proven_union) < 150 for p in pts]))
-            if share >= 0.6:
+            if share >= OVERLAP_MIN:
                 tracks.loc[tracks.index[i], "mode"] = "Motor road"
                 tracks.loc[tracks.index[i], "mode_evidence"] = (
                     f"overlap: {share*100:.0f}% of its length runs along a track "
@@ -321,7 +331,7 @@ def main():
             near_foot = (df < 150).mean()
             g85 = tracks["grad_p85_pct"].iloc[i]
             too_steep = g85 == g85 and g85 > MAX_ROAD_GRADIENT_PCT
-            if near_motor >= 0.5 and near_motor > near_foot and not too_steep:
+            if near_motor >= SURVEY_1973_MIN and near_motor > near_foot and not too_steep:
                 tracks.loc[tracks.index[i], "mode"] = "Motor road"
                 tracks.loc[tracks.index[i], "mode_evidence"] = (
                     f"1973 survey: {near_motor*100:.0f}% of its length follows a "

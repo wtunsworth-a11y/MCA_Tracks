@@ -66,18 +66,49 @@ main road*. Classification is therefore by measurement, in this order:
 Every feature in `mca_roads.geojson` carries `mode_evidence` naming the rule that
 classified it, plus its measured speed and gradient where those exist.
 
-**Result: 488 km of motorable road, 390 km of foot track.**
+**Result: 472 km of motorable road, 405 km of foot track.**
+
+Two promotion thresholds were tightened after the first pass, because the
+distribution of the evidence showed they were too loose. The overlap shares that
+promoted a track to a road are sharply bimodal: 23 sit at 98–100 %, which is a
+second recording of the same road, and 4 sit at 68–85 %, which is a foot track
+running alongside a road for part of its way. One of the loose four is named
+*Siribu Bush Track*, and it was what made Siribu look road-served. The overlap
+bar is now 0.95. Exactly one feature was promoted by the 1973 rule, at 52 %, and
+that too was at Siribu; that bar is now 0.70.
 
 `surface` and `tracktype` are written as `unknown`. They are not recorded in the
 source data and were not going to be guessed.
+
+### Field knowledge overrides the measurement
+
+`data/access_overrides.csv` records statements from someone who knows the ground,
+and they outrank the automated rules.
+
+**Yoivi and Siribu have track access only at present, upgradeable to road.**
+
+The measurement could not have established this on its own, and it is worth being
+clear why. Siribu's nearest road is 1,476 m away once the loose promotions are
+removed — consistent with the override. Yoivi still measures 25 m from a road a
+vehicle was driven along at road speed, but that is 25 m from a *coordinate the
+brief rounded to two decimal places*, about ±1.1 km, so the proximity does not
+establish access either. Rather than move a threshold until the numbers agreed,
+both stops are marked track-only in the data and drawn hollow on both figures.
+
+They are removed from the road routing entirely — a stop a vehicle cannot reach
+cannot serve anyone by road. They remain market stops: people still walk in, and
+the walking figures still use them.
 
 ### Independent check on the network
 
 The brief states which villages the road must and must not reach. Nothing about
 zones was encoded in the method, and the network reproduces the split exactly:
 
-- **Must reach** — Itokama, Umbuara, Koruwo, Siribu, Tabuane, Kaura, Afore,
-  Manusi: all within 1.4 km of the network, most within 80 m.
+- **Must reach** — Itokama, Umbuara, Koruwo, Tabuane, Kaura, Afore, Manusi: all
+  within 1.4 km of the network, most within 80 m. Siribu is the exception and is
+  discussed above: the brief lists it as road-connected, the field correction
+  says track only, and the tightened classification puts its nearest road 1,476 m
+  away — the two agree against the brief.
 - **Must not reach** — Suari, Jaure, Aiari, Gewoya, Toma, Biriri, Kero, Kinando,
   Borohojo: all 7.9 to 16.8 km away.
 
@@ -98,7 +129,8 @@ with `road_km` blank. It is **not** given a straight-line figure, which would re
 as a road distance. The 2 km threshold is safe: the furthest road-served village
 is 1.4 km out and the nearest unserved one is 7.9 km.
 
-`mca_service_areas.geojson` holds 18 polygons — three bands × six stops. **Each is
+`mca_service_areas.geojson` holds 12 polygons — three bands × the **four** stops a
+vehicle can reach. Yoivi and Siribu have none, because they have no road access. **Each is
 a corridor 1 km wide centred on the road, not an area claim.** The width is a
 drawing decision so the bands can be read on a 55 km-wide map; at the 300 m first
 used they were invisible under the road line. Do not read them as "everywhere
@@ -124,10 +156,10 @@ A third figure, `fig_road_speed.png`, was added on request — see below.
 | Claim in the report | What the road network gives |
 |---|---|
 | 3,059 households, 87.7 %, served by the circuit | **2,650 of 3,837 households, 69.1 %**, are reachable by road at all |
-| — | within 2 km by road: **1,671 hh (43.6 %)** |
-| — | within 5 km: **2,221 hh (57.9 %)** |
-| — | within 10 km: **2,482 hh (64.7 %)** |
-| Siribu covers Zones 3 and 5; every village within 4.0 km | **Not supported.** By road the Zone 3 villages are 12.3–12.9 km from a stop, and their nearest stop is Kaura or Umbuara, not Siribu. Kiera is not road-reachable at all. |
+| — | within 2 km by road: **1,357 hh (35.4 %)** |
+| — | within 5 km: **2,079 hh (54.2 %)** |
+| — | within 10 km: **2,459 hh (64.1 %)** |
+| Siribu covers Zones 3 and 5; every village within 4.0 km | **Not supported, twice over.** Siribu has no road access at all (see above). Even ignoring that, the Zone 3 villages are 11.2–12.8 km from the nearest road-served stop, which is Kaura or Umbuara. Kiera is not road-reachable at all. Siribu village itself is 13.4 km by road from Kaura. |
 
 Road distance runs a **median 1.29× the straight line**, so straight-line figures
 are optimistic throughout — as the brief anticipated.
@@ -226,7 +258,7 @@ Afore* and is exactly that — so a stretch counts as driven only if the vehicle
 reached road speed within a two-minute window; otherwise a walked leg reads as
 3 km/h road.
 
-**Coverage is the dominant limitation: only 32 km of the 488 km network has enough
+**Coverage is the dominant limitation: only 33 km of the 472 km network has enough
 passes to measure**, from 5 driven recordings in 3 files. Chunks below 8
 observations are drawn grey and left unclassified. Most of the network has never
 been driven with a GPS running.
@@ -261,7 +293,8 @@ repeated passes over the same chunks in different seasons.
 
 | File | What it is |
 |---|---|
-| `mca_roads.geojson` | 488 km motorable road, with per-segment classification evidence |
+| `mca_roads.geojson` | 472 km motorable road, with per-segment classification evidence |
+| `mca_market_stops.geojson` | the six stops, with road or track access marked |
 | `mca_village_access.csv` | 46 villages: nearest stop, road km, straight km, walking hours, and the caveats per row |
 | `mca_service_areas.geojson` | 18 corridor polygons, 2/5/10 km road distance × 6 stops |
 | `fig_mca_map.png` | Figure A — the map |
@@ -272,3 +305,5 @@ repeated passes over the same chunks in different seasons.
 
 Scripts that produced them, in order:
 `classify_mode.py` → `build_access.py` → `make_access_figures.py` → `road_speed.py`
+
+Field-knowledge overrides live in `data/access_overrides.csv`.
