@@ -362,10 +362,24 @@ def main():
                           crs=WGS84)
     vu = vg.to_crs(UTM)
 
+    # Villages someone on the ground says are reachable on foot only. This
+    # outranks the snap test: proximity to a road line is not access to it, and
+    # Natanga measured 1.70 km off the network - inside the 2 km cut, but the
+    # 1.70 km is a walk.
+    foot_only = {}
+    fo_path = ROOT / "data" / "reference" / "footpath_only_villages.csv"
+    if fo_path.exists():
+        fo = pd.read_csv(fo_path, comment="#")
+        foot_only = dict(zip(fo["village"], fo["reason"]))
+        print("\nfield-knowledge overrides (footpath access only):")
+        for k in sorted(foot_only):
+            print(f"  ! {k}: {foot_only[k]}")
+
     rows = []
     for (_, vr), pu, pl in zip(vg.iterrows(), vu.geometry, vg.geometry):
         node, off = snap(G, pu)
-        reachable = off <= SNAP_MAX_M
+        on_foot_only = vr["vil_name"] in foot_only
+        reachable = (off <= SNAP_MAX_M) and not on_foot_only
 
         # road_km is distance ALONG THE ROAD, node to node. The walk from the
         # village to wherever it meets the road is reported separately as
@@ -431,6 +445,10 @@ def main():
             "straight_km": round(straight_km, 2),
             "walk_hours_est": round(hours, 2),
             "road_reachable": "yes" if best_stop else "no",
+            "road_access_basis": ("field knowledge: footpath only" if on_foot_only
+                                  else "measured: within 2 km of the network"
+                                  if best_stop else
+                                  "measured: beyond 2 km of the network"),
             "offroad_to_road_m": round(off),
             "walk_basis": wsrc,
             "stop_access": ("track only" if nearest_name in track_only else "road"),

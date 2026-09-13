@@ -1,0 +1,6 @@
+# Villages reachable on foot only, stated by someone who knows the ground.
+# Outranks the 2 km snap test in build_access.py: a village listed here is
+# road_reachable = no whatever its distance to the network measures.
+village,reason
+Kiera,"Footpath access only (field knowledge, Sep 2026)"
+Natanga,"Footpath access only (field knowledge, Sep 2026)"

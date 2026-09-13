@@ -118,6 +118,18 @@ The Ugunomu→Siribu route measures **3.36 km** end to end. This reverses the
 earlier position here that Siribu had no road access — that conclusion rested on
 the tightened automatic thresholds alone, and field knowledge outranks them.
 
+**Kiera and Natanga are reachable on foot only**, listed in
+`data/reference/footpath_only_villages.csv`. Both are Zone 3. Natanga is the
+case the measurement would have got wrong: it snapped 1,702 m from the network,
+inside the 2 km cut, so it counted as road-served — but that 1,702 m is a walk.
+Proximity to a road line is not access to it. Kiera measured 2,078 m and was
+already outside the cut; it is now excluded on the evidence rather than by an
+80 m margin.
+
+`road_access_basis` in `mca_village_access.csv` says which of the three applies
+to every village: `field knowledge: footpath only`, `measured: within 2 km of the
+network`, or `measured: beyond 2 km of the network`.
+
 ### The supplied alignments, and what upgrading them would buy
 
 Two further alignments were supplied directly and are held in
@@ -142,9 +154,9 @@ Only **Yoivi** is left as an upgrade scenario. What upgrading it would buy:
 |---|---|---|---|
 | within 2 km of a stop by road | 1,380 (36.0 %) | **1,671 (43.5 %)** | +291 |
 | within 5 km | 2,155 (56.2 %) | **2,274 (59.3 %)** | +119 |
-| within 10 km | 2,650 (69.1 %) | **2,650 (69.1 %)** | 0 |
+| within 10 km | 2,554 (66.6 %) | **2,554 (66.6 %)** | 0 |
 
-Reachability at all is unchanged at 2,650 households: the villages concerned can
+Reachability at all is unchanged at 2,554 households: the villages concerned can
 already get to *some* road-served stop, just a much farther one. What upgrading
 buys is proximity, not access — about **290 households brought inside 2 km**.
 
@@ -165,6 +177,9 @@ zones was encoded in the method, and the network reproduces the split exactly:
 - **Must not reach** — Suari, Jaure, Aiari, Gewoya, Toma, Biriri, Kero, Kinando,
   Borohojo: all 7.9 to 16.8 km away.
 
+Two villages the brief does not mention either way, Kiera and Natanga, are
+excluded on field knowledge rather than on this test — see above.
+
 No road is drawn into Zones 4, 9 or 10.
 
 ---
@@ -179,12 +194,10 @@ as 1.4 km from itself.
 
 A village further than 2 km from the network is reported as `road_reachable = no`
 with `road_km` blank. It is **not** given a straight-line figure, which would read
-as a road distance. The threshold used to sit in a wide empty gap; with the Siribu
-spur in the network it no longer does. The furthest road-served village is now
-Natanga at **1.70 km** and the nearest unserved one is Kiera at **2.08 km**, so
-Kiera falls the wrong side of the cut by 80 m. Kiera should be checked on the
-ground before these figures are published — it is the one village whose status
-turns on the threshold rather than on the evidence.
+as a road distance. With Kiera and Natanga taken out by field knowledge, the
+threshold again sits in a clear gap: the furthest road-served village is Arafuro
+at **1.52 km** and the nearest one the measurement excludes is Dareki at
+**3.19 km**. No village's status now turns on where the 2 km line is drawn.
 
 The road and walking graphs are built by noding the recordings and then bridging
 endpoint gaps under 450 m, because separate recordings of the same road stop and
@@ -206,10 +219,15 @@ within 500 m of the road is served".
 
 `fig_mca_map.png` and `fig_market_reach.png`, both 9×7 inches at 200 dpi, DejaVu
 Sans 9 pt, no title or figure number inside the image. Palette as specified:
-#1F4E79 circuit and stops, #C4C4C4 other villages, #B03A2E roadless zones.
+#1F4E79 circuit and stops, #C4C4C4 other villages, #B03A2E villages with no
+road access.
 
 **Zone boundaries are not drawn.** No polygon for them exists in the supplied
 data and the brief says to leave them out rather than approximate them.
+
+The villages drawn red on Figure A are those with **no road access as computed**,
+not a fixed list of zones. That distinction matters: Kiera and Natanga are Zone 3
+and red, while other Zone 3 villages are road-served.
 
 A third figure, `fig_road_speed.png`, was added on request — see below.
 
@@ -219,21 +237,24 @@ A third figure, `fig_road_speed.png`, was added on request — see below.
 
 | Claim in the report | What the road network gives |
 |---|---|
-| 3,059 households, 87.7 %, served by the circuit | **2,650 of 3,837 households, 69.1 %**, are reachable by road at all |
+| 3,059 households, 87.7 %, served by the circuit | **2,554 of 3,837 households, 66.6 %**, are reachable by road at all |
 | — | within 2 km by road: **1,380 hh (36.0 %)** |
 | — | within 5 km: **2,155 hh (56.2 %)** |
-| — | within 10 km: **2,650 hh (69.1 %)** |
-| Siribu covers Zones 3 and 5; every village within 4.0 km | **Half supported.** Siribu is road-served and is now the nearest stop for 9 villages and 755 households, including Zone 3 and Zone 5. But only Ugunomu (3.36 km) is inside 4.0 km of it: Natanga is 5.30, Dea 5.63, Jorua 6.85, Koruwo 9.58, and Kiera is not road-reachable at all. The coverage claim holds; the 4.0 km claim does not. |
+| — | within 10 km: **2,554 hh (66.6 %)** |
+| Siribu covers Zones 3 and 5; every village within 4.0 km | **Not supported as stated.** Siribu is road-served, and by road it serves 5 villages and 250 households — Siribu itself, Ugunomu (3.36 km), Dea (5.63), Jorua (6.85) and Koruwo (9.58). Only Ugunomu is inside 4.0 km. Kiera and Natanga, the two largest of the Zone 3 claim at 149 households between them, have footpath access only and are not served by road from anywhere. |
 
 Road distance runs a **median 1.11× the straight line**, so straight-line figures
 are optimistic throughout — as the brief anticipated. The ratio fell from 1.29×
 when the Siribu spur entered the network: the Zone 3 and 5 villages no longer
 have to route the long way round to Kaura or Umbuara.
 
-### Twelve villages, 1,187 households, are not reachable by road
+### Thirteen villages, 1,283 households, are not reachable by road
 
-Borohojo (271), Gewoya (188), Dareki (145), Aiari (109), Kero (89), Biriri (82),
-Toma (73), Jaure (59), Kiera (53), Kinando (49), Sigara (36), Suari (33).
+Borohojo (271), Gewoya (188), Dareki (145), Aiari (109), Natanga (96), Kero (89),
+Biriri (82), Toma (73), Jaure (59), Kiera (53), Kinando (49), Sigara (36),
+Suari (33).
+
+Kiera and Natanga are here on field knowledge; the other eleven on measurement.
 
 Two of these are worth separate attention because the brief asks:
 
@@ -370,7 +391,7 @@ repeated passes over the same chunks in different seasons.
 |---|---|
 | `mca_roads.geojson` | 478 km motorable road, with per-segment classification evidence |
 | `mca_market_stops.geojson` | the six stops, with road or track access marked |
-| `mca_village_access.csv` | 46 villages: nearest stop, road km, straight km, walking hours, and the caveats per row |
+| `mca_village_access.csv` | 46 villages: nearest stop, road km, straight km, walking hours, `road_access_basis`, and the caveats per row |
 | `mca_service_areas.geojson` | 15 corridor polygons, 2/5/10 km road distance × the 5 road-served stops |
 | `fig_mca_map.png` | Figure A — the map |
 | `fig_market_reach.png` | Figure B — market reach |
@@ -381,5 +402,6 @@ repeated passes over the same chunks in different seasons.
 Scripts that produced them, in order:
 `classify_mode.py` → `build_access.py` → `make_access_figures.py` → `road_speed.py`
 
-Field-knowledge overrides live in `data/access_overrides.csv` (stop access) and
-`data/reference/confirmed_roads.csv` (individual segments confirmed driveable).
+Field-knowledge overrides live in `data/access_overrides.csv` (stop access),
+`data/reference/confirmed_roads.csv` (individual segments confirmed driveable)
+and `data/reference/footpath_only_villages.csv` (villages reachable on foot only).

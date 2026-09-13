@@ -42,7 +42,6 @@ INK_SOFT = "#666666"
 LAND = "#F4F3F0"
 BOUNDARY_EDGE = "#9A9A9A"
 
-ROADLESS_ZONES = {"4", "9", "10"}
 
 mpl.rcParams.update({
     "font.family": "DejaVu Sans", "font.size": 9,
@@ -231,8 +230,10 @@ def figure_a(roads, foot, boundary, vg, stops):
     extent = (minx - padx, maxx + padx, miny - pady, maxy + pady)
     base(ax, boundary, roads, foot, extent)
 
-    roadless = vg[vg["zone"].isin(ROADLESS_ZONES)]
-    served = vg[~vg["zone"].isin(ROADLESS_ZONES)]
+    # Drawn from the measured/overridden result, not from a zone list: Kiera and
+    # Natanga are in Zone 3 and have no road access, which a zone rule misses.
+    roadless = vg[vg["road_reachable"] == "no"]
+    served = vg[vg["road_reachable"] != "no"]
     ax.scatter(served.geometry.x, served.geometry.y,
                s=village_sizes(served["households"]), color=OTHER,
                edgecolor="#8C8C8C", linewidths=0.5, zorder=7)
@@ -334,7 +335,7 @@ def figure_a(roads, foot, boundary, vg, stops):
         Line2D([], [], marker="o", ls="", ms=7, mfc=OTHER, mec="#8C8C8C",
                label="Village (sized by households)"),
         Line2D([], [], marker="o", ls="", ms=7, mfc=NOROAD, mec="#7B2018",
-               label="Zones 4, 9, 10 — no road access"),
+               label="Village with no road access"),
         Line2D([], [], color=BOUNDARY_EDGE, lw=1.1, ls=(0, (6, 3)),
                label="Conservation Area (WDPA)"),
     ]
