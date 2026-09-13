@@ -1,47 +1,47 @@
-village,zone,ward,households,lat,lon,alt,nearest_stop,road_km,straight_km,walk_hours_est,road_reachable,road_access_basis,offroad_to_road_m,walk_basis,stop_access,position_spread_km
-Aniafe,1,13,53,-9.203658,148.259985,862.9,Itokama,0.97,0.73,0.19,yes,measured: within 2 km of the network,3,path network,road,0.27
-Itokama,1,"13,14,7",294,-9.199884,148.26604,862.8,Itokama,0.02,0.06,0.01,yes,measured: within 2 km of the network,25,path network,road,2.28
-Kwae,1,13,119,-9.195015,148.26089,858.4,Itokama,1.02,0.79,0.32,yes,measured: within 2 km of the network,451,path network,road,16.51
-Madokoro,1,14,16,-9.215942,148.26605,863.0,Itokama,1.0,1.73,0.39,yes,measured: within 2 km of the network,1483,path network,road,0.21
-Naokanane,1,14,86,-9.210596,148.265735,863.2,Itokama,1.0,1.14,0.28,yes,measured: within 2 km of the network,965,path network,road,1.69
-Umuwate,1,14,3,-9.135433,148.40144,745.0,Afore,2.06,1.35,0.53,yes,measured: within 2 km of the network,186,path network,road,0.0
-Borohojo,10,10,271,-9.002209,148.243315,850.0,Siribu,,13.03,5.04,no,measured: beyond 2 km of the network,10401,path network,road,3.08
-Kero,10,10,89,-9.003253,148.23405,833.8,Siribu,,13.64,5.36,no,measured: beyond 2 km of the network,11031,path network,road,1.3
-Kinando,10,10,49,-9.001206,148.23517,838.3,Siribu,,13.72,5.29,no,measured: beyond 2 km of the network,11101,path network,road,0.6
-Arafuro,2,12,13,-9.108934,148.280765,863.3,Umbuara,0.14,1.67,0.95,yes,measured: within 2 km of the network,1522,path network,road,0.53
-Gajot,2,"12,13",89,-9.129558,148.27309,879.5,Umbuara,0.89,0.84,0.26,yes,measured: within 2 km of the network,168,path network,road,0.79
-Serefuna,2,"12,13",76,-9.15595,148.2731,844.0,Umbuara,4.16,3.75,0.95,yes,measured: within 2 km of the network,3,path network,road,5.21
-Umbuara,2,"12,2",63,-9.121465,148.27313,881.6,Umbuara,0.04,0.06,0.02,yes,measured: within 2 km of the network,2,path network,road,0.74
-Jorua,3,9,59,-9.087193,148.30454,852.6,Siribu,6.85,1.88,1.2,yes,measured: within 2 km of the network,60,path network,road,0.45
-Kiera,3,9,53,-9.09591,148.2882,875.5,Umbuara,,3.33,4.04,no,field knowledge: footpath only,2078,path network,road,0.63
-Koruwo,3,11,13,-9.109897,148.31215,792.2,Siribu,9.58,2.31,0.64,yes,measured: within 2 km of the network,58,path network,road,0.19
-Natanga,3,9,96,-9.070176,148.29111,943.1,Siribu,,4.03,1.93,no,field knowledge: footpath only,1702,path network,road,14.43
-Aiari,4,16,109,-9.349725,148.21722,647.4,Itokama,,17.36,5.51,no,measured: beyond 2 km of the network,16792,straight line (no connected path),road,0.25
-Jaure,4,"17,4",59,-9.275404,148.145235,917.1,Itokama,,15.62,5.37,no,measured: beyond 2 km of the network,14860,straight line (no connected path),road,33.11
-Suari,4,17,33,-9.275762,148.14468,906.6,Itokama,,15.7,5.44,no,measured: beyond 2 km of the network,14932,straight line (no connected path),road,37.94
-Dea,5,"5,7",102,-9.067194,148.32968,925.7,Siribu,5.63,2.8,2.55,yes,measured: within 2 km of the network,8,path network,road,20.05
-Siribu,5,"7,8",23,-9.091052,148.32118,798.3,Siribu,0.0,0.0,0.02,yes,measured: within 2 km of the network,13,path network,road,4.4
-Tabuane,5,7,106,-9.064706,148.340345,924.2,Kaura,5.2,4.09,1.36,yes,measured: within 2 km of the network,79,path network,road,10.97
-Ugunomu,5,7,53,-9.063105,148.317865,955.4,Siribu,3.36,3.11,2.0,yes,measured: within 2 km of the network,49,path network,road,1.25
-Kaura,6,4,333,-9.063345,148.37753,824.8,Kaura,0.0,0.02,0.01,yes,measured: within 2 km of the network,1386,path network,road,2.03
-Numba,6,5,145,-9.051074,148.365495,947.5,Kaura,4.69,1.88,0.4,yes,measured: within 2 km of the network,313,path network,road,7.15
-Sigara,6,5,36,-9.041073,148.44907,596.5,Kaura,,8.24,4.23,no,measured: beyond 2 km of the network,6884,path network,road,1.63
-Sila/Sakarina,6,6,40,-9.065843,148.36987,794.7,Kaura,0.42,0.89,0.38,yes,measured: within 2 km of the network,632,path network,road,1.64
-Dareki,7a,"2,3,6",145,-9.100225,148.43232,647.9,Yoivi,,3.4,1.61,no,measured: beyond 2 km of the network,3188,path network,road,5.62
-Kawowoki,7a,3,277,-9.101146,148.39157,824.6,Kaura,4.48,4.47,1.57,yes,measured: within 2 km of the network,340,path network,road,13.55
-Afore,7b,2,63,-9.142586,148.39151,843.6,Afore,0.05,0.06,0.02,yes,measured: within 2 km of the network,380,path network,road,0.43
-Afore Government Station,7b,2,7,-9.139825,148.38884,837.8,Afore,0.09,0.48,0.15,yes,measured: within 2 km of the network,40,path network,road,0.06
-Afore Settlement Scheme,7b,"2,3",49,-9.124137,148.40474,735.6,Afore,2.79,2.52,1.99,yes,measured: within 2 km of the network,718,path network,road,2.38
-Basabe,7b,"2,4",66,-9.137629,148.38572,824.1,Afore,0.66,0.89,0.22,yes,measured: within 2 km of the network,66,path network,road,1.52
-Karokora,7b,2,13,-9.145301,148.38843,840.8,Afore,0.05,0.45,0.31,yes,measured: within 2 km of the network,481,path network,road,0.72
-Niniuri,7b,2,20,-9.142183,148.391485,835.0,Afore,0.08,0.1,0.03,yes,measured: within 2 km of the network,349,path network,road,22.09
-Ogan,7b,"1,2",69,-9.132831,148.39731,789.0,Afore,1.48,1.28,0.49,yes,measured: within 2 km of the network,55,path network,road,2.03
-Semehara,7b,2,13,-9.133923,148.37348,755.0,Afore,1.38,2.25,0.65,yes,measured: within 2 km of the network,1034,path network,road,1.84
-Bua,8,1,40,-9.138091,148.434695,1053.7,Yoivi,0.51,1.07,0.36,yes,measured: within 2 km of the network,835,path network,road,1.93
-Kuheani,8,1,36,-9.13594,148.45639,839.3,Yoivi,1.93,1.92,0.64,yes,measured: within 2 km of the network,744,path network,road,0.22
-Manusi,8,"1,8",172,-9.130919,148.425785,846.1,Yoivi,1.62,1.57,0.42,yes,measured: within 2 km of the network,34,path network,road,3.91
-Marasi,8,1,10,-9.13073,148.42984,864.5,Yoivi,1.15,1.12,0.31,yes,measured: within 2 km of the network,5,path network,road,2.48
-Verayame,8,1,33,-9.129583,148.44648,886.4,Yoivi,0.77,0.71,0.22,yes,measured: within 2 km of the network,3,path network,road,0.37
-Biriri,9,15,82,-9.21213,148.43983,676.1,Yoivi,,9.08,4.37,no,measured: beyond 2 km of the network,8180,path network,road,14.14
-Gewoya,9,15,188,-9.220578,148.49925,178.4,Yoivi,,11.95,5.97,no,measured: beyond 2 km of the network,10513,path network,road,15.93
-Toma,9,15,73,-9.210894,148.400535,489.8,Afore,,7.57,2.82,no,measured: beyond 2 km of the network,7850,path network,road,2.35
+village,zone,ward,households,lat,lon,alt,nearest_stop,road_km,straight_km,walk_hours_est,road_reachable,access_class,road_at_village,offroad_to_road_m,walk_basis,stop_access,position_spread_km
+Aniafe,1,13,53,-9.203658,148.259985,862.9,Itokama,0.97,0.73,0.19,yes,road-served (walk to road <= 2.5 km),yes,3,path network,road,0.27
+Itokama,1,"13,14,7",294,-9.199884,148.26604,862.8,Itokama,0.02,0.06,0.01,yes,road-served (walk to road <= 2.5 km),yes,25,path network,road,2.28
+Kwae,1,13,119,-9.195015,148.26089,858.4,Itokama,1.02,0.79,0.32,yes,road-served (walk to road <= 2.5 km),no (measured),451,path network,road,16.51
+Madokoro,1,14,16,-9.215942,148.26605,863.0,Itokama,1.0,1.73,0.39,yes,road-served (walk to road <= 2.5 km),no (measured),1483,path network,road,0.21
+Naokanane,1,14,86,-9.210596,148.265735,863.2,Itokama,1.0,1.14,0.28,yes,road-served (walk to road <= 2.5 km),no (measured),965,path network,road,1.69
+Umuwate,1,14,3,-9.135433,148.40144,745.0,Afore,2.06,1.35,0.53,yes,road-served (walk to road <= 2.5 km),no (measured),186,path network,road,0.0
+Borohojo,10,10,271,-9.002209,148.243315,850.0,Siribu,,13.03,5.04,no,road not practically reachable (> 10 km),no (measured),10401,path network,road,3.08
+Kero,10,10,89,-9.003253,148.23405,833.8,Siribu,,13.64,5.36,no,road not practically reachable (> 10 km),no (measured),11031,path network,road,1.3
+Kinando,10,10,49,-9.001206,148.23517,838.3,Siribu,,13.72,5.29,no,road not practically reachable (> 10 km),no (measured),11101,path network,road,0.6
+Arafuro,2,12,13,-9.108934,148.280765,863.3,Umbuara,0.14,1.67,0.95,yes,road-served (walk to road <= 2.5 km),no (measured),1522,path network,road,0.53
+Gajot,2,"12,13",89,-9.129558,148.27309,879.5,Umbuara,0.89,0.84,0.26,yes,road-served (walk to road <= 2.5 km),no (measured),168,path network,road,0.79
+Serefuna,2,"12,13",76,-9.15595,148.2731,844.0,Umbuara,4.16,3.75,0.95,yes,road-served (walk to road <= 2.5 km),yes,3,path network,road,5.21
+Umbuara,2,"12,2",63,-9.121465,148.27313,881.6,Umbuara,0.04,0.06,0.02,yes,road-served (walk to road <= 2.5 km),yes,2,path network,road,0.74
+Jorua,3,9,59,-9.087193,148.30454,852.6,Siribu,6.85,1.88,1.2,yes,road-served (walk to road <= 2.5 km),yes,60,path network,road,0.45
+Kiera,3,9,53,-9.09591,148.2882,875.5,Siribu,7.0,3.66,2.85,yes,road-served (walk to road <= 2.5 km),no (field knowledge),2078,path network,road,0.63
+Koruwo,3,11,13,-9.109897,148.31215,792.2,Siribu,9.58,2.31,0.64,yes,road-served (walk to road <= 2.5 km),yes,58,path network,road,0.19
+Natanga,3,9,96,-9.070176,148.29111,943.1,Siribu,5.3,4.03,1.93,yes,road-served (walk to road <= 2.5 km),no (field knowledge),1702,path network,road,14.43
+Aiari,4,16,109,-9.349725,148.21722,647.4,Itokama,,17.36,5.51,no,road not practically reachable (> 10 km),no (measured),16792,straight line (no connected path),road,0.25
+Jaure,4,"17,4",59,-9.275404,148.145235,917.1,Itokama,,15.62,5.37,no,road not practically reachable (> 10 km),no (measured),14860,straight line (no connected path),road,33.11
+Suari,4,17,33,-9.275762,148.14468,906.6,Itokama,,15.7,5.44,no,road not practically reachable (> 10 km),no (measured),14932,straight line (no connected path),road,37.94
+Dea,5,"5,7",102,-9.067194,148.32968,925.7,Siribu,5.63,2.8,2.55,yes,road-served (walk to road <= 2.5 km),yes,8,path network,road,20.05
+Siribu,5,"7,8",23,-9.091052,148.32118,798.3,Siribu,0.0,0.0,0.02,yes,road-served (walk to road <= 2.5 km),yes,13,path network,road,4.4
+Tabuane,5,7,106,-9.064706,148.340345,924.2,Kaura,5.2,4.09,1.36,yes,road-served (walk to road <= 2.5 km),yes,79,path network,road,10.97
+Ugunomu,5,7,53,-9.063105,148.317865,955.4,Siribu,3.36,3.11,2.0,yes,road-served (walk to road <= 2.5 km),yes,49,path network,road,1.25
+Kaura,6,4,333,-9.063345,148.37753,824.8,Kaura,0.0,0.02,0.01,yes,road-served (walk to road <= 2.5 km),no (measured),1386,path network,road,2.03
+Numba,6,5,145,-9.051074,148.365495,947.5,Kaura,4.69,1.88,0.4,yes,road-served (walk to road <= 2.5 km),no (measured),313,path network,road,7.15
+Sigara,6,5,36,-9.041073,148.44907,596.5,Kaura,,8.24,4.23,no,long walk to road (2.5-10 km),no (measured),6884,path network,road,1.63
+Sila/Sakarina,6,6,40,-9.065843,148.36987,794.7,Kaura,0.42,0.89,0.38,yes,road-served (walk to road <= 2.5 km),no (measured),632,path network,road,1.64
+Dareki,7a,"2,3,6",145,-9.100225,148.43232,647.9,Yoivi,,3.4,1.61,no,long walk to road (2.5-10 km),no (measured),3188,path network,road,5.62
+Kawowoki,7a,3,277,-9.101146,148.39157,824.6,Kaura,4.48,4.47,1.57,yes,road-served (walk to road <= 2.5 km),no (measured),340,path network,road,13.55
+Afore,7b,2,63,-9.142586,148.39151,843.6,Afore,0.05,0.06,0.02,yes,road-served (walk to road <= 2.5 km),no (measured),380,path network,road,0.43
+Afore Government Station,7b,2,7,-9.139825,148.38884,837.8,Afore,0.09,0.48,0.15,yes,road-served (walk to road <= 2.5 km),yes,40,path network,road,0.06
+Afore Settlement Scheme,7b,"2,3",49,-9.124137,148.40474,735.6,Afore,2.79,2.52,1.99,yes,road-served (walk to road <= 2.5 km),no (measured),718,path network,road,2.38
+Basabe,7b,"2,4",66,-9.137629,148.38572,824.1,Afore,0.66,0.89,0.22,yes,road-served (walk to road <= 2.5 km),yes,66,path network,road,1.52
+Karokora,7b,2,13,-9.145301,148.38843,840.8,Afore,0.05,0.45,0.31,yes,road-served (walk to road <= 2.5 km),no (measured),481,path network,road,0.72
+Niniuri,7b,2,20,-9.142183,148.391485,835.0,Afore,0.08,0.1,0.03,yes,road-served (walk to road <= 2.5 km),no (measured),349,path network,road,22.09
+Ogan,7b,"1,2",69,-9.132831,148.39731,789.0,Afore,1.48,1.28,0.49,yes,road-served (walk to road <= 2.5 km),yes,55,path network,road,2.03
+Semehara,7b,2,13,-9.133923,148.37348,755.0,Afore,1.38,2.25,0.65,yes,road-served (walk to road <= 2.5 km),no (measured),1034,path network,road,1.84
+Bua,8,1,40,-9.138091,148.434695,1053.7,Yoivi,0.51,1.07,0.36,yes,road-served (walk to road <= 2.5 km),no (measured),835,path network,road,1.93
+Kuheani,8,1,36,-9.13594,148.45639,839.3,Yoivi,1.93,1.92,0.64,yes,road-served (walk to road <= 2.5 km),no (measured),744,path network,road,0.22
+Manusi,8,"1,8",172,-9.130919,148.425785,846.1,Yoivi,1.62,1.57,0.42,yes,road-served (walk to road <= 2.5 km),yes,34,path network,road,3.91
+Marasi,8,1,10,-9.13073,148.42984,864.5,Yoivi,1.15,1.12,0.31,yes,road-served (walk to road <= 2.5 km),yes,5,path network,road,2.48
+Verayame,8,1,33,-9.129583,148.44648,886.4,Yoivi,0.77,0.71,0.22,yes,road-served (walk to road <= 2.5 km),yes,3,path network,road,0.37
+Biriri,9,15,82,-9.21213,148.43983,676.1,Yoivi,,9.08,4.37,no,long walk to road (2.5-10 km),no (measured),8180,path network,road,14.14
+Gewoya,9,15,188,-9.220578,148.49925,178.4,Yoivi,,11.95,5.97,no,road not practically reachable (> 10 km),no (measured),10513,path network,road,15.93
+Toma,9,15,73,-9.210894,148.400535,489.8,Afore,,7.57,2.82,no,long walk to road (2.5-10 km),no (measured),7850,path network,road,2.35

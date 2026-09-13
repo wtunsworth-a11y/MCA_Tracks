@@ -6,7 +6,8 @@
   "Yoivi"
  ],
  "walking_model": "Tobler hiking function",
- "snap_max_m": 2000,
+ "walk_to_road_m": 2500,
+ "long_walk_max_m": 10000,
  "service_bands_km": [
   2,
   5,

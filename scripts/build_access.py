@@ -53,11 +53,34 @@ DEM_DIR = ROOT / "data" / "dem"
 WGS84 = "EPSG:4326"
 UTM = "EPSG:32755"          # UTM 55S, metres; all distances are computed here
 
-# A village further than this from the network is not served by it. Set from the
-# data: every village the brief says is road-served is within 1.4 km, and the
-# nearest one it says is not is 7.9 km away, so the gap is wide and unambiguous.
-SNAP_MAX_M = 2000
+# Every village off the road is reached on foot; the question is how far that
+# walk is, not whether one exists. So access is graded on the walk to the road
+# rather than switched on and off at one line.
+#
+#   <= 2.5 km   road-served. A 2 km walk to transport is ordinary anywhere.
+#   2.5-10 km   a long walk, but the road is still reachable on foot.
+#   > 10 km     the road is not practically reachable.
+#
+# The 2.5 km cut sits in the widest gap the data offers - Kiera at 2.08 km, then
+# Dareki at 3.19 km - so no village's class turns on a few metres. 10 km is the
+# other end of that judgement, and both are stated rather than tuned.
+WALK_TO_ROAD_M = 2500
+LONG_WALK_MAX_M = 10000
+# A road distance is given only to villages that are road-served. Beyond that the
+# number misleads: Toma snaps to a road node 7.85 km away that happens to sit 50 m
+# from Afore, which would print as "Toma, 0.05 km from Afore by road".
+ROUTE_SNAP_MAX_M = WALK_TO_ROAD_M
+# How far a point may be from the walkable network when routing a walk on it.
+WALK_SNAP_MAX_M = 2000
 SERVICE_BANDS_KM = (2, 5, 10)
+
+
+def access_class(off_m):
+    if off_m <= WALK_TO_ROAD_M:
+        return "road-served (walk to road <= 2.5 km)"
+    if off_m <= LONG_WALK_MAX_M:
+        return "long walk to road (2.5-10 km)"
+    return "road not practically reachable (> 10 km)"
 
 # Positions as given in the brief. Two of them are quoted to two decimal places
 # where the rest are quoted to four, which is a tenth of a degree-minute either
@@ -371,15 +394,16 @@ def main():
     if fo_path.exists():
         fo = pd.read_csv(fo_path, comment="#")
         foot_only = dict(zip(fo["village"], fo["reason"]))
-        print("\nfield-knowledge overrides (footpath access only):")
+        print("\nfield knowledge: no road reaches the village itself")
         for k in sorted(foot_only):
-            print(f"  ! {k}: {foot_only[k]}")
+            print(f"  . {k}: {foot_only[k]}")
 
     rows = []
     for (_, vr), pu, pl in zip(vg.iterrows(), vu.geometry, vg.geometry):
         node, off = snap(G, pu)
         on_foot_only = vr["vil_name"] in foot_only
-        reachable = (off <= SNAP_MAX_M) and not on_foot_only
+        cls = access_class(off)
+        reachable = off <= ROUTE_SNAP_MAX_M
 
         # road_km is distance ALONG THE ROAD, node to node. The walk from the
         # village to wherever it meets the road is reported separately as
@@ -409,7 +433,7 @@ def main():
         wnode, woff = snap(Gw, pu)
         snode, soff = snap(Gw, stops_u.geometry.iloc[j])
         hours, wsrc = None, None
-        if woff <= SNAP_MAX_M and soff <= SNAP_MAX_M:
+        if woff <= WALK_SNAP_MAX_M and soff <= WALK_SNAP_MAX_M:
             try:
                 path = nx.shortest_path(Gw, wnode, snode, weight="weight")
                 # a village that snaps to the stop's own node gives a one-point
@@ -444,11 +468,10 @@ def main():
             "road_km": round(best_km, 2) if best_stop else "",
             "straight_km": round(straight_km, 2),
             "walk_hours_est": round(hours, 2),
-            "road_reachable": "yes" if best_stop else "no",
-            "road_access_basis": ("field knowledge: footpath only" if on_foot_only
-                                  else "measured: within 2 km of the network"
-                                  if best_stop else
-                                  "measured: beyond 2 km of the network"),
+            "road_reachable": ("yes" if off <= WALK_TO_ROAD_M else "no"),
+            "access_class": cls,
+            "road_at_village": ("no (field knowledge)" if on_foot_only
+                                else "yes" if off <= 100 else "no (measured)"),
             "offroad_to_road_m": round(off),
             "walk_basis": wsrc,
             "stop_access": ("track only" if nearest_name in track_only else "road"),
@@ -462,7 +485,13 @@ def main():
 
     served = acc[acc.road_reachable == "yes"]
     tot = acc["households"].sum()
-    print(f"{len(served)} of {len(acc)} villages reachable by road; "
+    print("\naccess to the road, by the walk needed to reach it:")
+    for cls in (access_class(0), access_class(WALK_TO_ROAD_M + 1),
+                access_class(LONG_WALK_MAX_M + 1)):
+        g = acc[acc["access_class"] == cls]
+        print(f"  {len(g):2d} villages {g['households'].sum():5d} hh "
+              f"({g['households'].sum()/tot*100:4.1f}%)  {cls}")
+    print(f"\n{len(served)} of {len(acc)} villages road-served; "
           f"{served['households'].sum()} of {tot} households "
           f"({served['households'].sum()/tot*100:.1f}%)")
     for band in (2, 5, 10):
@@ -506,7 +535,8 @@ def main():
         meta = {"crs_analysis": UTM, "crs_output": WGS84, "dem": dem.name,
                 "track_only_stops": sorted(track_only),
                 "walking_model": "Tobler hiking function",
-                "snap_max_m": SNAP_MAX_M,
+                "walk_to_road_m": WALK_TO_ROAD_M,
+                "long_walk_max_m": LONG_WALK_MAX_M,
                 "service_bands_km": list(SERVICE_BANDS_KM),
                 "osm_available": False}
         (OUT / "method.json").write_text(json.dumps(meta, indent=1))

@@ -1,6 +1,7 @@
-# Villages reachable on foot only, stated by someone who knows the ground.
-# Outranks the 2 km snap test in build_access.py: a village listed here is
-# road_reachable = no whatever its distance to the network measures.
+# Villages with no road running into them, stated by someone who knows the ground.
+# Recorded as road_at_village in mca_village_access.csv. It does NOT change the
+# access class: every village off the road is reached on foot, and what matters
+# is the length of that walk, which offroad_to_road_m measures.
 village,reason
 Kiera,"Footpath access only (field knowledge, Sep 2026)"
 Natanga,"Footpath access only (field knowledge, Sep 2026)"

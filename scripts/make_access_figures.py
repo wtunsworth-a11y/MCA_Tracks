@@ -230,8 +230,9 @@ def figure_a(roads, foot, boundary, vg, stops):
     extent = (minx - padx, maxx + padx, miny - pady, maxy + pady)
     base(ax, boundary, roads, foot, extent)
 
-    # Drawn from the measured/overridden result, not from a zone list: Kiera and
-    # Natanga are in Zone 3 and have no road access, which a zone rule misses.
+    # Drawn from the computed result, not from a zone list. Every village off the
+    # road is reached on foot; what is drawn here is the ones whose walk to the
+    # road is beyond 2.5 km, which a zone rule gets wrong in both directions.
     roadless = vg[vg["road_reachable"] == "no"]
     served = vg[vg["road_reachable"] != "no"]
     ax.scatter(served.geometry.x, served.geometry.y,
@@ -335,7 +336,7 @@ def figure_a(roads, foot, boundary, vg, stops):
         Line2D([], [], marker="o", ls="", ms=7, mfc=OTHER, mec="#8C8C8C",
                label="Village (sized by households)"),
         Line2D([], [], marker="o", ls="", ms=7, mfc=NOROAD, mec="#7B2018",
-               label="Village with no road access"),
+               label="Village >2.5 km walk from a road"),
         Line2D([], [], color=BOUNDARY_EDGE, lw=1.1, ls=(0, (6, 3)),
                label="Conservation Area (WDPA)"),
     ]
@@ -437,9 +438,9 @@ def figure_b(roads, foot, boundary, vg, sa, stops, acc):
         Patch(facecolor=shades[10], edgecolor="none", label="5–10 km"),
         Line2D([], [], color="none", label="(corridor drawn 1 km wide to be legible)"),
         Line2D([], [], marker="o", ls="", ms=7, mfc=OTHER, mec="#8C8C8C",
-               label="Village on the road network"),
+               label="Village within 2.5 km of a road"),
         Line2D([], [], marker="o", ls="", ms=7, mfc=NOROAD, mec="#7B2018",
-               label="Village with no road access"),
+               label="Village >2.5 km walk from a road"),
         Line2D([], [], color=NOROAD, lw=1.1, ls=(0, (5, 3)),
                label="Walk-in route (footpath)"),
         Line2D([], [], marker="o", ls="", ms=8, mfc="#FFFFFF", mec=CIRCUIT,
