@@ -31,7 +31,53 @@ python3 scripts/infer_villages.py    # derive village points from track endpoint
 python3 scripts/make_maps.py         # render the three outputs
 ```
 
-Requires `geopandas`, `matplotlib`, `folium`, `adjustText`.
+`pip install -r requirements.txt` first. The versions are pinned, and that is
+not decoration: an unpinned GDAL read one supplied KMZ as a GeometryCollection
+rather than a MultiLineString, which crashed `merge_tracks.py` and
+`infer_villages.py`.
+
+The later stages, added for the market-access work:
+
+```
+python3 scripts/classify_mode.py     # road vs foot by measured speed, not by name
+python3 scripts/build_access.py      # road network, routing, service areas
+python3 scripts/build_access.py --upgraded   # the Yoivi what-if scenario
+python3 scripts/make_access_figures.py
+python3 scripts/road_speed.py        # measured speed per 500 m of road
+python3 scripts/digitise_t683.py     # 1973 tracks off the topographic sheets
+python3 scripts/make_change_map.py   # 1973 vehicle tracks vs the network now
+```
+
+### Recovering after a container recycle
+
+This has happened once: the working tree was wiped and only `.git` survived.
+Everything needed is in the repository, so recovery is:
+
+```
+git fetch origin claude/managalas-track-maps-3xd3bq
+git checkout -B claude/managalas-track-maps-3xd3bq origin/claude/managalas-track-maps-3xd3bq
+pip install -r requirements.txt
+```
+
+`data/raw`, `data/dem` (both Copernicus tiles) and `data/processed/*.gpkg` are
+all committed, so nothing has to be re-fetched and nothing has to be recomputed.
+
+**The one exception is the T683 sheet scans.** Three JPEGs, about 63 MB, are not
+committed here — they live in `wtunsworth-a11y/MCA_MLA` under `data/T683/` on
+branch `claude/t683-topo-sheets`:
+
+| Sheet | File |
+|---|---|
+| 8579 Sibium | `521_PNG_Oro_Sibium_100K_8579_master.jpg` |
+| 8580 Popondetta | `519_PNG_Oro_Popondetta_100K_8580_master.jpg` |
+| 8679 Musa | `531_PNG_Oro_Musa_100K_8679_master.jpg` |
+
+`data/processed/historic_tracks.gpkg` is derived from them and **is** committed,
+so the 1973 layer survives without them. They are only needed to re-run
+`digitise_t683.py`. The georeferencing fits are committed as
+`data/processed/t683_*_georef.json`, so `georef_t683.py` does not need re-running
+either. If that MCA_MLA branch is ever deleted, the scans are gone and the
+digitisation cannot be redone.
 
 ### Getting files from Drive
 

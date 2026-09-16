@@ -15,6 +15,7 @@ import zipfile
 from pathlib import Path
 
 import geopandas as gpd
+import shapely
 import pandas as pd
 import pyogrio
 from shapely.geometry import LineString, MultiLineString
@@ -403,6 +404,17 @@ def tag_boundary_zone(tracks):
     return tracks
 
 
+def supplied_alignment_sources():
+    """Raw filenames whose geometry is carried by supplied_roads.geojson."""
+    path = ROOT / "data" / "reference" / "supplied_roads.geojson"
+    if not path.exists():
+        return set()
+    names = set()
+    for src in gpd.read_file(path).get("source", []):
+        names.add(str(src).split(",")[0].strip())
+    return names
+
+
 def main():
     PROCESSED.mkdir(parents=True, exist_ok=True)
     files = sorted(p for p in RAW.iterdir() if p.suffix.lower() in {".gpkg", ".gpx", ".kmz", ".kml"})
@@ -413,6 +425,17 @@ def main():
     skipped = [p for p in files if p.suffix.lower() == ".kmz" and p.stem in extracted]
     for path in skipped:
         print(f"{path.name}: skipped — superseded by {path.stem}.kml")
+
+    # Road alignments supplied directly rather than recorded. They are held in
+    # data/reference/supplied_roads.geojson so their provenance stays separate
+    # from anything the speed test established, and build_access.py merges them
+    # from there. Reading them here as well would count them twice.
+    supplied = supplied_alignment_sources()
+    for path in files:
+        if path.name in supplied and path not in skipped:
+            print(f"{path.name}: skipped — held as a supplied alignment in "
+                  f"data/reference/supplied_roads.geojson")
+            skipped.append(path)
     files = [p for p in files if p not in skipped]
 
     rows, point_rows = [], []
@@ -447,8 +470,12 @@ def main():
     tracks["length_km"] = (projected.length / 1000).round(2)
 
     def count_vertices(geom):
-        parts = geom.geoms if geom.geom_type.startswith("Multi") else [geom]
-        return sum(len(p.coords) for p in parts)
+        # shapely.get_coordinates walks any nesting. The hand-rolled version
+        # here only unwrapped Multi* and broke on a GeometryCollection, which a
+        # newer GDAL hands back for some of the KML sources.
+        if geom is None or geom.is_empty:
+            return 0
+        return int(shapely.get_coordinates(geom).shape[0])
 
     tracks["vertices"] = tracks.geometry.map(count_vertices)
     # GPX timestamps are UTC; PNG is UTC+10, so an afternoon walk would

@@ -1,0 +1,15 @@
+# Pinned to the versions the committed outputs were produced with. A fresh
+# container has none of these; `pip install -r requirements.txt` restores the
+# environment. Versions matter: an unpinned shapely/GDAL read one supplied KMZ
+# as a GeometryCollection, which crashed merge_tracks.py and infer_villages.py.
+geopandas==1.1.4
+pyogrio==0.13.0
+shapely==2.1.2
+networkx==3.6.1
+scikit-image==0.26.0
+rasterio==1.4.4
+scipy==1.17.1
+adjustText==1.4.0
+matplotlib==3.11.2
+pandas==3.0.5
+numpy==2.4.6

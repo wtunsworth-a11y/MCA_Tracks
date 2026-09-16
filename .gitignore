@@ -42,5 +42,12 @@ Thumbs.db
 data/raw/Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Umbara_2026-06-29_15-34_.kmz
 !data/raw/MCA_boundary_WDPA_555651673.geojson
 !data/processed/t683_*_georef.json
+# Derived datasets, committed deliberately. They are reproducible from data/raw
+# (see README), but a container recycle once wiped them and the rebuild cost an
+# hour, so they are kept. 1.7 MB total. Same location sensitivity as data/raw,
+# which is already committed - review both before making this repo public.
+!data/processed/*.gpkg
+!data/processed/tracks_summary.csv
+
 !outputs/access/
 !outputs/access/*
