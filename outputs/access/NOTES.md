@@ -405,6 +405,82 @@ repeated passes over the same chunks in different seasons.
 
 ---
 
+## Cross-reference against the team's planned track list
+
+`NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx` (3 Oct 2026) names
+80 routes the team identified to walk: 62 foot tracks, 16 feeder roads and 2
+national highways. Transcribed verbatim into
+`data/reference/planned_tracks.csv`, broken into 110 two-place legs, and tested
+against the 124 recordings in `data/processed/tracks.gpkg` by
+`scripts/cross_reference_tracks.py`.
+
+### Why the test is geometric and not by name
+
+Matching names would have been quick and wrong. Thirty-eight of the 124
+recordings carry no route name at all — they are `russell muraba track record
+july 10 july (seg NN)` — and the ones that do carry names use spellings the
+list does not (Avaru/Awaru, Kueno/Koeno, Jorura/Jorua, Kiara/Kiera,
+Turatana/Turatan, Niniri/Niniuri). So a leg passes only when
+
+1. both of its ends sit within **500 m** of a recorded line, and
+2. the noded network **routes between them** at no more than 1.8 × the straight
+   line (2.5 × under 2.5 km, where terrain detours are proportionally larger).
+
+Test 2 is what stops a leg being called done because its two ends happen to lie
+on the network at opposite ends of the plateau, which is the error a
+proximity-only test makes. Where a recording *is* named for a leg, the name is
+reported as corroboration beside the measurement, never in place of it.
+
+### Where it stands
+
+| | legs | routes |
+|---|---|---|
+| recorded | 42 | 28 |
+| partly recorded | 20 | 16 |
+| not recorded | 6 | 5 |
+| place not located | 42 | 31 |
+
+**The largest single blocker is not walking, it is the gazetteer.** Thirty-five
+place names in the list appear in nothing we hold — neither
+`MCA_Village_Locations.csv` nor the GPS recordings — so 31 of the 80 routes
+cannot be assessed at all. They are listed at the foot of
+`TRACK_CHECKLIST.md` for the team to position.
+
+### Names used twice, and how the pairing was chosen
+
+Several names sit on two places kilometres apart: two Kauras 12 km apart, two
+Kuharas, two Sigaras 10.9 km apart, two Tomas 5.1 km apart, two Siribus. Of the
+candidate positions for a leg's two ends, the **nearer pairing** is taken — a
+list of village-to-village walks is naming adjacent places, so the close pairing
+is the one it is about — with the surveyed gazetteer preferred over the inferred
+position on a tie. Every leg decided this way carries the flag and the distance
+in the checklist, so the assumption can be rejected.
+
+Two positions were fixed from direct evidence rather than left unlocated, both
+recorded in `data/reference/place_aliases.csv`:
+
+- **Umuate** — the gazetteer's Umuwate at 148.4014 is 19 km from the endpoint of
+  `Davids_track_record_from_Itokama_to_Umuate` and cannot be this place. The
+  recording's endpoint, −9.2637 / 148.2370, is used. This is the same Umuwate
+  position already flagged above as internally inconsistent.
+- **Umbara** — distinct from **Umbuara**, and the list uses both. Umbuara is in
+  Zone 2 beside Anatua and Gadzot; Umbara/Ombara is in the east beyond Kuheine,
+  fixed at 148.4675 by the endpoint of `Trail to Umbara village (seg 11)`.
+
+### Four legs where both ends are recorded but nothing joins them
+
+Tahama–Toma, Toma–Itokama, Afore–Toma and Bareji–Toma. All four are into Toma:
+the recordings reach the Toma area but the network is in two pieces there, so
+Toma has recordings around it and no recorded connection through it. That is a
+real gap and not a bridging artefact — 450 m gap bridging was already applied
+before the test.
+
+The other two not-recorded legs are the far south-west, Aiari–Suari and
+Suari–Jaure, where there is nothing recorded within 10 km of either end. Zone 4
+is unvisited: Aiari (109 households), Jaure (59) and Suari (33) have no GPS
+coverage at all.
+
+
 ## Files
 
 | File | What it is |
@@ -418,11 +494,17 @@ repeated passes over the same chunks in different seasons.
 | `fig_road_speed.png` | Additional — measured road speed and its relation to terrain |
 | `mca_road_speed.geojson` | 500 m chunks with speed, gradient, sinuosity and observation counts |
 | `method.json` | CRS, DEM, thresholds |
+| `TRACK_CHECKLIST.md` | the team's 80 planned routes, each leg marked recorded / partly / not recorded / place not located |
+| `track_checklist.csv` | the same, one row per leg, with the measurement behind every call |
 
 Scripts that produced them, in order:
 `classify_mode.py` → `build_access.py` → `make_access_figures.py` → `road_speed.py`
 
+`cross_reference_tracks.py` produces the checklist and is independent of the
+access pipeline; it reuses that pipeline's graph noding and gap bridging.
+
 Field-knowledge overrides live in `data/access_overrides.csv` (stop access),
 `data/reference/confirmed_roads.csv` (individual segments confirmed driveable)
 and `data/reference/footpath_only_villages.csv` (villages with no road running
-into them).
+into them). The planned list and its spelling reconciliation live in
+`data/reference/planned_tracks.csv` and `data/reference/place_aliases.csv`.

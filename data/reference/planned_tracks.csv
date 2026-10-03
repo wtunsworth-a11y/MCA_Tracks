@@ -1,0 +1,89 @@
+# The routes the team identified to walk, transcribed from
+# NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx (received 3 Oct 2026).
+#
+# as_written is verbatim from the document, including its spellings. chain is the
+# same route with the places separated by " > " so the legs can be tested without
+# guessing where one name ends and the next begins - several entries in the source
+# run together in a single table cell, and several place names contain hyphens.
+# Nothing is corrected here; spelling is reconciled in place_aliases.csv.
+id,category,as_written,chain
+F01,foot,Koruwo-Umbuara-Anatua1-Anatua2,Koruwo > Umbuara > Anatua
+F02,foot,Tahama-Toma,Tahama > Toma
+F03,foot,Avaru-Sigara-Emo,Avaru > Sigara > Emo
+F04,foot,Numba-Aputuara - Banderi,Numba > Aputuara > Banderi
+F05,foot,Bioi-Dareki-Sigara,Bioi > Dareki > Sigara
+F06,foot,Dareki-Kawowoki,Dareki > Kawowoki
+F07,foot,Avaru-Dareki,Avaru > Dareki
+F08,foot,Marasi-Biriri,Marasi > Biriri
+F09,foot,Gora-Popondetta,Gora > Popondetta
+F10,foot,Kaura-Sigara,Kaura > Sigara
+F11,foot,Kuai-Anatua-Serepuna,Kuai > Anatua > Serepuna
+F12,foot,Aniafe -Jaure,Aniafe > Jaure
+F13,foot,Toma-Itokama,Toma > Itokama
+F14,foot,Kueno-Semahara,Kueno > Semahara
+F15,foot,Kokoro -Anatua,Kokoro > Anatua
+F16,foot,Kaura-Kuhara,Kaura > Kuhara
+F17,foot,Numba -Umasi-Embi-Warisota,Numba > Umasi > Embi > Warisota
+F18,foot,Afore – Koruwo,Afore > Koruwo
+F19,foot,Afore-Siribu,Afore > Siribu
+F20,foot,Numba – Kueno,Numba > Kueno
+F21,foot,Kueno – Tabuane,Kueno > Tabuane
+F22,foot,Dea-Siribu-Koruwo,Dea > Siribu > Koruwo
+F23,foot,Natanga-Kiara-Koruwo,Natanga > Kiara > Koruwo
+F24,foot,Tahama-serepuna,Tahama > Serepuna
+F25,foot,Afore-Toma-Biriri-Babarobo-Safia,Afore > Toma > Biriri > Babarobo > Safia
+F26,foot,Umuate-Jaure,Umuate > Jaure
+F27,foot,Itokama-Aniafe-Umuate,Itokama > Aniafe > Umuate
+F28,foot,Jorura-Natanga-Gora,Jorura > Natanga > Gora
+F29,foot,Kuai-Tedebedi-Emoriva,Kuai > Tedebedi > Emoriva
+F30,foot,Aiari-Safia,Aiari > Safia
+F31,foot,Wayei-Umbara,Wayei > Umbara
+F32,foot,Niniri-Kawowoki,Niniri > Kawowoki
+F33,foot,Turatana-Bioi,Turatana > Bioi
+F34,foot,Umbuara-Kiara-Natanga,Umbuara > Kiara > Natanga
+F35,foot,Haraja-Natganga,Haraja > Natganga
+F36,foot,Sigara- Banderi,Sigara > Banderi
+F37,foot,Ufia-Umuate-Aiari-Suari-Jaure,Ufia > Umuate > Aiari > Suari > Jaure
+F38,foot,Umuate-jaura,Umuate > Jaura
+F39,foot,Korowo-At Junction Basabe-Semahara,Korowo > Basabe junction > Semahara
+F40,foot,Simion's place- Niniri Village (Main),Simion's place > Niniri
+F41,foot,Kawowoki – avaru,Kawowoki > Avaru
+F42,foot,Gora-Asafa-Sairope,Gora > Asafa > Sairope
+F43,foot,Gora-Gorobuna,Gora > Gorobuna
+F44,foot,Jaura-Vovosik-Kwikila,Jaura > Vovosik > Kwikila
+F45,foot,Kuhene-Umbara,Kuhene > Umbara
+F46,foot,Yoivi-Marasi,Yoivi > Marasi
+F47,foot,Damara-Bua,Damara > Bua
+F48,foot,Semahara-Kueno,Semahara > Kueno
+F49,foot,Aiari-Water Crossing,Aiari > Water Crossing
+F50,foot,Bareji-Toma,Bareji > Toma
+F51,foot,Sila-Avararu,Sila > Avararu
+F52,foot,Afore-Tahama,Afore > Tahama
+F53,foot,Highway-Bioi,Highway > Bioi
+F54,foot,Kuhene-Highway,Kuhene > Highway
+F55,foot,Koruo-Bodoimo-Umbuara-Anatua,Koruo > Bodoimo > Umbuara > Anatua
+F56,foot,Anatua-Serepuna,Anatua > Serepuna
+F57,foot,Anatua-Kokoro,Anatua > Kokoro
+F58,foot,Umbuara-Singata,Umbuara > Singata
+F59,foot,Singata-Gorobuna-Asafa,Singata > Gorobuna > Asafa
+F60,foot,Anatua-Tetebedi,Anatua > Tetebedi
+F61,foot,Semahara-Tabuane,Semahara > Tabuane
+F62,foot,Singata-Gora,Singata > Gora
+R01,feeder road,Itokama -Ufia,Itokama > Ufia
+R02,feeder road,Veriame-yoivi-Aguido,Veriame > Yoivi > Aguido
+R03,feeder road,Road 3 – Dareki,Road 3 > Dareki
+R04,feeder road,Road 2-Old Cadamon factory,Road 2 > Old Cardamom factory
+R05,feeder road,Road 1- Organ Village,Road 1 > Organ
+R06,feeder road,Sila-Sakarina-Numba-Kaura-Avaru,Sila > Sakarina > Numba > Kaura > Avaru
+R07,feeder road,Ugunomo-Siribu,Ugunomo > Siribu
+R08,feeder road,Jorura-Natanga,Jorura > Natanga
+R09,feeder road,Umbuara-Anatua,Umbuara > Anatua
+R10,feeder road,Itokama-Kuai,Itokama > Kuai
+R11,feeder road,Itokama-Aniafe,Itokama > Aniafe
+R12,feeder road,Highway-Kawowoki (Mr. Womo),Highway > Kawowoki
+R13,feeder road,Koeno feeder road,Koeno > Highway
+R14,feeder road,Afore-Korokoro Village,Afore > Korokoro
+R15,feeder road,Afore- Bareji River (Disputed),Afore > Bareji River
+R16,feeder road,Yoivi-Kuhene-Umbara,Yoivi > Kuhene > Umbara
+H01,national highway,Orobay-Itokama,Orobay > Itokama
+H02,national highway,Bareji junction-Peroroda,Bareji junction > Peroroda

@@ -1,0 +1,44 @@
+# Spellings used in the team's track list, mapped to the places we hold positions
+# for. resolved_to is matched first against data/MCA_Village_Locations.csv (the
+# authoritative gazetteer) and then against the GPS-inferred villages.
+#
+# lon/lat may be given to override both, and is used only where there is direct
+# evidence for the position - stated here, not guessed. A written name with no
+# row here and no gazetteer match is reported as unlocated rather than placed
+# somewhere plausible.
+#
+# Umbuara and Umbara are DIFFERENT places and the list uses both: Umbuara is in
+# zone 2 beside Anatua and Gadzot (148.273), Umbara/Ombara is in the east beyond
+# Kuheine (148.468). "Trail to Umbara village (seg 11)" runs from Kuheine to
+# 148.4675, which fixes the eastern one.
+as_written,resolved_to,lon,lat,note
+Avaru,Awaru,,,spelling
+avaru,Awaru,,,spelling
+Avararu,Awaru,,,spelling
+Kueno,Koeno,,,spelling
+Jorura,Jorua,,,spelling
+Kiara,Kiera,,,spelling
+Natganga,Natanga,,,typo in source
+Serepuna,Serefuna,,,spelling
+Turatana,Turatan,,,spelling
+Niniri,Niniuri,,,spelling
+Ugunomo,Ugunomu,,,spelling
+Veriame,Verayame,,,spelling
+Vereyame,Verayame,,,spelling
+Kuhene,Kuheani,,,spelling
+Kuheine,Kuheani,,,spelling
+Korowo,Koruwo,,,spelling
+Koruo,Koruwo,,,spelling
+Jaura,Jaure,,,spelling
+Semahara,Semehara,,,spelling
+Umbara,Ombara,148.46750,-9.13620,"eastern Ombara, fixed by the Kuheine-Umbara trail endpoint"
+Umuate,Umuate,148.23700,-9.26370,"endpoint of Davids_track_record_from_Itokama_to_Umuate; the gazetteer's Umuwate at 148.4014 is 19 km away and cannot be this place"
+Tahama,Semahara Tahama,,,"inferred cluster, confidence 0.5"
+Basabe junction,Basabe,,,"junction near Basabe village"
+Bareji River,Bareji,,,"the river, not the hamlet - position is the inferred Bareji cluster and is weak"
+Bareji junction,Bareji,,,"as above"
+Yoivi,Yoivi,148.45000,-9.13910,"village end of the recording 'Yoivi junction to Yoivi village'; the gazetteer carries only Verayame, 500 m west"
+Tetebedi,Tedebedi,,,"same place as Tedebedi elsewhere in the list - still unlocated"
+Kuai,,,,"ASK: is this the gazetteer's Kwae, 1 km south of Itokama? Itokama-Kuai as a feeder road would fit, Kuai-Anatua would not"
+Kokoro,,,,"ASK: is this Karokora/Kororoko beside Afore? The list pairs it with Anatua, 14 km west, which does not fit"
+Aguido,,,,"named in the recording 'Track from Vereyame connects Yoivi, Aguido Primary School and Kuheine', so the route is likely already walked - a position would confirm it"
