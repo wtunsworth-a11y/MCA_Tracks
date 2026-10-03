@@ -481,6 +481,71 @@ is unvisited: Aiari (109 households), Jaure (59) and Suari (33) have no GPS
 coverage at all.
 
 
+### Online data: what is reachable from here, and what it gave
+
+Asked on 3 Oct 2026 whether public sources had been used, the network policy was
+retested rather than the earlier note repeated. The position has not changed for
+map data and has changed for search:
+
+| source | result |
+|---|---|
+| nominatim.openstreetmap.org | gateway returns 403 to CONNECT — policy denial |
+| overpass-api.de | gateway returns 403 to CONNECT — policy denial |
+| api.geonames.org | 403 |
+| www.geonames.org | blocked by the egress proxy |
+| web search | **works** |
+
+So no OSM geometry can be pulled into this environment, and the road network is
+still entirely the project's own recordings. Web search is a different route and
+does work, which is enough to identify well-known places by name even though it
+cannot supply a gazetteer.
+
+Three off-plateau route endpoints were positioned that way, all recorded with
+their source in `place_aliases.csv` and all still wanting a field nod:
+
+- **Orobay** = Oro Bay, the coastal town, −8.8947 / 148.4903. H01
+  "Orobay-Itokama" then reads as the national highway from the coast up to
+  Itokama, which fits.
+- **Safia** = Safia airstrip, −9.5950 / 148.6390, 24 km south-east of Biriri.
+  That fits "Afore-Toma-Biriri-Babarobo-Safia" as a route off the plateau, but
+  it makes "Aiari-Safia" a **54 km** leg, which is either a multi-day walk or a
+  different Safia.
+- **Kwikila** = the Rigo District station in Central Province, −9.8185 /
+  147.6597 — 75 km south-west of Jaure. Plausible as the far end of an old
+  walking route, far enough out to be worth querying.
+
+**Embi** was looked for and not pinned: public sources put Embi village and the
+Embi Lakes just south of Dobodura at about 8.83 S, roughly 25 km north of Numba,
+but no reliable longitude came back, so it stays unlocated rather than being
+given a made-up one.
+
+### Spellings and identities confirmed in the field, 3 Oct 2026
+
+Avaru = Awaru. Kueno = Koeno, also written Kweno. Kiara = Kiera, and **not**
+Kira. Jorura is probably Jorua, treated as the same place. Kuai = the
+gazetteer's Kwae, which resolves three routes. Umbara is **not** Umbuara,
+confirming the reading taken above. Tetebedi/Tedebedi is **outside the
+conservation area**, so "Anatua-Tetebedi" and "Kuai-Tedebedi-Emoriva" run
+beyond the boundary.
+
+### The KML sent out for the places we cannot find
+
+`scripts/make_unlocated_kml.py` writes `unlocated_places.kml`: a pin per
+unlocated place to be dragged onto the real village in Google Earth, over two
+locked reference folders — the villages we do hold, and the recorded tracks.
+
+No pin is a position we hold, and each says so. Each starts at the midpoint of
+the places the list itself names beside it, which is a far better opening guess
+than the middle of the map: "Umbuara-Singata" and "Singata-Gora" between them
+put Singata near the Umbuara–Gora line. Where every neighbour is also unknown
+the anchoring runs again over the pins it has already guessed, so
+"Numba-Umasi-Embi-Warisota" walks outwards from Numba instead of collapsing to
+the centre; how many steps from solid ground each pin is is stated on it. Four
+pins — Road 1, Road 2 and the Organ and Old Cardamom factory ends of them — have
+no located place anywhere in their route and say that the position is
+meaningless.
+
+
 ## Files
 
 | File | What it is |
@@ -496,6 +561,7 @@ coverage at all.
 | `method.json` | CRS, DEM, thresholds |
 | `TRACK_CHECKLIST.md` | the team's 80 planned routes, each leg marked recorded / partly / not recorded / place not located |
 | `track_checklist.csv` | the same, one row per leg, with the measurement behind every call |
+| `unlocated_places.kml` | a draggable pin per place we cannot find, over the known villages and the recorded tracks |
 
 Scripts that produced them, in order:
 `classify_mode.py` → `build_access.py` → `make_access_figures.py` → `road_speed.py`

@@ -16,14 +16,14 @@ recordings in hand carry no route name at all.
 | `[ ]` | not recorded | walk it |
 | `[?]` | place not located | tell us roughly where it is, then walk it |
 
-- [x] **42** of 110 legs recorded
-- [~] **20** of 110 legs partial
-- [ ] **6** of 110 legs missing
-- [?] **42** of 110 legs unlocated
+- [x] **44** of 110 legs recorded
+- [~] **21** of 110 legs partial
+- [ ] **7** of 110 legs missing
+- [?] **38** of 110 legs unlocated
 
 ## Foot tracks
 
-### Not recorded - these are the gap (5)
+### Not recorded - these are the gap (6)
 
 - [ ] **Tahama-Toma**  `F02`
   - [ ] Tahama → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
@@ -33,7 +33,9 @@ recordings in hand carry no route name at all.
   - [ ] Afore → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
   - [~] Toma → Biriri: both ends on the network but only linked the long way round (31.5 km for 4.3 km straight) - the direct track is not recorded — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
   - [?] Biriri → Babarobo: no position for Babarobo
-  - [?] Babarobo → Safia: no position for Babarobo and Safia
+  - [?] Babarobo → Safia: no position for Babarobo
+- [ ] **Aiari-Safia**  `F30`
+  - [ ] Aiari → Safia: neither end on the network (9.8 km and 42.4 km off)
 - [ ] **Ufia-Umuate-Aiari-Suari-Jaure**  `F37`
   - [?] Ufia → Umuate: no position for Ufia
   - [~] Umuate → Aiari: Umuate end is on the network, Aiari is 9.8 km off it
@@ -42,7 +44,7 @@ recordings in hand carry no route name at all.
 - [ ] **Bareji-Toma**  `F50`
   - [ ] Bareji → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
 
-### Cannot be checked until the place is located (22)
+### Cannot be checked until the place is located (20)
 
 - [?] **Avaru-Sigara-Emo**  `F03`
   - [~] Avaru → Sigara: both ends on the network but only linked the long way round (7.7 km for 1.1 km straight) - the direct track is not recorded — **this name is on two places 7.5 km apart; the nearer pairing was assumed**
@@ -50,9 +52,6 @@ recordings in hand carry no route name at all.
 - [?] **Numba-Aputuara - Banderi**  `F04`
   - [?] Numba → Aputuara: no position for Aputuara
   - [?] Aputuara → Banderi: no position for Aputuara and Banderi
-- [?] **Kuai-Anatua-Serepuna**  `F11`
-  - [?] Kuai → Anatua: no position for Kuai
-  - [x] Anatua → Serepuna: routes in 3.1 km vs 1.6 km straight
 - [?] **Kokoro -Anatua**  `F15`
   - [?] Kokoro → Anatua: no position for Kokoro
 - [?] **Numba -Umasi-Embi-Warisota**  `F17`
@@ -60,10 +59,8 @@ recordings in hand carry no route name at all.
   - [?] Umasi → Embi: no position for Umasi and Embi
   - [?] Embi → Warisota: no position for Embi and Warisota
 - [?] **Kuai-Tedebedi-Emoriva**  `F29`
-  - [?] Kuai → Tedebedi: no position for Kuai and Tedebedi
+  - [?] Kuai → Tedebedi: no position for Tedebedi
   - [?] Tedebedi → Emoriva: no position for Tedebedi and Emoriva
-- [?] **Aiari-Safia**  `F30`
-  - [?] Aiari → Safia: no position for Safia
 - [?] **Wayei-Umbara**  `F31`
   - [?] Wayei → Umbara: no position for Wayei
 - [?] **Haraja-Natganga**  `F35`
@@ -79,7 +76,7 @@ recordings in hand carry no route name at all.
   - [?] Gora → Gorobuna: no position for Gorobuna
 - [?] **Jaura-Vovosik-Kwikila**  `F44`
   - [?] Jaura → Vovosik: no position for Vovosik
-  - [?] Vovosik → Kwikila: no position for Vovosik and Kwikila
+  - [?] Vovosik → Kwikila: no position for Vovosik
 - [?] **Damara-Bua**  `F47`
   - [?] Damara → Bua: no position for Damara — **this name is on two places 2.2 km apart; the nearer pairing was assumed**
 - [?] **Aiari-Water Crossing**  `F49`
@@ -133,13 +130,16 @@ recordings in hand carry no route name at all.
 - [~] **Highway-Bioi**  `F53`
   - [~] Highway → Bioi: both ends on the network but only linked the long way round (11.4 km for 1.5 km straight) - the direct track is not recorded
 
-### Recorded (22)
+### Recorded (23)
 
 - [x] **Koruwo-Umbuara-Anatua1-Anatua2**  `F01`
   - [x] Koruwo → Umbuara: routes in 5.5 km vs 4.0 km straight
   - [x] Umbuara → Anatua: routes in 2.4 km vs 2.2 km straight
 - [x] **Marasi-Biriri**  `F08`
 - [x] **Kaura-Sigara**  `F10`
+- [x] **Kuai-Anatua-Serepuna**  `F11`
+  - [x] Kuai → Anatua: routes in 8.9 km vs 6.1 km straight
+  - [x] Anatua → Serepuna: routes in 3.1 km vs 1.6 km straight
 - [x] **Kueno-Semahara**  `F14`
 - [x] **Kaura-Kuhara**  `F16`
 - [x] **Afore – Koruwo**  `F18`
@@ -168,7 +168,7 @@ recordings in hand carry no route name at all.
 
 ## Feeder roads (member's roads)
 
-### Cannot be checked until the place is located (7)
+### Cannot be checked until the place is located (6)
 
 - [?] **Itokama -Ufia**  `R01`
   - [?] Itokama → Ufia: no position for Ufia
@@ -181,8 +181,6 @@ recordings in hand carry no route name at all.
   - [?] Road 2 → Old Cardamom factory: no position for Road 2 and Old Cardamom factory
 - [?] **Road 1- Organ Village**  `R05`
   - [?] Road 1 → Organ: no position for Road 1 and Organ
-- [?] **Itokama-Kuai**  `R10`
-  - [?] Itokama → Kuai: no position for Kuai
 - [?] **Afore-Korokoro Village**  `R14`
   - [?] Afore → Korokoro: no position for Korokoro
 
@@ -198,10 +196,11 @@ recordings in hand carry no route name at all.
 - [~] **Highway-Kawowoki (Mr. Womo)**  `R12`
   - [~] Highway → Kawowoki: both ends on the network but only linked the long way round (1.0 km for 0.3 km straight) - the direct track is not recorded
 
-### Recorded (6)
+### Recorded (7)
 
 - [x] **Jorura-Natanga**  `R08`
 - [x] **Umbuara-Anatua**  `R09`
+- [x] **Itokama-Kuai**  `R10`
 - [x] **Itokama-Aniafe**  `R11`
 - [x] **Koeno feeder road**  `R13`
 - [x] **Afore- Bareji River (Disputed)**  `R15`
@@ -211,16 +210,19 @@ recordings in hand carry no route name at all.
 
 ## National highways
 
-### Cannot be checked until the place is located (2)
+### Cannot be checked until the place is located (1)
 
-- [?] **Orobay-Itokama**  `H01`
-  - [?] Orobay → Itokama: no position for Orobay
 - [?] **Bareji junction-Peroroda**  `H02`
   - [?] Bareji junction → Peroroda: no position for Peroroda
 
+### Partly recorded (1)
+
+- [~] **Orobay-Itokama**  `H01`
+  - [~] Orobay → Itokama: Itokama end is on the network, Oro Bay is 0.6 km off it
+
 ## Places we hold no position for
 
-These 35 names appear in the list and in nothing we hold - not the
+These 31 names appear in the list and in nothing we hold - not the
 village gazetteer, not the GPS recordings. A rough latitude/longitude, or
 even "two hours' walk east of X", is enough to put each route on the map
 and say whether it still needs walking.
@@ -234,27 +236,23 @@ and say whether it still needs walking.
 | Banderi | F04, F36 |  |
 | Bodoimo | F55 |  |
 | Damara | F47 |  |
-| Embi | F17 |  |
+| Embi | F17 | public sources put Embi village and the Embi Lakes just south of Dobodura at about 8.83S, roughly 25 km north of Numba - no reliable longitude found, so still unlocated. Confirm and we can place it |
 | Emo | F03 |  |
 | Emoriva | F29 |  |
 | Gorobuna | F43, F59 |  |
 | Haraja | F35 |  |
 | Kokoro | F15, F57 | ASK: is this Karokora/Kororoko beside Afore? The list pairs it with Anatua, 14 km west, which does not fit |
 | Korokoro | R14 |  |
-| Kuai | F11, F29, R10 | ASK: is this the gazetteer's Kwae, 1 km south of Itokama? Itokama-Kuai as a feeder road would fit, Kuai-Anatua would not |
-| Kwikila | F44 |  |
 | Old Cardamom factory | R04 |  |
 | Organ | R05 |  |
-| Orobay | H01 |  |
 | Peroroda | H02 |  |
 | Road 1 | R05 |  |
 | Road 2 | R04 |  |
 | Road 3 | R03 |  |
-| Safia | F25, F30 |  |
 | Sairope | F42 |  |
 | Simion's place | F40 |  |
 | Singata | F58, F59, F62 |  |
-| Tedebedi | F29 |  |
+| Tedebedi | F29 | confirmed by Will, 3 Oct 2026: Tetebedi/Tedebedi is OUTSIDE the conservation area, so Anatua-Tetebedi and Kuai-Tedebedi-Emoriva run beyond the boundary |
 | Tetebedi | F60 | same place as Tedebedi elsewhere in the list - still unlocated |
 | Ufia | F37, R01 |  |
 | Umasi | F17 |  |

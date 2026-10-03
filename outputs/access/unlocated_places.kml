@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Managalas - places we cannot find</name>
+  <description><![CDATA[<b>Drag each pin in PLACE THESE onto the real village, then save the file and send it back.</b><br/><br/>Every pin in that folder is a <i>guess</i>, placed at the midpoint of the villages your list puts next to it. None of them is a position we hold. The other two folders are reference only - the villages we do have positions for, and the tracks already recorded.<br/><br/>Generated 2026-10-03 from NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx]]></description>
+  <Style id="todo">
+    <IconStyle><color>ff00ffff</color><scale>1.3</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff00ffff</color><scale>1.3</scale></LabelStyle>
+  </Style>
+  <Style id="known">
+    <IconStyle><color>ffcccccc</color><scale>0.7</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon></IconStyle>
+    <LabelStyle><color>ffcccccc</color><scale>0.7</scale></LabelStyle>
+  </Style>
+  <Style id="road"><LineStyle><color>ff2a6ec8</color><width>3</width></LineStyle></Style>
+  <Style id="foot"><LineStyle><color>ff767c7e</color><width>2</width></LineStyle></Style>
+  <Folder><name>PLACE THESE — pins are guesses, drag them</name>
+  <open>1</open>
+    <Placemark>
+      <name>Aguido</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Aguido</b><br/>Appears in: R02<br/>&nbsp;&nbsp;• Veriame-yoivi-Aguido<br/><br/><i>This pin is a guess: the midpoint of Yoivi, which the list names next to it.</i><br/><br/><b>Question:</b> named in the recording 'Track from Vereyame connects Yoivi, Aguido Primary School and Kuheine', so the route is likely already walked - a position would confirm it]]></description>
+      <Point><coordinates>148.450000,-9.139100,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aputuara</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Aputuara</b><br/>Appears in: F04<br/>&nbsp;&nbsp;• Numba-Aputuara - Banderi<br/><br/><i>This pin is a guess: the midpoint of Numba, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.365500,-9.048373,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Asafa</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Asafa</b><br/>Appears in: F42, F59<br/>&nbsp;&nbsp;• Gora-Asafa-Sairope<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/><br/><i>This pin is a guess: the midpoint of Gora, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.242600,-8.999473,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Babarobo</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Babarobo</b><br/>Appears in: F25<br/>&nbsp;&nbsp;• Afore-Toma-Biriri-Babarobo-Safia<br/><br/><i>This pin is a guess: the midpoint of Biriri, Safia, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.539400,-9.403600,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Banderi</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Banderi</b><br/>Appears in: F04, F36<br/>&nbsp;&nbsp;• Numba-Aputuara - Banderi<br/>&nbsp;&nbsp;• Sigara- Banderi<br/><br/><i>This pin is a guess: the midpoint of Sigara, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.449100,-9.038373,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bodoimo</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Bodoimo</b><br/>Appears in: F55<br/>&nbsp;&nbsp;• Koruo-Bodoimo-Umbuara-Anatua<br/><br/><i>This pin is a guess: the midpoint of Koruwo, Umbuara, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.292600,-9.115700,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Damara</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Damara</b><br/>Appears in: F47<br/>&nbsp;&nbsp;• Damara-Bua<br/><br/><i>This pin is a guess: the midpoint of Bua, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.434700,-9.138100,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Embi</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Embi</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess 2 steps out: it sits on Umasi, which is themselves guessed. Treat it as a direction, not a location.</i><br/><br/><b>Question:</b> public sources put Embi village and the Embi Lakes just south of Dobodura at about 8.83S, roughly 25 km north of Numba - no reliable longitude found, so still unlocated. Confirm and we can place it]]></description>
+      <Point><coordinates>148.368262,-9.051100,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Emo</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Emo</b><br/>Appears in: F03<br/>&nbsp;&nbsp;• Avaru-Sigara-Emo<br/><br/><i>This pin is a guess: the midpoint of Sigara, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.449100,-9.043827,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Emoriva</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Emoriva</b><br/>Appears in: F29<br/>&nbsp;&nbsp;• Kuai-Tedebedi-Emoriva<br/><br/><i>This pin is a guess 2 steps out: it sits on Tedebedi, which is themselves guessed. Treat it as a direction, not a location.</i>]]></description>
+      <Point><coordinates>148.263200,-9.164973,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gorobuna</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Gorobuna</b><br/>Appears in: F43, F59<br/>&nbsp;&nbsp;• Gora-Gorobuna<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/><br/><i>This pin is a guess: the midpoint of Gora, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.244991,-9.003564,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Haraja</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Haraja</b><br/>Appears in: F35<br/>&nbsp;&nbsp;• Haraja-Natganga<br/><br/><i>This pin is a guess: the midpoint of Natanga, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.291100,-9.070200,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kokoro</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Kokoro</b><br/>Appears in: F15, F57<br/>&nbsp;&nbsp;• Kokoro -Anatua<br/>&nbsp;&nbsp;• Anatua-Kokoro<br/><br/><i>This pin is a guess: the midpoint of Anatua, which the list names next to it.</i><br/><br/><b>Question:</b> ASK: is this Karokora/Kororoko beside Afore? The list pairs it with Anatua, 14 km west, which does not fit]]></description>
+      <Point><coordinates>148.265500,-9.140300,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Korokoro</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Korokoro</b><br/>Appears in: R14<br/>&nbsp;&nbsp;• Afore-Korokoro Village<br/><br/><i>This pin is a guess: the midpoint of Afore, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.391500,-9.142600,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Old Cardamom factory</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Old Cardamom factory</b><br/>Appears in: R04<br/>&nbsp;&nbsp;• Road 2-Old Cadamon factory<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
+      <Point><coordinates>148.373500,-9.057573,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Organ</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Organ</b><br/>Appears in: R05<br/>&nbsp;&nbsp;• Road 1- Organ Village<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
+      <Point><coordinates>148.376262,-9.060300,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Peroroda</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Peroroda</b><br/>Appears in: H02<br/>&nbsp;&nbsp;• Bareji junction-Peroroda<br/><br/><i>This pin is a guess: the midpoint of Bareji, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.394000,-9.143300,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Road 1</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Road 1</b><br/>Appears in: R05<br/>&nbsp;&nbsp;• Road 1- Organ Village<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
+      <Point><coordinates>148.373500,-9.063027,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Road 2</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Road 2</b><br/>Appears in: R04<br/>&nbsp;&nbsp;• Road 2-Old Cadamon factory<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
+      <Point><coordinates>148.370738,-9.060300,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Road 3</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Road 3</b><br/>Appears in: R03<br/>&nbsp;&nbsp;• Road 3 – Dareki<br/><br/><i>This pin is a guess: the midpoint of Dareki, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.432300,-9.100200,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sairope</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Sairope</b><br/>Appears in: F42<br/>&nbsp;&nbsp;• Gora-Asafa-Sairope<br/><br/><i>This pin is a guess 2 steps out: it sits on Asafa, which is themselves guessed. Treat it as a direction, not a location.</i>]]></description>
+      <Point><coordinates>148.240209,-9.003564,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Simion's place</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Simion's place</b><br/>Appears in: F40<br/>&nbsp;&nbsp;• Simion's place- Niniri Village (Main)<br/><br/><i>This pin is a guess: the midpoint of Niniuri, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.391500,-9.142200,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Singata</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Singata</b><br/>Appears in: F58, F59, F62<br/>&nbsp;&nbsp;• Umbuara-Singata<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/>&nbsp;&nbsp;• Singata-Gora<br/><br/><i>This pin is a guess: the midpoint of Gora, Umbuara, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.257900,-9.061800,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tedebedi</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Tedebedi</b><br/>Appears in: F29, F60<br/>&nbsp;&nbsp;• Kuai-Tedebedi-Emoriva<br/><br/><i>This pin is a guess: the midpoint of Anatua, Kwae, which the list names next to it.</i><br/><br/><b>Question:</b> confirmed by Will, 3 Oct 2026: Tetebedi/Tedebedi is OUTSIDE the conservation area, so Anatua-Tetebedi and Kuai-Tedebedi-Emoriva run beyond the boundary]]></description>
+      <Point><coordinates>148.263200,-9.170427,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ufia</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Ufia</b><br/>Appears in: F37, R01<br/>&nbsp;&nbsp;• Ufia-Umuate-Aiari-Suari-Jaure<br/>&nbsp;&nbsp;• Itokama -Ufia<br/><br/><i>This pin is a guess: the midpoint of Itokama, Umuate, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.251500,-9.231800,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Umasi</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Umasi</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess: the midpoint of Numba, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.365500,-9.053827,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Vovosik</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Vovosik</b><br/>Appears in: F44<br/>&nbsp;&nbsp;• Jaura-Vovosik-Kwikila<br/><br/><i>This pin is a guess: the midpoint of Jaure, Kwikila, which the list names next to it.</i>]]></description>
+      <Point><coordinates>147.902500,-9.546900,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Warisota</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Warisota</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess 2 steps out: it sits on Embi, which is themselves guessed. Treat it as a direction, not a location.</i>]]></description>
+      <Point><coordinates>148.362738,-9.051100,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Water Crossing</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Water Crossing</b><br/>Appears in: F49<br/>&nbsp;&nbsp;• Aiari-Water Crossing<br/><br/><i>This pin is a guess: the midpoint of Aiari, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.217200,-9.349700,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Wayei</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Wayei</b><br/>Appears in: F31<br/>&nbsp;&nbsp;• Wayei-Umbara<br/><br/><i>This pin is a guess: the midpoint of Ombara, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.468200,-9.115100,0</coordinates></Point>
+    </Placemark>
+
+  </Folder>
+  <Folder><name>Known villages (reference — do not move)</name>
+  <open>0</open><visibility>1</visibility>
+    <Placemark>
+      <name>Afore</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Afore<br/>gazetteer — zone 7b, 63 hh]]></description>
+      <Point><coordinates>148.391510,-9.142586,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Afore Government Station</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Afore Government Station<br/>gazetteer — zone 7b, 7 hh]]></description>
+      <Point><coordinates>148.388840,-9.139825,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Afore Settlement Scheme</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Afore Settlement Scheme<br/>gazetteer — zone 7b, 49 hh]]></description>
+      <Point><coordinates>148.404740,-9.124137,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aiari</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Aiari<br/>gazetteer — zone 4, 109 hh]]></description>
+      <Point><coordinates>148.217220,-9.349725,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Anatua</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Anatua<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.265501,-9.140336,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Aniafe</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Aniafe<br/>gazetteer — zone 1, 53 hh]]></description>
+      <Point><coordinates>148.259985,-9.203658,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Arafuro</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Arafuro<br/>gazetteer — zone 2, 13 hh]]></description>
+      <Point><coordinates>148.280765,-9.108934,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Awaru</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Awaru<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.395126,-9.073196,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Baraja</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Baraja<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.298358,-9.151473,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bareji</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Bareji<br/>GPS-inferred — confidence 0.5]]></description>
+      <Point><coordinates>148.394018,-9.143321,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Basabe</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Basabe<br/>gazetteer — zone 7b, 66 hh]]></description>
+      <Point><coordinates>148.385720,-9.137629,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bioi</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Bioi<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.444573,-9.106588,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Biriri</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Biriri<br/>gazetteer — zone 9, 82 hh]]></description>
+      <Point><coordinates>148.439830,-9.212130,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Borohojo</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Borohojo<br/>gazetteer — zone 10, 271 hh]]></description>
+      <Point><coordinates>148.243315,-9.002209,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bua</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Bua<br/>gazetteer — zone 8, 40 hh]]></description>
+      <Point><coordinates>148.434695,-9.138091,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bubire</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Bubire<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.423946,-9.130246,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Dakanatam</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Dakanatam<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.454110,-9.123379,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Dareki</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Dareki<br/>gazetteer — zone 7a, 145 hh]]></description>
+      <Point><coordinates>148.432320,-9.100225,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Dea</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Dea<br/>gazetteer — zone 5, 102 hh]]></description>
+      <Point><coordinates>148.329680,-9.067194,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gadzot</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Gadzot<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.275640,-9.136372,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gajot</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Gajot<br/>gazetteer — zone 2, 89 hh]]></description>
+      <Point><coordinates>148.273090,-9.129558,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gewoya</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Gewoya<br/>gazetteer — zone 9, 188 hh]]></description>
+      <Point><coordinates>148.499250,-9.220578,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Girua</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Girua<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.308865,-8.807415,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gora</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Gora<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.242645,-9.002177,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Itokama</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Itokama<br/>gazetteer — zone 1, 294 hh]]></description>
+      <Point><coordinates>148.266040,-9.199884,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jaure</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Jaure<br/>gazetteer — zone 4, 59 hh]]></description>
+      <Point><coordinates>148.145235,-9.275404,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jorua</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Jorua<br/>gazetteer — zone 3, 59 hh]]></description>
+      <Point><coordinates>148.304540,-9.087193,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Jorura</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Jorura<br/>GPS-inferred — confidence 0.83]]></description>
+      <Point><coordinates>148.306469,-9.078380,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Karokora</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Karokora<br/>gazetteer — zone 7b, 13 hh]]></description>
+      <Point><coordinates>148.388430,-9.145301,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kaura</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kaura<br/>gazetteer — zone 6, 333 hh]]></description>
+      <Point><coordinates>148.377530,-9.063345,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kawowoki</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kawowoki<br/>gazetteer — zone 7a, 277 hh]]></description>
+      <Point><coordinates>148.391570,-9.101146,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kero</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kero<br/>gazetteer — zone 10, 89 hh]]></description>
+      <Point><coordinates>148.234050,-9.003253,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kiara</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kiara<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.285766,-9.091950,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kiera</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kiera<br/>gazetteer — zone 3, 53 hh]]></description>
+      <Point><coordinates>148.288200,-9.095910,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kinando</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kinando<br/>gazetteer — zone 10, 49 hh]]></description>
+      <Point><coordinates>148.235170,-9.001206,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Koeno</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Koeno<br/>GPS-inferred — confidence 0.5]]></description>
+      <Point><coordinates>148.352762,-9.056159,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Koruwo</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Koruwo<br/>gazetteer — zone 3, 13 hh]]></description>
+      <Point><coordinates>148.312150,-9.109897,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kuhara</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kuhara<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.422226,-8.962906,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kuheani</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kuheani<br/>gazetteer — zone 8, 36 hh]]></description>
+      <Point><coordinates>148.456390,-9.135940,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kuheine</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kuheine<br/>GPS-inferred — confidence 0.33]]></description>
+      <Point><coordinates>148.456629,-9.135411,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kwae</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kwae<br/>gazetteer — zone 1, 119 hh]]></description>
+      <Point><coordinates>148.260890,-9.195015,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Madokoro</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Madokoro<br/>gazetteer — zone 1, 16 hh]]></description>
+      <Point><coordinates>148.266050,-9.215942,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Manusi</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Manusi<br/>gazetteer — zone 8, 172 hh]]></description>
+      <Point><coordinates>148.425785,-9.130919,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Marase</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Marase<br/>GPS-inferred — confidence 0.33]]></description>
+      <Point><coordinates>148.449127,-9.149360,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Marasi</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Marasi<br/>gazetteer — zone 8, 10 hh]]></description>
+      <Point><coordinates>148.429840,-9.130730,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Mate</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Mate<br/>GPS-inferred — confidence 0.5]]></description>
+      <Point><coordinates>148.474009,-9.144854,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Munbon</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Munbon<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.380652,-9.150902,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Naokanane</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Naokanane<br/>gazetteer — zone 1, 86 hh]]></description>
+      <Point><coordinates>148.265735,-9.210596,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Natanga</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Natanga<br/>gazetteer — zone 3, 96 hh]]></description>
+      <Point><coordinates>148.291110,-9.070176,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Niniuri</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Niniuri<br/>gazetteer — zone 7b, 20 hh]]></description>
+      <Point><coordinates>148.391485,-9.142183,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Numba</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Numba<br/>gazetteer — zone 6, 145 hh]]></description>
+      <Point><coordinates>148.365495,-9.051074,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ogan</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Ogan<br/>gazetteer — zone 7b, 69 hh]]></description>
+      <Point><coordinates>148.397310,-9.132831,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Omajeap</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Omajeap<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.447957,-9.125267,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ombara</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Ombara<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.468204,-9.115126,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ondoro</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Ondoro<br/>GPS-inferred — confidence 0.5]]></description>
+      <Point><coordinates>148.467656,-9.136425,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Popondetta</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Popondetta<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.234675,-8.768269,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sakarina</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Sakarina<br/>gazetteer — zone 6, 40 hh]]></description>
+      <Point><coordinates>148.369870,-9.065843,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Semahara</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Semahara<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.372378,-9.132756,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Semahara Tahama</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Semahara Tahama<br/>GPS-inferred — confidence 0.5]]></description>
+      <Point><coordinates>148.372962,-9.152990,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Semehara</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Semehara<br/>gazetteer — zone 7b, 13 hh]]></description>
+      <Point><coordinates>148.373480,-9.133923,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Serefuna</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Serefuna<br/>gazetteer — zone 2, 76 hh]]></description>
+      <Point><coordinates>148.273100,-9.155950,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sigara</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Sigara<br/>gazetteer — zone 6, 36 hh]]></description>
+      <Point><coordinates>148.449070,-9.041073,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Siribu</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Siribu<br/>gazetteer — zone 5, 23 hh]]></description>
+      <Point><coordinates>148.321180,-9.091052,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Sivurana</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Sivurana<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.359404,-9.044637,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Suari</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Suari<br/>gazetteer — zone 4, 33 hh]]></description>
+      <Point><coordinates>148.144680,-9.275762,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tabuane</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Tabuane<br/>gazetteer — zone 5, 106 hh]]></description>
+      <Point><coordinates>148.340345,-9.064706,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Toma</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Toma<br/>gazetteer — zone 9, 73 hh]]></description>
+      <Point><coordinates>148.400535,-9.210894,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Turatan</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Turatan<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.457284,-9.117776,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ugunomu</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Ugunomu<br/>gazetteer — zone 5, 53 hh]]></description>
+      <Point><coordinates>148.317865,-9.063105,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Umbuara</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Umbuara<br/>gazetteer — zone 2, 63 hh]]></description>
+      <Point><coordinates>148.273130,-9.121465,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Umuwate</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Umuwate<br/>gazetteer — zone 1, 3 hh]]></description>
+      <Point><coordinates>148.401440,-9.135433,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Verayame</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Verayame<br/>gazetteer — zone 8, 33 hh]]></description>
+      <Point><coordinates>148.446480,-9.129583,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Vereyame Yoivi</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Vereyame Yoivi<br/>GPS-inferred — confidence 0.5]]></description>
+      <Point><coordinates>148.446339,-9.129243,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Vouka</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Vouka<br/>GPS-inferred — confidence 1.0]]></description>
+      <Point><coordinates>148.511038,-9.225775,0</coordinates></Point>
+    </Placemark>
+
+  </Folder>
+  <Folder><name>Recorded tracks (reference)</name>
+  <open>0</open>
+    <Placemark>
+      <name>Popondetta to Anatua Road</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.27339,-9.12078,0 148.27339,-9.12108,0 148.27311,-9.12145,0 148.27239,-9.12225,0 148.27194,-9.12305,0 148.27103,-9.12356,0 148.27096,-9.12350,0 148.27087,-9.12357,0 148.27064,-9.12363,0 148.27026,-9.12376,0 148.26936,-9.12549,0 148.26855,-9.12960,0 148.26740,-9.13159,0 148.26679,-9.13494,0 148.26604,-9.13586,0 148.26490,-9.13937,0 148.26357,-9.14094,0 148.26365,-9.14233,0 148.26290,-9.14427,0 148.26121,-9.15228,0 148.26195,-9.15227,0 148.26259,-9.15129,0 148.26243,-9.15103,0 148.26253,-9.15116,0 148.27075,-9.12359,0 148.27190,-9.12302,0 148.27251,-9.12197,0 148.27326,-9.12121,0 148.27335,-9.12118,0 148.27348,-9.12115,0 148.27353,-9.12107,0 148.27353,-9.12093,0 148.27354,-9.12082,0 148.27362,-9.12072,0 148.27344,-9.12078,0 148.27363,-9.12108,0 148.27341,-9.12074,0 148.27329,-9.12074,0 148.27350,-9.12082,0 148.27356,-9.12075,0 148.27365,-9.12078,0 148.27363,-9.12455,0 148.27610,-9.13299,0 148.27568,-9.13585,0 148.27646,-9.13586,0 148.27785,-9.13917,0 148.27967,-9.14116,0 148.28056,-9.14330,0 148.28063,-9.14572,0 148.28185,-9.14794,0 148.28230,-9.15015,0 148.28332,-9.15213,0 148.28452,-9.15401,0 148.28877,-9.15814,0 148.29073,-9.15950,0 148.29181,-9.16100,0 148.29295,-9.16156,0 148.29659,-9.16073,0 148.29726,-9.15944,0 148.29847,-9.15393,0 148.29827,-9.14721,0 148.29972,-9.14407,0 148.29936,-9.14238,0 148.30158,-9.14190,0 148.30130,-9.14156,0 148.30215,-9.13960,0 148.30264,-9.13697,0 148.30339,-9.13605,0 148.30376,-9.13400,0 148.30352,-9.13259,0 148.30244,-9.13085,0 148.30459,-9.12838,0 148.30432,-9.12547,0 148.30658,-9.12244,0 148.30828,-9.11873,0 148.31184,-9.11558,0 148.31244,-9.11478,0 148.31283,-9.11329,0 148.31259,-9.11133,0 148.31116,-9.10941,0 148.30965,-9.10641,0 148.30889,-9.10259,0 148.30829,-9.10168,0 148.30761,-9.09110,0 148.30701,-9.08984,0 148.30549,-9.08831,0 148.30469,-9.08518,0 148.30573,-9.08079,0 148.30564,-9.07835,0 148.30654,-9.07687,0 148.30662,-9.07537,0 148.30616,-9.07415,0 148.30683,-9.07216,0 148.30740,-9.07167,0 148.30860,-9.07247,0 148.30912,-9.07148,0 148.30977,-9.07263,0 148.31089,-9.07227,0 148.31321,-9.06928,0 148.31355,-9.06966,0 148.31384,-9.06936,0 148.31533,-9.06753,0 148.31578,-9.06578,0 148.31852,-9.06318,0 148.32074,-9.06018,0 148.32239,-9.05889,0 148.32480,-9.05779,0 148.32818,-9.05890,0 148.32940,-9.05981,0 148.32997,-9.06182,0 148.33004,-9.06565,0 148.33087,-9.06833,0 148.33122,-9.06930,0 148.33299,-9.07039,0 148.33257,-9.06893,0 148.33455,-9.06587,0 148.33901,-9.06418,0 148.34070,-9.06387,0 148.34241,-9.06225,0 148.34549,-9.05722,0 148.34646,-9.05636,0 148.34726,-9.05499,0 148.34831,-9.05146,0 148.34923,-9.05047,0 148.35142,-9.05253,0 148.35209,-9.05394,0 148.35415,-9.05661,0 148.35387,-9.05708,0 148.35254,-9.05761,0 148.35260,-9.05909,0 148.35303,-9.05983,0 148.35356,-9.05965,0 148.35392,-9.06053,0 148.35654,-9.06241,0 148.35734,-9.06611,0 148.35827,-9.06658,0 148.35889,-9.06775,0 148.35934,-9.06716,0 148.36002,-9.06717,0 148.36357,-9.06903,0 148.36459,-9.07007,0 148.36600,-9.07007,0 148.36895,-9.07265,0 148.36945,-9.07579,0 148.37024,-9.07746,0 148.37101,-9.07802,0 148.37201,-9.08034,0 148.37404,-9.08145,0 148.37443,-9.08202,0 148.37426,-9.08361,0 148.37525,-9.08674,0 148.37595,-9.08796,0 148.37819,-9.08948,0 148.37728,-9.09012,0 148.37715,-9.09088,0 148.37771,-9.09120,0 148.37806,-9.09224,0 148.37866,-9.09248,0 148.37853,-9.09537,0 148.38001,-9.09695,0 148.38174,-9.09724,0 148.38392,-9.09870,0 148.38544,-9.09865,0 148.38699,-9.09921,0 148.38810,-9.10089,0 148.38871,-9.10233,0 148.38886,-9.10436,0 148.38799,-9.10645,0 148.38844,-9.10817,0 148.38763,-9.10979,0 148.38872,-9.11093,0 148.39024,-9.11164,0 148.39182,-9.11185,0 148.39233,-9.11245,0 148.39102,-9.11328,0 148.39040,-9.11422,0 148.38856,-9.11489,0 148.38889,-9.11528,0 148.38798,-9.11685,0 148.38859,-9.11756,0 148.38866,-9.11906,0 148.38801,-9.12076,0 148.38693,-9.12213,0 148.38719,-9.12359,0 148.38545,-9.12603,0 148.38489,-9.12630,0 148.38519,-9.12803,0 148.38461,-9.12921,0 148.38362,-9.13032,0 148.38245,-9.13080,0 148.38322,-9.13213,0 148.38453,-9.13273,0 148.38497,-9.13330,0 148.38661,-9.13798,0 148.38725,-9.13906,0 148.38733,-9.13900,0 148.38744,-9.13900,0 148.38746,-9.13891,0 148.38759,-9.13893,0 148.38734,-9.13861,0 148.38741,-9.13879,0 148.38732,-9.13898,0 148.38732,-9.13922,0 148.38736,-9.13982,0 148.38757,-9.14041,0 148.38828,-9.14088,0 148.38954,-9.13953,0 148.39262,-9.13420,0 148.39440,-9.13200,0 148.39512,-9.13193,0 148.39803,-9.13373,0 148.39938,-9.13278,0 148.39956,-9.13347,0 148.40041,-9.13390,0 148.40294,-9.13347,0 148.40448,-9.13159,0 148.40672,-9.13032,0 148.41249,-9.12976,0 148.41459,-9.13001,0 148.41691,-9.12940,0 148.41917,-9.12988,0 148.42049,-9.13089,0 148.42321,-9.12997,0 148.42645,-9.13136,0 148.43348,-9.12999,0 148.43570,-9.13052,0 148.43788,-9.12990,0 148.44030,-9.13030,0 148.44415,-9.13032,0 148.44537,-9.12981,0 148.44668,-9.12858,0 148.44861,-9.12408,0 148.45065,-9.12351,0 148.45254,-9.12406,0 148.45355,-9.12382,0 148.45428,-9.12296,0 148.45455,-9.12064,0 148.45539,-9.11881,0 148.45624,-9.11821,0 148.45825,-9.11765,0 148.45920,-9.11652,0 148.45992,-9.11619,0 148.46398,-9.11662,0 148.46616,-9.11548,0 148.46839,-9.11506,0 148.47046,-9.11369,0 148.47079,-9.11311,0 148.47207,-9.11282,0 148.47257,-9.11283,0 148.47299,-9.11431,0 148.47458,-9.11408,0 148.47554,-9.11512,0 148.47634,-9.11510,0 148.47661,-9.11459,0 148.47710,-9.11461,0 148.47673,-9.11336,0 148.47802,-9.11301,0 148.47953,-9.11331,0 148.48015,-9.11312,0 148.48080,-9.11227,0 148.48236,-9.11234,0 148.48361,-9.11117,0 148.48370,-9.10995,0 148.48557,-9.10834,0 148.48731,-9.10869,0 148.48838,-9.11031,0 148.48922,-9.10880,0 148.48941,-9.10731,0 148.48863,-9.10631,0 148.48926,-9.10496,0 148.48982,-9.10563,0 148.49119,-9.10522,0 148.49158,-9.10546,0 148.49159,-9.10607,0 148.49313,-9.10596,0 148.49364,-9.10493,0 148.49517,-9.10380,0 148.49585,-9.10194,0 148.49764,-9.10070,0 148.49947,-9.09873,0 148.50002,-9.09932,0 148.50066,-9.09837,0 148.50248,-9.09791,0 148.50219,-9.09703,0 148.50305,-9.09607,0 148.50431,-9.09586,0 148.50606,-9.09471,0 148.50677,-9.09513,0 148.50786,-9.09492,0 148.50854,-9.09430,0 148.50933,-9.09450,0 148.51053,-9.09374,0 148.51117,-9.09376,0 148.51348,-9.09151,0 148.51629,-9.08957,0 148.51888,-9.08933,0 148.52173,-9.08819,0 148.52403,-9.08858,0 148.52471,-9.08807,0 148.52698,-9.08550,0 148.52751,-9.08291,0 148.52698,-9.07732,0 148.52785,-9.07329,0 148.52658,-9.07096,0 148.52637,-9.06877,0 148.52748,-9.06645,0 148.53077,-9.05360,0 148.53551,-9.04534,0 148.53502,-9.04443,0 148.53324,-9.04402,0 148.52939,-9.03910,0 148.52891,-9.03883,0 148.52745,-9.03905,0 148.52622,-9.03771,0 148.52536,-9.03751,0 148.52441,-9.03622,0 148.52114,-9.03605,0 148.51798,-9.03388,0 148.51755,-9.03135,0 148.51655,-9.02979,0 148.51662,-9.02853,0 148.51585,-9.02754,0 148.51026,-9.02616,0 148.50973,-9.02564,0 148.51033,-9.02454,0 148.51177,-9.02473,0 148.51307,-9.02407,0 148.51436,-9.02208,0 148.51737,-9.02184,0 148.51930,-9.02103,0 148.51969,-9.01847,0 148.52067,-9.01556,0 148.51976,-9.01132,0 148.52038,-9.00966,0 148.51850,-9.00771,0 148.51635,-9.00661,0 148.51601,-9.00579,0 148.51320,-9.00453,0 148.51266,-9.00328,0 148.51523,-9.00230,0 148.51511,-9.00114,0 148.51571,-8.99937,0 148.51776,-8.99672,0 148.51922,-8.99584,0 148.51959,-8.99425,0 148.51877,-8.99209,0 148.51586,-8.98999,0 148.51271,-8.98695,0 148.51196,-8.98665,0 148.51029,-8.98685,0 148.50762,-8.98585,0 148.50634,-8.98388,0 148.50364,-8.98251,0 148.50327,-8.98127,0 148.50206,-8.97986,0 148.49967,-8.97981,0 148.49779,-8.97906,0 148.49704,-8.97848,0 148.49606,-8.97618,0 148.49510,-8.97550,0 148.49369,-8.97564,0 148.49150,-8.97475,0 148.49053,-8.97483,0 148.48731,-8.97293,0 148.48585,-8.97185,0 148.48550,-8.97128,0 148.48555,-8.96996,0 148.48455,-8.96906,0 148.48132,-8.96913,0 148.48044,-8.96846,0 148.47387,-8.96740,0 148.47257,-8.96706,0 148.47148,-8.96571,0 148.46645,-8.96717,0 148.46509,-8.96656,0 148.46429,-8.96710,0 148.46376,-8.96690,0 148.46361,-8.96621,0 148.46248,-8.96638,0 148.46193,-8.96589,0 148.46288,-8.96495,0 148.46106,-8.96286,0 148.46068,-8.96319,0 148.46067,-8.96396,0 148.45862,-8.96375,0 148.45744,-8.96308,0 148.45469,-8.96329,0 148.45236,-8.96222,0 148.45152,-8.96086,0 148.44998,-8.96111,0 148.44970,-8.96082,0 148.45136,-8.95926,0 148.45162,-8.95857,0 148.45407,-8.95683,0 148.45206,-8.95663,0 148.45093,-8.95579,0 148.45118,-8.95510,0 148.45487,-8.95144,0 148.45521,-8.94957,0 148.45776,-8.94647,0 148.46068,-8.94379,0 148.46443,-8.94182,0 148.46702,-8.93651,0 148.46747,-8.93398,0 148.47119,-8.93094,0 148.47253,-8.92734,0 148.47326,-8.92670,0 148.47435,-8.92681,0 148.47457,-8.92185,0 148.47611,-8.92153,0 148.47648,-8.92094,0 148.47385,-8.92091,0 148.47301,-8.92013,0 148.47365,-8.91852,0 148.47609,-8.91620,0 148.47753,-8.91324,0 148.47859,-8.90990,0 148.48080,-8.90777,0 148.48131,-8.90676,0 148.48173,-8.90715,0 148.48175,-8.90869,0 148.48236,-8.90960,0 148.48333,-8.90884,0 148.48422,-8.90718,0 148.48413,-8.90612,0 148.48521,-8.90509,0 148.48655,-8.90260,0 148.48630,-8.90160,0 148.48838,-8.90052,0 148.48386,-8.89905,0 148.48304,-8.89739,0 148.48323,-8.89549,0 148.48409,-8.89385,0 148.48925,-8.88758,0 148.48968,-8.88573,0 148.49057,-8.88442,0 148.49197,-8.88345,0 148.49242,-8.88189,0 148.49184,-8.88029,0 148.48842,-8.87798,0 148.48733,-8.87624,0 148.48610,-8.87177,0 148.48355,-8.86536,0 148.48228,-8.86478,0 148.48041,-8.86517,0 148.47886,-8.86496,0 148.47753,-8.86389,0 148.47525,-8.86091,0 148.47542,-8.85666,0 148.47482,-8.85450,0 148.47167,-8.84822,0 148.46887,-8.84577,0 148.46713,-8.84473,0 148.46103,-8.84267,0 148.45719,-8.84294,0 148.45418,-8.84207,0 148.45320,-8.84231,0 148.45057,-8.84446,0 148.44881,-8.84390,0 148.44426,-8.83958,0 148.44131,-8.83858,0 148.43498,-8.83796,0 148.43058,-8.83675,0 148.42897,-8.83557,0 148.42713,-8.83203,0 148.42443,-8.82825,0 148.41925,-8.82500,0 148.40817,-8.81473,0 148.40775,-8.81315,0 148.40794,-8.80983,0 148.40744,-8.80780,0 148.40673,-8.80569,0 148.40527,-8.80389,0 148.40166,-8.80223,0 148.40061,-8.80073,0 148.40003,-8.79898,0 148.39491,-8.79647,0 148.39444,-8.79635,0 148.39416,-8.79765,0 148.39431,-8.79761,0 148.39444,-8.79645,0 148.39455,-8.79612,0 148.39297,-8.79398,0 148.39159,-8.79270,0 148.38947,-8.79198,0 148.38508,-8.79289,0 148.37477,-8.79285,0 148.37251,-8.79350,0 148.36337,-8.79767,0 148.36094,-8.79781,0 148.35634,-8.79682,0 148.35357,-8.79717,0 148.34797,-8.79951,0 148.34625,-8.80079,0 148.34498,-8.80231,0 148.34460,-8.80300,0 148.34426,-8.80462,0 148.34442,-8.80459,0 148.34448,-8.80448,0 148.34460,-8.80453,0 148.34451,-8.80457,0 148.34430,-8.80455,0 148.34470,-8.80330,0 148.34472,-8.80273,0 148.34287,-8.80444,0 148.34093,-8.80501,0 148.31787,-8.80388,0 148.31379,-8.80452,0 148.31194,-8.80547,0 148.30290,-8.81276,0 148.30115,-8.81452,0 148.29834,-8.81834,0 148.29460,-8.82181,0 148.28779,-8.82538,0 148.28597,-8.82703,0 148.28355,-8.83120,0 148.28149,-8.83210,0 148.27534,-8.83635,0 148.27356,-8.83720,0 148.27186,-8.83748,0 148.26872,-8.83567,0 148.26749,-8.83435,0 148.26583,-8.83064,0 148.26062,-8.82252,0 148.25087,-8.82171,0 148.24753,-8.81936,0 148.24203,-8.81808,0 148.23281,-8.80523,0 148.23158,-8.80253,0 148.23031,-8.80241,0 148.22914,-8.80162,0 148.22795,-8.79611,0 148.22792,-8.78709,0 148.21748,-8.78013,0 148.21601,-8.77948,0 148.21438,-8.77928,0 148.21415,-8.77884,0 148.21546,-8.77604,0 148.21594,-8.77116,0 148.21740,-8.77022,0 148.22477,-8.76886,0 148.22851,-8.76744,0 148.23033,-8.76764,0 148.23176,-8.76860,0 148.23271,-8.76940,0 148.23280,-8.76964,0 148.23070,-8.77199,0 148.23245,-8.76985,0 148.23314,-8.76937,0 148.23377,-8.76877,0 148.23488,-8.76740,0 148.23512,-8.76750,0 148.23450,-8.76845,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Road Track - Popondetta to Sakarina Junction (seg 2)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.23485,-8.76809,0 148.23488,-8.76740,0 148.23196,-8.77043,0 148.23057,-8.77255,0 148.23178,-8.77516,0 148.23186,-8.77649,0 148.23085,-8.78060,0 148.22843,-8.78634,0 148.22801,-8.78855,0 148.22799,-8.79538,0 148.22931,-8.80175,0 148.23053,-8.80252,0 148.23184,-8.80282,0 148.23275,-8.80502,0 148.23421,-8.80727,0 148.24194,-8.81783,0 148.24288,-8.81844,0 148.24671,-8.81914,0 148.25047,-8.82133,0 148.25229,-8.82197,0 148.25926,-8.82233,0 148.26099,-8.82276,0 148.26640,-8.83160,0 148.26712,-8.83357,0 148.26962,-8.83634,0 148.27066,-8.83681,0 148.27189,-8.83730,0 148.27365,-8.83713,0 148.27750,-8.83507,0 148.28087,-8.83246,0 148.28287,-8.83148,0 148.28443,-8.83014,0 148.28692,-8.82602,0 148.29478,-8.82154,0 148.29950,-8.81709,0 148.30138,-8.81434,0 148.30437,-8.81143,0 148.31205,-8.80544,0 148.31400,-8.80445,0 148.31624,-8.80393,0 148.31829,-8.80390,0 148.34119,-8.80499,0 148.34303,-8.80434,0 148.34747,-8.79975,0 148.35375,-8.79711,0 148.35580,-8.79677,0 148.35779,-8.79696,0 148.35982,-8.79765,0 148.36211,-8.79777,0 148.36399,-8.79745,0 148.37449,-8.79293,0 148.38390,-8.79294,0 148.38655,-8.79273,0 148.38877,-8.79211,0 148.39106,-8.79245,0 148.39288,-8.79378,0 148.39394,-8.79544,0 148.39528,-8.79672,0 148.40045,-8.79956,0 148.40127,-8.80170,0 148.40491,-8.80357,0 148.40640,-8.80520,0 148.40799,-8.80953,0 148.40796,-8.81426,0 148.40934,-8.81590,0 148.41865,-8.82449,0 148.42343,-8.82745,0 148.42523,-8.82924,0 148.42970,-8.83627,0 148.43383,-8.83781,0 148.44090,-8.83842,0 148.44283,-8.83918,0 148.44498,-8.84009,0 148.44738,-8.84279,0 148.44969,-8.84420,0 148.45082,-8.84431,0 148.45181,-8.84375,0 148.45257,-8.84277,0 148.45412,-8.84205,0 148.45637,-8.84273,0 148.46182,-8.84284,0 148.46800,-8.84515,0 148.47099,-8.84757,0 148.47214,-8.84913,0 148.47512,-8.85509,0 148.47546,-8.85639,0 148.47521,-8.86048,0 148.47575,-8.86178,0 148.47880,-8.86488,0 148.48013,-8.86523,0 148.48291,-8.86500,0 148.48388,-8.86578,0 148.48760,-8.87654,0 148.48852,-8.87812,0 148.49178,-8.88042,0 148.49242,-8.88166,0 148.49210,-8.88338,0 148.48979,-8.88536,0 148.48930,-8.88771,0 148.48353,-8.89492,0 148.48308,-8.89669,0 148.48356,-8.89858,0 148.48497,-8.89967,0 148.48834,-8.90068,0 148.48608,-8.90200,0 148.48644,-8.90298,0 148.48574,-8.90353,0 148.48557,-8.90468,0 148.48397,-8.90661,0 148.48413,-8.90760,0 148.48280,-8.90938,0 148.48185,-8.90905,0 148.48159,-8.90674,0 148.48043,-8.90837,0 148.47919,-8.90912,0 148.47838,-8.91037,0 148.47723,-8.91421,0 148.47635,-8.91574,0 148.47388,-8.91829,0 148.47326,-8.91989,0 148.47410,-8.92102,0 148.47649,-8.92110,0 148.47427,-8.92223,0 148.47442,-8.92658,0 148.47259,-8.92713,0 148.47205,-8.92905,0 148.47056,-8.93176,0 148.46741,-8.93399,0 148.46661,-8.93764,0 148.46525,-8.93952,0 148.46499,-8.94094,0 148.46440,-8.94186,0 148.46063,-8.94384,0 148.45709,-8.94718,0 148.45513,-8.94961,0 148.45470,-8.95160,0 148.45090,-8.95542,0 148.45100,-8.95598,0 148.45180,-8.95613,0 148.45245,-8.95677,0 148.45363,-8.95678,0 148.45401,-8.95729,0 148.45308,-8.95757,0 148.45155,-8.95872,0 148.44971,-8.96078,0 148.45027,-8.96116,0 148.45114,-8.96090,0 148.45177,-8.96121,0 148.45219,-8.96216,0 148.45515,-8.96339,0 148.45705,-8.96316,0 148.45862,-8.96388,0 148.46066,-8.96405,0 148.46120,-8.96290,0 148.46281,-8.96483,0 148.46209,-8.96608,0 148.46249,-8.96643,0 148.46367,-8.96625,0 148.46418,-8.96715,0 148.46525,-8.96651,0 148.46586,-8.96698,0 148.46703,-8.96709,0 148.47181,-8.96584,0 148.47233,-8.96681,0 148.47501,-8.96769,0 148.47982,-8.96827,0 148.48136,-8.96912,0 148.48443,-8.96904,0 148.48556,-8.96998,0 148.48569,-8.97173,0 148.48972,-8.97450,0 148.49041,-8.97481,0 148.49203,-8.97478,0 148.49371,-8.97563,0 148.49547,-8.97563,0 148.49599,-8.97597,0 148.49734,-8.97885,0 148.49964,-8.97978,0 148.50197,-8.97981,0 148.50329,-8.98127,0 148.50349,-8.98234,0 148.50636,-8.98389,0 148.50752,-8.98582,0 148.51015,-8.98679,0 148.51176,-8.98661,0 148.51273,-8.98694,0 148.51892,-8.99226,0 148.51962,-8.99416,0 148.51926,-8.99579,0 148.51782,-8.99669,0 148.51592,-8.99906,0 148.51501,-9.00254,0 148.51336,-9.00284,0 148.51276,-9.00335,0 148.51295,-9.00413,0 148.51374,-9.00494,0 148.51602,-9.00583,0 148.51659,-9.00689,0 148.51826,-9.00752,0 148.52039,-9.00955,0 148.51977,-9.01089,0 148.52055,-9.01595,0 148.51970,-9.01832,0 148.51927,-9.02098,0 148.51877,-9.02156,0 148.51423,-9.02223,0 148.51370,-9.02340,0 148.51256,-9.02441,0 148.51180,-9.02472,0 148.51003,-9.02467,0 148.50981,-9.02557,0 148.51064,-9.02634,0 148.51569,-9.02741,0 148.51670,-9.02865,0 148.51656,-9.02979,0 148.51747,-9.03127,0 148.51777,-9.03365,0 148.51832,-9.03418,0 148.52081,-9.03591,0 148.52199,-9.03629,0 148.52436,-9.03614,0 148.52525,-9.03740,0 148.52614,-9.03762,0 148.52727,-9.03906,0 148.52923,-9.03903,0 148.53095,-9.04079,0 148.53269,-9.04351,0 148.53535,-9.04471,0 148.53555,-9.04529,0 148.53520,-9.04639,0 148.53083,-9.05356,0 148.52732,-9.06701,0 148.52635,-9.06920,0 148.52651,-9.07058,0 148.52786,-9.07365,0 148.52700,-9.07670,0 148.52756,-9.08173,0 148.52719,-9.08530,0 148.52441,-9.08830,0 148.52359,-9.08856,0 148.52256,-9.08840,0 148.52191,-9.08817,0 148.52109,-9.08819,0 148.52064,-9.08844,0 148.52025,-9.08866,0 148.51988,-9.08889,0 148.51930,-9.08922,0 148.51884,-9.08939,0 148.51811,-9.08948,0 148.51727,-9.08954,0 148.51631,-9.08968,0 148.51540,-9.09020,0 148.51462,-9.09088,0 148.51318,-9.09174,0 148.51282,-9.09204,0 148.51166,-9.09328,0 148.51103,-9.09376,0 148.51030,-9.09386,0 148.50949,-9.09454,0 148.50906,-9.09433,0 148.50857,-9.09432,0 148.50822,-9.09477,0 148.50770,-9.09498,0 148.50692,-9.09507,0 148.50654,-9.09495,0 148.50625,-9.09472,0 148.50581,-9.09494,0 148.50405,-9.09601,0 148.50327,-9.09607,0 148.50241,-9.09658,0 148.50216,-9.09736,0 148.50248,-9.09781,0 148.50216,-9.09820,0 148.50116,-9.09820,0 148.50058,-9.09862,0 148.50025,-9.09929,0 148.49996,-9.09924,0 148.49978,-9.09874,0 148.49937,-9.09873,0 148.49880,-9.09904,0 148.49869,-9.09950,0 148.49775,-9.10052,0 148.49729,-9.10078,0 148.49695,-9.10107,0 148.49652,-9.10120,0 148.49607,-9.10163,0 148.49561,-9.10230,0 148.49500,-9.10405,0 148.49346,-9.10500,0 148.49320,-9.10563,0 148.49289,-9.10597,0 148.49227,-9.10596,0 148.49201,-9.10601,0 148.49178,-9.10601,0 148.49154,-9.10566,0 148.49154,-9.10528,0 148.49103,-9.10525,0 148.49034,-9.10531,0 148.48998,-9.10547,0 148.48948,-9.10540,0 148.48927,-9.10493,0 148.48897,-9.10498,0 148.48873,-9.10555,0 148.48860,-9.10630,0 148.48922,-9.10714,0 148.48922,-9.10785,0 148.48914,-9.10867,0 148.48865,-9.10953,0 148.48845,-9.11025,0 148.48803,-9.11001,0 148.48705,-9.10854,0 148.48600,-9.10858,0 148.48591,-9.10855,0 148.48576,-9.10834,0 148.48526,-9.10850,0 148.48380,-9.10990,0 148.48357,-9.11045,0 148.48363,-9.11112,0 148.48317,-9.11167,0 148.48265,-9.11204,0 148.48184,-9.11242,0 148.48097,-9.11225,0 148.48041,-9.11258,0 148.48029,-9.11309,0 148.47986,-9.11320,0 148.47796,-9.11299,0 148.47685,-9.11325,0 148.47669,-9.11361,0 148.47704,-9.11404,0 148.47715,-9.11444,0 148.47681,-9.11465,0 148.47646,-9.11474,0 148.47597,-9.11523,0 148.47563,-9.11503,0 148.47533,-9.11443,0 148.47496,-9.11407,0 148.47434,-9.11405,0 148.47331,-9.11434,0 148.47307,-9.11424,0 148.47263,-9.11366,0 148.47274,-9.11321,0 148.47258,-9.11274,0 148.47092,-9.11310,0 148.46891,-9.11485,0 148.46709,-9.11553,0 148.46633,-9.11552,0 148.46585,-9.11557,0 148.46444,-9.11622,0 148.46411,-9.11656,0 148.46271,-9.11632,0 148.46177,-9.11629,0 148.46096,-9.11630,0 148.46060,-9.11633,0 148.46017,-9.11627,0 148.45956,-9.11623,0 148.45901,-9.11690,0 148.45853,-9.11753,0 148.45792,-9.11782,0 148.45743,-9.11782,0 148.45658,-9.11818,0 148.45580,-9.11848,0 148.45518,-9.11904,0 148.45486,-9.11972,0 148.45475,-9.12005,0 148.45467,-9.12037,0 148.45453,-9.12108,0 148.45433,-9.12215,0 148.45419,-9.12319,0 148.45366,-9.12360,0 148.45319,-9.12395,0 148.45260,-9.12393,0 148.45193,-9.12401,0 148.45103,-9.12359,0 148.45035,-9.12356,0 148.44947,-9.12375,0 148.44892,-9.12397,0 148.44859,-9.12440,0 148.44806,-9.12508,0 148.44774,-9.12577,0 148.44749,-9.12660,0 148.44728,-9.12706,0 148.44723,-9.12732,0 148.44674,-9.12808,0 148.44674,-9.12851,0 148.44645,-9.12913,0 148.44635,-9.12915,0 148.44620,-9.12927,0 148.44614,-9.12934,0 148.44584,-9.12953,0 148.44560,-9.12971,0 148.44531,-9.12988,0 148.44479,-9.13012,0 148.44424,-9.13032,0 148.44346,-9.13042,0 148.43771,-9.12985,0 148.43670,-9.13014,0 148.43578,-9.13057,0 148.43513,-9.13041,0 148.43482,-9.13034,0 148.43430,-9.13026,0 148.43387,-9.13010,0 148.43347,-9.13001,0 148.43290,-9.13007,0 148.43151,-9.13027,0 148.42646,-9.13133,0 148.42331,-9.12998,0 148.42248,-9.13007,0 148.42108,-9.13066,0 148.42072,-9.13091,0 148.42026,-9.13068,0 148.42001,-9.13043,0 148.41967,-9.13024,0 148.41926,-9.12998,0 148.41892,-9.12976,0 148.41785,-9.12952,0 148.41750,-9.12949,0 148.41734,-9.12947,0 148.41698,-9.12942,0 148.41674,-9.12940,0 148.41643,-9.12944,0 148.41572,-9.12961,0 148.41541,-9.12962,0 148.41450,-9.13002,0 148.41372,-9.13015,0 148.41214,-9.12985,0 148.41075,-9.12996,0 148.41023,-9.13002,0 148.40891,-9.13011,0 148.40823,-9.13018,0 148.40743,-9.13028,0 148.40693,-9.13035,0 148.40651,-9.13042,0 148.40609,-9.13056,0 148.40585,-9.13065,0 148.40553,-9.13082,0 148.40509,-9.13107,0 148.40484,-9.13127,0 148.40412,-9.13188,0 148.40364,-9.13239,0 148.40317,-9.13320,0 148.40267,-9.13362,0 148.40045,-9.13382,0 148.39993,-9.13375,0 148.39950,-9.13348,0 148.39948,-9.13319,0 148.39927,-9.13281,0 148.39885,-9.13302,0 148.39832,-9.13368,0 148.39791,-9.13374,0 148.39751,-9.13371,0 148.39724,-9.13355,0 148.39674,-9.13313,0 148.39651,-9.13291,0 148.39591,-9.13244,0 148.39548,-9.13218,0 148.39514,-9.13197,0 148.39460,-9.13184,0 148.39421,-9.13228,0 148.39371,-9.13291,0 148.39321,-9.13351,0 148.39258,-9.13432,0 148.39212,-9.13498,0 148.39168,-9.13584,0 148.39131,-9.13662,0 148.39098,-9.13722,0 148.39048,-9.13811,0 148.38979,-9.13924,0 148.38954,-9.13958,0 148.38939,-9.13977,0 148.38911,-9.14009,0 148.38874,-9.14053,0 148.38843,-9.14088,0 148.38813,-9.14083,0 148.38732,-9.14016,0 148.38740,-9.13978,0 148.38743,-9.13937,0 148.38734,-9.13903,0 148.38726,-9.13907,0 148.38716,-9.13902,0 148.38695,-9.13872,0 148.38676,-9.13839,0 148.38659,-9.13809,0 148.38625,-9.13712,0 148.38605,-9.13650,0 148.38587,-9.13602,0 148.38570,-9.13557,0 148.38552,-9.13512,0 148.38526,-9.13427,0 148.38515,-9.13401,0 148.38503,-9.13370,0 148.38490,-9.13334,0 148.38484,-9.13314,0 148.38464,-9.13282,0 148.38426,-9.13268,0 148.38369,-9.13252,0 148.38320,-9.13224,0 148.38287,-9.13183,0 148.38260,-9.13142,0 148.38238,-9.13089,0 148.38347,-9.13037,0 148.38370,-9.13018,0 148.38382,-9.12995,0 148.38400,-9.12974,0 148.38426,-9.12951,0 148.38448,-9.12934,0 148.38466,-9.12918,0 148.38510,-9.12826,0 148.38502,-9.12773,0 148.38492,-9.12720,0 148.38485,-9.12642,0 148.38500,-9.12623,0 148.38514,-9.12616,0 148.38522,-9.12610,0 148.38554,-9.12543,0 148.38568,-9.12527,0 148.38589,-9.12506,0 148.38628,-9.12476,0 148.38664,-9.12437,0 148.38725,-9.12353,0 148.38726,-9.12320,0 148.38711,-9.12283,0 148.38693,-9.12254,0 148.38683,-9.12223,0 148.38697,-9.12196,0 148.38725,-9.12145,0 148.38776,-9.12091,0 148.38801,-9.12066,0 148.38829,-9.12007,0 148.38849,-9.11934,0 148.38854,-9.11902,0 148.38846,-9.11843,0 148.38857,-9.11782,0 148.38845,-9.11730,0 148.38809,-9.11702,0 148.38804,-9.11680,0 148.38826,-9.11643,0 148.38853,-9.11598,0 148.38889,-9.11549,0 148.38864,-9.11501,0 148.38866,-9.11480,0 148.38965,-9.11460,0 148.39005,-9.11431,0 148.39047,-9.11409,0 148.39082,-9.11357,0 148.39099,-9.11324,0 148.39224,-9.11246,0 148.39222,-9.11211,0 148.39167,-9.11183,0 148.39116,-9.11174,0 148.39076,-9.11167,0 148.39038,-9.11167,0 148.38989,-9.11153,0 148.38930,-9.11110,0 148.38898,-9.11103,0 148.38857,-9.11082,0 148.38842,-9.11057,0 148.38808,-9.11007,0 148.38752,-9.10967,0 148.38771,-9.10916,0 148.38804,-9.10857,0 148.38837,-9.10813,0 148.38807,-9.10740,0 148.38790,-9.10674,0 148.38810,-9.10600,0 148.38883,-9.10462,0 148.38870,-9.10249,0 148.38861,-9.10211,0 148.38817,-9.10104,0 148.38788,-9.10053,0 148.38753,-9.09999,0 148.38739,-9.09952,0 148.38702,-9.09923,0 148.38513,-9.09862,0 148.38448,-9.09865,0 148.38397,-9.09869,0 148.38346,-9.09854,0 148.38309,-9.09795,0 148.38265,-9.09763,0 148.38225,-9.09746,0 148.38184,-9.09729,0 148.38125,-9.09703,0 148.38078,-9.09714,0 148.38027,-9.09709,0 148.37980,-9.09676,0 148.37861,-9.09560,0 148.37847,-9.09496,0 148.37834,-9.09426,0 148.37839,-9.09384,0 148.37857,-9.09335,0 148.37867,-9.09289,0 148.37856,-9.09243,0 148.37801,-9.09219,0 148.37778,-9.09157,0 148.37750,-9.09107,0 148.37731,-9.09095,0 148.37722,-9.09088,0 148.37714,-9.09066,0 148.37726,-9.09028,0 148.37762,-9.08990,0 148.37811,-9.08971,0 148.37836,-9.08939,0 148.37776,-9.08914,0 148.37719,-9.08891,0 148.37671,-9.08849,0 148.37619,-9.08805,0 148.37565,-9.08748,0 148.37529,-9.08681,0 148.37483,-9.08606,0 148.37488,-9.08516,0 148.37453,-9.08450,0 148.37421,-9.08354,0 148.37437,-9.08306,0 148.37438,-9.08254,0 148.37433,-9.08199,0 148.37437,-9.08208,0 148.37432,-9.08200,0 148.37428,-9.08191,0 148.37382,-9.08139,0 148.37338,-9.08115,0 148.37279,-9.08095,0 148.37205,-9.08057,0 148.37162,-9.07978,0 148.37115,-9.07903,0 148.37094,-9.07829,0 148.37053,-9.07767,0 148.36994,-9.07702,0 148.36961,-9.07633,0 148.36933,-9.07556,0 148.36887,-9.07308,0 148.36892,-9.07267,0 148.36867,-9.07235,0 148.36835,-9.07206,0 148.36839,-9.07216,0 148.36863,-9.07236,0 148.36887,-9.07257,0 148.36880,-9.07249,0 148.36886,-9.07257,0 148.36890,-9.07277,0 148.36887,-9.07306,0 148.36896,-9.07348,0 148.36906,-9.07376,0 148.36916,-9.07457,0 148.36930,-9.07509,0 148.36941,-9.07581,0 148.36982,-9.07659,0 148.37017,-9.07743,0 148.37089,-9.07791,0 148.37201,-9.08048,0 148.37336,-9.08109,0 148.37392,-9.08147,0 148.37442,-9.08215,0 148.37441,-9.08384,0 148.37485,-9.08503,0 148.37485,-9.08590,0 148.37510,-9.08647,0 148.37552,-9.08727,0 148.37592,-9.08793,0 148.37649,-9.08825,0 148.37734,-9.08897,0 148.37788,-9.08922,0 148.37828,-9.08947,0 148.37773,-9.08976,0 148.37731,-9.09015,0 148.37715,-9.09067,0 148.37792,-9.09152,0 148.37793,-9.09213,0 148.37860,-9.09246,0 148.37861,-9.09313,0 148.37841,-9.09377,0 148.37834,-9.09458,0 148.37853,-9.09544,0 148.37916,-9.09602,0 148.37974,-9.09661,0 148.38018,-9.09706,0 148.38063,-9.09718,0 148.38125,-9.09706,0 148.38197,-9.09733,0 148.38241,-9.09749,0 148.38310,-9.09792,0 148.38341,-9.09848,0 148.38410,-9.09870,0 148.38480,-9.09861,0 148.38564,-9.09882,0 148.38647,-9.09916,0 148.38723,-9.09936,0 148.38748,-9.09975,0 148.38769,-9.10034,0 148.38809,-9.10088,0 148.38836,-9.10167,0 148.38868,-9.10231,0 148.38868,-9.10278,0 148.38870,-9.10320,0 148.38869,-9.10409,0 148.38877,-9.10443,0 148.38802,-9.10617,0 148.38794,-9.10705,0 148.38837,-9.10800,0 148.38800,-9.10870,0 148.38771,-9.10925,0 148.38751,-9.10965,0 148.38762,-9.10986,0 148.38796,-9.11004,0 148.38782,-9.10997,0 148.38765,-9.10987,0 148.38776,-9.10991,0 148.38829,-9.11034,0 148.38848,-9.11072,0 148.38872,-9.11095,0 148.38920,-9.11108,0 148.38964,-9.11139,0 148.39036,-9.11168,0 148.39213,-9.11208,0 148.39231,-9.11255,0 148.39129,-9.11306,0 148.39072,-9.11388,0 148.39028,-9.11422,0 148.38982,-9.11459,0 148.38880,-9.11478,0 148.38856,-9.11492,0 148.38886,-9.11514,0 148.38889,-9.11559,0 148.38806,-9.11680,0 148.38846,-9.11720,0 148.38855,-9.11768,0 148.38857,-9.11807,0 148.38849,-9.11859,0 148.38857,-9.11912,0 148.38850,-9.11918,0 148.38844,-9.11937,0 148.38837,-9.11980,0 148.38817,-9.12044,0 148.38776,-9.12085,0 148.38747,-9.12112,0 148.38711,-9.12167,0 148.38693,-9.12200,0 148.38689,-9.12231,0 148.38724,-9.12289,0 148.38725,-9.12328,0 148.38718,-9.12359,0 148.38559,-9.12531,0 148.38550,-9.12552,0 148.38540,-9.12578,0 148.38535,-9.12599,0 148.38522,-9.12614,0 148.38504,-9.12621,0 148.38481,-9.12636,0 148.38490,-9.12726,0 148.38508,-9.12787,0 148.38494,-9.12860,0 148.38471,-9.12906,0 148.38449,-9.12933,0 148.38423,-9.12954,0 148.38382,-9.12993,0 148.38349,-9.13035,0 148.38237,-9.13086,0 148.38258,-9.13142,0 148.38300,-9.13204,0 148.38355,-9.13249,0 148.38444,-9.13275,0 148.38474,-9.13292,0 148.38489,-9.13319,0 148.38490,-9.13330,0 148.38499,-9.13369,0 148.38550,-9.13511,0 148.38559,-9.13534,0 148.38569,-9.13555,0 148.38586,-9.13596,0 148.38606,-9.13650,0 148.38625,-9.13709,0 148.38637,-9.13737,0 148.38658,-9.13797,0 148.38675,-9.13840,0 148.38695,-9.13876,0 148.38719,-9.13909,0 148.38729,-9.13905,0 148.38742,-9.13899,0 148.38744,-9.13887,0 148.38748,-9.13878,0 148.38730,-9.13903,0 148.38739,-9.13931,0 148.38742,-9.13976,0 148.38726,-9.14017,0 148.38800,-9.14082,0 148.38830,-9.14096,0 148.38856,-9.14075,0 148.38942,-9.13973,0 148.38958,-9.13952,0 148.38976,-9.13925,0 148.39027,-9.13841,0 148.39075,-9.13760,0 148.39113,-9.13697,0 148.39136,-9.13659,0 148.39239,-9.13461,0 148.39331,-9.13342,0 148.39365,-9.13294,0 148.39396,-9.13257,0 148.39415,-9.13237,0 148.39435,-9.13214,0 148.39466,-9.13180,0 148.39529,-9.13202,0 148.39561,-9.13225,0 148.39614,-9.13264,0 148.39645,-9.13288,0 148.39670,-9.13309,0 148.39688,-9.13325,0 148.39770,-9.13372,0 148.39826,-9.13379,0 148.39871,-9.13325,0 148.39912,-9.13285,0 148.39953,-9.13289,0 148.39972,-9.13359,0 148.40021,-9.13382,0 148.40089,-9.13374,0 148.40180,-9.13369,0 148.40239,-9.13361,0 148.40308,-9.13341,0 148.40418,-9.13184,0 148.40462,-9.13153,0 148.40498,-9.13118,0 148.40522,-9.13097,0 148.40594,-9.13059,0 148.40622,-9.13051,0 148.40662,-9.13039,0 148.40700,-9.13032,0 148.40750,-9.13027,0 148.40837,-9.13018,0 148.40907,-9.13010,0 148.41033,-9.13001,0 148.41108,-9.12991,0 148.41174,-9.12982,0 148.41257,-9.12975,0 148.41380,-9.13008,0 148.41522,-9.12960,0 148.41658,-9.12940,0 148.41690,-9.12941,0 148.41717,-9.12944,0 148.41739,-9.12947,0 148.41761,-9.12955,0 148.41786,-9.12960,0 148.41821,-9.12973,0 148.41870,-9.12973,0 148.41913,-9.12984,0 148.42074,-9.13088,0 148.42119,-9.13066,0 148.42215,-9.13030,0 148.42255,-9.13010,0 148.42346,-9.13005,0 148.42629,-9.13141,0 148.43322,-9.13004,0 148.43554,-9.13059,0 148.43617,-9.13044,0 148.43706,-9.13002,0 148.43803,-9.12993,0 148.44220,-9.13052,0 148.44403,-9.13043,0 148.44532,-9.12992,0 148.44631,-9.12929,0 148.44623,-9.12926,0 148.44629,-9.12920,0 148.44670,-9.12850,0 148.44667,-9.12812,0 148.44685,-9.12762,0 148.44712,-9.12746,0 148.44725,-9.12676,0 148.44748,-9.12645,0 148.44767,-9.12618,0 148.44772,-9.12589,0 148.44775,-9.12553,0 148.44796,-9.12517,0 148.44831,-9.12474,0 148.44867,-9.12432,0 148.44896,-9.12404,0 148.45057,-9.12361,0 148.45195,-9.12403,0 148.45306,-9.12400,0 148.45341,-9.12374,0 148.45393,-9.12344,0 148.45426,-9.12304,0 148.45490,-9.11966,0 148.45516,-9.11910,0 148.45543,-9.11875,0 148.45577,-9.11851,0 148.45610,-9.11829,0 148.45737,-9.11780,0 148.45794,-9.11779,0 148.45839,-9.11764,0 148.45861,-9.11751,0 148.45882,-9.11722,0 148.45923,-9.11661,0 148.45992,-9.11624,0 148.46239,-9.11626,0 148.46318,-9.11648,0 148.46355,-9.11668,0 148.46392,-9.11666,0 148.46416,-9.11658,0 148.46441,-9.11632,0 148.46588,-9.11564,0 148.46694,-9.11563,0 148.46765,-9.11547,0 148.46894,-9.11490,0 148.47123,-9.11305,0 148.47255,-9.11284,0 148.47292,-9.11326,0 148.47284,-9.11381,0 148.47302,-9.11412,0 148.47322,-9.11440,0 148.47376,-9.11441,0 148.47415,-9.11415,0 148.47481,-9.11400,0 148.47530,-9.11441,0 148.47560,-9.11520,0 148.47632,-9.11555,0 148.47698,-9.11507,0 148.47685,-9.11466,0 148.47651,-9.11402,0 148.47716,-9.11365,0 148.48009,-9.11321,0 148.48040,-9.11302,0 148.48046,-9.11257,0 148.48102,-9.11220,0 148.48145,-9.11223,0 148.48167,-9.11230,0 148.48200,-9.11246,0 148.48249,-9.11218,0 148.48318,-9.11166,0 148.48365,-9.11113,0 148.48377,-9.11080,0 148.48359,-9.11054,0 148.48367,-9.11006,0 148.48412,-9.10964,0 148.48499,-9.10879,0 148.48542,-9.10841,0 148.48587,-9.10840,0 148.48598,-9.10856,0 148.48663,-9.10836,0 148.48706,-9.10854,0 148.48760,-9.10903,0 148.48800,-9.10968,0 148.48832,-9.11035,0 148.48858,-9.10972,0 148.48892,-9.10910,0 148.48915,-9.10866,0 148.48934,-9.10715,0 148.48874,-9.10569,0 148.48915,-9.10510,0 148.48926,-9.10487,0 148.48956,-9.10543,0 148.49018,-9.10558,0 148.49064,-9.10531,0 148.49130,-9.10526,0 148.49167,-9.10539,0 148.49158,-9.10579,0 148.49192,-9.10603,0 148.49247,-9.10600,0 148.49316,-9.10592,0 148.49394,-9.10475,0 148.49486,-9.10431,0 148.49540,-9.10349,0 148.49563,-9.10246,0 148.49639,-9.10137,0 148.49719,-9.10095,0 148.49753,-9.10064,0 148.49793,-9.10028,0 148.49835,-9.09969,0 148.49873,-9.09935,0 148.49892,-9.09902,0 148.49955,-9.09875,0 148.50000,-9.09935,0 148.50037,-9.09914,0 148.50063,-9.09857,0 148.50130,-9.09816,0 148.50176,-9.09816,0 148.50230,-9.09819,0 148.50250,-9.09782,0 148.50238,-9.09757,0 148.50215,-9.09719,0 148.50239,-9.09666,0 148.50278,-9.09624,0 148.50348,-9.09607,0 148.50419,-9.09601,0 148.50599,-9.09486,0 148.50632,-9.09475,0 148.50695,-9.09502,0 148.50713,-9.09494,0 148.50785,-9.09488,0 148.50817,-9.09482,0 148.50836,-9.09450,0 148.50869,-9.09428,0 148.50905,-9.09437,0 148.50933,-9.09454,0 148.50948,-9.09456,0 148.51128,-9.09364,0 148.51178,-9.09319,0 148.51282,-9.09205,0 148.51314,-9.09174,0 148.51602,-9.08974,0 148.51701,-9.08961,0 148.51850,-9.08945,0 148.51908,-9.08929,0 148.52015,-9.08868,0 148.52053,-9.08850,0 148.52111,-9.08822,0 148.52149,-9.08819,0 148.52209,-9.08819,0 148.52286,-9.08847,0 148.52381,-9.08858,0 148.52449,-9.08830,0 148.52723,-9.08528,0 148.53106,-9.08366,0 148.53277,-9.08133,0 148.53529,-9.08106,0 148.54053,-9.07873,0 148.54251,-9.07678,0 148.54504,-9.07565,0 148.54539,-9.07436,0 148.54624,-9.07361,0 148.54895,-9.07268,0 148.54953,-9.07264,0 148.55019,-9.07383,0 148.55030,-9.07614,0 148.55231,-9.07768,0 148.55426,-9.08058,0 148.55424,-9.08111,0 148.55085,-9.08603,0 148.54970,-9.08846,0 148.55055,-9.09501,0 148.55201,-9.09873,0 148.55179,-9.10155,0 148.55325,-9.10410,0 148.55288,-9.10709,0 148.55338,-9.10874,0 148.55485,-9.11017,0 148.55523,-9.11213,0 148.55801,-9.11467,0 148.55813,-9.11431,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Itokama to Afore Road (seg 1)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.26493,-9.20028,0 148.26476,-9.19982,0 148.26454,-9.19978,0 148.26393,-9.19976,0 148.26382,-9.19972,0 148.26370,-9.19971,0 148.26362,-9.19980,0 148.26353,-9.19989,0 148.26334,-9.20006,0 148.26293,-9.20031,0 148.26256,-9.20056,0 148.26183,-9.20114,0 148.26153,-9.20149,0 148.26122,-9.20209,0 148.26119,-9.20221,0 148.26113,-9.20229,0 148.26108,-9.20240,0 148.26104,-9.20250,0 148.26100,-9.20263,0 148.26072,-9.20302,0 148.26011,-9.20361,0 148.26001,-9.20369,0 148.25992,-9.20374,0 148.25981,-9.20381,0 148.25973,-9.20387,0 148.25982,-9.20383,0 148.25989,-9.20376,0 148.25996,-9.20369,0 148.26012,-9.20354,0 148.26022,-9.20346,0 148.26050,-9.20318,0 148.26070,-9.20301,0 148.26101,-9.20249,0 148.26110,-9.20239,0 148.26117,-9.20230,0 148.26154,-9.20152,0 148.26187,-9.20111,0 148.26256,-9.20068,0 148.26265,-9.20051,0 148.26330,-9.20010,0 148.26357,-9.19986,0 148.26363,-9.19976,0 148.26374,-9.19971,0 148.26463,-9.19977,0 148.26476,-9.19981,0 148.26499,-9.20035,0 148.26546,-9.20065,0 148.26580,-9.20073,0 148.26591,-9.20071,0 148.26582,-9.19850,0 148.26463,-9.19829,0 148.26426,-9.19766,0 148.26823,-9.19163,0 148.26844,-9.18910,0 148.27000,-9.18691,0 148.27054,-9.18544,0 148.27072,-9.18440,0 148.27008,-9.18140,0 148.26902,-9.18056,0 148.26829,-9.18061,0 148.26821,-9.17998,0 148.26864,-9.17961,0 148.26795,-9.17817,0 148.26828,-9.17714,0 148.26728,-9.17488,0 148.26844,-9.17159,0 148.27023,-9.17052,0 148.27056,-9.16998,0 148.27115,-9.16690,0 148.27205,-9.16460,0 148.27237,-9.16133,0 148.27306,-9.15908,0 148.27285,-9.15304,0 148.27305,-9.15158,0 148.27499,-9.14618,0 148.27471,-9.14139,0 148.27598,-9.13569,0 148.27673,-9.13622,0 148.27812,-9.13955,0 148.27965,-9.14103,0 148.28051,-9.14311,0 148.28061,-9.14577,0 148.28186,-9.14799,0 148.28230,-9.15020,0 148.28459,-9.15408,0 148.28863,-9.15805,0 148.29109,-9.15988,0 148.29172,-9.16095,0 148.29299,-9.16166,0 148.29642,-9.16084,0 148.29727,-9.15952,0 148.29847,-9.15389,0 148.29824,-9.14716,0 148.29969,-9.14397,0 148.29936,-9.14265,0 148.29979,-9.14221,0 148.30160,-9.14186,0 148.30130,-9.14152,0 148.30210,-9.13967,0 148.30230,-9.13789,0 148.30327,-9.13620,0 148.30376,-9.13425,0 148.30345,-9.13246,0 148.30247,-9.13069,0 148.30314,-9.12967,0 148.30437,-9.12873,0 148.30464,-9.12744,0 148.30424,-9.12611,0 148.30444,-9.12531,0 148.30655,-9.12241,0 148.30835,-9.11865,0 148.31210,-9.11520,0 148.31282,-9.11341,0 148.31267,-9.11149,0 148.30972,-9.10666,0 148.30889,-9.10250,0 148.30831,-9.10176,0 148.30766,-9.09100,0 148.30722,-9.09009,0 148.30568,-9.08853,0 148.30470,-9.08510,0 148.30576,-9.08090,0 148.30564,-9.07860,0 148.30659,-9.07654,0 148.30628,-9.07344,0 148.30698,-9.07193,0 148.30746,-9.07165,0 148.30864,-9.07251,0 148.30914,-9.07150,0 148.30960,-9.07260,0 148.31111,-9.07220,0 148.31308,-9.06938,0 148.31355,-9.06970,0 148.31533,-9.06752,0 148.31585,-9.06573,0 148.32211,-9.05888,0 148.32484,-9.05787,0 148.32864,-9.05917,0 148.32965,-9.06055,0 148.33002,-9.06571,0 148.33113,-9.06900,0 148.33298,-9.07045,0 148.33314,-9.06993,0 148.33247,-9.06915,0 148.33486,-9.06565,0 148.34092,-9.06379,0 148.34237,-9.06242,0 148.34559,-9.05710,0 148.34672,-9.05603,0 148.34847,-9.05104,0 148.34933,-9.05054,0 148.35093,-9.05193,0 148.35390,-9.05596,0 148.35419,-9.05688,0 148.35259,-9.05768,0 148.35262,-9.05906,0 148.35292,-9.05974,0 148.35355,-9.05966,0 148.35407,-9.06068,0 148.35635,-9.06228,0 148.35736,-9.06605,0 148.35841,-9.06679,0 148.35879,-9.06777,0 148.35951,-9.06716,0 148.36093,-9.06751,0 148.36190,-9.06835,0 148.36382,-9.06918,0 148.36427,-9.06999,0 148.36601,-9.07014,0 148.36880,-9.07250,0 148.36945,-9.07613,0 148.37006,-9.07722,0 148.37098,-9.07801,0 148.37212,-9.08059,0 148.37356,-9.08120,0 148.37432,-9.08198,0 148.37426,-9.08349,0 148.37498,-9.08635,0 148.37586,-9.08789,0 148.37723,-9.08903,0 148.37816,-9.08933,0 148.37715,-9.09058,0 148.37801,-9.09157,0 148.37805,-9.09220,0 148.37880,-9.09273,0 148.37845,-9.09414,0 148.37876,-9.09571,0 148.38024,-9.09706,0 148.38146,-9.09710,0 148.38257,-9.09757,0 148.38384,-9.09868,0 148.38508,-9.09861,0 148.38727,-9.09938,0 148.38854,-9.10201,0 148.38883,-9.10445,0 148.38791,-9.10675,0 148.38839,-9.10812,0 148.38753,-9.10976,0 148.38878,-9.11103,0 148.39015,-9.11167,0 148.39204,-9.11197,0 148.39234,-9.11241,0 148.39116,-9.11317,0 148.39025,-9.11431,0 148.38855,-9.11490,0 148.38890,-9.11538,0 148.38804,-9.11695,0 148.38850,-9.11756,0 148.38848,-9.11954,0 148.38815,-9.12051,0 148.38693,-9.12206,0 148.38730,-9.12340,0 148.38504,-9.12620,0 148.38509,-9.12816,0 148.38465,-9.12910,0 148.38355,-9.13032,0 148.38279,-9.13045,0 148.38243,-9.13092,0 148.38347,-9.13244,0 148.38467,-9.13288,0 148.38663,-9.13813,0 148.38716,-9.13905,0 148.38747,-9.13889,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jorua to Girua Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30484,-9.08412,0 148.30450,-9.08351,0 148.30234,-9.08196,0 148.30110,-9.08027,0 148.29914,-9.07939,0 148.29870,-9.07862,0 148.29718,-9.07870,0 148.29693,-9.07906,0 148.29595,-9.07773,0 148.29581,-9.07613,0 148.29482,-9.07405,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jorua to Girua Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.29478,-9.07396,0 148.29415,-9.07132,0 148.29328,-9.07009,0 148.29243,-9.06930,0 148.29067,-9.06879,0 148.29013,-9.06635,0 148.28946,-9.06577,0 148.28858,-9.06307,0 148.28646,-9.06097,0 148.28616,-9.05967,0 148.28502,-9.05767,0 148.28492,-9.05612,0 148.28685,-9.05134,0 148.28637,-9.05010,0 148.28636,-9.04678,0 148.28581,-9.04553,0 148.28600,-9.04404,0 148.28510,-9.04235,0 148.28448,-9.04191,0 148.28435,-9.04029,0 148.28352,-9.03916,0 148.28431,-9.03335,0 148.28413,-9.03230,0 148.28370,-9.03195,0 148.28417,-9.02533,0 148.28277,-9.02388,0 148.28142,-9.02334,0 148.28068,-9.02255,0 148.27890,-9.02220,0 148.27896,-9.01977,0 148.27811,-9.01782,0 148.27666,-9.01671,0 148.27640,-9.01586,0 148.27486,-9.01457,0 148.27221,-9.01310,0 148.27060,-9.01066,0 148.26740,-9.00807,0 148.26666,-9.00681,0 148.26417,-9.00524,0 148.26269,-9.00559,0 148.26159,-9.00681,0 148.26056,-9.00589,0 148.25986,-9.00430,0 148.25919,-9.00359,0 148.25834,-9.00334,0 148.25856,-9.00216,0 148.25742,-9.00094,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jorua to Girua Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.25746,-9.00103,0 148.25652,-9.00085,0 148.25530,-9.00122,0 148.25474,-9.00085,0 148.25393,-8.99749,0 148.25304,-8.99640,0 148.25194,-8.99579,0 148.25171,-8.99488,0 148.24964,-8.99335,0 148.25046,-8.99189,0 148.25023,-8.99060,0 148.24806,-8.98915,0 148.24724,-8.98732,0 148.24595,-8.98625,0 148.24540,-8.98500,0 148.24553,-8.98211,0 148.24656,-8.97970,0 148.24630,-8.97834,0 148.24554,-8.97729,0 148.24645,-8.97650,0 148.24645,-8.97561,0 148.24688,-8.97489,0 148.24785,-8.97426,0 148.24811,-8.97351,0 148.24801,-8.97296,0 148.24714,-8.97255,0 148.24601,-8.97049,0 148.24607,-8.96955,0 148.24709,-8.96809,0 148.24708,-8.96666,0 148.24687,-8.96626,0 148.24678,-8.96629,0 148.24697,-8.96485,0 148.24810,-8.96345,0 148.24773,-8.96139,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jorua to Girua Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.24806,-8.96094,0 148.24816,-8.96092,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jorua to Girua Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.24809,-8.96082,0 148.24857,-8.95958,0 148.25072,-8.95803,0 148.25135,-8.95317,0 148.25080,-8.95138,0 148.24762,-8.94886,0 148.24810,-8.94560,0 148.24863,-8.94468,0 148.25046,-8.94308,0 148.25096,-8.94046,0 148.25211,-8.93848,0 148.25214,-8.93734,0 148.25365,-8.93612,0 148.25421,-8.93307,0 148.25508,-8.93217,0 148.25583,-8.93014,0 148.25780,-8.92886,0 148.25888,-8.92898,0 148.26031,-8.92841,0 148.26057,-8.92775,0 148.26128,-8.92740,0 148.26178,-8.92598,0 148.26340,-8.92455,0 148.26410,-8.92024,0 148.26576,-8.91706,0 148.26656,-8.91424,0 148.26615,-8.91058,0 148.26654,-8.90862,0 148.26572,-8.90758,0 148.26614,-8.90678,0 148.26616,-8.90425,0 148.26518,-8.90217,0 148.26577,-8.90144,0 148.26561,-8.90030,0 148.26665,-8.89865,0 148.26681,-8.89742,0 148.26811,-8.89601,0 148.26840,-8.89403,0 148.26802,-8.89247,0 148.26883,-8.89026,0 148.26857,-8.88907,0 148.26880,-8.88775,0 148.26817,-8.88561,0 148.26832,-8.88363,0 148.26778,-8.88260,0 148.26832,-8.87985,0 148.26695,-8.87658,0 148.26686,-8.87433,0 148.26640,-8.87304,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Jorua to Girua Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.26648,-8.87297,0 148.26633,-8.87175,0 148.26498,-8.86995,0 148.26416,-8.86735,0 148.26507,-8.86340,0 148.26447,-8.85908,0 148.26551,-8.85424,0 148.26699,-8.85122,0 148.26714,-8.84929,0 148.26813,-8.84665,0 148.27003,-8.84387,0 148.26957,-8.84268,0 148.26986,-8.84139,0 148.27018,-8.84040,0 148.27156,-8.83905,0 148.27161,-8.83785,0 148.27545,-8.83631,0 148.28422,-8.83036,0 148.28663,-8.82630,0 148.29428,-8.82191,0 148.29595,-8.82054,0 148.29936,-8.81724,0 148.30198,-8.81367,0 148.30879,-8.80794,0 148.30879,-8.80739,0 148.30915,-8.80701,0 148.30886,-8.80742,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Gadzot Road</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.27564,-9.13637,0 148.27565,-9.13572,0 148.27574,-9.13535,0 148.27588,-9.13488,0 148.27579,-9.13438,0 148.27579,-9.13392,0 148.27594,-9.13347,0 148.27609,-9.13310,0 148.27609,-9.13277,0 148.27591,-9.13228,0 148.27579,-9.13185,0 148.27571,-9.13147,0 148.27564,-9.13093,0 148.27554,-9.13037,0 148.27547,-9.12976,0 148.27538,-9.12925,0 148.27423,-9.12602,0 148.27408,-9.12566,0 148.27383,-9.12521,0 148.27361,-9.12486,0 148.27347,-9.12500,0 148.27351,-9.12534,0 148.27319,-9.12608,0 148.27309,-9.12658,0 148.27304,-9.12679,0 148.27296,-9.12716,0 148.27293,-9.12742,0 148.27287,-9.12776,0 148.27282,-9.12806,0 148.27275,-9.12799,0 148.27311,-9.12597,0 148.27345,-9.12538,0 148.27349,-9.12507,0 148.27361,-9.12481,0 148.27350,-9.12367,0 148.27367,-9.12213,0 148.27362,-9.12162,0 148.27363,-9.12120,0 148.27351,-9.12104,0 148.27257,-9.12201,0 148.27252,-9.12210,0 148.27238,-9.12227,0 148.27227,-9.12245,0 148.27220,-9.12261,0 148.27212,-9.12281,0 148.27197,-9.12307,0 148.27104,-9.12358,0 148.27071,-9.12367,0 148.27053,-9.12371,0 148.27041,-9.12374,0 148.27033,-9.12383,0 148.27014,-9.12405,0 148.26944,-9.12537,0 148.26928,-9.12582,0 148.26916,-9.12627,0 148.26911,-9.12675,0 148.26902,-9.12709,0 148.26883,-9.12747,0 148.26880,-9.12779,0 148.26879,-9.12823,0 148.26869,-9.12939,0 148.26855,-9.12973,0 148.26801,-9.13059,0 148.26777,-9.13103,0 148.26757,-9.13141,0 148.26739,-9.13180,0 148.26731,-9.13224,0 148.26736,-9.13268,0 148.26726,-9.13309,0 148.26704,-9.13351,0 148.26685,-9.13393,0 148.26684,-9.13434,0 148.26685,-9.13484,0 148.26675,-9.13511,0 148.26650,-9.13549,0 148.26615,-9.13584,0 148.26595,-9.13619,0 148.26590,-9.13672,0 148.26577,-9.13707,0 148.26561,-9.13751,0 148.26557,-9.13762,0 148.26545,-9.13782,0 148.26512,-9.13900,0 148.26487,-9.13945,0 148.26371,-9.14078,0 148.26371,-9.14219,0 148.26287,-9.14446,0 148.26269,-9.14603,0 148.26251,-9.14688,0 148.26241,-9.14729,0 148.26201,-9.14827,0 148.26193,-9.14844,0 148.26184,-9.14878,0 148.26178,-9.14870,0 148.26118,-9.15226,0 148.26125,-9.15233,0 148.26144,-9.15236,0 148.26156,-9.15237,0 148.26172,-9.15238,0 148.26181,-9.15241,0 148.26190,-9.15239,0 148.26205,-9.15228,0 148.26198,-9.15215,0 148.26213,-9.15164,0 148.26213,-9.15131,0 148.26208,-9.15119,0 148.26216,-9.15123,0 148.26215,-9.15141,0 148.26209,-9.15157,0 148.26197,-9.15213,0 148.26202,-9.15230,0 148.26133,-9.15232,0 148.26126,-9.15195,0 148.26185,-9.14874,0 148.26193,-9.14848,0 148.26206,-9.14806,0 148.26221,-9.14765,0 148.26243,-9.14720,0 148.26253,-9.14672,0 148.26261,-9.14636,0 148.26289,-9.14426,0 148.26365,-9.14216,0 148.26358,-9.14094,0 148.26389,-9.14045,0 148.26443,-9.13990,0 148.26496,-9.13935,0 148.26523,-9.13884,0 148.26536,-9.13822,0 148.26548,-9.13771,0 148.26562,-9.13737,0 148.26587,-9.13680,0 148.26597,-9.13629,0 148.26610,-9.13584,0 148.26681,-9.13495,0 148.26682,-9.13419,0 148.26697,-9.13362,0 148.26722,-9.13318,0 148.26737,-9.13275,0 148.26743,-9.13173,0 148.26784,-9.13091,0 148.26801,-9.13051,0 148.26861,-9.12951,0 148.26879,-9.12773,0 148.26894,-9.12721,0 148.26909,-9.12671,0 148.26914,-9.12616,0 148.26936,-9.12557,0 148.26966,-9.12498,0 148.26997,-9.12458,0 148.27020,-9.12408,0 148.27052,-9.12374,0 148.27067,-9.12367,0 148.27095,-9.12354,0 148.27129,-9.12331,0 148.27179,-9.12310,0 148.27239,-9.12220,0 148.27261,-9.12198,0 148.27287,-9.12172,0 148.27328,-9.12130,0 148.27353,-9.12109,0 148.27367,-9.12146,0 148.27371,-9.12206,0 148.27369,-9.12466,0 148.27383,-9.12518,0 148.27413,-9.12580,0 148.27476,-9.12809,0 148.27527,-9.12905,0 148.27548,-9.12964,0 148.27552,-9.13017,0 148.27562,-9.13074,0 148.27565,-9.13113,0 148.27574,-9.13163,0 148.27583,-9.13212,0 148.27592,-9.13234,0 148.27600,-9.13258,0 148.27611,-9.13293,0 148.27601,-9.13333,0 148.27590,-9.13374,0 148.27581,-9.13417,0 148.27587,-9.13466,0 148.27577,-9.13526,0 148.27564,-9.13577,0 148.27576,-9.13584,0 148.27604,-9.13561,0 148.27638,-9.13575,0 148.27666,-9.13622,0 148.27690,-9.13657,0 148.27703,-9.13687,0 148.27711,-9.13724,0 148.27763,-9.13871,0 148.27781,-9.13907,0 148.27801,-9.13926,0 148.27820,-9.13964,0 148.27855,-9.14001,0 148.27894,-9.14033,0 148.27936,-9.14066,0 148.27969,-9.14105,0 148.28004,-9.14236,0 148.28041,-9.14288,0 148.28057,-9.14347,0 148.28058,-9.14390,0 148.28058,-9.14434,0 148.28051,-9.14485,0 148.28048,-9.14523,0 148.28070,-9.14591,0 148.28108,-9.14623,0 148.28128,-9.14656,0 148.28141,-9.14696,0 148.28156,-9.14732,0 148.28174,-9.14769,0 148.28217,-9.15005,0 148.28313,-9.15196,0 148.28441,-9.15390,0 148.28869,-9.15816,0 148.28947,-9.15886,0 148.29075,-9.15969,0 148.29158,-9.16100,0 148.29215,-9.16133,0 148.29260,-9.16139,0 148.29283,-9.16154,0 148.29304,-9.16155,0 148.29429,-9.16121,0 148.29461,-9.16120,0 148.29499,-9.16117,0 148.29534,-9.16107,0 148.29601,-9.16101,0 148.29633,-9.16096,0 148.29657,-9.16088,0 148.29660,-9.16100,0 148.29661,-9.16118,0 148.29651,-9.16091,0 148.29606,-9.16099,0 148.29563,-9.16104,0 148.29526,-9.16105,0 148.29511,-9.16115,0 148.29513,-9.16128,0 148.29511,-9.16138,0 148.29527,-9.16145,0 148.29575,-9.16154,0 148.29595,-9.16147,0 148.29611,-9.16131,0 148.29544,-9.16145,0 148.29514,-9.16116,0 148.29474,-9.16118,0 148.29440,-9.16120,0 148.29398,-9.16131,0 148.29369,-9.16144,0 148.29306,-9.16160,0 148.29286,-9.16153,0 148.29263,-9.16132,0 148.29165,-9.16095,0 148.29086,-9.15968,0 148.28864,-9.15808,0 148.28448,-9.15393,0 148.28219,-9.14998,0 148.28182,-9.14784,0 148.28163,-9.14742,0 148.28140,-9.14696,0 148.28118,-9.14640,0 148.28086,-9.14610,0 148.28060,-9.14568,0 148.28046,-9.14513,0 148.28050,-9.14324,0 148.28033,-9.14266,0 148.28005,-9.14224,0 148.27964,-9.14090,0 148.27925,-9.14053,0 148.27884,-9.14026,0 148.27845,-9.13997,0 148.27818,-9.13969,0 148.27803,-9.13939,0 148.27790,-9.13917,0 148.27770,-9.13879,0 148.27704,-9.13680,0 148.27689,-9.13652,0 148.27643,-9.13578,0 148.27602,-9.13569,0 148.27570,-9.13598,0 148.27545,-9.13904,0 148.27467,-9.14158,0 148.27503,-9.14627,0 148.27306,-9.15150,0 148.27286,-9.15289,0 148.27310,-9.15884,0 148.27237,-9.16103,0 148.27206,-9.16487,0 148.27119,-9.16671,0 148.27092,-9.16884,0 148.27027,-9.17040,0 148.26857,-9.17140,0 148.26723,-9.17489,0 148.26821,-9.17701,0 148.26797,-9.17844,0 148.26869,-9.17945,0 148.26811,-9.18007,0 148.26836,-9.18057,0 148.26896,-9.18046,0 148.27006,-9.18132,0 148.27039,-9.18226,0 148.27075,-9.18429,0 148.27056,-9.18550,0 148.26974,-9.18731,0 148.26850,-9.18880,0 148.26795,-9.19212,0 148.26620,-9.19498,0 148.26404,-9.19763,0 148.26404,-9.19972,0 148.26180,-9.20117,0 148.25985,-9.20372,0 148.26009,-9.20391,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>road track save (seg 3)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30763,-9.12063,0 148.30850,-9.11851,0 148.31242,-9.11490,0 148.31279,-9.11317,0 148.31250,-9.11124,0 148.30976,-9.10674,0 148.30884,-9.10246,0 148.30822,-9.10119,0 148.30757,-9.09077,0 148.30554,-9.08834,0 148.30466,-9.08514,0 148.30546,-9.08173,0 148.30552,-9.07860,0 148.30653,-9.07677,0 148.30614,-9.07403,0 148.30670,-9.07211,0 148.30735,-9.07167,0 148.30861,-9.07233,0 148.30883,-9.07150,0 148.30938,-9.07172,0 148.30955,-9.07243,0 148.31111,-9.07223,0 148.31185,-9.07049,0 148.31272,-9.06997,0 148.31287,-9.06934,0 148.31357,-9.06946,0 148.31554,-9.06739,0 148.31575,-9.06601,0 148.31954,-9.06209,0 148.32056,-9.06053,0 148.32307,-9.05852,0 148.32473,-9.05784,0 148.32809,-9.05894,0 148.32938,-9.05988,0 148.32983,-9.06092,0 148.33011,-9.06585,0 148.33111,-9.06907,0 148.33303,-9.07049,0 148.33265,-9.06887,0 148.33482,-9.06573,0 148.33935,-9.06409,0 148.34063,-9.06399,0 148.34258,-9.06217,0 148.34356,-9.06015,0 148.34474,-9.05900,0 148.34567,-9.05708,0 148.34660,-9.05627,0 148.34843,-9.05135,0 148.34938,-9.05055,0 148.35164,-9.05286,0 148.35398,-9.05637,0 148.35414,-9.05689,0 148.35253,-9.05776,0 148.35267,-9.05933,0 148.35301,-9.05988,0 148.35369,-9.05976,0 148.35393,-9.06060,0 148.35639,-9.06234,0 148.35731,-9.06605,0 148.35837,-9.06676,0 148.35869,-9.06771,0 148.35967,-9.06721,0 148.36121,-9.06771,0 148.36382,-9.06917,0 148.36452,-9.07021,0 148.36606,-9.07015,0 148.36890,-9.07263,0 148.36944,-9.07588,0 148.37017,-9.07739,0 148.37084,-9.07793,0 148.37203,-9.08041,0 148.37399,-9.08148,0 148.37446,-9.08214,0 148.37445,-9.08391,0 148.37562,-9.08742,0 148.37724,-9.08903,0 148.37817,-9.08940,0 148.37713,-9.09071,0 148.37791,-9.09216,0 148.37874,-9.09277,0 148.37833,-9.09444,0 148.37858,-9.09550,0 148.38037,-9.09712,0 148.38251,-9.09758,0 148.38395,-9.09874,0 148.38528,-9.09867,0 148.38695,-9.09925,0 148.38824,-9.10111,0 148.38889,-9.10473,0 148.38800,-9.10657,0 148.38842,-9.10812,0 148.38759,-9.10982,0 148.38996,-9.11164,0 148.39199,-9.11201,0 148.39234,-9.11238,0 148.39036,-9.11430,0 148.38869,-9.11488,0 148.38883,-9.11572,0 148.38807,-9.11700,0 148.38859,-9.11783,0 148.38853,-9.11929,0 148.38818,-9.12045,0 148.38687,-9.12227,0 148.38731,-9.12317,0 148.38718,-9.12375,0 148.38490,-9.12646,0 148.38520,-9.12817,0 148.38458,-9.12935,0 148.38247,-9.13099,0 148.38321,-9.13220,0 148.38465,-9.13286,0 148.38663,-9.13811,0 148.38715,-9.13900,0 148.38747,-9.13898,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>David's track record from Jorura to Afore</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30471,-9.08445,0 148.30575,-9.08102,0 148.30564,-9.07856,0 148.30666,-9.07665,0 148.30617,-9.07387,0 148.30693,-9.07204,0 148.30752,-9.07172,0 148.30865,-9.07250,0 148.30907,-9.07153,0 148.30959,-9.07266,0 148.31096,-9.07231,0 148.31314,-9.06928,0 148.31352,-9.06962,0 148.31461,-9.06843,0 148.31539,-9.06731,0 148.31583,-9.06574,0 148.31809,-9.06375,0 148.32072,-9.06027,0 148.32243,-9.05887,0 148.32508,-9.05787,0 148.32813,-9.05893,0 148.32926,-9.05982,0 148.32984,-9.06113,0 148.32995,-9.06550,0 148.33113,-9.06927,0 148.33289,-9.07041,0 148.33314,-9.06988,0 148.33261,-9.06889,0 148.33469,-9.06575,0 148.34076,-9.06386,0 148.34251,-9.06217,0 148.34382,-9.05970,0 148.34465,-9.05901,0 148.34570,-9.05691,0 148.34695,-9.05549,0 148.35042,-9.05535,0 148.35217,-9.05404,0 148.35346,-9.05543,0 148.35411,-9.05680,0 148.35261,-9.05746,0 148.35252,-9.05912,0 148.35292,-9.05977,0 148.35362,-9.05965,0 148.35402,-9.06063,0 148.35636,-9.06229,0 148.35730,-9.06604,0 148.35835,-9.06671,0 148.35867,-9.06766,0 148.35958,-9.06712,0 148.36089,-9.06750,0 148.36205,-9.06842,0 148.36376,-9.06912,0 148.36435,-9.07006,0 148.36597,-9.07012,0 148.36885,-9.07248,0 148.36944,-9.07607,0 148.37006,-9.07727,0 148.37093,-9.07796,0 148.37107,-9.07883,0 148.37211,-9.08055,0 148.37383,-9.08134,0 148.37440,-9.08208,0 148.37420,-9.08354,0 148.37561,-9.08746,0 148.37703,-9.08886,0 148.37821,-9.08938,0 148.37704,-9.09049,0 148.37779,-9.09129,0 148.37791,-9.09210,0 148.37870,-9.09261,0 148.37834,-9.09414,0 148.37861,-9.09556,0 148.38004,-9.09695,0 148.38267,-9.09762,0 148.38357,-9.09860,0 148.38521,-9.09864,0 148.38724,-9.09931,0 148.38807,-9.10073,0 148.38870,-9.10237,0 148.38886,-9.10452,0 148.38791,-9.10673,0 148.38840,-9.10834,0 148.38755,-9.10974,0 148.38882,-9.11101,0 148.39006,-9.11161,0 148.39191,-9.11188,0 148.39233,-9.11230,0 148.39039,-9.11419,0 148.38856,-9.11490,0 148.38888,-9.11543,0 148.38801,-9.11693,0 148.38847,-9.11737,0 148.38853,-9.11906,0 148.38808,-9.12054,0 148.38684,-9.12212,0 148.38722,-9.12352,0 148.38561,-9.12520,0 148.38524,-9.12607,0 148.38490,-9.12605,0 148.38514,-9.12811,0 148.38468,-9.12909,0 148.38358,-9.13025,0 148.38239,-9.13076,0 148.38331,-9.13230,0 148.38474,-9.13295,0 148.38680,-9.13850,0 148.38749,-9.13895,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>David Jajiba's : Track recording from Gora to Jorura</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.24265,-9.00218,0 148.24406,-9.00333,0 148.24502,-9.00468,0 148.24726,-9.00532,0 148.24981,-9.00533,0 148.25181,-9.00438,0 148.25349,-9.00422,0 148.25496,-9.00337,0 148.25667,-9.00308,0 148.25923,-9.00369,0 148.26093,-9.00642,0 148.26171,-9.00687,0 148.26266,-9.00562,0 148.26447,-9.00529,0 148.26703,-9.00715,0 148.26734,-9.00792,0 148.27073,-9.01076,0 148.27211,-9.01304,0 148.27631,-9.01576,0 148.27673,-9.01668,0 148.27746,-9.01709,0 148.27855,-9.01863,0 148.27892,-9.01977,0 148.27869,-9.02177,0 148.27900,-9.02228,0 148.28073,-9.02253,0 148.28137,-9.02329,0 148.28319,-9.02423,0 148.28420,-9.02543,0 148.28372,-9.03194,0 148.28414,-9.03229,0 148.28432,-9.03326,0 148.28355,-9.03905,0 148.28437,-9.04064,0 148.28444,-9.04193,0 148.28503,-9.04233,0 148.28592,-9.04400,0 148.28573,-9.04539,0 148.28635,-9.04738,0 148.28639,-9.05022,0 148.28685,-9.05121,0 148.28490,-9.05620,0 148.28523,-9.05839,0 148.28610,-9.05963,0 148.28658,-9.06115,0 148.28856,-9.06308,0 148.28939,-9.06568,0 148.29014,-9.06641,0 148.29076,-9.06888,0 148.29278,-9.06944,0 148.29418,-9.07140,0 148.29428,-9.07264,0 148.29579,-9.07621,0 148.29590,-9.07769,0 148.29686,-9.07904,0 148.29846,-9.07845,0 148.29920,-9.07944,0 148.30172,-9.08074,0 148.30229,-9.08191,0 148.30452,-9.08351,0 148.30479,-9.08423,0 148.30476,-9.08432,0 148.30473,-9.08441,0 148.30468,-9.08449,0 148.30463,-9.08456,0 148.30473,-9.08521,0 148.30461,-9.08455,0 148.30474,-9.08438,0 148.30477,-9.08427,0 148.30481,-9.08417,0 148.30482,-9.08407,0 148.30501,-9.08346,0 148.30551,-9.08220,0 148.30575,-9.08099,0 148.30565,-9.07860,0 148.30663,-9.07661,0 148.30616,-9.07364,0 148.30706,-9.07181,0 148.30751,-9.07165,0 148.30798,-9.07201,0 148.30820,-9.07142,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>David Jajiba's : Track recording from Gora to Jorura (seg 86</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.24265,-9.00218,0 148.24406,-9.00333,0 148.24502,-9.00468,0 148.24726,-9.00532,0 148.24981,-9.00533,0 148.25181,-9.00438,0 148.25349,-9.00422,0 148.25496,-9.00337,0 148.25667,-9.00308,0 148.25923,-9.00369,0 148.26093,-9.00642,0 148.26171,-9.00687,0 148.26266,-9.00562,0 148.26447,-9.00529,0 148.26703,-9.00715,0 148.26734,-9.00792,0 148.27073,-9.01076,0 148.27211,-9.01304,0 148.27631,-9.01576,0 148.27673,-9.01668,0 148.27746,-9.01709,0 148.27855,-9.01863,0 148.27892,-9.01977,0 148.27869,-9.02177,0 148.27900,-9.02228,0 148.28073,-9.02253,0 148.28137,-9.02329,0 148.28319,-9.02423,0 148.28420,-9.02543,0 148.28372,-9.03194,0 148.28414,-9.03229,0 148.28432,-9.03326,0 148.28355,-9.03905,0 148.28437,-9.04064,0 148.28444,-9.04193,0 148.28503,-9.04233,0 148.28592,-9.04400,0 148.28573,-9.04539,0 148.28635,-9.04738,0 148.28639,-9.05022,0 148.28685,-9.05121,0 148.28490,-9.05620,0 148.28523,-9.05839,0 148.28610,-9.05963,0 148.28658,-9.06115,0 148.28856,-9.06308,0 148.28939,-9.06568,0 148.29014,-9.06641,0 148.29076,-9.06888,0 148.29278,-9.06944,0 148.29418,-9.07140,0 148.29428,-9.07264,0 148.29579,-9.07621,0 148.29590,-9.07769,0 148.29686,-9.07904,0 148.29846,-9.07845,0 148.29920,-9.07944,0 148.30172,-9.08074,0 148.30229,-9.08191,0 148.30452,-9.08351,0 148.30479,-9.08423,0 148.30476,-9.08432,0 148.30473,-9.08441,0 148.30468,-9.08449,0 148.30463,-9.08456,0 148.30473,-9.08521,0 148.30461,-9.08455,0 148.30474,-9.08438,0 148.30477,-9.08427,0 148.30481,-9.08417,0 148.30482,-9.08407,0 148.30501,-9.08346,0 148.30551,-9.08220,0 148.30575,-9.08099,0 148.30565,-9.07860,0 148.30663,-9.07661,0 148.30616,-9.07364,0 148.30706,-9.07181,0 148.30751,-9.07165,0 148.30798,-9.07201,0 148.30820,-9.07142,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Cropping Calendar Survey Track to Kuhara</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37850,-9.06260,0 148.37724,-9.06260,0 148.37617,-9.06122,0 148.37366,-9.05974,0 148.37242,-9.05983,0 148.37187,-9.05935,0 148.37163,-9.05735,0 148.37080,-9.05542,0 148.36902,-9.05327,0 148.36567,-9.05132,0 148.36531,-9.04959,0 148.36614,-9.04728,0 148.36582,-9.04567,0 148.36773,-9.04247,0 148.36748,-9.04083,0 148.36672,-9.03975,0 148.36775,-9.03760,0 148.36791,-9.03625,0 148.36882,-9.03469,0 148.37023,-9.03405,0 148.37391,-9.03079,0 148.37469,-9.02909,0 148.37532,-9.02861,0 148.37544,-9.02776,0 148.37696,-9.02668,0 148.37872,-9.02299,0 148.37882,-9.02166,0 148.37951,-9.02116,0 148.38078,-9.01855,0 148.38126,-9.01814,0 148.38435,-9.01778,0 148.38631,-9.01509,0 148.38793,-9.01400,0 148.38837,-9.01289,0 148.38796,-9.01060,0 148.38862,-9.00762,0 148.38841,-9.00541,0 148.39124,-9.00482,0 148.39199,-9.00369,0 148.39482,-9.00316,0 148.39507,-9.00247,0 148.39927,-8.99946,0 148.39991,-8.99752,0 148.40345,-8.99448,0 148.40412,-8.99323,0 148.40689,-8.99122,0 148.40750,-8.98968,0 148.40820,-8.98912,0 148.41091,-8.98830,0 148.41193,-8.98637,0 148.41465,-8.98413,0 148.41460,-8.98343,0 148.41367,-8.98262,0 148.41406,-8.98212,0 148.41387,-8.98138,0 148.41466,-8.98008,0 148.41572,-8.97961,0 148.41607,-8.97725,0 148.41667,-8.97671,0 148.41736,-8.97509,0 148.41969,-8.97363,0 148.42042,-8.97246,0 148.42005,-8.96604,0 148.42089,-8.96500,0 148.42075,-8.96448,0 148.42157,-8.96397,0 148.42219,-8.96292,0 148.42247,-8.96158,0 148.42363,-8.96081,0 148.42375,-8.95928,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track to Kuhara (seg 94)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37850,-9.06260,0 148.37724,-9.06260,0 148.37617,-9.06122,0 148.37366,-9.05974,0 148.37242,-9.05983,0 148.37187,-9.05935,0 148.37163,-9.05735,0 148.37080,-9.05542,0 148.36902,-9.05327,0 148.36567,-9.05132,0 148.36531,-9.04959,0 148.36614,-9.04728,0 148.36582,-9.04567,0 148.36773,-9.04247,0 148.36748,-9.04083,0 148.36672,-9.03975,0 148.36775,-9.03760,0 148.36791,-9.03625,0 148.36882,-9.03469,0 148.37023,-9.03405,0 148.37391,-9.03079,0 148.37469,-9.02909,0 148.37532,-9.02861,0 148.37544,-9.02776,0 148.37696,-9.02668,0 148.37872,-9.02299,0 148.37882,-9.02166,0 148.37951,-9.02116,0 148.38078,-9.01855,0 148.38126,-9.01814,0 148.38435,-9.01778,0 148.38631,-9.01509,0 148.38793,-9.01400,0 148.38837,-9.01289,0 148.38796,-9.01060,0 148.38862,-9.00762,0 148.38841,-9.00541,0 148.39124,-9.00482,0 148.39199,-9.00369,0 148.39482,-9.00316,0 148.39507,-9.00247,0 148.39927,-8.99946,0 148.39991,-8.99752,0 148.40345,-8.99448,0 148.40412,-8.99323,0 148.40689,-8.99122,0 148.40750,-8.98968,0 148.40820,-8.98912,0 148.41091,-8.98830,0 148.41193,-8.98637,0 148.41465,-8.98413,0 148.41460,-8.98343,0 148.41367,-8.98262,0 148.41406,-8.98212,0 148.41387,-8.98138,0 148.41466,-8.98008,0 148.41572,-8.97961,0 148.41607,-8.97725,0 148.41667,-8.97671,0 148.41736,-8.97509,0 148.41969,-8.97363,0 148.42042,-8.97246,0 148.42005,-8.96604,0 148.42089,-8.96500,0 148.42075,-8.96448,0 148.42157,-8.96397,0 148.42219,-8.96292,0 148.42247,-8.96158,0 148.42363,-8.96081,0 148.42375,-8.95928,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kiara to Grid 63 and back</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.28577,-9.09195,0 148.28579,-9.09135,0 148.28580,-9.09122,0 148.28582,-9.09113,0 148.28589,-9.09089,0 148.28587,-9.09079,0 148.28581,-9.09068,0 148.28574,-9.09060,0 148.28568,-9.09049,0 148.28559,-9.09038,0 148.28554,-9.09030,0 148.28508,-9.08854,0 148.28514,-9.08788,0 148.28511,-9.08778,0 148.28508,-9.08768,0 148.28504,-9.08757,0 148.28492,-9.08740,0 148.28461,-9.08719,0 148.28452,-9.08716,0 148.28443,-9.08718,0 148.28435,-9.08723,0 148.28422,-9.08737,0 148.28414,-9.08790,0 148.28352,-9.08811,0 148.28317,-9.08797,0 148.28207,-9.08771,0 148.28146,-9.08771,0 148.28137,-9.08769,0 148.28129,-9.08765,0 148.28119,-9.08764,0 148.28111,-9.08761,0 148.28107,-9.08753,0 148.28096,-9.08736,0 148.28094,-9.08726,0 148.28063,-9.08686,0 148.27999,-9.08672,0 148.27935,-9.08526,0 148.27782,-9.08494,0 148.27688,-9.08431,0 148.27675,-9.08250,0 148.27510,-9.08018,0 148.27336,-9.07953,0 148.27312,-9.07640,0 148.27226,-9.07533,0 148.27259,-9.07483,0 148.27173,-9.07336,0 148.27184,-9.07187,0 148.27157,-9.07080,0 148.27065,-9.06981,0 148.26922,-9.06611,0 148.26908,-9.06541,0 148.26955,-9.06434,0 148.26898,-9.06224,0 148.26777,-9.06194,0 148.26716,-9.06141,0 148.26546,-9.06155,0 148.26419,-9.06122,0 148.26241,-9.06232,0 148.26114,-9.06026,0 148.26069,-9.06153,0 148.26021,-9.06165,0 148.26009,-9.06151,0 148.25927,-9.06127,0 148.25915,-9.06128,0 148.25902,-9.06242,0 148.25775,-9.06163,0 148.25629,-9.06253,0 148.25582,-9.06312,0 148.25602,-9.06441,0 148.25548,-9.06497,0 148.25560,-9.06555,0 148.25506,-9.06686,0 148.25575,-9.06836,0 148.25511,-9.06900,0 148.25480,-9.07045,0 148.25440,-9.07050,0 148.25344,-9.07214,0 148.25294,-9.07209,0 148.25321,-9.07222,0 148.25397,-9.07212,0 148.25470,-9.07189,0 148.25474,-9.07181,0 148.25476,-9.07172,0 148.25474,-9.07162,0 148.25477,-9.07154,0 148.25500,-9.07211,0 148.25617,-9.07136,0 148.26016,-9.07084,0 148.26109,-9.06933,0 148.26242,-9.06875,0 148.26422,-9.06654,0 148.26468,-9.06519,0 148.26579,-9.06578,0 148.26702,-9.06557,0 148.26753,-9.06624,0 148.26902,-9.06658,0 148.26943,-9.06693,0 148.27056,-9.07001,0 148.27158,-9.07151,0 148.27166,-9.07335,0 148.27229,-9.07474,0 148.27215,-9.07526,0 148.27225,-9.07567,0 148.27305,-9.07641,0 148.27338,-9.08236,0 148.27388,-9.08334,0 148.27338,-9.08485,0 148.27365,-9.08594,0 148.27532,-9.08772,0 148.27669,-9.08754,0 148.27703,-9.08676,0 148.27787,-9.08672,0 148.27826,-9.08722,0 148.27914,-9.08745,0 148.28022,-9.08679,0 148.28059,-9.08688,0 148.28107,-9.08757,0 148.28117,-9.08758,0 148.28120,-9.08767,0 148.28137,-9.08774,0 148.28356,-9.08819,0 148.28422,-9.08786,0 148.28453,-9.08717,0 148.28498,-9.08751,0 148.28506,-9.08761,0 148.28510,-9.08770,0 148.28516,-9.08789,0 148.28511,-9.08864,0 148.28589,-9.09083,0 148.28589,-9.09093,0 148.28580,-9.09130,0 148.28578,-9.09139,0 148.28577,-9.09149,0 148.28576,-9.09158,0 148.28575,-9.09196,0 148.28580,-9.09223,0 148.28725,-9.09401,0 148.28817,-9.09596,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Numba to Koeno track and road to Afore</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36337,-9.04919,0 148.36145,-9.04953,0 148.36120,-9.05193,0 148.35958,-9.05379,0 148.35838,-9.05457,0 148.35712,-9.05490,0 148.35535,-9.05463,0 148.35348,-9.05553,0 148.35406,-9.05681,0 148.35270,-9.05741,0 148.35248,-9.05899,0 148.35283,-9.05967,0 148.35361,-9.05972,0 148.35404,-9.06069,0 148.35636,-9.06237,0 148.35718,-9.06572,0 148.35881,-9.06781,0 148.35982,-9.06716,0 148.36129,-9.06777,0 148.36380,-9.06922,0 148.36460,-9.07015,0 148.36601,-9.07023,0 148.36875,-9.07245,0 148.36931,-9.07559,0 148.37001,-9.07724,0 148.37089,-9.07797,0 148.37218,-9.08064,0 148.37371,-9.08134,0 148.37434,-9.08212,0 148.37425,-9.08356,0 148.37479,-9.08481,0 148.37481,-9.08598,0 148.37571,-9.08771,0 148.37720,-9.08903,0 148.37810,-9.08934,0 148.37708,-9.09062,0 148.37787,-9.09210,0 148.37865,-9.09256,0 148.37828,-9.09421,0 148.37852,-9.09544,0 148.38022,-9.09707,0 148.38133,-9.09708,0 148.38266,-9.09765,0 148.38336,-9.09849,0 148.38726,-9.09944,0 148.38814,-9.10105,0 148.38861,-9.10215,0 148.38877,-9.10462,0 148.38796,-9.10630,0 148.38830,-9.10794,0 148.38751,-9.10974,0 148.38893,-9.11103,0 148.39206,-9.11207,0 148.39223,-9.11254,0 148.39005,-9.11432,0 148.38871,-9.11475,0 148.38884,-9.11560,0 148.38808,-9.11702,0 148.38848,-9.11735,0 148.38853,-9.11908,0 148.38816,-9.12050,0 148.38696,-9.12210,0 148.38711,-9.12374,0 148.38491,-9.12627,0 148.38503,-9.12839,0 148.38460,-9.12919,0 148.38360,-9.13029,0 148.38243,-9.13073,0 148.38290,-9.13186,0 148.38490,-9.13330,0 148.38683,-9.13857,0 148.38717,-9.13905,0 148.38748,-9.13894,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Semahara to Tabuane track (seg 27)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38723,-9.13909,0 148.38513,-9.13680,0 148.38448,-9.13670,0 148.38355,-9.13679,0 148.38140,-9.13786,0 148.37604,-9.13758,0 148.37475,-9.13656,0 148.37401,-9.13432,0 148.37065,-9.13276,0 148.37011,-9.13198,0 148.37016,-9.13112,0 148.36930,-9.12895,0 148.36689,-9.12775,0 148.36635,-9.12685,0 148.36744,-9.12502,0 148.36739,-9.12384,0 148.36936,-9.12103,0 148.36960,-9.11905,0 148.37164,-9.11718,0 148.37135,-9.11491,0 148.37193,-9.11415,0 148.37049,-9.11298,0 148.36925,-9.10974,0 148.36716,-9.10882,0 148.36680,-9.10750,0 148.36582,-9.10656,0 148.36456,-9.10651,0 148.36387,-9.10695,0 148.36257,-9.10705,0 148.36146,-9.10639,0 148.36091,-9.10546,0 148.35845,-9.10554,0 148.35757,-9.10498,0 148.35726,-9.10523,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Semahara to Tabuane track (seg 27)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35729,-9.10513,0 148.35684,-9.10507,0 148.35671,-9.10481,0 148.35642,-9.10473,0 148.35624,-9.10448,0 148.35396,-9.10448,0 148.35313,-9.10321,0 148.34890,-9.10061,0 148.34754,-9.09858,0 148.34776,-9.09673,0 148.34719,-9.09585,0 148.34770,-9.09355,0 148.34609,-9.09116,0 148.34597,-9.09039,0 148.34495,-9.08966,0 148.34342,-9.08771,0 148.34302,-9.08634,0 148.34149,-9.08406,0 148.34265,-9.08143,0 148.34235,-9.08022,0 148.34252,-9.07931,0 148.34420,-9.07591,0 148.34367,-9.07536,0 148.34282,-9.07527,0 148.34241,-9.07439,0 148.34104,-9.07480,0 148.34059,-9.07316,0 148.33995,-9.07257,0 148.34036,-9.06868,0 148.34024,-9.06742,0 148.33949,-9.06615,0 148.34008,-9.06589,0 148.34040,-9.06523,0 148.34043,-9.06397,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Afore Guest house</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38612,-9.13792,0 148.38520,-9.13687,0 148.38453,-9.13671,0 148.38362,-9.13678,0 148.38148,-9.13785,0 148.37697,-9.13772,0 148.37560,-9.13734,0 148.37467,-9.13650,0 148.37407,-9.13446,0 148.37063,-9.13279,0 148.36924,-9.12891,0 148.36689,-9.12777,0 148.36610,-9.12679,0 148.36500,-9.12717,0 148.36376,-9.12880,0 148.36169,-9.12977,0 148.36015,-9.12999,0 148.35903,-9.12968,0 148.35672,-9.13046,0 148.35535,-9.12962,0 148.35470,-9.12975,0 148.35337,-9.13040,0 148.35195,-9.13201,0 148.35153,-9.13330,0 148.35071,-9.13364,0 148.34948,-9.13334,0 148.34859,-9.13356,0 148.34789,-9.13411,0 148.34748,-9.13508,0 148.34667,-9.13489,0 148.34581,-9.13544,0 148.34278,-9.13471,0 148.33988,-9.13339,0 148.33654,-9.13379,0 148.33501,-9.13312,0 148.33404,-9.13372,0 148.33174,-9.13397,0 148.33073,-9.13328,0 148.32932,-9.13354,0 148.32765,-9.13290,0 148.32609,-9.13315,0 148.32461,-9.13212,0 148.32248,-9.12810,0 148.31948,-9.12558,0 148.31804,-9.12585,0 148.31721,-9.12500,0 148.31582,-9.12450,0 148.31379,-9.12463,0 148.31295,-9.12389,0 148.31228,-9.12224,0 148.30974,-9.12078,0 148.30913,-9.12096,0 148.30930,-9.12118,0 148.30876,-9.12162,0 148.30740,-9.12154,0 148.30718,-9.12141,0 148.30725,-9.12130,0 148.30744,-9.12082,0 148.30751,-9.12072,0 148.30758,-9.12063,0 148.30773,-9.12051,0 148.30770,-9.12060,0 148.30761,-9.12062,0 148.30754,-9.12069,0 148.30749,-9.12076,0 148.30743,-9.12084,0 148.30706,-9.12161,0 148.30766,-9.12229,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Marase to Gana to Gewoya to Vouka Track (seg 15)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.44913,-9.14932,0 148.45174,-9.15113,0 148.45343,-9.15359,0 148.45432,-9.15356,0 148.45512,-9.15431,0 148.45481,-9.15549,0 148.45563,-9.15710,0 148.45512,-9.15860,0 148.45541,-9.15960,0 148.45688,-9.16137,0 148.45850,-9.16228,0 148.45865,-9.16305,0 148.45950,-9.16369,0 148.45981,-9.16465,0 148.45984,-9.16456,0 148.45991,-9.16464,0 148.46004,-9.16459,0 148.46013,-9.16464,0 148.46004,-9.16463,0 148.45998,-9.16471,0 148.45989,-9.16466,0 148.45998,-9.16438,0 148.45991,-9.16431,0 148.46005,-9.16447,0 148.46009,-9.16461,0 148.45999,-9.16464,0 148.45992,-9.16470,0 148.46002,-9.16470,0 148.45990,-9.16468,0 148.45987,-9.16487,0 148.46176,-9.16534,0 148.46297,-9.16459,0 148.46521,-9.16641,0 148.46667,-9.16702,0 148.46788,-9.16552,0 148.46847,-9.16534,0 148.46948,-9.16707,0 148.46939,-9.16803,0 148.46983,-9.16902,0 148.47085,-9.17020,0 148.47228,-9.17058,0 148.47331,-9.17220,0 148.47377,-9.17223,0 148.47395,-9.17188,0 148.47551,-9.17202,0 148.47640,-9.17141,0 148.47653,-9.17170,0 148.47821,-9.17196,0 148.47856,-9.17271,0 148.47904,-9.17249,0 148.47998,-9.17289,0 148.48018,-9.17265,0 148.48022,-9.17256,0 148.48091,-9.17303,0 148.48269,-9.17237,0 148.48385,-9.17235,0 148.48438,-9.17275,0 148.48448,-9.17237,0 148.48503,-9.17280,0 148.48501,-9.17226,0 148.48520,-9.17257,0 148.48524,-9.17231,0 148.48632,-9.17228,0 148.48621,-9.17267,0 148.48632,-9.17235,0 148.48702,-9.17272,0 148.48699,-9.17244,0 148.48712,-9.17245,0 148.48705,-9.17252,0 148.48709,-9.17251,0 148.48705,-9.17269,0 148.48705,-9.17281,0 148.48703,-9.17290,0 148.48688,-9.17309,0 148.48740,-9.17293,0 148.48809,-9.17354,0 148.48901,-9.17380,0 148.48903,-9.17352,0 148.49105,-9.17437,0 148.49105,-9.17525,0 148.49119,-9.17484,0 148.49124,-9.17526,0 148.49152,-9.17489,0 148.49367,-9.17483,0 148.49396,-9.17520,0 148.49406,-9.17498,0 148.49388,-9.17572,0 148.49458,-9.17502,0 148.49524,-9.17500,0 148.49564,-9.17515,0 148.49549,-9.17537,0 148.49558,-9.17541,0 148.49590,-9.17542,0 148.49603,-9.17544,0 148.49613,-9.17547,0 148.49629,-9.17549,0 148.49638,-9.17550,0 148.49649,-9.17562,0 148.49648,-9.17540,0 148.49627,-9.17555,0 148.49635,-9.17561,0 148.49632,-9.17552,0 148.49625,-9.17545,0 148.49614,-9.17541,0 148.49615,-9.17553,0 148.49608,-9.17547,0 148.49612,-9.17556,0 148.49623,-9.17560,0 148.49615,-9.17553,0 148.49623,-9.17559,0 148.49616,-9.17552,0 148.49608,-9.17543,0 148.49673,-9.17509,0 148.49662,-9.17545,0 148.49633,-9.17550,0 148.49624,-9.17544,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Biriri to Marese track (seg 19)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.43999,-9.21171,0 148.43996,-9.21080,0 148.43868,-9.20878,0 148.43899,-9.20605,0 148.43796,-9.20490,0 148.43781,-9.20312,0 148.43610,-9.20013,0 148.43625,-9.19939,0 148.43530,-9.19836,0 148.43553,-9.19795,0 148.43484,-9.19850,0 148.43501,-9.19808,0 148.43440,-9.19767,0 148.43467,-9.19556,0 148.43385,-9.19438,0 148.43346,-9.19448,0 148.43372,-9.19421,0 148.43342,-9.19403,0 148.43369,-9.19246,0 148.43234,-9.19152,0 148.43153,-9.19156,0 148.43187,-9.19100,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Biriri to Marese track (seg 19)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.43197,-9.19101,0 148.43323,-9.19039,0 148.43380,-9.18887,0 148.43386,-9.18636,0 148.43509,-9.18556,0 148.43496,-9.18503,0 148.43542,-9.18473,0 148.43568,-9.18349,0 148.43470,-9.18190,0 148.43524,-9.18233,0 148.43474,-9.18100,0 148.43362,-9.17967,0 148.43415,-9.17521,0 148.43503,-9.17409,0 148.43557,-9.17229,0 148.43720,-9.17144,0 148.43968,-9.16891,0 148.44053,-9.16638,0 148.44033,-9.16598,0 148.44077,-9.16384,0 148.44052,-9.16318,0 148.44085,-9.16199,0 148.44029,-9.16149,0 148.43960,-9.15936,0 148.43922,-9.15683,0 148.44052,-9.15636,0 148.44123,-9.15677,0 148.44180,-9.15667,0 148.44314,-9.15555,0 148.44417,-9.15404,0 148.44580,-9.15380,0 148.44764,-9.15267,0 148.44908,-9.14936,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Vouka to Biriri Village track (seg 18)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.50094,-9.22177,0 148.49920,-9.22186,0 148.49811,-9.22136,0 148.49411,-9.21704,0 148.49302,-9.21291,0 148.49170,-9.21063,0 148.49216,-9.20819,0 148.49062,-9.20697,0 148.48827,-9.20595,0 148.48805,-9.20520,0 148.48530,-9.20521,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Vouka to Biriri Village track (seg 18)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.48537,-9.20515,0 148.48408,-9.20426,0 148.48258,-9.20405,0 148.48214,-9.20416,0 148.48234,-9.20425,0 148.48237,-9.20438,0 148.48205,-9.20418,0 148.47690,-9.20600,0 148.47601,-9.20583,0 148.47316,-9.20663,0 148.47238,-9.20718,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Vouka to Biriri Village track (seg 18)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.47235,-9.20727,0 148.47094,-9.20794,0 148.46932,-9.20736,0 148.46866,-9.20747,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Vouka to Biriri Village track (seg 18)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.46865,-9.20737,0 148.46757,-9.20694,0 148.46744,-9.20652,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Vouka to Biriri Village track (seg 18)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.46736,-9.20648,0 148.46670,-9.20585,0 148.46590,-9.20582,0 148.46488,-9.20514,0 148.46229,-9.20567,0 148.46233,-9.20662,0 148.46212,-9.20608,0 148.45972,-9.20660,0 148.45804,-9.20604,0 148.45783,-9.20610,0 148.45771,-9.20602,0 148.45760,-9.20604,0 148.45768,-9.20631,0 148.45769,-9.20606,0 148.45767,-9.20595,0 148.45503,-9.20684,0 148.45413,-9.20658,0 148.45173,-9.20677,0 148.45171,-9.20703,0 148.44595,-9.20900,0 148.44413,-9.21033,0 148.44224,-9.21084,0 148.44075,-9.21190,0 148.44003,-9.21171,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Marase to Vouka village (seg 16)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.49636,-9.17556,0 148.50000,-9.17795,0 148.49994,-9.17858,0 148.50086,-9.17986,0 148.50036,-9.18133,0 148.50219,-9.18279,0 148.50084,-9.18349,0 148.50066,-9.18428,0 148.49970,-9.18432,0 148.49924,-9.18473,0 148.49948,-9.18566,0 148.50014,-9.18635,0 148.49983,-9.18716,0 148.50011,-9.18783,0 148.49941,-9.18955,0 148.50046,-9.19073,0 148.50076,-9.19062,0 148.50048,-9.19106,0 148.50085,-9.19146,0 148.50092,-9.19261,0 148.50153,-9.19382,0 148.50228,-9.19435,0 148.50205,-9.19453,0 148.50249,-9.19515,0 148.50230,-9.19776,0 148.50307,-9.19836,0 148.50253,-9.19982,0 148.50261,-9.20159,0 148.50077,-9.20454,0 148.50086,-9.20617,0 148.50044,-9.20808,0 148.50100,-9.20887,0 148.50109,-9.20982,0 148.50061,-9.21052,0 148.50029,-9.21251,0 148.49991,-9.21257,0 148.49993,-9.21547,0 148.50051,-9.21637,0 148.49970,-9.21839,0 148.50011,-9.22053,0 148.50093,-9.22176,0 148.50254,-9.22199,0 148.50320,-9.22317,0 148.50581,-9.22413,0 148.50736,-9.22627,0 148.50919,-9.22695,0 148.51036,-9.22848,0 148.51361,-9.22969,0 148.51771,-9.22995,0 148.51936,-9.22934,0 148.52114,-9.22978,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Davids_track_record_from_Itokama_to_Umuate</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.26593,-9.20071,0 148.26597,-9.20240,0 148.26491,-9.20602,0 148.26594,-9.21109,0 148.26537,-9.21486,0 148.26638,-9.21686,0 148.26617,-9.21910,0 148.26512,-9.21961,0 148.26332,-9.22162,0 148.26112,-9.22248,0 148.25964,-9.22511,0 148.25736,-9.22633,0 148.25697,-9.22951,0 148.25628,-9.22980,0 148.25543,-9.23187,0 148.25395,-9.23246,0 148.25194,-9.23220,0 148.24943,-9.23363,0 148.24861,-9.23664,0 148.24551,-9.23883,0 148.24480,-9.24014,0 148.24579,-9.24232,0 148.24633,-9.24490,0 148.24483,-9.24666,0 148.24249,-9.24800,0 148.24232,-9.24955,0 148.24162,-9.24965,0 148.24078,-9.25037,0 148.24011,-9.25354,0 148.23946,-9.25484,0 148.23985,-9.25545,0 148.23943,-9.25725,0 148.23915,-9.25782,0 148.23784,-9.25870,0 148.23800,-9.25985,0 148.23700,-9.26367,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Koruwo to Anatua 1</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30772,-9.12056,0 148.30631,-9.12278,0 148.30470,-9.12263,0 148.30215,-9.12468,0 148.30006,-9.12524,0 148.29879,-9.12377,0 148.29795,-9.12363,0 148.29631,-9.12216,0 148.29534,-9.12225,0 148.29334,-9.12131,0 148.29267,-9.12138,0 148.29106,-9.11891,0 148.28862,-9.11833,0 148.28606,-9.11511,0 148.28523,-9.11781,0 148.28378,-9.11998,0 148.28177,-9.12006,0 148.28122,-9.11978,0 148.28053,-9.12019,0 148.27872,-9.11995,0 148.27795,-9.12069,0 148.27677,-9.12071,0 148.27519,-9.12158,0 148.27345,-9.12081,0 148.27196,-9.12303,0 148.27028,-9.12378,0 148.26950,-9.12517,0 148.26866,-9.12942,0 148.26737,-9.13176,0 148.26682,-9.13488,0 148.26599,-9.13601,0 148.26499,-9.13925,0 148.26362,-9.14092,0 148.26364,-9.14238,0 148.26290,-9.14430,0 148.26154,-9.15056,0 148.26197,-9.15121,0 148.26243,-9.15122,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Water Source</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30746,-9.12207,0 148.30693,-9.12178,0 148.30618,-9.12284,0 148.30461,-9.12259,0 148.30213,-9.12459,0 148.29995,-9.12510,0 148.29876,-9.12368,0 148.29789,-9.12350,0 148.29619,-9.12201,0 148.29256,-9.12133,0 148.29101,-9.11878,0 148.28865,-9.11830,0 148.28684,-9.11572,0 148.28605,-9.11533,0 148.28519,-9.11778,0 148.28380,-9.11990,0 148.27868,-9.11988,0 148.27793,-9.12066,0 148.27666,-9.12072,0 148.27522,-9.12156,0 148.27362,-9.12082,0 148.27194,-9.12299,0 148.27017,-9.12384,0 148.26948,-9.12518,0 148.26863,-9.12942,0 148.26737,-9.13171,0 148.26678,-9.13494,0 148.26604,-9.13591,0 148.26570,-9.13570,0 148.26590,-9.13666,0 148.26527,-9.13861,0 148.26361,-9.14087,0 148.26365,-9.14236,0 148.26289,-9.14425,0 148.26152,-9.15062,0 148.26244,-9.15118,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Kaura to Sigara Village</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38156,-9.06385,0 148.38407,-9.06591,0 148.38484,-9.06788,0 148.38574,-9.06860,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Kaura to Sigara Village</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38879,-9.06720,0 148.38982,-9.06679,0 148.39164,-9.06410,0 148.39246,-9.06349,0 148.39341,-9.06171,0 148.39308,-9.06102,0 148.39369,-9.06042,0 148.39880,-9.05803,0 148.39939,-9.05684,0 148.40031,-9.05669,0 148.40129,-9.05602,0 148.40153,-9.05402,0 148.40316,-9.05278,0 148.40337,-9.05192,0 148.40491,-9.05039,0 148.40530,-9.04947,0 148.40850,-9.04769,0 148.41008,-9.04802,0 148.41225,-9.04714,0 148.41409,-9.04400,0 148.41588,-9.04251,0 148.41889,-9.04205,0 148.42041,-9.04241,0 148.42203,-9.04180,0 148.42418,-9.04311,0 148.42683,-9.04221,0 148.42861,-9.04271,0 148.43113,-9.04130,0 148.43329,-9.04175,0 148.43585,-9.04018,0 148.43741,-9.04112,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Bareji River (seg 76)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39389,-9.14340,0 148.39548,-9.14458,0 148.39685,-9.14791,0 148.39787,-9.14825,0 148.39933,-9.15077,0 148.39965,-9.15155,0 148.39946,-9.15310,0 148.40031,-9.15258,0 148.39954,-9.15317,0 148.40033,-9.15332,0 148.40111,-9.15428,0 148.40206,-9.15423,0 148.40255,-9.15488,0 148.40340,-9.15792,0 148.40293,-9.16140,0 148.40511,-9.16472,0 148.40512,-9.16604,0 148.40663,-9.16722,0 148.40706,-9.16875,0 148.40682,-9.16916,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Bareji River (seg 76)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40692,-9.16913,0 148.40782,-9.17009,0 148.40725,-9.17232,0 148.40747,-9.17388,0 148.40667,-9.17475,0 148.40620,-9.17613,0 148.40590,-9.17875,0 148.40634,-9.17933,0 148.40619,-9.18188,0 148.40678,-9.18310,0 148.40536,-9.18442,0 148.40517,-9.18527,0 148.40370,-9.18598,0 148.40291,-9.18733,0 148.40124,-9.18802,0 148.40027,-9.18914,0 148.39946,-9.18917,0 148.39828,-9.19092,0 148.39750,-9.19091,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sila Junction (seg 13)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42298,-9.09433,0 148.42314,-9.09382,0 148.42166,-9.09111,0 148.41940,-9.08866,0 148.41712,-9.08513,0 148.41521,-9.08467,0 148.41221,-9.08290,0 148.41111,-9.08306,0 148.40984,-9.08265,0 148.40798,-9.08305,0 148.40478,-9.08121,0 148.40254,-9.07935,0 148.40101,-9.07907,0 148.39939,-9.07810,0 148.39709,-9.07819,0 148.39549,-9.07693,0 148.39392,-9.07715,0 148.38875,-9.07306,0 148.38729,-9.07282,0 148.38628,-9.07510,0 148.38513,-9.07556,0 148.38430,-9.07550,0 148.38377,-9.07636,0 148.38242,-9.07685,0 148.38163,-9.07669,0 148.38088,-9.07602,0 148.37745,-9.07529,0 148.37589,-9.07550,0 148.37500,-9.07523,0 148.37472,-9.07448,0 148.37386,-9.07394,0 148.37196,-9.07152,0 148.37033,-9.07176,0 148.37012,-9.07248,0 148.36895,-9.07249,0 148.36836,-9.07211,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Natanga to Koruwo track (seg 56)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.29164,-9.06906,0 148.29111,-9.06958,0 148.29096,-9.07176,0 148.28892,-9.07121,0 148.28847,-9.07008,0 148.28820,-9.06983,0 148.28783,-9.07002,0 148.28656,-9.07404,0 148.28578,-9.07497,0 148.28627,-9.08026,0 148.28597,-9.08125,0 148.28526,-9.08180,0 148.28539,-9.08332,0 148.28461,-9.08694,0 148.28506,-9.08745,0 148.28506,-9.08854,0 148.28585,-9.09085,0 148.28575,-9.09214,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Natanga to Koruwo track (seg 56)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.28579,-9.09206,0 148.28752,-9.09432,0 148.28797,-9.09553,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Natanga to Koruwo track (seg 56)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.28803,-9.09570,0 148.28831,-9.09660,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Natanga to Koruwo track (seg 56)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.28851,-9.09703,0 148.28854,-9.09747,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Natanga to Koruwo track (seg 56)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.28853,-9.09757,0 148.28979,-9.10004,0 148.29066,-9.10068,0 148.29221,-9.10060,0 148.29410,-9.10199,0 148.29475,-9.10425,0 148.29670,-9.10538,0 148.29729,-9.10660,0 148.29773,-9.10680,0 148.29834,-9.10892,0 148.30008,-9.11004,0 148.30092,-9.11362,0 148.30165,-9.11391,0 148.30194,-9.11500,0 148.30516,-9.11526,0 148.30695,-9.11503,0 148.30768,-9.11605,0 148.31049,-9.11669,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 31)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.32149,-9.09466,0 148.32372,-9.09516,0 148.32476,-9.09622,0 148.32641,-9.09694,0 148.32680,-9.09746,0 148.32822,-9.09741,0 148.32958,-9.09838,0 148.33011,-9.09838,0 148.33126,-9.09946,0 148.33110,-9.10079,0 148.33053,-9.10183,0 148.33091,-9.10304,0 148.33063,-9.10388,0 148.33091,-9.10556,0 148.33245,-9.10671,0 148.33329,-9.10847,0 148.33434,-9.10862,0 148.33506,-9.10931,0 148.33651,-9.10975,0 148.33819,-9.11271,0 148.33886,-9.11316,0 148.33874,-9.11374,0 148.33994,-9.11512,0 148.34211,-9.11676,0 148.34373,-9.11713,0 148.34441,-9.11842,0 148.34633,-9.11916,0 148.34790,-9.12036,0 148.34832,-9.12130,0 148.35032,-9.12220,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 31)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35040,-9.12216,0 148.35154,-9.12210,0 148.35426,-9.12403,0 148.35599,-9.12629,0 148.35737,-9.12738,0 148.35820,-9.12911,0 148.35933,-9.12986,0 148.36139,-9.12991,0 148.36253,-9.12951,0 148.36365,-9.12893,0 148.36497,-9.12715,0 148.36642,-9.12683,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Dareki - Bioi - Kuhienei Track (seg 9)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42192,-9.09623,0 148.42235,-9.09642,0 148.42211,-9.09710,0 148.42236,-9.09771,0 148.42399,-9.09918,0 148.42494,-9.09819,0 148.42768,-9.09832,0 148.42918,-9.09877,0 148.42990,-9.10014,0 148.43080,-9.09990,0 148.43091,-9.10042,0 148.43354,-9.10007,0 148.43566,-9.10027,0 148.43870,-9.10277,0 148.44000,-9.10535,0 148.44776,-9.10612,0 148.44940,-9.10687,0 148.45042,-9.10758,0 148.45361,-9.11157,0 148.45527,-9.11301,0 148.45598,-9.11549,0 148.45731,-9.11770,0 148.45592,-9.11832,0 148.45505,-9.11921,0 148.45412,-9.12332,0 148.45633,-9.12976,0 148.45583,-9.13163,0 148.45654,-9.13553,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Siribu Bush Track (seg 2)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30133,-9.14140,0 148.30390,-9.13392,0 148.30349,-9.13328,0 148.30349,-9.13227,0 148.30247,-9.13081,0 148.30463,-9.12831,0 148.30439,-9.12549,0 148.30659,-9.12239,0 148.30850,-9.11852,0 148.31160,-9.11583,0 148.31271,-9.11443,0 148.31261,-9.11135,0 148.31107,-9.10915,0 148.31265,-9.10703,0 148.31404,-9.10699,0 148.31482,-9.10610,0 148.31651,-9.10533,0 148.31689,-9.10451,0 148.31794,-9.10411,0 148.31869,-9.10321,0 148.31926,-9.10069,0 148.32043,-9.09864,0 148.32050,-9.09732,0 148.32155,-9.09478,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Road 3 Junction (seg 24)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40605,-9.13050,0 148.41266,-9.12979,0 148.41410,-9.13016,0 148.41647,-9.12939,0 148.41682,-9.12818,0 148.41642,-9.12542,0 148.41649,-9.12458,0 148.41706,-9.12383,0 148.41679,-9.12316,0 148.41692,-9.12128,0 148.41541,-9.11833,0 148.41544,-9.11656,0 148.41710,-9.11447,0 148.42054,-9.11284,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Road 3 Junction (seg 24)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42062,-9.11279,0 148.42299,-9.11173,0 148.42329,-9.11033,0 148.42409,-9.10963,0 148.42402,-9.10880,0 148.42510,-9.10799,0 148.42636,-9.10598,0 148.42781,-9.10589,0 148.42887,-9.10490,0 148.43150,-9.10385,0 148.43058,-9.10106,0 148.43085,-9.10033,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>2026-06-29_15-34_Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Omb</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39043,-9.11156,0 148.38994,-9.10973,0 148.39053,-9.10894,0 148.39141,-9.10363,0 148.39196,-9.10285,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>2026-06-29_15-34_Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Omb</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39194,-9.10276,0 148.39272,-9.10089,0 148.39379,-9.10093,0 148.39520,-9.10010,0 148.39682,-9.09982,0 148.39759,-9.09811,0 148.39937,-9.09852,0 148.40074,-9.09843,0 148.40189,-9.09890,0 148.40496,-9.09725,0 148.40755,-9.09819,0 148.41096,-9.09709,0 148.41207,-9.09764,0 148.41416,-9.09740,0 148.41502,-9.09810,0 148.41641,-9.09838,0 148.41646,-9.09848,0 148.41638,-9.09859,0 148.41622,-9.09861,0 148.41632,-9.09840,0 148.41642,-9.09838,0 148.41672,-9.09830,0 148.41738,-9.09828,0 148.41860,-9.09892,0 148.42086,-9.09814,0 148.42195,-9.09850,0 148.42260,-9.09916,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>2026-06-29_15-34_Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Omb</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42267,-9.09921,0 148.42317,-9.09914,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>2026-06-29_15-34_Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Omb</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42260,-9.09918,0 148.42275,-9.09919,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>2026-06-29_15-34_Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Omb</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42319,-9.09917,0 148.42372,-9.09899,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Zone six Cropping Calendar Survey Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37330,-9.05975,0 148.37247,-9.05989,0 148.37185,-9.05933,0 148.37132,-9.05626,0 148.36926,-9.05352,0 148.36606,-9.05180,0 148.36424,-9.04951,0 148.36335,-9.04912,0 148.36145,-9.04946,0 148.36129,-9.05168,0 148.35926,-9.05390,0 148.35765,-9.05475,0 148.35573,-9.05449,0 148.35551,-9.05450,0 148.35521,-9.05459,0 148.35518,-9.05469,0 148.35531,-9.05501,0 148.35532,-9.05510,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Zone six Cropping Calendar Survey Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35244,-9.05371,0 148.35233,-9.05420,0 148.35340,-9.05531,0 148.35451,-9.05482,0 148.35513,-9.05462,0 148.35522,-9.05459,0 148.35554,-9.05454,0 148.35606,-9.05465,0 148.35650,-9.05466,0 148.35692,-9.05479,0 148.35704,-9.05482,0 148.35714,-9.05484,0 148.35756,-9.05483,0 148.35813,-9.05468,0 148.35841,-9.05455,0 148.35849,-9.05448,0 148.35859,-9.05431,0 148.35869,-9.05428,0 148.35877,-9.05422,0 148.35886,-9.05419,0 148.35893,-9.05414,0 148.35902,-9.05411,0 148.35911,-9.05414,0 148.35928,-9.05421,0 148.35947,-9.05430,0 148.35968,-9.05436,0 148.35977,-9.05444,0 148.35986,-9.05442,0 148.35995,-9.05439,0 148.36000,-9.05432,0 148.35912,-9.05408,0 148.35891,-9.05414,0 148.35886,-9.05421,0 148.35875,-9.05423,0 148.35867,-9.05430,0 148.35856,-9.05446,0 148.35847,-9.05451,0 148.35839,-9.05455,0 148.35829,-9.05459,0 148.35767,-9.05480,0 148.35726,-9.05483,0 148.35652,-9.05466,0 148.35607,-9.05463,0 148.35589,-9.05454,0 148.35545,-9.05453,0 148.35523,-9.05459,0 148.35514,-9.05462,0 148.35532,-9.05510,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Zone six Cropping Calendar Survey Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35559,-9.05449,0 148.35647,-9.05177,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Zone six Cropping Calendar Survey Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35649,-9.05148,0 148.35656,-9.05130,0 148.35661,-9.05122,0 148.35665,-9.05114,0 148.35669,-9.05105,0 148.35671,-9.05096,0 148.35648,-9.05067,0 148.35641,-9.05084,0 148.35668,-9.05093,0 148.35669,-9.05103,0 148.35665,-9.05112,0 148.35661,-9.05122,0 148.35659,-9.05131,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Cropping Calander Survey Track from Kaura to Kuhara</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35540,-9.05246,0 148.35497,-9.05235,0 148.35481,-9.05183,0 148.35426,-9.05183,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Cropping Calander Survey Track from Kaura to Kuhara</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35541,-9.05248,0 148.35582,-9.05351,0 148.35563,-9.05446,0 148.35517,-9.05467,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Cropping Calander Survey Track from Kaura to Kuhara</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35535,-9.05508,0 148.35594,-9.05669,0 148.35921,-9.05857,0 148.36089,-9.05889,0 148.36327,-9.06061,0 148.36585,-9.06321,0 148.36792,-9.06393,0 148.37007,-9.06659,0 148.36995,-9.06714,0 148.37104,-9.06821,0 148.37157,-9.06969,0 148.37207,-9.07006,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Cropping Calander Survey Track from Kaura to Kuhara</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37130,-9.06877,0 148.37192,-9.06764,0 148.37446,-9.06692,0 148.37435,-9.06583,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Cropping Calander Survey Track from Kaura to Kuhara</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37444,-9.06580,0 148.37582,-9.06552,0 148.37677,-9.06576,0 148.37734,-9.06356,0 148.37725,-9.06360,0 148.37715,-9.06363,0 148.37706,-9.06364,0 148.37697,-9.06368,0 148.37754,-9.06264,0 148.37830,-9.06255,0 148.38154,-9.06374,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track leading to Bubire hamlet and to Afore village (seg 62)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42395,-9.13025,0 148.42378,-9.13104,0 148.42463,-9.13170,0 148.42428,-9.13264,0 148.42205,-9.13450,0 148.42171,-9.13435,0 148.42114,-9.13480,0 148.42042,-9.13576,0 148.42002,-9.13718,0 148.41713,-9.13747,0 148.41495,-9.13826,0 148.41472,-9.13920,0 148.41505,-9.13935,0 148.41446,-9.13929,0 148.41482,-9.13974,0 148.41316,-9.14063,0 148.41251,-9.14250,0 148.41015,-9.14404,0 148.41014,-9.14519,0 148.40958,-9.14574,0 148.40836,-9.14578,0 148.40685,-9.14645,0 148.40431,-9.14471,0 148.40379,-9.14384,0 148.40228,-9.14340,0 148.40088,-9.14206,0 148.39983,-9.14200,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 54)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.33076,-9.06796,0 148.32995,-9.06743,0 148.32958,-9.06672,0 148.32949,-9.06567,0 148.33000,-9.06507,0 148.32962,-9.06017,0 148.32826,-9.05886,0 148.32467,-9.05781,0 148.32249,-9.05877,0 148.32073,-9.06024,0 148.31945,-9.06218,0 148.31578,-9.06573,0 148.31537,-9.06727,0 148.31418,-9.06887,0 148.31350,-9.06960,0 148.31313,-9.06926,0 148.31297,-9.06986,0 148.31210,-9.07036,0 148.31090,-9.07220,0 148.30970,-9.07255,0 148.30913,-9.07143,0 148.30862,-9.07244,0 148.30798,-9.07201,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 43)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36884,-9.07243,0 148.36945,-9.07610,0 148.37010,-9.07728,0 148.37093,-9.07794,0 148.37202,-9.08040,0 148.37430,-9.08193,0 148.37427,-9.08352,0 148.37483,-9.08481,0 148.37490,-9.08615,0 148.37595,-9.08789,0 148.37815,-9.08935,0 148.37737,-9.08982,0 148.37706,-9.09055,0 148.37777,-9.09121,0 148.37788,-9.09203,0 148.37869,-9.09264,0 148.37830,-9.09410,0 148.37855,-9.09542,0 148.38025,-9.09703,0 148.38138,-9.09708,0 148.38281,-9.09764,0 148.38365,-9.09862,0 148.38536,-9.09869,0 148.38745,-9.09965,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 39)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35252,-9.05908,0 148.35131,-9.06003,0 148.34937,-9.06426,0 148.34956,-9.06589,0 148.35028,-9.06777,0 148.35017,-9.07215,0 148.35059,-9.07267,0 148.35064,-9.07395,0 148.35190,-9.07591,0 148.35204,-9.07718,0 148.35015,-9.07958,0 148.34995,-9.08069,0 148.34960,-9.08086,0 148.34982,-9.08277,0 148.34852,-9.08474,0 148.34739,-9.08825,0 148.34597,-9.09029,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Ondoro to Ombara Track (seg 70)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.46797,-9.13679,0 148.46857,-9.13623,0 148.46962,-9.13646,0 148.47092,-9.13603,0 148.47131,-9.13627,0 148.47352,-9.13446,0 148.47455,-9.13435,0 148.47601,-9.13329,0 148.47622,-9.13277,0 148.47590,-9.13015,0 148.47663,-9.12788,0 148.47677,-9.12824,0 148.47671,-9.12790,0 148.47646,-9.12774,0 148.47684,-9.12662,0 148.47526,-9.12516,0 148.47468,-9.12376,0 148.47280,-9.12188,0 148.47140,-9.12147,0 148.47050,-9.12008,0 148.47006,-9.11845,0 148.46881,-9.11697,0 148.46857,-9.11537,0 148.46823,-9.11514,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kuhienei to Mate track (seg 68)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.45650,-9.13567,0 148.45827,-9.13684,0 148.45945,-9.13862,0 148.46061,-9.13908,0 148.46085,-9.14080,0 148.46162,-9.14265,0 148.46222,-9.14280,0 148.46239,-9.14290,0 148.46243,-9.14299,0 148.46248,-9.14306,0 148.46257,-9.14302,0 148.46248,-9.14288,0 148.46233,-9.14359,0 148.46267,-9.14297,0 148.46422,-9.14356,0 148.46407,-9.14442,0 148.46488,-9.14504,0 148.46556,-9.14434,0 148.46628,-9.14430,0 148.46670,-9.14508,0 148.46746,-9.14464,0 148.46848,-9.14466,0 148.46858,-9.14438,0 148.46863,-9.14445,0 148.46871,-9.14461,0 148.46873,-9.14472,0 148.46859,-9.14440,0 148.46865,-9.14448,0 148.46881,-9.14462,0 148.46976,-9.14394,0 148.47067,-9.14384,0 148.47205,-9.14517,0 148.47254,-9.14437,0 148.47392,-9.14399,0 148.47430,-9.14463,0 148.47390,-9.14564,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Cropping Calendar Survey Track 2 from Kuhara Village to Kaur</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42223,-8.96291,0 148.42299,-8.96484,0 148.42321,-8.96824,0 148.42601,-8.97378,0 148.42377,-8.97776,0 148.42446,-8.97752,0 148.42640,-8.97975,0 148.42307,-8.98102,0 148.42316,-8.98105,0 148.42091,-8.98035,0 148.42321,-8.98105,0 148.42599,-8.98149,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 20)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39235,-9.11242,0 148.39396,-9.11301,0 148.39469,-9.11236,0 148.39561,-9.11233,0 148.39690,-9.11301,0 148.39919,-9.11326,0 148.40066,-9.11382,0 148.40171,-9.11468,0 148.40194,-9.11541,0 148.40493,-9.11769,0 148.40555,-9.11892,0 148.40399,-9.12282,0 148.40466,-9.12423,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 20)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40933,-9.12233,0 148.40906,-9.12249,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 20)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40897,-9.12255,0 148.40737,-9.12263,0 148.40689,-9.12319,0 148.40625,-9.12326,0 148.40613,-9.12483,0 148.40517,-9.12445,0 148.40473,-9.12463,0 148.40465,-9.12420,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Bua Junction Track (seg 26)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.41629,-9.12943,0 148.41906,-9.12977,0 148.42056,-9.13087,0 148.42346,-9.12996,0 148.42621,-9.13131,0 148.43316,-9.13000,0 148.43580,-9.13049,0 148.43547,-9.13185,0 148.43587,-9.13467,0 148.43544,-9.13645,0 148.43587,-9.13744,0 148.43496,-9.13797,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sila Junction (seg 5)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36835,-9.07208,0 148.36804,-9.07094,0 148.36846,-9.06951,0 148.36918,-9.06913,0 148.36924,-9.06794,0 148.37016,-9.06680,0 148.36957,-9.06590,0 148.36999,-9.06548,0 148.36978,-9.06495,0 148.37151,-9.06463,0 148.37210,-9.06357,0 148.37168,-9.05765,0 148.37100,-9.05563,0 148.36917,-9.05347,0 148.36628,-9.05194,0 148.36535,-9.05096,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 83)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37778,-9.17036,0 148.37893,-9.16911,0 148.37899,-9.16918,0 148.37909,-9.16919,0 148.37917,-9.16924,0 148.37889,-9.16899,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 83)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37895,-9.16891,0 148.38013,-9.16666,0 148.38056,-9.16347,0 148.38242,-9.16150,0 148.38271,-9.15947,0 148.38401,-9.15607,0 148.38419,-9.15397,0 148.38470,-9.15325,0 148.38536,-9.15077,0 148.38545,-9.14872,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Afore to Sankose (seg 32)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38380,-9.12992,0 148.38516,-9.12807,0 148.38492,-9.12631,0 148.38731,-9.12346,0 148.38689,-9.12214,0 148.38843,-9.11980,0 148.38858,-9.11773,0 148.38804,-9.11685,0 148.38894,-9.11542,0 148.38862,-9.11486,0 148.38985,-9.11456,0 148.39231,-9.11237,0 148.39184,-9.11186,0 148.38995,-9.11157,0 148.38844,-9.11064,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Road 2 junction to Afore Station (seg 23)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40612,-9.13049,0 148.40485,-9.13122,0 148.40305,-9.13335,0 148.40246,-9.13360,0 148.40024,-9.13378,0 148.39958,-9.13337,0 148.39939,-9.13275,0 148.39828,-9.13368,0 148.39761,-9.13361,0 148.39465,-9.13181,0 148.39218,-9.13484,0 148.39028,-9.13834,0 148.38934,-9.13748,0 148.38757,-9.13952,0 148.38731,-9.13899,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sila Junction (seg 4)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35372,-9.05709,0 148.35258,-9.05746,0 148.35253,-9.05910,0 148.35287,-9.05975,0 148.35359,-9.05962,0 148.35398,-9.06058,0 148.35636,-9.06222,0 148.35728,-9.06605,0 148.35825,-9.06663,0 148.35876,-9.06775,0 148.35945,-9.06713,0 148.36105,-9.06754,0 148.36201,-9.06839,0 148.36371,-9.06904,0 148.36440,-9.07005,0 148.36589,-9.07002,0 148.36830,-9.07207,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 57)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.31109,-9.10921,0 148.30972,-9.10658,0 148.30939,-9.10406,0 148.30827,-9.10143,0 148.30758,-9.09090,0 148.30535,-9.08798,0 148.30474,-9.08515,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 45)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40129,-9.13384,0 148.40143,-9.13599,0 148.39993,-9.13915,0 148.40006,-9.14167,0 148.39819,-9.14331,0 148.39736,-9.14340,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 45)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39726,-9.14343,0 148.39589,-9.14354,0 148.39481,-9.14315,0 148.39383,-9.14342,0 148.39231,-9.14259,0 148.39165,-9.14285,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 45)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39155,-9.14284,0 148.38908,-9.14249,0 148.38773,-9.14179,0 148.38810,-9.14081,0 148.38735,-9.14017,0 148.38747,-9.13942,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Vereyame connect's Yoivi, Aguido Primary School a</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.44636,-9.12912,0 148.44714,-9.13184,0 148.44837,-9.13414,0 148.44942,-9.13779,0 148.45007,-9.13884,0 148.45004,-9.13901,0 148.45008,-9.13969,0 148.45007,-9.13979,0 148.44991,-9.14012,0 148.44993,-9.14021,0 148.45010,-9.13980,0 148.45010,-9.13906,0 148.45301,-9.13820,0 148.45449,-9.13821,0 148.45583,-9.13716,0 148.45525,-9.13742,0 148.45566,-9.13623,0 148.45646,-9.13585,0 148.45674,-9.13522,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Toma Community School (seg 77)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39772,-9.19090,0 148.39794,-9.19130,0 148.39923,-9.19157,0 148.39911,-9.19199,0 148.39736,-9.19226,0 148.39645,-9.19282,0 148.39637,-9.19373,0 148.39707,-9.19545,0 148.39629,-9.19644,0 148.39507,-9.19718,0 148.39475,-9.19787,0 148.39549,-9.20321,0 148.39677,-9.20568,0 148.39899,-9.20721,0 148.39994,-9.20734,0 148.40058,-9.20702,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kororoko Village to Semahara &amp; Tahama Village Junction (seg </name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38769,-9.14169,0 148.38835,-9.14487,0 148.38813,-9.14531,0 148.38541,-9.14614,0 148.38547,-9.14869,0 148.38418,-9.14977,0 148.38262,-9.15051,0 148.37868,-9.15127,0 148.37782,-9.15165,0 148.37668,-9.15299,0 148.37522,-9.15352,0 148.37296,-9.15297,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Road 1 Junction (seg 44)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39352,-9.11293,0 148.39414,-9.11521,0 148.39373,-9.11731,0 148.39300,-9.11851,0 148.39334,-9.12097,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Road 1 Junction (seg 44)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39344,-9.12103,0 148.39458,-9.12384,0 148.39423,-9.12455,0 148.39422,-9.12645,0 148.39517,-9.12713,0 148.39565,-9.12698,0 148.39629,-9.12928,0 148.39705,-9.13049,0 148.39694,-9.13123,0 148.39766,-9.13367,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track leading to Tahama (seg 67)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37296,-9.15301,0 148.37324,-9.15199,0 148.37270,-9.15068,0 148.37146,-9.15001,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track leading to Tahama (seg 67)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37138,-9.14997,0 148.37087,-9.14943,0 148.37091,-9.14799,0 148.37199,-9.14689,0 148.37235,-9.14576,0 148.37235,-9.14504,0 148.37164,-9.14443,0 148.37102,-9.14285,0 148.37103,-9.14094,0 148.37213,-9.13994,0 148.37242,-9.13868,0 148.37249,-9.13621,0 148.37180,-9.13378,0 148.37205,-9.13349,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 81)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40397,-9.16294,0 148.40176,-9.16156,0 148.40080,-9.16182,0 148.39963,-9.16151,0 148.39904,-9.16009,0 148.39856,-9.15979,0 148.39828,-9.15983,0 148.39814,-9.15971,0 148.39804,-9.15970,0 148.39796,-9.15966,0 148.39822,-9.15765,0 148.39780,-9.15596,0 148.39812,-9.15507,0 148.39785,-9.15390,0 148.39681,-9.15249,0 148.39644,-9.14999,0 148.39676,-9.14959,0 148.39647,-9.14921,0 148.39679,-9.14781,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Munbon track to Toma (seg 82)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38065,-9.15090,0 148.37933,-9.15193,0 148.37904,-9.15312,0 148.37586,-9.15510,0 148.37640,-9.15731,0 148.37623,-9.16011,0 148.37652,-9.16122,0 148.37616,-9.16262,0 148.37741,-9.16421,0 148.37781,-9.16732,0 148.37746,-9.16970,0 148.37777,-9.17043,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kawowoki to Awaru track (seg 38)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39749,-9.09813,0 148.39906,-9.09632,0 148.39925,-9.09213,0 148.40000,-9.09053,0 148.40184,-9.08869,0 148.40266,-9.08622,0 148.40231,-9.08290,0 148.40194,-9.08242,0 148.40219,-9.08118,0 148.40123,-9.07921,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track to Jorura Village (seg 58)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30509,-9.08645,0 148.30661,-9.08618,0 148.30700,-9.08547,0 148.31041,-9.08553,0 148.31217,-9.08642,0 148.31364,-9.08546,0 148.31442,-9.08546,0 148.31545,-9.08387,0 148.31523,-9.08288,0 148.31619,-9.07936,0 148.31724,-9.07846,0 148.31976,-9.07767,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Bioi village to Omajeap main road</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.44456,-9.10661,0 148.44538,-9.11074,0 148.44764,-9.11405,0 148.44758,-9.11582,0 148.44825,-9.11966,0 148.44738,-9.12338,0 148.44796,-9.12527,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Turatan to Bioi village</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.45731,-9.11777,0 148.45601,-9.11541,0 148.45555,-9.11332,0 148.45263,-9.11031,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Turatan to Bioi village</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.45296,-9.11013,0 148.45225,-9.10998,0 148.45132,-9.10835,0 148.45097,-9.10838,0 148.45044,-9.10758,0 148.44852,-9.10647,0 148.44488,-9.10585,0 148.44459,-9.10656,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kuhienei hamlet to Marase track (seg 10)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.45657,-9.13551,0 148.45572,-9.13618,0 148.45536,-9.13726,0 148.45448,-9.13813,0 148.45316,-9.13812,0 148.44996,-9.13904,0 148.44986,-9.14023,0 148.45037,-9.14065,0 148.44928,-9.14226,0 148.44885,-9.14207,0 148.44840,-9.14306,0 148.44872,-9.14665,0 148.44847,-9.14780,0 148.44917,-9.14939,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kweno to Sakarina track (seg 41)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35378,-9.05705,0 148.35410,-9.05629,0 148.35512,-9.05632,0 148.35676,-9.05693,0 148.35922,-9.05857,0 148.36080,-9.05881,0 148.36347,-9.06079,0 148.36596,-9.06329,0 148.36787,-9.06387,0 148.36954,-9.06586,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track to Semahara (seg 33)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38841,-9.11059,0 148.38785,-9.11133,0 148.38433,-9.11313,0 148.37962,-9.11292,0 148.37867,-9.11338,0 148.37710,-9.11338,0 148.37603,-9.11502,0 148.37448,-9.11506,0 148.37290,-9.11673,0 148.37160,-9.11721,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 37)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38854,-9.11067,0 148.38752,-9.10955,0 148.38839,-9.10814,0 148.38793,-9.10671,0 148.38885,-9.10461,0 148.38871,-9.10220,0 148.38752,-9.09991,0 148.39016,-9.10044,0 148.39154,-9.09942,0 148.39267,-9.10083,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>End of Siribu Village (seg 3)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.32155,-9.09478,0 148.32129,-9.09103,0 148.32056,-9.08815,0 148.32081,-9.08701,0 148.32197,-9.08576,0 148.32207,-9.08437,0 148.32188,-9.08305,0 148.32023,-9.08017,0 148.32060,-9.07810,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Sila Junction to Afore High-school then to Kaura </name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36851,-9.07221,0 148.36844,-9.06973,0 148.36915,-9.06914,0 148.36956,-9.06748,0 148.36996,-9.06724,0 148.37077,-9.06766,0 148.37467,-9.06554,0 148.37642,-9.06573,0 148.37918,-9.06292,0 148.37949,-9.06306,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Koeno to Tabuane (seg 92)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35207,-9.05392,0 148.35041,-9.05537,0 148.34893,-9.05565,0 148.34699,-9.05545,0 148.34566,-9.05698,0 148.34462,-9.05900,0 148.34363,-9.05992,0 148.34249,-9.06217,0 148.34043,-9.06394,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Koeno to Tabuane</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35207,-9.05392,0 148.35041,-9.05537,0 148.34893,-9.05565,0 148.34699,-9.05545,0 148.34566,-9.05698,0 148.34462,-9.05900,0 148.34363,-9.05992,0 148.34249,-9.06217,0 148.34043,-9.06394,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Anatua to Serefuna</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.26239,-9.15121,0 148.26493,-9.15136,0 148.26632,-9.15060,0 148.26745,-9.15085,0 148.26832,-9.15148,0 148.26917,-9.15328,0 148.27314,-9.15377,0 148.27316,-9.15387,0 148.27317,-9.15396,0 148.27318,-9.15406,0 148.27317,-9.15416,0 148.27318,-9.15425,0 148.27318,-9.15436,0 148.27319,-9.15446,0 148.27331,-9.15461,0 148.27339,-9.15467,0 148.27348,-9.15469,0 148.27354,-9.15477,0 148.27349,-9.15469,0 148.27339,-9.15468,0 148.27331,-9.15462,0 148.27319,-9.15447,0 148.27317,-9.15425,0 148.27317,-9.15413,0 148.27315,-9.15391,0 148.27316,-9.15380,0 148.27317,-9.15369,0 148.27318,-9.15359,0 148.27318,-9.15309,0 148.27293,-9.15309,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Umbara to Mate Hamlet Track (seg 69)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.47411,-9.14407,0 148.47501,-9.14365,0 148.47525,-9.14314,0 148.47464,-9.14200,0 148.47336,-9.14118,0 148.47300,-9.13925,0 148.46956,-9.14007,0 148.46927,-9.13943,0 148.46948,-9.13876,0 148.46877,-9.13692,0 148.46776,-9.13676,0 148.46752,-9.13625,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Short cut to Siribu village (seg 89)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.32059,-9.07806,0 148.32161,-9.07734,0 148.32272,-9.07806,0 148.32364,-9.07817,0 148.32545,-9.07595,0 148.32638,-9.07370,0 148.32705,-9.07320,0 148.32766,-9.07150,0 148.32864,-9.07025,0 148.32867,-9.06935,0 148.32997,-9.06827,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Tabuane to Dea village Main Road (seg 28)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.34038,-9.06395,0 148.33961,-9.06392,0 148.33482,-9.06565,0 148.33252,-9.06898,0 148.33307,-9.06986,0 148.33298,-9.07035,0 148.33113,-9.06926,0 148.33045,-9.06770,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Feeder road to Siribu Village (seg 59)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.32064,-9.07805,0 148.32009,-9.07798,0 148.31975,-9.07750,0 148.31946,-9.07319,0 148.31812,-9.06822,0 148.31801,-9.06616,0 148.31843,-9.06506,0 148.31804,-9.06368,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 55)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.30622,-9.07417,0 148.30504,-9.07466,0 148.30372,-9.07459,0 148.30267,-9.07389,0 148.30160,-9.07382,0 148.30099,-9.07312,0 148.30103,-9.07234,0 148.29936,-9.07176,0 148.29741,-9.07060,0 148.29722,-9.07010,0 148.29487,-9.07021,0 148.29366,-9.07074,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Anatua-Gadzot-Umbuwara-Track</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.26858,-9.12947,0 148.27036,-9.13044,0 148.27166,-9.12945,0 148.27270,-9.12957,0 148.27247,-9.13019,0 148.27249,-9.13028,0 148.27284,-9.12920,0 148.27311,-9.12606,0 148.27367,-9.12458,0 148.27364,-9.12116,0 148.27333,-9.12137,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kawowoki track to Semahara (seg 34)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36922,-9.12109,0 148.36973,-9.12214,0 148.36889,-9.12499,0 148.36895,-9.12602,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Kawowoki track to Semahara (seg 34)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36899,-9.12611,0 148.37131,-9.12748,0 148.37174,-9.12976,0 148.37277,-9.13122,0 148.37239,-9.13181,0 148.37231,-9.13359,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 40)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.34412,-9.07563,0 148.34471,-9.07342,0 148.34577,-9.07207,0 148.34654,-9.06961,0 148.34836,-9.06687,0 148.34843,-9.06534,0 148.34943,-9.06414,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 84)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40284,-9.14371,0 148.40335,-9.14533,0 148.40283,-9.14629,0 148.40304,-9.14672,0 148.40313,-9.14663,0 148.40333,-9.14654,0 148.40306,-9.14734,0 148.40349,-9.14852,0 148.40168,-9.14777,0 148.40017,-9.14806,0 148.39958,-9.14785,0 148.39816,-9.14888,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Kuheine to Dakanatam main road</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.45685,-9.13522,0 148.45572,-9.13153,0 148.45628,-9.12975,0 148.45411,-9.12338,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Baraja River (seg 1)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.29836,-9.15147,0 148.29855,-9.14954,0 148.29823,-9.14721,0 148.29971,-9.14398,0 148.29939,-9.14238,0 148.30155,-9.14190,0 148.30131,-9.14144,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 71)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.46818,-9.11511,0 148.46591,-9.11547,0 148.46399,-9.11657,0 148.46242,-9.11614,0 148.45957,-9.11622,0 148.45822,-9.11762,0 148.45726,-9.11778,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Trail to Umbara village (seg 11)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.45657,-9.13532,0 148.45685,-9.13560,0 148.45902,-9.13508,0 148.46056,-9.13544,0 148.46354,-9.13509,0 148.46481,-9.13599,0 148.46647,-9.13558,0 148.46742,-9.13576,0 148.46748,-9.13624,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 74)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38267,-9.13148,0 148.38068,-9.13189,0 148.37852,-9.13166,0 148.37502,-9.13016,0 148.37506,-9.13044,0 148.37359,-9.13090,0 148.37320,-9.13059,0 148.37277,-9.13118,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 35)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38686,-9.13855,0 148.38492,-9.13318,0 148.38340,-9.13234,0 148.38258,-9.13135,0 148.38254,-9.13059,0 148.38382,-9.12994,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 72)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.44631,-9.12929,0 148.44379,-9.13041,0 148.44029,-9.13033,0 148.43772,-9.12980,0 148.43585,-9.13052,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sakarina – Numba – Kaura (seg 1)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37173,-9.06005,0 148.37166,-9.05739,0 148.37091,-9.05551,0 148.36918,-9.05342,0 148.36609,-9.05177,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 47)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.41673,-9.12090,0 148.40974,-9.12089,0 148.40869,-9.12204,0 148.40944,-9.12231,0 148.40891,-9.12257,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Yoivi junction to Yoivi village (seg 14)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.44634,-9.12932,0 148.45000,-9.13906,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 52)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35224,-9.05416,0 148.35093,-9.05187,0 148.34923,-9.05045,0 148.34837,-9.05130,0 148.34699,-9.05544,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sakarina – Numba – Kaura (seg 4)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37173,-9.06003,0 148.37216,-9.06169,0 148.37211,-9.06357,0 148.37170,-9.06461,0 148.36978,-9.06493,0 148.36997,-9.06555,0 148.36953,-9.06596,0 148.37015,-9.06677,0 148.36989,-9.06722,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Heniah (seg 6)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36524,-9.05092,0 148.36451,-9.04990,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Heniah (seg 6)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36444,-9.04983,0 148.36343,-9.04915,0 148.36155,-9.04944,0 148.36106,-9.04914,0 148.35924,-9.04533,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sakarina – Numba – Kaura (seg 6)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36989,-9.06722,0 148.36927,-9.06791,0 148.36921,-9.06910,0 148.37029,-9.07090,0 148.36972,-9.07037,0 148.36953,-9.07090,0 148.36887,-9.07084,0 148.36838,-9.07027,0 148.36802,-9.07097,0 148.36839,-9.07231,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Alternate Track from Sapal Creek to Road 3 (seg 25)</name>
+      <styleUrl>#road</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42413,-9.09913,0 148.42447,-9.09942,0 148.42459,-9.10114,0 148.42550,-9.10377,0 148.42519,-9.10500,0 148.42573,-9.10555,0 148.42588,-9.10681,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 8)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35973,-9.04332,0 148.36028,-9.04373,0 148.36147,-9.04380,0 148.36213,-9.04798,0 148.36190,-9.04851,0 148.36283,-9.04923,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 12)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.42495,-9.09817,0 148.42429,-9.09660,0 148.42422,-9.09527,0 148.42309,-9.09430,0 148.42213,-9.09543,0 148.42237,-9.09601,0 148.42212,-9.09628,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 79)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39914,-9.19153,0 148.40181,-9.19025,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 79)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40189,-9.19024,0 148.40169,-9.18957,0 148.40105,-9.18920,0 148.40157,-9.18884,0 148.40153,-9.18829,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 22)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40614,-9.12483,0 148.40580,-9.12758,0 148.40608,-9.13046,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sivurana village (seg 7)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35925,-9.04525,0 148.35964,-9.04375,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sivurana village (seg 7)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35962,-9.04365,0 148.35856,-9.04004,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 42)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36921,-9.06905,0 148.37033,-9.07081,0 148.36963,-9.07033,0 148.36948,-9.07089,0 148.36879,-9.07078,0 148.36850,-9.07009,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Alternate trail (seg 17)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.51055,-9.22827,0 148.50926,-9.22671,0 148.50695,-9.22559,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track to Afore Village (seg 65)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39098,-9.14277,0 148.39069,-9.14212,0 148.39082,-9.14009,0 148.38962,-9.13953,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 78)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40045,-9.20699,0 148.39953,-9.20510,0 148.39891,-9.20519,0 148.39861,-9.20588,0 148.39795,-9.20618,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sakarina – Numba – Kaura (seg 3)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37188,-9.05942,0 148.37251,-9.05984,0 148.37355,-9.05976,0 148.37566,-9.06087,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Awaru to Sigara Road</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38902,-9.06718,0 148.38789,-9.06753,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Track from Awaru to Sigara Road</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38780,-9.06755,0 148.38668,-9.06802,0 148.38607,-9.06785,0 148.38576,-9.06859,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 85)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39661,-9.14706,0 148.39670,-9.14577,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 85)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39666,-9.14569,0 148.39543,-9.14458,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 50)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39035,-9.13828,0 148.38856,-9.14075,0 148.38810,-9.14077,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 61)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35066,-9.05509,0 148.35157,-9.05563,0 148.35195,-9.05701,0 148.35257,-9.05741,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 60)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.32999,-9.06503,0 148.33080,-9.06802,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 21)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40474,-9.12461,0 148.40580,-9.12747,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sakarina – Numba – Kaura (seg 5)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.37566,-9.06087,0 148.37762,-9.06298,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 46)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38938,-9.13752,0 148.39105,-9.13604,0 148.39143,-9.13625,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 73)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38838,-9.13833,0 148.38743,-9.13777,0 148.38681,-9.13825,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 49)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40625,-9.12326,0 148.40630,-9.12161,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 80)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40146,-9.18892,0 148.40115,-9.18841,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 51)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.35397,-9.05633,0 148.35333,-9.05530,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>Sakarina – Numba – Kaura (seg 2)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.36609,-9.05177,0 148.36544,-9.05095,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 53)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.33255,-9.06912,0 148.33190,-9.06972,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 75)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.38535,-9.13708,0 148.38615,-9.13680,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 29)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.33045,-9.06771,0 148.32997,-9.06830,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 36)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39234,-9.11221,0 148.39248,-9.11244,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 48)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.40861,-9.12217,0 148.40853,-9.12239,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 64)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39169,-9.14284,0 148.39151,-9.14282,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 63)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.39740,-9.14343,0 148.39722,-9.14341,0</coordinates></LineString>
+    </Placemark>
+    <Placemark>
+      <name>russell muraba track record july 10 july (seg 30)</name>
+      <styleUrl>#foot</styleUrl>
+      <LineString><tessellate>1</tessellate><coordinates>148.32058,-9.07800,0 148.32059,-9.07810,0</coordinates></LineString>
+    </Placemark>
+  </Folder>
+</Document></kml>

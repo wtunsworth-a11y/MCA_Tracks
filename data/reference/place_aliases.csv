@@ -12,12 +12,12 @@
 # Kuheine (148.468). "Trail to Umbara village (seg 11)" runs from Kuheine to
 # 148.4675, which fixes the eastern one.
 as_written,resolved_to,lon,lat,note
-Avaru,Awaru,,,spelling
+Avaru,Awaru,,,"confirmed by Will, 3 Oct 2026"
 avaru,Awaru,,,spelling
 Avararu,Awaru,,,spelling
-Kueno,Koeno,,,spelling
-Jorura,Jorua,,,spelling
-Kiara,Kiera,,,spelling
+Kueno,Koeno,,,"confirmed by Will, 3 Oct 2026: Kueno is Koeno, also written Kweno"
+Jorura,Jorua,,,"probable, per Will 3 Oct 2026 - treated as the same place"
+Kiara,Kiera,,,"confirmed by Will, 3 Oct 2026: Kiara is Kiera and is NOT Kira"
 Natganga,Natanga,,,typo in source
 Serepuna,Serefuna,,,spelling
 Turatana,Turatan,,,spelling
@@ -31,7 +31,7 @@ Korowo,Koruwo,,,spelling
 Koruo,Koruwo,,,spelling
 Jaura,Jaure,,,spelling
 Semahara,Semehara,,,spelling
-Umbara,Ombara,148.46750,-9.13620,"eastern Ombara, fixed by the Kuheine-Umbara trail endpoint"
+Umbara,Ombara,148.46750,-9.13620,"confirmed by Will, 3 Oct 2026: Umbara is NOT Umbuara. The eastern Ombara, fixed by the Kuheine-Umbara trail endpoint"
 Umuate,Umuate,148.23700,-9.26370,"endpoint of Davids_track_record_from_Itokama_to_Umuate; the gazetteer's Umuwate at 148.4014 is 19 km away and cannot be this place"
 Tahama,Semahara Tahama,,,"inferred cluster, confidence 0.5"
 Basabe junction,Basabe,,,"junction near Basabe village"
@@ -39,6 +39,16 @@ Bareji River,Bareji,,,"the river, not the hamlet - position is the inferred Bare
 Bareji junction,Bareji,,,"as above"
 Yoivi,Yoivi,148.45000,-9.13910,"village end of the recording 'Yoivi junction to Yoivi village'; the gazetteer carries only Verayame, 500 m west"
 Tetebedi,Tedebedi,,,"same place as Tedebedi elsewhere in the list - still unlocated"
-Kuai,,,,"ASK: is this the gazetteer's Kwae, 1 km south of Itokama? Itokama-Kuai as a feeder road would fit, Kuai-Anatua would not"
+Kuai,Kwae,,,"confirmed by Will, 3 Oct 2026: Kuai is the gazetteer's Kwae"
 Kokoro,,,,"ASK: is this Karokora/Kororoko beside Afore? The list pairs it with Anatua, 14 km west, which does not fit"
 Aguido,,,,"named in the recording 'Track from Vereyame connects Yoivi, Aguido Primary School and Kuheine', so the route is likely already walked - a position would confirm it"
+Tedebedi,,,,"confirmed by Will, 3 Oct 2026: Tetebedi/Tedebedi is OUTSIDE the conservation area, so Anatua-Tetebedi and Kuai-Tedebedi-Emoriva run beyond the boundary"
+Kweno,Koeno,,,"third spelling of Koeno, used in the recording 'Kweno to Sakarina track'"
+#
+# Off-plateau endpoints of the long routes, positioned from public sources
+# because they are well-known places rather than hamlets. Each is flagged in the
+# checklist as public-source and still wants a field nod before it is relied on.
+Orobay,Oro Bay,148.49028,-8.89472,"PUBLIC SOURCE (Pacific Wrecks, 8d53'41\"S 148d29'25\"E): the coastal town. H01 Orobay-Itokama then reads as the highway from the coast up to Itokama - confirm this is meant"
+Safia,Safia,148.63900,-9.59500,"PUBLIC SOURCE (Pacific Wrecks, Safia airstrip 9d35.70'S 148d38.34'E): 24 km SE of Biriri, which fits Afore-Toma-Biriri-Babarobo-Safia and Aiari-Safia as routes off the plateau - confirm"
+Kwikila,Kwikila,147.65968,-9.81847,"PUBLIC SOURCE (geodatos.net): the Rigo District station in Central Province, 75 km SW of Jaure. Plausible as the far end of an old walking route but a long way out - confirm before relying on it"
+Embi,,,,"public sources put Embi village and the Embi Lakes just south of Dobodura at about 8.83S, roughly 25 km north of Numba - no reliable longitude found, so still unlocated. Confirm and we can place it"
