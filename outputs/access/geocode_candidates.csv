@@ -1,0 +1,45 @@
+place,appears_in,hit_name,source,feature,lat,lon,km_from_anchor,verdict,division
+Aguido,R02,Aguido Primary School,OSM/Nominatim,school,-9.14104,148.44929,0.2,plausible,"Aguido Primary School, Marasi Village Road, Marasi, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Aputuara,F04,,,,,,,not in either gazetteer,
+Asafa,"F42, F59",Asafa,OSM/Nominatim,village,-6.21305,145.8377,405.7,SUSPECT - far from where the route implies,"Asafa, Kainantu District, Kainanatu District, Eastern Highlands, Highlands Region, Papua New Guinea"
+Asafa,"F42, F59",Asafa,OSM/Nominatim,village,-8.97676,148.10697,15.1,plausible,"Asafa, Sohe District, Oro, Southern Region, Papua New Guinea"
+Babarobo,F25,Babarobo,OSM/Nominatim,village,-9.35662,148.52263,5.5,plausible,"Babarobo, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Banderi,"F04, F36",Banderi,OSM/Nominatim,village,-8.96337,148.45922,8.7,plausible,"Banderi, Popondetta District, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Bodoimo,F55,Bodoimo,OSM/Nominatim,village,-9.11492,148.28607,0.7,plausible,"Bodoimo, Popondetta District, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Damara,F47,Damera,GeoNames,populated place,-8.24481,143.47367,551.2,SUSPECT - far from where the route implies,"Papua New Guinea , Western Province"
+Embi,F17,Embi,OSM/Nominatim,village,-8.83729,148.4306,24.7,plausible,"Embi, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Embi,F17,Embi Creek,OSM/Nominatim,river,-8.8024,148.36979,27.5,plausible,"Embi Creek, Sonegata, Urio, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Embi,F17,Embi Creek,OSM/Nominatim,river,-8.8029,148.373,27.5,plausible,"Embi Creek, Urio, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Embi,F17,Middle Embi,GeoNames,lake,-8.83333,148.35,24.1,plausible,"Papua New Guinea , Oro Province"
+Embi,F17,East Embi,GeoNames,lake,-8.81667,148.36667,25.9,plausible,"Papua New Guinea , Oro Province"
+Embi,F17,Mount Embi,GeoNames,mountain,-5.33848,143.70682,655.5,SUSPECT - far from where the route implies,"Papua New Guinea , Enga Province"
+Embi,F17,Embi Lakes,GeoNames,lakes,-8.82729,148.34436,24.9,plausible,"Papua New Guinea , Oro Province"
+Emo,F03,Emo,OSM/Nominatim,village,-9.00134,148.52494,9.4,plausible,"Emo, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Emo,F03,Emo River Airstrip,OSM/Nominatim,aerodrome,-9.12347,148.0415,45.4,SUSPECT - far from where the route implies,"Emo River Airstrip, Emo Station, Kokoda District, Sohe District, Oro, Southern Region, Papua New Guinea"
+Emo,F03,Emo,GeoNames,airport,-8.73333,147.783,80.3,SUSPECT - far from where the route implies,"Papua New Guinea , Oro Province"
+Emo,F03,Emo,GeoNames,populated place,-8.99366,148.52376,9.7,plausible,"Papua New Guinea , Oro Province"
+Emo,F03,Emo River,GeoNames,stream,-9.11667,148.05,44.4,SUSPECT - far from where the route implies,"Papua New Guinea , Oro Province"
+Emo,F03,Emo Mission,GeoNames,mission,-9.0,148.51667,8.7,plausible,"Papua New Guinea , Oro Province"
+Emoriva,F29,,,,,,,not in either gazetteer,
+Gorobuna,"F43, F59",,,,,,,not in either gazetteer,
+Haraja,F35,,,,,,,not in either gazetteer,
+Kokoro,"F15, F57",Kokoro,OSM/Nominatim,village,-9.16706,148.27182,3.0,plausible,"Kokoro, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Kokoro,"F15, F57",Kokoro Airport,GeoNames,airport,-7.83524,146.5329,238.2,SUSPECT - far from where the route implies,"Papua New Guinea , Central Province"
+Korokoro,R14,,,,,,,not in either gazetteer,
+Old Cardamom factory,R04,,,,,,,not in either gazetteer,
+Organ,R05,,,,,,,not in either gazetteer,
+Peroroda,H02,Peroroda,OSM/Nominatim,village,-9.16452,148.58095,20.5,plausible,"Peroroda, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Sairope,F42,Sairope,OSM/Nominatim,village,-8.9213,148.04396,23.5,plausible,"Sairope, Kokoda District, Sohe District, Oro, Southern Region, Papua New Guinea"
+Sairope,F42,New Sairope,GeoNames,populated place,-8.90241,148.04442,24.3,plausible,"Papua New Guinea , Oro Province"
+Singata,"F58, F59, F62",,,,,,,not in either gazetteer,
+Tedebedi,"F29, F60",,,,,,,not in either gazetteer,
+Ufia,"F37, R01",Ufia,OSM/Nominatim,village,-9.21054,148.26584,2.8,plausible,"Ufia, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Ufia,"F37, R01",Ufia,GeoNames,populated place,-9.22077,148.26201,1.7,plausible,"Papua New Guinea , Oro Province"
+Umasi,F17,,,,,,,not in either gazetteer,
+Vovosik,F44,,,,,,,not in either gazetteer,
+Warisota,F17,Warisota,OSM/Nominatim,village,-8.85171,148.43032,23.2,plausible,"Warisota, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+Warisota,F17,New Warisota,OSM/Nominatim,village,-8.68617,148.18158,45.1,SUSPECT - far from where the route implies,"New Warisota, Sohe District, Oro, Southern Region, Papua New Guinea"
+Warisota,F17,Warisota,GeoNames,populated place,-8.73333,148.4,35.3,SUSPECT - far from where the route implies,"Papua New Guinea , Oro Province"
+Warisota,F17,Warisota Plantation,GeoNames,estate(s),-8.85,148.43333,23.4,plausible,"Papua New Guinea , Oro Province"
+Water Crossing,F49,,,,,,,not in either gazetteer,
+Wayei,F31,,,,,,,not in either gazetteer,

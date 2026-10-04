@@ -52,3 +52,21 @@ Orobay,Oro Bay,148.49028,-8.89472,"PUBLIC SOURCE (Pacific Wrecks, 8d53'41\"S 148
 Safia,Safia,148.63900,-9.59500,"CONFIRMED by Will, 4 Oct 2026: there is only one Safia, so this is it - the airstrip at 9d35.70'S 148d38.34'E (Pacific Wrecks). Aiari-Safia is therefore genuinely a 54 km route"
 Kwikila,Kwikila,147.65968,-9.81847,"CONFIRMED by Will, 4 Oct 2026: correct, and it is an old foot track. The Rigo District station in Central Province (geodatos.net), 75 km SW of Jaure"
 Embi,,,,"public sources put Embi village and the Embi Lakes just south of Dobodura at about 8.83S, roughly 25 km north of Numba - no reliable longitude found, so still unlocated. Confirm and we can place it"
+#
+# Found in the public gazetteers on 4 Oct 2026, once the environment's network
+# policy was opened to Nominatim and GeoNames. See geocode_candidates.csv for
+# every candidate considered and scripts/geocode_unlocated.py for the method.
+# Each is a gazetteer hit the route's own geometry corroborates; none has been
+# confirmed on the ground, so all are open to correction.
+Aguido,Aguido,148.44929,-9.14104,"OSM: Aguido Primary School, 200 m from where the route implied. The recording 'Vereyame connects Yoivi, Aguido Primary School and Kuheine' names it, so R02 is already walked"
+Bodoimo,Bodoimo,148.28607,-9.11492,"OSM village, 700 m from where the route implied. The recording 'Korouwo_to_Anatua_via_Bodoimo' names it, so F55 is already walked"
+Kokoro,Kokoro,148.27182,-9.16706,"OSM village 3 km south of Anatua. Settles the earlier query: Kokoro is NOT Karokora beside Afore. (A Kokoro Airport 238 km away in Central Province was rejected)"
+Ufia,Ufia,148.26584,-9.21054,"OSM village just south of Itokama; GeoNames agrees within 1.7 km"
+Emo,Emo,148.52494,-9.00134,"OSM village east of Sigara; GeoNames agrees within 1 km. NOT the Emo River / Emo Station near Kokoda, 45 km west - the name is used twice in Oro"
+Babarobo,Babarobo,148.52263,-9.35662,"OSM village, and it sits almost exactly on the Biriri-Safia line, which is the leg the list puts it in"
+Banderi,Banderi,148.45922,-8.96337,"OSM village 8.7 km north of Sigara"
+Asafa,Asafa,148.10697,-8.97676,"OSM village 15 km WNW of Gora. (An Asafa 406 km away in Eastern Highlands was rejected)"
+Sairope,Sairope,148.04396,-8.92130,"OSM village; GeoNames has New Sairope 2 km away. Gora > Asafa > Sairope is then a consistent westward chain, which is the corroboration"
+Embi,Embi,148.43060,-8.83729,"OSM village south of Dobodura - the longitude that was missing on 3 Oct. Sits 1.7 km from Warisota, which is the next place in the same route. (Mount Embi 656 km away in Enga was rejected)"
+Warisota,Warisota,148.43032,-8.85171,"OSM village beside Embi. AMBIGUOUS: GeoNames has another Warisota 13 km north and OSM a New Warisota 45 km west - this is the one the route fits"
+Peroroda,Peroroda,148.58095,-9.16452,"OSM village. 20 km from where the route implied, but that anchor is the weak Bareji cluster, so the distance proves little either way - worth a check"

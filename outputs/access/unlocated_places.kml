@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
   <name>Managalas - places we cannot find</name>
-  <description><![CDATA[<b>Drag each pin in PLACE THESE onto the real village, then save the file and send it back.</b><br/><br/>Every pin in that folder is a <i>guess</i>, placed at the midpoint of the villages your list puts next to it. None of them is a position we hold. The other two folders are reference only - the villages we do have positions for, and the tracks already recorded.<br/><br/>Generated 2026-10-03 from NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx]]></description>
+  <description><![CDATA[<b>Drag each pin in PLACE THESE onto the real village, then save the file and send it back.</b><br/><br/>Every pin in that folder is a <i>guess</i>, placed at the midpoint of the villages your list puts next to it. None of them is a position we hold. The other two folders are reference only - the villages we do have positions for, and the tracks already recorded.<br/><br/>Generated 2026-10-04 from NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx]]></description>
   <Style id="todo">
     <IconStyle><color>ff00ffff</color><scale>1.3</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href></Icon></IconStyle>
     <LabelStyle><color>ff00ffff</color><scale>1.3</scale></LabelStyle>
@@ -16,45 +16,10 @@
   <Folder><name>PLACE THESE — pins are guesses, drag them</name>
   <open>1</open>
     <Placemark>
-      <name>Aguido</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Aguido</b><br/>Appears in: R02<br/>&nbsp;&nbsp;• Veriame-yoivi-Aguido<br/><br/><i>This pin is a guess: the midpoint of Yoivi, which the list names next to it.</i><br/><br/><b>Question:</b> named in the recording 'Track from Vereyame connects Yoivi, Aguido Primary School and Kuheine', so the route is likely already walked - a position would confirm it]]></description>
-      <Point><coordinates>148.450000,-9.139100,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
       <name>Aputuara</name>
       <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Aputuara</b><br/>Appears in: F04<br/>&nbsp;&nbsp;• Numba-Aputuara - Banderi<br/><br/><i>This pin is a guess: the midpoint of Numba, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.365500,-9.048373,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Asafa</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Asafa</b><br/>Appears in: F42, F59<br/>&nbsp;&nbsp;• Gora-Asafa-Sairope<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/><br/><i>This pin is a guess: the midpoint of Gora, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.242600,-8.999473,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Babarobo</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Babarobo</b><br/>Appears in: F25<br/>&nbsp;&nbsp;• Afore-Toma-Biriri-Babarobo-Safia<br/><br/><i>This pin is a guess: the midpoint of Biriri, Safia, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.539400,-9.403600,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Banderi</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Banderi</b><br/>Appears in: F04, F36<br/>&nbsp;&nbsp;• Numba-Aputuara - Banderi<br/>&nbsp;&nbsp;• Sigara- Banderi<br/><br/><i>This pin is a guess: the midpoint of Sigara, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.449100,-9.038373,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Bodoimo</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Bodoimo</b><br/>Appears in: F55<br/>&nbsp;&nbsp;• Koruo-Bodoimo-Umbuara-Anatua<br/><br/><i>This pin is a guess: the midpoint of Koruwo, Umbuara, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.292600,-9.115700,0</coordinates></Point>
+      <description><![CDATA[<b>Aputuara</b><br/>Appears in: F04<br/>&nbsp;&nbsp;• Numba-Aputuara - Banderi<br/><br/><i>This pin is a guess: the midpoint of Banderi, Numba, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.412400,-9.007200,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -62,20 +27,6 @@
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Damara</b><br/>Appears in: F47<br/>&nbsp;&nbsp;• Damara-Bua<br/><br/><i>This pin is a guess: the midpoint of Bua, which the list names next to it.</i>]]></description>
       <Point><coordinates>148.434700,-9.138100,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Embi</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Embi</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess 2 steps out: it sits on Umasi, which is themselves guessed. Treat it as a direction, not a location.</i><br/><br/><b>Question:</b> public sources put Embi village and the Embi Lakes just south of Dobodura at about 8.83S, roughly 25 km north of Numba - no reliable longitude found, so still unlocated. Confirm and we can place it]]></description>
-      <Point><coordinates>148.368262,-9.051100,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Emo</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Emo</b><br/>Appears in: F03<br/>&nbsp;&nbsp;• Avaru-Sigara-Emo<br/><br/><i>This pin is a guess: the midpoint of Sigara, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.449100,-9.043827,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -88,8 +39,8 @@
     <Placemark>
       <name>Gorobuna</name>
       <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Gorobuna</b><br/>Appears in: F43, F59<br/>&nbsp;&nbsp;• Gora-Gorobuna<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/><br/><i>This pin is a guess: the midpoint of Gora, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.244991,-9.003564,0</coordinates></Point>
+      <description><![CDATA[<b>Gorobuna</b><br/>Appears in: F43, F59<br/>&nbsp;&nbsp;• Gora-Gorobuna<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/><br/><i>This pin is a guess: the midpoint of Asafa, Gora, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.174800,-8.989500,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -97,13 +48,6 @@
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Haraja</b><br/>Appears in: F35<br/>&nbsp;&nbsp;• Haraja-Natganga<br/><br/><i>This pin is a guess: the midpoint of Natanga, which the list names next to it.</i>]]></description>
       <Point><coordinates>148.291100,-9.070200,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Kokoro</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Kokoro</b><br/>Appears in: F15, F57<br/>&nbsp;&nbsp;• Kokoro -Anatua<br/>&nbsp;&nbsp;• Anatua-Kokoro<br/><br/><i>This pin is a guess: the midpoint of Anatua, which the list names next to it.</i><br/><br/><b>Question:</b> ASK: is this Karokora/Kororoko beside Afore? The list pairs it with Anatua, 14 km west, which does not fit]]></description>
-      <Point><coordinates>148.265500,-9.140300,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -128,13 +72,6 @@
     </Placemark>
 
     <Placemark>
-      <name>Peroroda</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Peroroda</b><br/>Appears in: H02<br/>&nbsp;&nbsp;• Bareji junction-Peroroda<br/><br/><i>This pin is a guess: the midpoint of Bareji, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.394000,-9.143300,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
       <name>Road 1</name>
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Road 1</b><br/>Appears in: R05<br/>&nbsp;&nbsp;• Road 1- Organ Village<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
@@ -153,13 +90,6 @@
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Road 3</b><br/>Appears in: R03<br/>&nbsp;&nbsp;• Road 3 – Dareki<br/><br/><i>This pin is a guess: the midpoint of Dareki, which the list names next to it.</i>]]></description>
       <Point><coordinates>148.432300,-9.100200,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Sairope</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Sairope</b><br/>Appears in: F42<br/>&nbsp;&nbsp;• Gora-Asafa-Sairope<br/><br/><i>This pin is a guess 2 steps out: it sits on Asafa, which is themselves guessed. Treat it as a direction, not a location.</i>]]></description>
-      <Point><coordinates>148.240209,-9.003564,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -184,17 +114,10 @@
     </Placemark>
 
     <Placemark>
-      <name>Ufia</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Ufia</b><br/>Appears in: F37, R01<br/>&nbsp;&nbsp;• Ufia-Umuate-Aiari-Suari-Jaure<br/>&nbsp;&nbsp;• Itokama -Ufia<br/><br/><i>This pin is a guess: the midpoint of Itokama, Umuate, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.251500,-9.231800,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
       <name>Umasi</name>
       <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Umasi</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess: the midpoint of Numba, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.365500,-9.053827,0</coordinates></Point>
+      <description><![CDATA[<b>Umasi</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess: the midpoint of Embi, Numba, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.398000,-8.944200,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -202,13 +125,6 @@
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Vovosik</b><br/>Appears in: F44<br/>&nbsp;&nbsp;• Jaura-Vovosik-Kwikila<br/><br/><i>This pin is a guess: the midpoint of Jaure, Kwikila, which the list names next to it.</i>]]></description>
       <Point><coordinates>147.902500,-9.546900,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Warisota</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Warisota</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess 2 steps out: it sits on Embi, which is themselves guessed. Treat it as a direction, not a location.</i>]]></description>
-      <Point><coordinates>148.362738,-9.051100,0</coordinates></Point>
     </Placemark>
 
     <Placemark>

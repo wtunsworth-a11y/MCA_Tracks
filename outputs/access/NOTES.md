@@ -481,50 +481,61 @@ is unvisited: Aiari (109 households), Jaure (59) and Suari (33) have no GPS
 coverage at all.
 
 
-### Online data: what is reachable from here, and what it gave
+### Online data: what is reachable, and what it gave
 
-Asked on 3 Oct 2026 whether public sources had been used, the network policy was
-retested rather than the earlier note repeated. The position has not changed for
-map data and has changed for search:
+Asked on 3 Oct 2026 whether public sources had been used, the answer was no and
+the reason was the network policy, which was retested rather than assumed:
+Nominatim, Overpass and GeoNames all answered 403 at the gateway. The policy was
+opened on 4 Oct and retested again. Where it stands now:
 
 | source | result |
 |---|---|
-| nominatim.openstreetmap.org | gateway returns 403 to CONNECT — policy denial |
-| overpass-api.de | gateway returns 403 to CONNECT — policy denial |
-| api.geonames.org | 403 |
-| www.geonames.org | blocked by the egress proxy |
-| web search | **works** |
+| nominatim.openstreetmap.org | **open** — village-level coverage of Oro, and good |
+| www.geonames.org (search page) | **open** — thin for this area, useful as a second opinion |
+| api.geonames.org | 403 — the HTML search page is used instead |
+| overpass-api.de | still denied |
+| download.geofabrik.de | still denied |
 
-So no OSM geometry can be pulled into this environment, and the road network is
-still entirely the project's own recordings. Web search is a different route and
-does work, which is enough to identify well-known places by name even though it
-cannot supply a gazetteer.
+So no bulk OSM extract and no Overpass queries; the road network remains
+entirely the project's own recordings. But name lookups now work, and
+`scripts/geocode_unlocated.py` ran every unlocated place through both sources.
 
-Three off-plateau route endpoints were positioned that way, all recorded with
-their source in `place_aliases.csv` and all still wanting a field nod:
+**Nothing was accepted on a name match.** GeoNames' only "Itokama" in Papua New
+Guinea is an airport at 147.30 in Central Province, 106 km from the Itokama this
+project is about — accepting hits on name alone would have moved a village
+across the country. So every candidate is reported in
+`geocode_candidates.csv` with its administrative division, its feature class and
+its distance from the anchor the route's own neighbours imply, and only hits the
+route geometry corroborates were taken. The filter rejected an Asafa 406 km away
+in Eastern Highlands, a Mount Embi 656 km away in Enga, a Kokoro Airport 238 km
+away in Central Province and a Damera 551 km away in Western Province.
 
-- **Orobay** = Oro Bay, the coastal town, −8.8947 / 148.4903. H01
-  "Orobay-Itokama" then reads as the national highway from the coast up to
-  Itokama, which fits.
-- **Safia** = Safia airstrip, −9.5950 / 148.6390, 24 km south-east of Biriri.
-  Confirmed on 4 Oct 2026 — there is only one Safia — so "Aiari-Safia" really is
-  a **54 km** route and "Afore-Toma-Biriri-Babarobo-Safia" **57 km**.
-- **Kwikila** = the Rigo District station in Central Province, −9.8185 /
-  147.6597, 75 km south-west of Jaure. Confirmed on 4 Oct 2026, and confirmed as
-  an **old foot track** — "Jaura-Vovosik-Kwikila" is 80 km end to end.
+Twelve places were positioned this way, taking the unlocated count from 35 to 18
+and the recorded legs from 44 to 51. The strongest are the ones a recording
+already names:
 
-### Five routes on the list are multi-day walks
+- **Aguido** = Aguido Primary School, 200 m from where the route implied, and
+  named in `Vereyame_connects_Yoivi,_Aguido_Primary_School_and_Kuheine` — so R02
+  turns out to be already walked.
+- **Bodoimo**, 700 m from where the route implied, and named in
+  `Korouwo_to_Anatua_via_Bodoimo` — F55 likewise.
+- **Kokoro**, an OSM village 3 km south of Anatua, which settles the 3 Oct
+  query: it is **not** Karokora beside Afore.
+- **Babarobo** sits almost exactly on the Biriri–Safia line, which is the leg the
+  list puts it in.
+- **Embi** and **Warisota** come out 1.7 km apart and are consecutive in
+  "Numba-Umasi-Embi-Warisota", which is better evidence than either hit alone.
+  Embi's longitude was the thing missing on 3 Oct.
+- **Gora > Asafa > Sairope** is a consistent westward chain.
 
-Flagged on the checklist, because none of them is a morning's work and two have
-no single measurable leg: Jaura–Vovosik–Kwikila 80 km, Afore–Toma–Biriri–
-Babarobo–Safia 57 km, Aiari–Safia 54 km, Orobay–Itokama 42 km and
-Gora–Popondetta 26 km. The route span is measured end to end, so a route counts
-even when its middle is a place we cannot locate.
+Two carry a caveat in `place_aliases.csv`: **Warisota** is ambiguous — GeoNames
+has another 13 km north and OSM a New Warisota 45 km west — and **Peroroda** is
+20 km from its anchor, though that anchor is the weak Bareji cluster so the
+distance proves little either way.
 
-**Embi** was looked for and not pinned: public sources put Embi village and the
-Embi Lakes just south of Dobodura at about 8.83 S, roughly 25 km north of Numba,
-but no reliable longitude came back, so it stays unlocated rather than being
-given a made-up one.
+Thirteen names are in neither gazetteer and still need the team: Aputuara,
+Emoriva, Gorobuna, Haraja, Korokoro, Singata, Tedebedi, Umasi, Vovosik, Wayei,
+Water Crossing, and the Organ and Old Cardamom factory ends of Road 1 and Road 2.
 
 ### Spellings and identities confirmed in the field, 3 Oct 2026
 
@@ -569,12 +580,15 @@ meaningless.
 | `TRACK_CHECKLIST.md` | the team's 80 planned routes, each leg marked recorded / partly / not recorded / place not located |
 | `track_checklist.csv` | the same, one row per leg, with the measurement behind every call |
 | `unlocated_places.kml` | a draggable pin per place we cannot find, over the known villages and the recorded tracks |
+| `geocode_candidates.csv` | every public-gazetteer hit considered for an unlocated place, with the division, feature class and distance that decided it |
 
 Scripts that produced them, in order:
 `classify_mode.py` → `build_access.py` → `make_access_figures.py` → `road_speed.py`
 
 `cross_reference_tracks.py` produces the checklist and is independent of the
 access pipeline; it reuses that pipeline's graph noding and gap bridging.
+`make_unlocated_kml.py` writes the pin file and `geocode_unlocated.py` the
+gazetteer candidates; both read the checklist, so run it first.
 
 Field-knowledge overrides live in `data/access_overrides.csv` (stop access),
 `data/reference/confirmed_roads.csv` (individual segments confirmed driveable)

@@ -1,0 +1,321 @@
+{
+ "geonames:Aguido": [],
+ "geonames:Aputuara": [],
+ "geonames:Asafa": [],
+ "geonames:Babarobo": [],
+ "geonames:Banderi": [],
+ "geonames:Bodoimo": [],
+ "geonames:Damara": [
+  {
+   "kind": "populated place",
+   "lat": -8.244807,
+   "lon": 143.473674,
+   "name": "Damera",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Western Province"
+  }
+ ],
+ "geonames:Embi": [
+  {
+   "kind": "lake",
+   "lat": -8.8333333,
+   "lon": 148.35,
+   "name": "Middle Embi",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  },
+  {
+   "kind": "lake",
+   "lat": -8.8166667,
+   "lon": 148.3666667,
+   "name": "East Embi",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  },
+  {
+   "kind": "mountain",
+   "lat": -5.338477,
+   "lon": 143.706821,
+   "name": "Mount Embi",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Enga Province"
+  },
+  {
+   "kind": "lakes",
+   "lat": -8.827294,
+   "lon": 148.344359,
+   "name": "Embi Lakes",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  }
+ ],
+ "geonames:Emo": [
+  {
+   "kind": "airport",
+   "lat": -8.73333,
+   "lon": 147.783,
+   "name": "Emo",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  },
+  {
+   "kind": "populated place",
+   "lat": -8.993657,
+   "lon": 148.523761,
+   "name": "Emo",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  },
+  {
+   "kind": "stream",
+   "lat": -9.1166667,
+   "lon": 148.05,
+   "name": "Emo River",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  },
+  {
+   "kind": "mission",
+   "lat": -9.0,
+   "lon": 148.5166667,
+   "name": "Emo Mission",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  }
+ ],
+ "geonames:Emoriva": [],
+ "geonames:Gorobuna": [],
+ "geonames:Haraja": [],
+ "geonames:Kokoro": [
+  {
+   "kind": "airport",
+   "lat": -7.83524,
+   "lon": 146.5329,
+   "name": "Kokoro Airport",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Central Province"
+  }
+ ],
+ "geonames:Korokoro": [],
+ "geonames:Old Cardamom factory": [],
+ "geonames:Organ": [],
+ "geonames:Peroroda": [],
+ "geonames:Sairope": [
+  {
+   "kind": "populated place",
+   "lat": -8.90241,
+   "lon": 148.04442,
+   "name": "New Sairope",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  }
+ ],
+ "geonames:Singata": [],
+ "geonames:Tedebedi": [],
+ "geonames:Ufia": [
+  {
+   "kind": "populated place",
+   "lat": -9.220768,
+   "lon": 148.262015,
+   "name": "Ufia",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  }
+ ],
+ "geonames:Umasi": [],
+ "geonames:Vovosik": [],
+ "geonames:Warisota": [
+  {
+   "kind": "populated place",
+   "lat": -8.7333333,
+   "lon": 148.4,
+   "name": "Warisota",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  },
+  {
+   "kind": "estate(s)",
+   "lat": -8.85,
+   "lon": 148.4333333,
+   "name": "Warisota Plantation",
+   "source": "GeoNames",
+   "where": "Papua New Guinea , Oro Province"
+  }
+ ],
+ "geonames:Water Crossing": [],
+ "geonames:Wayei": [],
+ "nominatim:Aguido": [
+  {
+   "kind": "school",
+   "lat": -9.1410423,
+   "lon": 148.4492934,
+   "name": "Aguido Primary School",
+   "source": "OSM/Nominatim",
+   "where": "Aguido Primary School, Marasi Village Road, Marasi, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Aputuara": [],
+ "nominatim:Asafa": [
+  {
+   "kind": "village",
+   "lat": -6.2130456,
+   "lon": 145.8377043,
+   "name": "Asafa",
+   "source": "OSM/Nominatim",
+   "where": "Asafa, Kainantu District, Kainanatu District, Eastern Highlands, Highlands Region, Papua New Guinea"
+  },
+  {
+   "kind": "village",
+   "lat": -8.9767589,
+   "lon": 148.1069741,
+   "name": "Asafa",
+   "source": "OSM/Nominatim",
+   "where": "Asafa, Sohe District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Babarobo": [
+  {
+   "kind": "village",
+   "lat": -9.356617,
+   "lon": 148.5226279,
+   "name": "Babarobo",
+   "source": "OSM/Nominatim",
+   "where": "Babarobo, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Banderi": [
+  {
+   "kind": "village",
+   "lat": -8.9633694,
+   "lon": 148.4592167,
+   "name": "Banderi",
+   "source": "OSM/Nominatim",
+   "where": "Banderi, Popondetta District, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Bodoimo": [
+  {
+   "kind": "village",
+   "lat": -9.1149231,
+   "lon": 148.2860739,
+   "name": "Bodoimo",
+   "source": "OSM/Nominatim",
+   "where": "Bodoimo, Popondetta District, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Damara": [],
+ "nominatim:Embi": [
+  {
+   "kind": "village",
+   "lat": -8.837294,
+   "lon": 148.4306046,
+   "name": "Embi",
+   "source": "OSM/Nominatim",
+   "where": "Embi, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  },
+  {
+   "kind": "river",
+   "lat": -8.802397,
+   "lon": 148.3697883,
+   "name": "Embi Creek",
+   "source": "OSM/Nominatim",
+   "where": "Embi Creek, Sonegata, Urio, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  },
+  {
+   "kind": "river",
+   "lat": -8.8029032,
+   "lon": 148.372996,
+   "name": "Embi Creek",
+   "source": "OSM/Nominatim",
+   "where": "Embi Creek, Urio, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Emo": [
+  {
+   "kind": "village",
+   "lat": -9.0013402,
+   "lon": 148.5249383,
+   "name": "Emo",
+   "source": "OSM/Nominatim",
+   "where": "Emo, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  },
+  {
+   "kind": "aerodrome",
+   "lat": -9.1234673,
+   "lon": 148.0414985,
+   "name": "Emo River Airstrip",
+   "source": "OSM/Nominatim",
+   "where": "Emo River Airstrip, Emo Station, Kokoda District, Sohe District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Emoriva": [],
+ "nominatim:Gorobuna": [],
+ "nominatim:Haraja": [],
+ "nominatim:Kokoro": [
+  {
+   "kind": "village",
+   "lat": -9.1670571,
+   "lon": 148.2718232,
+   "name": "Kokoro",
+   "source": "OSM/Nominatim",
+   "where": "Kokoro, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Korokoro": [],
+ "nominatim:Old Cardamom factory": [],
+ "nominatim:Organ": [],
+ "nominatim:Peroroda": [
+  {
+   "kind": "village",
+   "lat": -9.1645185,
+   "lon": 148.5809539,
+   "name": "Peroroda",
+   "source": "OSM/Nominatim",
+   "where": "Peroroda, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Sairope": [
+  {
+   "kind": "village",
+   "lat": -8.9213049,
+   "lon": 148.0439583,
+   "name": "Sairope",
+   "source": "OSM/Nominatim",
+   "where": "Sairope, Kokoda District, Sohe District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Singata": [],
+ "nominatim:Tedebedi": [],
+ "nominatim:Ufia": [
+  {
+   "kind": "village",
+   "lat": -9.2105366,
+   "lon": 148.2658426,
+   "name": "Ufia",
+   "source": "OSM/Nominatim",
+   "where": "Ufia, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Umasi": [],
+ "nominatim:Vovosik": [],
+ "nominatim:Warisota": [
+  {
+   "kind": "village",
+   "lat": -8.8517116,
+   "lon": 148.4303194,
+   "name": "Warisota",
+   "source": "OSM/Nominatim",
+   "where": "Warisota, Ijivitari District, Oro, Southern Region, Papua New Guinea"
+  },
+  {
+   "kind": "village",
+   "lat": -8.6861743,
+   "lon": 148.1815752,
+   "name": "New Warisota",
+   "source": "OSM/Nominatim",
+   "where": "New Warisota, Sohe District, Oro, Southern Region, Papua New Guinea"
+  }
+ ],
+ "nominatim:Water Crossing": [],
+ "nominatim:Wayei": []
+}
