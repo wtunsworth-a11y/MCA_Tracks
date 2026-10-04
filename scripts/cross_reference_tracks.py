@@ -58,6 +58,10 @@ DETOUR_MAX = 1.8
 # walk, and that walk is the track, not a detour around a missing one.
 SHORT_LEG_M = 2500.0
 DETOUR_MAX_SHORT = 2.5
+# Some legs in the list are historic long-distance routes off the plateau, not a
+# morning's work - Jaura to Kwikila is 75 km into Central Province. Flagged so
+# nobody is sent out to walk one between breakfast and the afternoon rain.
+LONG_LEG_KM = 25.0
 
 
 def load_places():
@@ -250,6 +254,7 @@ def main():
             straight = pa.distance(pb)
             off_a, off_b = net.distance(pa), net.distance(pb)
             rec["straight_km"] = round(straight / 1000, 2)
+            rec["multi_day"] = "yes" if straight / 1000 >= LONG_LEG_KM else ""
             rec["from_off_network_m"] = round(off_a)
             rec["to_off_network_m"] = round(off_b)
 
@@ -309,7 +314,7 @@ def main():
     cols = ["route_id", "leg", "category", "as_written", "from_place", "to_place",
             "from_resolved", "to_resolved", "status", "detail", "straight_km",
             "route_km", "detour_ratio", "from_off_network_m", "to_off_network_m",
-            "ambiguous_name", "name_evidence"]
+            "ambiguous_name", "multi_day", "name_evidence"]
     df[cols].to_csv(OUT / "track_checklist.csv", index=False)
 
     # Route-level roll-up: a route is only done when every leg of it is.
@@ -323,6 +328,23 @@ def main():
                     done=("status", lambda s: (s == "recorded").sum())))
     inv = {v: k for k, v in order.items()}
     route["status"] = route["worst"].map(inv)
+
+    # A route can be a multi-day walk without any single leg of it measuring
+    # long, because the middle of it is unlocated: Jaura-Vovosik-Kwikila has no
+    # measurable leg and is still 75 km end to end. Measure the ends.
+    span = {}
+    for _, pr in planned.iterrows():
+        chain = [c.strip() for c in str(pr["chain"]).split(">")]
+        ca = candidates(chain[0], places, aliases)
+        cb = candidates(chain[-1], places, aliases)
+        if ca and cb:
+            a, b = pick_pair(ca, cb)
+            pa, pb = (gpd.GeoSeries([Point(a["lon"], a["lat"]),
+                                     Point(b["lon"], b["lat"])], crs=WGS84)
+                      .to_crs(UTM))
+            span[pr["id"]] = float(pa.distance(pb)) / 1000
+    route["span_km"] = route.index.map(lambda i: span.get(i, float("nan")))
+    route["multi_day"] = route["span_km"] >= LONG_LEG_KM
 
     print()
     print(df["status"].value_counts().to_string())
@@ -381,7 +403,9 @@ def write_markdown(df, route, aliases):
             L.append(f"### {heading} ({len(rs)})")
             L.append("")
             for rid, r in rs.iterrows():
-                L.append(f"- {mark[st]} **{r['as_written']}**  `{rid}`")
+                tag = (f" — **{r['span_km']:.0f} km end to end: a multi-day walk**"
+                       if r.get("multi_day") else "")
+                L.append(f"- {mark[st]} **{r['as_written']}**  `{rid}`{tag}")
                 legs = df[df["route_id"] == rid]
                 if len(legs) > 1 or st != "recorded":
                     for _, lg in legs.iterrows():
@@ -389,6 +413,9 @@ def write_markdown(df, route, aliases):
                         if isinstance(lg.get("name_evidence"), str) and lg["name_evidence"]:
                             extra += f" — a recording is named for it: *{lg['name_evidence']}*"
                         amb = lg.get("ambiguous_name")
+                        if lg.get("multi_day") == "yes":
+                            extra += (f" — **{lg['straight_km']:.0f} km in a straight "
+                                      f"line: a multi-day walk, not a day trip**")
                         if isinstance(amb, str) and amb:
                             extra += (f" — **this name is on two places {amb}; the "
                                       f"nearer pairing was assumed**")

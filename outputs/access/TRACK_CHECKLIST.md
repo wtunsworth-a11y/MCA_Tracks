@@ -29,13 +29,13 @@ recordings in hand carry no route name at all.
   - [ ] Tahama → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
 - [ ] **Toma-Itokama**  `F13`
   - [ ] Toma → Itokama: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
-- [ ] **Afore-Toma-Biriri-Babarobo-Safia**  `F25`
+- [ ] **Afore-Toma-Biriri-Babarobo-Safia**  `F25` — **57 km end to end: a multi-day walk**
   - [ ] Afore → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
   - [~] Toma → Biriri: both ends on the network but only linked the long way round (31.5 km for 4.3 km straight) - the direct track is not recorded — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
   - [?] Biriri → Babarobo: no position for Babarobo
   - [?] Babarobo → Safia: no position for Babarobo
-- [ ] **Aiari-Safia**  `F30`
-  - [ ] Aiari → Safia: neither end on the network (9.8 km and 42.4 km off)
+- [ ] **Aiari-Safia**  `F30` — **54 km end to end: a multi-day walk**
+  - [ ] Aiari → Safia: neither end on the network (9.8 km and 42.4 km off) — **54 km in a straight line: a multi-day walk, not a day trip**
 - [ ] **Ufia-Umuate-Aiari-Suari-Jaure**  `F37`
   - [?] Ufia → Umuate: no position for Ufia
   - [~] Umuate → Aiari: Umuate end is on the network, Aiari is 9.8 km off it
@@ -74,7 +74,7 @@ recordings in hand carry no route name at all.
   - [?] Asafa → Sairope: no position for Asafa and Sairope
 - [?] **Gora-Gorobuna**  `F43`
   - [?] Gora → Gorobuna: no position for Gorobuna
-- [?] **Jaura-Vovosik-Kwikila**  `F44`
+- [?] **Jaura-Vovosik-Kwikila**  `F44` — **80 km end to end: a multi-day walk**
   - [?] Jaura → Vovosik: no position for Vovosik
   - [?] Vovosik → Kwikila: no position for Vovosik
 - [?] **Damara-Bua**  `F47`
@@ -106,8 +106,8 @@ recordings in hand carry no route name at all.
   - [~] Dareki → Kawowoki: both ends on the network but only linked the long way round (19.5 km for 4.5 km straight) - the direct track is not recorded
 - [~] **Avaru-Dareki**  `F07`
   - [~] Avaru → Dareki: both ends on the network but only linked the long way round (27.1 km for 5.1 km straight) - the direct track is not recorded
-- [~] **Gora-Popondetta**  `F09`
-  - [~] Gora → Popondetta: both ends on the network but only linked the long way round (128.5 km for 25.9 km straight) - the direct track is not recorded
+- [~] **Gora-Popondetta**  `F09` — **26 km end to end: a multi-day walk**
+  - [~] Gora → Popondetta: both ends on the network but only linked the long way round (128.5 km for 25.9 km straight) - the direct track is not recorded — **26 km in a straight line: a multi-day walk, not a day trip**
 - [~] **Aniafe -Jaure**  `F12`
   - [~] Aniafe → Jaure: Aniafe end is on the network, Jaure is 10.2 km off it
 - [~] **Dea-Siribu-Koruwo**  `F22`
@@ -217,8 +217,8 @@ recordings in hand carry no route name at all.
 
 ### Partly recorded (1)
 
-- [~] **Orobay-Itokama**  `H01`
-  - [~] Orobay → Itokama: Itokama end is on the network, Oro Bay is 0.6 km off it
+- [~] **Orobay-Itokama**  `H01` — **42 km end to end: a multi-day walk**
+  - [~] Orobay → Itokama: Itokama end is on the network, Oro Bay is 0.6 km off it — **42 km in a straight line: a multi-day walk, not a day trip**
 
 ## Places we hold no position for
 

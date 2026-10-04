@@ -507,12 +507,19 @@ their source in `place_aliases.csv` and all still wanting a field nod:
   "Orobay-Itokama" then reads as the national highway from the coast up to
   Itokama, which fits.
 - **Safia** = Safia airstrip, −9.5950 / 148.6390, 24 km south-east of Biriri.
-  That fits "Afore-Toma-Biriri-Babarobo-Safia" as a route off the plateau, but
-  it makes "Aiari-Safia" a **54 km** leg, which is either a multi-day walk or a
-  different Safia.
+  Confirmed on 4 Oct 2026 — there is only one Safia — so "Aiari-Safia" really is
+  a **54 km** route and "Afore-Toma-Biriri-Babarobo-Safia" **57 km**.
 - **Kwikila** = the Rigo District station in Central Province, −9.8185 /
-  147.6597 — 75 km south-west of Jaure. Plausible as the far end of an old
-  walking route, far enough out to be worth querying.
+  147.6597, 75 km south-west of Jaure. Confirmed on 4 Oct 2026, and confirmed as
+  an **old foot track** — "Jaura-Vovosik-Kwikila" is 80 km end to end.
+
+### Five routes on the list are multi-day walks
+
+Flagged on the checklist, because none of them is a morning's work and two have
+no single measurable leg: Jaura–Vovosik–Kwikila 80 km, Afore–Toma–Biriri–
+Babarobo–Safia 57 km, Aiari–Safia 54 km, Orobay–Itokama 42 km and
+Gora–Popondetta 26 km. The route span is measured end to end, so a route counts
+even when its middle is a place we cannot locate.
 
 **Embi** was looked for and not pinned: public sources put Embi village and the
 Embi Lakes just south of Dobodura at about 8.83 S, roughly 25 km north of Numba,
