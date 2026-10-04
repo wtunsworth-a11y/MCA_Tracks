@@ -64,6 +64,25 @@ DETOUR_MAX_SHORT = 2.5
 LONG_LEG_KM = 25.0
 
 
+def load_placed():
+    """Positions the team placed by hand. These win outright, not on a tie.
+
+    Someone who has walked the ground outranks a gazetteer and outranks our
+    inference, so a name found here returns that one position and no others -
+    there is nothing for the leg to choose between.
+    """
+    path = REF / "placed_by_team.csv"
+    if not path.exists():
+        return {}
+    df = pd.read_csv(path, comment="#")
+    return {str(r["place"]).strip().lower():
+            dict(name=str(r["place"]).strip(), lon=float(r["lon"]),
+                 lat=float(r["lat"]), src="placed by the team",
+                 note=str(r.get("note", "")))
+            for _, r in df.iterrows()
+            if not (pd.isna(r["lon"]) or pd.isna(r["lat"]))}
+
+
 def load_places():
     """Name -> list of candidate positions, gazetteer first then GPS-inferred.
 
@@ -115,9 +134,18 @@ def load_aliases():
     return out
 
 
+PLACED = None          # filled on first use; the team's placements win outright
+
+
 def candidates(name, places, aliases):
     """Written place name -> every position it could be, or [] if none."""
+    global PLACED
+    if PLACED is None:
+        PLACED = load_placed()
     raw = name.strip()
+    hit = PLACED.get(raw.lower())
+    if hit:
+        return [dict(hit)]
     al = aliases.get(raw.lower())
     if al:
         if al["lon"] is not None:
@@ -125,6 +153,9 @@ def candidates(name, places, aliases):
                          src="field evidence", note=al["note"])]
         if al["to"]:
             raw = al["to"]
+            hit = PLACED.get(raw.lower())
+            if hit:
+                return [dict(hit)]
     for pn, cands in places.items():
         if pn.lower() == raw.lower():
             return [dict(name=pn, **c) for c in cands]

@@ -1,0 +1,24 @@
+# Positions the team placed by dragging pins in Google Earth.
+# Read AHEAD of the gazetteer and of our own inference: someone who
+# knows the ground outranks both. Written by
+# scripts/ingest_placed_kml.py; only pins that MOVED from the guess
+# they were sent out at are here, because a pin left on its guess is
+# our arithmetic and not their knowledge.
+place,lon,lat,moved_km,note
+Banderi,148.45513,-8.96331,8.33,"placed by the team, 8.3 km from the guess"
+Bodoimo,148.28607,-9.11536,0.71,"placed by the team, 0.7 km from the guess"
+Emo,148.52535,-9.00118,9.57,"placed by the team, 9.6 km from the guess"
+Gorobuna,148.18948,-9.06623,9.21,"placed by the team, 9.2 km from the guess"
+Haraja,148.30667,-9.07141,1.71,"placed by the team, 1.7 km from the guess"
+Kokoro,148.2715,-9.16671,2.99,"placed by the team, 3.0 km from the guess"
+Korokoro,148.38835,-9.1456,0.48,"placed by the team, 0.5 km from the guess"
+Old Cardamom factory,148.406,-9.12143,7.9,"placed by the team, 7.9 km from the guess"
+Organ,148.39719,-9.13263,8.32,"placed by the team, 8.3 km from the guess"
+Road 1,148.39722,-9.13216,8.07,"placed by the team, 8.1 km from the guess"
+Road 2,148.40594,-9.12875,8.49,"placed by the team, 8.5 km from the guess"
+Road 3,148.41659,-9.1261,3.34,"placed by the team, 3.3 km from the guess"
+Simion's place,148.41175,-9.12894,2.65,"placed by the team, 2.7 km from the guess"
+Singata,148.25842,-9.12792,7.31,"placed by the team, 7.3 km from the guess"
+Tedebedi,148.06975,-9.15742,21.17,"placed by the team, 21.2 km from the guess"
+Ufia,148.26581,-9.21598,2.35,"placed by the team, 2.3 km from the guess"
+Wayei,148.55816,-9.11431,9.82,"placed by the team, 9.8 km from the guess"

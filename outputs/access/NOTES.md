@@ -563,6 +563,49 @@ pins — Road 1, Road 2 and the Organ and Old Cardamom factory ends of them — 
 no located place anywhere in their route and say that the position is
 meaningless.
 
+### The team's placements, read back in
+
+`scripts/ingest_placed_kml.py` reads a returned KML or KMZ, works out which
+version of the pin file it was edited from — the first batch came back against
+the 30-pin file while the checklist had already moved to 18 — and writes
+`data/reference/placed_by_team.csv`.
+
+That file is read **ahead of the gazetteer and ahead of our own inference**: a
+position someone put on the map from knowledge of the ground outranks both, and
+a name found there returns that one position with nothing for the leg to choose
+between.
+
+A pin is only taken as placed if it **moved** from the guess it was sent out at,
+by more than 50 m. A pin left sitting on its guess says nothing — the guess was
+ours — and recording it as a field position would launder our own arithmetic
+into evidence. In the first batch 17 of 30 moved and 13 were left, and the 13
+are still treated as unplaced.
+
+**The round trip validated the geocoding.** Five of the places the team moved
+were ones the public gazetteers had already given us, and all five agree:
+
+| place | field placement vs OSM |
+|---|---|
+| Emo | 0.05 km |
+| Bodoimo | 0.05 km |
+| Kokoro | 0.05 km |
+| Banderi | 0.45 km |
+| Ufia | 0.60 km |
+
+Independent agreement at that distance on five of five is good reason to trust
+the remaining OSM positions, which are flagged in `place_aliases.csv` but had no
+other corroboration. **Tedebedi** moved 21 km west to 148.070, which is outside
+the conservation area and so agrees with what the team said about it on 3 Oct.
+
+After this round: 55 of 110 legs recorded, 34 partly, 12 not recorded, 9 waiting
+on a position — six names, down from 35. Only **Aputuara, Damara, Emoriva,
+Umasi, Vovosik** and **Water Crossing** are still unknown.
+
+One placement to query: **Road 1** and **Organ** came back 52 m apart, so R05
+"Road 1 - Organ Village" has no leg to walk. That may be right — the road may
+simply end at the village — or both pins may have been dropped on the same
+feature.
+
 
 ## Files
 
@@ -581,6 +624,9 @@ meaningless.
 | `track_checklist.csv` | the same, one row per leg, with the measurement behind every call |
 | `unlocated_places.kml` | a draggable pin per place we cannot find, over the known villages and the recorded tracks |
 | `geocode_candidates.csv` | every public-gazetteer hit considered for an unlocated place, with the division, feature class and distance that decided it |
+
+Positions the team placed by hand live in `data/reference/placed_by_team.csv`
+and are read ahead of everything else.
 
 Scripts that produced them, in order:
 `classify_mode.py` → `build_access.py` → `make_access_figures.py` → `road_speed.py`

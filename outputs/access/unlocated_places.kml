@@ -19,7 +19,7 @@
       <name>Aputuara</name>
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Aputuara</b><br/>Appears in: F04<br/>&nbsp;&nbsp;• Numba-Aputuara - Banderi<br/><br/><i>This pin is a guess: the midpoint of Banderi, Numba, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.412400,-9.007200,0</coordinates></Point>
+      <Point><coordinates>148.410300,-9.007200,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -32,85 +32,8 @@
     <Placemark>
       <name>Emoriva</name>
       <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Emoriva</b><br/>Appears in: F29<br/>&nbsp;&nbsp;• Kuai-Tedebedi-Emoriva<br/><br/><i>This pin is a guess 2 steps out: it sits on Tedebedi, which is themselves guessed. Treat it as a direction, not a location.</i>]]></description>
-      <Point><coordinates>148.263200,-9.164973,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Gorobuna</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Gorobuna</b><br/>Appears in: F43, F59<br/>&nbsp;&nbsp;• Gora-Gorobuna<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/><br/><i>This pin is a guess: the midpoint of Asafa, Gora, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.174800,-8.989500,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Haraja</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Haraja</b><br/>Appears in: F35<br/>&nbsp;&nbsp;• Haraja-Natganga<br/><br/><i>This pin is a guess: the midpoint of Natanga, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.291100,-9.070200,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Korokoro</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Korokoro</b><br/>Appears in: R14<br/>&nbsp;&nbsp;• Afore-Korokoro Village<br/><br/><i>This pin is a guess: the midpoint of Afore, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.391500,-9.142600,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Old Cardamom factory</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Old Cardamom factory</b><br/>Appears in: R04<br/>&nbsp;&nbsp;• Road 2-Old Cadamon factory<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
-      <Point><coordinates>148.373500,-9.057573,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Organ</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Organ</b><br/>Appears in: R05<br/>&nbsp;&nbsp;• Road 1- Organ Village<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
-      <Point><coordinates>148.376262,-9.060300,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Road 1</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Road 1</b><br/>Appears in: R05<br/>&nbsp;&nbsp;• Road 1- Organ Village<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
-      <Point><coordinates>148.373500,-9.063027,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Road 2</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Road 2</b><br/>Appears in: R04<br/>&nbsp;&nbsp;• Road 2-Old Cadamon factory<br/><br/><i>This pin is at the centre of the recorded network only. Nothing in its route is a place we can find, so it could be anywhere - treat the position as meaningless.</i>]]></description>
-      <Point><coordinates>148.370738,-9.060300,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Road 3</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Road 3</b><br/>Appears in: R03<br/>&nbsp;&nbsp;• Road 3 – Dareki<br/><br/><i>This pin is a guess: the midpoint of Dareki, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.432300,-9.100200,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Simion's place</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Simion's place</b><br/>Appears in: F40<br/>&nbsp;&nbsp;• Simion's place- Niniri Village (Main)<br/><br/><i>This pin is a guess: the midpoint of Niniuri, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.391500,-9.142200,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Singata</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Singata</b><br/>Appears in: F58, F59, F62<br/>&nbsp;&nbsp;• Umbuara-Singata<br/>&nbsp;&nbsp;• Singata-Gorobuna-Asafa<br/>&nbsp;&nbsp;• Singata-Gora<br/><br/><i>This pin is a guess: the midpoint of Gora, Umbuara, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.257900,-9.061800,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Tedebedi</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Tedebedi</b><br/>Appears in: F29, F60<br/>&nbsp;&nbsp;• Kuai-Tedebedi-Emoriva<br/><br/><i>This pin is a guess: the midpoint of Anatua, Kwae, which the list names next to it.</i><br/><br/><b>Question:</b> confirmed by Will, 3 Oct 2026: Tetebedi/Tedebedi is OUTSIDE the conservation area, so Anatua-Tetebedi and Kuai-Tedebedi-Emoriva run beyond the boundary]]></description>
-      <Point><coordinates>148.263200,-9.170427,0</coordinates></Point>
+      <description><![CDATA[<b>Emoriva</b><br/>Appears in: F29<br/>&nbsp;&nbsp;• Kuai-Tedebedi-Emoriva<br/><br/><i>This pin is a guess: the midpoint of Tedebedi, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.069700,-9.157400,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -132,13 +55,6 @@
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Water Crossing</b><br/>Appears in: F49<br/>&nbsp;&nbsp;• Aiari-Water Crossing<br/><br/><i>This pin is a guess: the midpoint of Aiari, which the list names next to it.</i>]]></description>
       <Point><coordinates>148.217200,-9.349700,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Wayei</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Wayei</b><br/>Appears in: F31<br/>&nbsp;&nbsp;• Wayei-Umbara<br/><br/><i>This pin is a guess: the midpoint of Ombara, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.468200,-9.115100,0</coordinates></Point>
     </Placemark>
 
   </Folder>
