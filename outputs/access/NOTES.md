@@ -632,15 +632,40 @@ the file — none was findable from the geometry:
 
 | marked | what it was | what was done |
 |---|---|---|
-| **Suari** | "This was WRONG" | The gazetteer puts Suari 73 m from Jaure, which is why F37 produced a leg with no length. Dropped; a real position is needed |
-| **Ondoro** | "This is WRONG. Ondoro is roadside" | The inferred cluster at 148.4677 is not it. Dropped |
+| **Suari** | "This was WRONG" | The gazetteer puts Suari 73 m from Jaure, which is why F37 produced a leg with no length. **The team moved it 10.5 km**, to 148.17331 / −9.36637 |
+| **Ondoro** | "This is WRONG. Ondoro is roadside" | The inferred cluster at 148.4677 is not it. **Moved 2.4 km**, to 148.46913 / −9.11472 |
+| **Niniuri** | moved without comment | **Moved 2.9 km**, to 148.41433 / −9.12854 — which puts it 300 m from Simeon's Place, agreeing with "the village is Niniuri" |
+| **Kawowoki** | moved without comment | Moved 130 m |
+| **Gadzot** | moved as well as commented | Moved 800 m, landing 70 m from the gazetteer's Gajot — which is the merge confirmed by position, not just by spelling |
 | **Vouka** | "But NO VILLAGE HERE" | Both inferred Vouka clusters rejected. Dropped |
 | **Gadzot** | "mispelling of Gajot" | The inferred Gadzot and the gazetteer's Gajot are one village 0.8 km apart |
 | **Semehara** | "typo of semahara" | The *gazetteer* spelling is the typo. Outputs should read Semahara |
 | **Sigara** | "the path ends at the main village, but the point is in a hamlet of Sigara. Near, but across a river" | Confirmed: `Track from Kaura to Sigara Village` ends 1,281 m west of the gazetteer point. "Sigara" now means the main village |
 
-The three dropped positions are listed in `data/reference/bad_positions.csv` and
-filtered out by `load_places()`, so nothing downstream can use them again.
+The rejected originals are listed in `data/reference/bad_positions.csv` and
+filtered out by `load_places()`, so nothing downstream can use them again; the
+corrected positions sit in `placed_by_team.csv`, which is read first.
+
+**Five of those corrections were nearly lost.** The reference folders went out
+labelled "do not move", and the first pass of `ingest_placed_kml.py` diffed
+positions only in the editable folder. The team corrected five villages in the
+reference folder regardless — which is exactly what should happen, and the most
+valuable thing the file can come back with. The ingest now diffs **every**
+folder and reports corrections to our own data separately, and the folder is
+relabelled "correct any that are wrong".
+
+**None of the four position corrections changes an access class**, which was
+checked rather than assumed:
+
+| village | households | off-road, was → now | class |
+|---|---|---|---|
+| Suari | 33 | 14.93 → 20.32 km | unchanged, beyond 10 km |
+| Niniuri | 20 | 0.35 → 0.14 km | unchanged, road-served |
+| Kawowoki | 277 | 0.34 → 0.47 km | unchanged, road-served |
+| Gajot | 89 | 0.17 → 0.19 km | unchanged, road-served |
+
+So the headline access figures survive the corrections. The one field fact that
+does reach them is Ogan burning down.
 
 The Sigara correction had a consequence worth recording. Once "Sigara" meant the
 main village, "Kaura-Sigara" flipped from recorded to partly recorded — because

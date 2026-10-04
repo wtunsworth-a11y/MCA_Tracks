@@ -20,8 +20,13 @@ their route - Road 1, Road 2, and the Organ and Old Cardamom factory ends of
 them - and those say so plainly.
 
 Two reference folders come with it, both locked out of the way:
-  Known villages  - so a pin can be placed relative to its neighbours
+  Places we have a position for - so a pin can be placed relative to its
+                    neighbours, and so a wrong one of ours can be corrected
   Recorded tracks - so it is obvious what has already been walked
+
+Those two were first labelled "do not move", which was a mistake: the team
+corrected five positions in them anyway, one of them 10.5 km out, and that is
+the most valuable thing the file can come back with. They now say so.
 """
 
 import sys
@@ -36,7 +41,8 @@ import pandas as pd
 warnings.filterwarnings("ignore")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from cross_reference_tracks import candidates, load_aliases, load_places  # noqa: E402
+from cross_reference_tracks import (  # noqa: E402
+    candidates, load_aliases, load_placed, load_places)
 
 ROOT = Path(__file__).resolve().parent.parent
 PROCESSED = ROOT / "data" / "processed"
@@ -181,7 +187,9 @@ def main():
              "of the villages your list puts next to it. None of them is a "
              "position we hold. The other two folders are reference only - the "
              "villages we do have positions for, and the tracks already "
-             "recorded.<br/><br/>"
+             "recorded. <b>If a village in the reference folder is in the wrong "
+             "place, move it or say so in its description</b> - that is more "
+             "useful to us than anything else in this file.<br/><br/>"
              f"Generated {pd.Timestamp.utcnow():%Y-%m-%d} from "
              "NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx"
              "]]></description>")
@@ -232,13 +240,21 @@ def main():
         L.append(pin(nm, lon, lat, "<br/>".join(rows), "todo"))
     L.append("  </Folder>")
 
-    L.append("  <Folder><name>Known villages (reference — do not move)</name>")
+    # The reference folder carries the team's own corrections where they made
+    # them, so a position they have already fixed is not offered back to them
+    # wrong. Five came back corrected in the first round, including Suari 10.5 km
+    # out, and they are labelled as theirs.
+    placed = load_placed()
+    # Not only villages any more: once a road or a house has a position it
+    # belongs here rather than in the folder of things still to find.
+    L.append("  <Folder><name>Places we have a position for (correct any that "
+             "are wrong)</name>")
     L.append("  <open>0</open><visibility>1</visibility>")
     seen = set()
     for pn, cands in sorted(places.items()):
         if "/" in pn:
             continue
-        c = cands[0]
+        c = dict(placed.get(pn.lower()) or cands[0])
         key = (round(c["lon"], 4), round(c["lat"], 4))
         if key in seen:
             continue
@@ -246,6 +262,19 @@ def main():
         L.append(pin(pn, c["lon"], c["lat"],
                      f"{escape(pn)}<br/>{escape(c['src'])} — {escape(c['note'])}",
                      "known"))
+
+    # A village whose original position was dropped as wrong would otherwise
+    # disappear from the folder, so the team could not see that their correction
+    # had landed. Add any placed position not already shown.
+    for key, c in sorted(placed.items()):
+        nm = c["name"]
+        if nm in places or nm in unl:
+            continue
+        if (round(c["lon"], 4), round(c["lat"], 4)) in seen:
+            continue
+        L.append(pin(nm, c["lon"], c["lat"],
+                     f"{escape(nm)}<br/>{escape(c['src'])} — "
+                     f"{escape(c['note'])}", "known"))
     L.append("  </Folder>")
 
     L.append("  <Folder><name>Recorded tracks (reference)</name>")

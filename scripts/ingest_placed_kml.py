@@ -11,6 +11,13 @@ by more than MOVED_M. A pin left sitting on its guess says nothing - the guess
 was ours, not theirs - and recording it as a field position would launder our
 own arithmetic into evidence.
 
+EVERY folder is diffed, not just the editable one. The reference folders are
+labelled "do not move", and reading only the editable folder on the first batch
+missed five corrections the team had made in them - including the real position
+of Suari, 10.5 km from where the gazetteer had it. A village corrected in the
+reference folder is the team fixing our data, which is worth more than a pin
+placed in the folder we asked them to use.
+
 The file sent out may not be the latest one: pins get placed over days while the
 checklist moves on. So the comparison is against whichever version's anchors
 match, found by trying the current pin file and then its git history.
@@ -155,20 +162,36 @@ def main(argv):
     print(f"returned file has {len(back)} pins; comparing against the version "
           f"sent at {best_sha} ({best_overlap} names in common)")
 
+    # Every folder, so a correction made in a reference folder is not lost.
+    back_all = read_all(argv[1])
+    sent_all = {}
+    try:
+        sent_all = read_all(subprocess.run(
+            ["git", "show", f"{best_sha}:{SENT.relative_to(ROOT)}"], cwd=ROOT,
+            capture_output=True, check=True).stdout)
+    except Exception:                                       # noqa: BLE001
+        sent_all = read_all(SENT) if SENT.exists() else {}
+
     rows, unmoved, new = [], [], []
-    for nm, pos in sorted(back.items()):
-        if nm not in sent:
+    for nm, (folder, lon, lat, _d) in sorted(back_all.items()):
+        if lon is None:
+            continue
+        editable = "PLACE" in (folder or "")
+        if nm not in sent_all or sent_all[nm][1] is None:
             new.append(nm)
-            rows.append(dict(place=nm, lon=round(pos[0], 5), lat=round(pos[1], 5),
+            rows.append(dict(place=nm, lon=round(lon, 5), lat=round(lat, 5),
                              moved_km="", note="pin added by the team"))
             continue
-        d = km(pos, sent[nm])
+        d = km((lon, lat), (sent_all[nm][1], sent_all[nm][2]))
         if d * 1000 < MOVED_M:
-            unmoved.append(nm)
+            if editable:
+                unmoved.append(nm)
             continue
-        rows.append(dict(place=nm, lon=round(pos[0], 5), lat=round(pos[1], 5),
-                         moved_km=round(d, 2),
-                         note=f"placed by the team, {d:.1f} km from the guess"))
+        rows.append(dict(
+            place=nm, lon=round(lon, 5), lat=round(lat, 5), moved_km=round(d, 2),
+            note=(f"placed by the team, {d:.1f} km from the guess" if editable
+                  else f"CORRECTION to our own position, moved {d:.1f} km "
+                       f"in the reference folder")))
 
     df = pd.DataFrame(rows)
     path = REF / "placed_by_team.csv"
@@ -184,6 +207,11 @@ def main(argv):
     print(f"\n{len(df)} placed:")
     for _, r in df.sort_values("place").iterrows():
         print(f"  {r['place']:<22} {r['lat']:.5f}, {r['lon']:.5f}   {r['note']}")
+    corr = df[df["note"].str.startswith("CORRECTION")]
+    if not corr.empty:
+        print(f"\n{len(corr)} of those are corrections to positions WE held:")
+        for _, r in corr.iterrows():
+            print(f"  !! {r['place']:<20} moved {r['moved_km']} km")
     if unmoved:
         print(f"\n{len(unmoved)} left on the guess, so not taken as placed:")
         print("  " + ", ".join(unmoved))

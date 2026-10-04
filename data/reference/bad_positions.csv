@@ -1,11 +1,16 @@
-# Positions in our own reference data that the team has marked wrong, found by
-# their reading the locked reference folders of unlocated_places.kml on 4 Oct
-# 2026. Filtered out by load_places(), so nothing downstream uses them.
+# Positions in our own reference data that the team marked wrong, by reading the
+# locked reference folders of unlocated_places.kml. Filtered out by
+# load_places(), so nothing downstream uses them.
+#
+# Where the team also moved the pin, the corrected position is in
+# placed_by_team.csv and is read first, so dropping the original here simply
+# stops the wrong one competing with it.
 #
 # These were not findable from the geometry. Suari's bad coordinate is why
 # "Suari-Jaure" came out as a 73 m leg with nothing to walk - two villages were
 # sitting on one point.
 source,name,reason
-gazetteer,Suari,"'This was WRONG' - the gazetteer puts Suari 73 m from Jaure, which is why F37 produced a leg with no length. A real position is needed"
-GPS-inferred,Ondoro,"'This is WRONG. Ondoro is roadside' - the inferred cluster at 148.4677 is not it"
-GPS-inferred,Vouka,"'But NO VILLAGE HERE' - both inferred Vouka clusters are rejected"
+gazetteer,Suari,"'This was WRONG' - the gazetteer put Suari 73 m from Jaure. The team moved it 10.5 km to 148.17331, -9.36637, which is now in placed_by_team.csv"
+GPS-inferred,Ondoro,"'This is WRONG. Ondoro is roadside' - the team moved it 2.4 km to 148.46913, -9.11472"
+gazetteer,Niniuri,"the team moved it 2.9 km in the reference folder, to 148.41433, -9.12854"
+GPS-inferred,Vouka,"'But NO VILLAGE HERE' - both inferred Vouka clusters rejected, and no replacement position was given"

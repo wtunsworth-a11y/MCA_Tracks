@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
   <name>Managalas - places we cannot find</name>
-  <description><![CDATA[<b>Drag each pin in PLACE THESE onto the real village, then save the file and send it back.</b><br/><br/>Every pin in that folder is a <i>guess</i>, placed at the midpoint of the villages your list puts next to it. None of them is a position we hold. The other two folders are reference only - the villages we do have positions for, and the tracks already recorded.<br/><br/>Generated 2026-10-04 from NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx]]></description>
+  <description><![CDATA[<b>Drag each pin in PLACE THESE onto the real village, then save the file and send it back.</b><br/><br/>Every pin in that folder is a <i>guess</i>, placed at the midpoint of the villages your list puts next to it. None of them is a position we hold. The other two folders are reference only - the villages we do have positions for, and the tracks already recorded. <b>If a village in the reference folder is in the wrong place, move it or say so in its description</b> - that is more useful to us than anything else in this file.<br/><br/>Generated 2026-10-04 from NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx]]></description>
   <Style id="todo">
     <IconStyle><color>ff00ffff</color><scale>1.3</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href></Icon></IconStyle>
     <LabelStyle><color>ff00ffff</color><scale>1.3</scale></LabelStyle>
@@ -37,13 +37,6 @@
     </Placemark>
 
     <Placemark>
-      <name>Suari</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Suari</b><br/>Appears in: F37<br/>&nbsp;&nbsp;• Ufia-Umuate-Aiari-Suari-Jaure<br/><br/><i>This pin is a guess: the midpoint of Aiari, Jaure, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.181200,-9.312600,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
       <name>Umasi</name>
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Umasi</b><br/>Appears in: F17<br/>&nbsp;&nbsp;• Numba -Umasi-Embi-Warisota<br/><br/><i>This pin is a guess: the midpoint of Embi, Numba, which the list names next to it.</i>]]></description>
@@ -58,7 +51,7 @@
     </Placemark>
 
   </Folder>
-  <Folder><name>Known villages (reference — do not move)</name>
+  <Folder><name>Places we have a position for (correct any that are wrong)</name>
   <open>0</open><visibility>1</visibility>
     <Placemark>
       <name>Afore</name>
@@ -196,8 +189,8 @@
     <Placemark>
       <name>Gadzot</name>
       <styleUrl>#known</styleUrl>
-      <description><![CDATA[Gadzot<br/>GPS-inferred — confidence 1.0]]></description>
-      <Point><coordinates>148.275640,-9.136372,0</coordinates></Point>
+      <description><![CDATA[Gadzot<br/>placed by the team — CORRECTION to our own position, moved 0.8 km in the reference folder]]></description>
+      <Point><coordinates>148.272650,-9.129740,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -273,8 +266,8 @@
     <Placemark>
       <name>Kawowoki</name>
       <styleUrl>#known</styleUrl>
-      <description><![CDATA[Kawowoki<br/>gazetteer — zone 7a, 277 hh]]></description>
-      <Point><coordinates>148.391570,-9.101146,0</coordinates></Point>
+      <description><![CDATA[Kawowoki<br/>placed by the team — CORRECTION to our own position, moved 0.1 km in the reference folder]]></description>
+      <Point><coordinates>148.392740,-9.100980,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -401,13 +394,6 @@
       <styleUrl>#known</styleUrl>
       <description><![CDATA[Natanga<br/>gazetteer — zone 3, 96 hh]]></description>
       <Point><coordinates>148.291110,-9.070176,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Niniuri</name>
-      <styleUrl>#known</styleUrl>
-      <description><![CDATA[Niniuri<br/>gazetteer — zone 7b, 20 hh]]></description>
-      <Point><coordinates>148.391485,-9.142183,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -555,6 +541,146 @@
       <styleUrl>#known</styleUrl>
       <description><![CDATA[Vereyame Yoivi<br/>GPS-inferred — confidence 0.5]]></description>
       <Point><coordinates>148.446339,-9.129243,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Banderi</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Banderi<br/>placed by the team — placed by the team, 8.3 km from the guess]]></description>
+      <Point><coordinates>148.455130,-8.963310,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Bodoimo</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Bodoimo<br/>placed by the team — placed by the team, 0.7 km from the guess]]></description>
+      <Point><coordinates>148.286070,-9.115360,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Emo</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Emo<br/>placed by the team — placed by the team, 9.6 km from the guess]]></description>
+      <Point><coordinates>148.525350,-9.001180,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Gorobuna</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Gorobuna<br/>placed by the team — placed by the team, 9.2 km from the guess]]></description>
+      <Point><coordinates>148.189480,-9.066230,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Haraja</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Haraja<br/>placed by the team — placed by the team, 1.7 km from the guess]]></description>
+      <Point><coordinates>148.306670,-9.071410,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Kokoro</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Kokoro<br/>placed by the team — placed by the team, 3.0 km from the guess]]></description>
+      <Point><coordinates>148.271500,-9.166710,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Korokoro</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Korokoro<br/>placed by the team — placed by the team, 0.5 km from the guess]]></description>
+      <Point><coordinates>148.388350,-9.145600,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Niniuri</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Niniuri<br/>placed by the team — CORRECTION to our own position, moved 2.9 km in the reference folder]]></description>
+      <Point><coordinates>148.414330,-9.128540,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Old Cardamom factory</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Old Cardamom factory<br/>placed by the team — placed by the team, 7.9 km from the guess]]></description>
+      <Point><coordinates>148.406000,-9.121430,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ondoro</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Ondoro<br/>placed by the team — CORRECTION to our own position, moved 2.4 km in the reference folder]]></description>
+      <Point><coordinates>148.469130,-9.114720,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Organ</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Organ<br/>placed by the team — placed by the team, 8.3 km from the guess]]></description>
+      <Point><coordinates>148.397190,-9.132630,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Road 1</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Road 1<br/>placed by the team — placed by the team, 8.1 km from the guess]]></description>
+      <Point><coordinates>148.397220,-9.132160,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Road 2</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Road 2<br/>placed by the team — placed by the team, 8.5 km from the guess]]></description>
+      <Point><coordinates>148.405940,-9.128750,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Road 3</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Road 3<br/>placed by the team — placed by the team, 3.3 km from the guess]]></description>
+      <Point><coordinates>148.416590,-9.126100,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Simion's place</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Simion's place<br/>placed by the team — placed by the team, 2.7 km from the guess]]></description>
+      <Point><coordinates>148.411750,-9.128940,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Singata</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Singata<br/>placed by the team — placed by the team, 7.3 km from the guess]]></description>
+      <Point><coordinates>148.258420,-9.127920,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Suari</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Suari<br/>placed by the team — CORRECTION to our own position, moved 10.5 km in the reference folder]]></description>
+      <Point><coordinates>148.173310,-9.366370,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Tedebedi</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Tedebedi<br/>placed by the team — placed by the team, 21.2 km from the guess]]></description>
+      <Point><coordinates>148.069750,-9.157420,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Ufia</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Ufia<br/>placed by the team — placed by the team, 2.3 km from the guess]]></description>
+      <Point><coordinates>148.265810,-9.215980,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Wayei</name>
+      <styleUrl>#known</styleUrl>
+      <description><![CDATA[Wayei<br/>placed by the team — placed by the team, 9.8 km from the guess]]></description>
+      <Point><coordinates>148.558160,-9.114310,0</coordinates></Point>
     </Placemark>
 
   </Folder>
