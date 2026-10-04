@@ -16,39 +16,27 @@ recordings in hand carry no route name at all.
 | `[ ]` | not recorded | walk it |
 | `[?]` | place not located | tell us roughly where it is, then walk it |
 
-- [x] **55** of 110 legs recorded
-- [~] **34** of 110 legs partial
-- [ ] **12** of 110 legs missing
-- [?] **9** of 110 legs unlocated
+- [x] **57** of 110 legs recorded
+- [~] **36** of 110 legs partial
+- [ ] **7** of 110 legs missing
+- [?] **10** of 110 legs unlocated
 
 ## Foot tracks
 
-### Not recorded - these are the gap (9)
+### Not recorded - these are the gap (5)
 
-- [ ] **Tahama-Toma**  `F02`
-  - [ ] Tahama → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
-- [ ] **Avaru-Sigara-Emo**  `F03`
-  - [~] Avaru → Sigara: both ends on the network but only linked the long way round (7.7 km for 1.1 km straight) - the direct track is not recorded — **this name is on two places 7.5 km apart; the nearer pairing was assumed**
-  - [ ] Sigara → Emo: neither end on the network (1.3 km and 0.9 km off) — **this name is on two places 7.5 km apart; the nearer pairing was assumed**
-- [ ] **Toma-Itokama**  `F13`
-  - [ ] Toma → Itokama: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
 - [ ] **Afore-Toma-Biriri-Babarobo-Safia**  `F25` — **57 km end to end: a multi-day walk**
-  - [ ] Afore → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
-  - [~] Toma → Biriri: both ends on the network but only linked the long way round (31.5 km for 4.3 km straight) - the direct track is not recorded — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
+  - [x] Afore → Toma: routes in 11.1 km vs 7.6 km straight
+  - [~] Toma → Biriri: both ends on the network but only linked the long way round (31.5 km for 4.3 km straight) - the direct track is not recorded
   - [~] Biriri → Babarobo: Biriri end is on the network, Babarobo is 14.0 km off it
   - [ ] Babarobo → Safia: neither end on the network (14.0 km and 42.4 km off) — **29 km in a straight line: a multi-day walk, not a day trip**
 - [ ] **Aiari-Safia**  `F30` — **54 km end to end: a multi-day walk**
   - [ ] Aiari → Safia: neither end on the network (9.8 km and 42.4 km off) — **54 km in a straight line: a multi-day walk, not a day trip**
-- [ ] **Ufia-Umuate-Aiari-Suari-Jaure**  `F37`
-  - [x] Ufia → Umuate: routes in 7.4 km vs 6.2 km straight
-  - [~] Umuate → Aiari: Umuate end is on the network, Aiari is 9.8 km off it
-  - [ ] Aiari → Suari: neither end on the network (9.8 km and 10.2 km off)
-  - [ ] Suari → Jaure: Suari and Jaure are the same point in our data (73 m apart), so there is no leg here - and that place is 10.2 km off anything recorded
 - [ ] **Gora-Asafa-Sairope**  `F42`
   - [~] Gora → Asafa: Gora end is on the network, Asafa is 15.2 km off it
   - [ ] Asafa → Sairope: neither end on the network (15.2 km and 22.6 km off)
-- [ ] **Bareji-Toma**  `F50`
-  - [ ] Bareji → Toma: both ends have recordings but nothing recorded joins them - the connecting track is the gap — **this name is on two places 5.1 km apart; the nearer pairing was assumed**
+- [ ] **Aiari-Water Crossing**  `F49`
+  - [ ] Aiari → Water Crossing: Aiari and Aiari are the same point in our data (0 m apart), so there is no leg here - and that place is 9.8 km off anything recorded
 - [ ] **Singata-Gorobuna-Asafa**  `F59`
   - [ ] Singata → Gorobuna: neither end on the network (1.1 km and 7.0 km off)
   - [ ] Gorobuna → Asafa: neither end on the network (7.0 km and 15.2 km off)
@@ -65,19 +53,27 @@ recordings in hand carry no route name at all.
 - [?] **Kuai-Tedebedi-Emoriva**  `F29`
   - [~] Kuai → Tedebedi: Kwae end is on the network, Tedebedi is 21.0 km off it
   - [?] Tedebedi → Emoriva: no position for Emoriva
+- [?] **Ufia-Umuate-Aiari-Suari-Jaure**  `F37`
+  - [x] Ufia → Umuate: routes in 7.4 km vs 6.2 km straight
+  - [~] Umuate → Aiari: Umuate end is on the network, Aiari is 9.8 km off it
+  - [?] Aiari → Suari: no position for Suari
+  - [?] Suari → Jaure: no position for Suari
 - [?] **Jaura-Vovosik-Kwikila**  `F44` — **80 km end to end: a multi-day walk**
   - [?] Jaura → Vovosik: no position for Vovosik
   - [?] Vovosik → Kwikila: no position for Vovosik
 - [?] **Damara-Bua**  `F47`
-  - [?] Damara → Bua: no position for Damara — **this name is on two places 2.2 km apart; the nearer pairing was assumed**
-- [?] **Aiari-Water Crossing**  `F49`
-  - [?] Aiari → Water Crossing: no position for Water Crossing
+  - [?] Damara → Bua: no position for Damara
 
-### Partly recorded (19)
+### Partly recorded (22)
 
+- [~] **Tahama-Toma**  `F02`
+  - [~] Tahama → Toma: both ends on the network but only linked the long way round (14.8 km for 7.1 km straight) - the direct track is not recorded
+- [~] **Avaru-Sigara-Emo**  `F03`
+  - [~] Avaru → Sigara: both ends on the network but only linked the long way round (14.8 km for 5.8 km straight) - the direct track is not recorded
+  - [~] Sigara → Emo: Sigara end is on the network, Emo is 0.9 km off it
 - [~] **Bioi-Dareki-Sigara**  `F05`
   - [~] Bioi → Dareki: both ends on the network but only linked the long way round (7.6 km for 1.5 km straight) - the direct track is not recorded — a recording is named for it: *Dareki - Bioi - Kuhienei Track (seg 9)*
-  - [~] Dareki → Sigara: both ends on the network but only linked the long way round (26.5 km for 6.2 km straight) - the direct track is not recorded — **this name is on two places 7.5 km apart; the nearer pairing was assumed**
+  - [~] Dareki → Sigara: both ends on the network but only linked the long way round (33.6 km for 6.6 km straight) - the direct track is not recorded
 - [~] **Dareki-Kawowoki**  `F06`
   - [~] Dareki → Kawowoki: both ends on the network but only linked the long way round (19.5 km for 4.5 km straight) - the direct track is not recorded
 - [~] **Avaru-Dareki**  `F07`
@@ -86,9 +82,11 @@ recordings in hand carry no route name at all.
   - [~] Gora → Popondetta: both ends on the network but only linked the long way round (128.5 km for 25.9 km straight) - the direct track is not recorded — **26 km in a straight line: a multi-day walk, not a day trip**
 - [~] **Aniafe -Jaure**  `F12`
   - [~] Aniafe → Jaure: Aniafe end is on the network, Jaure is 10.2 km off it
+- [~] **Toma-Itokama**  `F13`
+  - [~] Toma → Itokama: both ends on the network but only linked the long way round (38.0 km for 14.8 km straight) - the direct track is not recorded
 - [~] **Dea-Siribu-Koruwo**  `F22`
-  - [~] Dea → Siribu: both ends on the network but only linked the long way round (11.9 km for 2.3 km straight) - the direct track is not recorded — **this name is on two places 6.4 km apart; the nearer pairing was assumed**
-  - [x] Siribu → Koruwo: routes in 2.8 km vs 2.3 km straight — **this name is on two places 6.4 km apart; the nearer pairing was assumed**
+  - [~] Dea → Siribu: both ends on the network but only linked the long way round (11.3 km for 2.8 km straight) - the direct track is not recorded
+  - [x] Siribu → Koruwo: routes in 2.8 km vs 2.3 km straight
 - [~] **Natanga-Kiara-Koruwo**  `F23`
   - [x] Natanga → Kiara: routes in 3.9 km vs 2.9 km straight
   - [~] Kiara → Koruwo: both ends on the network but only linked the long way round (9.6 km for 3.1 km straight) - the direct track is not recorded
@@ -102,7 +100,7 @@ recordings in hand carry no route name at all.
   - [~] Umbuara → Kiara: both ends on the network but only linked the long way round (16.2 km for 3.3 km straight) - the direct track is not recorded
   - [x] Kiara → Natanga: routes in 3.9 km vs 2.9 km straight
 - [~] **Sigara- Banderi**  `F36`
-  - [~] Sigara → Banderi: Banderi end is on the network, Sigara is 1.3 km off it — **this name is on two places 7.5 km apart; the nearer pairing was assumed**
+  - [~] Sigara → Banderi: both ends on the network but only linked the long way round (63.0 km for 8.8 km straight) - the direct track is not recorded
 - [~] **Umuate-jaura**  `F38`
   - [~] Umuate → Jaura: Umuate end is on the network, Jaure is 10.2 km off it
 - [~] **Kawowoki – avaru**  `F41`
@@ -118,16 +116,16 @@ recordings in hand carry no route name at all.
 - [~] **Singata-Gora**  `F62`
   - [~] Singata → Gora: Gora end is on the network, Singata is 1.1 km off it
 
-### Recorded (28)
+### Recorded (29)
 
 - [x] **Koruwo-Umbuara-Anatua1-Anatua2**  `F01`
-  - [x] Koruwo → Umbuara: routes in 5.5 km vs 4.0 km straight
+  - [x] Koruwo → Umbuara: routes in 6.6 km vs 4.5 km straight
   - [x] Umbuara → Anatua: routes in 2.4 km vs 2.2 km straight
 - [x] **Marasi-Biriri**  `F08`
 - [x] **Kaura-Sigara**  `F10`
 - [x] **Kuai-Anatua-Serepuna**  `F11`
   - [x] Kuai → Anatua: routes in 8.9 km vs 6.1 km straight
-  - [x] Anatua → Serepuna: routes in 3.1 km vs 1.6 km straight
+  - [x] Anatua → Serepuna: routes in 3.2 km vs 1.9 km straight
 - [x] **Kueno-Semahara**  `F14`
 - [x] **Kokoro -Anatua**  `F15`
 - [x] **Kaura-Kuhara**  `F16`
@@ -136,7 +134,7 @@ recordings in hand carry no route name at all.
 - [x] **Numba – Kueno**  `F20`
 - [x] **Kueno – Tabuane**  `F21`
 - [x] **Itokama-Aniafe-Umuate**  `F27`
-  - [x] Itokama → Aniafe: routes in 0.9 km vs 0.7 km straight
+  - [x] Itokama → Aniafe: routes in 1.0 km vs 0.8 km straight
   - [x] Aniafe → Umuate: routes in 10.1 km vs 7.1 km straight
 - [x] **Jorura-Natanga-Gora**  `F28`
   - [x] Jorura → Natanga: routes in 3.1 km vs 2.4 km straight
@@ -151,11 +149,12 @@ recordings in hand carry no route name at all.
 - [x] **Kuhene-Umbara**  `F45`
 - [x] **Yoivi-Marasi**  `F46`
 - [x] **Semahara-Kueno**  `F48`
+- [x] **Bareji-Toma**  `F50`
 - [x] **Sila-Avararu**  `F51`
 - [x] **Afore-Tahama**  `F52`
 - [x] **Kuhene-Highway**  `F54`
 - [x] **Koruo-Bodoimo-Umbuara-Anatua**  `F55`
-  - [x] Koruo → Bodoimo: routes in 3.5 km vs 2.6 km straight
+  - [x] Koruo → Bodoimo: routes in 4.7 km vs 2.9 km straight
   - [x] Bodoimo → Umbuara: routes in 2.0 km vs 1.6 km straight
   - [x] Umbuara → Anatua: routes in 2.4 km vs 2.2 km straight
 - [x] **Anatua-Serepuna**  `F56`
@@ -164,17 +163,20 @@ recordings in hand carry no route name at all.
 
 ## Feeder roads (member's roads)
 
-### Partly recorded (5)
+### Not recorded - these are the gap (1)
 
-- [~] **Road 3 – Dareki**  `R03`
-  - [~] Road 3 → Dareki: both ends on the network but only linked the long way round (9.7 km for 3.3 km straight) - the direct track is not recorded
+- [ ] **Road 2-Old Cadamon factory**  `R04`
+  - [ ] Old Cardamom factory → (the road itself): no recorded motorable road within 1.0 km of Old Cardamom factory - the road itself is not recorded
+
+### Partly recorded (4)
+
 - [~] **Sila-Sakarina-Numba-Kaura-Avaru**  `R06`
-  - [x] Sila → Sakarina: Sila and Sakarina are the same point in our data (0 m apart), so there is no leg here - that place is recorded — **this name is on two places 21.1 km apart; the nearer pairing was assumed**
-  - [x] Sakarina → Numba: routes in 2.2 km vs 1.7 km straight — a recording is named for it: *Sakarina – Numba – Kaura (seg 1)* — **this name is on two places 21.1 km apart; the nearer pairing was assumed**
-  - [x] Numba → Kaura: routes in 1.9 km vs 1.0 km straight — a recording is named for it: *Cropping Calendar Survey Track to Kuhara* — **this name is on two places 10.9 km apart; the nearer pairing was assumed**
-  - [~] Kaura → Avaru: both ends on the network but only linked the long way round (6.0 km for 2.2 km straight) - the direct track is not recorded — **this name is on two places 10.9 km apart; the nearer pairing was assumed**
+  - [x] Sila → Sakarina: Sila and Sakarina are the same point in our data (0 m apart), so there is no leg here - that place is recorded
+  - [x] Sakarina → Numba: routes in 2.2 km vs 1.7 km straight — a recording is named for it: *Sakarina – Numba – Kaura (seg 1)*
+  - [x] Numba → Kaura: routes in 2.1 km vs 1.9 km straight — a recording is named for it: *Cropping Calendar Survey Track to Kuhara*
+  - [~] Kaura → Avaru: both ends on the network but only linked the long way round (6.0 km for 2.2 km straight) - the direct track is not recorded
 - [~] **Ugunomo-Siribu**  `R07`
-  - [~] Ugunomo → Siribu: both ends on the network but only linked the long way round (9.5 km for 2.6 km straight) - the direct track is not recorded — **this name is on two places 6.4 km apart; the nearer pairing was assumed**
+  - [~] Ugunomo → Siribu: both ends on the network but only linked the long way round (9.0 km for 3.1 km straight) - the direct track is not recorded
 - [~] **Highway-Kawowoki (Mr. Womo)**  `R12`
   - [~] Highway → Kawowoki: both ends on the network but only linked the long way round (1.0 km for 0.3 km straight) - the direct track is not recorded
 - [~] **Afore-Korokoro Village**  `R14`
@@ -186,7 +188,7 @@ recordings in hand carry no route name at all.
 - [x] **Veriame-yoivi-Aguido**  `R02`
   - [x] Veriame → Yoivi: routes in 1.2 km vs 1.1 km straight
   - [x] Yoivi → Aguido: routes in 0.4 km vs 0.2 km straight — a recording is named for it: *Track from Vereyame connect's Yoivi, Aguido Primary School and Kuheine*
-- [x] **Road 2-Old Cadamon factory**  `R04`
+- [x] **Road 3 – Dareki**  `R03`
 - [x] **Road 1- Organ Village**  `R05`
 - [x] **Jorura-Natanga**  `R08`
 - [x] **Umbuara-Anatua**  `R09`
@@ -218,8 +220,8 @@ and say whether it still needs walking.
 |---|---|---|
 | Aputuara | F04 |  |
 | Damara | F47 |  |
-| Emoriva | F29 |  |
+| Emoriva | F29 | 'This looks like a contraction of Emo River. Not here and not inside MCA.' Consistent with Tedebedi, placed 2 km from the Emo River airstrip at 148.04 - F29 runs off the plateau to the west. Needs a position if the route is wanted |
+| Suari | F37 |  |
 | Umasi | F17 |  |
 | Vovosik | F44 |  |
-| Water Crossing | F49 |  |
 

@@ -93,9 +93,16 @@ def load_places():
     leg pick is better than picking here and being wrong half the time.
     """
     places = {}
+    bad = set()
+    bp = REF / "bad_positions.csv"
+    if bp.exists():
+        for _, r in pd.read_csv(bp, comment="#").iterrows():
+            bad.add((str(r["source"]).strip(), str(r["name"]).strip().lower()))
 
-    def add(nm, **kw):
-        places.setdefault(nm.strip(), []).append(kw)
+    def add(nm, src=None, **kw):
+        if (src, nm.strip().lower()) in bad:
+            return
+        places.setdefault(nm.strip(), []).append(dict(src=src, **kw))
 
     gaz = pd.read_csv(ROOT / "data" / "MCA_Village_Locations.csv")
     for _, r in gaz.iterrows():
@@ -173,24 +180,72 @@ def spread_km(cands):
     return float(np.max(np.hypot(*(m[:, None, :] - m[None, :, :]).T))) / 1000
 
 
+TIER = {"placed by the team": 0, "field evidence": 0, "gazetteer": 1}
+
+
+def best_tier(cands):
+    """Keep only the best-sourced candidates for a name.
+
+    Source outranks distance. The team's own placements come first, then the
+    surveyed gazetteer, then our GPS inference - and the inference is known to
+    contain errors the team has pointed out: Ondoro and Vouka placed where there
+    is no village, and a "Sigara" that is probably where a road named for Sigara
+    ends rather than the village. Letting the nearest candidate win regardless
+    of source picked the northern Kaura over the surveyed one for "Kaura-Sigara"
+    on a 0.3 km margin, which is not a judgement distance can make.
+    """
+    if not cands:
+        return cands
+    rank = min(TIER.get(c.get("src", ""), 2) for c in cands)
+    return [c for c in cands if TIER.get(c.get("src", ""), 2) == rank]
+
+
 def pick_pair(ca, cb):
     """Of the candidate positions for each end, the pair that is one track.
 
-    Where a name is reused the leg itself settles which is meant: the list is
-    naming a walk between two places, so the closest pairing is the one it is
-    about. A gazetteer position wins a tie, being surveyed rather than inferred.
+    Within the best-sourced candidates, where a name is still on more than one
+    place the leg itself settles which is meant: the list is naming a walk
+    between two places, so the closest pairing is the one it is about.
     """
+    ca, cb = best_tier(ca), best_tier(cb)
     best, bestkey = None, None
     for a in ca:
         for b in cb:
             d = float(np.hypot((a["lon"] - b["lon"]) * 110_000 *
                                np.cos(np.radians(a["lat"])),
                                (a["lat"] - b["lat"]) * 110_000))
-            gaz = (a["src"] != "gazetteer") + (b["src"] != "gazetteer")
-            key = (round(d / 500), gaz, d)
+            key = (d,)
             if bestkey is None or key < bestkey:
                 best, bestkey = (a, b), key
     return best
+
+
+def road_at_place(pr, place, places, aliases, road_net):
+    """Is a recorded motorable road at this place? The test for a named road."""
+    rec = dict(route_id=pr["id"], leg=f"{pr['id']}.1", category=pr["category"],
+               as_written=pr["as_written"], from_place=place,
+               to_place="(the road itself)", from_resolved="", to_resolved="",
+               name_evidence="", ambiguous_name="", multi_day="")
+    cands = candidates(place, places, aliases)
+    if not cands:
+        rec["status"] = "unlocated"
+        rec["detail"] = f"no position for {place}"
+        return rec
+    c = cands[0]
+    rec["from_resolved"] = c["name"]
+    p = (gpd.GeoSeries([Point(c["lon"], c["lat"])], crs=WGS84)
+         .to_crs(UTM).iloc[0])
+    off = float(road_net.distance(p)) if not road_net.is_empty else float("inf")
+    rec["from_off_network_m"] = round(off)
+    if off <= ENDPOINT_M:
+        rec["status"] = "recorded"
+        rec["detail"] = (f"a recorded motorable road runs within {off:.0f} m of "
+                         f"{c['name']}")
+    else:
+        rec["status"] = "missing"
+        rec["detail"] = (f"no recorded motorable road within {off/1000:.1f} km of "
+                         f"{c['name']} - the road itself is not recorded")
+    return rec
 
 
 def main():
@@ -229,6 +284,14 @@ def main():
     rows = []
     for _, pr in planned.iterrows():
         chain = [c.strip() for c in str(pr["chain"]).split(">")]
+
+        # A chain of one place is a named road rather than a journey between two
+        # points: "Road 3 is the road to get there". The question is whether a
+        # recorded motorable road reaches the place it serves.
+        if len(chain) == 1:
+            rows.append(road_at_place(pr, chain[0], places, aliases, road_net))
+            continue
+
         for i, (a_w, b_w) in enumerate(zip(chain[:-1], chain[1:]), start=1):
             leg = f"{pr['id']}.{i}"
             rec = dict(route_id=pr["id"], leg=leg, category=pr["category"],
@@ -247,7 +310,7 @@ def main():
             # apart. The gazetteer and the GPS inference routinely differ by a
             # few hundred metres on the same village, which settles nothing and
             # is not worth warning about; two Kauras 10 km apart is.
-            n_amb = max(spread_km(ca), spread_km(cb))
+            n_amb = max(spread_km(best_tier(ca)), spread_km(best_tier(cb)))
 
             # "Highway" / "Road 1/2/3" are the trunk and the numbered feeder
             # stubs; the highway we can test against the recorded roads, the

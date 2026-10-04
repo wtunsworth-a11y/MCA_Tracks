@@ -1,0 +1,21 @@
+# Comments the team typed into the pin descriptions, kept verbatim.
+# Written by scripts/ingest_placed_kml.py. Comments filed against the
+# locked reference folders are corrections to OUR data and matter most.
+place,folder,about,comment
+Emo,PLACE THESE,a place to be located,". There is anoother, different, Emo inthe Tetebedi area. Which one are you referring to?"
+Emoriva,PLACE THESE,a place to be located,This looks like a contraction of Emo River. Not here and not inside MCA
+Gadzot,Known villages (reference,our reference data,mispelling of Gajot
+Gorobuna,PLACE THESE,a place to be located,unconfirmed
+Korokoro,PLACE THESE,a place to be located,also spelled as karokora? but i think this is the correct spelling
+Ondoro,Known villages (reference,our reference data,This is WRONG. Ondoro is roadside
+Organ,PLACE THESE,a place to be located,I suspect Organ is a typo of Ogan. Does that make sense witht he data you have?
+Road 1,PLACE THESE,a place to be located,"Road 1 is the name of a road, not a place. it passes through Ogan village"
+Road 2,PLACE THESE,a place to be located,"It is a road, not a place"
+Road 3,PLACE THESE,a place to be located,Road 3 is the road to get there
+Semehara,Known villages (reference,our reference data,typo of semahara
+Simion's place,PLACE THESE,a place to be located,"Simeon's Place. S house, not a village. The village is Niniuri"
+Singata,PLACE THESE,a place to be located,Unconfirmed
+Suari,Known villages (reference,our reference data,This was WRONG
+Ufia,PLACE THESE,a place to be located,Ufia and Mandokoro are used somewhat interchangeably
+Vouka,Known villages (reference,our reference data,But NO VILLAGE HERE
+Water Crossing,PLACE THESE,a place to be located,This is Aiari village. I dont know why water crossing is a place name..

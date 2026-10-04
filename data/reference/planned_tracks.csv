@@ -1,6 +1,12 @@
 # The routes the team identified to walk, transcribed from
 # NAMES_OF_FOOT_TRACKS_IN_MANAGALAS_CONSERVATION_AREA.docx (received 3 Oct 2026).
 #
+# Road 1, Road 2 and Road 3 are the NAMES OF ROADS, not places - the team said
+# so on 4 Oct 2026 ("Road 3 is the road to get there", "Road 1 ... passes
+# through Ogan village"). Their chains are therefore the single place the road
+# serves, and the question for them is whether a recorded motorable road reaches
+# that place, not whether two points are joined.
+#
 # as_written is verbatim from the document, including its spellings. chain is the
 # same route with the places separated by " > " so the legs can be tested without
 # guessing where one name ends and the next begins - several entries in the source
@@ -71,9 +77,9 @@ F61,foot,Semahara-Tabuane,Semahara > Tabuane
 F62,foot,Singata-Gora,Singata > Gora
 R01,feeder road,Itokama -Ufia,Itokama > Ufia
 R02,feeder road,Veriame-yoivi-Aguido,Veriame > Yoivi > Aguido
-R03,feeder road,Road 3 – Dareki,Road 3 > Dareki
-R04,feeder road,Road 2-Old Cadamon factory,Road 2 > Old Cardamom factory
-R05,feeder road,Road 1- Organ Village,Road 1 > Organ
+R03,feeder road,Road 3 – Dareki,Dareki
+R04,feeder road,Road 2-Old Cadamon factory,Old Cardamom factory
+R05,feeder road,Road 1- Organ Village,Ogan
 R06,feeder road,Sila-Sakarina-Numba-Kaura-Avaru,Sila > Sakarina > Numba > Kaura > Avaru
 R07,feeder road,Ugunomo-Siribu,Ugunomo > Siribu
 R08,feeder road,Jorura-Natanga,Jorura > Natanga

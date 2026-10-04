@@ -32,8 +32,15 @@
     <Placemark>
       <name>Emoriva</name>
       <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Emoriva</b><br/>Appears in: F29<br/>&nbsp;&nbsp;• Kuai-Tedebedi-Emoriva<br/><br/><i>This pin is a guess: the midpoint of Tedebedi, which the list names next to it.</i>]]></description>
+      <description><![CDATA[<b>Emoriva</b><br/>Appears in: F29<br/>&nbsp;&nbsp;• Kuai-Tedebedi-Emoriva<br/><br/><i>This pin is a guess: the midpoint of Tedebedi, which the list names next to it.</i><br/><br/><b>Question:</b> 'This looks like a contraction of Emo River. Not here and not inside MCA.' Consistent with Tedebedi, placed 2 km from the Emo River airstrip at 148.04 - F29 runs off the plateau to the west. Needs a position if the route is wanted]]></description>
       <Point><coordinates>148.069700,-9.157400,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Suari</name>
+      <styleUrl>#todo</styleUrl>
+      <description><![CDATA[<b>Suari</b><br/>Appears in: F37<br/>&nbsp;&nbsp;• Ufia-Umuate-Aiari-Suari-Jaure<br/><br/><i>This pin is a guess: the midpoint of Aiari, Jaure, which the list names next to it.</i>]]></description>
+      <Point><coordinates>148.181200,-9.312600,0</coordinates></Point>
     </Placemark>
 
     <Placemark>
@@ -48,13 +55,6 @@
       <styleUrl>#todo</styleUrl>
       <description><![CDATA[<b>Vovosik</b><br/>Appears in: F44<br/>&nbsp;&nbsp;• Jaura-Vovosik-Kwikila<br/><br/><i>This pin is a guess: the midpoint of Jaure, Kwikila, which the list names next to it.</i>]]></description>
       <Point><coordinates>147.902500,-9.546900,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Water Crossing</name>
-      <styleUrl>#todo</styleUrl>
-      <description><![CDATA[<b>Water Crossing</b><br/>Appears in: F49<br/>&nbsp;&nbsp;• Aiari-Water Crossing<br/><br/><i>This pin is a guess: the midpoint of Aiari, which the list names next to it.</i>]]></description>
-      <Point><coordinates>148.217200,-9.349700,0</coordinates></Point>
     </Placemark>
 
   </Folder>
@@ -439,13 +439,6 @@
     </Placemark>
 
     <Placemark>
-      <name>Ondoro</name>
-      <styleUrl>#known</styleUrl>
-      <description><![CDATA[Ondoro<br/>GPS-inferred — confidence 0.5]]></description>
-      <Point><coordinates>148.467656,-9.136425,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
       <name>Popondetta</name>
       <styleUrl>#known</styleUrl>
       <description><![CDATA[Popondetta<br/>GPS-inferred — confidence 1.0]]></description>
@@ -509,13 +502,6 @@
     </Placemark>
 
     <Placemark>
-      <name>Suari</name>
-      <styleUrl>#known</styleUrl>
-      <description><![CDATA[Suari<br/>gazetteer — zone 4, 33 hh]]></description>
-      <Point><coordinates>148.144680,-9.275762,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
       <name>Tabuane</name>
       <styleUrl>#known</styleUrl>
       <description><![CDATA[Tabuane<br/>gazetteer — zone 5, 106 hh]]></description>
@@ -569,13 +555,6 @@
       <styleUrl>#known</styleUrl>
       <description><![CDATA[Vereyame Yoivi<br/>GPS-inferred — confidence 0.5]]></description>
       <Point><coordinates>148.446339,-9.129243,0</coordinates></Point>
-    </Placemark>
-
-    <Placemark>
-      <name>Vouka</name>
-      <styleUrl>#known</styleUrl>
-      <description><![CDATA[Vouka<br/>GPS-inferred — confidence 1.0]]></description>
-      <Point><coordinates>148.511038,-9.225775,0</coordinates></Point>
     </Placemark>
 
   </Folder>

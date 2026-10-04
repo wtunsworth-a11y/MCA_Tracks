@@ -1,0 +1,6 @@
+# Villages whose status on the ground has changed since the gazetteer was
+# compiled. These are not position corrections: the village is where it was,
+# but what is there has changed, and any figure that counts its households is
+# affected.
+village,status,as_of,source,consequence
+Ogan,destroyed by fire,2026-10-04,"reported by Will: 'It was Ogan Village and now burned to the ground'","Ogan is counted in outputs/access/ as 69 households, road-served, 1.48 km by road to Afore. That is 2.6% of the 2,703 road-served households and 1.8% of the 3,837 total. Whether those households have relocated, and where, is unknown - so the figures are not corrected, only flagged"

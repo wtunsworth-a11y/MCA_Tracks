@@ -606,6 +606,73 @@ One placement to query: **Road 1** and **Organ** came back 52 m apart, so R05
 simply end at the village — or both pins may have been dropped on the same
 feature.
 
+### Ogan Village has burned to the ground
+
+Reported on 4 Oct 2026. "Organ" in the track list is a typo of **Ogan** — which
+is confirmed beyond doubt, because the position the team placed for it landed
+**26 m** from the gazetteer's Ogan.
+
+This matters to Deliverable 2 and not only to the track list. Ogan is carried
+through `mca_village_access.csv` as **69 households, road-served, 1.48 km by
+road to Afore** — 2.6 % of the 2,703 road-served households and 1.8 % of the
+3,837 total. The access figures therefore count a village that no longer stands.
+
+**They are flagged, not corrected.** Whether the households have relocated, and
+where to, is not known here, and deleting 69 households would be as wrong as
+leaving them: the people exist either way, and where they now are is what
+decides their access. Recorded in `data/reference/village_status.csv`, and the
+one question that would resolve it is where those households have gone.
+
+### Corrections the team made to our own reference data
+
+The pin file went out with the villages and recordings we hold as locked
+reference folders, mostly so a pin could be placed relative to its neighbours.
+It came back with comments on them, and those were the most valuable thing in
+the file — none was findable from the geometry:
+
+| marked | what it was | what was done |
+|---|---|---|
+| **Suari** | "This was WRONG" | The gazetteer puts Suari 73 m from Jaure, which is why F37 produced a leg with no length. Dropped; a real position is needed |
+| **Ondoro** | "This is WRONG. Ondoro is roadside" | The inferred cluster at 148.4677 is not it. Dropped |
+| **Vouka** | "But NO VILLAGE HERE" | Both inferred Vouka clusters rejected. Dropped |
+| **Gadzot** | "mispelling of Gajot" | The inferred Gadzot and the gazetteer's Gajot are one village 0.8 km apart |
+| **Semehara** | "typo of semahara" | The *gazetteer* spelling is the typo. Outputs should read Semahara |
+| **Sigara** | "the path ends at the main village, but the point is in a hamlet of Sigara. Near, but across a river" | Confirmed: `Track from Kaura to Sigara Village` ends 1,281 m west of the gazetteer point. "Sigara" now means the main village |
+
+The three dropped positions are listed in `data/reference/bad_positions.csv` and
+filtered out by `load_places()`, so nothing downstream can use them again.
+
+The Sigara correction had a consequence worth recording. Once "Sigara" meant the
+main village, "Kaura-Sigara" flipped from recorded to partly recorded — because
+the pairing rule chose the *northern* Kaura over the surveyed one on a 0.3 km
+margin. That rule was wrong: it let distance outrank provenance, when the team
+had just finished showing that the GPS inference contains errors the gazetteer
+does not. Source now outranks distance — the team's placements, then the
+surveyed gazetteer, then our inference — with distance only breaking ties inside
+a tier. Kaura-Sigara is recorded again, routing in 9.0 km against 7.0 km
+straight, which matches the recording that is named for it.
+
+### Road 1, Road 2 and Road 3 are roads, not places
+
+"Road 3 is the road to get there"; "Road 1 ... passes through Ogan village". The
+leg model was wrong for these three, which were being asked to join two points
+when one of the points was the road itself. Their entries now carry the single
+place each road serves, and the test is whether a recorded motorable road
+reaches it. Road 3 reaches Dareki (162 m) and Road 1 reaches Ogan (13 m); Road 2
+has no recorded road within 1.0 km of the old cardamom factory.
+
+Three other entries turned out to have no leg to walk: **Aiari-Water Crossing**
+("This is Aiari village. I dont know why water crossing is a place name"),
+**Simion's place** which is Simeon's house rather than a village, and **Ufia**
+which "is used somewhat interchangeably" with the gazetteer's Madokoro — the
+team's pin landed 3 m from it.
+
+**Emoriva** is "a contraction of Emo River. Not here and not inside MCA", which
+fits: Tedebedi was placed 2 km from the Emo River airstrip at 148.04, so F29
+runs off the plateau to the west. And there are **two Emos**: the one the list
+means in "Avaru-Sigara-Emo" is the eastern village at 148.525, since the Emo
+River one is 50 km west of Sigara and could not be on that route.
+
 
 ## Files
 
@@ -626,7 +693,10 @@ feature.
 | `geocode_candidates.csv` | every public-gazetteer hit considered for an unlocated place, with the division, feature class and distance that decided it |
 
 Positions the team placed by hand live in `data/reference/placed_by_team.csv`
-and are read ahead of everything else.
+and are read ahead of everything else. Their comments are kept verbatim in
+`data/reference/field_comments.csv`, positions they rejected in
+`data/reference/bad_positions.csv`, and villages whose status has changed in
+`data/reference/village_status.csv`.
 
 Scripts that produced them, in order:
 `classify_mode.py` → `build_access.py` → `make_access_figures.py` → `road_speed.py`

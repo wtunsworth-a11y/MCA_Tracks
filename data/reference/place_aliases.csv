@@ -70,3 +70,16 @@ Sairope,Sairope,148.04396,-8.92130,"OSM village; GeoNames has New Sairope 2 km a
 Embi,Embi,148.43060,-8.83729,"OSM village south of Dobodura - the longitude that was missing on 3 Oct. Sits 1.7 km from Warisota, which is the next place in the same route. (Mount Embi 656 km away in Enga was rejected)"
 Warisota,Warisota,148.43032,-8.85171,"OSM village beside Embi. AMBIGUOUS: GeoNames has another Warisota 13 km north and OSM a New Warisota 45 km west - this is the one the route fits"
 Peroroda,Peroroda,148.58095,-9.16452,"OSM village. 20 km from where the route implied, but that anchor is the weak Bareji cluster, so the distance proves little either way - worth a check"
+#
+# Identified by the team on 4 Oct 2026, from comments written into the pin file.
+# Each of the first four is confirmed by the position they placed landing on a
+# gazetteer village: the match is metres, not kilometres.
+Organ,Ogan,,,"CONFIRMED: a typo of Ogan. Their pin landed 26 m from the gazetteer's Ogan (zone 7b, 69 households). NOTE: Ogan has since BURNED TO THE GROUND - see NOTES.md"
+Korokoro,Karokora,,,"the team's spelling, placed 34 m from the gazetteer's Karokora - the same village"
+Ufia,Madokoro,,,"'Ufia and Mandokoro are used somewhat interchangeably'; their pin landed 3 m from the gazetteer's Madokoro"
+Water Crossing,Aiari,,,"'This is Aiari village. I dont know why water crossing is a place name' - so F49 Aiari-Water Crossing has no leg to walk"
+Simion's place,Simeon's Place,148.41175,-9.12894,"'Simeon's Place. S house, not a village. The village is Niniuri' - a house, placed by the team"
+Emoriva,,,,"'This looks like a contraction of Emo River. Not here and not inside MCA.' Consistent with Tedebedi, placed 2 km from the Emo River airstrip at 148.04 - F29 runs off the plateau to the west. Needs a position if the route is wanted"
+Gadzot,Gajot,,,"'mispelling of Gajot' - the GPS-inferred Gadzot cluster and the gazetteer's Gajot are one village, 0.8 km apart"
+Semehara,Semahara,,,"'typo of semahara' - the gazetteer spelling is the typo. Outputs should read Semahara"
+Sigara,Sigara,148.43740,-9.04110,"'the path ends at the main village, but the point is in a hamlet of Sigara. Near, but across a river'. The gazetteer's 148.4491 is the hamlet; 'Track from Kaura to Sigara Village' ends here, 1,281 m west, and this is the main village. The gazetteer's point is kept in bad_positions.csv reasoning only - it is a real hamlet, not an error, but it is not what the list means by Sigara. The third 'Sigara' at 148.3858 is where 'Track from Awaru to Sigara ROAD' ends and is probably the road, not a village - worth a check"
