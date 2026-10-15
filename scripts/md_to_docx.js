@@ -1,6 +1,11 @@
 // Markdown -> .docx for the documents in outputs/access/.
 //
-//   node scripts/md_to_docx.js <in.md> <out.docx> "<subtitle>" [toc]
+//   node scripts/md_to_docx.js <in.md> <out.docx> "<subtitle>" [toc] [map.png]
+//
+// A map passed as the fifth argument is dropped in on its own LANDSCAPE page
+// between the front matter and the body, sized to fill the page. The rest of
+// the document stays portrait: Word takes a page size per section, so the
+// landscape page is simply its own section.
 //
 // Needs the `docx` npm package (preinstalled in this environment; otherwise
 // `npm install docx`). Pandoc is not available here, which is why this exists.
@@ -15,11 +20,40 @@ const fs = require('fs');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell,
   WidthType, ShadingType, BorderStyle, AlignmentType, LevelFormat,
-  TableOfContents, PageBreak,
+  TableOfContents, PageBreak, ImageRun, PageOrientation,
 } = require('docx');
 
 const CONTENT_DXA = 9026;          // A4 minus 1" margins each side
 const MONO = 'Consolas';
+
+// A4 landscape, half-inch margins, in pixels at 96dpi - what ImageRun wants.
+const LAND_W_PX = Math.round((11.69 - 1.0) * 96);
+const LAND_H_PX = Math.round((8.27 - 1.0) * 96);
+
+function mapPage(mapPath) {
+  const png = fs.readFileSync(mapPath);
+  // PNG header: width and height are big-endian 32-bit ints at byte 16 and 20.
+  const w = png.readUInt32BE(16), h = png.readUInt32BE(20);
+  let dw = LAND_W_PX, dh = Math.round(LAND_W_PX * h / w);
+  if (dh > LAND_H_PX) { dh = LAND_H_PX; dw = Math.round(LAND_H_PX * w / h); }
+  return {
+    properties: {
+      page: {
+        size: { orientation: PageOrientation.LANDSCAPE },
+        margin: { top: 720, bottom: 720, left: 720, right: 720 },
+      },
+    },
+    children: [new Paragraph({
+      alignment: AlignmentType.CENTER,
+      spacing: { before: 0, after: 0 },
+      children: [new ImageRun({
+        type: 'png',
+        data: png,
+        transformation: { width: dw, height: dh },
+      })],
+    })],
+  };
+}
 
 // ---------- inline ----------
 
@@ -216,7 +250,7 @@ function render(blocks) {
 
 // ---------- document ----------
 
-function build(mdPath, outPath, { subtitle, toc }) {
+function build(mdPath, outPath, { subtitle, toc, mapPath }) {
   const blocks = parse(fs.readFileSync(mdPath, 'utf8'));
 
   let title = '';
@@ -241,8 +275,19 @@ function build(mdPath, outPath, { subtitle, toc }) {
     }));
     // dirty:true, so Word fills in the page numbers when the file is opened.
     front.push(new TableOfContents('Contents', { hyperlink: true, headingStyleRange: '1-3' }));
-    front.push(new Paragraph({ children: [new PageBreak()] }));
+    // No manual break when a map follows: the landscape section starts its
+    // own page, and a break as well would leave a blank one behind.
+    if (!mapPath) front.push(new Paragraph({ children: [new PageBreak()] }));
   }
+
+  const portrait = {
+    page: { margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 } },
+  };
+  const sections = mapPath
+    ? [{ properties: portrait, children: front },
+       mapPage(mapPath),
+       { properties: portrait, children: render(blocks) }]
+    : [{ properties: portrait, children: [...front, ...render(blocks)] }];
 
   const doc = new Document({
     creator: 'Managalas Conservation Area track mapping',
@@ -269,10 +314,7 @@ function build(mdPath, outPath, { subtitle, toc }) {
         })),
       }],
     },
-    sections: [{
-      properties: { page: { margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 } } },
-      children: [...front, ...render(blocks)],
-    }],
+    sections,
   });
 
   return Packer.toBuffer(doc).then((buf) => {
@@ -281,10 +323,10 @@ function build(mdPath, outPath, { subtitle, toc }) {
   });
 }
 
-const [, , mdPath, outPath, subtitle, tocFlag] = process.argv;
+const [, , mdPath, outPath, subtitle, tocFlag, mapPath] = process.argv;
 if (!mdPath || !outPath) {
-  console.error('usage: node scripts/md_to_docx.js <in.md> <out.docx> "<subtitle>" [toc]');
+  console.error('usage: node scripts/md_to_docx.js <in.md> <out.docx> "<subtitle>" [toc] [map.png]');
   process.exit(2);
 }
-build(mdPath, outPath, { subtitle, toc: tocFlag === 'toc' })
+build(mdPath, outPath, { subtitle, toc: tocFlag === 'toc', mapPath })
   .catch((e) => { console.error(e); process.exit(1); });
