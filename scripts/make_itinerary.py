@@ -287,6 +287,15 @@ def main():
     w("  record twice; a track we do not have is lost if you walk it with the")
     w("  tracker off.")
     w("")
+    w("**Get what you can and move on.**")
+    w("")
+    w("Speed matters more than completeness. Take the points that are there to")
+    w("be taken, record the walk, and go. If something is awkward - a building")
+    w("you cannot find in ten minutes, a track nobody will show you, a crossing")
+    w("that is up - leave it and carry on to the next stop. Do not spend a day")
+    w("on one difficult point. A half-finished round that comes back quickly is")
+    w("worth more than a complete one that does not.")
+    w("")
     w("**If you cannot get into a village, skip it.**")
     w("")
     w("It does not matter what the reason is - permission refused, a dispute, a")
@@ -328,9 +337,8 @@ def main():
     w(f"**{len(route)} stops**, {len([s for s in route if stops[s]])} of them with "
       f"something to collect, {total_pts} points in all.")
     w("")
-    w(f"**All {n_hops} legs between stops get recorded.** {n_gap} of them close a "
-      "gap we already know about in the map; the rest are recorded because a "
-      "second copy costs nothing and a missed one cannot be got back.")
+    w(f"**All {n_hops} legs between stops get recorded.** They all count the "
+      "same. Do not try to work out which ones are worth more.")
     w("")
     w(f"The whole round is about **{walk_km:.0f} km** of travel measured in straight "
       "lines between stops, so the real walking is more. It is not one trip; take "
@@ -361,19 +369,15 @@ def main():
             nxt = route[n]
             pair = frozenset((name, nxt))
             straight = d[idx[name], idx[nxt]] / 1000.0
+            # Deliberately no note saying which legs matter more. Will,
+            # 16 Oct 2026: he would spend the day trying to force a hard one
+            # instead of banking the easy ones. Every leg reads the same.
             if pair in jobs_by_pair and pair not in done_pairs:
                 j = jobs_by_pair[pair][0]
                 done_pairs.add(pair)
-                w(f"**WALK TO {nxt.upper()} AND RECORD IT.** "
-                  f"About {j['straight'] or straight:.1f} km direct.")
-                if j["route"]:
-                    w("")
-                    w(f"This one matters most: our map has only a "
-                      f"{j['route']:.1f} km way round between these two, so the "
-                      f"direct track is missing altogether.")
-            else:
-                w(f"**WALK TO {nxt.upper()} AND RECORD IT.** "
-                  f"About {straight:.1f} km in a straight line.")
+                straight = j["straight"] or straight
+            w(f"**WALK TO {nxt.upper()} AND RECORD IT.** "
+              f"About {straight:.1f} km.")
             w("")
         w("")
 
@@ -381,9 +385,12 @@ def main():
     if missed:
         w("---")
         w("")
-        w("## Legs the route did not cover")
+        w("## Only if it is easy")
         w("")
-        w("These still need recording. Fit them in from whichever end you pass.")
+        w("The round passes both ends of these but not one after the other, so")
+        w("they are not part of the walk above. **Do not go out of your way for")
+        w("them.** If you happen to be going that way anyway, record it; if not,")
+        w("leave it for the next round.")
         w("")
         pos = {name: i for i, name in enumerate(route, 1)}
         for pair in sorted(missed, key=lambda p: jobs_by_pair[p][0]["straight"] or 0):

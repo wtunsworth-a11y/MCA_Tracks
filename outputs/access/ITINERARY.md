@@ -16,6 +16,15 @@ no need to come back round.
   record twice; a track we do not have is lost if you walk it with the
   tracker off.
 
+**Get what you can and move on.**
+
+Speed matters more than completeness. Take the points that are there to
+be taken, record the walk, and go. If something is awkward - a building
+you cannot find in ten minutes, a track nobody will show you, a crossing
+that is up - leave it and carry on to the next stop. Do not spend a day
+on one difficult point. A half-finished round that comes back quickly is
+worth more than a complete one that does not.
+
 **If you cannot get into a village, skip it.**
 
 It does not matter what the reason is - permission refused, a dispute, a
@@ -46,7 +55,7 @@ what is missing after this gets collated into a second round.
 
 **46 stops**, 34 of them with something to collect, 63 points in all.
 
-**All 45 legs between stops get recorded.** 16 of them close a gap we already know about in the map; the rest are recorded because a second copy costs nothing and a missed one cannot be got back.
+**All 45 legs between stops get recorded.** They all count the same. Do not try to work out which ones are worth more.
 
 The whole round is about **241 km** of travel measured in straight lines between stops, so the real walking is more. It is not one trip; take it in whatever pieces suit, in this order.
 
@@ -67,9 +76,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 - **COLLECT** Afore Airstrip
   - ward 02 Niniuri, reported *Closed*
 
-**WALK TO KOROKORO AND RECORD IT.** About 0.5 km direct.
-
-This one matters most: our map has only a 2.2 km way round between these two, so the direct track is missing altogether.
+**WALK TO KOROKORO AND RECORD IT.** About 0.5 km.
 
 
 ## 2. Korokoro
@@ -79,7 +86,7 @@ This one matters most: our map has only a 2.2 km way round between these two, so
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO SEMAHARA TAHAMA AND RECORD IT.** About 1.9 km in a straight line.
+**WALK TO SEMAHARA TAHAMA AND RECORD IT.** About 1.9 km.
 
 
 ## 3. Semahara Tahama
@@ -89,9 +96,7 @@ This one matters most: our map has only a 2.2 km way round between these two, so
 - **COLLECT** Tahama Elementary School, 2 single classrooms, 2 teacher houses
   - ward 11 Tahama, reported *In use, bush material*
 
-**WALK TO TOMA AND RECORD IT.** About 7.1 km direct.
-
-This one matters most: our map has only a 14.8 km way round between these two, so the direct track is missing altogether.
+**WALK TO TOMA AND RECORD IT.** About 7.1 km.
 
 
 ## 4. Toma
@@ -101,9 +106,7 @@ This one matters most: our map has only a 14.8 km way round between these two, s
 - **COLLECT** Toma Aid Post
   - ward 15 Toma, reported *Closed 2002*
 
-**WALK TO BIRIRI AND RECORD IT.** About 4.3 km direct.
-
-This one matters most: our map has only a 31.5 km way round between these two, so the direct track is missing altogether.
+**WALK TO BIRIRI AND RECORD IT.** About 4.3 km.
 
 
 ## 5. Biriri
@@ -113,7 +116,7 @@ This one matters most: our map has only a 31.5 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO GEWOYA AND RECORD IT.** About 6.6 km in a straight line.
+**WALK TO GEWOYA AND RECORD IT.** About 6.6 km.
 
 
 ## 6. Gewoya
@@ -127,7 +130,7 @@ This one matters most: our map has only a 31.5 km way round between these two, s
 - **COLLECT** Gewoya Aid Post
   - ward 15 Toma, reported *Closed 1996*
 
-**WALK TO WAYEI AND RECORD IT.** About 13.4 km in a straight line.
+**WALK TO WAYEI AND RECORD IT.** About 13.4 km.
 
 
 ## 7. Wayei
@@ -137,9 +140,7 @@ This one matters most: our map has only a 31.5 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO OMBARA AND RECORD IT.** About 10.2 km direct.
-
-This one matters most: our map has only a 22.3 km way round between these two, so the direct track is missing altogether.
+**WALK TO OMBARA AND RECORD IT.** About 10.2 km.
 
 
 ## 8. Ombara
@@ -149,7 +150,7 @@ This one matters most: our map has only a 22.3 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO YOIVI AND RECORD IT.** About 3.3 km in a straight line.
+**WALK TO YOIVI AND RECORD IT.** About 3.3 km.
 
 
 ## 9. Yoivi
@@ -163,7 +164,7 @@ This one matters most: our map has only a 22.3 km way round between these two, s
 - **COLLECT** Aguido Primary School, 1 × 4-in-1 classroom, 4 teacher houses
   - ward 01 Yoivi, reported *In use, bush material*
 
-**WALK TO MARASI AND RECORD IT.** About 2.4 km in a straight line.
+**WALK TO MARASI AND RECORD IT.** About 2.4 km.
 
 
 ## 10. Marasi
@@ -173,7 +174,7 @@ This one matters most: our map has only a 22.3 km way round between these two, s
 - **COLLECT** Marasi Elementary School, 2 × 2-in-1
   - ward 01 Yoivi, reported *In use*
 
-**WALK TO MANUSI AND RECORD IT.** About 0.4 km in a straight line.
+**WALK TO MANUSI AND RECORD IT.** About 0.4 km.
 
 
 ## 11. Manusi
@@ -183,7 +184,7 @@ This one matters most: our map has only a 22.3 km way round between these two, s
 - **COLLECT** Manusi Elementary School, 1 × 2-in-1
   - ward 01 Yoivi, reported *In use, bush material*
 
-**WALK TO NINIURI AND RECORD IT.** About 1.3 km in a straight line.
+**WALK TO NINIURI AND RECORD IT.** About 1.3 km.
 
 
 ## 12. Niniuri
@@ -193,9 +194,7 @@ This one matters most: our map has only a 22.3 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO KAWOWOKI AND RECORD IT.** About 3.9 km direct.
-
-This one matters most: our map has only a 15.3 km way round between these two, so the direct track is missing altogether.
+**WALK TO KAWOWOKI AND RECORD IT.** About 3.9 km.
 
 
 ## 13. Kawowoki
@@ -207,7 +206,7 @@ This one matters most: our map has only a 15.3 km way round between these two, s
 - **COLLECT** Kawowoki Aid Post
   - ward 03 Kawowoki, reported *Closed*
 
-**WALK TO KORUWO AND RECORD IT.** About 8.9 km in a straight line.
+**WALK TO KORUWO AND RECORD IT.** About 8.9 km.
 
 
 ## 14. Koruwo
@@ -223,9 +222,7 @@ This one matters most: our map has only a 15.3 km way round between these two, s
 - **COLLECT** Health Centre
   - ward 11 Tahama, reported *Incomplete, no CHW*
 
-**WALK TO KIARA AND RECORD IT.** About 3.0 km direct.
-
-This one matters most: our map has only a 9.7 km way round between these two, so the direct track is missing altogether.
+**WALK TO KIARA AND RECORD IT.** About 3.0 km.
 
 
 ## 15. Kiara
@@ -235,7 +232,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Kiara Elementary School
   - ward 09 Natanga, reported *Semi-permanent*
 
-**WALK TO BODOIMO AND RECORD IT.** About 2.2 km in a straight line.
+**WALK TO BODOIMO AND RECORD IT.** About 2.2 km.
 
 
 ## 16. Bodoimo
@@ -245,7 +242,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Boidomo Elementary School
   - ward 12 Umbuwara, reported *In use*
 
-**WALK TO UMBUARA AND RECORD IT.** About 1.6 km in a straight line.
+**WALK TO UMBUARA AND RECORD IT.** About 1.6 km.
 
 
 ## 17. Umbuara
@@ -261,7 +258,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Aid Post building
   - ward 12 Umbuwara, reported *Incomplete since 2012*
 
-**WALK TO ANATUA AND RECORD IT.** About 2.2 km in a straight line.
+**WALK TO ANATUA AND RECORD IT.** About 2.2 km.
 
 
 ## 18. Anatua
@@ -273,7 +270,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Anatua Elementary School
   - ward 12 Umbuwara, reported *In use*
 
-**WALK TO SEREFUNA AND RECORD IT.** About 1.9 km in a straight line.
+**WALK TO SEREFUNA AND RECORD IT.** About 1.9 km.
 
 
 ## 19. Serefuna
@@ -283,7 +280,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Serefuna Elementary School, 1 × 2-in-1
   - ward 13 Kokoro, reported *Upgrade needed, bush material*
 
-**WALK TO KOKORO AND RECORD IT.** About 1.2 km in a straight line.
+**WALK TO KOKORO AND RECORD IT.** About 1.2 km.
 
 
 ## 20. Kokoro
@@ -293,7 +290,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Aid Post, moved from Serefuna 2025
   - ward 13 Kokoro, reported *Incomplete, to complete 2026, 1 officer*
 
-**WALK TO ITOKAMA AND RECORD IT.** About 3.7 km in a straight line.
+**WALK TO ITOKAMA AND RECORD IT.** About 3.7 km.
 
 
 ## 21. Itokama
@@ -309,7 +306,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Itokama Airstrip, natural surface
   - ward 14 Ufia, reported *Ceased 2023, charters only*
 
-**WALK TO NAOKANANE AND RECORD IT.** About 1.2 km in a straight line.
+**WALK TO NAOKANANE AND RECORD IT.** About 1.2 km.
 
 
 ## 22. Naokanane
@@ -319,7 +316,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Naukanane Elementary School
   - ward 14 Ufia, reported *Functioning*
 
-**WALK TO UMUATE AND RECORD IT.** About 6.7 km in a straight line.
+**WALK TO UMUATE AND RECORD IT.** About 6.7 km.
 
 
 ## 23. Umuate
@@ -329,7 +326,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Umuate Elementary School
   - ward 14 Ufia, reported *Functioning*
 
-**WALK TO AIARI AND RECORD IT.** About 9.8 km in a straight line.
+**WALK TO AIARI AND RECORD IT.** About 9.8 km.
 
 
 ## 24. Aiari
@@ -343,9 +340,7 @@ This one matters most: our map has only a 9.7 km way round between these two, so
 - **COLLECT** Airstrip
   - ward 16 Aiari, reported *Closed 1988*
 
-**WALK TO SUARI AND RECORD IT.** About 5.2 km direct.
-
-This one matters most: our map has only a 23.1 km way round between these two, so the direct track is missing altogether.
+**WALK TO SUARI AND RECORD IT.** About 5.2 km.
 
 
 ## 25. Suari
@@ -357,9 +352,7 @@ This one matters most: our map has only a 23.1 km way round between these two, s
 - **COLLECT** Primary School
   - ward 17 Jaure, reported *In use, bush material*
 
-**WALK TO JAURE AND RECORD IT.** About 10.5 km direct.
-
-This one matters most: our map has only a 23.5 km way round between these two, so the direct track is missing altogether.
+**WALK TO JAURE AND RECORD IT.** About 10.5 km.
 
 
 ## 26. Jaure
@@ -371,7 +364,7 @@ This one matters most: our map has only a 23.5 km way round between these two, s
 - **COLLECT** Yaure Airstrip
   - ward 17 Jaure, reported *Closed 2002*
 
-**WALK TO SINGATA AND RECORD IT.** About 20.5 km in a straight line.
+**WALK TO SINGATA AND RECORD IT.** About 20.5 km.
 
 
 ## 27. Singata
@@ -381,9 +374,7 @@ This one matters most: our map has only a 23.5 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO GOROBUNA AND RECORD IT.** About 10.2 km direct.
-
-This one matters most: our map has only a 31.0 km way round between these two, so the direct track is missing altogether.
+**WALK TO GOROBUNA AND RECORD IT.** About 10.2 km.
 
 
 ## 28. Gorobuna
@@ -397,9 +388,7 @@ This one matters most: our map has only a 31.0 km way round between these two, s
 - **COLLECT** Airstrip
   - ward 18 Gorobuna, reported *Unused since built, 2021*
 
-**WALK TO ASAFA AND RECORD IT.** About 13.4 km direct.
-
-This one matters most: our map has only a 43.3 km way round between these two, so the direct track is missing altogether.
+**WALK TO ASAFA AND RECORD IT.** About 13.4 km.
 
 
 ## 29. Asafa
@@ -409,9 +398,7 @@ This one matters most: our map has only a 43.3 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO SAIROPE AND RECORD IT.** About 9.2 km direct.
-
-This one matters most: our map has only a 48.0 km way round between these two, so the direct track is missing altogether.
+**WALK TO SAIROPE AND RECORD IT.** About 9.2 km.
 
 
 ## 30. Sairope
@@ -421,7 +408,7 @@ This one matters most: our map has only a 48.0 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO GORA AND RECORD IT.** About 23.6 km in a straight line.
+**WALK TO GORA AND RECORD IT.** About 23.6 km.
 
 
 ## 31. Gora
@@ -439,7 +426,7 @@ This one matters most: our map has only a 48.0 km way round between these two, s
 - **COLLECT** Airstrip
   - ward 10 Gora, reported *Closed 1988, to re-open*
 
-**WALK TO NATANGA AND RECORD IT.** About 9.2 km in a straight line.
+**WALK TO NATANGA AND RECORD IT.** About 9.2 km.
 
 
 ## 32. Natanga
@@ -451,7 +438,7 @@ This one matters most: our map has only a 48.0 km way round between these two, s
 - **COLLECT** Natanga Aid Post
   - ward 09 Natanga, reported *Non-operational, no CHW*
 
-**WALK TO JORUA AND RECORD IT.** About 2.4 km in a straight line.
+**WALK TO JORUA AND RECORD IT.** About 2.4 km.
 
 
 ## 33. Jorua
@@ -461,7 +448,7 @@ This one matters most: our map has only a 48.0 km way round between these two, s
 - **COLLECT** Jorura Elementary School
   - ward 09 Natanga, reported *Semi-permanent*
 
-**WALK TO SIRIBU AND RECORD IT.** About 1.9 km in a straight line.
+**WALK TO SIRIBU AND RECORD IT.** About 1.9 km.
 
 
 ## 34. Siribu
@@ -471,9 +458,7 @@ This one matters most: our map has only a 48.0 km way round between these two, s
 - **COLLECT** Siribu Elementary School, 2 × 2-in-1
   - ward 08 Siribu, reported *In use*
 
-**WALK TO UGUNOMU AND RECORD IT.** About 3.1 km direct.
-
-This one matters most: our map has only a 9.0 km way round between these two, so the direct track is missing altogether.
+**WALK TO UGUNOMU AND RECORD IT.** About 3.1 km.
 
 
 ## 35. Ugunomu
@@ -483,7 +468,7 @@ This one matters most: our map has only a 9.0 km way round between these two, so
 - **COLLECT** Ugunomo Elementary School
   - ward 07 Dea, reported *In use*
 
-**WALK TO DEA AND RECORD IT.** About 1.4 km in a straight line.
+**WALK TO DEA AND RECORD IT.** About 1.4 km.
 
 
 ## 36. Dea
@@ -499,7 +484,7 @@ This one matters most: our map has only a 9.0 km way round between these two, so
 - **COLLECT** Airstrip
   - ward 07 Dea, reported *Closed 1988*
 
-**WALK TO TABUANE AND RECORD IT.** About 1.2 km in a straight line.
+**WALK TO TABUANE AND RECORD IT.** About 1.2 km.
 
 
 ## 37. Tabuane
@@ -509,7 +494,7 @@ This one matters most: our map has only a 9.0 km way round between these two, so
 - **COLLECT** Tabuane Elementary School
   - ward 07 Dea, reported *In use, no data collected*
 
-**WALK TO KOENO AND RECORD IT.** About 1.7 km in a straight line.
+**WALK TO KOENO AND RECORD IT.** About 1.7 km.
 
 
 ## 38. Koeno
@@ -519,7 +504,7 @@ This one matters most: our map has only a 9.0 km way round between these two, so
 - **COLLECT** Koeno Elementary School + teacher houses
   - ward 06 Koeno, reported *In use*
 
-**WALK TO NUMBA AND RECORD IT.** About 1.5 km in a straight line.
+**WALK TO NUMBA AND RECORD IT.** About 1.5 km.
 
 
 ## 39. Numba
@@ -531,7 +516,7 @@ This one matters most: our map has only a 9.0 km way round between these two, so
 - **COLLECT** Elementary School, 2-in-1
   - ward 05 Siurani, reported *Not functioning, closed*
 
-**WALK TO SAKARINA AND RECORD IT.** About 1.7 km in a straight line.
+**WALK TO SAKARINA AND RECORD IT.** About 1.7 km.
 
 
 ## 40. Sakarina
@@ -541,7 +526,7 @@ This one matters most: our map has only a 9.0 km way round between these two, so
 - **COLLECT** Airstrip
   - ward 06 Koeno, reported *Closed 2019, lack of maintenance*
 
-**WALK TO KAURA AND RECORD IT.** About 0.9 km in a straight line.
+**WALK TO KAURA AND RECORD IT.** About 0.9 km.
 
 
 ## 41. Kaura
@@ -551,9 +536,7 @@ This one matters most: our map has only a 9.0 km way round between these two, so
 - **COLLECT** Kaura Elementary School, 1 × 2-in-1
   - ward 04 Kaura, reported *Running*
 
-**WALK TO AWARU AND RECORD IT.** About 2.2 km direct.
-
-This one matters most: our map has only a 6.0 km way round between these two, so the direct track is missing altogether.
+**WALK TO AWARU AND RECORD IT.** About 2.2 km.
 
 
 ## 42. Awaru
@@ -563,7 +546,7 @@ This one matters most: our map has only a 6.0 km way round between these two, so
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO BIOI AND RECORD IT.** About 6.6 km in a straight line.
+**WALK TO BIOI AND RECORD IT.** About 6.6 km.
 
 
 ## 43. Bioi
@@ -573,9 +556,7 @@ This one matters most: our map has only a 6.0 km way round between these two, so
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO DAREKI AND RECORD IT.** About 1.5 km direct.
-
-This one matters most: our map has only a 7.6 km way round between these two, so the direct track is missing altogether.
+**WALK TO DAREKI AND RECORD IT.** About 1.5 km.
 
 
 ## 44. Dareki
@@ -587,9 +568,7 @@ This one matters most: our map has only a 7.6 km way round between these two, so
 - **COLLECT** Dareki Aid Post
   - ward 03 Kawowoki, reported *Closed 2010*
 
-**WALK TO SIGARA AND RECORD IT.** About 6.6 km direct.
-
-This one matters most: our map has only a 33.6 km way round between these two, so the direct track is missing altogether.
+**WALK TO SIGARA AND RECORD IT.** About 6.6 km.
 
 
 ## 45. Sigara
@@ -599,9 +578,7 @@ This one matters most: our map has only a 33.6 km way round between these two, s
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO BANDERI AND RECORD IT.** About 8.8 km direct.
-
-This one matters most: our map has only a 63.0 km way round between these two, so the direct track is missing altogether.
+**WALK TO BANDERI AND RECORD IT.** About 8.8 km.
 
 
 ## 46. Banderi
@@ -614,9 +591,12 @@ This one matters most: our map has only a 63.0 km way round between these two, s
 
 ---
 
-## Legs the route did not cover
+## Only if it is easy
 
-These still need recording. Fit them in from whichever end you pass.
+The round passes both ends of these but not one after the other, so
+they are not part of the walk above. **Do not go out of your way for
+them.** If you happen to be going that way anyway, record it; if not,
+leave it for the next round.
 
 - [ ] **Dea → Siribu**, about 2.8 km — you are at stop 34 and stop 36  `F22`
 - [ ] **Kawowoki → Awaru**, about 3.1 km — you are at stop 13 and stop 42  `F41`

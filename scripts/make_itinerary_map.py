@@ -7,10 +7,10 @@ rather than recomputing it, so the numbers on the map are the numbers in the
 document. Stop 1 is Afore; the line is the order to work through, not the
 path to take, since the walking follows the tracks underneath.
 
-Every leg is recorded - Will, 16 Oct 2026: "record every track". The heavy
-solid ones are the legs we know are missing from the map; the rest are
-recorded all the same, because a second recording costs nothing and a walk
-made with the tracker off is gone.
+Every leg is recorded and every leg is drawn the same. Will, 16 Oct 2026:
+"record every track", and do not say which matter most - marking some legs
+as more valuable would have him spending a day forcing a hard one instead of
+banking the easy ones.
 """
 from pathlib import Path
 import sys
@@ -91,19 +91,12 @@ def main():
     foot.plot(ax=ax, color=FOOT, lw=0.5, linestyle=(0, (3, 2)), alpha=0.7, zorder=3)
     roads.plot(ax=ax, color="#7FA8C9", lw=1.1, alpha=0.9, zorder=4)
 
-    # the hops, job legs picked out
-    n_job = 0
+    # One style for every hop. The route used to pick out the legs we know are
+    # missing; that is a priority signal, and it was removed on purpose.
     for i in range(len(route) - 1):
-        a, b = route[i], route[i + 1]
-        is_job = frozenset((a, b)) in jobs_by_pair
-        n_job += is_job
         ax.plot([xs[i], xs[i + 1]], [ys[i], ys[i + 1]],
-                color=JOB if is_job else ROUTE,
-                lw=2.6 if is_job else 1.3,
-                alpha=0.95 if is_job else 0.65,
-                solid_capstyle="round",
-                linestyle="-" if is_job else (0, (5, 2)),
-                zorder=6 if is_job else 5)
+                color=JOB, lw=2.2, alpha=0.9, solid_capstyle="round",
+                zorder=6)
 
     # numbered stops; filled where there is something to collect. Markers are
     # fanned out of the Afore pile-up, with a hairline back to the true spot.
@@ -133,10 +126,8 @@ def main():
 
     n_collect = len([s for s in route if stops.get(s)])
     handles = [
-        Line2D([], [], color=JOB, lw=2.6,
-               label=f"Record this leg — a known gap ({n_job})"),
-        Line2D([], [], color=ROUTE, lw=1.3, linestyle=(0, (5, 2)), alpha=0.7,
-               label="Record this leg too — every leg is recorded"),
+        Line2D([], [], color=JOB, lw=2.2,
+               label=f"Walk and record — every leg ({len(route) - 1})"),
         Line2D([], [], color=ROUTE, marker="o", ms=9, ls="none", mfc=ROUTE,
                label=f"Stop with points to collect — {n_collect}"),
         Line2D([], [], color=ROUTE, marker="o", ms=9, ls="none", mfc="#FFFFFF",
@@ -199,8 +190,7 @@ def main():
     fig.savefig(OUT, dpi=200, facecolor="#FFFFFF", bbox_inches="tight")
     plt.close(fig)
     print(f"wrote {OUT}")
-    print(f"  {len(route)} stops, {len(route) - 1} legs all recorded, "
-          f"{n_job} of them known gaps")
+    print(f"  {len(route)} stops, {len(route) - 1} legs, all drawn the same")
 
 
 if __name__ == "__main__":
