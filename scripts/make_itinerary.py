@@ -281,12 +281,17 @@ def main():
     w("  and an airstrip in one village are three separate points, not one.")
     w("  Write down what you find, even if it is closed or fallen down - some of")
     w("  these were last reported forty years ago and nobody has checked since.")
-    w("- **RECORD THE WALK** - turn the tracker on when you leave and off when you")
-    w("  arrive. The route below is arranged so most of the walking is a leg we")
-    w("  need recorded anyway.")
+    w("- **RECORD THE WALK** - turn the tracker on when you leave a stop and off")
+    w("  when you reach the next one. **Every leg, every time.** Do not decide")
+    w("  which ones are worth it. A track we already have costs nothing to")
+    w("  record twice; a track we do not have is lost if you walk it with the")
+    w("  tracker off.")
     w("")
     w("If a place is not where this says, or is called something else, write that")
     w("down too. That is as useful as the point.")
+    w("")
+    w("This is the first round. It does not cover every track on the plateau -")
+    w("what is missing after this gets collated into a second round.")
     w("")
     w("---")
     w("")
@@ -297,9 +302,15 @@ def main():
     assert total_pts + len(unplaced) == len(fac_rows), (
         f"{len(fac_rows)} facilities in, {total_pts + len(unplaced)} out - "
         "a point was lost between the ward table and the route")
+    n_hops = len(route) - 1
+    n_gap = sum(1 for i in range(n_hops)
+                if frozenset((route[i], route[i + 1])) in jobs_by_pair)
     w(f"**{len(route)} stops**, {len([s for s in route if stops[s]])} of them with "
-      f"something to collect, {total_pts} points in all, and "
-      f"{len(jobs)} {'leg' if len(jobs) == 1 else 'legs'} to record along the way.")
+      f"something to collect, {total_pts} points in all.")
+    w("")
+    w(f"**All {n_hops} legs between stops get recorded.** {n_gap} of them close a "
+      "gap we already know about in the map; the rest are recorded because a "
+      "second copy costs nothing and a missed one cannot be got back.")
     w("")
     w(f"The whole round is about **{walk_km:.0f} km** of travel measured in straight "
       "lines between stops, so the real walking is more. It is not one trip; take "
@@ -337,12 +348,12 @@ def main():
                   f"About {j['straight'] or straight:.1f} km direct.")
                 if j["route"]:
                     w("")
-                    w(f"This is one of the legs we need. Our map only has a "
+                    w(f"This one matters most: our map has only a "
                       f"{j['route']:.1f} km way round between these two, so the "
-                      f"direct track is missing - that is what the recording is for.")
+                      f"direct track is missing altogether.")
             else:
-                w(f"**Walk on to {nxt}** - about {straight:.1f} km in a straight "
-                  f"line. No recording needed unless you want it.")
+                w(f"**WALK TO {nxt.upper()} AND RECORD IT.** "
+                  f"About {straight:.1f} km in a straight line.")
             w("")
         w("")
 

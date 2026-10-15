@@ -7,8 +7,10 @@ rather than recomputing it, so the numbers on the map are the numbers in the
 document. Stop 1 is Afore; the line is the order to work through, not the
 path to take, since the walking follows the tracks underneath.
 
-Legs that still need recording are drawn solid and heavy: those are the hops
-where the tracker goes on.
+Every leg is recorded - Will, 16 Oct 2026: "record every track". The heavy
+solid ones are the legs we know are missing from the map; the rest are
+recorded all the same, because a second recording costs nothing and a walk
+made with the tracker off is gone.
 """
 from pathlib import Path
 import sys
@@ -132,9 +134,9 @@ def main():
     n_collect = len([s for s in route if stops.get(s)])
     handles = [
         Line2D([], [], color=JOB, lw=2.6,
-               label=f"Walk and record this leg — {n_job} of them"),
+               label=f"Record this leg — a known gap ({n_job})"),
         Line2D([], [], color=ROUTE, lw=1.3, linestyle=(0, (5, 2)), alpha=0.7,
-               label="Travel on to the next stop"),
+               label="Record this leg too — every leg is recorded"),
         Line2D([], [], color=ROUTE, marker="o", ms=9, ls="none", mfc=ROUTE,
                label=f"Stop with points to collect — {n_collect}"),
         Line2D([], [], color=ROUTE, marker="o", ms=9, ls="none", mfc="#FFFFFF",
@@ -197,7 +199,8 @@ def main():
     fig.savefig(OUT, dpi=200, facecolor="#FFFFFF", bbox_inches="tight")
     plt.close(fig)
     print(f"wrote {OUT}")
-    print(f"  {len(route)} stops, {n_job} legs to record on the route")
+    print(f"  {len(route)} stops, {len(route) - 1} legs all recorded, "
+          f"{n_job} of them known gaps")
 
 
 if __name__ == "__main__":
