@@ -1,0 +1,85 @@
+# Schools, aid posts, health centres, airstrips and offices in the MCA wards.
+#
+# THESE ARE POINTS STILL TO BE COLLECTED - Will, 16 Oct 2026: "a second list of
+# points that need to be collected". Every row is a facility whose position the
+# team has yet to record. None of them has a coordinate here, and a village
+# position is not a substitute: a school, an aid post and an airstrip in the
+# same village are three different points. They are carried into
+# outputs/access/TODO.md as their own job list.
+#
+# Supplied as a ward-by-ward table and transcribed verbatim: ward, zone,
+# village and status are exactly as given, including "not named" where the
+# table records a facility without naming its village, and the zone
+# "Outside MCA" for ward 18 Gorobuna.
+#
+# Village spellings are the ward table's own and are NOT reconciled here to the
+# spellings in MCA_Village_Locations.csv - see place_aliases.csv for how that
+# has been handled elsewhere, and NOTES.md for which names differ. Reconciling
+# in this file would destroy the record of what was supplied.
+#
+# "2-in-1", "4-in-1", "8-in-1" are classroom blocks: one building holding that
+# many classrooms.
+ward,zone,village,facility,status
+01 Yoivi,8,Marasi,"Marasi Elementary School, 2 × 2-in-1",In use
+01 Yoivi,8,Manusi,"Manusi Elementary School, 1 × 2-in-1","In use, bush material"
+01 Yoivi,8,Yoivi,Yoivi Community Aid Post,"Newly built, no proper facilities, no regular drug supply, 2 volunteer CHWs, not registered"
+01 Yoivi,8,Yoivi,Aguido Elementary School,In use
+01 Yoivi,8,Yoivi,"Aguido Primary School, 1 × 4-in-1 classroom, 4 teacher houses","In use, bush material"
+02 Niniuri,7b,Afore Govt Station,"Afore Health Centre, clinic + 3 CHW houses",Functioning
+02 Niniuri,7b,Afore Govt Station,"Afore Elementary School, 2-in-1 classroom",Functioning
+02 Niniuri,7b,Afore Govt Station,"Afore Primary School, 2 × 2-in-1 + 6 staff houses","Functioning, needs upgrading"
+02 Niniuri,7b,Afore Govt Station,DDA Sub-District Office,"Not functioning, yet to open"
+02 Niniuri,7b,Afore Govt Station,Afore Airstrip,Closed
+03 Kawowoki,7a,Dareki,"Dareki Elementary School, 2-in-1",Functioning
+03 Kawowoki,7a,Dareki,Dareki Aid Post,Closed 2010
+03 Kawowoki,7a,Kawowoki,"Kawowoki Elementary School, 2-in-1",Functioning
+03 Kawowoki,7a,Kawowoki,Kawowoki Aid Post,Closed
+04 Kaura,6,Kaura,"Kaura Elementary School, 1 × 2-in-1",Running
+05 Siurani,6,not named,"Elementary School, 2-in-1","Not functioning, closed"
+06 Koeno,6,Koeno,Koeno Elementary School + teacher houses,In use
+06 Koeno,6,Sakarina,Airstrip,"Closed 2019, lack of maintenance"
+07 Dea,5,Dea,"Dea Elementary School, 4 classrooms, 1 teacher house",In use
+07 Dea,5,Dea,"Dea Primary School, 8 classrooms, 6 teacher houses",In use
+07 Dea,5,Tabuane,Tabuane Elementary School,"In use, no data collected"
+07 Dea,5,Ugunomo,Ugunomo Elementary School,In use
+07 Dea,5,not named,Airstrip,Closed 1988
+08 Siribu,5,Siribu,"Siribu Elementary School, 2 × 2-in-1",In use
+09 Natanga,3,Jorura,Jorura Elementary School,Semi-permanent
+09 Natanga,3,Kiara,Kiara Elementary School,Semi-permanent
+09 Natanga,3,Natanga,Natanga Elementary School,Semi-permanent
+09 Natanga,3,Natanga,Natanga Aid Post,"Non-operational, no CHW"
+10 Gora,10,not named,"Elementary School, 4-in-1 + 2 single classrooms, 4 teacher houses",In use
+10 Gora,10,not named,Primary School,In use
+10 Gora,10,not named,Aid Post + CHW house,CHW house 2024
+10 Gora,10,not named,Airstrip,"Closed 1988, to re-open"
+11 Tahama,2,Tahama,"Tahama Elementary School, 2 single classrooms, 2 teacher houses","In use, bush material"
+11 Tahama,3,Koruwo,"Koruwo Elementary School, 2-in-1, 2 teacher houses",In use
+11 Tahama,3,Koruwo,"Koruwo Primary School, 1 × 4-in-1, 2 × 2-in-1, 1 × 8-in-1, 5 teacher houses","In use, 8-in-1 incomplete"
+11 Tahama,3,Koruwo,Koruwo High School + male and female dormitories,"Started 2026, dormitories for 3rd term"
+11 Tahama,3,Koruwo,Health Centre,"Incomplete, no CHW"
+12 Umbuwara,2,Anatua 2,Anatua Elementary School,In use
+12 Umbuwara,2,Boidomo,Boidomo Elementary School,In use
+12 Umbuwara,2,Umbuwara,Umbuwara Elementary School,In use
+12 Umbuwara,2,Umbuwara,Umbuwara Primary School,Detail not recorded
+12 Umbuwara,2,not named,Aid Post building,Incomplete since 2012
+13 Kokoro,2,Kokoro,"Aid Post, moved from Serefuna 2025","Incomplete, to complete 2026, 1 officer"
+13 Kokoro,2,Serefuna,"Serefuna Elementary School, 1 × 2-in-1","Upgrade needed, bush material"
+14 Ufia,1,Itokama,Itokama Health Centre + 1 CHW house,Incomplete but in use
+14 Ufia,1,Itokama,Itokama Elementary School,Functioning
+14 Ufia,1,Itokama,"Itokama Primary School, 3 × 2-in-1, 8 teacher houses, library",In use
+14 Ufia,1,Itokama,"Itokama Airstrip, natural surface","Ceased 2023, charters only"
+14 Ufia,1,Naukanane,Naukanane Elementary School,Functioning
+14 Ufia,1,Umuate,Umuate Elementary School,Functioning
+15 Toma,9,Gewoya,Gewoya Elementary School,"Functioning, bush material"
+15 Toma,9,Gewoya,Gewoya Primary School,Functioning
+15 Toma,9,Gewoya,Gewoya Aid Post,Closed 1996
+15 Toma,9,Toma,Toma Aid Post,Closed 2002
+16 Aiari,4,Aiari,"Aiari Elementary School, EP and E1/E2 + teacher house","Running, bush material"
+16 Aiari,4,Aiari,Aid Post,Closed 1985
+16 Aiari,4,Aiari,Airstrip,Closed 1988
+17 Jaure,4,Suari,"Suari Elementary School, 2-in-1 + 1 teacher house",In use
+17 Jaure,4,Suari,Primary School,"In use, bush material"
+17 Jaure,4,Yaure,Yaure Aid Post,"Incomplete since 1984, no structure"
+17 Jaure,4,Yaure,Yaure Airstrip,Closed 2002
+18 Gorobuna,Outside MCA,not named,Elementary School,"Rundown and closed, no teacher, closed 2025, bush material"
+18 Gorobuna,Outside MCA,not named,Airstrip,"Unused since built, 2021"

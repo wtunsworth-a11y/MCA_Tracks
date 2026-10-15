@@ -1,4 +1,4 @@
-"""The job list for the field team, built from the track checklist.
+"""The job list for the field team: tracks to walk, and points to collect.
 
 outputs/access/TODO.md
 
@@ -7,17 +7,34 @@ written. This one is organised by JOB, because a route is not a unit of work:
 one missing coordinate blocks a whole route, and one short unrecorded link
 closes several routes at once. The same rows, cut the other way.
 
-Run it after cross_reference_tracks.py; it reads that script's CSV and nothing
-else, so the two can never disagree.
+Two inputs:
+
+  * cross_reference_tracks.py's CSV, for the walking;
+  * data/reference/facilities.csv, the schools, aid posts, health centres and
+    airstrips whose positions have still to be recorded.
+
+Village names are resolved through cross_reference_tracks' own loaders rather
+than a second copy of the rules here, so a name cannot mean one thing in the
+checklist and another in this list. That makes this script depend on the same
+geo stack; run it after the cross-reference, which is the order the pipeline
+runs anyway.
 """
 from pathlib import Path
 import csv
+import difflib
 import re
+import sys
 from collections import defaultdict, OrderedDict
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from cross_reference_tracks import (  # noqa: E402
+    load_places, load_aliases, load_placed, candidates, best_tier,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 CHECKLIST = ROOT / "outputs" / "access" / "track_checklist.csv"
 ALIASES = ROOT / "data" / "reference" / "place_aliases.csv"
+FACILITIES = ROOT / "data" / "reference" / "facilities.csv"
 OUT = ROOT / "outputs" / "access" / "TODO.md"
 
 # Below this, two ends are the same place to anyone standing there.
@@ -146,6 +163,97 @@ def never_walked(rows):
     return [r for r in rows if r["status"] == "missing"]
 
 
+UNNAMED = "not named"
+
+
+def suggest(village, ward, locate, known_names):
+    """A place this facility might belong to - offered as a question only.
+
+    Three tries, strongest first:
+
+      1. the village name with trailing words dropped, so "Afore Govt Station"
+         reaches Afore and "Anatua 2" reaches Anatua;
+      2. a near-spelling of a name we hold, which is what connects Boidomo to
+         Bodoimo and Umbuwara to Umbuara;
+      3. the ward name, since wards are usually named after a village in them.
+
+    Never applied silently. Umbara and Umbuara are a one-letter apart and are
+    different villages; only the field could tell us that, and the same trap is
+    waiting in half these names.
+    """
+    if village != UNNAMED:
+        words = village.split()
+        for cut in range(len(words) - 1, 0, -1):
+            stem = " ".join(words[:cut])
+            hit = locate(stem)
+            if hit:
+                return (stem, hit, "the first part of the name matches")
+
+        close = difflib.get_close_matches(village.lower(),
+                                          list(known_names), n=1, cutoff=0.82)
+        if not close:
+            letters = sorted(village.lower())
+            close = [k for k in known_names
+                     if len(k) > 4 and sorted(k) == letters]
+        if close:
+            name = known_names[close[0]]
+            hit = locate(name)
+            if hit:
+                return (name, hit, "it is a near-spelling of a name we hold")
+
+    ward_place = ward.split(" ", 1)[-1].strip()
+    hit = locate(ward_place)
+    if hit:
+        return (ward_place, hit, "the ward is named after it")
+    return None
+
+
+def facilities():
+    """The facility list, grouped by the village it is to be collected at.
+
+    Returns groups in the order the ward table gives them, each carrying
+    whether we can tell the team where to go. A village position is not the
+    facility's position - a school, an aid post and an airstrip in one village
+    are three points - but without it we cannot even send someone.
+    """
+    if not FACILITIES.exists():
+        return []
+    with FACILITIES.open() as fh:
+        rows = list(csv.DictReader(l for l in fh if not l.startswith("#")))
+
+    places, aliases = load_places(), load_aliases()
+    # Every name we could send someone to, not just the gazetteer's: the
+    # alias targets and the team's own placements carry names the gazetteer
+    # never had, and Bodoimo is one of them.
+    known_names = {n.lower(): n for n in places}
+    for a in aliases.values():
+        if a.get("to"):
+            known_names.setdefault(a["to"].lower(), a["to"])
+    for rec in load_placed().values():
+        known_names.setdefault(rec["name"].lower(), rec["name"])
+
+    def locate(name):
+        hits = best_tier(candidates(name, places, aliases))
+        return hits[0] if hits else None
+
+    groups = OrderedDict()
+    for r in rows:
+        key = (r["village"].strip(), r["ward"].strip(), r["zone"].strip())
+        groups.setdefault(key, []).append(r)
+
+    out = []
+    for (village, ward, zone), items in groups.items():
+        found = None if village == UNNAMED else locate(village)
+        guess = None
+        if not found:
+            guess = suggest(village, ward, locate, known_names)
+        out.append({
+            "village": village, "ward": ward, "zone": zone,
+            "items": items, "found": found, "guess": guess,
+        })
+    return out
+
+
 def plural(n, one, many=None):
     return one if n == 1 else (many or one + "s")
 
@@ -166,20 +274,25 @@ def main():
     L = []
     w = L.append
 
-    w("# To do - Managalas track recording")
+    n_fac = sum(len(g["items"]) for g in facilities())
+
+    w("# To do - Managalas tracks and facility points")
     w("")
-    w("Built by `scripts/make_todo.py` from `outputs/access/track_checklist.csv`.")
-    w("`TRACK_CHECKLIST.md` lists the same work route by route; this lists it job")
-    w("by job, because one missing coordinate blocks a whole route and one short")
-    w("link closes several.")
+    w("Built by `scripts/make_todo.py` from `outputs/access/track_checklist.csv`")
+    w("and `data/reference/facilities.csv`. `TRACK_CHECKLIST.md` lists the walking")
+    w("route by route; this lists everything job by job, because one missing")
+    w("coordinate blocks a whole route and one short link closes several.")
     w("")
-    w(f"Of {len(rows)} legs on the team's list: **{counts['recorded']} recorded**, "
+    w("**Two things outstanding.** The walking: "
+      f"of {len(rows)} legs on the team's list, **{counts['recorded']} recorded**, "
       f"**{counts['partial']} partly**, **{counts['missing']} not walked**, "
-      f"**{counts['unlocated']} cannot be checked** until a place is located.")
+      f"**{counts['unlocated']} cannot be checked** until a place is located. "
+      f"The points: **{n_fac} facility positions** still to collect, none of "
+      "which has a coordinate yet.")
     w("")
 
     # ---- 1. coordinates ----
-    w("## 1. Places that need a coordinate")
+    w("## 1. Places on the track list that need a coordinate")
     w("")
     w(f"**{len(unl)} {plural(len(unl), 'place')}.** Nothing else on this list is")
     w("cheaper to fix. Until each one has a position we cannot say whether its")
@@ -200,6 +313,70 @@ def main():
             w(f"  - already said: {note}")
     w("")
     n = 2
+
+    # ---- facility points ----
+    fac = facilities()
+    if fac:
+        total = sum(len(g["items"]) for g in fac)
+        blocked = [g for g in fac if not g["found"]]
+        ready = [g for g in fac if g["found"]]
+        w(f"## {n}. Facility points to collect")
+        w("")
+        w(f"**{total} points** across {len(fac)} "
+          f"{plural(len(fac), 'village')} - the second list, the schools, aid")
+        w("posts, health centres, airstrips and offices.")
+        w("")
+        w("Each facility is its own point. A school, an aid post and an airstrip")
+        w("in one village are three positions, not one, so a village coordinate")
+        w("does not cover them. Grouped by village so a single visit collects")
+        w("everything there.")
+        w("")
+        w("Record the status as found as well as the position - several of these")
+        w("were last reported closed decades ago, and the table below is what was")
+        w("said, not what is there now.")
+        w("")
+
+        if blocked:
+            n_pts = sum(len(g["items"]) for g in blocked)
+            w(f"### First: {len(blocked)} "
+              f"{plural(len(blocked), 'village')} we cannot send anyone to "
+              f"({n_pts} {plural(n_pts, 'point')})")
+            w("")
+            w("Either the ward table does not name the village, or the name is one")
+            w("we have no position for. Settle these and the points below become")
+            w("collectable on the same trip as everything else in the ward.")
+            w("")
+            for g in blocked:
+                label = (f"ward **{g['ward']}** - village not named in the table"
+                         if g["village"] == UNNAMED
+                         else f"**{g['village']}** (ward {g['ward']})")
+                w(f"- [ ] {label} — {len(g['items'])} "
+                  f"{plural(len(g['items']), 'point')}")
+                if g["guess"]:
+                    nm, hit, why = g["guess"]
+                    w(f"  - is this at **{nm}**? we hold a position for it "
+                      f"({hit.get('src', 'unknown source')}), and {why} "
+                      f"— please confirm rather than let us assume")
+                for it in g["items"]:
+                    w(f"  - {it['facility']} — *{it['status']}*")
+            w("")
+
+        if ready:
+            n_pts = sum(len(g["items"]) for g in ready)
+            w(f"### Then: {n_pts} {plural(n_pts, 'point')} at "
+              f"{len(ready)} {plural(len(ready), 'village')} we can find")
+            w("")
+            w("| village | ward | points | facilities |")
+            w("|---|---|---:|---|")
+            for g in ready:
+                shown = "; ".join(f"{it['facility']} (*{it['status']}*)"
+                                  for it in g["items"])
+                resolved = g["found"]["name"]
+                village = (g["village"] if resolved.lower() == g["village"].lower()
+                           else f"{g['village']} → {resolved}")
+                w(f"| {village} | {g['ward']} | {len(g['items'])} | {shown} |")
+            w("")
+        n += 1
 
     # ---- 3. quick wins ----
     quick = [r for r in gaps if (fnum(r["straight_km"]) or 99) <= QUICK_WIN_KM]
