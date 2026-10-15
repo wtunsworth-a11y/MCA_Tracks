@@ -259,6 +259,10 @@ def main():
         if key in seen:
             continue
         seen.add(key)
+        # Label it the way the team confirmed it, not the way the gazetteer
+        # spells it - a pin reading Kiera invites them to "correct" a name
+        # they have already settled as Kiara.
+        pn = canonical(pn, aliases)
         L.append(pin(pn, c["lon"], c["lat"],
                      f"{escape(pn)}<br/>{escape(c['src'])} — {escape(c['note'])}",
                      "known"))

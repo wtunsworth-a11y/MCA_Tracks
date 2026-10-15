@@ -223,14 +223,14 @@ This one matters most: our map has only a 15.3 km way round between these two, s
 - **COLLECT** Health Centre
   - ward 11 Tahama, reported *Incomplete, no CHW*
 
-**WALK TO KIERA AND RECORD IT.** About 3.0 km direct.
+**WALK TO KIARA AND RECORD IT.** About 3.0 km direct.
 
 This one matters most: our map has only a 9.7 km way round between these two, so the direct track is missing altogether.
 
 
-## 15. Kiera
+## 15. Kiara
 
-`-9.0959, 148.2882`  (gazetteer)
+`-9.0959, 148.2882`  (field evidence)
 
 - **COLLECT** Kiara Elementary School
   - ward 09 Natanga, reported *Semi-permanent*
@@ -620,7 +620,7 @@ These still need recording. Fit them in from whichever end you pass.
 
 - [ ] **Dea → Siribu**, about 2.8 km — you are at stop 34 and stop 36  `F22`
 - [ ] **Kawowoki → Awaru**, about 3.1 km — you are at stop 13 and stop 42  `F41`
-- [ ] **Umbuara → Kiera**, about 3.3 km — you are at stop 15 and stop 17  `F34`
+- [ ] **Umbuara → Kiara**, about 3.3 km — you are at stop 15 and stop 17  `F34`
 - [ ] **Awaru → Dareki**, about 5.1 km — you are at stop 42 and stop 44  `F07`
 - [ ] **Awaru → Sigara**, about 5.8 km — you are at stop 42 and stop 45  `F03`
 - [ ] **Semahara Tahama → Serefuna**, about 11.0 km — you are at stop 3 and stop 19  `F24`
