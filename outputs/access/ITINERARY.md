@@ -4,7 +4,7 @@ Start at **Afore**. Work down the list in order. At each stop, do what it
 says, then walk on to the next one. Finish wherever you get to - there is
 no need to come back round.
 
-**Two kinds of job.**
+**The two jobs.**
 
 - **COLLECT** - stand at the thing and save a point. A school, an aid post
   and an airstrip in one village are three separate points, not one.
@@ -15,6 +15,26 @@ no need to come back round.
   which ones are worth it. A track we already have costs nothing to
   record twice; a track we do not have is lost if you walk it with the
   tracker off.
+
+**If you cannot get into a village, skip it.**
+
+It does not matter what the reason is - permission refused, a dispute, a
+funeral, a flooded crossing, sickness, or something nobody explains. Do
+not argue it, do not wait it out, and do not go round the back. Leave,
+and pick the list up at the next number you can reach, by whatever route
+is open to you.
+
+Two things to do when that happens:
+
+- **Keep the tracker running on the way out and on to the next place.**
+  The way round is a track in its own right and probably one nobody has
+  recorded. A detour forced on you is still worth having.
+- **Write down which village you skipped and why.** A skipped village with
+  a reason is information. A skipped village with no note just looks like
+  the list was never finished, and somebody will send you back.
+
+Nothing on this list is worth a confrontation. The stops that get missed
+go into the next round.
 
 If a place is not where this says, or is called something else, write that
 down too. That is as useful as the point.
