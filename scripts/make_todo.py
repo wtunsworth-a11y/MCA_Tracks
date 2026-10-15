@@ -30,6 +30,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from cross_reference_tracks import (  # noqa: E402
     load_places, load_aliases, load_placed, candidates, best_tier,
 )
+# Where to send someone for a facility the ward table could not place. Held in
+# make_itinerary so there is one copy; both documents read it, and neither can
+# tell him something the other contradicts.
+from make_itinerary import ASK_AT  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 CHECKLIST = ROOT / "outputs" / "access" / "track_checklist.csv"
@@ -245,11 +249,21 @@ def facilities():
     for (village, ward, zone), items in groups.items():
         found = None if village == UNNAMED else locate(village)
         guess = None
+        settled = ASK_AT.get((village, ward))
+        if settled:
+            # Already answered in the field - not a question any more.
+            where, why = settled
+            found = locate(where) or found
+            items = [{**it, "settled": why} for it in items]
+            out.append({"village": village, "ward": ward, "zone": zone,
+                        "items": items, "found": found, "guess": None,
+                        "settled": (where, why)})
+            continue
         if not found:
             guess = suggest(village, ward, locate, known_names)
         out.append({
             "village": village, "ward": ward, "zone": zone,
-            "items": items, "found": found, "guess": guess,
+            "items": items, "found": found, "guess": guess, "settled": None,
         })
     return out
 
@@ -374,6 +388,8 @@ def main():
                 resolved = g["found"]["name"]
                 village = (g["village"] if resolved.lower() == g["village"].lower()
                            else f"{g['village']} → {resolved}")
+                if g["settled"]:
+                    village += f" ({g['settled'][1]})"
                 w(f"| {village} | {g['ward']} | {len(g['items'])} | {shown} |")
             w("")
         n += 1

@@ -43,83 +43,46 @@ Record the status as found as well as the position - several of these
 were last reported closed decades ago, and the table below is what was
 said, not what is there now.
 
-### First: 11 villages we cannot send anyone to (21 points)
-
-Either the ward table does not name the village, or the name is one
-we have no position for. Settle these and the points below become
-collectable on the same trip as everything else in the ward.
-
-- [ ] **Afore Govt Station** (ward 02 Niniuri) — 5 points
-  - is this at **Afore**? we hold a position for it (gazetteer), and the first part of the name matches — please confirm rather than let us assume
-  - Afore Health Centre, clinic + 3 CHW houses — *Functioning*
-  - Afore Elementary School, 2-in-1 classroom — *Functioning*
-  - Afore Primary School, 2 × 2-in-1 + 6 staff houses — *Functioning, needs upgrading*
-  - DDA Sub-District Office — *Not functioning, yet to open*
-  - Afore Airstrip — *Closed*
-- [ ] ward **05 Siurani** - village not named in the table — 1 point
-  - Elementary School, 2-in-1 — *Not functioning, closed*
-- [ ] ward **07 Dea** - village not named in the table — 1 point
-  - is this at **Dea**? we hold a position for it (gazetteer), and the ward is named after it — please confirm rather than let us assume
-  - Airstrip — *Closed 1988*
-- [ ] ward **10 Gora** - village not named in the table — 4 points
-  - is this at **Gora**? we hold a position for it (GPS-inferred), and the ward is named after it — please confirm rather than let us assume
-  - Elementary School, 4-in-1 + 2 single classrooms, 4 teacher houses — *In use*
-  - Primary School — *In use*
-  - Aid Post + CHW house — *CHW house 2024*
-  - Airstrip — *Closed 1988, to re-open*
-- [ ] **Anatua 2** (ward 12 Umbuwara) — 1 point
-  - is this at **Anatua**? we hold a position for it (GPS-inferred), and the first part of the name matches — please confirm rather than let us assume
-  - Anatua Elementary School — *In use*
-- [ ] **Boidomo** (ward 12 Umbuwara) — 1 point
-  - is this at **Bodoimo**? we hold a position for it (placed by the team), and it is a near-spelling of a name we hold — please confirm rather than let us assume
-  - Boidomo Elementary School — *In use*
-- [ ] **Umbuwara** (ward 12 Umbuwara) — 2 points
-  - is this at **Umbuara**? we hold a position for it (gazetteer), and it is a near-spelling of a name we hold — please confirm rather than let us assume
-  - Umbuwara Elementary School — *In use*
-  - Umbuwara Primary School — *Detail not recorded*
-- [ ] ward **12 Umbuwara** - village not named in the table — 1 point
-  - Aid Post building — *Incomplete since 2012*
-- [ ] **Naukanane** (ward 14 Ufia) — 1 point
-  - is this at **Naokanane**? we hold a position for it (gazetteer), and it is a near-spelling of a name we hold — please confirm rather than let us assume
-  - Naukanane Elementary School — *Functioning*
-- [ ] **Yaure** (ward 17 Jaure) — 2 points
-  - is this at **Jaure**? we hold a position for it (gazetteer), and the ward is named after it — please confirm rather than let us assume
-  - Yaure Aid Post — *Incomplete since 1984, no structure*
-  - Yaure Airstrip — *Closed 2002*
-- [ ] ward **18 Gorobuna** - village not named in the table — 2 points
-  - is this at **Gorobuna**? we hold a position for it (placed by the team), and the ward is named after it — please confirm rather than let us assume
-  - Elementary School — *Rundown and closed, no teacher, closed 2025, bush material*
-  - Airstrip — *Unused since built, 2021*
-
-### Then: 42 points at 25 villages we can find
+### Then: 63 points at 36 villages we can find
 
 | village | ward | points | facilities |
 |---|---|---:|---|
 | Marasi | 01 Yoivi | 1 | Marasi Elementary School, 2 × 2-in-1 (*In use*) |
 | Manusi | 01 Yoivi | 1 | Manusi Elementary School, 1 × 2-in-1 (*In use, bush material*) |
 | Yoivi | 01 Yoivi | 3 | Yoivi Community Aid Post (*Newly built, no proper facilities, no regular drug supply, 2 volunteer CHWs, not registered*); Aguido Elementary School (*In use*); Aguido Primary School, 1 × 4-in-1 classroom, 4 teacher houses (*In use, bush material*) |
+| Afore Govt Station → Afore (the station is slightly different to Afore village - find it from the village and give each building its own point) | 02 Niniuri | 5 | Afore Health Centre, clinic + 3 CHW houses (*Functioning*); Afore Elementary School, 2-in-1 classroom (*Functioning*); Afore Primary School, 2 × 2-in-1 + 6 staff houses (*Functioning, needs upgrading*); DDA Sub-District Office (*Not functioning, yet to open*); Afore Airstrip (*Closed*) |
 | Dareki | 03 Kawowoki | 2 | Dareki Elementary School, 2-in-1 (*Functioning*); Dareki Aid Post (*Closed 2010*) |
 | Kawowoki | 03 Kawowoki | 2 | Kawowoki Elementary School, 2-in-1 (*Functioning*); Kawowoki Aid Post (*Closed*) |
 | Kaura | 04 Kaura | 1 | Kaura Elementary School, 1 × 2-in-1 (*Running*) |
+| not named → Numba (Siurani is the old name for Numba - the school is at Numba) | 05 Siurani | 1 | Elementary School, 2-in-1 (*Not functioning, closed*) |
 | Koeno | 06 Koeno | 1 | Koeno Elementary School + teacher houses (*In use*) |
 | Sakarina | 06 Koeno | 1 | Airstrip (*Closed 2019, lack of maintenance*) |
 | Dea | 07 Dea | 2 | Dea Elementary School, 4 classrooms, 1 teacher house (*In use*); Dea Primary School, 8 classrooms, 6 teacher houses (*In use*) |
 | Tabuane | 07 Dea | 1 | Tabuane Elementary School (*In use, no data collected*) |
 | Ugunomo → Ugunomu | 07 Dea | 1 | Ugunomo Elementary School (*In use*) |
+| not named → Dea (nobody knows where this airstrip is - ask in the ward) | 07 Dea | 1 | Airstrip (*Closed 1988*) |
 | Siribu | 08 Siribu | 1 | Siribu Elementary School, 2 × 2-in-1 (*In use*) |
 | Jorura → Jorua | 09 Natanga | 1 | Jorura Elementary School (*Semi-permanent*) |
 | Kiara → Kiera | 09 Natanga | 1 | Kiara Elementary School (*Semi-permanent*) |
 | Natanga | 09 Natanga | 2 | Natanga Elementary School (*Semi-permanent*); Natanga Aid Post (*Non-operational, no CHW*) |
+| not named → Gora (Gora is one village with three hamlets, sometimes called villages, all close together - write down which hamlet each one is in) | 10 Gora | 4 | Elementary School, 4-in-1 + 2 single classrooms, 4 teacher houses (*In use*); Primary School (*In use*); Aid Post + CHW house (*CHW house 2024*); Airstrip (*Closed 1988, to re-open*) |
 | Tahama → Semahara Tahama | 11 Tahama | 1 | Tahama Elementary School, 2 single classrooms, 2 teacher houses (*In use, bush material*) |
 | Koruwo | 11 Tahama | 4 | Koruwo Elementary School, 2-in-1, 2 teacher houses (*In use*); Koruwo Primary School, 1 × 4-in-1, 2 × 2-in-1, 1 × 8-in-1, 5 teacher houses (*In use, 8-in-1 incomplete*); Koruwo High School + male and female dormitories (*Started 2026, dormitories for 3rd term*); Health Centre (*Incomplete, no CHW*) |
+| Anatua 2 → Anatua (Anatua is a long village and they have defined Anatua 1 and Anatua 2 - map both ends, not one point) | 12 Umbuwara | 1 | Anatua Elementary School (*In use*) |
+| Boidomo → Bodoimo | 12 Umbuwara | 1 | Boidomo Elementary School (*In use*) |
+| Umbuwara → Umbuara | 12 Umbuwara | 2 | Umbuwara Elementary School (*In use*); Umbuwara Primary School (*Detail not recorded*) |
+| not named → Umbuara (the ward table does not say where this aid post is - ask locally) | 12 Umbuwara | 1 | Aid Post building (*Incomplete since 2012*) |
 | Kokoro | 13 Kokoro | 1 | Aid Post, moved from Serefuna 2025 (*Incomplete, to complete 2026, 1 officer*) |
 | Serefuna | 13 Kokoro | 1 | Serefuna Elementary School, 1 × 2-in-1 (*Upgrade needed, bush material*) |
 | Itokama | 14 Ufia | 4 | Itokama Health Centre + 1 CHW house (*Incomplete but in use*); Itokama Elementary School (*Functioning*); Itokama Primary School, 3 × 2-in-1, 8 teacher houses, library (*In use*); Itokama Airstrip, natural surface (*Ceased 2023, charters only*) |
+| Naukanane → Naokanane | 14 Ufia | 1 | Naukanane Elementary School (*Functioning*) |
 | Umuate | 14 Ufia | 1 | Umuate Elementary School (*Functioning*) |
 | Gewoya | 15 Toma | 3 | Gewoya Elementary School (*Functioning, bush material*); Gewoya Primary School (*Functioning*); Gewoya Aid Post (*Closed 1996*) |
 | Toma | 15 Toma | 1 | Toma Aid Post (*Closed 2002*) |
 | Aiari | 16 Aiari | 3 | Aiari Elementary School, EP and E1/E2 + teacher house (*Running, bush material*); Aid Post (*Closed 1985*); Airstrip (*Closed 1988*) |
 | Suari | 17 Jaure | 2 | Suari Elementary School, 2-in-1 + 1 teacher house (*In use*); Primary School (*In use, bush material*) |
+| Yaure → Jaure | 17 Jaure | 2 | Yaure Aid Post (*Incomplete since 1984, no structure*); Yaure Airstrip (*Closed 2002*) |
+| not named → Gorobuna (outside the conservation area, but Will kept it in scope - do it) | 18 Gorobuna | 2 | Elementary School (*Rundown and closed, no teacher, closed 2025, bush material*); Airstrip (*Unused since built, 2021*) |
 
 ## 3. Short links worth walking first
 
