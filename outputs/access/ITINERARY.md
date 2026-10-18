@@ -615,7 +615,6 @@ No position for this at all. If anyone knows where it is, a village name and a r
 - [ ] **Aputuara** — on the track list in F04
 - [ ] **Umasi** — on the track list in F17
 - [ ] **Vovosik** — on the track list in F44
-- [ ] **Damara** — on the track list in F47
 
 ---
 

@@ -5,11 +5,11 @@ and `data/reference/facilities.csv`. `TRACK_CHECKLIST.md` lists the walking
 route by route; this lists everything job by job, because one missing
 coordinate blocks a whole route and one short link closes several.
 
-**Two things outstanding.** The walking: of 110 legs on the team's list, **57 recorded**, **36 partly**, **9 not walked**, **8 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
+**Two things outstanding.** The walking: of 110 legs on the team's list, **58 recorded**, **36 partly**, **9 not walked**, **7 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
 
 ## 1. Places on the track list that need a coordinate
 
-**5 places.** Nothing else on this list is
+**4 places.** Nothing else on this list is
 cheaper to fix. Until each one has a position we cannot say whether its
 route has been walked or not - it is not missing, it is unknown.
 
@@ -26,8 +26,6 @@ or just say which known place it is near and how far.
   - already said: 'This looks like a contraction of Emo River. Not here and not inside MCA.' Consistent with Tedebedi, placed 2 km from the Emo River airstrip at 148.04 - F29 runs off the plateau to the west. Needs a position if the route is wanted
 - [ ] **Vovosik** — blocks `F44` (Jaura-Vovosik-Kwikila)
   - on the list between: Jaura, Kwikila
-- [ ] **Damara** — blocks `F47` (Damara-Bua)
-  - on the list between: Bua
 
 ## 2. Facility points to collect
 

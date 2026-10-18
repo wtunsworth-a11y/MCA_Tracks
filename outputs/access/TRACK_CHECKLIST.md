@@ -16,10 +16,10 @@ recordings in hand carry no route name at all.
 | `[ ]` | not recorded | walk it |
 | `[?]` | place not located | tell us roughly where it is, then walk it |
 
-- [x] **57** of 110 legs recorded
+- [x] **58** of 110 legs recorded
 - [~] **36** of 110 legs partial
 - [ ] **9** of 110 legs missing
-- [?] **8** of 110 legs unlocated
+- [?] **7** of 110 legs unlocated
 
 ## Foot tracks
 
@@ -46,7 +46,7 @@ recordings in hand carry no route name at all.
   - [ ] Singata → Gorobuna: neither end on the network (1.1 km and 7.0 km off)
   - [ ] Gorobuna → Asafa: neither end on the network (7.0 km and 15.2 km off)
 
-### Cannot be checked until the place is located (5)
+### Cannot be checked until the place is located (4)
 
 - [?] **Numba-Aputuara - Banderi**  `F04`
   - [?] Numba → Aputuara: no position for Aputuara
@@ -61,8 +61,6 @@ recordings in hand carry no route name at all.
 - [?] **Jaura-Vovosik-Kwikila**  `F44` — **80 km end to end: a multi-day walk**
   - [?] Jaura → Vovosik: no position for Vovosik
   - [?] Vovosik → Kwikila: no position for Vovosik
-- [?] **Damara-Bua**  `F47`
-  - [?] Damara → Bua: no position for Damara
 
 ### Partly recorded (22)
 
@@ -116,7 +114,7 @@ recordings in hand carry no route name at all.
 - [~] **Singata-Gora**  `F62`
   - [~] Singata → Gora: Gora end is on the network, Singata is 1.1 km off it
 
-### Recorded (29)
+### Recorded (30)
 
 - [x] **Koruwo-Umbuara-Anatua1-Anatua2**  `F01`
   - [x] Koruwo → Umbuara: routes in 6.6 km vs 4.5 km straight
@@ -148,6 +146,7 @@ recordings in hand carry no route name at all.
 - [x] **Simion's place- Niniri Village (Main)**  `F40`
 - [x] **Kuhene-Umbara**  `F45`
 - [x] **Yoivi-Marasi**  `F46`
+- [x] **Damara-Bua**  `F47`
 - [x] **Semahara-Kueno**  `F48`
 - [x] **Bareji-Toma**  `F50`
 - [x] **Sila-Avararu**  `F51`
@@ -211,7 +210,7 @@ recordings in hand carry no route name at all.
 
 ## Places we hold no position for
 
-These 5 names appear in the list and in nothing we hold - not the
+These 4 names appear in the list and in nothing we hold - not the
 village gazetteer, not the GPS recordings. A rough latitude/longitude, or
 even "two hours' walk east of X", is enough to put each route on the map
 and say whether it still needs walking.
@@ -219,7 +218,6 @@ and say whether it still needs walking.
 | place | appears in | note |
 |---|---|---|
 | Aputuara | F04 |  |
-| Damara | F47 |  |
 | Emoriva | F29 | 'This looks like a contraction of Emo River. Not here and not inside MCA.' Consistent with Tedebedi, placed 2 km from the Emo River airstrip at 148.04 - F29 runs off the plateau to the west. Needs a position if the route is wanted |
 | Umasi | F17 |  |
 | Vovosik | F44 |  |
