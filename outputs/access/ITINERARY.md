@@ -265,6 +265,8 @@ The whole round is about **241 km** of travel measured in straight lines between
 
 `-9.1403, 148.2655`  (GPS-inferred)
 
+> **Anatua is a long village with Anatua 1 and Anatua 2 defined. Map both ends, not one point.**
+
 > **Anatua is a long village and they have defined Anatua 1 and Anatua 2 - map both ends, not one point.**
 
 - **COLLECT** Anatua Elementary School
@@ -286,6 +288,8 @@ The whole round is about **241 km** of travel measured in straight lines between
 ## 20. Kokoro
 
 `-9.1667, 148.2715`  (placed by the team)
+
+> **Kokoro is at least four hamlets - Namieta, Maragane, Jakiro and Buangfu (Buamfu), spread over about a kilometre and a half. Write down which hamlet the aid post is actually in.**
 
 - **COLLECT** Aid Post, moved from Serefuna 2025
   - ward 13 Kokoro, reported *Incomplete, to complete 2026, 1 officer*

@@ -81,6 +81,18 @@ ASK_AT = {
         "outside the conservation area, but Will kept it in scope - do it"),
 }
 
+# A word at a stop where the place is not one place. These are field facts
+# that change what someone should do when they get there, not commentary.
+STOP_NOTES = {
+    "Kokoro": (
+        "Kokoro is at least four hamlets - Namieta, Maragane, Jakiro and "
+        "Buangfu (Buamfu), spread over about a kilometre and a half. Write "
+        "down which hamlet the aid post is actually in."),
+    "Anatua": (
+        "Anatua is a long village with Anatua 1 and Anatua 2 defined. Map "
+        "both ends, not one point."),
+}
+
 # Places on the track list with no position at all. He cannot be routed to
 # them; he can ask about them wherever he is.
 UNLOCATED_NOTE = (
@@ -355,6 +367,10 @@ def main():
             w(f"`{hit['lat']:.4f}, {hit['lon']:.4f}`  ({hit.get('src', 'position')})")
             w("")
         items = stops.get(name, [])
+        standing = STOP_NOTES.get(name)
+        if standing:
+            w(f"> **{standing}**")
+            w("")
         if items:
             for note in dict.fromkeys(it["ask"] for it in items if it["ask"]):
                 w(f"> **{note[0].upper()}{note[1:]}.**")
