@@ -69,7 +69,9 @@ ASK_AT = {
         "the ward table does not say where this aid post is - ask locally"),
     ("not named", "05 Siurani"): (
         "Numba",
-        "Siurani is the old name for Numba - the school is at Numba"),
+        "Siurani is the old name of the village that came before Numba. Try "
+        "the NORTHERN end of Numba first - that end is nearest the old site "
+        "and is still called Sivurana by some"),
     ("not named", "10 Gora"): (
         "Gora",
         "Gora is one village with three hamlets, sometimes called villages, "

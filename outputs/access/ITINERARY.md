@@ -511,7 +511,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 
 `-9.0511, 148.3655`  (gazetteer)
 
-> **Siurani is the old name for Numba - the school is at Numba.**
+> **Siurani is the old name of the village that came before Numba. Try the NORTHERN end of Numba first - that end is nearest the old site and is still called Sivurana by some.**
 
 - **COLLECT** Elementary School, 2-in-1
   - ward 05 Siurani, reported *Not functioning, closed*

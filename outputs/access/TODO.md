@@ -52,7 +52,7 @@ said, not what is there now.
 | Dareki | 03 Kawowoki | 2 | Dareki Elementary School, 2-in-1 (*Functioning*); Dareki Aid Post (*Closed 2010*) |
 | Kawowoki | 03 Kawowoki | 2 | Kawowoki Elementary School, 2-in-1 (*Functioning*); Kawowoki Aid Post (*Closed*) |
 | Kaura | 04 Kaura | 1 | Kaura Elementary School, 1 × 2-in-1 (*Running*) |
-| not named → Numba (Siurani is the old name for Numba - the school is at Numba) | 05 Siurani | 1 | Elementary School, 2-in-1 (*Not functioning, closed*) |
+| not named → Numba (Siurani is the old name of the village that came before Numba. Try the NORTHERN end of Numba first - that end is nearest the old site and is still called Sivurana by some) | 05 Siurani | 1 | Elementary School, 2-in-1 (*Not functioning, closed*) |
 | Koeno | 06 Koeno | 1 | Koeno Elementary School + teacher houses (*In use*) |
 | Sakarina | 06 Koeno | 1 | Airstrip (*Closed 2019, lack of maintenance*) |
 | Dea | 07 Dea | 2 | Dea Elementary School, 4 classrooms, 1 teacher house (*In use*); Dea Primary School, 8 classrooms, 6 teacher houses (*In use*) |
