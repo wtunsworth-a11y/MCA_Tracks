@@ -209,21 +209,34 @@ def bridge_gaps(G, max_gap_m=450.0):
     for ci, c in enumerate(nx.connected_components(G)):
         for n in c:
             comp[n] = ci
-    n_bridge, total = 0, 0.0
+    # Shortest gaps first. Taking pairs in whatever order the index returned
+    # them made the result depend on how many recordings happened to be in the
+    # folder: adding six tracks in Oct 2026 re-shuffled which bridges were
+    # chosen and sent Afore-Toma from an 11.1 km route to a 26.6 km one, with
+    # no track lost. A 50 m gap is far likelier to be the real continuation
+    # than a 440 m one, so sorting by length is both stabler and better.
+    candidates = []
     for i, a in enumerate(ends):
         for j in tree.query_ball_point(arr[i], max_gap_m):
-            b = ends[j]
-            if a == b or comp.get(a) == comp.get(b):
+            if j <= i:
                 continue
             d = float(np.hypot(arr[i][0] - arr[j][0], arr[i][1] - arr[j][1]))
-            G.add_edge(a, b, weight=d, bridged=True)
-            # merge the two components so the next pair is judged correctly
-            ca, cb = comp[a], comp[b]
-            for k, vcomp in comp.items():
-                if vcomp == cb:
-                    comp[k] = ca
-            n_bridge += 1
-            total += d
+            candidates.append((d, i, j))
+    candidates.sort()
+
+    n_bridge, total = 0, 0.0
+    for d, i, j in candidates:
+        a, b = ends[i], ends[j]
+        if comp.get(a) == comp.get(b):
+            continue
+        G.add_edge(a, b, weight=d, bridged=True)
+        # merge the two components so the next pair is judged correctly
+        ca, cb = comp[a], comp[b]
+        for k, vcomp in comp.items():
+            if vcomp == cb:
+                comp[k] = ca
+        n_bridge += 1
+        total += d
     return n_bridge, total
 
 

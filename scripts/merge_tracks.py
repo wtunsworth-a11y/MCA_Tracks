@@ -454,6 +454,21 @@ def main():
     # filenames — identical geometry, only the export timestamp differs. Keep
     # one copy so lengths do not double-count, but say what was dropped.
     tracks["_geom_key"] = tracks.geometry.to_wkb().map(hash)
+
+    # Which copy survives matters for provenance. Kaura_to_Koeno_2025-12-09 and
+    # Kaura_to_Kuhara_2025-12-09 are the same 424 points, and the file called
+    # Koeno carries a track whose own name says Kuhara - it is the mis-export.
+    # Keeping whichever happened to be read first kept the misnamed one, so
+    # prefer the copy whose FILENAME agrees with the track name inside it.
+    def _self_consistent(row):
+        import difflib
+        stem = re.sub(r"[^a-z]+", " ", Path(str(row["source_file"])).stem.lower())
+        name = re.sub(r"[^a-z]+", " ", str(row["name"]).lower())
+        return -difflib.SequenceMatcher(None, stem, name).ratio()
+
+    tracks = (tracks.assign(_agree=tracks.apply(_self_consistent, axis=1))
+                    .sort_values("_agree", kind="stable")
+                    .drop(columns="_agree"))
     dupe_keys = tracks["_geom_key"].duplicated(keep=False)
     if dupe_keys.any():
         print("\nDUPLICATE GEOMETRY — identical tracks found in more than one file:")

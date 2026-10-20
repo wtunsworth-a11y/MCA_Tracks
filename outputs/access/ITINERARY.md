@@ -53,9 +53,9 @@ what is missing after this gets collated into a second round.
 
 ---
 
-**46 stops**, 34 of them with something to collect, 63 points in all.
+**47 stops**, 34 of them with something to collect, 63 points in all.
 
-**All 45 legs between stops get recorded.** They all count the same. Do not try to work out which ones are worth more.
+**All 46 legs between stops get recorded.** They all count the same. Do not try to work out which ones are worth more.
 
 The whole round is about **241 km** of travel measured in straight lines between stops, so the real walking is more. It is not one trip; take it in whatever pieces suit, in this order.
 
@@ -106,20 +106,54 @@ The whole round is about **241 km** of travel measured in straight lines between
 - **COLLECT** Toma Aid Post
   - ward 15 Toma, reported *Closed 2002*
 
-**WALK TO BIRIRI AND RECORD IT.** About 4.3 km.
+**WALK TO BAREJI AND RECORD IT.** About 3.9 km.
 
 
-## 5. Biriri
+## 5. Bareji
 
-`-9.2121, 148.4398`  (gazetteer)
+`-9.1838, 148.3775`  (GPS-inferred)
 
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO GEWOYA AND RECORD IT.** About 6.6 km.
+**WALK TO MANUSI AND RECORD IT.** About 7.9 km.
 
 
-## 6. Gewoya
+## 6. Manusi
+
+`-9.1309, 148.4258`  (gazetteer)
+
+- **COLLECT** Manusi Elementary School, 1 × 2-in-1
+  - ward 01 Yoivi, reported *In use, bush material*
+
+**WALK TO MARASI AND RECORD IT.** About 0.4 km.
+
+
+## 7. Marasi
+
+`-9.1307, 148.4298`  (gazetteer)
+
+- **COLLECT** Marasi Elementary School, 2 × 2-in-1
+  - ward 01 Yoivi, reported *In use*
+
+**WALK TO YOIVI AND RECORD IT.** About 2.4 km.
+
+
+## 8. Yoivi
+
+`-9.1391, 148.4500`  (field evidence)
+
+- **COLLECT** Yoivi Community Aid Post
+  - ward 01 Yoivi, reported *Newly built, no proper facilities, no regular drug supply, 2 volunteer CHWs, not registered*
+- **COLLECT** Aguido Elementary School
+  - ward 01 Yoivi, reported *In use*
+- **COLLECT** Aguido Primary School, 1 × 4-in-1 classroom, 4 teacher houses
+  - ward 01 Yoivi, reported *In use, bush material*
+
+**WALK TO GEWOYA AND RECORD IT.** About 10.5 km.
+
+
+## 9. Gewoya
 
 `-9.2206, 148.4992`  (gazetteer)
 
@@ -133,7 +167,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO WAYEI AND RECORD IT.** About 13.4 km.
 
 
-## 7. Wayei
+## 10. Wayei
 
 `-9.1143, 148.5582`  (placed by the team)
 
@@ -143,51 +177,39 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO OMBARA AND RECORD IT.** About 10.2 km.
 
 
-## 8. Ombara
+## 11. Ombara
 
 `-9.1151, 148.4682`  (GPS-inferred)
 
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO YOIVI AND RECORD IT.** About 3.3 km.
+**WALK TO BIOI AND RECORD IT.** About 2.8 km.
 
 
-## 9. Yoivi
+## 12. Bioi
 
-`-9.1391, 148.4500`  (field evidence)
+`-9.1066, 148.4446`  (GPS-inferred)
 
-- **COLLECT** Yoivi Community Aid Post
-  - ward 01 Yoivi, reported *Newly built, no proper facilities, no regular drug supply, 2 volunteer CHWs, not registered*
-- **COLLECT** Aguido Elementary School
-  - ward 01 Yoivi, reported *In use*
-- **COLLECT** Aguido Primary School, 1 × 4-in-1 classroom, 4 teacher houses
-  - ward 01 Yoivi, reported *In use, bush material*
+- Nothing to collect here - this stop is on the way, or is one end
+  of a walk that needs recording.
 
-**WALK TO MARASI AND RECORD IT.** About 2.4 km.
+**WALK TO DAREKI AND RECORD IT.** About 1.5 km.
 
 
-## 10. Marasi
+## 13. Dareki
 
-`-9.1307, 148.4298`  (gazetteer)
+`-9.1002, 148.4323`  (gazetteer)
 
-- **COLLECT** Marasi Elementary School, 2 × 2-in-1
-  - ward 01 Yoivi, reported *In use*
+- **COLLECT** Dareki Elementary School, 2-in-1
+  - ward 03 Kawowoki, reported *Functioning*
+- **COLLECT** Dareki Aid Post
+  - ward 03 Kawowoki, reported *Closed 2010*
 
-**WALK TO MANUSI AND RECORD IT.** About 0.4 km.
-
-
-## 11. Manusi
-
-`-9.1309, 148.4258`  (gazetteer)
-
-- **COLLECT** Manusi Elementary School, 1 × 2-in-1
-  - ward 01 Yoivi, reported *In use, bush material*
-
-**WALK TO NINIURI AND RECORD IT.** About 1.3 km.
+**WALK TO NINIURI AND RECORD IT.** About 3.7 km.
 
 
-## 12. Niniuri
+## 14. Niniuri
 
 `-9.1285, 148.4143`  (placed by the team)
 
@@ -197,7 +219,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO KAWOWOKI AND RECORD IT.** About 3.9 km.
 
 
-## 13. Kawowoki
+## 15. Kawowoki
 
 `-9.1010, 148.3927`  (placed by the team)
 
@@ -209,7 +231,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO KORUWO AND RECORD IT.** About 8.9 km.
 
 
-## 14. Koruwo
+## 16. Koruwo
 
 `-9.1099, 148.3122`  (gazetteer)
 
@@ -225,7 +247,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO KIARA AND RECORD IT.** About 3.0 km.
 
 
-## 15. Kiara
+## 17. Kiara
 
 `-9.0959, 148.2882`  (field evidence)
 
@@ -235,7 +257,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO BODOIMO AND RECORD IT.** About 2.2 km.
 
 
-## 16. Bodoimo
+## 18. Bodoimo
 
 `-9.1154, 148.2861`  (placed by the team)
 
@@ -245,7 +267,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO UMBUARA AND RECORD IT.** About 1.6 km.
 
 
-## 17. Umbuara
+## 19. Umbuara
 
 `-9.1215, 148.2731`  (gazetteer)
 
@@ -258,12 +280,22 @@ The whole round is about **241 km** of travel measured in straight lines between
 - **COLLECT** Aid Post building
   - ward 12 Umbuwara, reported *Incomplete since 2012*
 
-**WALK TO ANATUA AND RECORD IT.** About 2.2 km.
+**WALK TO SINGATA AND RECORD IT.** About 1.8 km.
 
 
-## 18. Anatua
+## 20. Singata
 
-`-9.1403, 148.2655`  (GPS-inferred)
+`-9.1279, 148.2584`  (placed by the team)
+
+- Nothing to collect here - this stop is on the way, or is one end
+  of a walk that needs recording.
+
+**WALK TO ANATUA AND RECORD IT.** About 1.5 km.
+
+
+## 21. Anatua
+
+`-9.1400, 148.2654`  (GPS-inferred)
 
 > **Anatua is a long village with Anatua 1 and Anatua 2 defined. Map both ends, not one point.**
 
@@ -272,10 +304,10 @@ The whole round is about **241 km** of travel measured in straight lines between
 - **COLLECT** Anatua Elementary School
   - ward 12 Umbuwara, reported *In use*
 
-**WALK TO SEREFUNA AND RECORD IT.** About 1.9 km.
+**WALK TO SEREFUNA AND RECORD IT.** About 2.0 km.
 
 
-## 19. Serefuna
+## 22. Serefuna
 
 `-9.1560, 148.2731`  (gazetteer)
 
@@ -285,7 +317,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO KOKORO AND RECORD IT.** About 1.2 km.
 
 
-## 20. Kokoro
+## 23. Kokoro
 
 `-9.1667, 148.2715`  (placed by the team)
 
@@ -294,10 +326,20 @@ The whole round is about **241 km** of travel measured in straight lines between
 - **COLLECT** Aid Post, moved from Serefuna 2025
   - ward 13 Kokoro, reported *Incomplete, to complete 2026, 1 officer*
 
-**WALK TO ITOKAMA AND RECORD IT.** About 3.7 km.
+**WALK TO KWAE AND RECORD IT.** About 3.3 km.
 
 
-## 21. Itokama
+## 24. Kwae
+
+`-9.1950, 148.2609`  (gazetteer)
+
+- Nothing to collect here - this stop is on the way, or is one end
+  of a walk that needs recording.
+
+**WALK TO ITOKAMA AND RECORD IT.** About 0.8 km.
+
+
+## 25. Itokama
 
 `-9.1999, 148.2660`  (gazetteer)
 
@@ -313,7 +355,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO NAOKANANE AND RECORD IT.** About 1.2 km.
 
 
-## 22. Naokanane
+## 26. Naokanane
 
 `-9.2106, 148.2657`  (gazetteer)
 
@@ -323,7 +365,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO UMUATE AND RECORD IT.** About 6.7 km.
 
 
-## 23. Umuate
+## 27. Umuate
 
 `-9.2637, 148.2370`  (field evidence)
 
@@ -333,7 +375,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO AIARI AND RECORD IT.** About 9.8 km.
 
 
-## 24. Aiari
+## 28. Aiari
 
 `-9.3497, 148.2172`  (gazetteer)
 
@@ -347,7 +389,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO SUARI AND RECORD IT.** About 5.2 km.
 
 
-## 25. Suari
+## 29. Suari
 
 `-9.3664, 148.1733`  (placed by the team)
 
@@ -359,7 +401,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO JAURE AND RECORD IT.** About 10.5 km.
 
 
-## 26. Jaure
+## 30. Jaure
 
 `-9.2754, 148.1452`  (gazetteer)
 
@@ -368,20 +410,10 @@ The whole round is about **241 km** of travel measured in straight lines between
 - **COLLECT** Yaure Airstrip
   - ward 17 Jaure, reported *Closed 2002*
 
-**WALK TO SINGATA AND RECORD IT.** About 20.5 km.
+**WALK TO GOROBUNA AND RECORD IT.** About 23.6 km.
 
 
-## 27. Singata
-
-`-9.1279, 148.2584`  (placed by the team)
-
-- Nothing to collect here - this stop is on the way, or is one end
-  of a walk that needs recording.
-
-**WALK TO GOROBUNA AND RECORD IT.** About 10.2 km.
-
-
-## 28. Gorobuna
+## 31. Gorobuna
 
 `-9.0662, 148.1895`  (placed by the team)
 
@@ -395,7 +427,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO ASAFA AND RECORD IT.** About 13.4 km.
 
 
-## 29. Asafa
+## 32. Asafa
 
 `-8.9768, 148.1070`  (field evidence)
 
@@ -405,7 +437,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO SAIROPE AND RECORD IT.** About 9.2 km.
 
 
-## 30. Sairope
+## 33. Sairope
 
 `-8.9213, 148.0440`  (field evidence)
 
@@ -415,7 +447,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO GORA AND RECORD IT.** About 23.6 km.
 
 
-## 31. Gora
+## 34. Gora
 
 `-9.0022, 148.2426`  (GPS-inferred)
 
@@ -433,7 +465,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO NATANGA AND RECORD IT.** About 9.2 km.
 
 
-## 32. Natanga
+## 35. Natanga
 
 `-9.0702, 148.2911`  (gazetteer)
 
@@ -445,7 +477,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO JORUA AND RECORD IT.** About 2.4 km.
 
 
-## 33. Jorua
+## 36. Jorua
 
 `-9.0872, 148.3045`  (gazetteer)
 
@@ -455,7 +487,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO SIRIBU AND RECORD IT.** About 1.9 km.
 
 
-## 34. Siribu
+## 37. Siribu
 
 `-9.0911, 148.3212`  (gazetteer)
 
@@ -465,7 +497,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO UGUNOMU AND RECORD IT.** About 3.1 km.
 
 
-## 35. Ugunomu
+## 38. Ugunomu
 
 `-9.0631, 148.3179`  (gazetteer)
 
@@ -475,7 +507,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO DEA AND RECORD IT.** About 1.4 km.
 
 
-## 36. Dea
+## 39. Dea
 
 `-9.0672, 148.3297`  (gazetteer)
 
@@ -491,27 +523,27 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO TABUANE AND RECORD IT.** About 1.2 km.
 
 
-## 37. Tabuane
+## 40. Tabuane
 
 `-9.0647, 148.3403`  (gazetteer)
 
 - **COLLECT** Tabuane Elementary School
   - ward 07 Dea, reported *In use, no data collected*
 
-**WALK TO KOENO AND RECORD IT.** About 1.7 km.
+**WALK TO KOENO AND RECORD IT.** About 1.9 km.
 
 
-## 38. Koeno
+## 41. Koeno
 
-`-9.0562, 148.3528`  (GPS-inferred)
+`-9.0540, 148.3544`  (GPS-inferred)
 
 - **COLLECT** Koeno Elementary School + teacher houses
   - ward 06 Koeno, reported *In use*
 
-**WALK TO NUMBA AND RECORD IT.** About 1.5 km.
+**WALK TO NUMBA AND RECORD IT.** About 1.3 km.
 
 
-## 39. Numba
+## 42. Numba
 
 `-9.0511, 148.3655`  (gazetteer)
 
@@ -523,7 +555,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO SAKARINA AND RECORD IT.** About 1.7 km.
 
 
-## 40. Sakarina
+## 43. Sakarina
 
 `-9.0658, 148.3699`  (gazetteer)
 
@@ -533,7 +565,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO KAURA AND RECORD IT.** About 0.9 km.
 
 
-## 41. Kaura
+## 44. Kaura
 
 `-9.0633, 148.3775`  (gazetteer)
 
@@ -543,39 +575,17 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO AWARU AND RECORD IT.** About 2.2 km.
 
 
-## 42. Awaru
+## 45. Awaru
 
 `-9.0732, 148.3951`  (GPS-inferred)
 
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO BIOI AND RECORD IT.** About 6.6 km.
+**WALK TO SIGARA AND RECORD IT.** About 5.8 km.
 
 
-## 43. Bioi
-
-`-9.1066, 148.4446`  (GPS-inferred)
-
-- Nothing to collect here - this stop is on the way, or is one end
-  of a walk that needs recording.
-
-**WALK TO DAREKI AND RECORD IT.** About 1.5 km.
-
-
-## 44. Dareki
-
-`-9.1002, 148.4323`  (gazetteer)
-
-- **COLLECT** Dareki Elementary School, 2-in-1
-  - ward 03 Kawowoki, reported *Functioning*
-- **COLLECT** Dareki Aid Post
-  - ward 03 Kawowoki, reported *Closed 2010*
-
-**WALK TO SIGARA AND RECORD IT.** About 6.6 km.
-
-
-## 45. Sigara
+## 46. Sigara
 
 `-9.0411, 148.4374`  (field evidence)
 
@@ -585,7 +595,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 **WALK TO BANDERI AND RECORD IT.** About 8.8 km.
 
 
-## 46. Banderi
+## 47. Banderi
 
 `-8.9633, 148.4551`  (placed by the team)
 
@@ -602,13 +612,16 @@ they are not part of the walk above. **Do not go out of your way for
 them.** If you happen to be going that way anyway, record it; if not,
 leave it for the next round.
 
-- [ ] **Dea → Siribu**, about 2.8 km — you are at stop 34 and stop 36  `F22`
-- [ ] **Kawowoki → Awaru**, about 3.1 km — you are at stop 13 and stop 42  `F41`
-- [ ] **Umbuara → Kiara**, about 3.3 km — you are at stop 15 and stop 17  `F34`
-- [ ] **Awaru → Dareki**, about 5.1 km — you are at stop 42 and stop 44  `F07`
-- [ ] **Awaru → Sigara**, about 5.8 km — you are at stop 42 and stop 45  `F03`
-- [ ] **Semahara Tahama → Serefuna**, about 11.0 km — you are at stop 3 and stop 19  `F24`
-- [ ] **Toma → Itokama**, about 14.8 km — you are at stop 4 and stop 21  `F13`
+- [ ] **Dea → Siribu**, about 2.8 km — you are at stop 37 and stop 39  `F22`
+- [ ] **Kawowoki → Awaru**, about 3.1 km — you are at stop 15 and stop 45  `F41`
+- [ ] **Umbuara → Kiara**, about 3.3 km — you are at stop 17 and stop 19  `F34`
+- [ ] **Dareki → Kawowoki**, about 4.3 km — you are at stop 13 and stop 15  `F06`
+- [ ] **Awaru → Dareki**, about 5.1 km — you are at stop 13 and stop 45  `F07`
+- [ ] **Dareki → Sigara**, about 6.6 km — you are at stop 13 and stop 46  `F05`
+- [ ] **Afore → Toma**, about 7.6 km — you are at stop 1 and stop 4  `F25`
+- [ ] **Semahara Tahama → Serefuna**, about 11.0 km — you are at stop 3 and stop 22  `F24`
+- [ ] **Singata → Gora**, about 14.0 km — you are at stop 20 and stop 34  `F62`
+- [ ] **Toma → Itokama**, about 14.8 km — you are at stop 4 and stop 25  `F13`
 
 ---
 
