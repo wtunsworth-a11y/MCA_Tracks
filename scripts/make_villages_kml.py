@@ -109,23 +109,33 @@ def collect():
             best[key] = dict(name=name, lon=float(lon), lat=float(lat),
                              src=src, note=note, rank=rank)
 
+    # Every source is canonicalised through the alias file before being
+    # offered. Doing it for the gazetteer alone still left Gadzot beside Gajot
+    # and Organ beside Ogan, because those two are team placements.
+    aliases = load_aliases()
+
+    def canon(name):
+        al = aliases.get(str(name).strip().lower())
+        return al["to"] if al and al["to"] else name
+
     for key, rec in load_placed().items():
-        offer(rec["name"], rec["lon"], rec["lat"], "placed by the team",
+        offer(canon(rec["name"]), rec["lon"], rec["lat"], "placed by the team",
               rec.get("note", ""))
 
-    for written, al in load_aliases().items():
+    for written, al in aliases.items():
         if al["lon"] is not None and al["to"]:
             offer(al["to"], al["lon"], al["lat"], "field evidence", al["note"])
+        _ = written
 
     for name, cands in load_places().items():
         if "/" in name:
             continue
         for c in cands:
-            offer(name, c["lon"], c["lat"], c.get("src", "GPS-inferred"),
+            offer(canon(name), c["lon"], c["lat"], c.get("src", "GPS-inferred"),
                   c.get("note", ""))
 
     for w in waypoint_places():
-        offer(w["name"], w["lon"], w["lat"], "waypoint file", w["note"])
+        offer(canon(w["name"]), w["lon"], w["lat"], "waypoint file", w["note"])
 
     return best
 
