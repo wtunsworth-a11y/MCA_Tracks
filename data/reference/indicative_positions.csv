@@ -1,0 +1,37 @@
+# INDICATIVE positions. NOT surveyed, NOT confirmed, and some are guesses.
+#
+# Will placed these by dragging pins on 23 Oct 2026 and said plainly: 'Soe of
+# these are a guess.' He asked on the same day that they be marked as
+# indicative and kept on that basis. Which ones are guesses and which are
+# solid is NOT recorded, because he did not mark them individually - so every
+# row here must be treated as the weakest thing in the dataset.
+#
+# They rank BELOW our own GPS inference in load order, so an indicative
+# position can never override anything measured, inferred or surveyed. They
+# exist so that 17 Ward Profile villages carrying 2,335 people appear on a map
+# at all, instead of being silently absent.
+#
+# Do not publish a distance, an access class or a walking time computed from
+# these. Replace them with real positions when anyone is next in the ward.
+#
+# Four of the 21 were left on their ward centre and are deliberately absent:
+# Araforo, Jawai, Nibaeba, Sagamasi. A pin that did not move is not a
+# placement.
+place,lon,lat
+Afore Blocks – Road 1&2,148.403158,-9.118547
+Afore Blocks – Road 3&7,148.418392,-9.113758
+Anei,148.119694,-9.258437
+Aniaefe,148.260002,-9.203482
+Araibo,148.182388,-9.055679
+Baratana,148.136459,-9.271659
+Boroheje,148.226971,-9.002882
+Damaral,148.450212,-9.149918
+Duha,148.186855,-9.063113
+Kaivitama,148.297944,-9.146877
+Kinado,148.235587,-8.999536
+Kuhianei,148.443090,-9.137817
+Manana,148.555268,-9.204590
+Muro,148.193473,-9.069056
+Orara,148.534455,-9.211397
+Sarat,148.454257,-9.141690
+Savodobehi,148.246217,-9.003591
