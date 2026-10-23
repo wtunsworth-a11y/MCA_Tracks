@@ -1,0 +1,96 @@
+# Afore LLG village population and households, by ward and zone.
+#
+# Supplied by Will, 23 Oct 2026, as Afore_LLG_Village_Population_by_Zone_v2.xlsx.
+# Source stated in the workbook: Afore LLG Ward Profiles, funded by the
+# European Union. Transcribed verbatim, including the two Total rows and the
+# zone written as 'Outside MCA' where the workbook says so.
+#
+# THIS IS A DIFFERENT INSTRUMENT from data/MCA_Village_Locations.csv, which
+# carries est_hh scaled from 1,163 recorded points across 46 villages. This one
+# enumerates 79 villages by ward. The two disagree on households - 3,617 here
+# against 3,837 there - and that is not reconciled. Nothing here has been used
+# to change the access figures.
+#
+# No coordinates: 22 of these villages have no mapped position at all.
+village,ward,zone,households,population
+Kuai,13 Kokoro,1,36,250
+Aniaefe,13 Kokoro,1,23,153
+Nibaeba,13 Kokoro,1,6,46
+Itokama,14 Ufia,1,109,552
+Naukanane,14 Ufia,1,44,335
+Ufia,14 Ufia,1,21,137
+Umuate,14 Ufia,1,39,212
+Itokama station,14 Ufia,1,12,76
+Tahama,11 Tahama,2,95,538
+Kaivitama,11 Tahama,2,30,144
+Jawai,11 Tahama,2,15,55
+Umbuwara,12 Umbuwara,2,40,158
+Gazot,12 Umbuwara,2,49,302
+Sagamasi,12 Umbuwara,2,25,172
+Anatua 1,12 Umbuwara,2,18,67
+Anatua 2,12 Umbuwara,2,29,186
+Araforo,12 Umbuwara,2,26,151
+Boidomo,12 Umbuwara,2,36,248
+Buanfuo (Jakiro/Sibisibi),13 Kokoro,2,15,112
+Kokoro,13 Kokoro,2,30,178
+Serefuna,13 Kokoro,2,30,253
+Natanga,09 Natanga,3,83,554
+Jorura,09 Natanga,3,63,387
+Kiara,09 Natanga,3,86,482
+Koruwo,11 Tahama,3,110,545
+Kajo,11 Tahama,3,10,58
+Aiari,16 Aiari,4,33,201
+Baratana,17 Jaure,4,13,83
+Anei,17 Jaure,4,7,41
+Yaure,17 Jaure,4,13,103
+Suari,17 Jaure,4,12,62
+Dea,07 Dea,5,107,551
+Ugunomo,07 Dea,5,106,620
+Tabuane,07 Dea,5,148,792
+Siribu,08 Siribu,5,165,903
+Awaru,04 Kaura,6,122,763
+Kaura,04 Kaura,6,128,764
+Numba/Siurana,05 Siurani,6,188,1200
+Sigara,05 Siurani,6,54,265
+Koeno,06 Koeno,6,162,1144
+Sila 1,06 Koeno,6,27,144
+Sila 2,06 Koeno,6,22,185
+Sakarina,06 Koeno,6,27,168
+Kawowoki 1,03 Kawowoki,7a,72,478
+Kawowoki 2,03 Kawowoki,7a,49,259
+Dareki,03 Kawowoki,7a,52,353
+Semahara,02 Niniuri,7b,28,193
+Basabe,02 Niniuri,7b,30,204
+Afore Govt Station,02 Niniuri,7b,28,203
+Korokoro,02 Niniuri,7b,15,104
+Afore Village,02 Niniuri,7b,28,206
+Afore Blocks – Road 1&2,02 Niniuri,7b,30,188
+Niniuri Village,02 Niniuri,7b,7,91
+Afore Blocks – Road 3&7,02 Niniuri,7b,32,207
+Damaral,01 Yoivi,8,12,73
+Bua,01 Yoivi,8,13,67
+Bioi,01 Yoivi,8,20,117
+Vereyame,01 Yoivi,8,22,135
+Sarat,01 Yoivi,8,12,69
+Yoivi,01 Yoivi,8,34,213
+Kuhianei,01 Yoivi,8,15,101
+Umbara,01 Yoivi,8,33,198
+Marasi,01 Yoivi,8,95,591
+Manusi,01 Yoivi,8,68,351
+Ondoro,01 Yoivi,8,28,166
+Toma,15 Toma,9,60,340
+Biriri,15 Toma,9,42,238
+Gewoya,15 Toma,9,61,337
+Orara,15 Toma,9,23,90
+Boroheje,10 Gora,10,75,407
+Kinado,10 Gora,10,29,182
+Kero,10 Gora,10,45,292
+Savodobehi,10 Gora,10,17,91
+Manana,15 Toma,Outside MCA,46,224
+Babarobo,15 Toma,Outside MCA,20,96
+Gorobuna,18 Gorobuna,Outside MCA,23,91
+Duha,18 Gorobuna,Outside MCA,10,52
+Muro,18 Gorobuna,Outside MCA,11,74
+Araibo,18 Gorobuna,Outside MCA,18,102
+Total — within the Managalas Conservation Area (73 villages),,,3489,20884
+Total — all Afore LLG villages (79 villages),,,3617,21523
