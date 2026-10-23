@@ -41,6 +41,7 @@ from ward_profile import load_profile, variants  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 BOUNDARY = ROOT / "data" / "processed" / "mca_boundary.gpkg"
+RIVER = ROOT / "data" / "reference" / "bariji_river.geojson"
 OUT_GJ = ROOT / "outputs" / "access" / "zones_voronoi.geojson"
 OUT_KML = ROOT / "outputs" / "access" / "zones_voronoi.kml"
 OUT_PNG = ROOT / "outputs" / "access" / "fig_zones_voronoi.png"
@@ -97,6 +98,64 @@ def village_points():
     return gpd.GeoDataFrame(recs, geometry="geometry", crs="EPSG:4326")
 
 
+def recut_8_9(zones, pts):
+    """Replace the 8|9 Voronoi line with the Bariji River.
+
+    Will, 23 Oct 2026: the boundary between zones 8 and 9 is the Bariji River.
+    The Voronoi guess was between 123 m and 2.8 km away from it and left 35 km
+    of the river inside zone 9 rather than along the edge, so this is a
+    correction rather than a tidy-up.
+
+    The river branches, so it cannot simply be used to cut the polygon in two.
+    Instead the shared outline and the river are noded together and
+    polygonized, which yields however many fragments the branching implies,
+    and each fragment is then given to whichever zone's villages actually sit
+    in it. A fragment with no village goes to the nearer zone's villages -
+    there is nothing better to go on, and saying so is better than pretending
+    the river closed neatly.
+    """
+    if not RIVER.exists() or not {"8", "9"} <= set(zones["zone"]):
+        print("  (8/9 not re-cut: river or zones missing)")
+        return zones
+
+    from shapely.ops import polygonize, unary_union
+
+    river = gpd.read_file(RIVER).to_crs(zones.crs)
+    z8 = zones.loc[zones["zone"] == "8", "geometry"].iloc[0]
+    z9 = zones.loc[zones["zone"] == "9", "geometry"].iloc[0]
+    both = unary_union([z8, z9])
+
+    lines = unary_union([both.boundary, unary_union(list(river.geometry))])
+    frags = [f for f in polygonize(lines) if f.representative_point().within(both)]
+    if len(frags) < 2:
+        print("  (8/9 not re-cut: the river does not divide the pair)")
+        return zones
+
+    v8 = pts[(pts["zone"] == "8")].geometry
+    v9 = pts[(pts["zone"] == "9")].geometry
+    out = {"8": [], "9": []}
+    for f in frags:
+        n8 = int(v8.within(f).sum())
+        n9 = int(v9.within(f).sum())
+        if n8 or n9:
+            out["8" if n8 >= n9 else "9"].append(f)
+        else:
+            d8 = v8.distance(f.representative_point()).min() if len(v8) else 1e12
+            d9 = v9.distance(f.representative_point()).min() if len(v9) else 1e12
+            out["8" if d8 <= d9 else "9"].append(f)
+
+    before = {"8": z8.area / 1e6, "9": z9.area / 1e6}
+    for z, parts in out.items():
+        if parts:
+            zones.loc[zones["zone"] == z, "geometry"] = unary_union(parts)
+    after = {z: zones.loc[zones["zone"] == z, "geometry"].iloc[0].area / 1e6
+             for z in ("8", "9")}
+    print(f"  re-cut 8|9 along the Bariji River from {len(frags)} fragments: "
+          f"zone 8 {before['8']:.0f} -> {after['8']:.0f} km2, "
+          f"zone 9 {before['9']:.0f} -> {after['9']:.0f} km2")
+    return zones
+
+
 def main():
     pts = village_points().to_crs(UTM)
     boundary = gpd.read_file(BOUNDARY).to_crs(UTM)
@@ -140,6 +199,8 @@ def main():
     # seeds - they have to, or the outer zones bulge - but keep no territory.
     zones = (cellgdf[cellgdf["zone"] != OUTSIDE]
              .dissolve(by="zone", aggfunc="first").reset_index())
+    # Before measuring anything: the 8|9 edge is a river, not a guess.
+    zones = recut_8_9(zones, pts)
     zones["area_km2"] = (zones.geometry.area / 1e6).round(1)
 
     # How much of each zone's area is steered by an approximate point.
@@ -199,6 +260,12 @@ def draw(zones, pts, boundary):
     boundary.boundary.plot(ax=ax, color=BOUNDARY_EDGE, lw=1.2,
                            linestyle=(0, (6, 3)), zorder=5)
 
+    # The one edge on this map that is a real feature rather than a guess.
+    river = None
+    if RIVER.exists():
+        river = gpd.read_file(RIVER).to_crs(zones.crs)
+        river.plot(ax=ax, color="#1F6FB2", lw=1.9, alpha=0.95, zorder=8)
+
     good = pts[pts["quality"].isin(["known", "field"])]
     weak = pts[pts["quality"].isin(["indicative", "none"])]
     good.plot(ax=ax, color=INK, markersize=9, zorder=6)
@@ -221,16 +288,19 @@ def draw(zones, pts, boundary):
                label=f"Village placed by guess or not at all ({len(weak)})"),
         Patch(facecolor="#CCCCCC", edgecolor="#FFFFFF", hatch="//",
               label="Zone whose shape rests mostly on those guesses"),
+        Line2D([], [], color="#1F6FB2", lw=1.9,
+               label="Bariji River - the real 8|9 boundary"),
         Line2D([], [], color=BOUNDARY_EDGE, lw=1.2, linestyle=(0, (6, 3)),
                label="Conservation Area (WDPA)"),
     ], loc="lower right", frameon=True, framealpha=0.95, fontsize=8.6,
         borderpad=0.8, labelspacing=0.55, edgecolor="#D5D8DC").set_zorder(10)
 
-    ax.set_title("Zones, as implied by which village is nearest - NOT a boundary",
+    ax.set_title("Indicative zones - only the 8|9 edge is a real boundary",
                  fontsize=13, color=INK, pad=12, loc="left")
-    ax.annotate("no zone boundary has been surveyed. Every line here is where "
-                "one village's ground meets another's, and a quarter of the "
-                "villages steering them are approximate",
+    ax.annotate("zones 8 and 9 are divided along the Bariji River, which Will "
+                "confirmed. Every other line is merely where one village's "
+                "ground meets another's, and a quarter of the villages "
+                "steering them are approximate",
                 xy=(0.0, 1.004), xycoords="axes fraction", fontsize=8.4,
                 color=INK_SOFT)
     north_arrow(ax); scalebar(ax); inset(fig, boundary)
