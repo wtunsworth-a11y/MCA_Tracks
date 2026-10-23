@@ -32,6 +32,10 @@ from make_access_figures import (  # noqa: E402
     scalebar,
 )
 from make_villages_kml import collect, ACCESS  # noqa: E402
+from cross_reference_tracks import (  # noqa: E402
+    load_places, load_aliases, candidates, best_tier,
+)
+from ward_profile import match_to_mapped, totals  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "outputs" / "access" / "fig_villages.png"
@@ -65,6 +69,14 @@ def households():
 def main():
     best = collect()
     hh = households()
+
+    # Population from the Afore LLG Ward Profiles, joined on. Kawowoki 1 and
+    # Kawowoki 2 are both our one Kawowoki, so the rows are summed per place -
+    # taking one of them would understate that village by half.
+    joined, unmatched = match_to_mapped(best, load_places(), load_aliases(),
+                                        candidates, best_tier)
+    pop = {k: sum(r["population"] for r in v) for k, v in joined.items()}
+    prof_hh = {k: sum(r["households"] for r in v) for k, v in joined.items()}
     roads, foot, boundary, _vg, _sa = load()
 
     fig = plt.figure(figsize=(11.5, 8.6), facecolor="#FFFFFF")
@@ -103,12 +115,34 @@ def main():
         x, y = xy(rec)
         ax.plot(x, y, marker="x", ms=5.0, mew=1.1, color=GUESS, zorder=5)
     for rec in groups["waypoint file"]:
+        if pop.get(rec["name"], 0):
+            continue
         x, y = xy(rec)
         ax.plot(x, y, "o", ms=4.6, mfc="none", mec=HAMLET, mew=1.1, zorder=6)
     for rec in groups["ground"]:
+        # A place that gets a population circle must not also get a diamond,
+        # or it prints as an orange ring round a green mark and reads as a
+        # third category that does not exist.
+        if pop.get(rec["name"], 0):
+            continue
         x, y = xy(rec)
         ax.plot(x, y, "D", ms=5.6, mfc=GROUND, mec="#FFFFFF", mew=0.7, zorder=8)
+    # Any mapped place with a Ward Profile population is drawn as a village
+    # sized by its people, whatever source its POSITION came from. Before this
+    # a team-placed village was a plain diamond however many people lived in
+    # it, which read as "less certain" when it only meant "placed by hand".
+    for rec in list(best.values()):
+        n = pop.get(rec["name"], 0)
+        if not n:
+            continue
+        x, y = xy(rec)
+        size = 5.0 + (n ** 0.5) * 0.30
+        ax.plot(x, y, "o", ms=size, mfc=SURVEY, mec="#FFFFFF", mew=0.8,
+                alpha=0.95, zorder=7)
+
     for rec in groups["gazetteer"]:
+        if pop.get(rec["name"], 0):
+            continue
         x, y = xy(rec)
         n = hh.get(rec["name"].lower(), 0)
         size = 5.0 + (n ** 0.5) * 0.55 if n else 5.0
@@ -160,14 +194,14 @@ def main():
     ax.set_aspect("equal")
     ax.set_axis_off()
 
-    n_hh = sum(hh.get(r["name"].lower(), 0) for r in groups["gazetteer"])
+    j_hh, j_pop = totals(joined)
     handles = [
         Line2D([], [], marker="o", ls="none", ms=9, mfc=SURVEY, mec="#FFFFFF",
-               label=f"Surveyed village, sized by households "
-                     f"({len(groups['gazetteer'])}, {n_hh:,} households)"),
+               label=f"Village, sized by population "
+                     f"({len(pop)} places, {j_pop:,} people)"),
         Line2D([], [], marker="D", ls="none", ms=7, mfc=GROUND, mec="#FFFFFF",
-               label=f"Placed or confirmed on the ground "
-                     f"({len(groups['ground'])})"),
+               label=f"Position held, no population figure "
+                     f"({len(groups['ground']) + len(groups['gazetteer']) - len(pop)})"),
         Line2D([], [], marker="o", ls="none", ms=7, mfc="none", mec=HAMLET,
                mew=1.1, label=f"Hamlet from the field waypoints "
                               f"({len(groups['waypoint file'])})"),
@@ -183,11 +217,13 @@ def main():
               fontsize=8.4, borderpad=0.8, labelspacing=0.55,
               edgecolor="#D5D8DC").set_zorder(11)
 
-    total = sum(len(v) for v in groups.values())
-    ax.set_title(f"Managalas: {total} villages and hamlets we have a position for",
-                 fontsize=12.5, color=INK, pad=12, loc="left")
-    ax.annotate("mark shape shows how well the position is known, not how big "
-                "the place is", xy=(0.0, 1.005), xycoords="axes fraction",
+    miss_pop = sum(r["population"] for r in unmatched)
+    ax.set_title(f"Managalas: {j_pop:,} people across {len(pop)} villages we can "
+                 f"place", fontsize=12.5, color=INK, pad=12, loc="left")
+    ax.annotate(f"population from the Afore LLG Ward Profiles. "
+                f"{len(unmatched)} more villages, {miss_pop:,} people, have no "
+                f"position and are NOT on this map",
+                xy=(0.0, 1.005), xycoords="axes fraction",
                 fontsize=8.2, color=INK_SOFT)
 
     north_arrow(ax)
