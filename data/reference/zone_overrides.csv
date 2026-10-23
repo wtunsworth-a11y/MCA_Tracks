@@ -1,0 +1,21 @@
+# Zone reassignments that override the Afore LLG Ward Profile's own column.
+#
+# The Ward Profile files all four ward 18 Gorobuna villages as "Outside MCA".
+# Will, 23 Oct 2026: "The Gorabuna villages can be placed in Zone 10" - and on
+# 16 Oct, asked about ward 18's facilities, "Yes, and keep it in scope".
+#
+# The geometry agrees with him and not with the spreadsheet: all four sit
+# INSIDE the WDPA conservation area polygon. Gorobuna's own position is a team
+# placement; the other three are indicative, so for those the containment test
+# rests on a guessed position and is weaker.
+#
+# APPLIED TO THE ZONE MAP ONLY. outputs/access/mca_population.kml still splits
+# inside from outside exactly as the spreadsheet does, because Will required
+# that its inside-MCA total equal the spreadsheet's own 20,884. Honouring this
+# override there instead would make it 21,203 and break that match - his call,
+# not one to make quietly.
+village,ward,from_zone,to_zone
+Gorobuna,18 Gorobuna,Outside MCA,10
+Duha,18 Gorobuna,Outside MCA,10
+Muro,18 Gorobuna,Outside MCA,10
+Araibo,18 Gorobuna,Outside MCA,10

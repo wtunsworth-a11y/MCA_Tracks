@@ -42,6 +42,7 @@ from ward_profile import load_profile, variants  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 BOUNDARY = ROOT / "data" / "processed" / "mca_boundary.gpkg"
 RIVER = ROOT / "data" / "reference" / "bariji_river.geojson"
+OVERRIDES = ROOT / "data" / "reference" / "zone_overrides.csv"
 OUT_GJ = ROOT / "outputs" / "access" / "zones_voronoi.geojson"
 OUT_KML = ROOT / "outputs" / "access" / "zones_voronoi.kml"
 OUT_PNG = ROOT / "outputs" / "access" / "fig_zones_voronoi.png"
@@ -72,6 +73,24 @@ def village_points():
         return None
 
     rows = load_profile()
+
+    # Zone reassignments confirmed in the field, overriding the Ward Profile's
+    # own column. See zone_overrides.csv: these apply to the zone map only.
+    if OVERRIDES.exists():
+        import csv as _csv
+        with OVERRIDES.open() as fh:
+            ov = {(r["village"].strip().lower(), r["ward"].strip()): r["to_zone"]
+                  for r in _csv.DictReader(l for l in fh
+                                           if not l.startswith("#"))}
+        moved = 0
+        for r in rows:
+            k = (r["village"].strip().lower(), r["ward"].strip())
+            if k in ov and r["zone"] != ov[k]:
+                r["zone"] = ov[k]
+                moved += 1
+        if moved:
+            print(f"  {moved} villages reassigned by zone_overrides.csv")
+
     anchor = {}
     for r in rows:
         hit = known(r["village"])
