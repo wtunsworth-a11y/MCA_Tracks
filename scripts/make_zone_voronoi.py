@@ -288,8 +288,12 @@ def draw(zones, pts, boundary):
     good = pts[pts["quality"].isin(["known", "field"])]
     weak = pts[pts["quality"].isin(["indicative", "none"])]
     good.plot(ax=ax, color=INK, markersize=9, zorder=6)
-    weak.plot(ax=ax, color="#B03A2E", marker="x", markersize=38, linewidth=1.4,
-              zorder=7)
+    # The approximate positions still SEED the tessellation - they are what
+    # gives zone 10 its ground - but they are not drawn. Most of them are
+    # hamlets of a village that already has a dot on this map: Gora's three
+    # hamlets, Gorobuna's outliers. A cross beside Gora read as a fourth
+    # settlement next to it rather than as part of it. Their influence stays
+    # visible in the hatching and is counted in the subtitle instead.
 
     for _, r in zones.iterrows():
         c = r.geometry.representative_point()
@@ -303,10 +307,8 @@ def draw(zones, pts, boundary):
     ax.legend(handles=[
         Line2D([], [], marker="o", ls="none", color=INK, ms=6,
                label=f"Village with a position we stand behind ({len(good)})"),
-        Line2D([], [], marker="x", ls="none", color="#B03A2E", ms=8, mew=1.6,
-               label=f"Village placed by guess or not at all ({len(weak)})"),
         Patch(facecolor="#CCCCCC", edgecolor="#FFFFFF", hatch="//",
-              label="Zone whose shape rests mostly on those guesses"),
+              label="Zone whose shape rests mostly on approximate positions"),
         Line2D([], [], color="#1F6FB2", lw=1.9,
                label="Bariji River - the real 8|9 boundary"),
         Line2D([], [], color=BOUNDARY_EDGE, lw=1.2, linestyle=(0, (6, 3)),
@@ -314,12 +316,13 @@ def draw(zones, pts, boundary):
     ], loc="lower right", frameon=True, framealpha=0.95, fontsize=8.6,
         borderpad=0.8, labelspacing=0.55, edgecolor="#D5D8DC").set_zorder(10)
 
-    ax.set_title("Indicative zones - only the 8|9 edge is a real boundary",
+    ax.set_title("Indicative Map of MCA Zones",
                  fontsize=13, color=INK, pad=12, loc="left")
-    ax.annotate("zones 8 and 9 are divided along the Bariji River, which Will "
-                "confirmed. Every other line is merely where one village's "
-                "ground meets another's, and a quarter of the villages "
-                "steering them are approximate",
+    ax.annotate(f"zones 8 and 9 are divided along the Bariji River, which was "
+                f"confirmed. Every other line is merely where one village's "
+                f"ground meets another's. A further {len(weak)} villages of "
+                f"approximate position help steer those lines and are not "
+                f"drawn here",
                 xy=(0.0, 1.004), xycoords="axes fraction", fontsize=8.4,
                 color=INK_SOFT)
     north_arrow(ax); scalebar(ax); inset(fig, boundary)

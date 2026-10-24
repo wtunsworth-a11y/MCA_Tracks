@@ -49,6 +49,14 @@
       <SimpleField name="pct_approx" type="double"/>
       <SimpleField name="population" type="string"/>
     </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
     <Document id="zones_voronoi">
       <name>zones_voronoi</name>
       <Placemark id="zones_voronoi.1">
