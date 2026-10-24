@@ -42,12 +42,27 @@ from ward_profile import load_profile, variants  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 BOUNDARY = ROOT / "data" / "processed" / "mca_boundary.gpkg"
 RIVER = ROOT / "data" / "reference" / "bariji_river.geojson"
+RIVERS = ROOT / "data" / "reference" / "rivers.geojson"
+TRACKS = ROOT / "data" / "processed" / "tracks.gpkg"
 OVERRIDES = ROOT / "data" / "reference" / "zone_overrides.csv"
 OUT_GJ = ROOT / "outputs" / "access" / "zones_voronoi.geojson"
 OUT_KML = ROOT / "outputs" / "access" / "zones_voronoi.kml"
 OUT_PNG = ROOT / "outputs" / "access" / "fig_zones_voronoi.png"
 
 UTM = "EPSG:32755"
+RIVER_BLUE = "#1F6FB2"
+ROAD_INK = "#4A3B32"
+
+# The two vehicle roads, keyed by the name the recording carries and
+# labelled the way Will asks for them. "Popondetta to Anatua Road" is the
+# Popondetta-Afore corridor: it passes within 382 m of Afore and 1 m of
+# Popondetta before running on to Anatua. There is a second recording of
+# the same corridor, "Road Track - Popondetta to Sakarina Junction", which
+# is not drawn because it would lay a near-duplicate line over this one.
+ROADS = {
+    "Popondetta to Anatua Road": "Popondetta \u2013 Afore Road",
+    "Itokama to Afore Road (seg 1)": "Afore \u2013 Itokama Road",
+}
 OUTSIDE = "Outside MCA"
 
 
@@ -175,6 +190,118 @@ def recut_8_9(zones, pts):
     return zones
 
 
+# The inset map and the legend, in axes fractions, so a river name is never
+# written underneath either of them. Taking the midpoint of the longest reach
+# put "Kumusi" half off the west edge and behind the inset, and "Bariji" out
+# on the lower Bariji miles beyond the conservation area.
+KEEP_OUT = [(0.03, 0.65, 0.27, 0.94),   # inset
+            (0.68, 0.00, 1.00, 0.17)]   # legend
+EDGE_MARGIN = 0.05
+
+
+def label_candidates(grp, hull, extent):
+    """Places a line's name could go, best first.
+
+    Inside the conservation area beats outside it - these are the MCA's
+    rivers and roads, and a name out on the lower Bariji thirty kilometres
+    past the boundary tells a reader nothing - then bigger water, then a
+    longer piece of line. Points under the inset, under the legend or near the edge
+    are not offered at all: the midpoint of the longest reach put "Kumusi"
+    half off the west edge and behind the inset map.
+    """
+    x0, x1, y0, y1 = extent
+    out = []
+    for _, row in grp.iterrows():
+        geom = row.geometry
+        # Bigger water first, so a river is named on its main stem. Without
+        # this "Bariji" went on an order-3 headwater up in zone 1 rather
+        # than on the order-4 reach that divides 8 from 9.
+        order = int(row["ORD_STRA"]) if "ORD_STRA" in grp.columns else 0
+        for part in shapely.get_parts(shapely.GeometryCollection([geom])):
+            if part.length <= 0:
+                continue
+            for f in (0.5, 0.35, 0.65, 0.2, 0.8, 0.45, 0.55, 0.3, 0.7):
+                pt = part.interpolate(f, normalized=True)
+                fx, fy = (pt.x - x0) / (x1 - x0), (pt.y - y0) / (y1 - y0)
+                if not (EDGE_MARGIN < fx < 1 - EDGE_MARGIN
+                        and EDGE_MARGIN < fy < 1 - EDGE_MARGIN):
+                    continue
+                if any(a < fx < c and b < fy < d for a, b, c, d in KEEP_OUT):
+                    continue
+                out.append(((hull.contains(pt), order, part.length), pt))
+    out.sort(key=lambda kv: kv[0], reverse=True)
+    return [pt for _, pt in out]
+
+
+def fill_unclaimed(zones, hull):
+    """Hand the unclaimed eastern ground to zones 8 and 9, split by the Bariji.
+
+    Babarobo is the one village with a real position that the Ward Profile
+    files outside the MCA, and it sits in the far east. Its Voronoi cell
+    covered the easternmost ground inside the conservation area and was then
+    discarded with the other outside cells, which left 26 km2 of the MCA
+    belonging to no zone at all.
+
+    Will, 24 Oct 2026: "Extend Zones 8 and 9 along the Bariji River to fill
+    the MCA." So the leftover is noded against the river, polygonized, and
+    each fragment goes to whichever of 8 or 9 it actually adjoins - the same
+    rule that already divides those two upstream, carried east.
+    """
+    claimed = shapely.union_all(list(zones.geometry))
+    gap = hull.difference(claimed)
+    parts = [g for g in shapely.get_parts(shapely.GeometryCollection([gap]))
+             if g.area > 10_000]
+    if not parts:
+        return zones
+
+    z = {r["zone"]: r.geometry for _, r in zones.iterrows()}
+    if "8" not in z or "9" not in z:
+        return zones
+    river = (gpd.read_file(RIVER).to_crs(zones.crs).union_all()
+             if RIVER.exists() else None)
+
+    add = {"8": [], "9": []}
+    for part in parts:
+        # Only ground these two can reach. A hole elsewhere is not theirs.
+        if min(part.distance(z["8"]), part.distance(z["9"])) > 1.0:
+            continue
+        lines = [part.boundary]
+        if river is not None:
+            cut = river.intersection(part.buffer(1.0))
+            if not cut.is_empty:
+                lines.append(cut)
+        frags = list(shapely.get_parts(
+            shapely.GeometryCollection(
+                list(shapely.ops.polygonize(shapely.node(
+                    shapely.union_all(lines)))))))
+        if not frags:
+            frags = [part]
+        for f in frags:
+            if f.area < 10_000:
+                continue
+            d8, d9 = f.distance(z["8"]), f.distance(z["9"])
+            if d8 == d9:
+                # Touching both: go with whichever it shares more edge with.
+                d8 = -f.buffer(1.0).intersection(z["8"]).area
+                d9 = -f.buffer(1.0).intersection(z["9"]).area
+            add["8" if d8 < d9 else "9"].append(f)
+
+    moved = 0.0
+    for zone, frags in add.items():
+        if not frags:
+            continue
+        i = zones.index[zones["zone"] == zone][0]
+        before = zones.at[i, "geometry"].area
+        zones.at[i, "geometry"] = shapely.union_all([zones.at[i, "geometry"]]
+                                                   + frags)
+        gained = (zones.at[i, "geometry"].area - before) / 1e6
+        moved += gained
+        print(f"  filled {gained:.1f} km2 of unclaimed MCA into zone {zone}")
+    if not moved:
+        print("  nothing to fill")
+    return zones
+
+
 def main():
     pts = village_points().to_crs(UTM)
     boundary = gpd.read_file(BOUNDARY).to_crs(UTM)
@@ -220,6 +347,8 @@ def main():
              .dissolve(by="zone", aggfunc="first").reset_index())
     # Before measuring anything: the 8|9 edge is a river, not a guess.
     zones = recut_8_9(zones, pts)
+    # Still before anything is measured: no ground inside the MCA is left out.
+    zones = fill_unclaimed(zones, hull)
     zones["area_km2"] = (zones.geometry.area / 1e6).round(1)
 
     # How much of each zone's area is steered by an approximate point.
@@ -255,8 +384,7 @@ def draw(zones, pts, boundary):
     import matplotlib.pyplot as plt
     import matplotlib.patheffects as pe
     from matplotlib.lines import Line2D
-    from matplotlib.patches import Patch
-    from make_access_figures import (BOUNDARY_EDGE, INK, INK_SOFT, inset,
+    from make_access_figures import (BOUNDARY_EDGE, INK, inset,
                                      north_arrow, relief, scalebar)
 
     fig = plt.figure(figsize=(12, 8.8), facecolor="#FFFFFF")
@@ -266,51 +394,73 @@ def draw(zones, pts, boundary):
     extent = (minx - padx, maxx + padx, miny - pady, maxy + pady)
     relief(ax, extent)
 
-    # A zone whose shape rests mostly on guesses is hatched, not just coloured.
+    # Flat fills. The hatching that used to mark the zones resting on
+    # approximate positions is gone: every zone on this map rests on
+    # indications, so singling some out invited the reader to trust the rest.
+    # The title carries that instead.
     cmap = plt.get_cmap("tab20")
     order = sorted(zones["zone"], key=lambda z: (int(z.rstrip("ab")) if z.rstrip("ab").isdigit() else 99, z))
     colours = {z: cmap(i % 20) for i, z in enumerate(order)}
     for _, r in zones.iterrows():
-        heavy = (r["pct_approx"] or 0) >= 50
         gpd.GeoSeries([r.geometry], crs=zones.crs).plot(
             ax=ax, facecolor=colours[r["zone"]], edgecolor="#FFFFFF", lw=1.2,
-            alpha=0.55, hatch="//" if heavy else None, zorder=3)
+            alpha=0.55, zorder=3)
 
+    # Over the fills, not under them. The zones now tile the conservation area
+    # exactly, so the WDPA line sits beneath their outer edge and was invisible
+    # - a legend entry for a symbol nothing on the map showed.
     boundary.boundary.plot(ax=ax, color=BOUNDARY_EDGE, lw=1.2,
-                           linestyle=(0, (6, 3)), zorder=5)
+                           linestyle=(0, (6, 3)), zorder=12)
 
-    # The one edge on this map that is a real feature rather than a guess.
-    river = None
-    if RIVER.exists():
-        river = gpd.read_file(RIVER).to_crs(zones.crs)
-        river.plot(ax=ax, color="#1F6FB2", lw=1.9, alpha=0.95, zorder=8)
+    # The rivers, drawn as rivers. Width follows Strahler order so the Musa
+    # and the Kumusi read as bigger water than the Girua.
+    from shapely.geometry import box as _box
+    frame = _box(extent[0], extent[2], extent[1], extent[3])
+    hull = boundary.union_all()
+    to_name = []                      # (text, candidate points, colour, style)
+
+    if RIVERS.exists():
+        rv = gpd.read_file(RIVERS).to_crs(zones.crs).clip(frame)
+        for name, grp in rv.groupby("river"):
+            lw = 1.1 + 0.42 * (grp["ORD_STRA"].max() - 3)
+            grp.plot(ax=ax, color=RIVER_BLUE, lw=lw, alpha=0.95, zorder=8)
+            to_name.append((name, label_candidates(grp, hull, extent),
+                            RIVER_BLUE, "italic"))
+
+    # The vehicle roads, from the field recordings rather than any gazetteer -
+    # these are the two the trucks actually use. Drawn with a white casing so
+    # they stay legible crossing a zone fill, and over the rivers, because a
+    # road crossing a river is a bridge or a ford, not the other way round.
+    if TRACKS.exists():
+        tr = gpd.read_file(TRACKS, layer="tracks").to_crs(zones.crs)
+        for rec_name, label in ROADS.items():
+            grp = tr[tr["name"] == rec_name]
+            if grp.empty:
+                continue
+            grp = grp.clip(frame)
+            if grp.empty:
+                continue
+            grp.plot(ax=ax, color="#FFFFFF", lw=3.8, alpha=0.9, zorder=10)
+            grp.plot(ax=ax, color=ROAD_INK, lw=1.9, zorder=11)
+            to_name.append((label, label_candidates(grp, hull, extent),
+                            ROAD_INK, "normal"))
 
     good = pts[pts["quality"].isin(["known", "field"])]
-    weak = pts[pts["quality"].isin(["indicative", "none"])]
     good.plot(ax=ax, color=INK, markersize=9, zorder=6)
     # The approximate positions still SEED the tessellation - they are what
     # gives zone 10 its ground - but they are not drawn. Most of them are
-    # hamlets of a village that already has a dot on this map: Gora's three
-    # hamlets, Gorobuna's outliers. A cross beside Gora read as a fourth
-    # settlement next to it rather than as part of it. Their influence stays
-    # visible in the hatching and is counted in the subtitle instead.
-
-    for _, r in zones.iterrows():
-        c = r.geometry.representative_point()
-        t = ax.annotate(f"{r['zone']}", (c.x, c.y), ha="center", va="center",
-                        fontsize=13, fontweight="bold", color=INK, zorder=9)
-        t.set_path_effects([pe.withStroke(linewidth=3.2, foreground="#FFFFFF")])
+    # hamlets of a village that already has a dot here: Gora's three hamlets,
+    # Gorobuna's outliers. A mark beside Gora read as a fourth settlement
+    # next to it rather than as part of it.
 
     ax.set_xlim(extent[0], extent[1]); ax.set_ylim(extent[2], extent[3])
     ax.set_aspect("equal"); ax.set_axis_off()
 
     ax.legend(handles=[
         Line2D([], [], marker="o", ls="none", color=INK, ms=6,
-               label=f"Village with a position we stand behind ({len(good)})"),
-        Patch(facecolor="#CCCCCC", edgecolor="#FFFFFF", hatch="//",
-              label="Zone whose shape rests mostly on approximate positions"),
-        Line2D([], [], color="#1F6FB2", lw=1.9,
-               label="Bariji River - the real 8|9 boundary"),
+               label="Villages"),
+        Line2D([], [], color=RIVER_BLUE, lw=1.9, label="Rivers"),
+        Line2D([], [], color=ROAD_INK, lw=1.9, label="Vehicle roads"),
         Line2D([], [], color=BOUNDARY_EDGE, lw=1.2, linestyle=(0, (6, 3)),
                label="Conservation Area (WDPA)"),
     ], loc="lower right", frameon=True, framealpha=0.95, fontsize=8.6,
@@ -318,13 +468,42 @@ def draw(zones, pts, boundary):
 
     ax.set_title("Indicative Map of MCA Zones",
                  fontsize=13, color=INK, pad=12, loc="left")
-    ax.annotate(f"zones 8 and 9 are divided along the Bariji River, which was "
-                f"confirmed. Every other line is merely where one village's "
-                f"ground meets another's. A further {len(weak)} villages of "
-                f"approximate position help steer those lines and are not "
-                f"drawn here",
-                xy=(0.0, 1.004), xycoords="axes fraction", fontsize=8.4,
-                color=INK_SOFT)
+
+    # Everything written on the map, placed against measured text boxes
+    # rather than hoped-for gaps. The zone numbers go down first and keep
+    # their ground: a reader looks for those before anything else, and the
+    # first pass at this wrote "Afore - Itokama Road" straight through the
+    # numbers 3 and 5 and "Bariji" across the 1.
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    boxes = []
+
+    def put(text, xy, dx, dy, **kw):
+        t = ax.annotate(text, xy, xytext=(dx, dy), textcoords="offset points",
+                        ha="center", **kw)
+        t.set_path_effects([pe.withStroke(linewidth=kw.pop("halo", 2.8),
+                                          foreground="#FFFFFF")])
+        return t, t.get_window_extent(renderer=renderer).expanded(1.06, 1.3)
+
+    for _, r in zones.iterrows():
+        c = r.geometry.representative_point()
+        t, box = put(f"{r['zone']}", (c.x, c.y), 0, 0, va="center",
+                     fontsize=13, fontweight="bold", color=INK, zorder=13)
+        boxes.append(box)
+
+    for text, cands, colour, style in to_name:
+        for pt in cands:
+            for dy in (7, -14, 15, -22):
+                t, box = put(text, (pt.x, pt.y), 0, dy, fontsize=8.2,
+                             style=style, color=colour, zorder=14)
+                if not any(box.overlaps(b) for b in boxes):
+                    boxes.append(box)
+                    break
+                t.remove()
+            else:
+                continue
+            break
+
     north_arrow(ax); scalebar(ax); inset(fig, boundary)
     fig.savefig(OUT_PNG, dpi=200, facecolor="#FFFFFF", bbox_inches="tight")
     plt.close(fig)

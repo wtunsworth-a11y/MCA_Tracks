@@ -57,6 +57,62 @@
       <SimpleField name="pct_approx" type="double"/>
       <SimpleField name="population" type="string"/>
     </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
     <Document id="zones_voronoi">
       <name>zones_voronoi</name>
       <Placemark id="zones_voronoi.1">
@@ -674,7 +730,7 @@
             <SimpleData name="zone">8</SimpleData>
             <SimpleData name="village">Bua</SimpleData>
             <SimpleData name="quality">known</SimpleData>
-            <SimpleData name="area_km2">165.5</SimpleData>
+            <SimpleData name="area_km2">189.2</SimpleData>
             <SimpleData name="pct_approx">16</SimpleData>
             <SimpleData name="population">2081</SimpleData>
           </SchemaData>
@@ -683,34 +739,21 @@
           <outerBoundaryIs>
             <LinearRing>
               <coordinates>
-                148.352083332875,-9.18604980299073,0
-                148.416818826814,-9.17412309519579,0
-                148.416385508534,-9.17148251834374,0
-                148.414569327904,-9.15425374956735,0
-                148.415163614339,-9.15300236453391,0
-                148.421564753335,-9.12256135033021,0
-                148.427307280519,-9.12011779703905,0
-                148.433158799988,-9.11621912336314,0
-                148.432658672035,-9.11441530667779,0
-                148.454770860644,-9.07235215436426,0
-                148.470252342611,-9.07067595585457,0
-                148.516919504136,-9.05079798638364,0
-                148.517734031,-9.05288900499994,0
-                148.517513974,-9.05859599299992,0
-                148.517293974,-9.06167002599994,0
-                148.521691986,-9.06891300599994,0
-                148.524550003,-9.07198596099994,0
-                148.529607017,-9.07396197799994,0
-                148.535984037,-9.07593697899995,0
-                148.540160966,-9.07791300499997,0
-                148.542139992,-9.08142504199997,0
-                148.545217997,-9.08779096899996,0
-                148.546977029,-9.09042501899994,0
-                148.547637027,-9.09481496099993,0
-                148.554233024,-9.10996003199994,0
-                148.557460206482,-9.1168065222336,0
-                148.542458673946,-9.13100939963003,0
-                148.526192116222,-9.15162678009895,0
+                148.562148997,-9.12817903899998,0
+                148.563248034,-9.13278903499997,0
+                148.566106012,-9.14464202099998,0
+                148.57160301,-9.15188598099996,0
+                148.574242014,-9.15737296399993,0
+                148.577099984,-9.16242196899999,0
+                148.581278029,-9.16659200899993,0
+                148.584795999,-9.17010397199993,0
+                148.587213966,-9.17581197899996,0
+                148.586471114116,-9.17708342761389,0
+                148.564583333333,-9.17708333333404,0
+                148.560416666666,-9.17291666666729,0
+                148.547916666666,-9.17291666666728,0
+                148.539583333333,-9.17291666666728,0
+                148.535416666666,-9.17708333333404,0
                 148.534622710914,-9.17708333704002,0
                 148.531249999999,-9.17708333333403,0
                 148.527083333333,-9.18125000000078,0
@@ -742,6 +785,33 @@
                 148.360416666666,-9.19791666666737,0
                 148.352083333333,-9.18958333333406,0
                 148.352083332875,-9.18604980299073,0
+                148.416818826814,-9.17412309519579,0
+                148.416385508534,-9.17148251834374,0
+                148.414569327904,-9.15425374956735,0
+                148.415163614339,-9.15300236453391,0
+                148.421564753335,-9.12256135033021,0
+                148.427307280519,-9.12011779703905,0
+                148.433158799988,-9.11621912336314,0
+                148.432658672035,-9.11441530667779,0
+                148.454770860644,-9.07235215436426,0
+                148.470252342611,-9.07067595585457,0
+                148.516919504136,-9.05079798638364,0
+                148.517734031,-9.05288900499994,0
+                148.517513974,-9.05859599299992,0
+                148.517293974,-9.06167002599994,0
+                148.521691986,-9.06891300599994,0
+                148.524550003,-9.07198596099994,0
+                148.529607017,-9.07396197799994,0
+                148.535984037,-9.07593697899995,0
+                148.540160966,-9.07791300499997,0
+                148.542139992,-9.08142504199997,0
+                148.545217997,-9.08779096899996,0
+                148.546977029,-9.09042501899994,0
+                148.547637027,-9.09481496099993,0
+                148.554233024,-9.10996003199994,0
+                148.557460206482,-9.1168065222336,0
+                148.559510007,-9.12115500699996,0
+                148.562148997,-9.12817903899998,0
               </coordinates>
             </LinearRing>
           </outerBoundaryIs>
@@ -753,7 +823,7 @@
             <SimpleData name="zone">9</SimpleData>
             <SimpleData name="village">Toma</SimpleData>
             <SimpleData name="quality">known</SimpleData>
-            <SimpleData name="area_km2">217.9</SimpleData>
+            <SimpleData name="area_km2">220.5</SimpleData>
             <SimpleData name="pct_approx">7</SimpleData>
             <SimpleData name="population">1005</SimpleData>
           </SchemaData>
@@ -762,7 +832,6 @@
           <outerBoundaryIs>
             <LinearRing>
               <coordinates>
-                148.537522978,-9.19073797999994,0
                 148.535324002,-9.19578599499994,0
                 148.533784976,-9.20215204199997,0
                 148.533124965,-9.20983500999995,0
@@ -860,8 +929,29 @@
                 148.527083333333,-9.18125000000078,0
                 148.531249999999,-9.17708333333403,0
                 148.534622710914,-9.17708333704002,0
+                148.535416666666,-9.17708333333404,0
+                148.539583333333,-9.17291666666728,0
+                148.547916666666,-9.17291666666728,0
+                148.560416666666,-9.17291666666729,0
+                148.564583333333,-9.17708333333404,0
+                148.586471114116,-9.17708342761389,0
+                148.585675025,-9.17844598599992,0
+                148.585675026,-9.18217700399993,0
+                148.581937014,-9.18481097699993,0
+                148.576880013,-9.18085997099996,0
+                148.57446203,-9.17910402999996,0
+                148.571382988,-9.17888501599998,0
+                148.568744987,-9.17844601699995,0
+                148.561929022,-9.17690900699995,0
+                148.559070014,-9.17625103699993,0
+                148.552913983,-9.17493401199994,0
+                148.548736023,-9.17427501899994,0
+                148.546098035,-9.17603103299996,0
+                148.543019989,-9.18195799099994,0
+                148.541260976,-9.18393297299997,0
                 148.538535125808,-9.18889539458207,0
                 148.537522978,-9.19073797999994,0
+                148.535324002,-9.19578599499994,0
               </coordinates>
             </LinearRing>
           </outerBoundaryIs>
