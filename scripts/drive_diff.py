@@ -32,17 +32,29 @@ def main():
         sys.exit(f"no manifest at {MANIFEST} — ask Claude to refresh it from Drive")
 
     with MANIFEST.open() as fh:
-        drive = {row["name"]: row for row in csv.DictReader(fh, delimiter="\t")}
+        rows = list(csv.DictReader(fh, delimiter="\t"))
+
+    # Keyed by drive_id, not by name. Russell uploaded the same KMZ twice on
+    # 27 Oct 2026 under one name - 1.28 GB with its photos and 7.3 MB without
+    # - and keying on the name silently dropped the first, so the folder read
+    # as 41 files when it held 42 and the big one never reached this report.
+    drive = {row["drive_id"]: row for row in rows}
+    same_name = {}
+    for row in rows:
+        same_name.setdefault(row["name"], []).append(row)
+    collisions = {n: rs for n, rs in same_name.items() if len(rs) > 1}
 
     local = {p.name: p.stat().st_size for p in RAW.iterdir() if p.is_file() and p.name != ".gitkeep"}
 
     # Notes and READMEs live in the folder too; they are not track data and
     # cannot be fetched with alt=media, so they are listed separately.
     track_exts = (".gpx", ".kmz", ".kml", ".gpkg")
-    non_track = sorted(n for n in drive if not n.lower().endswith(track_exts))
+    non_track = sorted({r["name"] for r in rows
+                        if not r["name"].lower().endswith(track_exts)})
 
     missing, changed = [], []
-    for name, row in sorted(drive.items()):
+    for row in sorted(rows, key=lambda r: r["name"]):
+        name = row["name"]
         if not name.lower().endswith(track_exts):
             continue
         size = int(row["size"])
@@ -51,15 +63,17 @@ def main():
         elif local[name] != size:
             changed.append((name, local[name], size))
 
+    drive_names = set(same_name)
+
     # A .kml extracted from an oversized .kmz by slim_kmz.py is derived, not
     # stray, so it should not be reported as unexpected.
     derived = {
         name
         for name in local
-        if name.endswith(".kml") and f"{Path(name).stem}.kmz" in drive
+        if name.endswith(".kml") and f"{Path(name).stem}.kmz" in drive_names
     }
     extra = sorted(
-        set(local) - set(drive) - derived - {"drive-download-20260817T080903Z-1-001.zip"}
+        set(local) - drive_names - derived - {"drive-download-20260817T080903Z-1-001.zip"}
     )
 
     print(f"Drive: {len(drive)} files    local data/raw: {len(local)} files\n")
@@ -90,8 +104,8 @@ def main():
 
     # Same-size pairs are worth a look: Locus can save one track twice.
     by_size = {}
-    for name, row in drive.items():
-        by_size.setdefault(int(row["size"]), []).append(name)
+    for row in rows:
+        by_size.setdefault(int(row["size"]), []).append(row["name"])
     dupes = {s: n for s, n in by_size.items() if len(n) > 1}
     if dupes:
         print("POSSIBLE DUPLICATES — identical byte size in Drive:")
@@ -99,6 +113,16 @@ def main():
             print(f"  {human(size)}:")
             for n in sorted(names):
                 print(f"      {n}")
+        print()
+
+    if collisions:
+        print("SAME NAME, DIFFERENT FILES — one of these cannot be saved to "
+              "data/raw without overwriting the other:")
+        for name, rs in sorted(collisions.items()):
+            print(f"  {name}")
+            for r in sorted(rs, key=lambda r: -int(r["size"])):
+                print(f"      {human(int(r['size'])):>10}  {r['modified']}  "
+                      f"{r['drive_id']}")
         print()
 
     if non_track:
