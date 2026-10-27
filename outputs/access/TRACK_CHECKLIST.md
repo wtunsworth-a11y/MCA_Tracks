@@ -120,12 +120,12 @@ recordings in hand carry no route name at all.
 
 - [x] **Koruwo-Umbuara-Anatua1-Anatua2**  `F01`
   - [x] Koruwo → Umbuara: routes in 6.6 km vs 4.5 km straight
-  - [x] Umbuara → Anatua: routes in 2.4 km vs 2.2 km straight
+  - [x] Umbuara → Anatua: routes in 4.0 km vs 3.3 km straight
 - [x] **Marasi-Biriri**  `F08`
 - [x] **Kaura-Sigara**  `F10`
 - [x] **Kuai-Anatua-Serepuna**  `F11`
-  - [x] Kuai → Anatua: routes in 7.3 km vs 6.1 km straight — a recording is named for it: *Kuai to Anatua trek*
-  - [x] Anatua → Serepuna: routes in 3.2 km vs 2.0 km straight
+  - [x] Kuai → Anatua: routes in 6.4 km vs 5.0 km straight — a recording is named for it: *Kuai to Anatua trek*
+  - [x] Anatua → Serepuna: routes in 1.6 km vs 1.2 km straight
 - [x] **Kueno-Semahara**  `F14`
 - [x] **Kokoro -Anatua**  `F15`
 - [x] **Kaura-Kuhara**  `F16`
@@ -155,7 +155,7 @@ recordings in hand carry no route name at all.
 - [x] **Koruo-Bodoimo-Umbuara-Anatua**  `F55`
   - [x] Koruo → Bodoimo: routes in 4.7 km vs 2.9 km straight
   - [x] Bodoimo → Umbuara: routes in 2.0 km vs 1.6 km straight
-  - [x] Umbuara → Anatua: routes in 2.4 km vs 2.2 km straight
+  - [x] Umbuara → Anatua: routes in 4.0 km vs 3.3 km straight
 - [x] **Anatua-Serepuna**  `F56`
 - [x] **Anatua-Kokoro**  `F57`
 - [x] **Umbuara-Singata**  `F58`

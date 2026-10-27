@@ -1,0 +1,20 @@
+# Facilities, airstrips and places recorded in the MCA, 17-26 October 2026.
+#
+# Extracted from 'Where_to_go,_what_to_do_in_MCA_-_Way_Points.kmz', uploaded to
+# the Drive folder by russellmuraba71@gmail.com on 27 Oct 2026. The archive is
+# 1.28 GB because 411 photos hang off these points; only doc.kml was fetched,
+# by ranged request - see scripts/fetch_kmz_member.py. THE PHOTOS REMAIN IN
+# GOOGLE DRIVE and are deliberately not in this repository: they are many times
+# GitHub's blob limit and they show identifiable people and precise settlement
+# locations.
+#
+# This is a condition survey, not just a set of positions. 145 of the 191
+# points carry a note the recorder typed - "Non-operational. Now covered in
+# tall kunai grasses", "Completed but not in use", "Incomplete building" - and
+# that is the part no coordinate replaces. Read the note column before
+# assuming a facility on this list is a facility in use.
+#
+# Names are exactly as recorded in the field, with the capture timestamp split
+# out of the name into its own column. Nothing has been renamed or reconciled
+# against our own places here; that happens downstream where it can be
+# reviewed.

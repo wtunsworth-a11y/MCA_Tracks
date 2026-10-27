@@ -1,6 +1,6 @@
 route_id,leg,category,as_written,from_place,to_place,from_resolved,to_resolved,status,detail,straight_km,route_km,detour_ratio,from_off_network_m,to_off_network_m,ambiguous_name,multi_day,name_evidence
 F01,F01.1,foot,Koruwo-Umbuara-Anatua1-Anatua2,Koruwo,Umbuara,Koruwo,Umbuara,recorded,routes in 6.6 km vs 4.5 km straight,4.48,6.63,1.48,53.0,1.0,,,
-F01,F01.2,foot,Koruwo-Umbuara-Anatua1-Anatua2,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 2.4 km vs 2.2 km straight,2.22,2.36,1.07,1.0,43.0,,,
+F01,F01.2,foot,Koruwo-Umbuara-Anatua1-Anatua2,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 4.0 km vs 3.3 km straight,3.25,3.99,1.23,1.0,144.0,,,
 F02,F02.1,foot,Tahama-Toma,Tahama,Toma,Semahara Tahama,Toma,partial,both ends on the network but only linked the long way round (30.2 km for 7.1 km straight) - the direct track is not recorded,7.08,30.2,4.26,3.0,220.0,,,
 F03,F03.1,foot,Avaru-Sigara-Emo,Avaru,Sigara,Awaru,Sigara,partial,both ends on the network but only linked the long way round (15.0 km for 5.8 km straight) - the direct track is not recorded,5.85,14.97,2.56,413.0,1.0,,,
 F03,F03.2,foot,Avaru-Sigara-Emo,Sigara,Emo,Sigara,Emo,partial,"Sigara end is on the network, Emo is 0.9 km off it",10.63,54.81,5.16,1.0,896.0,,,
@@ -13,12 +13,12 @@ F07,F07.1,foot,Avaru-Dareki,Avaru,Dareki,Awaru,Dareki,partial,both ends on the n
 F08,F08.1,foot,Marasi-Biriri,Marasi,Biriri,Marasi,Biriri,recorded,routes in 14.4 km vs 9.1 km straight,9.07,14.45,1.59,2.0,12.0,,,
 F09,F09.1,foot,Gora-Popondetta,Gora,Popondetta,Gora,Popondetta,partial,both ends on the network but only linked the long way round (128.5 km for 25.9 km straight) - the direct track is not recorded,25.88,128.53,4.97,0.0,1.0,,yes,
 F10,F10.1,foot,Kaura-Sigara,Kaura,Sigara,Kaura,Sigara,recorded,routes in 9.2 km vs 7.0 km straight,7.03,9.17,1.3,19.0,1.0,,,Track from Kaura to Sigara Village
-F11,F11.1,foot,Kuai-Anatua-Serepuna,Kuai,Anatua,Kwae,Anatua,recorded,routes in 7.3 km vs 6.1 km straight,6.1,7.33,1.2,21.0,43.0,,,Kuai to Anatua trek
-F11,F11.2,foot,Kuai-Anatua-Serepuna,Anatua,Serepuna,Anatua,Serefuna,recorded,routes in 3.2 km vs 2.0 km straight,1.95,3.17,1.63,43.0,1.0,,,
+F11,F11.1,foot,Kuai-Anatua-Serepuna,Kuai,Anatua,Kwae,Anatua,recorded,routes in 6.4 km vs 5.0 km straight,5.04,6.36,1.26,21.0,144.0,,,Kuai to Anatua trek
+F11,F11.2,foot,Kuai-Anatua-Serepuna,Anatua,Serepuna,Anatua,Serefuna,recorded,routes in 1.6 km vs 1.2 km straight,1.19,1.61,1.35,144.0,1.0,,,
 F12,F12.1,foot,Aniafe -Jaure,Aniafe,Jaure,Aniafe,Jaure,partial,"Aniafe end is on the network, Jaure is 10.2 km off it",14.9,20.23,1.36,1.0,10163.0,,,
 F13,F13.1,foot,Toma-Itokama,Toma,Itokama,Toma,Itokama,partial,both ends on the network but only linked the long way round (51.8 km for 14.8 km straight) - the direct track is not recorded,14.83,51.75,3.49,220.0,20.0,,,
 F14,F14.1,foot,Kueno-Semahara,Kueno,Semahara,Koeno,Semehara,recorded,routes in 13.7 km vs 9.1 km straight,9.08,13.71,1.51,89.0,26.0,,,
-F15,F15.1,foot,Kokoro -Anatua,Kokoro,Anatua,Kokoro,Anatua,recorded,routes in 4.4 km vs 3.0 km straight,3.03,4.42,1.46,31.0,43.0,,,
+F15,F15.1,foot,Kokoro -Anatua,Kokoro,Anatua,Kokoro,Anatua,recorded,routes in 2.8 km vs 2.1 km straight,2.05,2.85,1.39,31.0,144.0,,,
 F16,F16.1,foot,Kaura-Kuhara,Kaura,Kuhara,Kaura,Kuhara,recorded,routes in 0.4 km vs 0.2 km straight,0.24,0.37,1.54,19.0,6.0,12.0 km apart,,Cropping Calendar Survey Track to Kuhara
 F17,F17.1,foot,Numba -Umasi-Embi-Warisota,Numba,Umasi,Numba,,unlocated,no position for Umasi,,,,,,,,
 F17,F17.2,foot,Numba -Umasi-Embi-Warisota,Umasi,Embi,,Embi,unlocated,no position for Umasi,,,,,,,,
@@ -77,13 +77,13 @@ F53,F53.1,foot,Highway-Bioi,Highway,Bioi,nearest recorded road,Bioi,partial,both
 F54,F54.1,foot,Kuhene-Highway,Kuhene,Highway,Kuheani,nearest recorded road,recorded,routes in 2.1 km vs 1.3 km straight,1.33,2.08,1.57,5.0,0.0,,,
 F55,F55.1,foot,Koruo-Bodoimo-Umbuara-Anatua,Koruo,Bodoimo,Koruwo,Bodoimo,recorded,routes in 4.7 km vs 2.9 km straight,2.93,4.67,1.59,53.0,2.0,,,
 F55,F55.2,foot,Koruo-Bodoimo-Umbuara-Anatua,Bodoimo,Umbuara,Bodoimo,Umbuara,recorded,routes in 2.0 km vs 1.6 km straight,1.57,1.97,1.25,2.0,1.0,,,
-F55,F55.3,foot,Koruo-Bodoimo-Umbuara-Anatua,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 2.4 km vs 2.2 km straight,2.22,2.36,1.07,1.0,43.0,,,
-F56,F56.1,foot,Anatua-Serepuna,Anatua,Serepuna,Anatua,Serefuna,recorded,routes in 3.2 km vs 2.0 km straight,1.95,3.17,1.63,43.0,1.0,,,
-F57,F57.1,foot,Anatua-Kokoro,Anatua,Kokoro,Anatua,Kokoro,recorded,routes in 4.4 km vs 3.0 km straight,3.03,4.42,1.46,43.0,31.0,,,
+F55,F55.3,foot,Koruo-Bodoimo-Umbuara-Anatua,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 4.0 km vs 3.3 km straight,3.25,3.99,1.23,1.0,144.0,,,
+F56,F56.1,foot,Anatua-Serepuna,Anatua,Serepuna,Anatua,Serefuna,recorded,routes in 1.6 km vs 1.2 km straight,1.19,1.61,1.35,144.0,1.0,,,
+F57,F57.1,foot,Anatua-Kokoro,Anatua,Kokoro,Anatua,Kokoro,recorded,routes in 2.8 km vs 2.1 km straight,2.05,2.85,1.39,144.0,31.0,,,
 F58,F58.1,foot,Umbuara-Singata,Umbuara,Singata,Umbuara,Singata,recorded,routes in 2.2 km vs 1.8 km straight,1.77,2.17,1.23,1.0,4.0,,,Umbuara to Singata Trail
 F59,F59.1,foot,Singata-Gorobuna-Asafa,Singata,Gorobuna,Singata,Gorobuna,partial,"Singata end is on the network, Gorobuna is 7.0 km off it",10.2,30.78,3.02,4.0,6998.0,,,
 F59,F59.2,foot,Singata-Gorobuna-Asafa,Gorobuna,Asafa,Gorobuna,Asafa,missing,neither end on the network (7.0 km and 15.2 km off),13.42,43.34,3.23,6998.0,15179.0,,,
-F60,F60.1,foot,Anatua-Tetebedi,Anatua,Tetebedi,Anatua,Tedebedi,partial,"Anatua end is on the network, Tedebedi is 20.4 km off it",21.59,25.54,1.18,43.0,20424.0,,,
+F60,F60.1,foot,Anatua-Tetebedi,Anatua,Tetebedi,Anatua,Tedebedi,partial,"Anatua end is on the network, Tedebedi is 20.4 km off it",21.41,24.57,1.15,144.0,20424.0,,,
 F61,F61.1,foot,Semahara-Tabuane,Semahara,Tabuane,Semehara,Tabuane,recorded,routes in 11.6 km vs 8.5 km straight,8.48,11.58,1.37,26.0,16.0,,,Semahara to Tabuane track (seg 27)
 F62,F62.1,foot,Singata-Gora,Singata,Gora,Singata,Gora,partial,both ends on the network but only linked the long way round (26.0 km for 14.0 km straight) - the direct track is not recorded,14.01,26.05,1.86,4.0,0.0,,,
 R01,R01.1,feeder road,Itokama -Ufia,Itokama,Ufia,Itokama,Ufia,recorded,routes in 1.9 km vs 1.8 km straight,1.78,1.87,1.05,20.0,1.0,,,
@@ -98,7 +98,7 @@ R06,R06.3,feeder road,Sila-Sakarina-Numba-Kaura-Avaru,Numba,Kaura,Numba,Kaura,re
 R06,R06.4,feeder road,Sila-Sakarina-Numba-Kaura-Avaru,Kaura,Avaru,Kaura,Awaru,partial,both ends on the network but only linked the long way round (6.0 km for 2.2 km straight) - the direct track is not recorded,2.22,6.02,2.71,19.0,413.0,,,
 R07,R07.1,feeder road,Ugunomo-Siribu,Ugunomo,Siribu,Ugunomu,Siribu,partial,both ends on the network but only linked the long way round (9.0 km for 3.1 km straight) - the direct track is not recorded,3.11,8.98,2.89,49.0,13.0,,,
 R08,R08.1,feeder road,Jorura-Natanga,Jorura,Natanga,Jorua,Natanga,recorded,routes in 3.1 km vs 2.4 km straight,2.39,3.08,1.29,60.0,3.0,,,
-R09,R09.1,feeder road,Umbuara-Anatua,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 2.4 km vs 2.2 km straight,2.22,2.36,1.07,1.0,43.0,,,
+R09,R09.1,feeder road,Umbuara-Anatua,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 4.0 km vs 3.3 km straight,3.25,3.99,1.23,1.0,144.0,,,
 R10,R10.1,feeder road,Itokama-Kuai,Itokama,Kuai,Itokama,Kwae,partial,both ends on the network but only linked the long way round (13.2 km for 0.8 km straight) - the direct track is not recorded,0.78,13.22,16.92,20.0,21.0,,,
 R11,R11.1,feeder road,Itokama-Aniafe,Itokama,Aniafe,Itokama,Aniafe,recorded,routes in 1.0 km vs 0.8 km straight,0.79,1.0,1.27,20.0,1.0,,,
 R12,R12.1,feeder road,Highway-Kawowoki (Mr. Womo),Highway,Kawowoki,nearest recorded road,Kawowoki,partial,both ends on the network but only linked the long way round (17.5 km for 0.5 km straight) - the direct track is not recorded,0.47,17.53,37.51,0.0,3.0,,,

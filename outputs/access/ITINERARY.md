@@ -290,12 +290,12 @@ The whole round is about **241 km** of travel measured in straight lines between
 - Nothing to collect here - this stop is on the way, or is one end
   of a walk that needs recording.
 
-**WALK TO ANATUA AND RECORD IT.** About 1.5 km.
+**WALK TO ANATUA AND RECORD IT.** About 2.5 km.
 
 
 ## 21. Anatua
 
-`-9.1400, 148.2654`  (GPS-inferred)
+`-9.1495, 148.2644`  (GPS-inferred)
 
 > **Anatua is a long village with Anatua 1 and Anatua 2 defined. Map both ends, not one point.**
 
@@ -304,7 +304,7 @@ The whole round is about **241 km** of travel measured in straight lines between
 - **COLLECT** Anatua Elementary School
   - ward 12 Umbuwara, reported *In use*
 
-**WALK TO SEREFUNA AND RECORD IT.** About 2.0 km.
+**WALK TO SEREFUNA AND RECORD IT.** About 1.2 km.
 
 
 ## 22. Serefuna

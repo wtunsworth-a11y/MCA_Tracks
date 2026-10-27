@@ -1,0 +1,212 @@
+# Facilities, airstrips and places recorded in the MCA, 17-26 October 2026.
+#
+# Extracted from 'Where_to_go,_what_to_do_in_MCA_-_Way_Points.kmz', uploaded to
+# the Drive folder by russellmuraba71@gmail.com on 27 Oct 2026. The archive is
+# 1.28 GB because 411 photos hang off these points; only doc.kml was fetched,
+# by ranged request - see scripts/fetch_kmz_member.py. THE PHOTOS REMAIN IN
+# GOOGLE DRIVE and are deliberately not in this repository: they are many times
+# GitHub's blob limit and they show identifiable people and precise settlement
+# locations.
+#
+# This is a condition survey, not just a set of positions. 145 of the 191
+# points carry a note the recorder typed - "Non-operational. Now covered in
+# tall kunai grasses", "Completed but not in use", "Incomplete building" - and
+# that is the part no coordinate replaces. Read the note column before
+# assuming a facility on this list is a facility in use.
+#
+# Names are exactly as recorded in the field, with the capture timestamp split
+# out of the name into its own column. Nothing has been renamed or reconciled
+# against our own places here; that happens downstream where it can be
+# reviewed.
+name,recorded,lon,lat,ele_m,accuracy_m,note,photos
+Acenssion Anglican Church of Dea,2026-10-24T07:32:10,148.3266809,-9.0588639,928.0,2.3,,3
+Afore Airstrip,2026-10-17T16:00:46,148.3900000,-9.1396567,746.0,1.5,Non-operational. Now covered in tall kunai grasses,2
+Afore CHW house,2026-10-17T15:20:54,148.3867383,-9.1420983,746.0,1.6,Currently in use,1
+Afore CHW house,2026-10-17T15:25:49,148.3865900,-9.1413933,749.0,1.8,Currently in use,1
+Afore CHW house,2026-10-17T18:32:26,148.3864651,-9.1419109,750.0,1.6,Building in use,1
+Afore DDA Office,2026-10-17T15:31:51,148.3875700,-9.1408467,748.0,1.6,Not yet officially opened for Government Officers to use yet currently one office space has been allocated for Police to use.,2
+Afore Elementary School,2026-10-17T16:27:28,148.3872721,-9.1376766,734.0,2.2,Currently in use,1
+Afore High School 2 in 1 building,2026-10-25T15:52:23,148.3709467,-9.0687633,716.0,,Building in use,2
+Afore High School 2 in 1 building,2026-10-25T15:54:07,148.3710400,-9.0689233,712.0,,Building in use,2
+Afore High School 2 in 1 building,2026-10-25T15:57:21,148.3711417,-9.0690683,713.0,,Incomplete building,2
+Afore High School 2 in 1 building,2026-10-25T16:00:39,148.3712983,-9.0692400,715.0,,Completed but not in use,2
+Afore High School 4 in 1 building and Administration Office,2026-10-25T15:46:39,148.3707883,-9.0684517,717.0,,Building in use,3
+Afore High School Boys Dormitory,2026-10-25T15:45:05,148.3705467,-9.0681767,715.0,,Completed but not in use,2
+Afore High School Boys Dormitory,2026-10-25T16:33:24,148.3712183,-9.0675183,718.0,,Temporary building to accommodate male students,1
+Afore High School Girls Dormitory,2026-10-25T16:01:51,148.3711683,-9.0694017,715.0,,,3
+Afore High School Girls Dormitory,2026-10-25T16:27:45,148.3713333,-9.0685350,711.0,,Incomplete,2
+Afore High School Head Teacher's house,2026-10-25T15:50:40,148.3707567,-9.0687817,718.0,,Building in use,1
+Afore High School Storage Building,2026-10-25T16:03:21,148.3713133,-9.0694450,715.0,,Building in use,2
+Afore High School Student's Mass & Kitchen,2026-10-25T16:17:44,148.3713983,-9.0694217,718.0,,,2
+Afore High School Teacher's house,2026-10-25T15:47:40,148.3706250,-9.0684817,718.0,,Building in use,2
+Afore High School Teacher's house,2026-10-25T15:49:15,148.3706400,-9.0686217,716.0,,Building in use,1
+Afore High School Teacher's house,2026-10-25T15:55:13,148.3708817,-9.0689500,716.0,,Building in use,2
+Afore High School Teacher's house,2026-10-25T15:58:43,148.3710467,-9.0692050,714.0,,Building in use,2
+Afore High School Teacher's house,2026-10-25T16:18:56,148.3713500,-9.0695617,717.0,,,2
+Afore High School Teacher's house,2026-10-25T16:20:30,148.3715167,-9.0697700,712.0,,,2
+Afore High School Teacher's house,2026-10-25T16:31:03,148.3716717,-9.0675083,718.0,,Building in use,2
+Afore High School Teacher's house,2026-10-25T16:32:18,148.3714217,-9.0674433,721.0,,Building in use,2
+Afore Primary School 2 in 1 building,2026-10-17T16:12:21,148.3883517,-9.1373650,741.0,1.8,2 in one permanent building for grades 5 & 6.,1
+Afore Primary School 2 in 1 building,2026-10-17T16:18:40,148.3882568,-9.1372819,743.0,1.7,2 in 1 building for grades 1 & 8,2
+Afore Primary School Head Teacher's house,2026-10-17T16:23:57,148.3877609,-9.1377582,740.0,1.8,Currently in use,2
+Afore Primary School Teacher's house,2026-10-17T16:21:55,148.3880167,-9.1373817,740.0,1.6,Currently in use,2
+Afore Primary School Teacher's house,2026-10-17T16:30:51,148.3876867,-9.1379117,738.0,1.5,Currently in use,1
+Afore Primary School Teacher's house,2026-10-17T16:43:15,148.3878467,-9.1380383,741.0,1.8,Currently in use,2
+Afore Primary School Teacher's house,2026-10-17T16:44:08,148.3879810,-9.1381274,738.0,1.8,Currently in use,2
+Afore Primary School Teacher's teacher's house,2026-10-17T16:22:57,148.3879491,-9.1375572,735.0,1.7,Currently in use,2
+Aguido Elementary School,2026-10-19T14:19:23,148.4484667,-9.1413633,733.0,2.2,Classroom in use,1
+Aguido Primary School 2 in 1 building,2026-10-19T14:22:35,148.4489502,-9.1414961,739.0,2.6,Classroom in use,2
+Aguido Primary School 4 in 1 School Building,2026-10-19T14:16:53,148.4485850,-9.1415017,740.0,1.8,1 × 4 in 1 School Building in its early stage. Building materials have been prepared already but the carpenter hasn't shown up to begin with construction work.,1
+Aguido Primary School Teacher's house,2026-10-19T14:09:53,148.4497350,-9.1402683,733.0,1.6,House in use,1
+Aguido Primary School Teacher's house,2026-10-19T14:11:36,148.4495117,-9.1405200,731.0,1.0,House in use,1
+Aguido Primary School Teacher's house,2026-10-19T14:13:00,148.4493567,-9.1407250,732.0,1.2,House in use,1
+Aguido Primary School Teacher's house,2026-10-19T14:14:57,148.4489800,-9.1410856,740.0,1.7,House in use,2
+Anatua 1,2026-10-22T11:13:39,148.2609134,-9.1528914,788.0,1.6,The area where the SDA Church is located is defined as Anatua 1.,6
+Anatua 1 SDA Church,2026-10-22T11:06:38,148.2618484,-9.1510173,783.0,1.8,Church building in use,2
+Anatua 2,2026-10-22T11:38:02,148.2636117,-9.1414850,788.0,1.5,The area where Anatua Renewal Church is located is defined as Anatua 2.,3
+Anatua 2 Renewal Church,2026-10-22T11:31:21,148.2631915,-9.1441950,790.0,2.0,Building in use,2
+Anatua Elementary School,2026-10-22T11:21:45,148.2617327,-9.1484760,789.0,1.7,,2
+Araforo Hamlet,2026-10-22T14:59:29,148.2810817,-9.1088267,776.0,1.6,Araforo is an Hamlet of Umbuara village,2
+Awaru Old Airstrip,,148.3886400,-9.0730017,688.0,,"The soccer field at Awaru was cleared in the early 2000s as an airstrip. It was cleared after flights to Sila stopped due to a clan dispute between two brothers over the airstrip there. Once the dispute was resolved and flights resumed at Sila, the Awaru airstrip was abandoned and later houses were built on part of the land and the remaining area became a soccer field.",2
+Awaru Revival Centre of Papua New Guinea Church,2026-10-26T08:31:01,148.3890650,-9.0735367,686.0,,,3
+Awaru village,,148.3845600,-9.0671050,705.0,,,2
+Bareji Headwaters,2026-10-20T17:10:39,148.2558176,-9.2223600,782.0,3.2,,2
+Bishop Beven Meredith Tomb,2026-10-25T11:39:11,148.3706750,-9.0670217,721.0,,,2
+Bodoimo Elementary School,2026-10-22T16:07:48,148.2861317,-9.1108066,757.0,2.0,Building in use,3
+Bodoimo Renewal Church,2026-10-22T15:51:57,148.2860159,-9.1159995,767.0,2.0,Building in use,3
+Bodoimo village,2026-10-22T15:49:16,148.2861259,-9.1148966,765.0,1.9,,5
+Dea & Ugunomo 2 in 1 Elementary building,2026-10-24T07:25:30,148.3265061,-9.0579463,925.0,3.3,Students from Dea and Ugunomo Elementary are combined in the same classroom and taught by their elementary teachers.,2
+Dea & Ugunomo Elementary classroom,2026-10-24T07:21:22,148.3266586,-9.0574346,924.0,1.9,Students from Dea and Ugunomo Elementary are combined in the same classroom and taught by their elementary teachers.,2
+Dea & Ugunomo Elementary classroom,2026-10-24T07:23:40,148.3266356,-9.0576751,923.0,1.6,Students from Dea and Ugunomo Elementary are combined in the same classroom and taught by their elementary teachers.,3
+Dea Aid Post,2026-10-24T07:37:21,148.3272539,-9.0587651,936.0,2.3,Not in use,3
+Dea Elementary School Teacher's house,2026-10-24T07:27:04,148.3262936,-9.0577222,927.0,1.9,,3
+Dea Primary School 2 in 1 building,2026-10-24T07:07:36,148.3274367,-9.0569891,925.0,2.0,Building in use,2
+Dea Primary School 2 in 1 building,2026-10-24T07:09:32,148.3271596,-9.0566579,927.0,2.1,Building in use,2
+Dea Primary School 2 in 1 building,2026-10-24T07:11:10,148.3270129,-9.0568290,927.0,2.3,Building in use,3
+Dea Primary School Grades 1 & 2 classrooms,2026-10-24T07:13:49,148.3269050,-9.0570969,925.0,2.8,Grade 1 classroom not in use (incomplete) Grade 2 classroom is in use. Grade 1 classroom is located on the right side of the picture while grade 2 is on the left side of the picture.,3
+Dea Primary School Head Teacher's house,2026-10-24T06:56:34,148.3273136,-9.0578870,927.0,1.9,Building in use,2
+Dea Primary School Teacher's house,2026-10-24T06:49:50,148.3273860,-9.0582946,895.0,2.9,Building in use,2
+Dea Primary School Teacher's house,2026-10-24T06:51:55,148.3273546,-9.0581212,922.0,1.7,"The building is currently being used temporarily by an Anglican Church priest, as his house is old and unusable.",2
+Dea Primary School Teacher's house,2026-10-24T06:59:53,148.3273478,-9.0577696,927.0,3.8,Building in use,2
+Dea Primary School Teacher's house,2026-10-24T07:01:51,148.3274703,-9.0574121,926.0,2.1,Vacant building,3
+Dea Primary School Teacher's house,2026-10-24T07:03:44,148.3275447,-9.0573031,925.0,2.5,Building in use,3
+Erand Creek,2026-10-22T10:26:46,148.2714960,-9.1536588,746.0,2.1,,2
+Ese Bible Institute (EBI) Aid Post,2026-10-24T14:26:42,148.3657317,-9.0505517,861.0,,Not in use currently,2
+Ese Bible Institute (EBI) Classroom,2026-10-24T14:25:28,148.3658217,-9.0507033,860.0,,Building in use,2
+Ese Bible Institute (EBI) Mission House,2026-10-24T14:23:15,148.3662050,-9.0502650,852.0,,Building in use,2
+Hamlet of Sila,2026-10-26T11:21:21,148.3660493,-9.0662461,750.0,2.0,,2
+Hamlet of Sila aka new base,2026-10-26T10:46:11,148.3675613,-9.0688480,721.0,1.7,,2
+Isaiah Mamure's Guest House,2026-10-17T16:56:03,148.3874383,-9.1389783,742.0,1.5,,2
+Itokama Airstrip,2026-10-21T10:41:02,148.2649699,-9.1996602,779.0,1.6,,2
+Itokama CHW house,2026-10-21T10:31:56,148.2630135,-9.1973734,773.0,1.9,Building in use,2
+Itokama Elementary School,2026-10-21T10:12:07,148.2636776,-9.1999222,778.0,2.2,Building in use,3
+Itokama Health Centre,2026-10-21T10:31:00,148.2631569,-9.1973614,775.0,2.2,,2
+Itokama Primary School 2 in 1 Building,2026-10-21T10:09:37,148.2640863,-9.1991288,780.0,3.6,Building in use,1
+Itokama Primary School 2 in 1 Building,2026-10-21T10:18:07,148.2640920,-9.1989844,778.0,1.8,Building in use,1
+Itokama Primary School 2 in 1 Building,2026-10-21T10:18:47,148.2640285,-9.1987899,782.0,2.0,Classroom incomplete. Yet to be used.,1
+Itokama Primary School 4 in 1 building,2026-10-21T10:16:22,148.2643346,-9.1993930,778.0,4.8,Two classrooms upstairs are not in use because it has begun to go old. Both classrooms downstairs are in use.,1
+Itokama Primary School Library,2026-10-21T10:07:24,148.2642203,-9.1986069,772.0,3.3,Building in use,2
+Itokama Primary School Teacher's house,2026-10-21T10:20:49,148.2639917,-9.1986467,784.0,8,Building in use,1
+Itokama Primary School Teacher's house,2026-10-21T10:21:57,148.2638951,-9.1983587,780.0,1.9,Building in use,2
+Itokama Primary School Teacher's house,2026-10-21T10:23:14,148.2639534,-9.1980609,783.0,1.9,Building in use,1
+Itokama Primary School Teacher's house,2026-10-21T10:24:03,148.2640164,-9.1979763,782.0,2.3,Building in use,2
+Itokama Primary School Teacher's house,2026-10-21T10:24:52,148.2639670,-9.1978699,782.0,2.7,Building in use,1
+Itokama Primary School Teacher's house,2026-10-21T10:25:28,148.2639598,-9.1977572,781.0,2.7,Building in use,1
+Itokama Primary School Teacher's house,2026-10-21T10:27:15,148.2639659,-9.1976502,781.0,2.3,Building in use,1
+Itokama Primary School Teacher's house,2026-10-21T10:28:33,148.2639329,-9.1975715,780.0,1.6,Building in use,2
+Jesus Film Project Building,2026-10-24T12:11:18,148.3648333,-9.0504900,865.0,,Building in use,2
+Jordan Creek,2026-10-24T11:31:49,148.3608417,-9.0523000,830.0,,,2
+Jordan Creek,2026-10-26T09:43:36,148.3735650,-9.0671350,695.0,1.9,Located between Afore High School to Kaura,2
+Jorura Elementary School,2026-10-23T15:35:16,148.3057567,-9.0879883,748.0,2.3,,3
+Jorura Renewal Church,2026-10-23T15:50:07,148.3053535,-9.0854190,774.0,3.3,Building in use,3
+Kaura CRC Church,2026-10-26T07:30:41,148.3782767,-9.0627183,742.0,,Building in use,4
+Kaura Elementary School,2026-10-26T08:55:20,148.3818167,-9.0640150,729.0,,2 × 2 in 1 building in use,7
+Kaura Renewal Church,2026-10-26T07:22:20,148.3769950,-9.0641500,738.0,,Building in use,2
+Kavaik Creek,2026-10-22T10:42:55,148.2672779,-9.1507369,760.0,3.1,,2
+Kiara Elementary School,2026-10-22T17:20:42,148.2854431,-9.0925416,802.0,1.8,Building in use,3
+Kokoro Aid Post,2026-10-21T16:26:57,148.2709170,-9.1682427,745.0,2.1,"The building is incomplete. The CHW currently treats patients from his private home, with medical supplies sourced from Itokama Health Centre.",2
+Kokoro Elementary School,2026-10-21T16:34:36,148.2721884,-9.1646899,748.0,2.4,Students no longer attend classes now since July this year due to El Nino.,2
+Korokoro village,2026-10-17T15:45:25,148.3882817,-9.1451100,742.0,2.1,,4
+Koruwo Health Centre,2026-10-23T11:16:15,148.3087719,-9.1177178,663.0,2.1,Building not in use. It remains incomplete with no CHW.,5
+Koruwo High School Boys Dormitory,2026-10-23T10:57:53,148.3084812,-9.1149340,661.0,2.3,Completed but not in use,2
+Koruwo High School Girls Dormitory,2026-10-23T11:09:56,148.3092623,-9.1168798,663.0,1.7,Not in use,2
+Koruwo Primary School 2 in 1 building,2026-10-23T11:05:45,148.3087967,-9.1164368,663.0,2.5,,2
+Koruwo Primary School 2 in 1 building,2026-10-23T11:07:37,148.3089828,-9.1165131,668.0,1.8,,1
+Koruwo Primary School 2 in 1 building,2026-10-23T11:11:47,148.3089979,-9.1171242,662.0,2.2,"This building belonged to Koruwo Elementary but was handed over to Koruwo Primary School. This was necessary because Koruwo High School was occupying the Primary School's buildings, leaving the Primary School in need of additional classrooms to accommodate its students. Koruwo Elementary has since relocated to the end of Koruwo Village.",2
+Koruwo Primary School 4 in building 1,2026-10-23T11:04:34,148.3086915,-9.1162188,662.0,2.8,Currently used by Koruwo High School. Koruwo High School yet to have their whole buildings completed.,2
+Koruwo Primary School 8 in 1 building,2026-10-23T10:55:40,148.3090249,-9.1151149,650.0,1.9,"The building is incomplete. The 4 classrooms upstairs are currently being used to temporarily accommodate male teachers from Koruwo High School until their houses are completed. Once completed, the teachers will move out and students will begin using the classrooms. The 4 classrooms downstairs are yet to be completed.",3
+Koruwo Primary School Head Teacher's house,2026-10-23T10:38:05,148.3083067,-9.1161352,668.0,2.2,,2
+Koruwo Primary School Teacher's house,2026-10-23T10:33:17,148.3081066,-9.1168225,668.0,2.1,,2
+Koruwo Primary School Teacher's house,2026-10-23T10:34:31,148.3081154,-9.1165588,666.0,2.2,Building in use,2
+Koruwo Primary School Teacher's house,2026-10-23T10:36:06,148.3081764,-9.1164103,665.0,1.6,,2
+Koruwo Primary School Teachers house,2026-10-23T10:31:16,148.3080931,-9.1170352,649.0,2.4,Building in use,2
+Kuhene United Church Building,2026-10-19T14:43:50,148.4564350,-9.1354827,732.0,1.8,"Previously known as Christian Revival Center (CRC). Due to lack of financial support from the Mother Church, this small church pulled out from the mother church to seek support from the United Church. Currently supported by the United Church. The building currently serves two purposes. From Monday to Friday, Early Childhood Learning uses the building to teach school kids and on Sundays, building is used for worship.",2
+Kuweno Elementary School,2026-10-24T10:59:17,148.3523367,-9.0536617,924.0,,,2
+Mandakoro Renewal Church,2026-10-20T15:53:02,148.2663930,-9.2156697,793.0,2.2,,2
+Mavam creek,2026-10-22T15:20:10,148.2843736,-9.1125447,702.0,2.1,,3
+Momons Church - Kuhene,2026-10-19T14:48:09,148.4553950,-9.1373600,730.0,1.7,Under construction,2
+Naokanane Elementary School,2026-10-20T16:20:25,148.2658780,-9.2107064,754.0,3.3,"The school operated until mid-2026 when a conflict arose between the two teachers, leading to a cessation of teaching activities. Consequently, student attendance ceased.",2
+Numba CRC Church,,148.3658317,-9.0502333,,,Building in use,3
+Numba Elementary School,2026-10-24T18:00:49,148.3704617,-9.0549833,798.0,,,2
+Old Dea Airstrip,2026-10-24T07:40:44,148.3268829,-9.0581295,927.0,1.5,"The current location of Dea Primary School was formerly the old Dea airstrip. It became unusable due to excessive mud and a short runway, and no other flights landed after it was initially cleared. The original Dea School was established at Taparuraha, located between Dea, Ugunomo, and Siribu villages. When the airstrip became non-operational, the school was relocated to the airstrip site as it needed an area accessible to the main road.",2
+Old Serefuna village,2026-10-22T09:16:46,148.2757279,-9.1570969,755.0,2.7,The community left this area to settle next to the Main Highway (now the current Serefuna village) Population was also expanding and the community needed a bigger area to resettle there.,2
+Resurrection Chapel Tabuane Anglican Church,2026-10-24T10:11:33,148.3413573,-9.0641777,834.0,2.4,Building in use,2
+Retired Anglican Priest house,2026-10-25T11:42:17,148.3708583,-9.0668800,723.0,,Building in use,1
+Saik creek,2026-10-22T10:49:57,148.2645745,-9.1513555,749.0,3.1,,3
+Saint Columba's Anglican Church Priest's house,2026-10-25T16:34:40,148.3711400,-9.0673733,719.0,,Temporary building to accommodate the Anglican Priest,2
+Saint Columba's Anglican Church Sakarina,2026-10-25T11:37:37,148.3705450,-9.0670350,723.0,,,2
+Saint Columba's Anglican Church Sakarina Assistant Priest's House,2026-10-25T11:46:34,148.3704850,-9.0673433,723.0,,Building in use,1
+Saint James Serefuna Anglican Church,2026-10-21T16:58:16,148.2731649,-9.1567189,748.0,2.7,St.James Anglican Church building is yet to be completed but in use. A preschool was established at this location in 1981. It was later relocated to Anatua in 1986.,3
+Saint Mary's Anglican Church - Yoivi Village,2026-10-19T14:35:19,148.4495267,-9.1394065,733.0,3.4,Few Anglican Christians attend Sunday worship here.,3
+Saint Mathias Itokama Anglican Church,2026-10-21T10:36:21,148.2642318,-9.1983329,774.0,2.3,,2
+Saint Peter's Tahama Anglican Church,2026-10-22T07:02:49,148.2968932,-9.1626133,643.0,2.4,,3
+Sakarina Health Center CHW house,2026-10-25T14:11:49,148.3691400,-9.0670683,726.0,,Building in use,2
+Sakarina Health Center CHW house,2026-10-25T15:25:40,148.3697033,-9.0675133,712.0,,Building in use,2
+Sakarina Health Center CHW house,2026-10-25T15:26:57,148.3695383,-9.0678250,717.0,,Building in use,2
+Sakarina Health Center CHW house,2026-10-25T15:28:42,148.3693633,-9.0680117,718.0,,Building in use,2
+Sakarina Health Center CHW house,2026-10-25T15:29:31,148.3692833,-9.0681517,716.0,,Building used by Sakarina Health Center Security Guard,2
+Sakarina Health Center CHW house,2026-10-25T15:32:09,148.3691733,-9.0680400,716.0,,Building in use,2
+Sakarina Health Center OIC's house,2026-10-25T15:31:05,148.3691250,-9.0683233,714.0,,Building in use,3
+Sakarina Health Centre,2026-10-25T14:37:23,148.3693383,-9.0676383,722.0,,Building in use,4
+Sakarina Primary School 2 in 1 building,2026-10-25T13:58:57,148.3693900,-9.0659583,729.0,,Building in use,2
+Sakarina Primary School 2 in 1 building,2026-10-25T14:04:54,148.3691617,-9.0661367,727.0,,Building in use,3
+Sakarina Primary School 2 in 1 building,2026-10-25T14:09:52,148.3689600,-9.0666250,724.0,,Building in use,2
+Sakarina Primary School 2 in 1 building used as an Administration block,2026-10-25T13:56:37,148.3691750,-9.0657850,731.0,,Building in use,2
+Sakarina Primary School 4 in 1 building,2026-10-25T14:00:45,148.3694933,-9.0661917,727.0,,Building in use,3
+Sakarina Primary School 4 in 1 building,2026-10-25T14:02:51,148.3696350,-9.0664583,724.0,,Building in use,2
+Sakarina Primary School building,2026-10-25T14:06:29,148.3690500,-9.0662217,729.0,,Building in use. At some point will be taken down due to deterioration.,2
+Sakarina Primary School Head Teacher's house,2026-10-25T12:24:14,148.3688833,-9.0650983,734.0,,Building in use,2
+Sakarina Primary School Teacher's house,2026-10-25T11:53:29,148.3695600,-9.0655850,729.0,,Incomplete building and not in use,3
+Sakarina Primary School Teacher's house,2026-10-25T11:57:42,148.3694267,-9.0654167,731.0,,Incomplete building and not in use,2
+Sakarina Primary School Teacher's house,2026-10-25T12:19:05,148.3693133,-9.0652783,726.0,,Building in use,2
+Sakarina Primary School Teacher's house,2026-10-25T12:20:59,148.3691200,-9.0651883,733.0,,Building in use,2
+Sakarina Primary School Teacher's house,2026-10-25T12:28:22,148.3679117,-9.0642700,742.0,,Building in use,2
+Sakarina Primary School Teacher's house,2026-10-25T13:41:19,148.3677117,-9.0640733,747.0,,Building in use,2
+Sakarina Primary School Teacher's house,2026-10-25T13:42:22,148.3675667,-9.0640117,749.0,,Building in use,1
+Sakarina Primary School Teacher's house,2026-10-25T13:44:52,148.3680300,-9.0644800,744.0,,Building in use,2
+Sakarina Primary School Teacher's house,2026-10-25T13:51:35,148.3683800,-9.0646250,751.0,,Building in use,3
+Sakarina Primary School Teacher's house,2026-10-25T13:53:09,148.3687317,-9.0650983,739.0,,Building in use,2
+Sakarina Primary School Teacher's house,2026-10-25T13:54:34,148.3688950,-9.0654800,732.0,,Building in use,1
+Serefuna SDA Church,2026-10-22T10:07:19,148.2728507,-9.1551450,746.0,3.0,Building in use,3
+Sila Airstrip,2026-10-26T11:04:47,148.3633595,-9.0641194,781.0,1.9,Closed down,6
+Siribu Elementary School,2026-10-23T16:39:07,148.3208962,-9.0864591,703.0,1.8,Building in use,3
+Siribu Renewal Church,2026-10-23T16:42:51,148.3205807,-9.0876365,710.0,2.0,Building in use,3
+Sirunta creek,2026-10-26T10:38:07,148.3678515,-9.0698887,700.0,2.1,,2
+Suwati garden house,2026-10-20T17:00:47,148.2587578,-9.2205782,778.0,2.1,,2
+Tabuane Elementary School,2026-10-24T10:14:12,148.3414281,-9.0645019,844.0,3.1,Building currently not in use. Students not attending classes.,2
+Tahama Elementary School,2026-10-22T07:11:56,148.2954660,-9.1603277,647.0,1.9,Building in use,3
+Tahama Elementary School Teacher's house,2026-10-22T07:07:56,148.2954153,-9.1619123,640.0,3.9,,3
+Tahama Elementary School Teacher's house,2026-10-22T07:44:17,148.2954761,-9.1611814,649.0,3.4,,3
+Track leading to Anatua 2,2026-10-22T10:23:40,148.2728483,-9.1538783,755.0,1.8,,1
+Track leading to Sila Airstrip,2026-10-26T10:34:58,148.3681110,-9.0705980,713.0,3.1,,1
+Ugunomo Elementary School Teacher's house,2026-10-24T07:28:28,148.3262234,-9.0579449,924.0,3.0,,2
+Ugunomo Renewal Church,2026-10-23T17:58:34,148.3193529,-9.0620238,878.0,2.0,Building in use,2
+Umbuara Aid post,2026-10-22T13:32:27,148.2736750,-9.1165967,797.0,1.8,The Aid Post building is incomplete & not in use.,2
+Umbuara Primary School 2 in 1 building,2026-10-22T13:40:14,148.2728883,-9.1140033,788.0,1.7,,2
+Umbuara Primary School 2 in 1 building,2026-10-22T13:42:04,148.2728018,-9.1134918,795.0,1.6,,2
+Umbuara Primary School 2 in 1 building,2026-10-22T13:43:26,148.2726641,-9.1134078,801.0,1.7,,1
+Umbuara Primary School Teacher's house,2026-10-22T13:57:38,148.2723333,-9.1136032,795.0,1.7,Building in use,1
+Umbuara Primary School Teacher's house,2026-10-22T13:58:40,148.2722417,-9.1137053,792.0,1.9,Building in use,1
+Umbuara Primary School Teacher's house,2026-10-22T14:01:40,148.2723864,-9.1133953,792.0,2.1,,2
+Umbuara Renewal Church,2026-10-22T13:05:03,148.2738687,-9.1206087,790.0,1.7,Church building in use.,3
+Yoivi Community Aid Post,2026-10-19T14:06:15,148.4502217,-9.1404583,731.0,2.0,Community Health Workers serve as volunteers in the community whenever medicines are available.,2
