@@ -35,6 +35,7 @@ from cross_reference_tracks import (  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 CHECKLIST = ROOT / "outputs" / "access" / "track_checklist.csv"
 FACILITIES = ROOT / "data" / "reference" / "facilities.csv"
+RECONCILED = ROOT / "outputs" / "access" / "facilities_reconciled.csv"
 OUT = ROOT / "outputs" / "access" / "ITINERARY.md"
 
 START = "Afore"                 # Will, 16 Oct: "Afore start point. Can end anywhere"
@@ -133,6 +134,31 @@ def facility_stops(resolve):
     with FACILITIES.open() as fh:
         rows = list(csv.DictReader(l for l in fh if not l.startswith("#")))
 
+    # Anything Russell already collected comes off the list. He recorded 191
+    # points between 17 and 26 Oct 2026 and it is worse than useless to send
+    # him back for a school he has photographed; the ones struck off are named
+    # in outputs/access/facilities_reconciled.csv so nobody has to take this
+    # on trust. Only a verdict of COLLECTED removes a row. PARTIAL stays -
+    # half a row found is not a row done - and so does LIKELY, which means the
+    # kind of facility was recorded somewhere but nothing ties it to this
+    # village.
+    done = {}
+    if RECONCILED.exists():
+        with RECONCILED.open() as fh:
+            for d in csv.DictReader(fh):
+                done[(d["ward"].strip(), d["village"].strip(),
+                      d["facility"].strip())] = d
+    collected = [r for r in rows
+                 if done.get((r["ward"].strip(), r["village"].strip(),
+                              r["facility"].strip()), {}).get("verdict")
+                 == "COLLECTED"]
+    rows = [r for r in rows if r not in collected]
+    for r in rows:
+        d = done.get((r["ward"].strip(), r["village"].strip(),
+                      r["facility"].strip()), {})
+        if d.get("verdict") == "PARTIAL" and d.get("kinds_missing"):
+            r["still_wants"] = d["kinds_missing"]
+
     stops = defaultdict(list)
     for r in rows:
         village, ward = r["village"].strip(), r["ward"].strip()
@@ -151,7 +177,7 @@ def facility_stops(resolve):
             # facility arrives with an unknown village, say so rather than drop it.
             stops.setdefault("(village not located)", []).append(
                 {**r, "ask": "we hold no position for this village"})
-    return stops, rows
+    return stops, rows, collected
 
 
 def walk_jobs(resolve):
@@ -251,7 +277,7 @@ def compute():
     """The whole plan as data. The map and the document both read this, so
     they cannot drift apart."""
     resolve = Resolver()
-    stops, fac_rows = facility_stops(resolve)
+    stops, fac_rows, collected = facility_stops(resolve)
     jobs, deferred, check_rows = walk_jobs(resolve)
     unloc = unlocated_places(check_rows)
 
@@ -268,7 +294,8 @@ def compute():
     for j in jobs:
         jobs_by_pair[frozenset((j["a"], j["b"]))].append(j)
 
-    return dict(resolve=resolve, stops=stops, fac_rows=fac_rows, jobs=jobs,
+    return dict(resolve=resolve, stops=stops, fac_rows=fac_rows,
+                collected=collected, jobs=jobs,
                 deferred=deferred, unloc=unloc, unplaced=unplaced, route=route,
                 d=d, idx=idx, job_edges=job_edges, jobs_by_pair=jobs_by_pair)
 
@@ -276,6 +303,7 @@ def compute():
 def main():
     plan = compute()
     resolve, stops, fac_rows = plan["resolve"], plan["stops"], plan["fac_rows"]
+    collected = plan.get("collected", [])
     jobs, deferred, unloc = plan["jobs"], plan["deferred"], plan["unloc"]
     unplaced, route = plan["unplaced"], plan["route"]
     d, idx, jobs_by_pair = plan["d"], plan["idx"], plan["jobs_by_pair"]
@@ -354,6 +382,13 @@ def main():
     w(f"**All {n_hops} legs between stops get recorded.** They all count the "
       "same. Do not try to work out which ones are worth more.")
     w("")
+    if collected:
+        w(f"{len(collected)} points that were on the earlier version of this "
+          f"list have been taken off, because they were recorded between 17 "
+          f"and 26 October and are already in. They are not forgotten - every "
+          f"one is named in `facilities_reconciled.csv`. Do not go back for "
+          f"them.")
+        w("")
     w(f"The whole round is about **{walk_km:.0f} km** of travel measured in straight "
       "lines between stops, so the real walking is more. It is not one trip; take "
       "it in whatever pieces suit, in this order.")
