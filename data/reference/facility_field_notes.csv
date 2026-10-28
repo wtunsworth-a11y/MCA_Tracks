@@ -1,0 +1,26 @@
+# What Russell said about the facilities, relayed by Will on 28 Oct 2026, with
+# his own words kept in the note column.
+#
+# This is field evidence and it outranks anything inferred here. Three kinds
+# of thing it settles, and they are not the same:
+#
+#   village_named  the ward table recorded a facility without saying which
+#                  village it is in; he has said. The row is matched again
+#                  under the corrected village.
+#   no_point       there is nothing to put a coordinate on. A school that
+#                  meets in a borrowed shelter and has moved three times is
+#                  not a point, and asking for it again wastes a walk.
+#   deferred       it exists, he knows where, and he has said when he will
+#                  collect it. Not a question for anybody.
+#
+# Each row was checked against waypoints_facilities.csv before being written
+# here; where the check disagreed with him that is recorded rather than
+# smoothed over - see the Afore health centre row.
+ward,village,facility_startswith,village_is,resolution,note
+05 Siurani,not named,Elementary School,Numba,village_named,"Russell: 'Numba - Jesus Film building, EBI school and Pid Post, church facility and Elementary School.' Numba Elementary School is in the 27 Oct upload. Siurani is the old name for Numba - Will, 18 Oct 2026"
+07 Dea,not named,Airstrip,Dea,village_named,"Russell: 'Dea - School facilities, church facilities, airpost and old Dea Airstrip.' Recorded as 'Old Dea Airstrip' at 148.3268829,-9.0581295, with the note that Dea Primary School now stands on the former airstrip. The ward table says Closed 1988, which agrees"
+12 Umbuwara,not named,Aid Post,Umbuwara,village_named,"Russell: 'Umbuara - All facilities collected except Elementary School.' 'Umbuara Aid post' is in the 27 Oct upload. The ward table calls it incomplete since 2012"
+12 Umbuwara,Umbuwara,Umbuwara Elementary School,,no_point,"Russell: 'They haven't had a permanent set up area. They have relocated three times. Currently they are using community shelter as their classroom.' There is no building to record. Do not ask for it again; ask instead whether the community shelter should be recorded as the school"
+13 Kokoro,Serefuna,Serefuna Elementary School,,no_point,"Russell: 'Serefuna - Old Preschool site, now the current Anglican Church built on the same place & SDA Church.' The school site is the church. Saint James Serefuna Anglican Church and Serefuna SDA Church are both in the 27 Oct upload, so the place IS recorded - under the church's name, which is what stands there now"
+11 Tahama,Koruwo,Koruwo Elementary School,,deferred,"Russell: 'All facilities collected except Elementary School they have relocated to the far end of the village. I will collect the coordinates when I'm passing through Itokama.'"
+06 Koeno,Koeno,Koeno Elementary School,,deferred,"Russell: 'Kweno - Elementary School except Elementary School Teacher's house. Will stop by there on my way to Itokama and collect the coordinates.' The school itself is recorded; the teacher's house is what is outstanding"

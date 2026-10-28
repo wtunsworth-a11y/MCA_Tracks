@@ -133,9 +133,11 @@ def main():
     for r in partial:
         n += 1
         lines += ["---", "", f"## {r['ward']} — {r['village']}", "",
-                  f"**{n}. We have the CHW houses at Afore. Is there also a "
-                  f"Health Centre building, separate from those houses?**", "",
-                  "Yes / No: ____________    If yes, record it.", ""]
+                  f"**{n}. You said Afore station is all collected, and we "
+                  f"have 34 points from Afore. But we have the three CHW "
+                  f"houses and no Health Centre. Is there a Health Centre "
+                  f"building there, separate from the CHW houses?**", "",
+                  "Yes / No: ____________    If yes, please record it.", ""]
 
     OUT_MD.write_text("\n".join(lines) + "\n")
     print(f"wrote {OUT_MD}")

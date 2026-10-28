@@ -142,16 +142,22 @@ def facility_stops(resolve):
     # half a row found is not a row done - and so does LIKELY, which means the
     # kind of facility was recorded somewhere but nothing ties it to this
     # village.
+    # Three ways a row leaves this document, and none of them is "forgotten":
+    # it is already recorded, there is nothing to put a coordinate on, or
+    # Russell has said he will collect it himself on a trip he is already
+    # making. All three are named in facilities_reconciled.csv.
+    OFF_THE_LIST = {"COLLECTED", "NO POINT TO COLLECT", "RUSSELL WILL COLLECT"}
     done = {}
     if RECONCILED.exists():
         with RECONCILED.open() as fh:
             for d in csv.DictReader(fh):
-                done[(d["ward"].strip(), d["village"].strip(),
+                done[(d["ward"].strip(),
+                      (d.get("village_on_list") or d["village"]).strip(),
                       d["facility"].strip())] = d
     collected = [r for r in rows
                  if done.get((r["ward"].strip(), r["village"].strip(),
                               r["facility"].strip()), {}).get("verdict")
-                 == "COLLECTED"]
+                 in OFF_THE_LIST]
     rows = [r for r in rows if r not in collected]
     for r in rows:
         d = done.get((r["ward"].strip(), r["village"].strip(),
@@ -384,10 +390,10 @@ def main():
     w("")
     if collected:
         w(f"{len(collected)} points that were on the earlier version of this "
-          f"list have been taken off, because they were recorded between 17 "
-          f"and 26 October and are already in. They are not forgotten - every "
-          f"one is named in `facilities_reconciled.csv`. Do not go back for "
-          f"them.")
+          f"list have been taken off: recorded between 17 and 26 October, or "
+          f"with nothing to put a coordinate on, or already in hand. They are "
+          f"not forgotten - every one is named in "
+          f"`facilities_reconciled.csv`. Do not go back for them.")
         w("")
     w(f"The whole round is about **{walk_km:.0f} km** of travel measured in straight "
       "lines between stops, so the real walking is more. It is not one trip; take "

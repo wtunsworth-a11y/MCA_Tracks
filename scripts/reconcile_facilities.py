@@ -42,6 +42,7 @@ from make_villages_kml import collect  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 FAC = ROOT / "data" / "reference" / "facilities.csv"
 WP = ROOT / "data" / "reference" / "waypoints_facilities.csv"
+NOTES = ROOT / "data" / "reference" / "facility_field_notes.csv"
 OUT = ROOT / "outputs" / "access" / "facilities_reconciled.csv"
 
 NEAR_KM = 1.5
@@ -108,6 +109,31 @@ def km(a, b):
 def main():
     with FAC.open() as fh:
         fac = list(csv.DictReader(l for l in fh if not l.startswith("#")))
+
+    # What Russell said, which outranks anything worked out here. It names the
+    # village where the ward table left it blank, and it says where there is
+    # nothing to collect at all - a school meeting in a borrowed shelter is
+    # not a point, and asking for it again costs a day's walk.
+    notes = []
+    if NOTES.exists():
+        with NOTES.open() as fh:
+            notes = list(csv.DictReader(l for l in fh if not l.startswith("#")))
+
+    def note_for(row):
+        for n in notes:
+            if (n["ward"].strip() == row["ward"].strip()
+                    and n["village"].strip().lower() == row["village"].strip().lower()
+                    and row["facility"].strip().lower().startswith(
+                        n["facility_startswith"].strip().lower())):
+                return n
+        return None
+
+    for r in fac:
+        n = note_for(r)
+        r["village_on_list"] = r["village"]
+        if n and n["resolution"] == "village_named" and n["village_is"].strip():
+            r["village"] = n["village_is"].strip()
+            r["field_note"] = n["note"]
     with WP.open() as fh:
         wp = list(csv.DictReader(l for l in fh if not l.startswith("#")))
     for w in wp:
@@ -229,7 +255,14 @@ def main():
         found_kinds = set().union(*(h["kinds"] for h in hits)) if hits else set()
         missing = (want - found_kinds) if want else set()
 
-        if hits and not missing:
+        n = note_for(f)
+        res = n["resolution"] if n else ""
+        if res in ("no_point", "deferred"):
+            # His answer stands whatever the matching says. "no_point" is not
+            # a failure to find something; it is the finding.
+            verdict = ("NO POINT TO COLLECT" if res == "no_point"
+                       else "RUSSELL WILL COLLECT")
+        elif hits and not missing:
             verdict = "COLLECTED"
         elif hits:
             verdict = "PARTIAL"
@@ -240,6 +273,10 @@ def main():
 
         rows.append({
             "ward": f["ward"], "zone": f["zone"], "village": f["village"],
+            # The village AS THE WARD TABLE WROTE IT, often "not named".
+            # Without it nothing downstream can find the row again once
+            # Russell has told us which village it really is.
+            "village_on_list": f.get("village_on_list", f["village"]),
             "facility": f["facility"], "status_on_list": f.get("status", ""),
             "verdict": verdict,
             "matched_on": ("name" if by_name else "position" if by_place else ""),
@@ -250,6 +287,7 @@ def main():
             "points": " | ".join(sorted({h["name"] for h in hits})[:6]),
             "notes_from_field": " | ".join(
                 sorted({h["note"] for h in hits if h["note"]})[:3]),
+            "russell_says": (n["note"] if n else f.get("field_note", "")),
         })
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -258,7 +296,8 @@ def main():
         w.writeheader()
         w.writerows(rows)
 
-    for v in ("COLLECTED", "PARTIAL", "LIKELY", "NOT FOUND"):
+    for v in ("COLLECTED", "NO POINT TO COLLECT", "RUSSELL WILL COLLECT",
+              "PARTIAL", "LIKELY", "NOT FOUND"):
         grp = [r for r in rows if r["verdict"] == v]
         print(f"\n{v}  ({len(grp)} of {len(rows)})")
         for r in sorted(grp, key=lambda r: (r["ward"], r["village"])):

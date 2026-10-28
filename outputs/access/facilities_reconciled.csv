@@ -1,64 +1,64 @@
-ward,zone,village,facility,status_on_list,verdict,matched_on,kinds_wanted,kinds_found,kinds_missing,n_points,points,notes_from_field
-01 Yoivi,8,Marasi,"Marasi Elementary School, 2 × 2-in-1",In use,LIKELY,,elementary school,,elementary school,,,
-01 Yoivi,8,Manusi,"Manusi Elementary School, 1 × 2-in-1","In use, bush material",LIKELY,,elementary school,,elementary school,,,
-01 Yoivi,8,Yoivi,Yoivi Community Aid Post,"Newly built, no proper facilities, no regular drug supply, 2 volunteer CHWs, not registered",COLLECTED,name,aid post,aid post,,1,Yoivi Community Aid Post,Community Health Workers serve as volunteers in the community whenever medicines are available.
-01 Yoivi,8,Yoivi,Aguido Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Aguido Elementary School,Classroom in use
-01 Yoivi,8,Yoivi,"Aguido Primary School, 1 × 4-in-1 classroom, 4 teacher houses","In use, bush material",COLLECTED,name,primary school,primary school,,6,Aguido Primary School 2 in 1 building | Aguido Primary School 4 in 1 School Building | Aguido Primary School Teacher's house,1 × 4 in 1 School Building in its early stage. Building materials have been prepared already but the carpenter hasn't shown up to begin with construction work. | Classroom in use | House in use
-02 Niniuri,7b,Afore Govt Station,"Afore Health Centre, clinic + 3 CHW houses",Functioning,PARTIAL,name,"chw house, health centre",chw house,health centre,3,Afore CHW house,Building in use | Currently in use
-02 Niniuri,7b,Afore Govt Station,"Afore Elementary School, 2-in-1 classroom",Functioning,COLLECTED,name,elementary school,elementary school,,1,Afore Elementary School,Currently in use
-02 Niniuri,7b,Afore Govt Station,"Afore Primary School, 2 × 2-in-1 + 6 staff houses","Functioning, needs upgrading",COLLECTED,name,primary school,primary school,,8,Afore Primary School 2 in 1 building | Afore Primary School Head Teacher's house | Afore Primary School Teacher's house | Afore Primary School Teacher's teacher's house,2 in 1 building for grades 1 & 8 | 2 in one permanent building for grades 5 & 6. | Currently in use
-02 Niniuri,7b,Afore Govt Station,DDA Sub-District Office,"Not functioning, yet to open",COLLECTED,name,office,office,,2,Afore DDA Office | Afore High School 4 in 1 building and Administration Office,Building in use | Not yet officially opened for Government Officers to use yet currently one office space has been allocated for Police to use.
-02 Niniuri,7b,Afore Govt Station,Afore Airstrip,Closed,COLLECTED,name,airstrip,airstrip,,1,Afore Airstrip,Non-operational. Now covered in tall kunai grasses
-03 Kawowoki,7a,Dareki,"Dareki Elementary School, 2-in-1",Functioning,LIKELY,,elementary school,,elementary school,,,
-03 Kawowoki,7a,Dareki,Dareki Aid Post,Closed 2010,LIKELY,,aid post,,aid post,,,
-03 Kawowoki,7a,Kawowoki,"Kawowoki Elementary School, 2-in-1",Functioning,LIKELY,,elementary school,,elementary school,,,
-03 Kawowoki,7a,Kawowoki,Kawowoki Aid Post,Closed,LIKELY,,aid post,,aid post,,,
-04 Kaura,6,Kaura,"Kaura Elementary School, 1 × 2-in-1",Running,COLLECTED,name,elementary school,elementary school,,1,Kaura Elementary School,2 × 2 in 1 building in use
-05 Siurani,6,not named,"Elementary School, 2-in-1","Not functioning, closed",LIKELY,,elementary school,,elementary school,,,
-06 Koeno,6,Koeno,Koeno Elementary School + teacher houses,In use,COLLECTED,position,elementary school,elementary school,,1,Kuweno Elementary School,
-06 Koeno,6,Sakarina,Airstrip,"Closed 2019, lack of maintenance",COLLECTED,position,airstrip,airstrip,,2,Sila Airstrip | Track leading to Sila Airstrip,Closed down
-07 Dea,5,Dea,"Dea Elementary School, 4 classrooms, 1 teacher house",In use,COLLECTED,name,elementary school,elementary school,,1,Dea Elementary School Teacher's house,
-07 Dea,5,Dea,"Dea Primary School, 8 classrooms, 6 teacher houses",In use,COLLECTED,name,primary school,primary school,,10,Dea Primary School 2 in 1 building | Dea Primary School Grades 1 & 2 classrooms | Dea Primary School Head Teacher's house | Dea Primary School Teacher's house,"Building in use | Grade 1 classroom not in use (incomplete) Grade 2 classroom is in use. Grade 1 classroom is located on the right side of the picture while grade 2 is on the left side of the picture. | The building is currently being used temporarily by an Anglican Church priest, as his house is old and unusable."
-07 Dea,5,Tabuane,Tabuane Elementary School,"In use, no data collected",COLLECTED,name,elementary school,elementary school,,1,Tabuane Elementary School,Building currently not in use. Students not attending classes.
-07 Dea,5,Ugunomo,Ugunomo Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Ugunomo Elementary School Teacher's house,
-07 Dea,5,not named,Airstrip,Closed 1988,LIKELY,,airstrip,,airstrip,,,
-08 Siribu,5,Siribu,"Siribu Elementary School, 2 × 2-in-1",In use,COLLECTED,name,elementary school,elementary school,,1,Siribu Elementary School,Building in use
-09 Natanga,3,Jorura,Jorura Elementary School,Semi-permanent,COLLECTED,name,elementary school,elementary school,,1,Jorura Elementary School,
-09 Natanga,3,Kiara,Kiara Elementary School,Semi-permanent,COLLECTED,name,elementary school,elementary school,,1,Kiara Elementary School,Building in use
-09 Natanga,3,Natanga,Natanga Elementary School,Semi-permanent,LIKELY,,elementary school,,elementary school,,,
-09 Natanga,3,Natanga,Natanga Aid Post,"Non-operational, no CHW",LIKELY,,aid post,,aid post,,,
-10 Gora,10,not named,"Elementary School, 4-in-1 + 2 single classrooms, 4 teacher houses",In use,LIKELY,,elementary school,,elementary school,,,
-10 Gora,10,not named,Primary School,In use,LIKELY,,primary school,,primary school,,,
-10 Gora,10,not named,Aid Post + CHW house,CHW house 2024,LIKELY,,"aid post, chw house",,"aid post, chw house",,,
-10 Gora,10,not named,Airstrip,"Closed 1988, to re-open",LIKELY,,airstrip,,airstrip,,,
-11 Tahama,2,Tahama,"Tahama Elementary School, 2 single classrooms, 2 teacher houses","In use, bush material",COLLECTED,name,elementary school,elementary school,,3,Tahama Elementary School | Tahama Elementary School Teacher's house,Building in use
-11 Tahama,3,Koruwo,"Koruwo Elementary School, 2-in-1, 2 teacher houses",In use,LIKELY,,elementary school,,elementary school,,,
-11 Tahama,3,Koruwo,"Koruwo Primary School, 1 × 4-in-1, 2 × 2-in-1, 1 × 8-in-1, 5 teacher houses","In use, 8-in-1 incomplete",COLLECTED,name,primary school,primary school,,10,Koruwo Primary School 2 in 1 building | Koruwo Primary School 4 in building 1 | Koruwo Primary School 8 in 1 building | Koruwo Primary School Head Teacher's house | Koruwo Primary School Teacher's house | Koruwo Primary School Teachers house,"Building in use | Currently used by Koruwo High School. Koruwo High School yet to have their whole buildings completed. | The building is incomplete. The 4 classrooms upstairs are currently being used to temporarily accommodate male teachers from Koruwo High School until their houses are completed. Once completed, the teachers will move out and students will begin using the classrooms. The 4 classrooms downstairs are yet to be completed."
-11 Tahama,3,Koruwo,Koruwo High School + male and female dormitories,"Started 2026, dormitories for 3rd term",COLLECTED,name,high school,high school,,2,Koruwo High School Boys Dormitory | Koruwo High School Girls Dormitory,Completed but not in use | Not in use
-11 Tahama,3,Koruwo,Health Centre,"Incomplete, no CHW",COLLECTED,name,health centre,health centre,,1,Koruwo Health Centre,Building not in use. It remains incomplete with no CHW.
-12 Umbuwara,2,Anatua 2,Anatua Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Anatua Elementary School,
-12 Umbuwara,2,Boidomo,Boidomo Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Bodoimo Elementary School,Building in use
-12 Umbuwara,2,Umbuwara,Umbuwara Elementary School,In use,LIKELY,,elementary school,,elementary school,,,
-12 Umbuwara,2,Umbuwara,Umbuwara Primary School,Detail not recorded,COLLECTED,name,primary school,primary school,,6,Umbuara Primary School 2 in 1 building | Umbuara Primary School Teacher's house,Building in use
-12 Umbuwara,2,not named,Aid Post building,Incomplete since 2012,LIKELY,,aid post,,aid post,,,
-13 Kokoro,2,Kokoro,"Aid Post, moved from Serefuna 2025","Incomplete, to complete 2026, 1 officer",COLLECTED,name,aid post,aid post,,1,Kokoro Aid Post,"The building is incomplete. The CHW currently treats patients from his private home, with medical supplies sourced from Itokama Health Centre."
-13 Kokoro,2,Serefuna,"Serefuna Elementary School, 1 × 2-in-1","Upgrade needed, bush material",LIKELY,,elementary school,,elementary school,,,
-14 Ufia,1,Itokama,Itokama Health Centre + 1 CHW house,Incomplete but in use,COLLECTED,name,"chw house, health centre","chw house, health centre",,2,Itokama CHW house | Itokama Health Centre,Building in use
-14 Ufia,1,Itokama,Itokama Elementary School,Functioning,COLLECTED,name,elementary school,elementary school,,1,Itokama Elementary School,Building in use
-14 Ufia,1,Itokama,"Itokama Primary School, 3 × 2-in-1, 8 teacher houses, library",In use,COLLECTED,name,primary school,primary school,,13,Itokama Primary School 2 in 1 Building | Itokama Primary School 4 in 1 building | Itokama Primary School Library | Itokama Primary School Teacher's house,Building in use | Classroom incomplete. Yet to be used. | Two classrooms upstairs are not in use because it has begun to go old. Both classrooms downstairs are in use.
-14 Ufia,1,Itokama,"Itokama Airstrip, natural surface","Ceased 2023, charters only",COLLECTED,name,airstrip,airstrip,,1,Itokama Airstrip,
-14 Ufia,1,Naukanane,Naukanane Elementary School,Functioning,COLLECTED,name,elementary school,elementary school,,1,Naokanane Elementary School,"The school operated until mid-2026 when a conflict arose between the two teachers, leading to a cessation of teaching activities. Consequently, student attendance ceased."
-14 Ufia,1,Umuate,Umuate Elementary School,Functioning,LIKELY,,elementary school,,elementary school,,,
-15 Toma,9,Gewoya,Gewoya Elementary School,"Functioning, bush material",LIKELY,,elementary school,,elementary school,,,
-15 Toma,9,Gewoya,Gewoya Primary School,Functioning,LIKELY,,primary school,,primary school,,,
-15 Toma,9,Gewoya,Gewoya Aid Post,Closed 1996,LIKELY,,aid post,,aid post,,,
-15 Toma,9,Toma,Toma Aid Post,Closed 2002,LIKELY,,aid post,,aid post,,,
-16 Aiari,4,Aiari,"Aiari Elementary School, EP and E1/E2 + teacher house","Running, bush material",LIKELY,,elementary school,,elementary school,,,
-16 Aiari,4,Aiari,Aid Post,Closed 1985,LIKELY,,aid post,,aid post,,,
-16 Aiari,4,Aiari,Airstrip,Closed 1988,LIKELY,,airstrip,,airstrip,,,
-17 Jaure,4,Suari,"Suari Elementary School, 2-in-1 + 1 teacher house",In use,LIKELY,,elementary school,,elementary school,,,
-17 Jaure,4,Suari,Primary School,"In use, bush material",LIKELY,,primary school,,primary school,,,
-17 Jaure,4,Yaure,Yaure Aid Post,"Incomplete since 1984, no structure",LIKELY,,aid post,,aid post,,,
-17 Jaure,4,Yaure,Yaure Airstrip,Closed 2002,LIKELY,,airstrip,,airstrip,,,
-18 Gorobuna,Outside MCA,not named,Elementary School,"Rundown and closed, no teacher, closed 2025, bush material",LIKELY,,elementary school,,elementary school,,,
-18 Gorobuna,Outside MCA,not named,Airstrip,"Unused since built, 2021",LIKELY,,airstrip,,airstrip,,,
+ward,zone,village,village_on_list,facility,status_on_list,verdict,matched_on,kinds_wanted,kinds_found,kinds_missing,n_points,points,notes_from_field,russell_says
+01 Yoivi,8,Marasi,Marasi,"Marasi Elementary School, 2 × 2-in-1",In use,LIKELY,,elementary school,,elementary school,,,,
+01 Yoivi,8,Manusi,Manusi,"Manusi Elementary School, 1 × 2-in-1","In use, bush material",LIKELY,,elementary school,,elementary school,,,,
+01 Yoivi,8,Yoivi,Yoivi,Yoivi Community Aid Post,"Newly built, no proper facilities, no regular drug supply, 2 volunteer CHWs, not registered",COLLECTED,name,aid post,aid post,,1,Yoivi Community Aid Post,Community Health Workers serve as volunteers in the community whenever medicines are available.,
+01 Yoivi,8,Yoivi,Yoivi,Aguido Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Aguido Elementary School,Classroom in use,
+01 Yoivi,8,Yoivi,Yoivi,"Aguido Primary School, 1 × 4-in-1 classroom, 4 teacher houses","In use, bush material",COLLECTED,name,primary school,primary school,,6,Aguido Primary School 2 in 1 building | Aguido Primary School 4 in 1 School Building | Aguido Primary School Teacher's house,1 × 4 in 1 School Building in its early stage. Building materials have been prepared already but the carpenter hasn't shown up to begin with construction work. | Classroom in use | House in use,
+02 Niniuri,7b,Afore Govt Station,Afore Govt Station,"Afore Health Centre, clinic + 3 CHW houses",Functioning,PARTIAL,name,"chw house, health centre",chw house,health centre,3,Afore CHW house,Building in use | Currently in use,
+02 Niniuri,7b,Afore Govt Station,Afore Govt Station,"Afore Elementary School, 2-in-1 classroom",Functioning,COLLECTED,name,elementary school,elementary school,,1,Afore Elementary School,Currently in use,
+02 Niniuri,7b,Afore Govt Station,Afore Govt Station,"Afore Primary School, 2 × 2-in-1 + 6 staff houses","Functioning, needs upgrading",COLLECTED,name,primary school,primary school,,8,Afore Primary School 2 in 1 building | Afore Primary School Head Teacher's house | Afore Primary School Teacher's house | Afore Primary School Teacher's teacher's house,2 in 1 building for grades 1 & 8 | 2 in one permanent building for grades 5 & 6. | Currently in use,
+02 Niniuri,7b,Afore Govt Station,Afore Govt Station,DDA Sub-District Office,"Not functioning, yet to open",COLLECTED,name,office,office,,2,Afore DDA Office | Afore High School 4 in 1 building and Administration Office,Building in use | Not yet officially opened for Government Officers to use yet currently one office space has been allocated for Police to use.,
+02 Niniuri,7b,Afore Govt Station,Afore Govt Station,Afore Airstrip,Closed,COLLECTED,name,airstrip,airstrip,,1,Afore Airstrip,Non-operational. Now covered in tall kunai grasses,
+03 Kawowoki,7a,Dareki,Dareki,"Dareki Elementary School, 2-in-1",Functioning,LIKELY,,elementary school,,elementary school,,,,
+03 Kawowoki,7a,Dareki,Dareki,Dareki Aid Post,Closed 2010,LIKELY,,aid post,,aid post,,,,
+03 Kawowoki,7a,Kawowoki,Kawowoki,"Kawowoki Elementary School, 2-in-1",Functioning,LIKELY,,elementary school,,elementary school,,,,
+03 Kawowoki,7a,Kawowoki,Kawowoki,Kawowoki Aid Post,Closed,LIKELY,,aid post,,aid post,,,,
+04 Kaura,6,Kaura,Kaura,"Kaura Elementary School, 1 × 2-in-1",Running,COLLECTED,name,elementary school,elementary school,,1,Kaura Elementary School,2 × 2 in 1 building in use,
+05 Siurani,6,Numba,not named,"Elementary School, 2-in-1","Not functioning, closed",COLLECTED,name,elementary school,elementary school,,1,Numba Elementary School,,"Russell: 'Numba - Jesus Film building, EBI school and Pid Post, church facility and Elementary School.' Numba Elementary School is in the 27 Oct upload. Siurani is the old name for Numba - Will, 18 Oct 2026"
+06 Koeno,6,Koeno,Koeno,Koeno Elementary School + teacher houses,In use,RUSSELL WILL COLLECT,position,elementary school,elementary school,,1,Kuweno Elementary School,,Russell: 'Kweno - Elementary School except Elementary School Teacher's house. Will stop by there on my way to Itokama and collect the coordinates.' The school itself is recorded; the teacher's house is what is outstanding
+06 Koeno,6,Sakarina,Sakarina,Airstrip,"Closed 2019, lack of maintenance",COLLECTED,position,airstrip,airstrip,,2,Sila Airstrip | Track leading to Sila Airstrip,Closed down,
+07 Dea,5,Dea,Dea,"Dea Elementary School, 4 classrooms, 1 teacher house",In use,COLLECTED,name,elementary school,elementary school,,1,Dea Elementary School Teacher's house,,
+07 Dea,5,Dea,Dea,"Dea Primary School, 8 classrooms, 6 teacher houses",In use,COLLECTED,name,primary school,primary school,,10,Dea Primary School 2 in 1 building | Dea Primary School Grades 1 & 2 classrooms | Dea Primary School Head Teacher's house | Dea Primary School Teacher's house,"Building in use | Grade 1 classroom not in use (incomplete) Grade 2 classroom is in use. Grade 1 classroom is located on the right side of the picture while grade 2 is on the left side of the picture. | The building is currently being used temporarily by an Anglican Church priest, as his house is old and unusable.",
+07 Dea,5,Tabuane,Tabuane,Tabuane Elementary School,"In use, no data collected",COLLECTED,name,elementary school,elementary school,,1,Tabuane Elementary School,Building currently not in use. Students not attending classes.,
+07 Dea,5,Ugunomo,Ugunomo,Ugunomo Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Ugunomo Elementary School Teacher's house,,
+07 Dea,5,Dea,not named,Airstrip,Closed 1988,COLLECTED,name,airstrip,airstrip,,1,Old Dea Airstrip,"The current location of Dea Primary School was formerly the old Dea airstrip. It became unusable due to excessive mud and a short runway, and no other flights landed after it was initially cleared. The original Dea School was established at Taparuraha, located between Dea, Ugunomo, and Siribu villages. When the airstrip became non-operational, the school was relocated to the airstrip site as it needed an area accessible to the main road.","Russell: 'Dea - School facilities, church facilities, airpost and old Dea Airstrip.' Recorded as 'Old Dea Airstrip' at 148.3268829,-9.0581295, with the note that Dea Primary School now stands on the former airstrip. The ward table says Closed 1988, which agrees"
+08 Siribu,5,Siribu,Siribu,"Siribu Elementary School, 2 × 2-in-1",In use,COLLECTED,name,elementary school,elementary school,,1,Siribu Elementary School,Building in use,
+09 Natanga,3,Jorura,Jorura,Jorura Elementary School,Semi-permanent,COLLECTED,name,elementary school,elementary school,,1,Jorura Elementary School,,
+09 Natanga,3,Kiara,Kiara,Kiara Elementary School,Semi-permanent,COLLECTED,name,elementary school,elementary school,,1,Kiara Elementary School,Building in use,
+09 Natanga,3,Natanga,Natanga,Natanga Elementary School,Semi-permanent,LIKELY,,elementary school,,elementary school,,,,
+09 Natanga,3,Natanga,Natanga,Natanga Aid Post,"Non-operational, no CHW",LIKELY,,aid post,,aid post,,,,
+10 Gora,10,not named,not named,"Elementary School, 4-in-1 + 2 single classrooms, 4 teacher houses",In use,LIKELY,,elementary school,,elementary school,,,,
+10 Gora,10,not named,not named,Primary School,In use,LIKELY,,primary school,,primary school,,,,
+10 Gora,10,not named,not named,Aid Post + CHW house,CHW house 2024,LIKELY,,"aid post, chw house",,"aid post, chw house",,,,
+10 Gora,10,not named,not named,Airstrip,"Closed 1988, to re-open",LIKELY,,airstrip,,airstrip,,,,
+11 Tahama,2,Tahama,Tahama,"Tahama Elementary School, 2 single classrooms, 2 teacher houses","In use, bush material",COLLECTED,name,elementary school,elementary school,,3,Tahama Elementary School | Tahama Elementary School Teacher's house,Building in use,
+11 Tahama,3,Koruwo,Koruwo,"Koruwo Elementary School, 2-in-1, 2 teacher houses",In use,RUSSELL WILL COLLECT,,elementary school,,elementary school,,,,Russell: 'All facilities collected except Elementary School they have relocated to the far end of the village. I will collect the coordinates when I'm passing through Itokama.'
+11 Tahama,3,Koruwo,Koruwo,"Koruwo Primary School, 1 × 4-in-1, 2 × 2-in-1, 1 × 8-in-1, 5 teacher houses","In use, 8-in-1 incomplete",COLLECTED,name,primary school,primary school,,10,Koruwo Primary School 2 in 1 building | Koruwo Primary School 4 in building 1 | Koruwo Primary School 8 in 1 building | Koruwo Primary School Head Teacher's house | Koruwo Primary School Teacher's house | Koruwo Primary School Teachers house,"Building in use | Currently used by Koruwo High School. Koruwo High School yet to have their whole buildings completed. | The building is incomplete. The 4 classrooms upstairs are currently being used to temporarily accommodate male teachers from Koruwo High School until their houses are completed. Once completed, the teachers will move out and students will begin using the classrooms. The 4 classrooms downstairs are yet to be completed.",
+11 Tahama,3,Koruwo,Koruwo,Koruwo High School + male and female dormitories,"Started 2026, dormitories for 3rd term",COLLECTED,name,high school,high school,,2,Koruwo High School Boys Dormitory | Koruwo High School Girls Dormitory,Completed but not in use | Not in use,
+11 Tahama,3,Koruwo,Koruwo,Health Centre,"Incomplete, no CHW",COLLECTED,name,health centre,health centre,,1,Koruwo Health Centre,Building not in use. It remains incomplete with no CHW.,
+12 Umbuwara,2,Anatua 2,Anatua 2,Anatua Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Anatua Elementary School,,
+12 Umbuwara,2,Boidomo,Boidomo,Boidomo Elementary School,In use,COLLECTED,name,elementary school,elementary school,,1,Bodoimo Elementary School,Building in use,
+12 Umbuwara,2,Umbuwara,Umbuwara,Umbuwara Elementary School,In use,NO POINT TO COLLECT,,elementary school,,elementary school,,,,Russell: 'They haven't had a permanent set up area. They have relocated three times. Currently they are using community shelter as their classroom.' There is no building to record. Do not ask for it again; ask instead whether the community shelter should be recorded as the school
+12 Umbuwara,2,Umbuwara,Umbuwara,Umbuwara Primary School,Detail not recorded,COLLECTED,name,primary school,primary school,,6,Umbuara Primary School 2 in 1 building | Umbuara Primary School Teacher's house,Building in use,
+12 Umbuwara,2,Umbuwara,not named,Aid Post building,Incomplete since 2012,COLLECTED,name,aid post,aid post,,1,Umbuara Aid post,The Aid Post building is incomplete & not in use.,Russell: 'Umbuara - All facilities collected except Elementary School.' 'Umbuara Aid post' is in the 27 Oct upload. The ward table calls it incomplete since 2012
+13 Kokoro,2,Kokoro,Kokoro,"Aid Post, moved from Serefuna 2025","Incomplete, to complete 2026, 1 officer",COLLECTED,name,aid post,aid post,,1,Kokoro Aid Post,"The building is incomplete. The CHW currently treats patients from his private home, with medical supplies sourced from Itokama Health Centre.",
+13 Kokoro,2,Serefuna,Serefuna,"Serefuna Elementary School, 1 × 2-in-1","Upgrade needed, bush material",NO POINT TO COLLECT,,elementary school,,elementary school,,,,"Russell: 'Serefuna - Old Preschool site, now the current Anglican Church built on the same place & SDA Church.' The school site is the church. Saint James Serefuna Anglican Church and Serefuna SDA Church are both in the 27 Oct upload, so the place IS recorded - under the church's name, which is what stands there now"
+14 Ufia,1,Itokama,Itokama,Itokama Health Centre + 1 CHW house,Incomplete but in use,COLLECTED,name,"chw house, health centre","chw house, health centre",,2,Itokama CHW house | Itokama Health Centre,Building in use,
+14 Ufia,1,Itokama,Itokama,Itokama Elementary School,Functioning,COLLECTED,name,elementary school,elementary school,,1,Itokama Elementary School,Building in use,
+14 Ufia,1,Itokama,Itokama,"Itokama Primary School, 3 × 2-in-1, 8 teacher houses, library",In use,COLLECTED,name,primary school,primary school,,13,Itokama Primary School 2 in 1 Building | Itokama Primary School 4 in 1 building | Itokama Primary School Library | Itokama Primary School Teacher's house,Building in use | Classroom incomplete. Yet to be used. | Two classrooms upstairs are not in use because it has begun to go old. Both classrooms downstairs are in use.,
+14 Ufia,1,Itokama,Itokama,"Itokama Airstrip, natural surface","Ceased 2023, charters only",COLLECTED,name,airstrip,airstrip,,1,Itokama Airstrip,,
+14 Ufia,1,Naukanane,Naukanane,Naukanane Elementary School,Functioning,COLLECTED,name,elementary school,elementary school,,1,Naokanane Elementary School,"The school operated until mid-2026 when a conflict arose between the two teachers, leading to a cessation of teaching activities. Consequently, student attendance ceased.",
+14 Ufia,1,Umuate,Umuate,Umuate Elementary School,Functioning,LIKELY,,elementary school,,elementary school,,,,
+15 Toma,9,Gewoya,Gewoya,Gewoya Elementary School,"Functioning, bush material",LIKELY,,elementary school,,elementary school,,,,
+15 Toma,9,Gewoya,Gewoya,Gewoya Primary School,Functioning,LIKELY,,primary school,,primary school,,,,
+15 Toma,9,Gewoya,Gewoya,Gewoya Aid Post,Closed 1996,LIKELY,,aid post,,aid post,,,,
+15 Toma,9,Toma,Toma,Toma Aid Post,Closed 2002,LIKELY,,aid post,,aid post,,,,
+16 Aiari,4,Aiari,Aiari,"Aiari Elementary School, EP and E1/E2 + teacher house","Running, bush material",LIKELY,,elementary school,,elementary school,,,,
+16 Aiari,4,Aiari,Aiari,Aid Post,Closed 1985,LIKELY,,aid post,,aid post,,,,
+16 Aiari,4,Aiari,Aiari,Airstrip,Closed 1988,LIKELY,,airstrip,,airstrip,,,,
+17 Jaure,4,Suari,Suari,"Suari Elementary School, 2-in-1 + 1 teacher house",In use,LIKELY,,elementary school,,elementary school,,,,
+17 Jaure,4,Suari,Suari,Primary School,"In use, bush material",LIKELY,,primary school,,primary school,,,,
+17 Jaure,4,Yaure,Yaure,Yaure Aid Post,"Incomplete since 1984, no structure",LIKELY,,aid post,,aid post,,,,
+17 Jaure,4,Yaure,Yaure,Yaure Airstrip,Closed 2002,LIKELY,,airstrip,,airstrip,,,,
+18 Gorobuna,Outside MCA,not named,not named,Elementary School,"Rundown and closed, no teacher, closed 2025, bush material",LIKELY,,elementary school,,elementary school,,,,
+18 Gorobuna,Outside MCA,not named,not named,Airstrip,"Unused since built, 2021",LIKELY,,airstrip,,airstrip,,,,
