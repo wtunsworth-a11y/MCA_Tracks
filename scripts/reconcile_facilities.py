@@ -38,6 +38,7 @@ from cross_reference_tracks import (  # noqa: E402
     load_places, load_aliases, candidates, best_tier,
 )
 from make_villages_kml import collect  # noqa: E402
+from ward_profile import variants  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FAC = ROOT / "data" / "reference" / "facilities.csv"
@@ -46,6 +47,13 @@ NOTES = ROOT / "data" / "reference" / "facility_field_notes.csv"
 OUT = ROOT / "outputs" / "access" / "facilities_reconciled.csv"
 
 NEAR_KM = 1.5
+
+# How far a point may sit from the village whose name it carries. Afore High
+# School is named after the LLG, not the village, and stands at Sakarina 8.5 km
+# away - Will, 28 Oct 2026 - so its administration office was being counted
+# against the Afore DDA Office row. Every genuine match measured between 0.02
+# and 0.69 km, so three is generous.
+MAX_NAME_KM = 3.0
 
 # The kinds that identify a FACILITY. Sub-buildings - a teacher's house, a
 # dormitory, a library - are deliberately NOT in this list. They were, and a
@@ -57,6 +65,9 @@ KINDS = [
     ("elementary school", "elementary school"),
     ("primary school", "primary school"),
     ("high school", "high school"),
+    # Will, 28 Oct 2026: "It might also be called the secondary school.. the
+    # names are used interchangeably, but technically shouldn't be."
+    ("secondary school", "high school"),
     ("community aid post", "aid post"),
     ("aid post", "aid post"),
     ("health centre", "health centre"),
@@ -154,19 +165,19 @@ def main():
     # writes Boidomo, Umbuara where it writes Umbuwara. Matching on the
     # written form alone left all three as uncollected when Russell had
     # already recorded them.
-    variants = {}
+    alias_variants = {}
     for k, al in aliases.items():
         to = (al.get("to") or "").strip().lower()
         if not to:
             continue
-        variants.setdefault(to, set()).update({to, k})
-        variants.setdefault(k, set()).update({to, k})
+        alias_variants.setdefault(to, set()).update({to, k})
+        alias_variants.setdefault(k, set()).update({to, k})
 
     def spellings(name):
         n = (name or "").strip().lower()
         if not n:
             return set()
-        out = set(variants.get(n, {n}))
+        out = set(alias_variants.get(n, {n}))
         hit = best_tier(candidates(name, places, aliases))
         if hit:
             c = str(hit[0]["name"]).strip().lower()
@@ -175,7 +186,7 @@ def main():
             # neither spelling. Split it, or the Sakarina row never sees
             # Russell's "Sila Airstrip".
             for part in [c] + [x.strip() for x in c.split("/")]:
-                out |= variants.get(part, {part})
+                out |= alias_variants.get(part, {part})
         return {x for x in out if x}
 
     def place_words(row):
@@ -213,8 +224,14 @@ def main():
         return False
 
     def where(village):
-        """Where we map the village a to-do row names, if we map it at all."""
-        for v in (village, re.sub(r"\s*\d$", "", village or "").strip()):
+        """Where we map the village a to-do row names, if we map it at all.
+
+        variants() rather than a hand-rolled pair of spellings: it is what
+        strips "Govt Station" off "Afore Govt Station". Without it that row
+        had no position, so the distance guard never ran on it and the Afore
+        DDA Office kept collecting a building 8.5 km away at Sakarina.
+        """
+        for v in variants(village or ""):
             if not v:
                 continue
             if v.lower() in mapped:
@@ -241,6 +258,11 @@ def main():
             if want and not (want & w["kinds"]):
                 continue
             named = any(m in w["flat"] for m in mine)
+            if named and pos is not None and km(pos, (w["lon"], w["lat"])) > MAX_NAME_KM:
+                # The name agrees and the ground does not. A facility named
+                # for something other than where it stands is the hazard here,
+                # and the ground wins.
+                named = False
             near = pos is not None and km(pos, (w["lon"], w["lat"])) <= NEAR_KM
             if named:
                 by_name.append(w)
