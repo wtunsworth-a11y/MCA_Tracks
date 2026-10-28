@@ -88,7 +88,7 @@ F61,F61.1,foot,Semahara-Tabuane,Semahara,Tabuane,Semehara,Tabuane,recorded,route
 F62,F62.1,foot,Singata-Gora,Singata,Gora,Singata,Gora,partial,both ends on the network but only linked the long way round (26.0 km for 14.0 km straight) - the direct track is not recorded,14.01,26.05,1.86,4.0,0.0,,,
 R01,R01.1,feeder road,Itokama -Ufia,Itokama,Ufia,Itokama,Ufia,recorded,routes in 1.9 km vs 1.8 km straight,1.78,1.87,1.05,20.0,1.0,,,
 R02,R02.1,feeder road,Veriame-yoivi-Aguido,Veriame,Yoivi,Verayame,Yoivi,recorded,routes in 1.2 km vs 1.1 km straight,1.12,1.16,1.04,1.0,0.0,,,
-R02,R02.2,feeder road,Veriame-yoivi-Aguido,Yoivi,Aguido,Yoivi,Aguido,recorded,routes in 0.4 km vs 0.2 km straight,0.23,0.39,1.69,0.0,74.0,,,"Track from Vereyame connect's Yoivi, Aguido Primary School and Kuheine"
+R02,R02.2,feeder road,Veriame-yoivi-Aguido,Yoivi,Aguido,Yoivi,Aguido Primary School,recorded,routes in 0.4 km vs 0.2 km straight,0.23,0.39,1.69,0.0,74.0,,,"Track from Vereyame connect's Yoivi, Aguido Primary School and Kuheine"
 R03,R03.1,feeder road,Road 3 – Dareki,Dareki,(the road itself),Dareki,,recorded,a recorded motorable road runs within 162 m of Dareki,,,,162.0,,,,
 R04,R04.1,feeder road,Road 2-Old Cadamon factory,Old Cardamom factory,(the road itself),Old Cardamom factory,,missing,no recorded motorable road within 1.0 km of Old Cardamom factory - the road itself is not recorded,,,,986.0,,,,
 R05,R05.1,feeder road,Road 1- Organ Village,Ogan,(the road itself),Ogan,,recorded,a recorded motorable road runs within 13 m of Ogan,,,,13.0,,,,

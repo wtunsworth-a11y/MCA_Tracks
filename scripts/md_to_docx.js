@@ -17,6 +17,7 @@
 // comes through as plain text rather than silently vanishing.
 
 const fs = require('fs');
+const path = require('path');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell,
   WidthType, ShadingType, BorderStyle, AlignmentType, LevelFormat,
@@ -29,6 +30,32 @@ const MONO = 'Consolas';
 // A4 landscape, half-inch margins, in pixels at 96dpi - what ImageRun wants.
 const LAND_W_PX = Math.round((11.69 - 1.0) * 96);
 const LAND_H_PX = Math.round((8.27 - 1.0) * 96);
+
+// A4 portrait minus 1" of margin each side, for an image sitting in the text
+// flow rather than on a page of its own.
+const PORT_W_PX = Math.round((8.27 - 2.0) * 96);
+const PORT_H_PX = Math.round((11.69 - 3.4) * 96);
+
+// `![alt](file.png)` alone on a line. Used by the outstanding-points document,
+// which needs a map inside each ward's section rather than one at the front:
+// a map three pages away from the list it belongs to is a map nobody looks at.
+// An image path in the markdown is relative to the markdown file, the way a
+// reader of the .md would resolve it - not to wherever the converter was run
+// from. build() sets this before rendering.
+let MD_DIR = '.';
+
+function imageParagraph(src, maxW = PORT_W_PX, maxH = PORT_H_PX) {
+  const png = fs.readFileSync(path.isAbsolute(src) ? src : path.join(MD_DIR, src));
+  const w = png.readUInt32BE(16), h = png.readUInt32BE(20);
+  let dw = maxW, dh = Math.round(maxW * h / w);
+  if (dh > maxH) { dh = maxH; dw = Math.round(maxH * w / h); }
+  return new Paragraph({
+    alignment: AlignmentType.CENTER,
+    spacing: { before: 60, after: 160 },
+    children: [new ImageRun({ type: 'png', data: png,
+                              transformation: { width: dw, height: dh } })],
+  });
+}
 
 function mapPage(mapPath) {
   const png = fs.readFileSync(mapPath);
@@ -91,6 +118,9 @@ function parse(md) {
     const line = lines[i];
     if (!line.trim()) { i++; continue; }
 
+    const img = /^!\[([^\]]*)\]\(([^)]+)\)\s*$/.exec(line.trim());
+    if (img) { blocks.push({ t: 'img', alt: img[1], src: img[2] }); i++; continue; }
+
     const h = heading(line);
     if (h) { blocks.push({ t: 'h', level: h[1].length, text: h[2].trim() }); i++; continue; }
 
@@ -134,7 +164,8 @@ function parse(md) {
     const buf = [];
     while (i < lines.length && lines[i].trim()
            && !heading(lines[i]) && !isRule(lines[i]) && !isTableRow(lines[i])
-           && !bullet(lines[i]) && !numbered(lines[i])) {
+           && !bullet(lines[i]) && !numbered(lines[i])
+           && !/^!\[[^\]]*\]\([^)]+\)\s*$/.test(lines[i].trim())) {
       buf.push(lines[i].trim());
       i++;
     }
@@ -237,6 +268,8 @@ function render(blocks) {
     } else if (b.t === 'table') {
       out.push(renderTable(b.rows));
       out.push(new Paragraph({ spacing: { before: 0, after: 160 }, text: '' }));
+    } else if (b.t === 'img') {
+      out.push(imageParagraph(b.src));
     } else if (b.t === 'rule') {
       out.push(new Paragraph({
         spacing: { before: 120, after: 180 },
@@ -251,6 +284,7 @@ function render(blocks) {
 // ---------- document ----------
 
 function build(mdPath, outPath, { subtitle, toc, mapPath }) {
+  MD_DIR = path.dirname(path.resolve(mdPath));
   const blocks = parse(fs.readFileSync(mdPath, 'utf8'));
 
   let title = '';
