@@ -48,7 +48,10 @@ def main():
 
     # Notes and READMEs live in the folder too; they are not track data and
     # cannot be fetched with alt=media, so they are listed separately.
-    track_exts = (".gpx", ".kmz", ".kml", ".gpkg")
+    # .zip belongs here. Russell uploaded "Where to go, what to do in MCA -
+    # Track Records.zip", 9.9 MB of track recordings, and this report did not
+    # mention it for six days because the extension was not on the list.
+    track_exts = (".gpx", ".kmz", ".kml", ".gpkg", ".zip")
     non_track = sorted({r["name"] for r in rows
                         if not r["name"].lower().endswith(track_exts)})
 
@@ -70,7 +73,13 @@ def main():
     derived = {
         name
         for name in local
-        if name.endswith(".kml") and f"{Path(name).stem}.kmz" in drive_names
+        # A .kml pulled out of a .kmz. Matched on the stem as a PREFIX, because
+        # Drive files get renamed: the 1.28 GB KMZ became "... - Way
+        # Points/Coordinates.kmz" and the KML extracted from it was suddenly
+        # reported as a stray local file.
+        if name.endswith(".kml")
+        and any(d.startswith(Path(name).stem) and d.lower().endswith(".kmz")
+                for d in drive_names)
     }
     extra = sorted(
         set(local) - drive_names - derived - {"drive-download-20260817T080903Z-1-001.zip"}
