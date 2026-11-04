@@ -117,6 +117,67 @@ def load_overrides():
     return {r["stop"]: r for _, r in df.iterrows()}
 
 
+def corrected_positions():
+    """Positions that supersede the gazetteer, best tier first.
+
+    The team's own placements outrank everything; then a position written into
+    place_aliases.csv with direct evidence for it. Both files already exist
+    and every other output in this repository honours them - this one did not.
+    """
+    best = {}
+    al = ROOT / "data" / "reference" / "place_aliases.csv"
+    if al.exists():
+        for r in pd.read_csv(al, comment="#").itertuples():
+            name = str(getattr(r, "resolved_to", "") or "").strip()
+            lon, lat = getattr(r, "lon", None), getattr(r, "lat", None)
+            if name and pd.notna(lon) and pd.notna(lat):
+                best[name.lower()] = (float(lon), float(lat), "place_aliases.csv")
+    pt = ROOT / "data" / "reference" / "placed_by_team.csv"
+    if pt.exists():
+        for r in pd.read_csv(pt, comment="#").itertuples():
+            name = str(r.place).strip()
+            if name:
+                best[name.lower()] = (float(r.lon), float(r.lat), "placed by the team")
+    return best
+
+
+def load_villages():
+    """The gazetteer, with every corrected position applied.
+
+    This read data/MCA_Village_Locations.csv raw, so placed_by_team.csv and
+    bad_positions.csv never reached the access model. Suari sat 73 m from
+    Jaure here - the position bad_positions.csv records as "This was WRONG" -
+    while every other output in the repository had it 10.5 km away where the
+    team put it. Two villages on one point, and Suari's walking distances were
+    really Jaure's.
+    """
+    v = pd.read_csv(ROOT / "data" / "MCA_Village_Locations.csv")
+    best = corrected_positions()
+    moved = []
+    for i, r in v.iterrows():
+        hit = best.get(str(r["vil_name"]).strip().lower())
+        if not hit:
+            continue
+        lon, lat, src = hit
+        d = haversine_km(float(r["lon"]), float(r["lat"]), lon, lat)
+        if d < 0.05:
+            continue
+        v.at[i, "lon"], v.at[i, "lat"] = lon, lat
+        moved.append((str(r["vil_name"]), d, src))
+    if moved:
+        print("village positions corrected before routing:")
+        for name, d, src in sorted(moved, key=lambda m: -m[1]):
+            print(f"  {name:14s} moved {d:6.2f} km   ({src})")
+    return v, moved
+
+
+def haversine_km(lon1, lat1, lon2, lat2):
+    from math import radians, sin, cos, asin, sqrt
+    lo1, la1, lo2, la2 = map(radians, (lon1, lat1, lon2, lat2))
+    h = sin((la2 - la1) / 2) ** 2 + cos(la1) * cos(la2) * sin((lo2 - lo1) / 2) ** 2
+    return 2 * 6371.0088 * asin(sqrt(h))
+
+
 def reconcile_stops(village_df):
     """Prefer the surveyed position of a stop over a rounded one in the brief."""
     out, notes = [], []
@@ -345,7 +406,7 @@ def main():
           f"{nbw} gap(s) bridged, {tbw/1000:.2f} km")
 
     # ---- stops -------------------------------------------------------------
-    v_for_stops = pd.read_csv(ROOT / "data" / "MCA_Village_Locations.csv")
+    v_for_stops, _moved = load_villages()
     stops_def, stop_notes = reconcile_stops(v_for_stops)
     print("\nmarket stop positions:")
     for n in stop_notes:
@@ -393,7 +454,7 @@ def main():
         dist_from_stop[s] = nx.single_source_dijkstra_path_length(G, k, weight="weight")
 
     # ---- villages ----------------------------------------------------------
-    v = pd.read_csv(ROOT / "data" / "MCA_Village_Locations.csv")
+    v, _moved = load_villages()
     vg = gpd.GeoDataFrame(v, geometry=[Point(x, y) for x, y in zip(v.lon, v.lat)],
                           crs=WGS84)
     vu = vg.to_crs(UTM)
