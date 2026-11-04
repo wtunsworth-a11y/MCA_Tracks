@@ -37,3 +37,4 @@ ward,village,facility_startswith,village_is,resolution,note
 # Will, same day: "Afore station has a large primary school" - which is the
 # Afore Primary School row, 2 buildings and 6 staff houses, all recorded, 0.69
 # km from the village position.
+17 Jaure,Suari,Primary School,,name_is_not_location,"Will, 4 Nov 2026: ''Suwari Primary School is physically elsewhere.'' Said BEFORE the zone 4 data arrives, so it is recorded before there is anything to match. This row may never be settled by a point whose NAME says Suwari or Suari; only by one that stands near the village. Suari itself is well placed - 148.17331,-9.36637, moved 10.5 km by the team from a gazetteer position that had put it 73 m from Jaure - so a distance test on it means something"

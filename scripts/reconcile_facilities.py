@@ -248,6 +248,8 @@ def main():
 
     rows = []
     for f in fac:
+        n0 = note_for(f)
+        name_lies = bool(n0) and n0["resolution"] == "name_is_not_location"
         want = kinds_of(f["facility"])
         toks = tokens(f["village"])
         mine = place_words(f)
@@ -258,6 +260,11 @@ def main():
             if want and not (want & w["kinds"]):
                 continue
             named = any(m in w["flat"] for m in mine)
+            if named and name_lies:
+                # The row is on record as carrying a name that does not say
+                # where the thing stands - Suwari Primary School, Will,
+                # 4 Nov 2026. Only the ground can settle it.
+                named = False
             if named and pos is not None and km(pos, (w["lon"], w["lat"])) > MAX_NAME_KM:
                 # The name agrees and the ground does not. A facility named
                 # for something other than where it stands is the hazard here,

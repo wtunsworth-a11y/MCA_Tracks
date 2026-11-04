@@ -57,7 +57,7 @@ ward,zone,village,village_on_list,facility,status_on_list,verdict,matched_on,kin
 16 Aiari,4,Aiari,Aiari,Aid Post,Closed 1985,LIKELY,,aid post,,aid post,,,,
 16 Aiari,4,Aiari,Aiari,Airstrip,Closed 1988,LIKELY,,airstrip,,airstrip,,,,
 17 Jaure,4,Suari,Suari,"Suari Elementary School, 2-in-1 + 1 teacher house",In use,LIKELY,,elementary school,,elementary school,,,,
-17 Jaure,4,Suari,Suari,Primary School,"In use, bush material",LIKELY,,primary school,,primary school,,,,
+17 Jaure,4,Suari,Suari,Primary School,"In use, bush material",LIKELY,,primary school,,primary school,,,,"Will, 4 Nov 2026: ''Suwari Primary School is physically elsewhere.'' Said BEFORE the zone 4 data arrives, so it is recorded before there is anything to match. This row may never be settled by a point whose NAME says Suwari or Suari; only by one that stands near the village. Suari itself is well placed - 148.17331,-9.36637, moved 10.5 km by the team from a gazetteer position that had put it 73 m from Jaure - so a distance test on it means something"
 17 Jaure,4,Yaure,Yaure,Yaure Aid Post,"Incomplete since 1984, no structure",LIKELY,,aid post,,aid post,,,,
 17 Jaure,4,Yaure,Yaure,Yaure Airstrip,Closed 2002,LIKELY,,airstrip,,airstrip,,,,
 18 Gorobuna,Outside MCA,not named,not named,Elementary School,"Rundown and closed, no teacher, closed 2025, bush material",LIKELY,,elementary school,,elementary school,,,,
