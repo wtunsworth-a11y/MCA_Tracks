@@ -26,10 +26,23 @@ five strips. Band L, not M: M is the equator to 8 S, and the plateau is at
 9.1 S. Two whole searches were wasted on band M before that was checked
 against a real raster's bounds rather than against an MGRS formula.
 
-Scene: 31 July 2026, chosen because its scene classification layer reports
-0.0% cloud and shadow over the box holding all five strips. Of ten recent
-scenes tested, only two were clear; four were 100% clouded. Dry season or not,
-this plateau is rarely visible from orbit.
+Two images per site, and the second is the one to work from.
+
+A single clear scene - 31 July 2026, the only recent date with 0.0% cloud over
+all five strips - is sharp but lucky. Of ten scenes tested, four were wholly
+clouded.
+
+Will, 5 Nov 2026: "An airstrip does not move. You don't need a long time
+series to find it." Exactly right, and it inverts the problem: because the
+strip is static, every clear look at it can be stacked. So the composite takes
+all 96 scenes over 2025-26, masks cloud and shadow per pixel from the scene
+classification layer, and takes the median. Every pixel ends up with between
+15 and 37 clear looks, and cloud stops being a constraint at all.
+
+That matters most where it is hardest to see. Afore's strip is faint in any
+one image because it is under kunai grass; in the composite it is an obvious
+pale corridor. The single date stays sharper for Itokama, which is in use and
+bare, so both are kept.
 
 TEN METRES PER PIXEL. A strip 25-30 m wide is two or three pixels across, so
 an outline traced from this is good to roughly a pixel - call it +/- 10-15 m
