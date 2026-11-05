@@ -64,6 +64,13 @@ classification layer before reporting that something cannot be seen.
 - Only the Drive folder `1UR9_fpkrn_I2lCs8O2yZsC7u9xCv1bsy`, and only the
   branch `claude/managalas-track-maps-3xd3bq`.
 - `ya29.` tokens are read from the environment, never written to disk.
+- The Drive files are shared with four named people, NOT "anyone with the
+  link" (checked 5 Nov 2026). So an API key alone will not open them: a key
+  works only on public files. Do not suggest link-sharing them either - they
+  hold precise settlement locations and identifiable people. What works
+  without a paste every time is an OAuth REFRESH token plus client id and
+  secret in the environment, which mints access tokens on demand and never
+  expires.
 - Do not filter a Drive listing by `modifiedTime`: it has returned nothing
   while the files were sitting in the folder. List it all and diff the manifest.
 - No unsolicited analysis. Answer what was asked.

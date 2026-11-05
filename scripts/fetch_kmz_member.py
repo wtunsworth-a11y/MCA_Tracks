@@ -4,10 +4,17 @@
 
 Credentials, in order of preference:
 
+    GOOGLE_REFRESH_TOKEN  with GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET.
+                          The only one that is both unattended and safe here:
+                          it mints an access token on demand, never expires,
+                          and works on PRIVATE files. The Managalas files are
+                          shared with four named people, not by link, so this
+                          is what they need.
     GOOGLE_API_KEY        a Drive-enabled Google Cloud API key. Does not
-                          expire. Set it once in the environment's settings
-                          and every session picks it up. Needs the file to be
-                          shared as "anyone with the link".
+                          expire, but opens only files shared as "anyone with
+                          the link" - which these are not, and should not be:
+                          they hold settlement positions and photographs of
+                          identifiable people.
     GOOGLE_OAUTH_TOKEN    a ya29 access token, for private files. Expires in
                           about an hour.
 
