@@ -1,0 +1,68 @@
+# One photo per facility, chosen by scripts/pick_facility_photos.py.
+# The other photos stay in Drive and are not deleted - they are a
+# backup, not the map. chosen_because says which rule picked this
+# one; anything marked GUESS had only ancillary buildings to
+# choose from and should be looked at before it is printed.
+facility,photo,from_point,chosen_because,lon,lat,note,points_in_facility,photos_available
+Acenssion Anglican Church,files/1000057574.jpg,Acenssion Anglican Church of Dea,not an ancillary building,148.3266809,-9.0588639,,1,3
+Afore Airstrip,files/1000056124.jpg,Afore Airstrip,named for the facility itself,148.3900000,-9.1396567,Non-operational. Now covered in tall kunai grasses,1,2
+Afore DDA Office,files/1000056118.jpg,Afore DDA Office,named for the facility itself,148.3875700,-9.1408467,Not yet officially opened for Government Officers to use yet currently one office space has been allocated for Police to use.,1,2
+Afore Elementary School,files/1000056139.jpg,Afore Elementary School,named for the facility itself,148.3872721,-9.1376766,Currently in use,1,1
+Afore High School,files/1000017015.jpg,Afore High School 4 in 1 building and Administration Office,main building,148.3707883,-9.0684517,Building in use,20,39
+Afore Primary School,files/1000056129.jpg,Afore Primary School 2 in 1 building,main building,148.3883517,-9.1373650,2 in one permanent building for grades 5 & 6.,8,14
+Aguido Elementary School,files/1000056508.jpg,Aguido Elementary School,named for the facility itself,148.4484667,-9.1413633,Classroom in use,1,1
+Aguido Primary School,files/1000056507.jpg,Aguido Primary School 4 in 1 School Building,main building,148.4485850,-9.1415017,1 × 4 in 1 School Building in its early stage. Building materials have been prepared already but the carpenter hasn't shown up to begin with construction work.,6,8
+Anatua 1 SDA Church,files/1000057111.jpg,Anatua 1 SDA Church,named for the facility itself,148.2618484,-9.1510173,Church building in use,1,2
+Anatua 2 Renewal Church,files/1000057130.jpg,Anatua 2 Renewal Church,named for the facility itself,148.2631915,-9.1441950,Building in use,1,2
+Anatua Elementary School,files/1000057121.jpg,Anatua Elementary School,named for the facility itself,148.2617327,-9.1484760,,1,2
+Awaru Old Airstrip,files/1000017075.jpg,Awaru Old Airstrip,named for the facility itself,148.3886400,-9.0730017,"The soccer field at Awaru was cleared in the early 2000s as an airstrip. It was cleared after flights to Sila stopped due to a clan dispute between two brothers over the airstrip there. Once the dispute was resolved and flights resumed at Sila, the Awaru airstrip was abandoned and later houses were built on part of the land and the remaining area became a soccer field.",1,2
+Awaru Revival Centre of Papua New Guinea Church,files/1000017077.jpg,Awaru Revival Centre of Papua New Guinea Church,named for the facility itself,148.3890650,-9.0735367,,1,3
+Bodoimo Elementary School,files/1000057230.jpg,Bodoimo Elementary School,named for the facility itself,148.2861317,-9.1108066,Building in use,1,3
+Bodoimo Renewal Church,files/1000057222.jpg,Bodoimo Renewal Church,named for the facility itself,148.2860159,-9.1159995,Building in use,1,3
+Dea Aid Post,files/1000057580.jpg,Dea Aid Post,named for the facility itself,148.3272539,-9.0587651,Not in use,1,3
+Dea Elementary School,files/1000057569.jpg,Dea Elementary School Teacher's house,GUESS - only ancillary points carry a photo,148.3262936,-9.0577222,,1,3
+Dea Primary School,files/1000057551.jpg,Dea Primary School 2 in 1 building,main building,148.3274367,-9.0569891,Building in use,10,24
+Ese Bible Institute (EBI) Aid Post,files/1000016907.jpg,Ese Bible Institute (EBI) Aid Post,named for the facility itself,148.3657317,-9.0505517,Not in use currently,1,2
+Itokama Airstrip,files/1000056938.jpg,Itokama Airstrip,named for the facility itself,148.2649699,-9.1996602,,1,2
+Itokama Elementary School,files/1000056910.jpg,Itokama Elementary School,named for the facility itself,148.2636776,-9.1999222,Building in use,1,3
+Itokama Health Centre,files/1000056929.jpg,Itokama Health Centre,named for the facility itself,148.2631569,-9.1973614,,1,2
+Itokama Primary School,files/1000056907.jpg,Itokama Primary School 2 in 1 Building,main building,148.2640863,-9.1991288,Building in use,13,17
+Jorura Elementary School,files/1000057446.jpg,Jorura Elementary School,named for the facility itself,148.3057567,-9.0879883,,1,3
+Jorura Renewal Church,files/1000057451.jpg,Jorura Renewal Church,named for the facility itself,148.3053535,-9.0854190,Building in use,1,3
+Kaura CRC Church,files/1000017067.jpg,Kaura CRC Church,named for the facility itself,148.3782767,-9.0627183,Building in use,1,4
+Kaura Elementary School,files/1000017070.jpg,Kaura Elementary School,named for the facility itself,148.3818167,-9.0640150,2 × 2 in 1 building in use,1,7
+Kaura Renewal Church,files/1000017063.jpg,Kaura Renewal Church,named for the facility itself,148.3769950,-9.0641500,Building in use,1,2
+Kiara Elementary School,files/1000057257.jpg,Kiara Elementary School,named for the facility itself,148.2854431,-9.0925416,Building in use,1,3
+Kokoro Aid Post,files/1000056980.jpg,Kokoro Aid Post,named for the facility itself,148.2709170,-9.1682427,"The building is incomplete. The CHW currently treats patients from his private home, with medical supplies sourced from Itokama Health Centre.",1,2
+Kokoro Elementary School,files/1000056983.jpg,Kokoro Elementary School,named for the facility itself,148.2721884,-9.1646899,Students no longer attend classes now since July this year due to El Nino.,1,2
+Koruwo Health Centre,files/1000057399.jpg,Koruwo Health Centre,named for the facility itself,148.3087719,-9.1177178,Building not in use. It remains incomplete with no CHW.,1,5
+Koruwo High School,files/1000057379.jpg,Koruwo High School Boys Dormitory,not an ancillary building,148.3084812,-9.1149340,Completed but not in use,2,4
+Koruwo Primary School,files/1000057378.jpg,Koruwo Primary School 8 in 1 building,main building,148.3090249,-9.1151149,"The building is incomplete. The 4 classrooms upstairs are currently being used to temporarily accommodate male teachers from Koruwo High School until their houses are completed. Once completed, the teachers will move out and students will begin using the classrooms. The 4 classrooms downstairs are yet to be completed.",10,20
+Kuhene United Church,files/1000056519.jpg,Kuhene United Church Building,main building,148.4564350,-9.1354827,"Previously known as Christian Revival Center (CRC). Due to lack of financial support from the Mother Church, this small church pulled out from the mother church to seek support from the United Church. Currently supported by the United Church. The building currently serves two purposes. From Monday to Friday, Early Childhood Learning uses the building to teach school kids and on Sundays, building is used for worship.",1,2
+Kuweno Elementary School,files/1000016884.jpg,Kuweno Elementary School,named for the facility itself,148.3523367,-9.0536617,,1,2
+Mandakoro Renewal Church,files/1000056749.jpg,Mandakoro Renewal Church,named for the facility itself,148.2663930,-9.2156697,,1,2
+Momons Church,files/1000056524.jpg,Momons Church - Kuhene,not an ancillary building,148.4553950,-9.1373600,Under construction,1,2
+Naokanane Elementary School,files/1000056756.jpg,Naokanane Elementary School,named for the facility itself,148.2658780,-9.2107064,"The school operated until mid-2026 when a conflict arose between the two teachers, leading to a cessation of teaching activities. Consequently, student attendance ceased.",1,2
+Numba CRC Church,files/1000016900.jpg,Numba CRC Church,named for the facility itself,148.3658317,-9.0502333,Building in use,1,3
+Numba Elementary School,files/1000016912.jpg,Numba Elementary School,named for the facility itself,148.3704617,-9.0549833,,1,2
+Old Dea Airstrip,files/1000057581.jpg,Old Dea Airstrip,named for the facility itself,148.3268829,-9.0581295,"The current location of Dea Primary School was formerly the old Dea airstrip. It became unusable due to excessive mud and a short runway, and no other flights landed after it was initially cleared. The original Dea School was established at Taparuraha, located between Dea, Ugunomo, and Siribu villages. When the airstrip became non-operational, the school was relocated to the airstrip site as it needed an area accessible to the main road.",1,2
+Resurrection Chapel Tabuane Anglican Church,files/1000057584.jpg,Resurrection Chapel Tabuane Anglican Church,named for the facility itself,148.3413573,-9.0641777,Building in use,1,2
+Saint Columba's Anglican Church,files/1000016936.jpg,Saint Columba's Anglican Church Sakarina,not an ancillary building,148.3705450,-9.0670350,,3,5
+Saint James Serefuna Anglican Church,files/1000056986.jpg,Saint James Serefuna Anglican Church,named for the facility itself,148.2731649,-9.1567189,St.James Anglican Church building is yet to be completed but in use. A preschool was established at this location in 1981. It was later relocated to Anatua in 1986.,1,3
+Saint Mary's Anglican Church,files/1000056513.jpg,Saint Mary's Anglican Church - Yoivi Village,not an ancillary building,148.4495267,-9.1394065,Few Anglican Christians attend Sunday worship here.,1,3
+Saint Mathias Itokama Anglican Church,files/1000056932.jpg,Saint Mathias Itokama Anglican Church,named for the facility itself,148.2642318,-9.1983329,,1,2
+Saint Peter's Tahama Anglican Church,files/1000057011.jpg,Saint Peter's Tahama Anglican Church,named for the facility itself,148.2968932,-9.1626133,,1,3
+Sakarina Health Centre,files/1000016995.jpg,Sakarina Health Centre,named for the facility itself,148.3693383,-9.0676383,Building in use,8,19
+Sakarina Primary School,files/1000016979.jpg,Sakarina Primary School 2 in 1 building used as an Administration block,main building,148.3691750,-9.0657850,Building in use,19,40
+Serefuna SDA Church,files/1000057091.jpg,Serefuna SDA Church,named for the facility itself,148.2728507,-9.1551450,Building in use,1,3
+Sila Airstrip,files/1000058159.jpg,Sila Airstrip,named for the facility itself,148.3633595,-9.0641194,Closed down,1,6
+Siribu Elementary School,files/1000057453.jpg,Siribu Elementary School,named for the facility itself,148.3208962,-9.0864591,Building in use,1,3
+Siribu Renewal Church,files/1000057460.jpg,Siribu Renewal Church,named for the facility itself,148.3205807,-9.0876365,Building in use,1,3
+Tabuane Elementary School,files/1000057585.jpg,Tabuane Elementary School,named for the facility itself,148.3414281,-9.0645019,Building currently not in use. Students not attending classes.,1,2
+Tahama Elementary School,files/1000057019.jpg,Tahama Elementary School,named for the facility itself,148.2954660,-9.1603277,Building in use,3,9
+Ugunomo Elementary School,files/1000057573.jpg,Ugunomo Elementary School Teacher's house,GUESS - only ancillary points carry a photo,148.3262234,-9.0579449,,1,2
+Ugunomo Renewal Church,files/1000057468.jpg,Ugunomo Renewal Church,named for the facility itself,148.3193529,-9.0620238,Building in use,1,2
+Umbuara Aid post,files/1000057163.jpg,Umbuara Aid post,named for the facility itself,148.2736750,-9.1165967,The Aid Post building is incomplete & not in use.,1,2
+Umbuara Primary School,files/1000057166.jpg,Umbuara Primary School 2 in 1 building,main building,148.2728883,-9.1140033,,6,9
+Umbuara Renewal Church,files/1000057141.jpg,Umbuara Renewal Church,named for the facility itself,148.2738687,-9.1206087,Church building in use.,1,3
+Yoivi Community Aid Post,files/1000056497.jpg,Yoivi Community Aid Post,named for the facility itself,148.4502217,-9.1404583,Community Health Workers serve as volunteers in the community whenever medicines are available.,1,2
