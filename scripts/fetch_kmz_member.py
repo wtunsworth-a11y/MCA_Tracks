@@ -1,7 +1,15 @@
 """Pull just the KML out of a huge KMZ in Drive, without downloading the photos.
 
-    export GOOGLE_OAUTH_TOKEN='ya29....'
     python3 scripts/fetch_kmz_member.py <driveFileId> [destdir]
+
+Credentials, in order of preference:
+
+    GOOGLE_API_KEY        a Drive-enabled Google Cloud API key. Does not
+                          expire. Set it once in the environment's settings
+                          and every session picks it up. Needs the file to be
+                          shared as "anyone with the link".
+    GOOGLE_OAUTH_TOKEN    a ya29 access token, for private files. Expires in
+                          about an hour.
 
 A KMZ is a ZIP: a small doc.kml holding the placemarks, and a files/ folder
 holding the JPEGs. In the waypoint drop of 18 Oct 2026 the photos are about
@@ -40,19 +48,39 @@ CEN_SIG = b"PK\x01\x02"
 
 
 def token():
+    """Either credential will do, and the API key is the one worth having.
+
+    GOOGLE_OAUTH_TOKEN is a ya29 access token. It works on private files but
+    expires in about an hour, so it has to be pasted into the chat each time -
+    which is the part of this that keeps costing Will his afternoon.
+
+    GOOGLE_API_KEY is a Google Cloud API key with the Drive API enabled. It
+    does not expire, it belongs in the environment's settings rather than in
+    a message, and it opens any file shared as "anyone with the link". Asking
+    for the Drive media endpoint with no credential at all returns 403 "The
+    request is missing a valid API key", not 401 unauthenticated, which is
+    what says a key alone is enough.
+    """
+    key = os.environ.get("GOOGLE_API_KEY", "").strip()
+    if key:
+        return ("key", key)
     t = os.environ.get("GOOGLE_OAUTH_TOKEN", "").strip()
-    if not t:
-        sys.exit("set GOOGLE_OAUTH_TOKEN first - see the module docstring")
-    return t
+    if t:
+        return ("bearer", t)
+    sys.exit("set GOOGLE_API_KEY (preferred) or GOOGLE_OAUTH_TOKEN - "
+             "see the module docstring")
 
 
 def get_range(url, tok, start, end=None):
     """Bytes [start, end] inclusive; a negative start means 'last N bytes'."""
     rng = f"bytes={start}" if start < 0 else f"bytes={start}-{'' if end is None else end}"
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {tok}",
-        "Range": rng,
-    })
+    kind, secret = tok if isinstance(tok, tuple) else ("bearer", tok)
+    headers = {"Range": rng}
+    if kind == "bearer":
+        headers["Authorization"] = f"Bearer {secret}"
+    else:
+        url = url + ("&" if "?" in url else "?") + "key=" + secret
+    req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=300) as r:
             return r.read(), r.headers.get("Content-Range", "")

@@ -16,8 +16,9 @@ What is kept, per placemark:
   accuracy_m  Locus writes it into the description table
   note        what the recorder TYPED, which is the part no coordinate can
               replace - "Non-operational. Now covered in tall kunai grasses"
-  photos      how many images hang off the point, so it is possible to tell
-              what is still in Drive without opening the archive again
+  photos      how many images hang off the point
+  photo_files their names inside the KMZ, so one can be fetched on its own
+              later - a few hundred KB instead of the whole 1.28 GB archive
 
 Nothing is renamed or reconciled. Names come across exactly as recorded, so
 that the reconciliation against our own places stays somewhere it can be
@@ -78,6 +79,12 @@ def main(src, dest):
             "accuracy_m": acc.group(1) if acc else "",
             "note": note_of(desc),
             "photos": len(pm.findall(".//lc:attachment", NS)),
+            # The archive member names, so a photo can be pulled later by
+            # ranged request without touching the other 1.28 GB. Will,
+            # 5 Nov 2026, wants a picture of the facility on the ward map.
+            "photo_files": " ".join(
+                (e.text or "").strip() for e in pm.findall(".//lc:attachment", NS)
+                if (e.text or "").strip()),
         })
 
     rows.sort(key=lambda r: (r["name"].lower(), r["recorded"]))
