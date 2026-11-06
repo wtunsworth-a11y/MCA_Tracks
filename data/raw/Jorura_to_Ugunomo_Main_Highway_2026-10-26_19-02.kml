@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Jorura_to_Ugunomo_Main_Highway_2026-10-26_19-02</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="track001">
+		<LineStyle>
+			<color>b3ff0000</color>
+			<width>6.0</width>
+		</LineStyle>
+	</Style>
+<Placemark>
+	<name>Jorura to Ugunomo Main Highway 2026-10-26 19:02</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Activity</b></small></td><td align="center" valign="center">Walking</td></tr>
+<tr><td align="left" valign="center"><small><b>Distance</b></small></td><td align="center" valign="center">3.7 km</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-10-26 19:02:31</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. speed</b></small></td><td align="center" valign="center">29.9 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Pace</b></small></td><td align="center" valign="center">6:07 min/km</td></tr>
+<tr><td align="left" valign="center"><small><b>Energy</b></small></td><td align="center" valign="center">1252 KJ</td></tr>
+<tr><td align="left" valign="center"><small><b>Points</b></small></td><td align="center" valign="center">115</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">All</td><td align="center" valign="center">Speed > 0</td></tr>
+<tr><td align="left" valign="center"><small><b>Avg. speed</b></small></td><td align="center" valign="center">9.8 km/h</td><td align="center" valign="center">11.1 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Track time</b></small></td><td align="center" valign="center">0:22:38</td><td align="center" valign="center">0:19:59</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. altitude</b></small></td><td align="center" valign="center">754 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. altitude</b></small></td><td align="center" valign="center">865 m</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Elevation</td><td align="center" valign="center">Distance</td></tr>
+<tr><td align="left" valign="center"><small><b>Uphill</b></small></td><td align="center" valign="center">215 m</td><td align="center" valign="center">1882 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Downhill</b></small></td><td align="center" valign="center">-114 m</td><td align="center" valign="center">1365 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Flat</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">450 m</td></tr>
+</table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#track001</styleUrl>
+	<MultiGeometry>
+		<LineString>
+			<coordinates>
+				148.3051114,-9.0859254,763.31
+				148.3050451,-9.0858401,765.16
+				148.3049267,-9.0855820,763.36
+				148.3048324,-9.0853277,765.31
+				148.3047226,-9.0850925,771.43
+				148.3046926,-9.0850022,772.33
+				148.3046402,-9.0847551,770.78
+				148.3047028,-9.0844846,776.64
+				148.3047988,-9.0842470,771.69
+				148.3048689,-9.0839250,771.53
+				148.3049728,-9.0836162,776.09
+				148.3050519,-9.0833087,764.45
+				148.3052030,-9.0830310,758.37
+				148.3053721,-9.0826483,757.04
+				148.3055034,-9.0822177,756.14
+				148.3055752,-9.0818429,764.70
+				148.3056368,-9.0814245,768.39
+				148.3057123,-9.0811500,758.83
+				148.3057297,-9.0807313,753.84
+				148.3056655,-9.0802054,761.21
+				148.3056124,-9.0797989,768.19
+				148.3056243,-9.0794555,770.24
+				148.3062941,-9.0774253,785.06
+				148.3065478,-9.0768295,787.40
+				148.3065608,-9.0761608,788.19
+				148.3066551,-9.0757860,780.96
+				148.3065998,-9.0754601,782.78
+				148.3065292,-9.0751145,785.15
+				148.3063454,-9.0747333,781.13
+				148.3061907,-9.0743653,783.16
+				148.3061073,-9.0739377,788.74
+				148.3061617,-9.0735188,793.64
+				148.3063266,-9.0732399,796.45
+				148.3065898,-9.0729392,796.42
+				148.3067323,-9.0726616,793.46
+				148.3068067,-9.0723098,799.80
+				148.3068519,-9.0721344,798.88
+				148.3069554,-9.0719171,804.32
+				148.3071782,-9.0717373,798.21
+				148.3075226,-9.0716670,796.26
+				148.3079040,-9.0718902,794.75
+				148.3081917,-9.0721811,794.06
+				148.3084295,-9.0724424,797.00
+				148.3087033,-9.0724238,798.15
+				148.3088252,-9.0720529,790.62
+				148.3088709,-9.0718516,791.89
+				148.3089163,-9.0716764,791.40
+				148.3089961,-9.0715304,789.90
+				148.3091524,-9.0714864,782.90
+				148.3093185,-9.0715664,780.82
+				148.3094299,-9.0717766,778.50
+				148.3095831,-9.0719211,775.94
+				148.3095921,-9.0722155,776.77
+				148.3095364,-9.0724035,768.11
+				148.3097029,-9.0725760,760.01
+				148.3100443,-9.0725954,758.80
+				148.3103856,-9.0724414,767.88
+				148.3107301,-9.0723657,779.62
+				148.3110638,-9.0723462,789.96
+				148.3112034,-9.0719624,793.16
+				148.3113471,-9.0716568,792.21
+				148.3115345,-9.0713877,793.43
+				148.3115853,-9.0711902,786.84
+				148.3116757,-9.0710563,787.63
+				148.3118474,-9.0707749,783.92
+				148.3120328,-9.0706574,780.90
+				148.3121196,-9.0704529,774.02
+				148.3122542,-9.0703403,771.83
+				148.3124607,-9.0702990,769.63
+				148.3126359,-9.0701962,771.66
+				148.3127371,-9.0700930,769.54
+				148.3128431,-9.0700356,770.05
+				148.3129287,-9.0699562,769.39
+				148.3129659,-9.0698391,773.29
+				148.3130036,-9.0696915,766.19
+				148.3130048,-9.0695755,764.88
+				148.3130310,-9.0693899,768.08
+				148.3131382,-9.0693848,764.05
+				148.3132694,-9.0693040,758.26
+				148.3133298,-9.0694644,765.02
+				148.3133646,-9.0696861,763.92
+				148.3135391,-9.0697352,764.14
+				148.3136944,-9.0696219,766.72
+				148.3136334,-9.0693273,768.09
+				148.3138809,-9.0692153,768.72
+				148.3140666,-9.0691736,769.42
+				148.3143220,-9.0690603,772.51
+				148.3145266,-9.0688369,784.63
+				148.3146546,-9.0685902,791.56
+				148.3147520,-9.0682779,799.44
+				148.3148902,-9.0680228,807.03
+				148.3150216,-9.0678307,797.58
+				148.3152515,-9.0678259,794.57
+				148.3154215,-9.0676493,792.90
+				148.3154170,-9.0673623,803.45
+				148.3154909,-9.0671939,814.13
+				148.3155178,-9.0670184,822.62
+				148.3155853,-9.0667963,823.63
+				148.3156043,-9.0665953,821.86
+				148.3156615,-9.0664070,826.85
+				148.3155559,-9.0662156,813.61
+				148.3157031,-9.0660755,815.63
+				148.3157437,-9.0658511,829.34
+				148.3159130,-9.0656434,849.38
+				148.3161116,-9.0654672,852.79
+				148.3162837,-9.0652581,851.96
+				148.3164752,-9.0651480,844.64
+				148.3166201,-9.0650122,848.66
+				148.3168534,-9.0648309,856.31
+				148.3170669,-9.0646186,859.48
+				148.3173219,-9.0643616,859.48
+				148.3175258,-9.0641608,856.08
+				148.3176596,-9.0640625,856.03
+				148.3178461,-9.0639317,862.01
+				148.3179931,-9.0638177,864.56
+			</coordinates>
+		</LineString>
+	</MultiGeometry>
+</Placemark>
+</Document>
+</kml>

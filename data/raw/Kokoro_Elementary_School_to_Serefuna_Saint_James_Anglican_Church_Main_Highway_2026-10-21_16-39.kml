@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Kokoro_Elementary_School_to_Serefuna_Saint_James_Anglican_Church_Main_Highway_2026-10-21_16-39</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="track001">
+		<LineStyle>
+			<color>b3ff0000</color>
+			<width>6.0</width>
+		</LineStyle>
+	</Style>
+<Placemark>
+	<name>Kokoro Elementary School to Serefuna Saint James Anglican Church (Main Highway) 2026-10-21 16:39</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Activity</b></small></td><td align="center" valign="center">Walking</td></tr>
+<tr><td align="left" valign="center"><small><b>Distance</b></small></td><td align="center" valign="center">899 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-10-21 16:39:34</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. speed</b></small></td><td align="center" valign="center">6.5 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Pace</b></small></td><td align="center" valign="center">19:08 min/km</td></tr>
+<tr><td align="left" valign="center"><small><b>Energy</b></small></td><td align="center" valign="center">475 KJ</td></tr>
+<tr><td align="left" valign="center"><small><b>Points</b></small></td><td align="center" valign="center">74</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">All</td><td align="center" valign="center">Speed > 0</td></tr>
+<tr><td align="left" valign="center"><small><b>Avg. speed</b></small></td><td align="center" valign="center">3.1 km/h</td><td align="center" valign="center">4.4 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Track time</b></small></td><td align="center" valign="center">0:17:12</td><td align="center" valign="center">0:11:39</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. altitude</b></small></td><td align="center" valign="center">739 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. altitude</b></small></td><td align="center" valign="center">764 m</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Elevation</td><td align="center" valign="center">Distance</td></tr>
+<tr><td align="left" valign="center"><small><b>Uphill</b></small></td><td align="center" valign="center">35 m</td><td align="center" valign="center">539 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Downhill</b></small></td><td align="center" valign="center">-27 m</td><td align="center" valign="center">360 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Flat</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">0 m</td></tr>
+</table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#track001</styleUrl>
+	<MultiGeometry>
+		<LineString>
+			<coordinates>
+				148.2720589,-9.1645867,745.11
+				148.2720663,-9.1644949,745.59
+				148.2721057,-9.1643623,738.80
+				148.2721484,-9.1642717,743.08
+				148.2721427,-9.1641761,745.73
+				148.2721766,-9.1640821,747.32
+				148.2721914,-9.1639880,746.94
+				148.2722019,-9.1638969,746.94
+				148.2722102,-9.1638039,749.97
+				148.2722455,-9.1637051,751.97
+				148.2722562,-9.1636074,753.55
+				148.2722499,-9.1635162,754.41
+				148.2722806,-9.1634274,753.42
+				148.2722902,-9.1633251,752.10
+				148.2722925,-9.1632212,746.60
+				148.2723107,-9.1631206,745.50
+				148.2723140,-9.1630055,747.08
+				148.2723552,-9.1629159,749.88
+				148.2723623,-9.1627877,753.92
+				148.2723774,-9.1626750,756.10
+				148.2723840,-9.1625568,753.54
+				148.2724168,-9.1624489,752.59
+				148.2724143,-9.1623403,754.11
+				148.2723996,-9.1622189,754.32
+				148.2723952,-9.1621079,755.81
+				148.2723860,-9.1620038,755.22
+				148.2723900,-9.1618959,755.66
+				148.2724379,-9.1618117,760.19
+				148.2724451,-9.1616851,763.61
+				148.2724418,-9.1615717,764.47
+				148.2724448,-9.1614604,763.20
+				148.2724440,-9.1613385,762.26
+				148.2724841,-9.1611971,760.14
+				148.2724933,-9.1611018,759.98
+				148.2724832,-9.1610052,758.68
+				148.2725188,-9.1608721,758.25
+				148.2725363,-9.1607358,758.40
+				148.2725780,-9.1606369,758.43
+				148.2726026,-9.1604975,758.30
+				148.2726283,-9.1604049,757.89
+				148.2726796,-9.1602847,757.98
+				148.2727212,-9.1601606,758.22
+				148.2727568,-9.1600623,754.58
+				148.2727820,-9.1599500,751.78
+				148.2728117,-9.1598470,753.27
+				148.2728409,-9.1597240,754.11
+				148.2728659,-9.1595868,754.13
+				148.2728657,-9.1594626,750.76
+				148.2729086,-9.1593486,744.44
+				148.2729875,-9.1592271,744.01
+				148.2730653,-9.1591189,745.48
+				148.2730923,-9.1590105,747.44
+				148.2730966,-9.1588835,745.43
+				148.2730761,-9.1587374,746.32
+				148.2730926,-9.1586263,746.39
+				148.2730922,-9.1585091,746.26
+				148.2730844,-9.1584088,745.00
+				148.2730779,-9.1582905,745.21
+				148.2730820,-9.1581753,744.94
+				148.2730807,-9.1580659,743.53
+				148.2730883,-9.1579533,743.82
+				148.2730713,-9.1578411,743.22
+				148.2730823,-9.1577291,743.05
+				148.2730835,-9.1576216,743.96
+				148.2730890,-9.1575169,745.81
+				148.2730459,-9.1574368,746.12
+				148.2730657,-9.1573435,748.49
+				148.2730528,-9.1572526,749.47
+				148.2730582,-9.1571605,750.22
+				148.2730596,-9.1570667,750.40
+				148.2730499,-9.1569757,749.44
+				148.2730835,-9.1568710,749.48
+				148.2730734,-9.1567754,753.87
+				148.2730804,-9.1566695,752.54
+			</coordinates>
+		</LineString>
+	</MultiGeometry>
+</Placemark>
+</Document>
+</kml>

@@ -36,7 +36,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from make_ward_map import institution_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-WP = ROOT / "data" / "reference" / "waypoints_facilities.csv"
+WP_FILES = [ROOT / "data" / "reference" / "waypoints_facilities.csv",
+            ROOT / "data" / "reference" / "waypoints_zone4.csv"]
 OUT = ROOT / "data" / "reference" / "facility_photos.csv"
 
 # Somebody lives or cooks or stores things here. It is not the facility.
@@ -65,8 +66,11 @@ REASON = {0: "named for the facility itself",
 
 
 def main():
-    with WP.open() as fh:
-        pts = [r for r in csv.DictReader(l for l in fh if not l.startswith("#"))]
+    pts = []
+    for path in WP_FILES:
+        if path.exists():
+            with path.open() as fh:
+                pts += [r for r in csv.DictReader(l for l in fh if not l.startswith("#"))]
 
     groups = {}
     for p in pts:

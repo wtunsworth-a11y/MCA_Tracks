@@ -42,7 +42,11 @@ from ward_profile import variants  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FAC = ROOT / "data" / "reference" / "facilities.csv"
-WP = ROOT / "data" / "reference" / "waypoints_facilities.csv"
+# Every waypoint drop, not just the October one. Zone 4 arrived on its own
+# 5 Nov 2026 and a reconciliation that reads one file silently reports its
+# facilities as still outstanding.
+WP_FILES = [ROOT / "data" / "reference" / "waypoints_facilities.csv",
+            ROOT / "data" / "reference" / "waypoints_zone4.csv"]
 NOTES = ROOT / "data" / "reference" / "facility_field_notes.csv"
 OUT = ROOT / "outputs" / "access" / "facilities_reconciled.csv"
 
@@ -145,8 +149,11 @@ def main():
         if n and n["resolution"] == "village_named" and n["village_is"].strip():
             r["village"] = n["village_is"].strip()
             r["field_note"] = n["note"]
-    with WP.open() as fh:
-        wp = list(csv.DictReader(l for l in fh if not l.startswith("#")))
+    wp = []
+    for path in WP_FILES:
+        if path.exists():
+            with path.open() as fh:
+                wp += list(csv.DictReader(l for l in fh if not l.startswith("#")))
     for w in wp:
         w["lon"], w["lat"] = float(w["lon"]), float(w["lat"])
         w["kinds"] = kinds_of(w["name"])

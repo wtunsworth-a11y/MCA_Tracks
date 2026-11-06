@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Sila_Junction_short_cut_track_to_Sakarina_Mission_Station_2026-10-25_08-56</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="-1009162245">
+		<IconStyle>
+			<Icon><href>files/-1009162245.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="track001">
+		<LineStyle>
+			<color>b3ff0000</color>
+			<width>6.0</width>
+		</LineStyle>
+	</Style>
+<Placemark>
+	<name>Sila Junction</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000057789.jpg" target="_blank"><img src="files/1000057789.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000057791.jpg" target="_blank"><img src="files/1000057791.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000057792.jpg" target="_blank"><img src="files/1000057792.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">725 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">2.2 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">203 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.3 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-10-25 20:46:57</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1009162245</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000057789.jpg</lc:attachment>
+		<lc:attachment>files/1000057791.jpg</lc:attachment>
+		<lc:attachment>files/1000057792.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3683752,-9.0721398,725.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-10-25T08:56:41Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Sila Junction short cut track to Sakarina Mission Station 2026-10-25 08:56</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Activity</b></small></td><td align="center" valign="center">Walking</td></tr>
+<tr><td align="left" valign="center"><small><b>Distance</b></small></td><td align="center" valign="center">504 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-10-25 08:56:23</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. speed</b></small></td><td align="center" valign="center">6.2 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Pace</b></small></td><td align="center" valign="center">52:25 min/km</td></tr>
+<tr><td align="left" valign="center"><small><b>Energy</b></small></td><td align="center" valign="center">454 KJ</td></tr>
+<tr><td align="left" valign="center"><small><b>Points</b></small></td><td align="center" valign="center">45</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">All</td><td align="center" valign="center">Speed > 0</td></tr>
+<tr><td align="left" valign="center"><small><b>Avg. speed</b></small></td><td align="center" valign="center">1.1 km/h</td><td align="center" valign="center">2.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Track time</b></small></td><td align="center" valign="center">0:26:26</td><td align="center" valign="center">0:09:46</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. altitude</b></small></td><td align="center" valign="center">697 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. altitude</b></small></td><td align="center" valign="center">725 m</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Elevation</td><td align="center" valign="center">Distance</td></tr>
+<tr><td align="left" valign="center"><small><b>Uphill</b></small></td><td align="center" valign="center">21 m</td><td align="center" valign="center">209 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Downhill</b></small></td><td align="center" valign="center">-27 m</td><td align="center" valign="center">295 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Flat</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">0 m</td></tr>
+</table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#track001</styleUrl>
+	<MultiGeometry>
+		<LineString>
+			<coordinates>
+				148.3683783,-9.0721287,724.99
+				148.3683568,-9.0719462,719.64
+				148.3683585,-9.0718517,718.74
+				148.3683239,-9.0717550,720.63
+				148.3683021,-9.0716621,722.46
+				148.3682530,-9.0715544,722.86
+				148.3682178,-9.0714414,720.65
+				148.3681646,-9.0713382,720.16
+				148.3681266,-9.0712303,721.05
+				148.3680853,-9.0711229,720.22
+				148.3680617,-9.0710118,719.81
+				148.3680569,-9.0709102,717.46
+				148.3680803,-9.0707994,716.00
+				148.3681191,-9.0706793,714.93
+				148.3681579,-9.0705861,712.92
+				148.3681993,-9.0704942,712.56
+				148.3682793,-9.0704061,710.31
+				148.3683549,-9.0703254,707.98
+				148.3684209,-9.0702282,704.24
+				148.3685010,-9.0701546,705.07
+				148.3685071,-9.0700618,706.21
+				148.3684787,-9.0699678,705.76
+				148.3684769,-9.0698749,705.72
+				148.3684906,-9.0697770,704.37
+				148.3684465,-9.0696667,697.77
+				148.3684378,-9.0695727,696.82
+				148.3684695,-9.0694868,698.15
+				148.3685222,-9.0694103,699.37
+				148.3685077,-9.0693185,699.62
+				148.3685655,-9.0692482,699.61
+				148.3686603,-9.0692553,698.47
+				148.3687512,-9.0692398,697.91
+				148.3688304,-9.0691884,700.01
+				148.3689229,-9.0691776,709.21
+				148.3690149,-9.0691594,709.06
+				148.3691091,-9.0691505,711.41
+				148.3691981,-9.0691019,716.30
+				148.3692112,-9.0690091,715.53
+				148.3691975,-9.0689157,716.10
+				148.3691873,-9.0688143,717.81
+				148.3691811,-9.0687188,714.88
+				148.3691767,-9.0686236,716.09
+				148.3691584,-9.0685272,718.25
+				148.3691697,-9.0684328,716.94
+				148.3691673,-9.0683406,718.42
+			</coordinates>
+		</LineString>
+	</MultiGeometry>
+</Placemark>
+</Document>
+</kml>

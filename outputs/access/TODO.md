@@ -5,7 +5,7 @@ and `data/reference/facilities.csv`. `TRACK_CHECKLIST.md` lists the walking
 route by route; this lists everything job by job, because one missing
 coordinate blocks a whole route and one short link closes several.
 
-**Two things outstanding.** The walking: of 110 legs on the team's list, **56 recorded**, **38 partly**, **9 not walked**, **7 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
+**Two things outstanding.** The walking: of 110 legs on the team's list, **59 recorded**, **39 partly**, **5 not walked**, **7 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
 
 ## 1. Places on the track list that need a coordinate
 
@@ -92,37 +92,37 @@ which closes a hole in the network.
 - [ ] **Highway → Kawowoki** — 0.5 km direct, against 17.5 km the long way round  `R12`
 - [ ] **Afore → Korokoro** — 0.5 km direct, against 7.8 km the long way round  `R14`
 - [ ] **Itokama → Kuai** — 0.8 km direct, against 13.2 km the long way round  `R10`
-- [ ] **Highway → Bioi** — 1.5 km direct, against 10.3 km the long way round  `F53`
+- [ ] **Highway → Bioi** — 1.5 km direct, against 10.2 km the long way round  `F53`
 - [ ] **Bioi → Dareki** — 1.5 km direct, against 7.6 km the long way round  `F05`
-- [ ] **Kaura → Avaru** — 2.2 km direct, against 6.0 km the long way round  `R06`
-- [ ] **Dea → Siribu** — 2.8 km direct, against 11.3 km the long way round  `F22`
+- [ ] **Siribu → Koruwo** — 2.3 km direct, against 6.1 km the long way round  `F22`
+- [ ] **Dea → Siribu** — 2.8 km direct, against 5.7 km the long way round  `F22`
 
 ## 4. Longer links, same problem
 
 **18 legs.** Both ends recorded, the direct track not.
 
-- [ ] **Kiara → Koruwo** — 3.0 km direct, against 9.7 km the long way round  `F23`
 - [ ] **Kawowoki → Avaru** — 3.1 km direct, against 26.2 km the long way round  `F41`
-- [ ] **Ugunomo → Siribu** — 3.1 km direct, against 9.0 km the long way round  `R07`
-- [ ] **Umbuara → Kiara** — 3.3 km direct, against 16.2 km the long way round  `F34`
+- [ ] **Umbuara → Kiara** — 3.3 km direct, against 9.7 km the long way round  `F34`
 - [ ] **Niniri → Kawowoki** — 3.9 km direct, against 8.6 km the long way round  `F32`
-- [ ] **Bareji → Toma** — 3.9 km direct  `F50`
+- [ ] **Bareji → Toma** — 3.9 km direct, against 57.1 km the long way round  `F50`
 - [ ] **Dareki → Kawowoki** — 4.3 km direct, against 17.6 km the long way round  `F06`
 - [ ] **Avaru → Dareki** — 5.1 km direct, against 27.1 km the long way round  `F07`
-- [ ] **Avaru → Sigara** — 5.8 km direct, against 15.0 km the long way round  `F03`
+- [ ] **Avaru → Sigara** — 5.8 km direct, against 14.3 km the long way round  `F03`
 - [ ] **Dareki → Sigara** — 6.6 km direct, against 33.7 km the long way round  `F05`
-- [ ] **Tahama → Toma** — 7.1 km direct, against 30.2 km the long way round  `F02`
-- [ ] **Afore → Toma** — 7.6 km direct, against 26.0 km the long way round  `F25`
-- [ ] **Sigara → Banderi** — 8.8 km direct, against 63.2 km the long way round  `F36`
+- [ ] **Tahama → Toma** — 7.1 km direct, against 30.1 km the long way round  `F02`
+- [ ] **Afore → Toma** — 7.6 km direct, against 25.9 km the long way round  `F25`
+- [ ] **Sigara → Banderi** — 8.8 km direct, against 63.1 km the long way round  `F36`
+- [ ] **Afore → Siribu** — 9.6 km direct, against 19.8 km the long way round  `F19`
+- [ ] **Umuate → Aiari** — 9.8 km direct  `F37`
 - [ ] **Wayei → Umbara** — 10.2 km direct, against 22.3 km the long way round  `F31`
-- [ ] **Tahama → Serepuna** — 11.0 km direct, against 21.2 km the long way round  `F24`
+- [ ] **Tahama → Serepuna** — 11.0 km direct, against 20.3 km the long way round  `F24`
 - [ ] **Singata → Gora** — 14.0 km direct, against 26.1 km the long way round  `F62`
-- [ ] **Toma → Itokama** — 14.8 km direct, against 51.8 km the long way round  `F13`
+- [ ] **Toma → Itokama** — 14.8 km direct, against 50.6 km the long way round  `F13`
 - [ ] **Gora → Popondetta** — 25.9 km direct, against 128.5 km the long way round  `F09`
 
 ## 5. Places no recording has ever reached
 
-**14 places**, furthest first. The number is how far the
+**12 places**, furthest first. The number is how far the
 place sits from the nearest recorded line - that is the walk needed to
 tie it in, not the length of any particular track.
 
@@ -133,9 +133,7 @@ tie it in, not the length of any particular track.
 | Tedebedi | 20.4 | F29, F60 | also written Tetebedi; confirmed by Will, 3 Oct 2026: Tetebedi/Tedebedi is OUTSIDE the conservation area, so Anatua-Tetebedi and Kuai-Tedebedi-Emoriva run beyond the boundary |
 | Asafa | 15.2 | F42, F59 | OSM village 15 km WNW of Gora. (An Asafa 406 km away in Eastern Highlands was rejected) |
 | Babarobo | 14.0 | F25 | OSM village, and it sits almost exactly on the Biriri-Safia line, which is the leg the list puts it in |
-| Suari | 13.3 | F37 |  |
-| Jaure | 10.2 | F12, F26, F37, F38 | also written Jaura |
-| Aiari | 9.8 | F30, F37, F49 | also written Water Crossing |
+| Jaure | 9.3 | F12, F26, F37, F38 | also written Jaura |
 | Gorobuna | 7.0 | F43, F59 |  |
 | Peroroda | 6.1 | H02 | OSM village. 20 km from where the route implied, but that anchor is the weak Bareji cluster, so the distance proves little either way - worth a check |
 | Warisota | 1.6 | F17 | OSM village beside Embi. AMBIGUOUS: GeoNames has another Warisota 13 km north and OSM a New Warisota 45 km west - this is the one the route fits |
@@ -145,22 +143,15 @@ tie it in, not the length of any particular track.
 
 ## 6. Legs with neither end recorded
 
-**9 legs.** Nothing nearby has been recorded at
+**5 legs.** Nothing nearby has been recorded at
 either end, so these are whole journeys rather than gaps to close.
 
 - **Afore-Toma-Biriri-Babarobo-Safia**  `F25`
   - [ ] Babarobo → Safia — 29.3 km straight  **multi-day walk, not a day trip**
-- **Aiari-Safia**  `F30`
-  - [ ] Aiari → Safia — 53.7 km straight  **multi-day walk, not a day trip**
 - **Ufia-Umuate-Aiari-Suari-Jaure**  `F37`
-  - [ ] Aiari → Suari — 5.2 km straight
-  - [ ] Suari → Jaure — 10.5 km straight
+  - [ ] Umuate → Aiari — 9.8 km straight
 - **Gora-Asafa-Sairope**  `F42`
   - [ ] Asafa → Sairope — 9.2 km straight
-- **Aiari-Water Crossing**  `F49`
-  - [ ] Aiari → Water Crossing — Aiari and Aiari are the same point in our data (0 m apart), so there is no leg here - and that place is 9.8 km off anything recorded
-- **Bareji-Toma**  `F50`
-  - [ ] Bareji → Toma — 3.9 km straight
 - **Singata-Gorobuna-Asafa**  `F59`
   - [ ] Gorobuna → Asafa — 13.4 km straight
 - **Road 2-Old Cadamon factory**  `R04`

@@ -1,0 +1,38 @@
+# Zone 4: Aiyari, Umuate, Suari and the creeks between them, 1-4 Nov 2026.
+#
+# Extracted from 'Zone 4 Way Points/coordinates in MCA_folder.kmz', uploaded by
+# russellmuraba71@gmail.com on 5 Nov 2026. The archive is 208 MB because 67
+# photos hang off these points; only doc.kml was fetched, by ranged request -
+# 3.8 KB moved instead of 208 MB. THE PHOTOS REMAIN IN GOOGLE DRIVE.
+#
+# He writes Aiyari where the ward tables and our own reference write Aiari.
+# One place; see place_aliases.csv.
+#
+# READ THE WORD "OLD". Aiyari's airstrip, its elementary and community school,
+# its aid post and its village are all recorded as old or former sites. That
+# is an answer to the questions asked of him, and a different answer from
+# "here is the facility" - a site is not a working facility and must not be
+# counted as one.
+name,recorded,lon,lat,ele_m,accuracy_m,note,photos,photo_files
+Aiyari Elementary School Teacher's house,2026-11-02T12:17:56,148.2170080,-9.3495932,555.0,1.9,Building in use,2,files/1000059997.jpg files/1000059996.jpg
+Aiyari old aidpost site,2026-11-02T12:42:37,148.2198087,-9.3514312,569.0,2.9,"Three Community Health Workers (CHWs) served at this aid post before it was closed. According to one source from Aiyari, the last CHW served here around 1979, and the aid post was closed around that year due to distance and the tough environment.",2,files/1000060007.jpg files/1000060006.jpg
+Aiyari old airstrip,2026-11-02T11:35:39,148.2184633,-9.3393317,536.0,1.8,"Aiyari's old airstrip was cleared in the early 1990s. Cone markers were put in place for landing, but no landing ever took place. Around 1993, one flight circled above the airstrip but never made its first landing. Airstrip is not in operation.",2,files/1000059988.jpg files/1000059989.jpg
+Aiyari old Elementary & Community School site,2026-11-02T12:03:56,148.2165335,-9.3509466,554.0,2.2,"No Elementary or Community School buildings can be seen here today. This is now the old site for both schools. At the beginning of 2025, when the Community School was relocated to Jaure, the Elementary School also stopped holding classes up till now.",2,files/1000059990.jpg files/1000059991.jpg
+Aiyari old village,2026-11-03T16:19:14,148.2263790,-9.3297387,653.0,5,"The old Aiyari village was relocated to its current site in the early 1990s. According to one account, the move began when a community member started gardening near the new site. As he settled there and continued his gardening away from the old village, others gradually followed him, and soon the new Aiyari village was formed. Another account states that the community relocated to the current site because of a land dispute.",2,files/1000060087.jpg files/1000060086.jpg
+Bamu creek,2026-11-02T15:36:30,148.1802603,-9.3599048,629.0,3.6,,1,files/1000060028.jpg
+Creek name unknown,2026-11-02T15:32:18,148.1816458,-9.3588755,626.0,4.2,,2,files/1000060024.jpg files/1000060023.jpg
+Digicel network area - limited coverage,2026-11-04T10:32:04,148.2475092,-9.2373677,876.0,2.8,,2,files/1000060259.jpg files/1000060261.jpg
+Huya creek,2026-11-02T15:54:29,148.1758511,-9.3650676,623.0,2.1,,1,files/1000060037.jpg
+Irua River,2026-11-02T14:29:06,148.2012285,-9.3515060,559.0,1.9,,2,files/1000060016.jpg files/1000060017.jpg
+Jia creek,2026-11-02T15:23:00,148.1855281,-9.3576814,612.0,3.0,,2,files/1000060021.jpg files/1000060022.jpg
+Jordan creek,2026-11-02T14:02:00,148.2157261,-9.3498636,544.0,3.2,,1,files/1000060011.jpg
+Kubai creek,2026-11-02T14:07:09,148.2129634,-9.3505272,547.0,2.7,,2,files/1000060014.jpg files/1000060013.jpg
+Mt Carmel Aiyari Renewal Church,2026-11-02T12:37:51,148.2183264,-9.3505142,561.0,2.2,Building in use,2,files/1000059999.jpg files/1000060000.jpg
+Old aidpost site,2026-11-03T12:54:32,148.1797902,-9.3601343,580.0,6,"According to two sources from Aiyari and Suari, this site is where the old aid post was built during colonial times and was run by white people. The dates when it was established and when it closed are unknown to both sources.",3,files/1000060073.jpg files/1000060072.jpg files/1000060071.jpg
+Saint Laurence Umuate Anglican Church,2026-11-02T06:21:32,148.2356357,-9.2638661,816.0,4.1,Building in use,2,files/1000059847.jpg files/1000059848.jpg
+Saint Luke Aiyari Anglican Church,2026-11-02T12:14:09,148.2167219,-9.3498383,558.0,2.0,Building in use,2,files/1000059992.jpg files/1000059993.jpg
+Saint Mathew's Suari Anglican Church,2026-11-03T07:08:35,148.1732598,-9.3660914,669.0,8,Building in use,3,files/1000060052.jpg files/1000060053.jpg files/1000060056.jpg
+Suari village,2026-11-03T07:10:39,148.1732376,-9.3663562,681.0,4.1,,3,files/1000060057.jpg files/1000060058.jpg files/1000060059.jpg
+Ukase river,2026-11-03T14:09:55,148.2014208,-9.3514629,565.0,6,,2,files/1000060084.jpg files/1000060083.jpg
+Umuate Elementary School,2026-11-02T06:20:11,148.2358631,-9.2638596,808.0,3.9,Building in use,2,files/1000059845.jpg files/1000059844.jpg
+Umuate Renewal Church,2026-11-02T07:04:09,148.2350041,-9.2663650,807.0,2.0,Building in use,2,files/1000059858.jpg files/1000059859.jpg

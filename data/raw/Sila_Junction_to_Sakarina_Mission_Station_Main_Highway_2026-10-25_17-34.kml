@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Sila_Junction_to_Sakarina_Mission_Station_Main_Highway_2026-10-25_17-34</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="track001">
+		<LineStyle>
+			<color>b3ff0000</color>
+			<width>6.0</width>
+		</LineStyle>
+	</Style>
+<Placemark>
+	<name>Sila Junction to Sakarina Mission Station Main Highway 2026-10-25 17:34</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Activity</b></small></td><td align="center" valign="center">Walking</td></tr>
+<tr><td align="left" valign="center"><small><b>Distance</b></small></td><td align="center" valign="center">567 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-10-25 17:34:10</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. speed</b></small></td><td align="center" valign="center">41.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Pace</b></small></td><td align="center" valign="center">20:25 min/km</td></tr>
+<tr><td align="left" valign="center"><small><b>Energy</b></small></td><td align="center" valign="center">218 KJ</td></tr>
+<tr><td align="left" valign="center"><small><b>Points</b></small></td><td align="center" valign="center">52</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">All</td><td align="center" valign="center">Speed > 0</td></tr>
+<tr><td align="left" valign="center"><small><b>Avg. speed</b></small></td><td align="center" valign="center">2.9 km/h</td><td align="center" valign="center">3.2 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Track time</b></small></td><td align="center" valign="center">0:11:34</td><td align="center" valign="center">0:10:30</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. altitude</b></small></td><td align="center" valign="center">694 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. altitude</b></small></td><td align="center" valign="center">716 m</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Elevation</td><td align="center" valign="center">Distance</td></tr>
+<tr><td align="left" valign="center"><small><b>Uphill</b></small></td><td align="center" valign="center">24 m</td><td align="center" valign="center">272 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Downhill</b></small></td><td align="center" valign="center">-28 m</td><td align="center" valign="center">295 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Flat</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">0 m</td></tr>
+</table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#track001</styleUrl>
+	<MultiGeometry>
+		<LineString>
+			<coordinates>
+				148.3692097,-9.0691216,715.73
+				148.3692310,-9.0692117,715.15
+				148.3692646,-9.0693336,714.57
+				148.3692763,-9.0694278,713.29
+				148.3693149,-9.0695160,710.19
+				148.3693430,-9.0696135,708.95
+				148.3694073,-9.0697085,707.98
+				148.3694734,-9.0698019,707.65
+				148.3695239,-9.0698846,707.33
+				148.3695995,-9.0699701,706.39
+				148.3696692,-9.0700434,704.89
+				148.3697451,-9.0701198,703.84
+				148.3698107,-9.0701897,703.14
+				148.3698862,-9.0702736,702.50
+				148.3699566,-9.0703555,702.33
+				148.3700253,-9.0704553,702.40
+				148.3700950,-9.0705381,702.74
+				148.3701662,-9.0706059,703.67
+				148.3702301,-9.0706758,705.25
+				148.3702883,-9.0707643,706.33
+				148.3702942,-9.0708551,707.65
+				148.3702758,-9.0709443,708.82
+				148.3701830,-9.0709133,711.04
+				148.3701165,-9.0708507,712.76
+				148.3700048,-9.0707816,711.50
+				148.3699467,-9.0707019,709.30
+				148.3699096,-9.0706133,709.04
+				148.3698566,-9.0705266,705.37
+				148.3697858,-9.0704417,703.78
+				148.3697079,-9.0703758,704.14
+				148.3696145,-9.0703698,703.66
+				148.3695514,-9.0704372,703.22
+				148.3695370,-9.0705329,701.53
+				148.3695493,-9.0706251,700.92
+				148.3695353,-9.0707232,701.31
+				148.3695100,-9.0708105,700.83
+				148.3694068,-9.0708808,699.76
+				148.3693105,-9.0708796,697.58
+				148.3692100,-9.0708861,694.16
+				148.3691202,-9.0708665,693.65
+				148.3690236,-9.0708804,694.73
+				148.3689329,-9.0708652,695.56
+				148.3688388,-9.0708305,696.62
+				148.3687471,-9.0707965,702.33
+				148.3686818,-9.0707257,707.15
+				148.3686161,-9.0706582,702.22
+				148.3685878,-9.0705681,700.32
+				148.3685784,-9.0704716,704.88
+				148.3685925,-9.0703817,709.09
+				148.3686150,-9.0702924,711.04
+				148.3686055,-9.0701981,710.85
+				148.3685294,-9.0701456,711.65
+			</coordinates>
+		</LineString>
+	</MultiGeometry>
+</Placemark>
+</Document>
+</kml>
