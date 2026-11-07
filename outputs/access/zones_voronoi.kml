@@ -113,6 +113,14 @@
       <SimpleField name="pct_approx" type="double"/>
       <SimpleField name="population" type="string"/>
     </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
     <Document id="zones_voronoi">
       <name>zones_voronoi</name>
       <Placemark id="zones_voronoi.1">
@@ -279,8 +287,8 @@
                 148.369317991,-8.86170203899997,0
                 148.37063798,-8.86258003999995,0
                 148.372194417726,-8.86258004912568,0
-                148.334254520108,-8.95681864084348,0
-                148.318774432893,-8.9896388327135,0
+                148.335443443546,-8.9538661257701,0
+                148.318492670086,-8.9899741417862,0
                 148.29231445231,-9.02112400515701,0
                 148.242469375087,-9.05433349564227,0
                 148.242197616074,-9.07773804727492,0
@@ -531,7 +539,7 @@
             <SimpleData name="zone">5</SimpleData>
             <SimpleData name="village">Ugunomo</SimpleData>
             <SimpleData name="quality">known</SimpleData>
-            <SimpleData name="area_km2">49.1</SimpleData>
+            <SimpleData name="area_km2">49</SimpleData>
             <SimpleData name="pct_approx">0</SimpleData>
             <SimpleData name="population">2866</SimpleData>
           </SchemaData>
@@ -543,9 +551,9 @@
                 148.315578781198,-9.07754065024673,0
                 148.306003480286,-9.07230743476254,0
                 148.29231445231,-9.02112400515701,0
-                148.318774432893,-8.9896388327135,0
-                148.33096641406,-9.03808167053455,0
-                148.354953892421,-9.06921644808695,0
+                148.318492670086,-8.9899741417862,0
+                148.330949183662,-9.03832071341825,0
+                148.354965458994,-9.06891968170631,0
                 148.353966437754,-9.09455341451386,0
                 148.356489389264,-9.09936705937522,0
                 148.356137393422,-9.10187338570308,0
@@ -563,7 +571,7 @@
             <SimpleData name="zone">6</SimpleData>
             <SimpleData name="village">Sigara</SimpleData>
             <SimpleData name="quality">known</SimpleData>
-            <SimpleData name="area_km2">284.3</SimpleData>
+            <SimpleData name="area_km2">284.5</SimpleData>
             <SimpleData name="pct_approx">0</SimpleData>
             <SimpleData name="population">4633</SimpleData>
           </SchemaData>
@@ -576,10 +584,10 @@
                 148.377725936172,-9.08571279345916,0
                 148.356489389264,-9.09936705937522,0
                 148.353966437754,-9.09455341451386,0
-                148.354953892421,-9.06921644808695,0
-                148.33096641406,-9.03808167053455,0
-                148.318774432893,-8.9896388327135,0
-                148.334254520108,-8.95681864084348,0
+                148.354965458994,-9.06891968170631,0
+                148.330949183662,-9.03832071341825,0
+                148.318492670086,-8.9899741417862,0
+                148.335443443546,-8.9538661257701,0
                 148.372194417726,-8.86258004912568,0
                 148.375708611545,-8.86258004588942,0
                 148.377453995,-8.86258003199993,0
