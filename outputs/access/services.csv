@@ -1,0 +1,51 @@
+# Government services in the MCA, one row per facility.
+# status: working / closed / unknown. The field note is read
+# before the ward table, and nothing is assumed working.
+facility,kind,status,lon,lat,buildings,seen_only_as,evidence
+Afore Airstrip,airstrip,working,148.3900000,-9.1396567,1,,Non-operational. Now covered in tall kunai grasses
+Afore DDA Office,office,unknown,148.3875700,-9.1408467,1,,Not yet officially opened for Government Officers to use yet currently one office space has been allocated for Police to use.
+Afore Elementary School,elementary school,working,148.3872721,-9.1376766,1,,Currently in use
+Afore High School,high school,working,148.3711052,-9.0687634,20,,Building in use | Building in use | Incomplete building | Completed but not in use | Building in use | Completed but not in use | Temporary building to accommodate male students | Incomplete | Building in use | Building in use | Building in use | Building in use | Building in use | Building in use |
+Afore Primary School,primary school,working,148.3879812,-9.1376777,8,,2 in one permanent building for grades 5 & 6. | 2 in 1 building for grades 1 & 8 | Currently in use | Currently in use | Currently in use | Currently in use | Currently in use | Currently in use
+Aguido Elementary School,elementary school,working,148.4484667,-9.1413633,1,,Classroom in use
+Aguido Primary School,primary school,working,148.4491864,-9.1409328,6,,Classroom in use | 1 × 4 in 1 School Building in its early stage. Building materials have been prepared already but the carpenter hasn't shown up to begin with construction work. | House in use | House in use | House in use | House in use
+Aiyari Elementary School,elementary school,unknown,148.2170080,-9.3495932,1,ancillary buildings only,Building in use
+Aiyari old aidpost,aid post,closed,148.2198087,-9.3514312,1,,"Three Community Health Workers (CHWs) served at this aid post before it was closed. According to one source from Aiyari, the last CHW served here around 1979, and the aid post was closed around that year due to distance and the tough environment."
+Aiyari old airstrip,airstrip,closed,148.2184633,-9.3393317,1,,"Aiyari's old airstrip was cleared in the early 1990s. Cone markers were put in place for landing, but no landing ever took place. Around 1993, one flight circled above the airstrip but never made its first landing. Airstrip is not in operation."
+Anatua Elementary School,elementary school,unknown,148.2617327,-9.1484760,1,,
+Awaru Old Airstrip,airstrip,closed,148.3886400,-9.0730017,1,,"The soccer field at Awaru was cleared in the early 2000s as an airstrip. It was cleared after flights to Sila stopped due to a clan dispute between two brothers over the airstrip there. Once the dispute was resolved and flights resumed at Sila, the Awaru airstrip was abandoned and later houses were "
+Bodoimo Elementary School,elementary school,working,148.2861317,-9.1108066,1,,Building in use
+Dea & Ugunomo 2 in 1 Elementary building,elementary school,working,148.3265061,-9.0579463,1,,Students from Dea and Ugunomo Elementary are combined in the same classroom and taught by their elementary teachers.
+Dea & Ugunomo Elementary classroom,elementary school,working,148.3266471,-9.0575549,2,,Students from Dea and Ugunomo Elementary are combined in the same classroom and taught by their elementary teachers. | Students from Dea and Ugunomo Elementary are combined in the same classroom and taught by their elementary teachers.
+Dea Aid Post,aid post,working,148.3272539,-9.0587651,1,,Not in use
+Dea Elementary School,elementary school,working,148.3262936,-9.0577222,1,ancillary buildings only,
+Dea Primary School,primary school,working,148.3272931,-9.0574360,10,,Building in use | Building in use | Building in use | Grade 1 classroom not in use (incomplete) Grade 2 classroom is in use. Grade 1 classroom is located on the right side of the picture while grade 2 is on the left side of the picture. | Building in use | Building in use | The building is currently
+Ese Bible Institute (EBI) Aid Post,aid post,working,148.3657317,-9.0505517,1,,Not in use currently
+Itokama Airstrip,airstrip,working,148.2649699,-9.1996602,1,,
+Itokama Elementary School,elementary school,working,148.2636776,-9.1999222,1,,Building in use
+Itokama Health Centre,health centre,working,148.2631569,-9.1973614,1,,
+Itokama Primary School,primary school,working,148.2640341,-9.1983688,13,,Building in use | Building in use | Classroom incomplete. Yet to be used. | Two classrooms upstairs are not in use because it has begun to go old. Both classrooms downstairs are in use. | Building in use | Building in use | Building in use | Building in use | Building in use | Building in use | Buil
+Jorura Elementary School,elementary school,unknown,148.3057567,-9.0879883,1,,
+Kaura Elementary School,elementary school,working,148.3818167,-9.0640150,1,,2 × 2 in 1 building in use
+Kiara Elementary School,elementary school,working,148.2854431,-9.0925416,1,,Building in use
+Kokoro Aid Post,aid post,unknown,148.2709170,-9.1682427,1,,"The building is incomplete. The CHW currently treats patients from his private home, with medical supplies sourced from Itokama Health Centre."
+Kokoro Elementary School,elementary school,closed,148.2721884,-9.1646899,1,,Students no longer attend classes now since July this year due to El Nino.
+Koruwo Health Centre,health centre,working,148.3087719,-9.1177178,1,,Building not in use. It remains incomplete with no CHW.
+Koruwo High School,high school,working,148.3088717,-9.1159069,2,,Completed but not in use | Not in use
+Koruwo Primary School,primary school,closed,148.3085292,-9.1164370,10,,"This building belonged to Koruwo Elementary but was handed over to Koruwo Primary School. This was necessary because Koruwo High School was occupying the Primary School's buildings, leaving the Primary School in need of additional classrooms to accommodate its students. Koruwo Elementary has since r"
+Kuweno Elementary School,elementary school,unknown,148.3523367,-9.0536617,1,,
+Naokanane Elementary School,elementary school,unknown,148.2658780,-9.2107064,1,,"The school operated until mid-2026 when a conflict arose between the two teachers, leading to a cessation of teaching activities. Consequently, student attendance ceased."
+Numba Elementary School,elementary school,unknown,148.3704617,-9.0549833,1,,
+Old Dea Airstrip,airstrip,closed,148.3268829,-9.0581295,1,,"The current location of Dea Primary School was formerly the old Dea airstrip. It became unusable due to excessive mud and a short runway, and no other flights landed after it was initially cleared. The original Dea School was established at Taparuraha, located between Dea, Ugunomo, and Siribu villag"
+Old aidpost,aid post,closed,148.1797902,-9.3601343,1,,"According to two sources from Aiyari and Suari, this site is where the old aid post was built during colonial times and was run by white people. The dates when it was established and when it closed are unknown to both sources."
+Sakarina Health Centre,health centre,working,148.3693331,-9.0678215,8,,Building in use | Building in use | Building in use | Building in use | Building used by Sakarina Health Center Security Guard | Building in use | Building in use | Building in use
+Sakarina Primary School,primary school,working,148.3688629,-9.0653675,19,,Building in use | Building in use | Building in use | Building in use | Building in use | Building in use | Building in use. At some point will be taken down due to deterioration. | Building in use | Incomplete building and not in use | Incomplete building and not in use | Building in use | Building
+Sila Airstrip,airstrip,closed,148.3633595,-9.0641194,1,,Closed down
+Siribu Elementary School,elementary school,working,148.3208962,-9.0864591,1,,Building in use
+Tabuane Elementary School,elementary school,working,148.3414281,-9.0645019,1,,Building currently not in use. Students not attending classes.
+Tahama Elementary School,elementary school,working,148.2954525,-9.1611405,3,,Building in use
+Ugunomo Elementary School,elementary school,working,148.3262234,-9.0579449,1,ancillary buildings only,
+Umbuara Aid post,aid post,working,148.2736750,-9.1165967,1,,The Aid Post building is incomplete & not in use.
+Umbuara Primary School,primary school,working,148.2725526,-9.1136011,6,,Building in use | Building in use
+Umuate Elementary School,elementary school,working,148.2358631,-9.2638596,1,,Building in use
+Yoivi Community Aid Post,aid post,working,148.4502217,-9.1404583,1,,Community Health Workers serve as volunteers in the community whenever medicines are available.

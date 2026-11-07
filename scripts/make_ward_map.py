@@ -83,10 +83,18 @@ OTHER = ("o", "#808B96", 6.0, "Other recorded point")
 #
 # So a point's name is cut at the kind word, and everything sharing the cut is
 # one institution drawn as one mark.
+# The field spells things as the field spells them. "aidpost" is one word on
+# two of Russell's points, "Elementary & Community School" has another school
+# wedged into the middle of the name, and Dea's classrooms are "Elementary
+# building" with no "school" in them at all. Each of those was silently
+# dropping a facility - and all three happened to be CLOSED sites, which is
+# the half of the picture a services map exists to show.
 INSTITUTION = re.compile(
-    r"^(.*?\b(?:elementary|primary|high|secondary)\s+school"
+    r"^(.*?\b(?:elementary|primary|high|secondary)"
+    r"(?:\s*&\s*community)?\s+school"
+    r"|.*?\belementary\s+(?:building|classroom)"
     r"|.*?\bhealth\s+cent(?:re|er)"
-    r"|.*?\baid\s+post"
+    r"|.*?\baid\s*post"
     r"|.*?\bchurch"
     r"|.*?\bairstrip"
     r"|.*?\boffice)\b", re.I)
