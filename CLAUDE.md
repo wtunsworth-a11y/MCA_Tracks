@@ -54,6 +54,40 @@ Imagery over this plateau is usually clouded - of ten recent Sentinel-2
 scenes, four were 100% cloud and only two were clear. Check the scene
 classification layer before reporting that something cannot be seen.
 
+## When Russell uploads, these get rebuilt. Not optional.
+
+Will, 7 Nov 2026: "when Russell uploads new data, you WILL update those 2
+files". The two are:
+
+    outputs/gis/mca_schools.kml
+    outputs/gis/mca_health.kml
+
+They had been going stale, because the weekly routine's pipeline stopped at
+the itinerary and never reached the services map. That is fixed in two ways,
+and BOTH matter: the routine now runs the whole chain, and the chain is a
+script rather than a list of steps in prose that drifts out of date.
+
+    bash scripts/refresh_all.sh
+
+Run it after ANY new field data, tracks or waypoints. It rebuilds the
+network, the access model, the checklist, the facilities reconciliation, the
+services maps and layers, the itinerary, the questions and the Word
+documents, in the one order that works.
+
+A new WAYPOINT drop needs one step first, because the provenance header has
+to be written by someone who knows where the file came from:
+
+    python3 scripts/extract_waypoint_kml.py <doc.kml> \
+            data/reference/waypoints_<area>.csv
+
+Nothing else needs editing after that. The drops are DISCOVERED by
+scripts/waypoint_drops.py, not listed in each script - they used to be listed
+in three, and zone 4 was reported as entirely uncollected until two of them
+were changed by hand.
+
+Then check the two files above actually changed before saying the update is
+done.
+
 ## Working rules he has set
 
 - Cross check names AND positions before announcing anything. A facility named

@@ -52,9 +52,9 @@ from make_access_figures import (             # noqa: E402
 from make_ward_map import institution_of      # noqa: E402
 from reconcile_facilities import kinds_of     # noqa: E402
 
+from waypoint_drops import load_waypoints  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
-WP_FILES = [ROOT / "data" / "reference" / "waypoints_facilities.csv",
-            ROOT / "data" / "reference" / "waypoints_zone4.csv"]
 FAC = ROOT / "data" / "reference" / "facilities.csv"
 OUT_DIR = ROOT / "outputs" / "access"
 # The layers go somewhere a person looking for them would look. Everything
@@ -111,12 +111,7 @@ def status_of(name, notes):
 
 
 def collect_services():
-    pts = []
-    for path in WP_FILES:
-        if path.exists():
-            with path.open() as fh:
-                pts += [r for r in csv.DictReader(
-                    l for l in fh if not l.startswith("#"))]
+    pts = load_waypoints()
 
     insts = {}
     for p in pts:
