@@ -19,7 +19,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
-from build_access import corrected_positions, haversine_km, load_villages  # noqa: E402
+from build_access import haversine_km, load_villages  # noqa: E402
 
 SRC = ROOT / "outputs" / "gis" / "mca_government_services.csv"
 OUT = ROOT / "outputs" / "gis" / "mca_government_facilities.csv"
@@ -42,24 +42,58 @@ NOT_A_SETTLEMENT = re.compile(
 def places():
     """Every place a facility could stand at, with the best position for it.
 
-    The 46-village gazetteer is not the whole list. Umuate holds an elementary
-    school and 212 people in ward 14, and is absent from it, so its school was
-    being filed at Madokoro 6.3 km away. place_aliases.csv and
-    placed_by_team.csv carry positions for places like that, with the evidence
-    for each, so they are folded in here - the team's own placements last so
-    they win.
+    The 46-village gazetteer is not the whole list. Umuate holds a school and
+    212 people in ward 14 and is absent from it. Anatua is absent too, and is
+    one village in two parts - Will, 11 Nov 2026: "Anatua is both of those" -
+    so it needs TWO points under the one name.
+
+    Positions are tiered, and for each name only the best tier is kept: the
+    team's own placements, then a position written into place_aliases.csv with
+    the evidence for it, then the gazetteer. Within a tier every point is kept,
+    which is what lets Anatua be two places. Keeping points from more than one
+    tier would be worse than useless: the facility would be matched to
+    whichever stale duplicate happened to sit nearest, and every distance in
+    the file would flatter itself.
+
+    Facilities are excluded, because place_aliases.csv positions anything worth
+    pinning and a facility is never the answer to "which village is this in".
     """
+    TIERS = {"team": 0, "alias": 1, "gazetteer": 2}
+    cand = {}  # name.lower() -> (tier_rank, display_name, [(lon, lat), ...])
+
+    def offer(name, lon, lat, tier):
+        name = str(name).strip()
+        if not name or NOT_A_SETTLEMENT.search(name):
+            return
+        rank = TIERS[tier]
+        key = name.lower()
+        cur = cand.get(key)
+        if cur is None or rank < cur[0]:
+            cand[key] = (rank, name, [(float(lon), float(lat))])
+        elif rank == cur[0]:
+            cur[2].append((float(lon), float(lat)))
+
+    pt = ROOT / "data" / "reference" / "placed_by_team.csv"
+    if pt.exists():
+        for r in pd.read_csv(pt, comment="#").itertuples():
+            offer(r.place, r.lon, r.lat, "team")
+
+    al = ROOT / "data" / "reference" / "place_aliases.csv"
+    if al.exists():
+        for r in pd.read_csv(al, comment="#").itertuples():
+            lon, lat = getattr(r, "lon", None), getattr(r, "lat", None)
+            if pd.notna(lon) and pd.notna(lat):
+                offer(getattr(r, "resolved_to", ""), lon, lat, "alias")
+
     vil, _ = load_villages()
-    out = {}
     for v in vil.itertuples():
-        out[str(v.vil_name).strip().lower()] = (
-            str(v.vil_name).strip(), float(v.lon), float(v.lat))
-    for key, (lon, lat, _src) in corrected_positions().items():
-        name = out.get(key, (key.title(),))[0]
-        if key not in out and NOT_A_SETTLEMENT.search(name):
-            continue
-        out[key] = (name, lon, lat)
-    return list(out.values())
+        offer(v.vil_name, v.lon, v.lat, "gazetteer")
+
+    pts = []
+    for _rank, name, coords in cand.values():
+        for lon, lat in coords:
+            pts.append((name, lon, lat))
+    return pts
 
 
 def main():
