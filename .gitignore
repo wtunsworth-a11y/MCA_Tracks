@@ -23,6 +23,14 @@ outputs/*
 !outputs/*.png
 !outputs/*.html
 
+# The GIS layers are the deliverable too, and they were NOT being kept.
+# outputs/* swallowed the whole directory, so mca_schools.kml and
+# mca_health.kml - the two files Will said must be rebuilt on every drop -
+# existed only inside the container, and the refresh script's "check they
+# changed with git status" could never report anything, because git had never
+# heard of them. Track them.
+!outputs/gis/
+
 # Python
 __pycache__/
 *.py[cod]

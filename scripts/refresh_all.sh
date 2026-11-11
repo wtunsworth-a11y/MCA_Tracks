@@ -37,6 +37,7 @@ run python3 scripts/cross_reference_tracks.py
 run python3 scripts/reconcile_facilities.py
 run python3 scripts/pick_facility_photos.py
 run python3 scripts/make_services_map.py          # the two KML layers
+run python3 scripts/make_facilities_csv.py        # name/type/village/coords
 
 run python3 scripts/make_todo.py
 run python3 scripts/make_itinerary.py
@@ -62,4 +63,5 @@ run node scripts/md_to_docx.js outputs/access/QUESTIONS.md \
 
 echo
 echo "=== layers that must now be current ==="
-ls -la outputs/gis/mca_schools.kml outputs/gis/mca_health.kml
+ls -la outputs/gis/mca_schools.kml outputs/gis/mca_health.kml \
+       outputs/gis/mca_government_facilities.csv
