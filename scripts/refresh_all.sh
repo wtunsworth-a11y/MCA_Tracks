@@ -39,6 +39,13 @@ run python3 scripts/pick_facility_photos.py
 run python3 scripts/make_services_map.py          # the two KML layers
 run python3 scripts/make_facilities_csv.py        # name/type/village/coords
 
+# Audits. They raise suggestions rather than change anything, and they exist
+# because both faults cost real time: a fourth spelling of Koeno put a school
+# at the wrong village, and two files named backwards made one village look
+# like two. Neither should ever again be found by tripping over it.
+run python3 scripts/audit_place_spellings.py
+run python3 scripts/audit_track_direction.py
+
 run python3 scripts/make_todo.py
 run python3 scripts/make_itinerary.py
 run python3 scripts/make_itinerary_map.py
