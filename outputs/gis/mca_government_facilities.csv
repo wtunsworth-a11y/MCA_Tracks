@@ -1,53 +1,57 @@
 # Government facilities in the Managalas Conservation Area.
-# The village is the NEAREST village by position, not the name in
-# the facility's title. km_from_village says how good that is:
-# over 3 km the facility is near that village, not at it.
+# village: the village OUTLINE the facility stands in, from
+#   village_footprints.kml. A village is an area, so several
+#   facilities share one. km_to_village is 0.00 when the point
+#   is inside that outline; otherwise it is the distance to the
+#   nearest outline's EDGE, and that outline is named.
+# ward: the ward the outline belongs to. NOT the same thing -
+#   Awaru village is inside ward 04 Kaura.
 # Coordinates are WGS84 decimal degrees.
-name,type,village,km_from_village,latitude,longitude
-Aiyari old aidpost,aid post,Aiari,0.34,-9.3514312,148.2198087
-Dea Aid Post,aid post,Dea,0.97,-9.0587651,148.3272539
-Ese Bible Institute (EBI) Aid Post,aid post,Numba,0.06,-9.0505517,148.3657317
-Kokoro Aid Post,aid post,Kokoro,0.18,-9.1682427,148.270917
-Old aidpost,aid post,Suari,0.99,-9.3601343,148.1797902
-Umbuara Aid post,aid post,Umbuara,0.54,-9.1165967,148.273675
-Yoivi Community Aid Post,aid post,Yoivi,0.15,-9.1404583,148.4502217
-Afore Airstrip,airstrip,Afore Government Station,0.13,-9.1396567,148.39
-Aiyari old airstrip,airstrip,Aiari,1.16,-9.3393317,148.2184633
-Awaru Old Airstrip,airstrip,Awaru,0.16,-9.0730017,148.38864
-Itokama Airstrip,airstrip,Itokama,0.12,-9.1996602,148.2649699
-Old Dea Airstrip,airstrip,Dea,1.05,-9.0581295,148.3268829
-Sila Airstrip,airstrip,Sila/Sakarina,0.74,-9.0641194,148.3633595
-Afore Elementary School,elementary school,Basabe,0.17,-9.1376766,148.3872721
-Aguido Elementary School,elementary school,Yoivi,0.3,-9.1413633,148.4484667
-Aiyari Elementary School,elementary school,Aiari,0.03,-9.3495932,148.217008
-Anatua Elementary School,elementary school,Anatua,0.38,-9.148476,148.2617327
-Bodoimo Elementary School,elementary school,Bodoimo,0.51,-9.1108066,148.2861317
-Dea & Ugunomo 2 in 1 Elementary building,elementary school,Dea,1.09,-9.0579463,148.3265061
-Dea & Ugunomo Elementary classroom,elementary school,Dea,1.12,-9.0575549,148.3266471
-Dea Elementary School,elementary school,Ugunomu,1.1,-9.0577222,148.3262936
-Itokama Elementary School,elementary school,Itokama,0.26,-9.1999222,148.2636776
-Jorura Elementary School,elementary school,Jorua,0.16,-9.0879883,148.3057567
-Kaura Elementary School,elementary school,Kaura,0.48,-9.064015,148.3818167
-Kiara Elementary School,elementary school,Kiara,0.48,-9.0925416,148.2854431
-Kokoro Elementary School,elementary school,Kokoro,0.24,-9.1646899,148.2721884
-Kuweno Elementary School,elementary school,Koeno,0.24,-9.0536617,148.3523367
-Naokanane Elementary School,elementary school,Naokanane,0.02,-9.2107064,148.265878
-Numba Elementary School,elementary school,Numba,0.7,-9.0549833,148.3704617
-Siribu Elementary School,elementary school,Siribu,0.51,-9.0864591,148.3208962
-Tabuane Elementary School,elementary school,Tabuane,0.12,-9.0645019,148.3414281
-Tahama Elementary School,elementary school,Tahama,0.1,-9.1611405,148.2954525
-Ugunomo Elementary School,elementary school,Ugunomu,1.08,-9.0579449,148.3262234
-Umuate Elementary School,elementary school,Umuate,0.13,-9.2638596,148.2358631
-Itokama Health Centre,health centre,Kwae,0.36,-9.1973614,148.2631569
-Koruwo Health Centre,health centre,Koruwo,0.95,-9.1177178,148.3087719
-Sakarina Health Centre,health centre,Sila/Sakarina,0.23,-9.0678215,148.3693331
-Afore High School,high school,Sila/Sakarina,0.35,-9.0687634,148.3711052
-Koruwo High School,high school,Koruwo,0.76,-9.1159069,148.3088717
-Afore DDA Office,office,Afore Government Station,0.18,-9.1408467,148.38757
-Afore Primary School,primary school,Basabe,0.25,-9.1376777,148.3879812
-Aguido Primary School,primary school,Yoivi,0.22,-9.1409328,148.4491864
-Dea Primary School,primary school,Dea,1.12,-9.057436,148.3272931
-Itokama Primary School,primary school,Itokama,0.28,-9.1983688,148.2640341
-Koruwo Primary School,primary school,Koruwo,0.83,-9.116437,148.3085292
-Sakarina Primary School,primary school,Sila/Sakarina,0.12,-9.0653675,148.3688629
-Umbuara Primary School,primary school,Umbuara,0.88,-9.1136011,148.2725526
+name,type,village,ward,km_to_village,latitude,longitude
+Aiyari old aidpost,aid post,Aiari,Aiari,0.0,-9.3514312,148.2198087
+Dea Aid Post,aid post,Dea,Dea,0.63,-9.0587651,148.3272539
+Ese Bible Institute (EBI) Aid Post,aid post,Numba/Siurana,Siurani,0.03,-9.0505517,148.3657317
+Kokoro Aid Post,aid post,Kokoro,Kokoro,0.06,-9.1682427,148.270917
+Old aidpost,aid post,Suari,Jaure,0.93,-9.3601343,148.1797902
+Umbuara Aid post,aid post,Umbuwara,Umbuwara,0.27,-9.1165967,148.273675
+Yoivi Community Aid Post,aid post,Yoivi,Yoivi,0.0,-9.1404583,148.4502217
+Afore Airstrip,airstrip,Afore Govt Station,Niniuri,0.0,-9.1396567,148.39
+Aiyari old airstrip,airstrip,Aiari,Aiari,1.07,-9.3393317,148.2184633
+Awaru Old Airstrip,airstrip,Awaru,Kaura,0.0,-9.0730017,148.38864
+Itokama Airstrip,airstrip,Itokama / Itokama station,Ufia,0.0,-9.1996602,148.2649699
+Old Dea Airstrip,airstrip,Dea,Dea,0.7,-9.0581295,148.3268829
+Sila Airstrip,airstrip,Sila 2 / Sakarina / Sila 1,Koeno,0.46,-9.0641194,148.3633595
+Afore Elementary School,elementary school,Basabe,Niniuri,0.01,-9.1376766,148.3872721
+Aguido Elementary School,elementary school,Yoivi,Yoivi,0.04,-9.1413633,148.4484667
+Aiyari Elementary School,elementary school,Aiari,Aiari,0.0,-9.3495932,148.217008
+Anatua Elementary School,elementary school,Anatua 1,Umbuwara,0.09,-9.148476,148.2617327
+Bodoimo Elementary School,elementary school,Boidomo,Umbuwara,0.33,-9.1108066,148.2861317
+Dea & Ugunomo 2 in 1 Elementary building,elementary school,Ugunomo,Dea,0.66,-9.0579463,148.3265061
+Dea & Ugunomo Elementary classroom,elementary school,Ugunomo,Dea,0.69,-9.0575549,148.3266471
+Dea Elementary School,elementary school,Dea,Dea,0.77,-9.0577222,148.3262936
+Itokama Elementary School,elementary school,Itokama / Itokama station,Ufia,0.04,-9.1999222,148.2636776
+Jorura Elementary School,elementary school,Jorura,Natanga,0.0,-9.0879883,148.3057567
+Kaura Elementary School,elementary school,Kaura,Kaura,0.04,-9.064015,148.3818167
+Kiara Elementary School,elementary school,Kiara,Natanga,0.36,-9.0925416,148.2854431
+Kokoro Elementary School,elementary school,Kokoro,Kokoro,0.0,-9.1646899,148.2721884
+Kuweno Elementary School,elementary school,Koeno,Koeno,0.03,-9.0536617,148.3523367
+Naokanane Elementary School,elementary school,Naokanane,,0.02,-9.2107064,148.265878
+Numba Elementary School,elementary school,Kaura,Kaura,0.2,-9.0549833,148.3704617
+Siribu Elementary School,elementary school,Siribu,Siribu,0.29,-9.0864591,148.3208962
+Tabuane Elementary School,elementary school,Tabuane,Dea,0.03,-9.0645019,148.3414281
+Tahama Elementary School,elementary school,Tahama,Tahama,0.0,-9.1611405,148.2954525
+Ugunomo Elementary School,elementary school,Ugunomo,Dea,0.63,-9.0579449,148.3262234
+Umuate Elementary School,elementary school,Umuate,Ufia,0.02,-9.2638596,148.2358631
+Itokama Health Centre,health centre,Itokama / Itokama station,Ufia,0.13,-9.1973614,148.2631569
+Koruwo Health Centre,health centre,Koruwo,Tahama,0.0,-9.1177178,148.3087719
+Sakarina Health Centre,health centre,Sila 2 / Sakarina / Sila 1,Koeno,0.05,-9.0678215,148.3693331
+Afore High School,high school,Sila 2 / Sakarina / Sila 1,Koeno,0.0,-9.0687634,148.3711052
+Koruwo High School,high school,Koruwo,Tahama,0.09,-9.1159069,148.3088717
+Afore DDA Office,office,Afore Govt Station,Niniuri,0.0,-9.1408467,148.38757
+Afore Primary School,primary school,Afore Govt Station,Niniuri,0.01,-9.1376777,148.3879812
+Aguido Primary School,primary school,Yoivi,Yoivi,0.0,-9.1409328,148.4491864
+Dea Primary School,primary school,Dea,Dea,0.77,-9.057436,148.3272931
+Itokama Primary School,primary school,Itokama / Itokama station,Ufia,0.04,-9.1983688,148.2640341
+Koruwo Primary School,primary school,Koruwo,Tahama,0.04,-9.116437,148.3085292
+Sakarina Primary School,primary school,Sila 2 / Sakarina / Sila 1,Koeno,0.06,-9.0653675,148.3688629
+Umbuara Primary School,primary school,Umbuwara,Umbuwara,0.62,-9.1136011,148.2725526

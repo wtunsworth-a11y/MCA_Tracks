@@ -1,0 +1,13 @@
+# Names that LOOK like spelling variants of each other and are NOT one place.
+#
+# scripts/audit_place_spellings.py proposes look-alikes; this is where a
+# rejection is recorded so it is never proposed again. Without it the same
+# wrong suggestion comes back on every run, which is its own kind of noise.
+#
+# Only genuine rejections belong here. A confirmed pair goes in
+# place_aliases.csv instead - putting one here would make the audit hide a
+# real variant, which is the opposite of the point.
+a,b,note
+Baraji,Bareji,"Will, 12 Nov 2026: ""Baraji River is a tributary of the Bareji. Not a typo."" Two watercourses, related but distinct. A track ending on one has not ended on the other, which matters for every filename that names a river as an endpoint."
+Kokoro,Korokoro,"Two villages 13.0 km apart in different wards: Kokoro is ward 13 Kokoro, Korokoro is ward 02 Niniuri. Each has its own footprint."
+Kiara,Kaura,"10.6 km apart, wards 09 Natanga and 04 Kaura."

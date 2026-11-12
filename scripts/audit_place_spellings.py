@@ -43,6 +43,13 @@ CUTOFF = 0.80
 # spelling test and die here.
 APART_KM = 4.0
 
+# A facility is never a place name. place_aliases.csv positions facilities too
+# ("Aguido Primary School", "Suwari Primary School"), and without this they get
+# harvested and proposed as village spellings of each other.
+FACILITY = re.compile(
+    r"\b(school|aid\s*post|aidpost|health\s+cent(?:re|er)|airstrip|office|"
+    r"church|institute|clinic|haus\s*sik|house|centre|center)\b", re.I)
+
 NOISE = re.compile(
     r"\b(track|tracks|record|records|recording|trek|trail|road|roads|main|highway|"
     r"short|cut|aka|seven|steps|village|villages|station|mission|ground|junction|"
@@ -113,6 +120,8 @@ def harvest():
         if not name or len(name) < (5 if src in LOOSE else 4):
             return
         if NOISE.fullmatch(name) or re.search(r"[\d'’]", name):
+            return
+        if FACILITY.search(name):
             return
         seen[name].add(src)
 
@@ -189,12 +198,26 @@ def settled():
     return {k: canon(k) for k in set(direct) | set(direct.values())}
 
 
+def rejected():
+    """Look-alike pairs already ruled NOT one place, as reduced forms."""
+    out = set()
+    p = REF / "not_the_same_place.csv"
+    if not p.exists():
+        return out
+    for r in pd.read_csv(p, comment="#").itertuples():
+        a, b = str(r.a).strip(), str(r.b).strip()
+        if a and b:
+            out.add(frozenset((reduce_spelling(a), reduce_spelling(b))))
+    return out
+
+
 def main():
     sys.path.insert(0, str(ROOT / "scripts"))
     from build_access import haversine_km as km
     names = harvest()
     known = settled()
     pos = positions()
+    no = rejected()
     buckets = defaultdict(set)
     for n in names:
         buckets[reduce_spelling(n)].add(n)
@@ -210,6 +233,8 @@ def main():
                 continue
             if difflib.SequenceMatcher(None, k, k2).ratio() < CUTOFF:
                 continue
+            if frozenset((k, k2)) in no:
+                continue          # already ruled out by hand
             a, b = pos.get(k), pos.get(k2)
             if a and b and km(*a, *b) > APART_KM:
                 continue          # alike, but demonstrably not one place
@@ -259,12 +284,24 @@ def main():
           f"({len(out)}):")
     for spellings in sorted(out, key=lambda s: -len(s)):
         print()
-        for s in spellings:
-            print(f"    {s:26s} {', '.join(sorted(names[s]))}")
+        # The anchor is the spelling written in the most places - the one the
+        # others are probably variants OF.
+        anchor = max(spellings, key=lambda x: (len(names[x]), -len(x)))
+        ar = reduce_spelling(anchor)
+        for sp in spellings:
+            r = reduce_spelling(sp)
+            # Settled when it is already the same reduced spelling as the
+            # anchor, or resolves to it through place_aliases.csv. Suwari and
+            # Suari reduce to the same key, so their alias row is a self-loop
+            # and testing the alias alone called a settled pair new.
+            done = (r == ar) or (known.get(r, r) == known.get(ar, ar))
+            tag = "settled" if done else "NEW    "
+            print(f"    {tag}  {sp:24s} {', '.join(sorted(names[sp]))}")
     if not out:
         print("  none")
-    print(f"\n(suppressed: pairs already in place_aliases.csv, and look-alikes "
-          f"more than {APART_KM:.0f} km apart)")
+    print(f"\n(suppressed: spellings that already resolve to one place in "
+          f"place_aliases.csv, pairs ruled out in not_the_same_place.csv, and "
+          f"look-alikes more than {APART_KM:.0f} km apart)")
     print("Confirm or reject each, then they go into place_aliases.csv and "
           "stop being reported.")
     return 0
