@@ -1,8 +1,10 @@
-"""Awaru on Sentinel-2, wide enough to show Numba and Kawowoki with it.
+"""Village footprints over Sentinel-2, one figure per site.
 
-    python3 scripts/make_awaru_map.py
+    python3 scripts/make_site_maps.py [site ...]
 
-Writes outputs/access/fig_awaru_s2.png.
+Writes outputs/access/fig_<site>_s2.png. With no argument it draws them all.
+Adding a site is one entry in SITES - this started as a one-off for Awaru and
+was generalised the moment a second was asked for, rather than copied.
 
 Will, 12 Nov 2026: "Show me Awaru on a stellite overlay to the extent where i
 can see Numba and Kawowoki as well."
@@ -37,17 +39,30 @@ from pyproj import Transformer
 from shapely.geometry import shape, box
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "outputs" / "access" / "fig_awaru_s2.png"
+OUTDIR = ROOT / "outputs" / "access"
 SCENE = ("https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs"
          "/55/L/FK/2026/7/S2B_55LFK_20260731_0_L2A")
 DATE = "31 July 2026"
 
-# Chosen to hold Awaru, Numba and Kawowoki with room to breathe.
-WEST, EAST = 148.3485, 148.4075
-SOUTH, NORTH = -9.1105, -9.0420
+SITES = {
+    "awaru": dict(
+        west=148.3485, east=148.4075, south=-9.1105, north=-9.0420,
+        focus=("Awaru",), figsize=(11.5, 13.0),
+        title="Awaru, with Numba and Kawowoki",
+        note="Awaru had no position here at all until 12 Nov, so its old "
+             "airstrip was filed at Kaura 1.63 km away - the WARD is Kaura, "
+             "which is why the wrong answer read well."),
+    "dea": dict(
+        west=148.3105, east=148.3475, south=-9.0735, north=-9.0475,
+        focus=("Dea", "Ugunomo"), figsize=(14.0, 10.4),
+        title="Dea and Ugunomo, with the facility cluster",
+        note="Every Dea and Ugunomo facility sits 0.63-0.77 km NORTH-EAST of "
+             "both outlines, in one tight group. Two outlines 10 m apart in "
+             "distance were deciding which village each belonged to."),
+}
 
 
-def imagery():
+def imagery(WEST, EAST, SOUTH, NORTH):
     t = Transformer.from_crs("EPSG:4326", "EPSG:32755", always_xy=True)
     x0, y0 = t.transform(WEST, SOUTH)
     x1, y1 = t.transform(EAST, NORTH)
@@ -65,13 +80,16 @@ def stretch(a):
     return np.clip((a - lo) / (hi - lo), 0, 1) ** 0.85
 
 
-def main():
-    import matplotlib
-    matplotlib.use("Agg")
+def draw(key, cfg):
     import matplotlib.pyplot as plt
     from matplotlib.patheffects import withStroke
 
-    rgb, tf, (x0, x1, y0, y1) = imagery()
+    WEST, EAST = cfg["west"], cfg["east"]
+    SOUTH, NORTH = cfg["south"], cfg["north"]
+    FOCUS = set(cfg["focus"])
+    OUT = OUTDIR / f"fig_{key}_s2.png"
+
+    rgb, tf, (x0, x1, y0, y1) = imagery(WEST, EAST, SOUTH, NORTH)
     img = np.dstack([stretch(rgb[:, :, i]) for i in range(3)])
 
     t = Transformer.from_crs("EPSG:4326", "EPSG:32755", always_xy=True)
@@ -79,7 +97,7 @@ def main():
 
     gj = json.loads((ROOT / "data" / "reference" /
                      "village_footprints.geojson").read_text())
-    fig, ax = plt.subplots(figsize=(11.5, 13.0), dpi=200)
+    fig, ax = plt.subplots(figsize=cfg["figsize"], dpi=200)
     ax.imshow(img, extent=[x0, x1, y0, y1], origin="upper", interpolation="bilinear")
     ax.set_xlim(x0, x1)
     ax.set_ylim(y0, y1)
@@ -122,7 +140,7 @@ def main():
         shown += 1
         name = f["properties"]["village"]
         ward = f["properties"]["ward"]
-        focus = name == "Awaru"
+        focus = name in FOCUS
         for poly in (g.geoms if g.geom_type == "MultiPolygon" else [g]):
             xs, ys = zip(*[t.transform(a, b) for a, b in poly.exterior.coords])
             ax.plot(xs, ys, lw=2.6 if focus else 1.6,
@@ -159,21 +177,33 @@ def main():
     ax.annotate("1 km", (x0 + 800, y0 + 420), ha="center", fontsize=9,
                 color="white", path_effects=halo, zorder=10)
 
-    ax.set_title(f"Awaru, with Numba and Kawowoki — Sentinel-2, {DATE}",
-                 fontsize=14, pad=10)
+    ax.set_title(f"{cfg['title']} — Sentinel-2, {DATE}", fontsize=14, pad=10)
     ax.set_xticks([])
     ax.set_yticks([])
     for s in ax.spines.values():
         s.set_visible(False)
     fig.text(0.5, 0.012,
-             "Village outlines from village_footprints.kml (Will, 12 Nov 2026). "
-             "Facilities positioned by Russell on the ground. "
-             "Imagery 10 m/pixel — outlines are indicative of extent, not survey.",
-             ha="center", fontsize=7.6, color="#444")
-    OUT.parent.mkdir(parents=True, exist_ok=True)
+             cfg["note"] + "  |  Outlines from village_footprints.kml (Will, "
+             "12 Nov 2026); facilities positioned by Russell on the ground. "
+             "Imagery 10 m/pixel — outlines are extent, not survey.",
+             ha="center", fontsize=7.4, color="#444", wrap=True)
+    OUTDIR.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUT, bbox_inches="tight", facecolor="white")
-    print(f"wrote {OUT.relative_to(ROOT)}  ({shown} village footprints, "
+    plt.close(fig)
+    print(f"wrote {OUT.relative_to(ROOT)}  ({shown} footprints, "
           f"{n_fac} facilities, {img.shape[1]}x{img.shape[0]} px)")
+
+
+def main():
+    import matplotlib
+    matplotlib.use("Agg")
+    want = sys.argv[1:] or list(SITES)
+    for key in want:
+        if key not in SITES:
+            print(f"  no such site: {key} (have {', '.join(SITES)})")
+            continue
+        draw(key, SITES[key])
+    return 0
 
 
 if __name__ == "__main__":

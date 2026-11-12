@@ -38,7 +38,7 @@ run python3 scripts/reconcile_facilities.py
 run python3 scripts/pick_facility_photos.py
 run python3 scripts/make_services_map.py          # the two KML layers
 run python3 scripts/make_facilities_csv.py        # name/type/village/coords
-run python3 scripts/make_awaru_map.py            # Awaru on Sentinel-2
+run python3 scripts/make_site_maps.py            # village footprints on S2
 
 # Audits. They raise suggestions rather than change anything, and they exist
 # because both faults cost real time: a fourth spelling of Koeno put a school
