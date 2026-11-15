@@ -88,6 +88,44 @@ were changed by hand.
 Then check the two files above actually changed before saying the update is
 done.
 
+## The container is thrown away. The repository is not. Check before panicking.
+
+Will, 15 Nov 2026: "The repo is still there. Please check" - and it was. I had
+just told him CLAUDE.md was gone.
+
+An idle cloud container gets reclaimed. The next one starts with a FRESH clone,
+and on 15 Nov that clone came up EMPTY: a `.git` with the origin remote set,
+no commits, on a branch called `master`. Every file looked deleted. Nothing was
+deleted. The session had simply not fetched anything yet.
+
+So when a file, a script or this note appears to be missing at the start of a
+session, the FIRST move is not to report it:
+
+    cd /home/user/MCA_Tracks \
+      && git fetch origin claude/managalas-track-maps-3xd3bq \
+      && git checkout -B claude/managalas-track-maps-3xd3bq FETCH_HEAD
+
+Then look. This is the same rule as the one at the top of this file - do not
+report anything as unavailable until I have tried to get it and failed - and
+I broke it in the one place where it was most alarming to be wrong.
+
+### The branch layout, so this is never guessed at again
+
+- `claude/managalas-track-maps-3xd3bq` is the working branch AND the GitHub
+  default. All work goes here. Checked 15 Nov 2026.
+- `main` exists as a snapshot, pushed 15 Nov 2026 at Will's instruction. It is
+  there so that anything hard-coded to clone `refs/heads/main` finds something
+  instead of coming up empty, which is exactly what broke the restart. It does
+  NOT move on its own and it is not where work goes.
+- `main` will drift behind the working branch. That is expected. Do not
+  "fix" it, do not merge into it and do not open a pull request, unless Will
+  asks.
+- Nothing that only exists inside the container exists at all. On 12 Nov
+  `outputs/*` in .gitignore was swallowing `outputs/gis`, so
+  `mca_schools.kml` and `mca_health.kml` had never been committed - the two
+  files Will said must be rebuilt on every drop. The 15 Nov rebuild would have
+  taken them. Commit the deliverables.
+
 ## Working rules he has set
 
 - Cross check names AND positions before announcing anything. A facility named
