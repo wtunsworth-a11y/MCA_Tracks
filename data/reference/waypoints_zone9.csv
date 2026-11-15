@@ -1,0 +1,38 @@
+# Zone 9: Toma and Biriri, recorded 6 November 2026.
+#
+# Extracted from 'Zone_9_Coordinates_of_Government__Church_Facilities.kmz',
+# uploaded to the Drive folder by russellmuraba71@gmail.com on 8 Nov 2026.
+# The archive is 107,634,384 bytes because 37 of its 38 members are
+# photographs. Only doc.kml was fetched, by ranged request - about 2.2 KB
+# moved instead of 102 MB - so every photograph stays in Drive, where it
+# belongs: they are far over GitHub's blob limit and they carry identifiable
+# people and precise settlement positions.
+#
+# 12 waypoints. Two are government facilities that are new to this repository,
+# Toma Aid Post and Toma Primary School; the primary school was recorded as
+# three separate buildings. Two are SDA churches, which are not a government
+# service and are not carried into the services layers. The rest are a
+# teacher's house, a head teacher's house, two more teacher's houses, an
+# elementary school teacher's house, and 'Samaga old village site'.
+#
+# ANCILLARY BUILDINGS ARE NOT THE FACILITY. A teacher's house standing is not
+# the school working, which is why Toma Elementary School appears here only
+# through its teacher's house and must not be reported as working on that
+# evidence alone.
+#
+# Samaga is an OLD VILLAGE SITE, not a village. It should not enter the
+# settlement list.
+#
+name,recorded,lon,lat,ele_m,accuracy_m,note,photos,photo_files
+Biriri SDA Church,2026-11-06T11:08:17,148.4400839,-9.2119377,591.0,2.1,Building in use,2,files/1000060793.jpg files/1000060792.jpg
+Samaga old village site,2026-11-06T10:19:33,148.4256716,-9.2151085,617.0,1.9,"A village that no longer exists. Only a few coconut trees remain where it once stood. According to a local villager in Biriri, in 1991 the clan living here relocated to Biriri village to settle with the rest of the community, so they could be close to the church established there.",2,files/1000060791.jpg files/1000060790.jpg
+Teacher house,2026-11-06T07:16:08,148.4002948,-9.2064894,402.0,1.7,Building in use,2,files/1000060778.jpg files/1000060777.jpg
+Toma Aid Post,2026-11-06T07:31:05,148.4010517,-9.2094367,400.0,3.1,Building closed,2,files/1000060787.jpg files/1000060870.jpg
+Toma Elementary School Teacher's house,2026-11-06T07:06:43,148.4002913,-9.2062962,397.0,1.7,Building in use,2,files/1000060776.jpg files/1000060775.jpg
+Toma Primary School building,2026-11-06T06:51:51,148.4007654,-9.2069350,395.0,1.8,Building in use,2,files/1000060774.jpg files/1000060768.jpg
+Toma Primary School building,2026-11-06T06:53:25,148.4009843,-9.2068246,398.0,2.0,Building in use,2,files/1000060773.jpg files/1000060769.jpg
+Toma Primary School building,2026-11-06T06:54:54,148.4013292,-9.2067620,394.0,2.0,"Here is a polished version: One building, three classes in session — Elementary in one room, and Grades 1 & 2 combined in another.",2,files/1000060772.jpg files/1000060770.jpg
+Toma Primary School Head Teacher's house,2026-11-06T07:20:44,148.4003565,-9.2068460,398.0,2.5,Building in use,2,files/1000060781.jpg files/1000060782.jpg
+Toma Primary School Teacher's house,2026-11-06T07:19:21,148.4003440,-9.2066388,402.0,2.6,Building vacant,2,files/1000060779.jpg files/1000060780.jpg
+Toma Primary School Teacher's house,2026-11-06T07:24:01,148.4003217,-9.2070833,398.0,1.7,Building vacant,2,files/1000060783.jpg files/1000060784.jpg
+Toma SDA Church,2026-11-06T06:37:28,148.3999984,-9.2108613,402.0,3.1,Building in use,2,files/1000060766.jpg files/1000060767.jpg

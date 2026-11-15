@@ -16,8 +16,8 @@ recordings in hand carry no route name at all.
 | `[ ]` | not recorded | walk it |
 | `[?]` | place not located | tell us roughly where it is, then walk it |
 
-- [x] **60** of 110 legs recorded
-- [~] **38** of 110 legs partial
+- [x] **62** of 110 legs recorded
+- [~] **36** of 110 legs partial
 - [ ] **5** of 110 legs missing
 - [?] **7** of 110 legs unlocated
 
@@ -26,8 +26,8 @@ recordings in hand carry no route name at all.
 ### Not recorded - these are the gap (4)
 
 - [ ] **Afore-Toma-Biriri-Babarobo-Safia**  `F25` — **57 km end to end: a multi-day walk**
-  - [~] Afore → Toma: both ends on the network but only linked the long way round (25.9 km for 7.6 km straight) - the direct track is not recorded
-  - [x] Toma → Biriri: routes in 5.5 km vs 4.3 km straight
+  - [x] Afore → Toma: routes in 10.9 km vs 7.6 km straight — a recording is named for it: *Afore Station to Toma village Track Record (seg 1)*
+  - [x] Toma → Biriri: routes in 5.4 km vs 4.3 km straight — a recording is named for it: *Toma to Biriri SDA Church Track Record (seg 4)*
   - [~] Biriri → Babarobo: Biriri end is on the network, Babarobo is 14.0 km off it
   - [ ] Babarobo → Safia: neither end on the network (14.0 km and 42.4 km off) — **29 km in a straight line: a multi-day walk, not a day trip**
 - [ ] **Ufia-Umuate-Aiari-Suari-Jaure**  `F37`
@@ -61,7 +61,7 @@ recordings in hand carry no route name at all.
 ### Partly recorded (23)
 
 - [~] **Tahama-Toma**  `F02`
-  - [~] Tahama → Toma: both ends on the network but only linked the long way round (42.0 km for 12.7 km straight) - the direct track is not recorded
+  - [~] Tahama → Toma: both ends on the network but only linked the long way round (27.3 km for 12.7 km straight) - the direct track is not recorded
 - [~] **Avaru-Sigara-Emo**  `F03`
   - [~] Avaru → Sigara: both ends on the network but only linked the long way round (14.3 km for 5.8 km straight) - the direct track is not recorded
   - [~] Sigara → Emo: Sigara end is on the network, Emo is 0.9 km off it
@@ -72,12 +72,14 @@ recordings in hand carry no route name at all.
   - [~] Dareki → Kawowoki: both ends on the network but only linked the long way round (17.6 km for 4.4 km straight) - the direct track is not recorded
 - [~] **Avaru-Dareki**  `F07`
   - [~] Avaru → Dareki: both ends on the network but only linked the long way round (27.1 km for 5.1 km straight) - the direct track is not recorded
+- [~] **Marasi-Biriri**  `F08`
+  - [~] Marasi → Biriri: both ends on the network but only linked the long way round (21.3 km for 9.1 km straight) - the direct track is not recorded
 - [~] **Gora-Popondetta**  `F09` — **26 km end to end: a multi-day walk**
   - [~] Gora → Popondetta: both ends on the network but only linked the long way round (128.5 km for 25.9 km straight) - the direct track is not recorded — **26 km in a straight line: a multi-day walk, not a day trip**
 - [~] **Aniafe -Jaure**  `F12`
   - [~] Aniafe → Jaure: Aniafe end is on the network, Jaure is 9.2 km off it
 - [~] **Toma-Itokama**  `F13`
-  - [~] Toma → Itokama: both ends on the network but only linked the long way round (50.6 km for 14.8 km straight) - the direct track is not recorded
+  - [~] Toma → Itokama: both ends on the network but only linked the long way round (35.9 km for 14.8 km straight) - the direct track is not recorded
 - [~] **Afore-Siribu**  `F19`
   - [~] Afore → Siribu: both ends on the network but only linked the long way round (19.8 km for 9.6 km straight) - the direct track is not recorded
 - [~] **Dea-Siribu-Koruwo**  `F22`
@@ -102,8 +104,6 @@ recordings in hand carry no route name at all.
   - [~] Kawowoki → Avaru: both ends on the network but only linked the long way round (26.2 km for 3.1 km straight) - the direct track is not recorded
 - [~] **Gora-Gorobuna**  `F43`
   - [~] Gora → Gorobuna: Gora end is on the network, Gorobuna is 7.0 km off it
-- [~] **Bareji-Toma**  `F50`
-  - [~] Bareji → Toma: both ends on the network but only linked the long way round (57.1 km for 3.9 km straight) - the direct track is not recorded — a recording is named for it: *Bareji River to Toma village 2026 – 09 – 02* — **this name is on two places 17.7 km apart; the nearer pairing was assumed**
 - [~] **Highway-Bioi**  `F53`
   - [~] Highway → Bioi: both ends on the network but only linked the long way round (10.2 km for 1.5 km straight) - the direct track is not recorded
 - [~] **Anatua-Tetebedi**  `F60`
@@ -116,7 +116,6 @@ recordings in hand carry no route name at all.
 - [x] **Koruwo-Umbuara-Anatua1-Anatua2**  `F01`
   - [x] Koruwo → Umbuara: routes in 6.6 km vs 4.5 km straight
   - [x] Umbuara → Anatua: routes in 3.4 km vs 3.1 km straight — a recording is named for it: *Anatua 2 to Umbuara Primary School*
-- [x] **Marasi-Biriri**  `F08`
 - [x] **Kaura-Sigara**  `F10`
 - [x] **Kuai-Anatua-Serepuna**  `F11`
   - [x] Kuai → Anatua: routes in 6.5 km vs 5.3 km straight — a recording is named for it: *Kuai to Anatua trek*
@@ -148,6 +147,7 @@ recordings in hand carry no route name at all.
 - [x] **Damara-Bua**  `F47`
 - [x] **Semahara-Kueno**  `F48`
 - [x] **Aiari-Water Crossing**  `F49`
+- [x] **Bareji-Toma**  `F50`
 - [x] **Sila-Avararu**  `F51`
 - [x] **Afore-Tahama**  `F52`
 - [x] **Kuhene-Highway**  `F54`
@@ -167,16 +167,14 @@ recordings in hand carry no route name at all.
 - [ ] **Road 2-Old Cadamon factory**  `R04`
   - [ ] Old Cardamom factory → (the road itself): no recorded motorable road within 1.0 km of Old Cardamom factory - the road itself is not recorded
 
-### Partly recorded (3)
+### Partly recorded (2)
 
 - [~] **Itokama-Kuai**  `R10`
   - [~] Itokama → Kuai: both ends on the network but only linked the long way round (13.2 km for 0.8 km straight) - the direct track is not recorded
 - [~] **Highway-Kawowoki (Mr. Womo)**  `R12`
   - [~] Highway → Kawowoki: both ends on the network but only linked the long way round (17.5 km for 0.5 km straight) - the direct track is not recorded
-- [~] **Afore-Korokoro Village**  `R14`
-  - [~] Afore → Korokoro: both ends on the network but only linked the long way round (7.8 km for 0.5 km straight) - the direct track is not recorded
 
-### Recorded (12)
+### Recorded (13)
 
 - [x] **Itokama -Ufia**  `R01`
 - [x] **Veriame-yoivi-Aguido**  `R02`
@@ -194,6 +192,7 @@ recordings in hand carry no route name at all.
 - [x] **Umbuara-Anatua**  `R09`
 - [x] **Itokama-Aniafe**  `R11`
 - [x] **Koeno feeder road**  `R13`
+- [x] **Afore-Korokoro Village**  `R14`
 - [x] **Afore- Bareji River (Disputed)**  `R15`
 - [x] **Yoivi-Kuhene-Umbara**  `R16`
   - [x] Yoivi → Kuhene: routes in 0.9 km vs 0.8 km straight — a recording is named for it: *Yoivi village to Kuhene track record*

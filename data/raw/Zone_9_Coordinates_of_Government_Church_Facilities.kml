@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Zone_9_Coordinates_of_Government__Church_Facilities</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="-1543071081">
+		<IconStyle>
+			<Icon><href>files/-1543071081.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1079393257">
+		<IconStyle>
+			<Icon><href>files/1079393257.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1637935385">
+		<IconStyle>
+			<Icon><href>files/1637935385.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1297903911">
+		<IconStyle>
+			<Icon><href>files/-1297903911.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1758813063">
+		<IconStyle>
+			<Icon><href>files/-1758813063.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1025496224">
+		<IconStyle>
+			<Icon><href>files/1025496224.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1950741994">
+		<IconStyle>
+			<Icon><href>files/-1950741994.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1858857980">
+		<IconStyle>
+			<Icon><href>files/1858857980.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1499949839">
+		<IconStyle>
+			<Icon><href>files/-1499949839.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="1792766076">
+		<IconStyle>
+			<Icon><href>files/1792766076.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1099408503">
+		<IconStyle>
+			<Icon><href>files/-1099408503.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1655539477">
+		<IconStyle>
+			<Icon><href>files/-1655539477.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+<Placemark>
+	<name>Biriri SDA Church 2026-11-06 11:08:17</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060793.jpg" target="_blank"><img src="files/1000060793.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060792.jpg" target="_blank"><img src="files/1000060792.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">591 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">1.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">216 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:31</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1637935385</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060793.jpg</lc:attachment>
+		<lc:attachment>files/1000060792.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4400839,-9.2119377,591.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T11:08:37Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Samaga old village site 2026-11-06 10:19:33</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060791.jpg" target="_blank"><img src="files/1000060791.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060790.jpg" target="_blank"><img src="files/1000060790.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+A village that no longer exists. Only a few coconut trees remain where it once stood. According to a local villager in Biriri, in 1991 the clan living here relocated to Biriri village to settle with the rest of the community, so they could be close to the church established there.
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">617 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">221 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.9 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 19:14:44</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1499949839</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060791.jpg</lc:attachment>
+		<lc:attachment>files/1000060790.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4256716,-9.2151085,617.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T10:20:37Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Teacher house 2026-11-06 07:16:08</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060778.jpg" target="_blank"><img src="files/1000060778.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060777.jpg" target="_blank"><img src="files/1000060777.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">402 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.4 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">319 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.7 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:31</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1297903911</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060778.jpg</lc:attachment>
+		<lc:attachment>files/1000060777.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4002948,-9.2064894,402.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T07:16:20Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Aid Post 2026-11-06 07:31:05</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060787.jpg" target="_blank"><img src="files/1000060787.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060870.jpg" target="_blank"><img src="files/1000060870.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building closed
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">400 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">16.1 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">94 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:31</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1758813063</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060787.jpg</lc:attachment>
+		<lc:attachment>files/1000060870.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4010517,-9.2094367,400.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T07:31:17Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Elementary School Teacher&apos;s house 2026-11-06 07:06:43</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060776.jpg" target="_blank"><img src="files/1000060776.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060775.jpg" target="_blank"><img src="files/1000060775.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">397 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.5 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">259 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.7 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:31</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1099408503</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060776.jpg</lc:attachment>
+		<lc:attachment>files/1000060775.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4002913,-9.2062962,397.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T07:07:06Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Primary School building 2026-11-06 06:51:51</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060774.jpg" target="_blank"><img src="files/1000060774.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060768.jpg" target="_blank"><img src="files/1000060768.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">395 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.7 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">68 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.8 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:31</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1950741994</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060774.jpg</lc:attachment>
+		<lc:attachment>files/1000060768.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4007654,-9.2069350,395.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T06:52:16Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Primary School building 2026-11-06 06:53:25</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060773.jpg" target="_blank"><img src="files/1000060773.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060769.jpg" target="_blank"><img src="files/1000060769.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">398 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">4.4 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">165 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.0 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:31</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1025496224</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060773.jpg</lc:attachment>
+		<lc:attachment>files/1000060769.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4009843,-9.2068246,398.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T06:53:42Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Primary School building 2026-11-06 06:54:54</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060772.jpg" target="_blank"><img src="files/1000060772.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060770.jpg" target="_blank"><img src="files/1000060770.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Here is a polished version:<br /><br />One building, three classes in session — Elementary in one room, and Grades 1 & 2 combined in another.
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">394 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">4.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">128 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.0 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 19:12:00</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1543071081</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060772.jpg</lc:attachment>
+		<lc:attachment>files/1000060770.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4013292,-9.2067620,394.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T06:55:23Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Primary School Head Teacher&apos;s house 2026-11-06 07:20:44</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060781.jpg" target="_blank"><img src="files/1000060781.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060782.jpg" target="_blank"><img src="files/1000060782.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">398 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">9.1 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">202 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.5 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:31</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1792766076</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060781.jpg</lc:attachment>
+		<lc:attachment>files/1000060782.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4003565,-9.2068460,398.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T07:21:02Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Primary School Teacher&apos;s house 2026-11-06 07:19:21</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060779.jpg" target="_blank"><img src="files/1000060779.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060780.jpg" target="_blank"><img src="files/1000060780.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building vacant
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">402 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">3.7 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">146 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.6 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:32</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1655539477</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060779.jpg</lc:attachment>
+		<lc:attachment>files/1000060780.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4003440,-9.2066388,402.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T07:19:46Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma Primary School Teacher&apos;s house 2026-11-06 07:24:01</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060783.jpg" target="_blank"><img src="files/1000060783.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060784.jpg" target="_blank"><img src="files/1000060784.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building vacant
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">398 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">18 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.7 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:32</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1858857980</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060783.jpg</lc:attachment>
+		<lc:attachment>files/1000060784.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4003217,-9.2070833,398.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T07:24:11Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Toma SDA Church 2026-11-06 06:37:28</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000060766.jpg" target="_blank"><img src="files/1000060766.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000060767.jpg" target="_blank"><img src="files/1000060767.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">402 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">15.2 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">107 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-08 11:23:32</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1079393257</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000060766.jpg</lc:attachment>
+		<lc:attachment>files/1000060767.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.3999984,-9.2108613,402.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-06T06:37:50Z</when>
+	</gx:TimeStamp>
+</Placemark>
+</Document>
+</kml>

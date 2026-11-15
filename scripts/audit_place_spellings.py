@@ -31,6 +31,8 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from place_kinds import is_settlement  # noqa: E402
 REF = ROOT / "data" / "reference"
 # Calibrated on 23 spelling pairs already known to be the same place and 24
 # known to be different: at 0.80 it finds 22 of the 23 and proposes 4 of the 24.
@@ -42,13 +44,6 @@ CUTOFF = 0.80
 # read. Kiara and Kaura, Jaure and Yaure, Kokoro and Korokoro all survive the
 # spelling test and die here.
 APART_KM = 4.0
-
-# A facility is never a place name. place_aliases.csv positions facilities too
-# ("Aguido Primary School", "Suwari Primary School"), and without this they get
-# harvested and proposed as village spellings of each other.
-FACILITY = re.compile(
-    r"\b(school|aid\s*post|aidpost|health\s+cent(?:re|er)|airstrip|office|"
-    r"church|institute|clinic|haus\s*sik|house|centre|center)\b", re.I)
 
 NOISE = re.compile(
     r"\b(track|tracks|record|records|recording|trek|trail|road|roads|main|highway|"
@@ -121,7 +116,7 @@ def harvest():
             return
         if NOISE.fullmatch(name) or re.search(r"[\d'’]", name):
             return
-        if FACILITY.search(name):
+        if not is_settlement(name):
             return
         seen[name].add(src)
 

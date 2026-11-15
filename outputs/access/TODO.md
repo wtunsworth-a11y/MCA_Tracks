@@ -5,7 +5,7 @@ and `data/reference/facilities.csv`. `TRACK_CHECKLIST.md` lists the walking
 route by route; this lists everything job by job, because one missing
 coordinate blocks a whole route and one short link closes several.
 
-**Two things outstanding.** The walking: of 110 legs on the team's list, **60 recorded**, **38 partly**, **5 not walked**, **7 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
+**Two things outstanding.** The walking: of 110 legs on the team's list, **62 recorded**, **36 partly**, **5 not walked**, **7 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
 
 ## 1. Places on the track list that need a coordinate
 
@@ -84,13 +84,12 @@ said, not what is there now.
 
 ## 3. Short links worth walking first
 
-**7 legs under 3 km.** Both ends are
+**6 legs under 3 km.** Both ends are
 already recorded, but no recording follows the direct track between them,
 so the map has to send people the long way round. Short walks, each of
 which closes a hole in the network.
 
 - [ ] **Highway → Kawowoki** — 0.5 km direct, against 17.5 km the long way round  `R12`
-- [ ] **Afore → Korokoro** — 0.5 km direct, against 7.8 km the long way round  `R14`
 - [ ] **Itokama → Kuai** — 0.8 km direct, against 13.2 km the long way round  `R10`
 - [ ] **Highway → Bioi** — 1.5 km direct, against 10.2 km the long way round  `F53`
 - [ ] **Bioi → Dareki** — 1.5 km direct, against 7.6 km the long way round  `F05`
@@ -99,24 +98,23 @@ which closes a hole in the network.
 
 ## 4. Longer links, same problem
 
-**17 legs.** Both ends recorded, the direct track not.
+**16 legs.** Both ends recorded, the direct track not.
 
 - [ ] **Kawowoki → Avaru** — 3.1 km direct, against 26.2 km the long way round  `F41`
 - [ ] **Umbuara → Kiara** — 3.3 km direct, against 9.7 km the long way round  `F34`
 - [ ] **Niniri → Kawowoki** — 3.9 km direct, against 8.6 km the long way round  `F32`
-- [ ] **Bareji → Toma** — 3.9 km direct, against 57.1 km the long way round  `F50`
 - [ ] **Dareki → Kawowoki** — 4.3 km direct, against 17.6 km the long way round  `F06`
 - [ ] **Avaru → Dareki** — 5.1 km direct, against 27.1 km the long way round  `F07`
 - [ ] **Avaru → Sigara** — 5.8 km direct, against 14.3 km the long way round  `F03`
 - [ ] **Dareki → Sigara** — 6.6 km direct, against 33.7 km the long way round  `F05`
-- [ ] **Afore → Toma** — 7.6 km direct, against 25.9 km the long way round  `F25`
 - [ ] **Sigara → Banderi** — 8.8 km direct, against 63.1 km the long way round  `F36`
+- [ ] **Marasi → Biriri** — 9.1 km direct, against 21.3 km the long way round  `F08`
 - [ ] **Afore → Siribu** — 9.6 km direct, against 19.8 km the long way round  `F19`
 - [ ] **Umuate → Aiari** — 9.8 km direct  `F37`
 - [ ] **Wayei → Umbara** — 10.2 km direct, against 22.3 km the long way round  `F31`
-- [ ] **Tahama → Toma** — 12.7 km direct, against 42.0 km the long way round  `F02`
+- [ ] **Tahama → Toma** — 12.7 km direct, against 27.3 km the long way round  `F02`
 - [ ] **Singata → Gora** — 14.0 km direct, against 26.1 km the long way round  `F62`
-- [ ] **Toma → Itokama** — 14.8 km direct, against 50.6 km the long way round  `F13`
+- [ ] **Toma → Itokama** — 14.8 km direct, against 35.9 km the long way round  `F13`
 - [ ] **Gora → Popondetta** — 25.9 km direct, against 128.5 km the long way round  `F09`
 
 ## 5. Places no recording has ever reached

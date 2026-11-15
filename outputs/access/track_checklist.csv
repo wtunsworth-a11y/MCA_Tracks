@@ -1,7 +1,7 @@
 route_id,leg,category,as_written,from_place,to_place,from_resolved,to_resolved,status,detail,straight_km,route_km,detour_ratio,from_off_network_m,to_off_network_m,ambiguous_name,multi_day,name_evidence
 F01,F01.1,foot,Koruwo-Umbuara-Anatua1-Anatua2,Koruwo,Umbuara,Koruwo,Umbuara,recorded,routes in 6.6 km vs 4.5 km straight,4.48,6.63,1.48,53.0,1.0,,,
 F01,F01.2,foot,Koruwo-Umbuara-Anatua1-Anatua2,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 3.4 km vs 3.1 km straight,3.06,3.39,1.11,1.0,55.0,,,Anatua 2 to Umbuara Primary School
-F02,F02.1,foot,Tahama-Toma,Tahama,Toma,Tahama,Toma,partial,both ends on the network but only linked the long way round (42.0 km for 12.7 km straight) - the direct track is not recorded,12.73,41.96,3.3,12.0,220.0,,,
+F02,F02.1,foot,Tahama-Toma,Tahama,Toma,Tahama,Toma,partial,both ends on the network but only linked the long way round (27.3 km for 12.7 km straight) - the direct track is not recorded,12.73,27.29,2.14,12.0,69.0,,,
 F03,F03.1,foot,Avaru-Sigara-Emo,Avaru,Sigara,Awaru,Sigara,partial,both ends on the network but only linked the long way round (14.3 km for 5.8 km straight) - the direct track is not recorded,5.85,14.3,2.45,413.0,1.0,,,
 F03,F03.2,foot,Avaru-Sigara-Emo,Sigara,Emo,Sigara,Emo,partial,"Sigara end is on the network, Emo is 0.9 km off it",10.63,54.75,5.15,1.0,896.0,,,
 F04,F04.1,foot,Numba-Aputuara - Banderi,Numba,Aputuara,Numba,,unlocated,no position for Aputuara,,,,,,,,
@@ -10,14 +10,14 @@ F05,F05.1,foot,Bioi-Dareki-Sigara,Bioi,Dareki,Bioi,Dareki,partial,both ends on t
 F05,F05.2,foot,Bioi-Dareki-Sigara,Dareki,Sigara,Dareki,Sigara,partial,both ends on the network but only linked the long way round (33.7 km for 6.6 km straight) - the direct track is not recorded,6.56,33.68,5.13,0.0,1.0,,,
 F06,F06.1,foot,Dareki-Kawowoki,Dareki,Kawowoki,Dareki,Kawowoki,partial,both ends on the network but only linked the long way round (17.6 km for 4.4 km straight) - the direct track is not recorded,4.35,17.57,4.04,0.0,3.0,,,
 F07,F07.1,foot,Avaru-Dareki,Avaru,Dareki,Awaru,Dareki,partial,both ends on the network but only linked the long way round (27.1 km for 5.1 km straight) - the direct track is not recorded,5.06,27.11,5.35,413.0,0.0,,,
-F08,F08.1,foot,Marasi-Biriri,Marasi,Biriri,Marasi,Biriri,recorded,routes in 14.4 km vs 9.1 km straight,9.07,14.4,1.59,2.0,12.0,,,
+F08,F08.1,foot,Marasi-Biriri,Marasi,Biriri,Marasi,Biriri,partial,both ends on the network but only linked the long way round (21.3 km for 9.1 km straight) - the direct track is not recorded,9.07,21.26,2.34,2.0,10.0,,,
 F09,F09.1,foot,Gora-Popondetta,Gora,Popondetta,Gora,Popondetta,partial,both ends on the network but only linked the long way round (128.5 km for 25.9 km straight) - the direct track is not recorded,25.88,128.49,4.96,0.0,1.0,,yes,
 F10,F10.1,foot,Kaura-Sigara,Kaura,Sigara,Kaura,Sigara,recorded,routes in 9.1 km vs 7.0 km straight,7.03,9.14,1.3,18.0,1.0,,,Track from Kaura to Sigara Village
 F11,F11.1,foot,Kuai-Anatua-Serepuna,Kuai,Anatua,Kwae,Anatua,recorded,routes in 6.5 km vs 5.3 km straight,5.25,6.51,1.24,21.0,55.0,,,Kuai to Anatua trek
 F11,F11.2,foot,Kuai-Anatua-Serepuna,Anatua,Serepuna,Anatua,Serefuna,recorded,routes in 2.3 km vs 1.4 km straight,1.35,2.32,1.72,55.0,1.0,,,
 F12,F12.1,foot,Aniafe -Jaure,Aniafe,Jaure,Aniafe,Jaure,partial,"Aniafe end is on the network, Jaure is 9.2 km off it",14.83,23.06,1.55,1.0,9156.0,,,
-F13,F13.1,foot,Toma-Itokama,Toma,Itokama,Toma,Itokama,partial,both ends on the network but only linked the long way round (50.6 km for 14.8 km straight) - the direct track is not recorded,14.83,50.57,3.41,220.0,19.0,,,
-F14,F14.1,foot,Kueno-Semahara,Kueno,Semahara,Koeno,Semahara,recorded,routes in 13.7 km vs 9.0 km straight,8.95,13.66,1.53,111.0,6.0,,,
+F13,F13.1,foot,Toma-Itokama,Toma,Itokama,Toma,Itokama,partial,both ends on the network but only linked the long way round (35.9 km for 14.8 km straight) - the direct track is not recorded,14.83,35.9,2.42,69.0,19.0,,,
+F14,F14.1,foot,Kueno-Semahara,Kueno,Semahara,Koeno,Semahara,recorded,routes in 13.9 km vs 9.1 km straight,9.12,13.88,1.52,51.0,6.0,,,
 F15,F15.1,foot,Kokoro -Anatua,Kokoro,Anatua,Kokoro,Anatua,recorded,routes in 3.6 km vs 2.3 km straight,2.26,3.56,1.57,29.0,55.0,,,
 F16,F16.1,foot,Kaura-Kuhara,Kaura,Kuhara,Kaura,Kuhara,recorded,routes in 0.4 km vs 0.2 km straight,0.24,0.37,1.53,18.0,6.0,12.0 km apart,,Cropping Calendar Survey Track to Kuhara
 F17,F17.1,foot,Numba -Umasi-Embi-Warisota,Numba,Umasi,Numba,,unlocated,no position for Umasi,,,,,,,,
@@ -25,16 +25,16 @@ F17,F17.2,foot,Numba -Umasi-Embi-Warisota,Umasi,Embi,,Embi,unlocated,no position
 F17,F17.3,foot,Numba -Umasi-Embi-Warisota,Embi,Warisota,Embi,Warisota,partial,"Embi end is on the network, Warisota is 1.6 km off it",1.6,2.02,1.27,56.0,1585.0,,,
 F18,F18.1,foot,Afore – Koruwo,Afore,Koruwo,Afore,Koruwo,recorded,routes in 13.8 km vs 9.4 km straight,9.44,13.75,1.46,26.0,53.0,,,Afore Guest house
 F19,F19.1,foot,Afore-Siribu,Afore,Siribu,Afore,Siribu,partial,both ends on the network but only linked the long way round (19.8 km for 9.6 km straight) - the direct track is not recorded,9.6,19.76,2.06,26.0,13.0,,,
-F20,F20.1,foot,Numba – Kueno,Numba,Kueno,Numba,Koeno,recorded,routes in 1.8 km vs 1.3 km straight,1.26,1.81,1.44,3.0,111.0,,,
-F21,F21.1,foot,Kueno – Tabuane,Kueno,Tabuane,Koeno,Tabuane,recorded,routes in 2.4 km vs 2.0 km straight,1.96,2.43,1.24,111.0,16.0,,,
+F20,F20.1,foot,Numba – Kueno,Numba,Kueno,Numba,Koeno,recorded,routes in 1.9 km vs 1.0 km straight,1.05,1.94,1.85,3.0,51.0,,,
+F21,F21.1,foot,Kueno – Tabuane,Kueno,Tabuane,Koeno,Tabuane,recorded,routes in 2.8 km vs 2.2 km straight,2.23,2.76,1.24,51.0,16.0,,,
 F22,F22.1,foot,Dea-Siribu-Koruwo,Dea,Siribu,Dea,Siribu,partial,both ends on the network but only linked the long way round (5.7 km for 2.8 km straight) - the direct track is not recorded,2.8,5.7,2.04,8.0,13.0,,,
 F22,F22.2,foot,Dea-Siribu-Koruwo,Siribu,Koruwo,Siribu,Koruwo,partial,both ends on the network but only linked the long way round (6.1 km for 2.3 km straight) - the direct track is not recorded,2.31,6.12,2.65,13.0,53.0,,,
 F23,F23.1,foot,Natanga-Kiara-Koruwo,Natanga,Kiara,Natanga,Kiara,recorded,routes in 3.9 km vs 2.9 km straight,2.86,3.86,1.35,3.0,6.0,,,
 F23,F23.2,foot,Natanga-Kiara-Koruwo,Kiara,Koruwo,Kiara,Koruwo,recorded,routes in 4.9 km vs 3.1 km straight,3.05,4.91,1.61,6.0,53.0,,,Kiara Elementary School to Koruwo Primary School & High School track record
 F24,F24.1,foot,Tahama-serepuna,Tahama,Serepuna,Tahama,Serefuna,recorded,routes in 3.2 km vs 2.6 km straight,2.6,3.2,1.23,12.0,1.0,,,
-F25,F25.1,foot,Afore-Toma-Biriri-Babarobo-Safia,Afore,Toma,Afore,Toma,partial,both ends on the network but only linked the long way round (25.9 km for 7.6 km straight) - the direct track is not recorded,7.62,25.92,3.4,26.0,220.0,,,
-F25,F25.2,foot,Afore-Toma-Biriri-Babarobo-Safia,Toma,Biriri,Toma,Biriri,recorded,routes in 5.5 km vs 4.3 km straight,4.32,5.47,1.27,220.0,12.0,,,
-F25,F25.3,foot,Afore-Toma-Biriri-Babarobo-Safia,Biriri,Babarobo,Biriri,Babarobo,partial,"Biriri end is on the network, Babarobo is 14.0 km off it",18.39,41.92,2.28,12.0,14020.0,,,
+F25,F25.1,foot,Afore-Toma-Biriri-Babarobo-Safia,Afore,Toma,Afore,Toma,recorded,routes in 10.9 km vs 7.6 km straight,7.62,10.93,1.43,26.0,69.0,,,Afore Station to Toma village Track Record (seg 1)
+F25,F25.2,foot,Afore-Toma-Biriri-Babarobo-Safia,Toma,Biriri,Toma,Biriri,recorded,routes in 5.4 km vs 4.3 km straight,4.32,5.36,1.24,69.0,10.0,,,Toma to Biriri SDA Church Track Record (seg 4)
+F25,F25.3,foot,Afore-Toma-Biriri-Babarobo-Safia,Biriri,Babarobo,Biriri,Babarobo,partial,"Biriri end is on the network, Babarobo is 14.0 km off it",18.39,57.54,3.13,10.0,14020.0,,,
 F25,F25.4,foot,Afore-Toma-Biriri-Babarobo-Safia,Babarobo,Safia,Babarobo,Safia,missing,neither end on the network (14.0 km and 42.4 km off),29.3,56.85,1.94,14020.0,42417.0,,yes,
 F26,F26.1,foot,Umuate-Jaure,Umuate,Jaure,Umuate,Jaure,partial,"Umuate end is on the network, Jaure is 9.2 km off it",10.06,13.14,1.31,1.0,9156.0,,,
 F27,F27.1,foot,Itokama-Aniafe-Umuate,Itokama,Aniafe,Itokama,Aniafe,recorded,routes in 1.0 km vs 0.8 km straight,0.79,1.01,1.28,19.0,1.0,,,
@@ -68,9 +68,9 @@ F44,F44.2,foot,Jaura-Vovosik-Kwikila,Vovosik,Kwikila,,Kwikila,unlocated,no posit
 F45,F45.1,foot,Kuhene-Umbara,Kuhene,Umbara,Kuheani,Ombara,recorded,routes in 1.4 km vs 1.2 km straight,1.22,1.42,1.16,5.0,2.0,,,2026-06-29_15-34_Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Ombara
 F46,F46.1,foot,Yoivi-Marasi,Yoivi,Marasi,Yoivi,Marasi,recorded,routes in 3.1 km vs 2.4 km straight,2.4,3.05,1.27,0.0,2.0,,,
 F47,F47.1,foot,Damara-Bua,Damara,Bua,Damara,Bua,recorded,routes in 1.5 km vs 1.0 km straight,1.05,1.45,1.39,0.0,32.0,,,
-F48,F48.1,foot,Semahara-Kueno,Semahara,Kueno,Semahara,Koeno,recorded,routes in 13.7 km vs 9.0 km straight,8.95,13.66,1.53,6.0,111.0,,,
+F48,F48.1,foot,Semahara-Kueno,Semahara,Kueno,Semahara,Koeno,recorded,routes in 13.9 km vs 9.1 km straight,9.12,13.88,1.52,6.0,51.0,,,
 F49,F49.1,foot,Aiari-Water Crossing,Aiari,Water Crossing,Aiari,Aiari,recorded,"Aiari and Aiari are the same point in our data (0 m apart), so there is no leg here - that place is recorded",0.0,0.06,62.76,31.0,31.0,,,
-F50,F50.1,foot,Bareji-Toma,Bareji,Toma,Bareji,Toma,partial,both ends on the network but only linked the long way round (57.1 km for 3.9 km straight) - the direct track is not recorded,3.92,57.06,14.57,219.0,220.0,17.7 km apart,,Bareji River to Toma village 2026 – 09 – 02
+F50,F50.1,foot,Bareji-Toma,Bareji,Toma,Bareji,Toma,recorded,routes in 5.5 km vs 3.9 km straight,3.92,5.45,1.39,219.0,69.0,17.7 km apart,,Bareji River to Toma village 2026 – 09 – 02
 F51,F51.1,foot,Sila-Avararu,Sila,Avararu,Sila,Awaru,recorded,routes in 4.6 km vs 2.9 km straight,2.89,4.57,1.58,19.0,413.0,,,
 F52,F52.1,foot,Afore-Tahama,Afore,Tahama,Afore,Tahama,recorded,routes in 17.3 km vs 10.7 km straight,10.66,17.33,1.63,26.0,12.0,,,
 F53,F53.1,foot,Highway-Bioi,Highway,Bioi,nearest recorded road,Bioi,partial,both ends on the network but only linked the long way round (10.2 km for 1.5 km straight) - the direct track is not recorded,1.47,10.25,6.98,0.0,3.0,,,
@@ -103,9 +103,9 @@ R10,R10.1,feeder road,Itokama-Kuai,Itokama,Kuai,Itokama,Kwae,partial,both ends o
 R11,R11.1,feeder road,Itokama-Aniafe,Itokama,Aniafe,Itokama,Aniafe,recorded,routes in 1.0 km vs 0.8 km straight,0.79,1.01,1.28,19.0,1.0,,,
 R12,R12.1,feeder road,Highway-Kawowoki (Mr. Womo),Highway,Kawowoki,nearest recorded road,Kawowoki,partial,both ends on the network but only linked the long way round (17.5 km for 0.5 km straight) - the direct track is not recorded,0.47,17.51,37.47,0.0,3.0,,,
 R13,R13.1,feeder road,Koeno feeder road,Koeno,Highway,Koeno,nearest recorded road,recorded,"Koeno and nearest recorded road are the same point in our data (142 m apart), so there is no leg here - that place is recorded",0.14,0.2,1.4,135.0,0.0,,,
-R14,R14.1,feeder road,Afore-Korokoro Village,Afore,Korokoro,Afore,Korokoro,partial,both ends on the network but only linked the long way round (7.8 km for 0.5 km straight) - the direct track is not recorded,0.48,7.76,16.13,26.0,40.0,,,
+R14,R14.1,feeder road,Afore-Korokoro Village,Afore,Korokoro,Afore,Korokoro,recorded,routes in 0.9 km vs 0.5 km straight,0.48,0.94,1.96,26.0,39.0,,,
 R15,R15.1,feeder road,Afore- Bareji River (Disputed),Afore,Bareji River,Afore,Bareji,recorded,routes in 0.4 km vs 0.3 km straight,0.29,0.36,1.25,26.0,7.0,17.7 km apart,,
 R16,R16.1,feeder road,Yoivi-Kuhene-Umbara,Yoivi,Kuhene,Yoivi,Kuheani,recorded,routes in 0.9 km vs 0.8 km straight,0.78,0.86,1.1,0.0,5.0,,,Yoivi village to Kuhene track record
 R16,R16.2,feeder road,Yoivi-Kuhene-Umbara,Kuhene,Umbara,Kuheani,Ombara,recorded,routes in 1.4 km vs 1.2 km straight,1.22,1.42,1.16,5.0,2.0,,,2026-06-29_15-34_Kawowoki_-_Kuhene_bush_treck_-_Marase_-_Ombara
 H01,H01.1,national highway,Orobay-Itokama,Orobay,Itokama,Oro Bay,Itokama,partial,"Itokama end is on the network, Oro Bay is 0.6 km off it",41.79,80.41,1.92,562.0,19.0,,yes,
-H02,H02.1,national highway,Bareji junction-Peroroda,Bareji junction,Peroroda,Bareji,Peroroda,partial,"Bareji end is on the network, Peroroda is 6.1 km off it",20.68,35.03,1.69,7.0,6062.0,17.7 km apart,,
+H02,H02.1,national highway,Bareji junction-Peroroda,Bareji junction,Peroroda,Bareji,Peroroda,partial,"Bareji end is on the network, Peroroda is 6.1 km off it",20.68,35.02,1.69,7.0,6062.0,17.7 km apart,,

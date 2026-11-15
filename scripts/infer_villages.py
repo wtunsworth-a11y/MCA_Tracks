@@ -20,6 +20,7 @@ Output: data/processed/villages.gpkg (layer "villages") and villages.csv
 """
 
 import re
+import sys
 import warnings
 from pathlib import Path
 
@@ -45,21 +46,11 @@ CLUSTER_RADIUS_M = 300
 # rarely stop at exactly the same spot in a settlement.
 MERGE_SAME_NAME_M = 3000
 
-# Words that are never a place name.
-STOPWORDS = {
-    "track", "tracks", "recording", "record", "records", "survey", "surveys",
-    "cropping", "calendar", "calander", "zone", "six", "main", "road", "roads",
-    "the", "and", "then", "back", "via", "from", "to", "of", "village",
-    "villages", "primary", "school", "guest", "house", "water", "source",
-    "grid", "connect", "connects", "davids", "david", "jajibas", "jajiba",
-    "seg", "trek", "new", "guinea", "papua", "seg1", "part", "seq",
-    # Descriptors that attach to a place name rather than being one. Without
-    # these the parser invents places called "Short", "End" and "Alternate"
-    # out of names like "Short cut to Siribu village".
-    "junction", "river", "creek", "school", "community", "station", "hamlet",
-    "trail", "short", "cut", "end", "alternate", "feeder", "leading", "bush",
-    "shortcut", "high", "highschool", "camp", "bridge", "crossing",
-}
+# Words that are never a place name. Shared with every other script that has
+# to answer "is this a village?", because this rule used to exist in three
+# copies and copies drift - see scripts/place_kinds.py.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from place_kinds import STOPWORDS, is_settlement  # noqa: E402
 
 
 def place_tokens(name):

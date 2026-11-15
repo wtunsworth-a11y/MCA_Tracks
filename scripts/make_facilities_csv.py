@@ -33,7 +33,6 @@ the wrong answer read perfectly well.
 """
 import csv
 import json
-import re
 import sys
 from pathlib import Path
 
@@ -44,19 +43,11 @@ from shapely.ops import nearest_points
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_access import haversine_km, load_villages  # noqa: E402
+from place_kinds import is_settlement  # noqa: E402
 
 SRC = ROOT / "outputs" / "gis" / "mca_government_services.csv"
 FOOT = ROOT / "data" / "reference" / "village_footprints.geojson"
 OUT = ROOT / "outputs" / "gis" / "mca_government_facilities.csv"
-
-# A facility is never the answer to "which village is this in". place_aliases
-# positions facilities as well as places, and reading it unfiltered once put
-# "Aguido Primary School" in the village column with three facilities filed at
-# it. Will, 27 Oct 2026: "Aguido is the name of a person. Not a place."
-NOT_A_SETTLEMENT = re.compile(
-    r"\b(school|aid\s*post|aidpost|health\s+cent(?:re|er)|airstrip"
-    r"|office|church|institute|clinic|haus\s*sik)\b", re.I)
-
 
 def footprints():
     """[(village, ward, polygon)] - the authority on where a village IS."""
@@ -78,7 +69,7 @@ def point_places():
 
     def offer(name, lon, lat, tier):
         name = str(name).strip()
-        if not name or NOT_A_SETTLEMENT.search(name):
+        if not name or not is_settlement(name):
             return
         rank, key = TIERS[tier], name.lower()
         cur = cand.get(key)
