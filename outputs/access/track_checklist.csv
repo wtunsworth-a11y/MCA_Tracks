@@ -39,7 +39,7 @@ F25,F25.4,foot,Afore-Toma-Biriri-Babarobo-Safia,Babarobo,Safia,Babarobo,Safia,mi
 F26,F26.1,foot,Umuate-Jaure,Umuate,Jaure,Umuate,Jaure,partial,"Umuate end is on the network, Jaure is 9.2 km off it",10.06,13.14,1.31,1.0,9156.0,,,
 F27,F27.1,foot,Itokama-Aniafe-Umuate,Itokama,Aniafe,Itokama,Aniafe,recorded,routes in 1.0 km vs 0.8 km straight,0.79,1.01,1.28,19.0,1.0,,,
 F27,F27.2,foot,Itokama-Aniafe-Umuate,Aniafe,Umuate,Aniafe,Umuate,recorded,routes in 9.9 km vs 7.1 km straight,7.1,9.92,1.4,1.0,1.0,,,
-F28,F28.1,foot,Jorura-Natanga-Gora,Jorura,Natanga,Jorua,Natanga,recorded,routes in 3.1 km vs 2.4 km straight,2.39,3.08,1.29,60.0,3.0,,,
+F28,F28.1,foot,Jorura-Natanga-Gora,Jorura,Natanga,Jorura,Natanga,recorded,routes in 3.0 km vs 2.4 km straight,2.37,2.99,1.26,27.0,3.0,,,
 F28,F28.2,foot,Jorura-Natanga-Gora,Natanga,Gora,Natanga,Gora,recorded,routes in 11.9 km vs 9.2 km straight,9.22,11.86,1.29,3.0,0.0,,,
 F29,F29.1,foot,Kuai-Tedebedi-Emoriva,Kuai,Tedebedi,Kwae,Tedebedi,partial,"Kwae end is on the network, Tedebedi is 20.4 km off it",21.41,22.64,1.06,21.0,20424.0,,,
 F29,F29.2,foot,Kuai-Tedebedi-Emoriva,Tedebedi,Emoriva,Tedebedi,,unlocated,no position for Emoriva,,,,,,,,
@@ -97,7 +97,7 @@ R06,R06.2,feeder road,Sila-Sakarina-Numba-Kaura-Avaru,Sakarina,Numba,Sakarina,Nu
 R06,R06.3,feeder road,Sila-Sakarina-Numba-Kaura-Avaru,Numba,Kaura,Numba,Kaura,recorded,routes in 2.1 km vs 1.9 km straight,1.9,2.1,1.11,3.0,18.0,,,Cropping Calendar Survey Track to Kuhara
 R06,R06.4,feeder road,Sila-Sakarina-Numba-Kaura-Avaru,Kaura,Avaru,Kaura,Awaru,recorded,routes in 5.3 km vs 2.2 km straight,2.22,5.34,2.4,18.0,413.0,,,
 R07,R07.1,feeder road,Ugunomo-Siribu,Ugunomo,Siribu,Ugunomu,Siribu,recorded,routes in 3.5 km vs 3.1 km straight,3.11,3.48,1.12,49.0,13.0,,,Siribu Feeder Road to Ugunomo to Dea Primary School
-R08,R08.1,feeder road,Jorura-Natanga,Jorura,Natanga,Jorua,Natanga,recorded,routes in 3.1 km vs 2.4 km straight,2.39,3.08,1.29,60.0,3.0,,,
+R08,R08.1,feeder road,Jorura-Natanga,Jorura,Natanga,Jorura,Natanga,recorded,routes in 3.0 km vs 2.4 km straight,2.37,2.99,1.26,27.0,3.0,,,
 R09,R09.1,feeder road,Umbuara-Anatua,Umbuara,Anatua,Umbuara,Anatua,recorded,routes in 3.4 km vs 3.1 km straight,3.06,3.39,1.11,1.0,55.0,,,Anatua 2 to Umbuara Primary School
 R10,R10.1,feeder road,Itokama-Kuai,Itokama,Kuai,Itokama,Kwae,partial,both ends on the network but only linked the long way round (13.2 km for 0.8 km straight) - the direct track is not recorded,0.78,13.18,16.88,19.0,21.0,,,
 R11,R11.1,feeder road,Itokama-Aniafe,Itokama,Aniafe,Itokama,Aniafe,recorded,routes in 1.0 km vs 0.8 km straight,0.79,1.01,1.28,19.0,1.0,,,

@@ -145,6 +145,14 @@
       <SimpleField name="pct_approx" type="double"/>
       <SimpleField name="population" type="string"/>
     </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
     <Document id="zones_voronoi">
       <name>zones_voronoi</name>
       <Placemark id="zones_voronoi.1">
@@ -370,7 +378,7 @@
             <SimpleData name="zone">3</SimpleData>
             <SimpleData name="village">Natanga</SimpleData>
             <SimpleData name="quality">known</SimpleData>
-            <SimpleData name="area_km2">58.8</SimpleData>
+            <SimpleData name="area_km2">58.9</SimpleData>
             <SimpleData name="pct_approx">0</SimpleData>
             <SimpleData name="population">2026</SimpleData>
           </SchemaData>
@@ -389,9 +397,9 @@
                 148.242197616074,-9.07773804727492,0
                 148.242469375087,-9.05433349564227,0
                 148.29231445231,-9.02112400515701,0
-                148.306003480286,-9.07230743476254,0
-                148.315578781198,-9.07754065024673,0
-                148.31084211699,-9.09771816119443,0
+                148.30590811522,-9.07195093034514,0
+                148.316032349387,-9.07748750110751,0
+                148.310650010458,-9.09762722376311,0
                 148.345839895984,-9.11428244635378,0
               </coordinates>
             </LinearRing>
@@ -563,7 +571,7 @@
             <SimpleData name="zone">5</SimpleData>
             <SimpleData name="village">Ugunomo</SimpleData>
             <SimpleData name="quality">known</SimpleData>
-            <SimpleData name="area_km2">48.9</SimpleData>
+            <SimpleData name="area_km2">48.8</SimpleData>
             <SimpleData name="pct_approx">0</SimpleData>
             <SimpleData name="population">2866</SimpleData>
           </SchemaData>
@@ -572,8 +580,8 @@
           <outerBoundaryIs>
             <LinearRing>
               <coordinates>
-                148.315578781198,-9.07754065024673,0
-                148.306003480286,-9.07230743476254,0
+                148.316032349387,-9.07748750110751,0
+                148.30590811522,-9.07195093034514,0
                 148.29231445231,-9.02112400515701,0
                 148.318226309004,-8.99029112150039,0
                 148.330941592359,-9.03842603001759,0
@@ -582,8 +590,8 @@
                 148.356489389264,-9.09936705937522,0
                 148.356137393422,-9.10187338570308,0
                 148.345839895984,-9.11428244635378,0
-                148.31084211699,-9.09771816119443,0
-                148.315578781198,-9.07754065024673,0
+                148.310650010458,-9.09762722376311,0
+                148.316032349387,-9.07748750110751,0
               </coordinates>
             </LinearRing>
           </outerBoundaryIs>

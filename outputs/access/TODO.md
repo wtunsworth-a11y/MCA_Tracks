@@ -60,7 +60,7 @@ said, not what is there now.
 | Ugunomo → Ugunomu | 07 Dea | 1 | Ugunomo Elementary School (*In use*) |
 | not named → Dea (nobody knows where this airstrip is - ask in the ward) | 07 Dea | 1 | Airstrip (*Closed 1988*) |
 | Siribu | 08 Siribu | 1 | Siribu Elementary School, 2 × 2-in-1 (*In use*) |
-| Jorura → Jorua | 09 Natanga | 1 | Jorura Elementary School (*Semi-permanent*) |
+| Jorura | 09 Natanga | 1 | Jorura Elementary School (*Semi-permanent*) |
 | Kiara | 09 Natanga | 1 | Kiara Elementary School (*Semi-permanent*) |
 | Natanga | 09 Natanga | 2 | Natanga Elementary School (*Semi-permanent*); Natanga Aid Post (*Non-operational, no CHW*) |
 | not named → Gora (Gora is one village with three hamlets, sometimes called villages, all close together - write down which hamlet each one is in) | 10 Gora | 4 | Elementary School, 4-in-1 + 2 single classrooms, 4 teacher houses (*In use*); Primary School (*In use*); Aid Post + CHW house (*CHW house 2024*); Airstrip (*Closed 1988, to re-open*) |

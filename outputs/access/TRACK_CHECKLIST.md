@@ -134,7 +134,7 @@ recordings in hand carry no route name at all.
   - [x] Itokama → Aniafe: routes in 1.0 km vs 0.8 km straight
   - [x] Aniafe → Umuate: routes in 9.9 km vs 7.1 km straight
 - [x] **Jorura-Natanga-Gora**  `F28`
-  - [x] Jorura → Natanga: routes in 3.1 km vs 2.4 km straight
+  - [x] Jorura → Natanga: routes in 3.0 km vs 2.4 km straight
   - [x] Natanga → Gora: routes in 11.9 km vs 9.2 km straight
 - [x] **Turatana-Bioi**  `F33`
 - [x] **Haraja-Natganga**  `F35`

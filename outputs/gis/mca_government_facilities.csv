@@ -14,7 +14,7 @@ Ese Bible Institute (EBI) Aid Post,aid post,Numba/Siurana,Siurani,0.03,-9.050551
 Kokoro Aid Post,aid post,Kokoro,Kokoro,0.06,-9.1682427,148.270917
 Old aidpost,aid post,Suari,Jaure,0.93,-9.3601343,148.1797902
 Toma Aid Post,aid post,Toma,Toma,0.0,-9.2094367,148.4010517
-Umbuara Aid post,aid post,Umbuwara,Umbuwara,0.27,-9.1165967,148.273675
+Umbuara Aid post,aid post,Umbuara,Umbuwara,0.27,-9.1165967,148.273675
 Yoivi Community Aid Post,aid post,Yoivi,Yoivi,0.0,-9.1404583,148.4502217
 Afore Airstrip,airstrip,Afore Govt Station,Niniuri,0.0,-9.1396567,148.39
 Aiyari old airstrip,airstrip,Aiari,Aiari,1.07,-9.3393317,148.2184633
@@ -25,10 +25,10 @@ Sila Airstrip,airstrip,Sila 2 / Sakarina / Sila 1,Koeno,0.46,-9.0641194,148.3633
 Afore Elementary School,elementary school,Basabe,Niniuri,0.01,-9.1376766,148.3872721
 Aguido Elementary School,elementary school,Yoivi,Yoivi,0.04,-9.1413633,148.4484667
 Aiyari Elementary School,elementary school,Aiari,Aiari,0.0,-9.3495932,148.217008
-Anatua Elementary School,elementary school,Anatua 1,Umbuwara,0.09,-9.148476,148.2617327
-Bodoimo Elementary School,elementary school,Boidomo,Umbuwara,0.33,-9.1108066,148.2861317
-Dea & Ugunomo 2 in 1 Elementary building,elementary school,Ugunomo,Dea,0.66,-9.0579463,148.3265061
-Dea & Ugunomo Elementary classroom,elementary school,Ugunomo,Dea,0.69,-9.0575549,148.3266471
+Anatua Elementary School,elementary school,Anatua,Umbuwara,0.09,-9.148476,148.2617327
+Bodoimo Elementary School,elementary school,Bodoimo,Umbuwara,0.33,-9.1108066,148.2861317
+Dea & Ugunomo 2 in 1 Elementary building,elementary school,Ugunomu,Dea,0.66,-9.0579463,148.3265061
+Dea & Ugunomo Elementary classroom,elementary school,Ugunomu,Dea,0.69,-9.0575549,148.3266471
 Dea Elementary School,elementary school,Dea,Dea,0.77,-9.0577222,148.3262936
 Itokama Elementary School,elementary school,Itokama / Itokama station,Ufia,0.04,-9.1999222,148.2636776
 Jorura Elementary School,elementary school,Jorura,Natanga,0.0,-9.0879883,148.3057567
@@ -36,13 +36,13 @@ Kaura Elementary School,elementary school,Kaura,Kaura,0.04,-9.064015,148.3818167
 Kiara Elementary School,elementary school,Kiara,Natanga,0.36,-9.0925416,148.2854431
 Kokoro Elementary School,elementary school,Kokoro,Kokoro,0.0,-9.1646899,148.2721884
 Kuweno Elementary School,elementary school,Koeno,Koeno,0.03,-9.0536617,148.3523367
-Naokanane Elementary School,elementary school,Naokanane,,0.02,-9.2107064,148.265878
+Naokanane Elementary School,elementary school,Naokanane,Ufia,0.02,-9.2107064,148.265878
 Numba Elementary School,elementary school,Kaura,Kaura,0.2,-9.0549833,148.3704617
 Siribu Elementary School,elementary school,Siribu,Siribu,0.29,-9.0864591,148.3208962
 Tabuane Elementary School,elementary school,Tabuane,Dea,0.03,-9.0645019,148.3414281
 Tahama Elementary School,elementary school,Tahama,Tahama,0.0,-9.1611405,148.2954525
 Toma Elementary School,elementary school,Toma,Toma,0.28,-9.2062962,148.4002913
-Ugunomo Elementary School,elementary school,Ugunomo,Dea,0.63,-9.0579449,148.3262234
+Ugunomo Elementary School,elementary school,Ugunomu,Dea,0.63,-9.0579449,148.3262234
 Umuate Elementary School,elementary school,Umuate,Ufia,0.02,-9.2638596,148.2358631
 Itokama Health Centre,health centre,Itokama / Itokama station,Ufia,0.13,-9.1973614,148.2631569
 Koruwo Health Centre,health centre,Koruwo,Tahama,0.0,-9.1177178,148.3087719
@@ -57,4 +57,4 @@ Itokama Primary School,primary school,Itokama / Itokama station,Ufia,0.04,-9.198
 Koruwo Primary School,primary school,Koruwo,Tahama,0.04,-9.116437,148.3085292
 Sakarina Primary School,primary school,Sila 2 / Sakarina / Sila 1,Koeno,0.06,-9.0653675,148.3688629
 Toma Primary School,primary school,Toma,Toma,0.21,-9.2068483,148.4006835
-Umbuara Primary School,primary school,Umbuwara,Umbuwara,0.62,-9.1136011,148.2725526
+Umbuara Primary School,primary school,Umbuara,Umbuwara,0.62,-9.1136011,148.2725526

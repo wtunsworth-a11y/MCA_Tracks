@@ -49,13 +49,57 @@ SRC = ROOT / "outputs" / "gis" / "mca_government_services.csv"
 FOOT = ROOT / "data" / "reference" / "village_footprints.geojson"
 OUT = ROOT / "outputs" / "gis" / "mca_government_facilities.csv"
 
+def canonical_names():
+    """as-written -> preferred spelling, followed to the end of the chain.
+
+    The outline file is not the authority on SPELLING, only on extent. Its
+    polygon for ward 12 is labelled Gazot and Will's preferred spelling is
+    Gadzot; without this the maps and the CSV would print Gazot forever while
+    every other file said Gadzot. Will, 15 Nov 2026: "Preferred Spellings are
+    Jorura and Gadzot."
+    """
+    al = ROOT / "data" / "reference" / "place_aliases.csv"
+    if not al.exists():
+        return {}
+    direct = {}
+    for r in pd.read_csv(al, comment="#").itertuples():
+        a, b = getattr(r, "as_written", None), getattr(r, "resolved_to", None)
+        # A blank resolved_to is a note, not a rename. pandas gives it as NaN,
+        # and NaN is truthy, so `b or ""` let "nan" through as a village name
+        # and three Afore facilities were filed at a village called nan.
+        if pd.isna(a) or pd.isna(b):
+            continue
+        a, b = str(a).strip(), str(b).strip()
+        if a and b:
+            direct[a.lower()] = b          # value keeps its proper casing
+
+    def follow(name, depth=0):
+        nxt = direct.get(name.strip().lower())
+        if nxt is None or nxt.strip().lower() == name.strip().lower() or depth > 8:
+            return name
+        return follow(nxt, depth + 1)
+
+    # key is lowercase for lookup; the VALUE is the properly-cased spelling.
+    return {k: follow(v) for k, v in direct.items()}
+
+
 def footprints():
     """[(village, ward, polygon)] - the authority on where a village IS."""
     if not FOOT.exists():
         return []
+    canon = canonical_names()
     gj = json.loads(FOOT.read_text())
-    return [(f["properties"]["village"], f["properties"]["ward"],
-             shape(f["geometry"])) for f in gj["features"]]
+    out = []
+    for f in gj["features"]:
+        name = f["properties"]["village"]
+        # Carry the ORIGINAL spelling alongside the preferred one. The
+        # tiebreak below matches a facility's own name against the village's,
+        # and renaming Ugunomo to Ugunomu stopped "Dea & Ugunomo Elementary
+        # classroom" matching its own village - the rename silently moved two
+        # facilities and added 80 m to their distance.
+        out.append((canon.get(name.strip().lower(), name),
+                    f["properties"]["ward"], shape(f["geometry"]), name))
+    return out
 
 
 def point_places():
@@ -111,16 +155,16 @@ TIE_KM = 0.15
 def locate(lon, lat, polys, pts, facility=""):
     """(village, ward, km) - km is 0.0 when the point is inside the outline."""
     p = Point(lon, lat)
-    for name, ward, g in polys:
+    for name, ward, g, _orig in polys:
         if g.contains(p):
             return name, ward, 0.0
 
     ranked = []
-    for name, ward, g in polys:
+    for name, ward, g, orig in polys:
         q = nearest_points(p, g)[1]           # closest point ON THE OUTLINE
-        ranked.append((haversine_km(lon, lat, q.x, q.y), name, ward))
+        ranked.append((haversine_km(lon, lat, q.x, q.y), name, ward, orig))
     for name, vlon, vlat in pts:
-        ranked.append((haversine_km(lon, lat, vlon, vlat), name, ""))
+        ranked.append((haversine_km(lon, lat, vlon, vlat), name, "", name))
     if not ranked:
         return "", "", float("nan")
     ranked.sort(key=lambda r: r[0])
@@ -129,11 +173,18 @@ def locate(lon, lat, polys, pts, facility=""):
     tied = [r for r in ranked if r[0] - d0 <= TIE_KM]
     if len(tied) > 1 and facility:
         fl = facility.lower()
-        named = [r for r in tied if r[1].lower().split("/")[0].strip() in fl]
+
+        def mentioned(r):
+            for n in (r[1], r[3]):            # preferred spelling, then original
+                if n and n.lower().split("/")[0].strip() in fl:
+                    return True
+            return False
+
+        named = [r for r in tied if mentioned(r)]
         if len(named) == 1:
-            d, name, ward = named[0]
+            d, name, ward, _ = named[0]
             return name, ward, d
-    d, name, ward = ranked[0]
+    d, name, ward, _ = ranked[0]
     return name, ward, d
 
 
