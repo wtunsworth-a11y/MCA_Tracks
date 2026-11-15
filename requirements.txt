@@ -2,6 +2,17 @@
 # container has none of these; `pip install -r requirements.txt` restores the
 # environment. Versions matter: an unpinned shapely/GDAL read one supplied KMZ
 # as a GeometryCollection, which crashed merge_tracks.py and infer_villages.py.
+#
+# Audited against every import in scripts/ on 15 Nov 2026, after a container
+# rebuild wiped the environment. Three packages were being used and not listed:
+# pyproj by nine scripts including the two that build the KML layers, pillow by
+# the map-digitising pair, and folium by make_maps.py. pyproj and pillow had
+# been arriving as transitive dependencies of rasterio and geopandas, so they
+# worked while being unpinned - exactly the drift the note above warns about.
+# folium was simply absent and make_maps.py could not have run.
+#
+# Re-run that audit after adding any import:
+#   python3 scripts/check_requirements.py
 geopandas==1.1.4
 pyogrio==0.13.0
 shapely==2.1.2
@@ -13,3 +24,11 @@ adjustText==1.4.0
 matplotlib==3.11.2
 pandas==3.0.5
 numpy==2.4.6
+pyproj==3.8.0
+pillow==12.3.0
+
+# make_maps.py only - the interactive HTML overview. It is NOT in
+# refresh_all.sh; the chain does not need these.
+folium==0.20.0
+jinja2==3.1.6
+branca==0.8.2

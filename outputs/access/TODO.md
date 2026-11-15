@@ -5,7 +5,7 @@ and `data/reference/facilities.csv`. `TRACK_CHECKLIST.md` lists the walking
 route by route; this lists everything job by job, because one missing
 coordinate blocks a whole route and one short link closes several.
 
-**Two things outstanding.** The walking: of 110 legs on the team's list, **59 recorded**, **39 partly**, **5 not walked**, **7 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
+**Two things outstanding.** The walking: of 110 legs on the team's list, **60 recorded**, **38 partly**, **5 not walked**, **7 cannot be checked** until a place is located. The points: **63 facility positions** still to collect, none of which has a coordinate yet.
 
 ## 1. Places on the track list that need a coordinate
 
@@ -64,7 +64,7 @@ said, not what is there now.
 | Kiara | 09 Natanga | 1 | Kiara Elementary School (*Semi-permanent*) |
 | Natanga | 09 Natanga | 2 | Natanga Elementary School (*Semi-permanent*); Natanga Aid Post (*Non-operational, no CHW*) |
 | not named → Gora (Gora is one village with three hamlets, sometimes called villages, all close together - write down which hamlet each one is in) | 10 Gora | 4 | Elementary School, 4-in-1 + 2 single classrooms, 4 teacher houses (*In use*); Primary School (*In use*); Aid Post + CHW house (*CHW house 2024*); Airstrip (*Closed 1988, to re-open*) |
-| Tahama → Semahara Tahama | 11 Tahama | 1 | Tahama Elementary School, 2 single classrooms, 2 teacher houses (*In use, bush material*) |
+| Tahama | 11 Tahama | 1 | Tahama Elementary School, 2 single classrooms, 2 teacher houses (*In use, bush material*) |
 | Koruwo | 11 Tahama | 4 | Koruwo Elementary School, 2-in-1, 2 teacher houses (*In use*); Koruwo Primary School, 1 × 4-in-1, 2 × 2-in-1, 1 × 8-in-1, 5 teacher houses (*In use, 8-in-1 incomplete*); Koruwo High School + male and female dormitories (*Started 2026, dormitories for 3rd term*); Health Centre (*Incomplete, no CHW*) |
 | Anatua 2 → Anatua (Anatua is a long village and they have defined Anatua 1 and Anatua 2 - map both ends, not one point) | 12 Umbuwara | 1 | Anatua Elementary School (*In use*) |
 | Boidomo → Bodoimo | 12 Umbuwara | 1 | Boidomo Elementary School (*In use*) |
@@ -99,7 +99,7 @@ which closes a hole in the network.
 
 ## 4. Longer links, same problem
 
-**18 legs.** Both ends recorded, the direct track not.
+**17 legs.** Both ends recorded, the direct track not.
 
 - [ ] **Kawowoki → Avaru** — 3.1 km direct, against 26.2 km the long way round  `F41`
 - [ ] **Umbuara → Kiara** — 3.3 km direct, against 9.7 km the long way round  `F34`
@@ -109,20 +109,19 @@ which closes a hole in the network.
 - [ ] **Avaru → Dareki** — 5.1 km direct, against 27.1 km the long way round  `F07`
 - [ ] **Avaru → Sigara** — 5.8 km direct, against 14.3 km the long way round  `F03`
 - [ ] **Dareki → Sigara** — 6.6 km direct, against 33.7 km the long way round  `F05`
-- [ ] **Tahama → Toma** — 7.1 km direct, against 30.1 km the long way round  `F02`
 - [ ] **Afore → Toma** — 7.6 km direct, against 25.9 km the long way round  `F25`
 - [ ] **Sigara → Banderi** — 8.8 km direct, against 63.1 km the long way round  `F36`
 - [ ] **Afore → Siribu** — 9.6 km direct, against 19.8 km the long way round  `F19`
 - [ ] **Umuate → Aiari** — 9.8 km direct  `F37`
 - [ ] **Wayei → Umbara** — 10.2 km direct, against 22.3 km the long way round  `F31`
-- [ ] **Tahama → Serepuna** — 11.0 km direct, against 20.3 km the long way round  `F24`
+- [ ] **Tahama → Toma** — 12.7 km direct, against 42.0 km the long way round  `F02`
 - [ ] **Singata → Gora** — 14.0 km direct, against 26.1 km the long way round  `F62`
 - [ ] **Toma → Itokama** — 14.8 km direct, against 50.6 km the long way round  `F13`
 - [ ] **Gora → Popondetta** — 25.9 km direct, against 128.5 km the long way round  `F09`
 
 ## 5. Places no recording has ever reached
 
-**12 places**, furthest first. The number is how far the
+**13 places**, furthest first. The number is how far the
 place sits from the nearest recorded line - that is the walk needed to
 tie it in, not the length of any particular track.
 
@@ -133,7 +132,8 @@ tie it in, not the length of any particular track.
 | Tedebedi | 20.4 | F29, F60 | also written Tetebedi; confirmed by Will, 3 Oct 2026: Tetebedi/Tedebedi is OUTSIDE the conservation area, so Anatua-Tetebedi and Kuai-Tedebedi-Emoriva run beyond the boundary |
 | Asafa | 15.2 | F42, F59 | OSM village 15 km WNW of Gora. (An Asafa 406 km away in Eastern Highlands was rejected) |
 | Babarobo | 14.0 | F25 | OSM village, and it sits almost exactly on the Biriri-Safia line, which is the leg the list puts it in |
-| Jaure | 9.3 | F12, F26, F37, F38 | also written Jaura |
+| Jaure | 9.3 | F38 | also written Jaura; Will, 12 Nov 2026: the school is "in Jaure (also Yaure)". One village, two spellings; Jaure is also the name of ward 17, which is why both are in use. Position is the centroid of the Yaure polygon in village_footprints.kml. |
+| Yaure | 9.2 | F12, F26, F37 | also written Jaure; CONFIRMED by Will, 16 Oct 2026: Yaure Aid Post and Yaure Airstrip in ward 17 are at Jaure - a J/Y spelling of the ward's own name |
 | Gorobuna | 7.0 | F43, F59 |  |
 | Peroroda | 6.1 | H02 | OSM village. 20 km from where the route implied, but that anchor is the weak Bareji cluster, so the distance proves little either way - worth a check |
 | Warisota | 1.6 | F17 | OSM village beside Embi. AMBIGUOUS: GeoNames has another Warisota 13 km north and OSM a New Warisota 45 km west - this is the one the route fits |

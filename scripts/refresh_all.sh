@@ -27,6 +27,26 @@ cd "$(dirname "$0")/.."
 
 run () { echo "--- $*"; "$@"; }
 
+# A rebuilt container has no Python packages at all, and the first sign of it
+# is a traceback three imports deep in whichever script happens to run first.
+# Say it plainly instead, before anything starts.
+missing=$(python3 - <<'PYEOF'
+import importlib.util as u
+need = ["geopandas", "shapely", "rasterio", "pyproj", "pandas", "numpy",
+        "matplotlib", "networkx", "scipy", "pyogrio", "adjustText", "skimage"]
+print(" ".join(m for m in need if u.find_spec(m) is None))
+PYEOF
+)
+if [ -n "$missing" ]; then
+  echo "!! Python packages missing: $missing" >&2
+  echo "!! The container was rebuilt. Restore them first:" >&2
+  echo "!!     pip install -r requirements.txt" >&2
+  exit 1
+fi
+
+# And every import must be pinned, so the next rebuild restores the same thing.
+run python3 scripts/check_requirements.py
+
 run python3 scripts/inspect_sources.py
 run python3 scripts/merge_tracks.py
 run python3 scripts/classify_mode.py

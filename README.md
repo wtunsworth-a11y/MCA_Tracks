@@ -20,6 +20,66 @@ Open the HTML in a browser; the basemap tiles load client-side.
 
 ## Pipeline
 
+**Run the chain, not the steps.** After any new field data, tracks or
+waypoints:
+
+```
+pip install -r requirements.txt   # a rebuilt container has none of it
+bash scripts/refresh_all.sh
+```
+
+That rebuilds the network, the access model, the checklist, the facilities
+reconciliation, the services maps and GIS layers, the facilities CSV, the
+site maps, the itinerary, the questions and the Word documents, in the one
+order that works. It begins by checking the packages are present and that
+every import is pinned, so a rebuilt container is reported in one line
+instead of as a traceback three imports deep.
+
+A new WAYPOINT drop needs one step first, because the provenance header has
+to be written by someone who knows where the file came from:
+
+```
+python3 scripts/extract_waypoint_kml.py <doc.kml> data/reference/waypoints_<area>.csv
+```
+
+Two files must change whenever Russell's data does, and the chain is what
+guarantees it: `outputs/gis/mca_schools.kml` and `outputs/gis/mca_health.kml`.
+
+### Audits
+
+These raise suggestions and change nothing. Both are in the chain.
+
+```
+python3 scripts/audit_place_spellings.py   # names that are probably one place
+python3 scripts/audit_track_direction.py   # filenames that run the other way
+python3 scripts/check_requirements.py      # every import pinned
+```
+
+`audit_place_spellings.py` exists because Koeno has four spellings and the
+fourth put a school at the wrong village. A confirmed pair goes into
+`data/reference/place_aliases.csv`; a rejected one into
+`data/reference/not_the_same_place.csv`, which is why Baraji is never again
+proposed as a typo for Bareji - it is a tributary of it.
+
+`audit_track_direction.py` exists because `Kaura_to_Koeno.gpx` ENDS 43 m from
+Kaura. It scores every "A to B" filename both ways round before raising one.
+
+### Where a village is
+
+`data/reference/village_footprints.geojson` holds 68 named settlement
+outlines with their ward and area. A village is an AREA: several facilities
+sit inside one, and matching to a centroid made a school well inside Kaura's
+1314 x 718 m outline read as 700 m misplaced. `make_facilities_csv.py` asks
+which outline a point is in, and only falls back to distance - to the EDGE -
+when the answer is none.
+
+`make_site_maps.py` draws those outlines over Sentinel-2 for a named site.
+
+### The older steps, run by hand
+
+Superseded by `refresh_all.sh` for everything it covers. Kept because these
+are still the way to run a single stage.
+
 ```
 export GOOGLE_OAUTH_TOKEN='ya29...'  # see scripts/fetch_from_drive.sh header
 ./scripts/fetch_from_drive.sh        # pull anything new from Drive into data/raw
