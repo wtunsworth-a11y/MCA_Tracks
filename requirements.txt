@@ -27,6 +27,11 @@ numpy==2.4.6
 pyproj==3.8.0
 pillow==12.3.0
 
+# fetch_buildings.py only - reads Overture's parquet straight off S3. duckdb
+# is the usual tool and cannot be used here: its httpfs and spatial extensions
+# download over plain HTTP from extensions.duckdb.org, which the proxy refuses.
+pyarrow==26.0.1
+
 # make_maps.py only - the interactive HTML overview. It is NOT in
 # refresh_all.sh; the chain does not need these.
 folium==0.20.0

@@ -17,7 +17,7 @@ Kiera,3,9,53,-9.09591,148.2882,875.5,Siribu,7.05,3.66,2.39,yes,road-served (walk
 Koruwo,3,11,13,-9.109897,148.31215,792.2,Siribu,9.63,2.31,1.38,yes,road-served (walk to road <= 2.5 km),yes,58,path network,road,0.19
 Natanga,3,9,96,-9.070176,148.29111,943.1,Siribu,5.36,4.03,1.46,yes,road-served (walk to road <= 2.5 km),no (field knowledge),1695,path network,road,14.43
 Aiari,4,16,109,-9.349725,148.21722,647.4,Itokama,,17.36,5.51,no,road not practically reachable (> 10 km),no (measured),16792,straight line (no connected path),road,0.25
-Jaure,4,"17,4",59,-9.275404,148.145235,917.1,Itokama,,15.62,5.37,no,road not practically reachable (> 10 km),no (measured),14860,straight line (no connected path),road,33.11
+Jaure,4,"17,4",59,-9.27601,148.14629,917.1,Itokama,,15.56,5.24,no,road not practically reachable (> 10 km),no (measured),14798,straight line (no connected path),road,33.11
 Suari,4,17,33,-9.36637,148.17331,906.6,Itokama,,20.98,7.57,no,road not practically reachable (> 10 km),no (measured),20323,straight line (no connected path),road,37.94
 Dea,5,"5,7",102,-9.067194,148.32968,925.7,Siribu,5.7,2.8,1.22,yes,road-served (walk to road <= 2.5 km),yes,8,path network,road,20.05
 Siribu,5,"7,8",23,-9.091052,148.32118,798.3,Siribu,0.0,0.0,0.02,yes,road-served (walk to road <= 2.5 km),yes,13,path network,road,4.4

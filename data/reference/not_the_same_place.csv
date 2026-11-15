@@ -11,3 +11,4 @@ a,b,note
 Baraji,Bareji,"Will, 12 Nov 2026: ""Baraji River is a tributary of the Bareji. Not a typo."" Two watercourses, related but distinct. A track ending on one has not ended on the other, which matters for every filename that names a river as an endpoint."
 Kokoro,Korokoro,"Two villages 13.0 km apart in different wards: Kokoro is ward 13 Kokoro, Korokoro is ward 02 Niniuri. Each has its own footprint."
 Kiara,Kaura,"10.6 km apart, wards 09 Natanga and 04 Kaura."
+Tahama,Semahara,"Will, 15 Nov 2026: ""Tahama is absolutely NOT Semahara"". They are 9.1 km apart in different wards - Tahama is ward 11 Tahama, Semahara is ward 02 Niniuri - and each carries its own footprint. place_aliases.csv had carried Tahama -> ""Semahara Tahama"" as an ""inferred cluster, confidence 0.5"", which is what made the Tahama-Toma leg measure 7.1 km instead of 12.7 km. That row is deleted. An inference at confidence 0.5 should never have been written as an alias in the first place."

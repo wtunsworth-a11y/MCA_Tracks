@@ -121,7 +121,7 @@ which closes a hole in the network.
 
 ## 5. Places no recording has ever reached
 
-**13 places**, furthest first. The number is how far the
+**12 places**, furthest first. The number is how far the
 place sits from the nearest recorded line - that is the walk needed to
 tie it in, not the length of any particular track.
 
@@ -132,8 +132,7 @@ tie it in, not the length of any particular track.
 | Tedebedi | 20.4 | F29, F60 | also written Tetebedi; confirmed by Will, 3 Oct 2026: Tetebedi/Tedebedi is OUTSIDE the conservation area, so Anatua-Tetebedi and Kuai-Tedebedi-Emoriva run beyond the boundary |
 | Asafa | 15.2 | F42, F59 | OSM village 15 km WNW of Gora. (An Asafa 406 km away in Eastern Highlands was rejected) |
 | Babarobo | 14.0 | F25 | OSM village, and it sits almost exactly on the Biriri-Safia line, which is the leg the list puts it in |
-| Jaure | 9.3 | F38 | also written Jaura; Will, 12 Nov 2026: the school is "in Jaure (also Yaure)". One village, two spellings; Jaure is also the name of ward 17, which is why both are in use. Position is the centroid of the Yaure polygon in village_footprints.kml. |
-| Yaure | 9.2 | F12, F26, F37 | also written Jaure; CONFIRMED by Will, 16 Oct 2026: Yaure Aid Post and Yaure Airstrip in ward 17 are at Jaure - a J/Y spelling of the ward's own name |
+| Jaure | 9.3 | F12, F26, F37, F38 | also written Jaura; The village position, from the centroid of the Yaure polygon in village_footprints.kml. JAURE is the canonical spelling and Yaure resolves to it - confirmed by Will on 16 Oct 2026 and again on 15 Nov: "Yaure IS Jaure. same place, different spelling." A row written here on 12 Nov pointed the other way and made a cycle with that 16 Oct row, which flipped the name in the village layer. Jaure is also the name of ward 17, which is why both spellings circulate. |
 | Gorobuna | 7.0 | F43, F59 |  |
 | Peroroda | 6.1 | H02 | OSM village. 20 km from where the route implied, but that anchor is the weak Bareji cluster, so the distance proves little either way - worth a check |
 | Warisota | 1.6 | F17 | OSM village beside Embi. AMBIGUOUS: GeoNames has another Warisota 13 km north and OSM a New Warisota 45 km west - this is the one the route fits |

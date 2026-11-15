@@ -34,7 +34,7 @@ recordings in hand carry no route name at all.
   - [x] Ufia → Umuate: routes in 7.3 km vs 6.2 km straight
   - [ ] Umuate → Aiari: both ends have recordings but nothing recorded joins them - the connecting track is the gap
   - [x] Aiari → Suari: routes in 5.9 km vs 5.2 km straight
-  - [~] Suari → Jaure: Suari end is on the network, Yaure is 9.2 km off it
+  - [~] Suari → Jaure: Suari end is on the network, Jaure is 9.2 km off it
 - [ ] **Gora-Asafa-Sairope**  `F42`
   - [~] Gora → Asafa: Gora end is on the network, Asafa is 15.2 km off it
   - [ ] Asafa → Sairope: neither end on the network (15.2 km and 22.6 km off)
@@ -75,7 +75,7 @@ recordings in hand carry no route name at all.
 - [~] **Gora-Popondetta**  `F09` — **26 km end to end: a multi-day walk**
   - [~] Gora → Popondetta: both ends on the network but only linked the long way round (128.5 km for 25.9 km straight) - the direct track is not recorded — **26 km in a straight line: a multi-day walk, not a day trip**
 - [~] **Aniafe -Jaure**  `F12`
-  - [~] Aniafe → Jaure: Aniafe end is on the network, Yaure is 9.2 km off it
+  - [~] Aniafe → Jaure: Aniafe end is on the network, Jaure is 9.2 km off it
 - [~] **Toma-Itokama**  `F13`
   - [~] Toma → Itokama: both ends on the network but only linked the long way round (50.6 km for 14.8 km straight) - the direct track is not recorded
 - [~] **Afore-Siribu**  `F19`
@@ -84,7 +84,7 @@ recordings in hand carry no route name at all.
   - [~] Dea → Siribu: both ends on the network but only linked the long way round (5.7 km for 2.8 km straight) - the direct track is not recorded
   - [~] Siribu → Koruwo: both ends on the network but only linked the long way round (6.1 km for 2.3 km straight) - the direct track is not recorded
 - [~] **Umuate-Jaure**  `F26`
-  - [~] Umuate → Jaure: Umuate end is on the network, Yaure is 9.2 km off it
+  - [~] Umuate → Jaure: Umuate end is on the network, Jaure is 9.2 km off it
 - [~] **Aiari-Safia**  `F30` — **54 km end to end: a multi-day walk**
   - [~] Aiari → Safia: Aiari end is on the network, Safia is 42.4 km off it — **54 km in a straight line: a multi-day walk, not a day trip**
 - [~] **Wayei-Umbara**  `F31`
@@ -141,7 +141,7 @@ recordings in hand carry no route name at all.
 - [x] **Haraja-Natganga**  `F35`
 - [x] **Korowo-At Junction Basabe-Semahara**  `F39`
   - [x] Korowo → Basabe junction: routes in 12.7 km vs 8.6 km straight
-  - [x] Basabe junction → Semahara: routes in 1.7 km vs 1.4 km straight
+  - [x] Basabe junction → Semahara: routes in 1.9 km vs 1.6 km straight
 - [x] **Simion's place- Niniri Village (Main)**  `F40`
 - [x] **Kuhene-Umbara**  `F45`
 - [x] **Yoivi-Marasi**  `F46`
