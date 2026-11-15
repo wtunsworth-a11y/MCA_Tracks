@@ -58,6 +58,8 @@ run python3 scripts/reconcile_facilities.py
 run python3 scripts/pick_facility_photos.py
 run python3 scripts/make_services_map.py          # the two KML layers
 run python3 scripts/make_facilities_csv.py        # name/type/village/coords
+run python3 scripts/make_village_polygons.py      # one polygon set per village
+run python3 scripts/make_clean_network.py        # roads+tracks, deduped, classed
 run python3 scripts/make_site_maps.py            # village footprints on S2
 
 # Audits. They raise suggestions rather than change anything, and they exist
