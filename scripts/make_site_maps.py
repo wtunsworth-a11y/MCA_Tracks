@@ -52,6 +52,14 @@ SITES = {
         note="Awaru had no position here at all until 12 Nov, so its old "
              "airstrip was filed at Kaura 1.63 km away - the WARD is Kaura, "
              "which is why the wrong answer read well."),
+    "toma": dict(
+        west=148.3930, east=148.4480, south=-9.2205, north=-9.1985,
+        focus=("Toma",), figsize=(15.0, 7.2),
+        title="Toma and Biriri — Zone 9, recorded 6 November 2026",
+        note="Zone 9 arrived 8 Nov and was the last Drive data unused. Toma "
+             "Aid Post is CLOSED, Toma Primary School is working with 2 of its "
+             "6 buildings vacant, and Toma Elementary School was seen only "
+             "through a teacher's house."),
     "dea": dict(
         west=148.3105, east=148.3475, south=-9.0735, north=-9.0475,
         focus=("Dea", "Ugunomo"), figsize=(14.0, 10.4),
