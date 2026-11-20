@@ -1,0 +1,20 @@
+# Zone 7A: Bioi and Dareki, recorded 28 October 2026.
+#
+# Extracted from 'Zone_7A_Coordinates_of_school,_church__places.kmz', uploaded
+# by russellmuraba71@gmail.com on 19 Nov 2026. 48,271,490 bytes, 19 members,
+# 18 of them photographs. Only doc.kml was fetched by ranged request - about
+# 1.4 KB moved - so the photographs stay in Drive.
+#
+# 5 waypoints, and two of them close items the ward profile has been waiting
+# on: Dareki Elementary School and the OLD SITE of Dareki Aid Post, both in
+# ward 03 Kawowoki, which until now had no facility collected at all.
+#
+# "Old Site of Dareki Aidpost" is a former position, not a working aid post.
+# "Buaikik Waterfall" is a landform and not a settlement.
+#
+name,recorded,lon,lat,ele_m,accuracy_m,note,photos,photo_files
+Bioi village,2026-10-28T16:45:24,148.4442423,-9.1057782,603.0,2.0,,2,files/1000058983.jpg files/1000058982.jpg
+Buaikik Waterfall,2026-10-28T17:14:36,148.4363367,-9.1004633,542.0,1.8,,3,files/1000058985.jpg files/1000058992.jpg files/1000058986.jpg
+Dareki CRC Church,2026-10-28T17:30:38,148.4335366,-9.0989426,550.0,2.3,Building in use,2,files/1000059000.jpg files/1000059002.jpg
+Dareki Elementary School,2026-10-28T17:27:07,148.4339481,-9.0991224,548.0,2.3,Classes ceased around April this year.,2,files/1000058998.jpg files/1000058997.jpg
+Old Site of Dareki Aidpost,2026-10-28T17:45:34,148.4310883,-9.1005383,552.0,2.1,Closed,3,files/1000059005.jpg files/1000059007.jpg files/1000059006.jpg

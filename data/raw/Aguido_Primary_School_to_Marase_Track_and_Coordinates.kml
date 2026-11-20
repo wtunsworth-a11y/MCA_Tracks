@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Aguido_Primary_School_to_Marase_Track_Record__Coordinates_of_Churches,_Elementary_School__village</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="1402349743">
+		<IconStyle>
+			<Icon><href>files/1402349743.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="189946306">
+		<IconStyle>
+			<Icon><href>files/189946306.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-347246930">
+		<IconStyle>
+			<Icon><href>files/-347246930.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1496842119">
+		<IconStyle>
+			<Icon><href>files/-1496842119.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="track001">
+		<LineStyle>
+			<color>b3ff0000</color>
+			<width>6.0</width>
+		</LineStyle>
+	</Style>
+<Placemark>
+	<name>Marase Elementary School 2026-11-20 11:18:45</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063783.jpg" target="_blank"><img src="files/1000063783.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063787.jpg" target="_blank"><img src="files/1000063787.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Marase Elementary School is established at Aguido Primary School & not Marase.
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">726 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">2.3 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">68 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">5 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 23:17:09</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-347246930</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063783.jpg</lc:attachment>
+		<lc:attachment>files/1000063787.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4482706,-9.1415734,726.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-20T11:19:56Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Marase SDA Church 2026-11-20 11:04:04</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063781.jpg" target="_blank"><img src="files/1000063781.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063782.jpg" target="_blank"><img src="files/1000063782.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">779 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">11.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">174 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">5 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 23:17:30</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#1402349743</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063781.jpg</lc:attachment>
+		<lc:attachment>files/1000063782.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4486167,-9.1486795,779.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-20T11:04:13Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Marase village 2026-11-20 11:00:16</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063780.jpg" target="_blank"><img src="files/1000063780.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063773.jpg" target="_blank"><img src="files/1000063773.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">777 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">1.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">291 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.5 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 23:18:12</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#189946306</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063780.jpg</lc:attachment>
+		<lc:attachment>files/1000063773.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4497718,-9.1498661,777.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-20T11:00:42Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Marase CRC Church 2026-11-20 10:49:25</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063774.jpg" target="_blank"><img src="files/1000063774.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063776.jpg" target="_blank"><img src="files/1000063776.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063775.jpg" target="_blank"><img src="files/1000063775.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">791 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">17.1 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">23 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">8 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 23:18:37</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1496842119</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063774.jpg</lc:attachment>
+		<lc:attachment>files/1000063776.jpg</lc:attachment>
+		<lc:attachment>files/1000063775.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4498183,-9.1505426,791.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-20T10:49:59Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Aguido Primary School to Marase Track Record 2026-11-20 10:20</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Activity</b></small></td><td align="center" valign="center">Walking</td></tr>
+<tr><td align="left" valign="center"><small><b>Distance</b></small></td><td align="center" valign="center">1.3 km</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 10:20:57</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. speed</b></small></td><td align="center" valign="center">6.6 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Pace</b></small></td><td align="center" valign="center">16:43 min/km</td></tr>
+<tr><td align="left" valign="center"><small><b>Energy</b></small></td><td align="center" valign="center">686 KJ</td></tr>
+<tr><td align="left" valign="center"><small><b>Points</b></small></td><td align="center" valign="center">102</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">All</td><td align="center" valign="center">Speed > 0</td></tr>
+<tr><td align="left" valign="center"><small><b>Avg. speed</b></small></td><td align="center" valign="center">3.6 km/h</td><td align="center" valign="center">4.4 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Track time</b></small></td><td align="center" valign="center">0:21:31</td><td align="center" valign="center">0:17:10</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Min. altitude</b></small></td><td align="center" valign="center">730 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Max. altitude</b></small></td><td align="center" valign="center">790 m</td></tr>
+</table></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b></b></small></td><td align="center" valign="center">Elevation</td><td align="center" valign="center">Distance</td></tr>
+<tr><td align="left" valign="center"><small><b>Uphill</b></small></td><td align="center" valign="center">67 m</td><td align="center" valign="center">827 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Downhill</b></small></td><td align="center" valign="center">-13 m</td><td align="center" valign="center">330 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Flat</b></small></td><td align="center" valign="center">0 m</td><td align="center" valign="center">130 m</td></tr>
+</table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#track001</styleUrl>
+	<MultiGeometry>
+		<LineString>
+			<coordinates>
+				148.4498842,-9.1401753,734.70
+				148.4499237,-9.1402683,733.70
+				148.4500067,-9.1403462,734.51
+				148.4501111,-9.1404105,733.14
+				148.4502085,-9.1404883,732.32
+				148.4502974,-9.1405565,730.13
+				148.4503181,-9.1406577,730.89
+				148.4502749,-9.1407717,732.68
+				148.4502221,-9.1408733,738.26
+				148.4501310,-9.1409802,741.07
+				148.4500549,-9.1411029,739.35
+				148.4499911,-9.1411708,741.41
+				148.4499032,-9.1413089,741.80
+				148.4498497,-9.1414047,740.80
+				148.4497803,-9.1415205,739.51
+				148.4497222,-9.1416163,736.88
+				148.4496576,-9.1417234,736.52
+				148.4496029,-9.1418517,736.27
+				148.4495227,-9.1419472,734.52
+				148.4494590,-9.1420413,734.38
+				148.4494074,-9.1421403,740.43
+				148.4493446,-9.1422263,739.59
+				148.4492579,-9.1422682,738.76
+				148.4491430,-9.1421721,739.94
+				148.4490281,-9.1421312,739.01
+				148.4489189,-9.1420980,738.77
+				148.4488210,-9.1421497,742.07
+				148.4487623,-9.1422593,745.17
+				148.4487129,-9.1423864,741.34
+				148.4486676,-9.1424940,738.74
+				148.4486096,-9.1426237,737.15
+				148.4485374,-9.1427249,739.98
+				148.4484632,-9.1428384,741.92
+				148.4484251,-9.1429369,741.48
+				148.4484061,-9.1430535,738.14
+				148.4483920,-9.1431893,734.31
+				148.4484140,-9.1433161,735.52
+				148.4484008,-9.1434503,737.08
+				148.4484421,-9.1435571,737.91
+				148.4484714,-9.1436992,738.23
+				148.4484898,-9.1437953,742.49
+				148.4485533,-9.1438646,742.27
+				148.4486028,-9.1439502,740.82
+				148.4485897,-9.1440601,743.44
+				148.4485828,-9.1441999,744.36
+				148.4485788,-9.1442956,743.15
+				148.4485798,-9.1444227,746.76
+				148.4485703,-9.1445481,747.55
+				148.4485662,-9.1446579,746.12
+				148.4485322,-9.1447824,745.74
+				148.4485297,-9.1448881,748.10
+				148.4485577,-9.1450273,750.37
+				148.4485735,-9.1451568,749.58
+				148.4485654,-9.1452981,748.95
+				148.4485664,-9.1454278,749.11
+				148.4485605,-9.1455389,752.76
+				148.4485431,-9.1456705,753.96
+				148.4485519,-9.1458080,752.39
+				148.4485506,-9.1459227,749.76
+				148.4485607,-9.1460632,750.54
+				148.4485749,-9.1461792,751.01
+				148.4485698,-9.1463105,749.86
+				148.4486190,-9.1464353,749.88
+				148.4486592,-9.1465353,752.69
+				148.4487258,-9.1466735,754.22
+				148.4487119,-9.1467854,755.38
+				148.4486999,-9.1469174,755.88
+				148.4486880,-9.1470220,755.14
+				148.4486862,-9.1471394,753.67
+				148.4487011,-9.1472610,754.16
+				148.4486837,-9.1473677,756.89
+				148.4486173,-9.1474706,758.34
+				148.4485702,-9.1475549,761.32
+				148.4485386,-9.1476501,764.41
+				148.4484947,-9.1477408,769.58
+				148.4484729,-9.1478305,769.03
+				148.4484375,-9.1479139,770.40
+				148.4484193,-9.1480073,773.21
+				148.4484934,-9.1480716,775.84
+				148.4485366,-9.1481638,776.94
+				148.4485929,-9.1482370,776.03
+				148.4486485,-9.1483166,776.67
+				148.4487155,-9.1484098,780.29
+				148.4487637,-9.1484895,782.85
+				148.4488074,-9.1485934,786.48
+				148.4488463,-9.1486767,786.60
+				148.4488834,-9.1487805,784.31
+				148.4489225,-9.1488787,784.82
+				148.4489445,-9.1489888,783.94
+				148.4489803,-9.1490751,789.08
+				148.4489842,-9.1491683,787.01
+				148.4489295,-9.1492488,788.41
+				148.4489582,-9.1493370,789.19
+				148.4490469,-9.1493699,788.29
+				148.4491335,-9.1494072,789.53
+				148.4492244,-9.1494423,789.23
+				148.4493188,-9.1494746,787.97
+				148.4493964,-9.1495436,789.71
+				148.4494782,-9.1495997,790.17
+				148.4495714,-9.1496429,789.87
+				148.4496621,-9.1497062,788.81
+				148.4497401,-9.1497666,788.93
+			</coordinates>
+		</LineString>
+	</MultiGeometry>
+</Placemark>
+</Document>
+</kml>

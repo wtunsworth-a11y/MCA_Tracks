@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Nibaeba_Track_Record__Coordinates</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="50820249">
+		<IconStyle>
+			<Icon><href>files/50820249.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1245018854">
+		<IconStyle>
+			<Icon><href>files/-1245018854.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-1968931112">
+		<IconStyle>
+			<Icon><href>files/-1968931112.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-116241780">
+		<IconStyle>
+			<Icon><href>files/-116241780.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="655945056">
+		<IconStyle>
+			<Icon><href>files/655945056.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+<Placemark>
+	<name>Nibaeba village 2026-11-17 11:23:28</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063227.jpg" target="_blank"><img src="files/1000063227.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063232.jpg" target="_blank"><img src="files/1000063232.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063231.jpg" target="_blank"><img src="files/1000063231.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Nibaeba is a hamlet of Kuai village. Sako clan resides here.
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">796 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">3.7 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">241 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.3 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 22:36:51</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#655945056</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063227.jpg</lc:attachment>
+		<lc:attachment>files/1000063232.jpg</lc:attachment>
+		<lc:attachment>files/1000063231.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.2511659,-9.1888495,796.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-17T11:24:38Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Nibaeba SDA Church Building 2026-11-17 11:18:59</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063223.jpg" target="_blank"><img src="files/1000063223.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063224.jpg" target="_blank"><img src="files/1000063224.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Church building not in use anymore. SDA church members from Kuai & Itokama who attended this church with church members from Niebaiba stopped using this building in October 2025. A clan member of the Sako Clan in Nibaeba asked the Caretaker of the SDA church in Nibaeba to leave his land after the caretaker's son was caught going around with the Sako clan member's daughter. The land on which the church was set up belongs to the Sako Clan.
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">794 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">3.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">306 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.8 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 22:38:52</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1968931112</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063223.jpg</lc:attachment>
+		<lc:attachment>files/1000063224.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.2509915,-9.1890147,794.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-17T11:19:22Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Giere creek 2026-11-17 11:10:59</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063221.jpg" target="_blank"><img src="files/1000063221.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">774 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">5.8 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">263 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">3.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 22:39:14</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#50820249</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063221.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.2546982,-9.1888028,774.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-17T11:11:19Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Kuae SDA Church 2026-11-17 12:41:20</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063236.jpg" target="_blank"><img src="files/1000063236.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000063237.jpg" target="_blank"><img src="files/1000063237.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">773 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">19.6 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">170 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">4.4 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 22:39:48</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-116241780</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063236.jpg</lc:attachment>
+		<lc:attachment>files/1000063237.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.2608252,-9.1960306,773.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-17T12:41:44Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Jordan creek 2026-11-17 10:32:31</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000063209.jpg" target="_blank"><img src="files/1000063209.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">735 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">1.9 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">264 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.4 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 22:40:09</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-1245018854</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000063209.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.2632616,-9.1961314,735.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-11-17T10:32:53Z</when>
+	</gx:TimeStamp>
+</Placemark>
+</Document>
+</kml>

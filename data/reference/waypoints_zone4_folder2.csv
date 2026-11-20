@@ -1,0 +1,58 @@
+# Zone 4, second folder: the Umuate - Jaure - Suari walk, 14-15 November 2026.
+#
+# Extracted from 'Zone_4_Folder_2_Coordinates_of_school,_church,_places,
+# _creeks__rivers..kmz', uploaded by russellmuraba71@gmail.com on 20 Nov 2026.
+# 339,865,427 bytes, 122 members, 121 of them photographs. Only doc.kml was
+# fetched by ranged request - about 5.7 KB moved instead of 324 MB.
+#
+# NOTE A FAILED UPLOAD: the same file was first uploaded on 19 Nov at 21:48 as
+# 'Zone_4_Folder_2_-_Coordinates_...' (with a dash) and arrived at ZERO BYTES.
+# It is still in the folder. The 20 Nov re-upload is the real one.
+#
+# 42 waypoints, and most of them are WATER AND LANDFORM rather than
+# settlement: creeks, rivers, distributaries, a hot spring, a range top. They
+# must not become villages - scripts/place_kinds.py is what stops that.
+#
+name,recorded,lon,lat,ele_m,accuracy_m,note,photos,photo_files
+Aesaboro creek,2026-11-15T11:04:16,148.1646498,-9.3169253,735.0,4.2,,2,files/1000062873.jpg files/1000062874.jpg
+Arini Range Top,2026-11-14T13:20:22,148.2052531,-9.2696103,1084.0,1.2,,3,files/1000062699.jpg files/1000062698.jpg files/1000062697.jpg
+Ati creek,2026-11-15T07:54:40,148.1514025,-9.2784200,713.0,2.9,,1,files/1000062824.jpg
+Avua creek,2026-11-14T11:46:28,148.2252236,-9.2697137,799.0,3.2,,2,files/1000062690.jpg files/1000062691.jpg
+Awaru hot spring,2026-11-15T10:22:41,148.1614023,-9.3030916,708.0,3.4,,1,files/1000062852.jpg
+Awaru river,2026-11-15T10:31:54,148.1628798,-9.3047473,691.0,2.4,,2,files/1000062863.jpg files/1000062861.jpg
+Church Deacon's house,2026-11-15T06:04:55,148.1448400,-9.2756599,844.0,4.6,A church Deacon with his family who lived here & ministered in the Anglican Church at Jaure passed on. The wife and her family continue to reside here after his death.,1,files/1000062801.jpg
+Creek (name unknown),2026-11-14T12:39:57,148.2180779,-9.2738014,750.0,3.5,,1,files/1000062696.jpg
+Distributary of Musa river,2026-11-14T16:05:32,148.1552583,-9.2725250,716.0,3.1,,2,files/1000062765.jpg files/1000062766.jpg
+Distributary of Urini river,2026-11-14T15:49:47,148.1585517,-9.2703950,718.0,2.8,,2,files/1000062753.jpg files/1000062754.jpg
+Ihu creek,2026-11-15T11:22:19,148.1648632,-9.3231881,805.0,3.0,,1,files/1000062883.jpg
+Ihu creek,2026-11-15T11:33:42,148.1653694,-9.3254399,800.0,4.0,,2,files/1000062896.jpg files/1000062895.jpg
+Inabina creek,2026-11-15T13:37:08,148.1672407,-9.3526625,807.0,4.1,,2,files/1000062930.jpg files/1000062931.jpg
+Inu creek,2026-11-15T12:56:34,148.1626563,-9.3404321,1001.0,4.0,,2,files/1000062920.jpg files/1000062919.jpg
+Ivai river,2026-11-14T12:07:32,148.2184267,-9.2733783,736.0,2.3,,2,files/1000062693.jpg files/1000062694.jpg
+Jaure Old Aidpost Site,2026-11-15T08:02:35,148.1536433,-9.2788600,704.0,3.0,"Also this site was Jaure's first old village. It was called ""Wibi."" When the population of the people were dying related to sorcery and magic practices, the people migrated to their next location ""Anei."" and later settled again at Jaure's current village. The name ""Jaure"" refers to pine trees in Jaure language.",2,files/1000062832.jpg files/1000062831.jpg
+Jaure old airstrip,2026-11-15T07:42:58,148.1487549,-9.2767486,803.0,3.6,"Jaure airstrip has been closed for quite a long time after 1993. According to one source who grew up at Jaure, there was a flight that came and circled above the airstrip after it was cleared but never landed. Even after that there were no other flights that landed. That same year, the same aircraft circled above Aiyari airstrip but never landed too.",3,files/1000062822.jpg files/1000062820.jpg files/1000062816.jpg
+Jaure Saint Michael's Anglican Church,2026-11-15T06:07:16,148.1450212,-9.2757178,843.0,4.3,Building in use.,2,files/1000062803.jpg files/1000062804.jpg
+Jaure village,2026-11-15T06:11:34,148.1455628,-9.2759996,,,,3,files/1000062808.jpg files/1000062805.jpg files/1000062806.jpg
+Jia creek,2026-11-15T13:13:11,148.1643143,-9.3442277,892.0,3.3,,2,files/1000062924.jpg files/1000062925.jpg
+Jia creek,2026-11-15T13:31:03,148.1663041,-9.3499896,805.0,3.8,,2,files/1000062927.jpg files/1000062929.jpg
+Jordan river,2026-11-15T07:57:29,148.1523709,-9.2786122,716.0,3.0,,2,files/1000062829.jpg files/1000062830.jpg
+Kubane creek,2026-11-15T13:43:29,148.1679533,-9.3553647,772.0,4.1,,2,files/1000062932.jpg files/1000062933.jpg
+Ma creek,2026-11-15T10:28:06,148.1621644,-9.3041291,701.0,2.8,,2,files/1000062856.jpg files/1000062857.jpg
+Marase CRC Church,2026-11-20T10:49:25,148.4498183,-9.1505426,791.0,8,Building in use,3,files/1000063774.jpg files/1000063776.jpg files/1000063775.jpg
+Marase Elementary School,2026-11-20T11:18:45,148.4482706,-9.1415734,726.0,5,Marase Elementary School is established at Aguido Primary School & not Marase.,2,files/1000063783.jpg files/1000063787.jpg
+Marase SDA Church,2026-11-20T11:04:04,148.4486167,-9.1486795,779.0,5,Building in use,2,files/1000063781.jpg files/1000063782.jpg
+Marase village,2026-11-20T11:00:16,148.4497718,-9.1498661,777.0,2.5,,2,files/1000063780.jpg files/1000063773.jpg
+Misanire creek,2026-11-14T16:37:15,148.1543867,-9.2747483,690.0,3.0,,1,files/1000062780.jpg
+Musa river,2026-11-14T16:11:13,148.1544617,-9.2734083,711.0,1.1,,3,files/1000062773.jpg files/1000062772.jpg files/1000062770.jpg
+Rebo creek,2026-11-15T11:18:34,148.1649683,-9.3223458,779.0,4.3,,2,files/1000062875.jpg files/1000062877.jpg
+Sakae creek,2026-11-14T13:29:03,148.2024656,-9.2696456,,,,1,files/1000062702.jpg
+Sihira creek,2026-11-15T08:29:20,148.1571229,-9.2837674,696.0,3.0,,1,files/1000062834.jpg
+Sihira creek,2026-11-15T08:54:55,148.1610433,-9.2910790,679.0,2.8,,1,files/1000062837.jpg
+Soene dry creek,2026-11-14T11:55:58,148.2221843,-9.2726472,819.0,2.5,,1,files/1000062692.jpg
+Suari Elementary School,2026-11-15T06:14:37,148.1452224,-9.2762481,830.0,2.5,Suari Elementary School is located in Jaure and not in Suari. It was established before the Primary that was moved from Aiyari to Jaure in 2024.,2,files/1000062809.jpg files/1000062810.jpg
+Suari Elementary School Teacher's house,2026-11-15T06:00:42,148.1446883,-9.2762304,836.0,5,Building in use,2,files/1000062797.jpg files/1000062796.jpg
+Suari Primary School Building,2026-11-15T06:15:40,148.1453611,-9.2761156,832.0,2.2,"Suari Primary School is located in Jaure and not in Suari. It was moved from Aiyari to Jaure in 2024. In 2025 the two school buildings in bush materials were erected and this year students attended classes. The 2 in one building is partly in use. One half of the classroom is incomplete from the inside and not in use, while the other half of the building is completed and used by grade 5 students.",1,files/1000062811.jpg
+Suari Primary School Building,2026-11-15T06:18:46,148.1452688,-9.2760221,829.0,3.6,Suari Primary School is located in Jaure and not in Suari. It was moved from Aiyari to Jaure in 2024. In 2025 the two school buildings in bush materials were erected and this year students attended classes.,2,files/1000062813.jpg files/1000062814.jpg
+Suari Primary School Teacher's house,2026-11-15T06:03:30,148.1447802,-9.2756430,834.0,4.3,A husband and a wife teacher lives here and teaches students.,3,files/1000062798.jpg files/1000062799.jpg files/1000062800.jpg
+Track leading to Jaure,2026-11-14T11:28:44,148.2339983,-9.2672503,819.0,3.2,,2,files/1000062689.jpg files/1000062688.jpg
+Track leading to Suari,2026-11-15T07:49:52,148.1508829,-9.2768734,779.0,4.3,,1,files/1000062823.jpg

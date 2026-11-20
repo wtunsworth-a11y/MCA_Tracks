@@ -153,6 +153,14 @@
       <SimpleField name="pct_approx" type="double"/>
       <SimpleField name="population" type="string"/>
     </Schema>
+    <Schema id="zones_voronoi.schema">
+      <SimpleField name="zone" type="string"/>
+      <SimpleField name="village" type="string"/>
+      <SimpleField name="quality" type="string"/>
+      <SimpleField name="area_km2" type="double"/>
+      <SimpleField name="pct_approx" type="double"/>
+      <SimpleField name="population" type="string"/>
+    </Schema>
     <Document id="zones_voronoi">
       <name>zones_voronoi</name>
       <Placemark id="zones_voronoi.1">
@@ -161,8 +169,8 @@
             <SimpleData name="zone">1</SimpleData>
             <SimpleData name="village">Aniaefe</SimpleData>
             <SimpleData name="quality">indicative</SimpleData>
-            <SimpleData name="area_km2">245.8</SimpleData>
-            <SimpleData name="pct_approx">10</SimpleData>
+            <SimpleData name="area_km2">240.4</SimpleData>
+            <SimpleData name="pct_approx">11</SimpleData>
             <SimpleData name="population">1761</SimpleData>
           </SchemaData>
         </ExtendedData>
@@ -181,9 +189,8 @@
                 148.183278415996,-9.20899082557621,0
                 148.177725203322,-9.20039472237905,0
                 148.173703271465,-9.19025600238459,0
-                148.16271694889,-9.16610365279114,0
-                148.167628458508,-9.16350854980985,0
-                148.206633872877,-9.16547113218114,0
+                148.165712299251,-9.17268905046073,0
+                148.23092478087,-9.17319549053758,0
                 148.273271388327,-9.18665655621618,0
                 148.266503715152,-9.16785770940514,0
                 148.287553081543,-9.17883888830972,0
@@ -201,7 +208,7 @@
             <SimpleData name="zone">10</SimpleData>
             <SimpleData name="village">Araibo</SimpleData>
             <SimpleData name="quality">indicative</SimpleData>
-            <SimpleData name="area_km2">399.9</SimpleData>
+            <SimpleData name="area_km2">398.7</SimpleData>
             <SimpleData name="pct_approx">96</SimpleData>
             <SimpleData name="population">1291</SimpleData>
           </SchemaData>
@@ -213,8 +220,8 @@
                 148.242197616074,-9.07773804727492,0
                 148.240098601861,-9.08505301378523,0
                 148.223271924912,-9.11031740057834,0
-                148.167628458508,-9.16350854980985,0
-                148.16271694889,-9.16610365279114,0
+                148.200104162476,-9.13246683919554,0
+                148.159847578754,-9.16499984830577,0
                 148.145167178236,-9.15935203080875,0
                 148.152740965,-9.15144696799997,0
                 148.159997037,-9.14266604099993,0
@@ -335,9 +342,9 @@
         <ExtendedData>
           <SchemaData schemaUrl="#zones_voronoi.schema">
             <SimpleData name="zone">2</SimpleData>
-            <SimpleData name="village">Anatua 2</SimpleData>
+            <SimpleData name="village">Anatua 1</SimpleData>
             <SimpleData name="quality">known</SimpleData>
-            <SimpleData name="area_km2">136.8</SimpleData>
+            <SimpleData name="area_km2">143.6</SimpleData>
             <SimpleData name="pct_approx">17</SimpleData>
             <SimpleData name="population">2564</SimpleData>
           </SchemaData>
@@ -346,7 +353,9 @@
           <outerBoundaryIs>
             <LinearRing>
               <coordinates>
-                148.167628458508,-9.16350854980985,0
+                148.165712299251,-9.17268905046073,0
+                148.159847578754,-9.16499984830577,0
+                148.200104162476,-9.13246683919554,0
                 148.223271924912,-9.11031740057834,0
                 148.240098601861,-9.08505301378523,0
                 148.272754007291,-9.10407901712457,0
@@ -365,8 +374,8 @@
                 148.287553081543,-9.17883888830972,0
                 148.266503715152,-9.16785770940514,0
                 148.273271388327,-9.18665655621618,0
-                148.206633872877,-9.16547113218114,0
-                148.167628458508,-9.16350854980985,0
+                148.23092478087,-9.17319549053758,0
+                148.165712299251,-9.17268905046073,0
               </coordinates>
             </LinearRing>
           </outerBoundaryIs>
@@ -412,7 +421,7 @@
             <SimpleData name="zone">4</SimpleData>
             <SimpleData name="village">Anei</SimpleData>
             <SimpleData name="quality">indicative</SimpleData>
-            <SimpleData name="area_km2">452.4</SimpleData>
+            <SimpleData name="area_km2">452.3</SimpleData>
             <SimpleData name="pct_approx">22</SimpleData>
             <SimpleData name="population">490</SimpleData>
           </SchemaData>
@@ -554,7 +563,8 @@
                 148.136030987,-9.16966503899993,0
                 148.14306699,-9.16154399799996,0
                 148.145167178236,-9.15935203080875,0
-                148.16271694889,-9.16610365279114,0
+                148.159847578754,-9.16499984830577,0
+                148.165712299251,-9.17268905046073,0
                 148.173703271465,-9.19025600238459,0
                 148.177725203322,-9.20039472237905,0
                 148.183278415996,-9.20899082557621,0

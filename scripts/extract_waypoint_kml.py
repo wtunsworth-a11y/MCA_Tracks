@@ -60,7 +60,17 @@ def main(src, dest):
     root = ET.parse(src).getroot()
     rows = []
     for pm in root.findall(".//k:Placemark", NS):
-        coords = pm.find(".//k:coordinates", NS)
+        # A WAYPOINT is a Point. Russell now sends files holding a track and
+        # its waypoints together - "Aguido Primary School to Marase Track
+        # Record & Coordinates of Churches..." - and reading .//coordinates
+        # blindly picked up the LineString's whole coordinate list, whose
+        # first comma-separated field is "734.70\n\t\t\t\t148.4499237"
+        # rather than a longitude. Take the Point and leave the line to
+        # merge_tracks.py.
+        point = pm.find(".//k:Point", NS)
+        if point is None:
+            continue
+        coords = point.find(".//k:coordinates", NS)
         if coords is None or not (coords.text or "").strip():
             continue
         parts = coords.text.strip().split(",")

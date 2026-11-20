@@ -1,0 +1,23 @@
+# Nibaeba and Kuae, recorded 17 November 2026.
+#
+# Extracted from 'Nibaeba Track Record & Coordinates.zip', uploaded by
+# russellmuraba71@gmail.com on 20 Nov 2026. The zip holds TWO KMZ files rather
+# than a KML, so the ranged route found nothing and the 35,598,230 bytes were
+# fetched whole into the scratchpad - never into this repository - and the 14
+# photographs discarded with it.
+#
+# The second member, 'Itokama_Station_to_Nibaeba_Track_Record_2026-11-17_10-28
+# .kmz', is the SAME WALK as the separately uploaded
+# 'Itokama_Station_to_Niebaiba_Track_Record_2026-11-17_10-28.gpx': 165 points
+# each, both endpoints 0 m apart. Only the GPX is kept. Note the two spellings
+# of the village in one drop, Nibaeba and Niebaiba.
+#
+# 5 waypoints. No government facility among them - a village, two SDA church
+# buildings and two creeks.
+#
+name,recorded,lon,lat,ele_m,accuracy_m,note,photos,photo_files
+Giere creek,2026-11-17T11:10:59,148.2546982,-9.1888028,774.0,3.1,,1,files/1000063221.jpg
+Jordan creek,2026-11-17T10:32:31,148.2632616,-9.1961314,735.0,2.4,,1,files/1000063209.jpg
+Kuae SDA Church,2026-11-17T12:41:20,148.2608252,-9.1960306,773.0,4.4,,2,files/1000063236.jpg files/1000063237.jpg
+Nibaeba SDA Church Building,2026-11-17T11:18:59,148.2509915,-9.1890147,794.0,2.8,Church building not in use anymore. SDA church members from Kuai & Itokama who attended this church with church members from Niebaiba stopped using this building in October 2025. A clan member of the Sako Clan in Nibaeba asked the Caretaker of the SDA church in Nibaeba to leave his land after the caretaker's son was caught going around with the Sako clan member's daughter. The land on which the church was set up belongs to the Sako Clan.,2,files/1000063223.jpg files/1000063224.jpg
+Nibaeba village,2026-11-17T11:23:28,148.2511659,-9.1888495,796.0,2.3,Nibaeba is a hamlet of Kuai village. Sako clan resides here.,3,files/1000063227.jpg files/1000063232.jpg files/1000063231.jpg

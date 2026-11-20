@@ -1,0 +1,21 @@
+# Marase, recorded 20 November 2026 on the walk from Aguido Primary School.
+#
+# Extracted from 'Aguido_Primary_School_to_Marase_Track_Record__Coordinates_of
+# _Churches,_Elementary_School__village.kmz', uploaded by
+# russellmuraba71@gmail.com on 20 Nov 2026. 39,643,239 bytes, 15 members, 14
+# of them photographs; only doc.kml was fetched, about 2.8 KB moved.
+#
+# This file holds a TRACK AND ITS WAYPOINTS TOGETHER, which is new. The track
+# goes to merge_tracks.py from data/raw; only the 4 Point placemarks are here.
+# Reading every <coordinates> in the file instead picked up the LineString and
+# crashed - the waypoint extractor now takes Points only.
+#
+# Marase Elementary School is the government facility. The two churches are
+# not a government service. Marase was already a known village name: the
+# spelling audit has had Marase/Marasi open as a candidate pair.
+#
+name,recorded,lon,lat,ele_m,accuracy_m,note,photos,photo_files
+Marase CRC Church,2026-11-20T10:49:25,148.4498183,-9.1505426,791.0,8,Building in use,3,files/1000063774.jpg files/1000063776.jpg files/1000063775.jpg
+Marase Elementary School,2026-11-20T11:18:45,148.4482706,-9.1415734,726.0,5,Marase Elementary School is established at Aguido Primary School & not Marase.,2,files/1000063783.jpg files/1000063787.jpg
+Marase SDA Church,2026-11-20T11:04:04,148.4486167,-9.1486795,779.0,5,Building in use,2,files/1000063781.jpg files/1000063782.jpg
+Marase village,2026-11-20T11:00:16,148.4497718,-9.1498661,777.0,2.5,,2,files/1000063780.jpg files/1000063773.jpg

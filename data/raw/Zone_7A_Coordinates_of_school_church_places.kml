@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Zone_7A_Coordinates_of_school,_church__places</name>
+	<atom:author><atom:name>Locus (Android)</atom:name></atom:author>
+	<Style id="162706938">
+		<IconStyle>
+			<Icon><href>files/162706938.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-138388026">
+		<IconStyle>
+			<Icon><href>files/-138388026.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="2065512128">
+		<IconStyle>
+			<Icon><href>files/2065512128.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-277861440">
+		<IconStyle>
+			<Icon><href>files/-277861440.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+	<Style id="-121225942">
+		<IconStyle>
+			<Icon><href>files/-121225942.png</href></Icon>
+			<hotSpot x="0.5" y="0.0" xunits="fraction" yunits="fraction" />
+		</IconStyle>
+	</Style>
+<Placemark>
+	<name>Bioi village 2026-10-28 16:45:24</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000058983.jpg" target="_blank"><img src="files/1000058983.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000058982.jpg" target="_blank"><img src="files/1000058982.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">603 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">4.2 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">255 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.0 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 06:53:36</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-138388026</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000058983.jpg</lc:attachment>
+		<lc:attachment>files/1000058982.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4442423,-9.1057782,603.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-10-28T16:45:47Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Buaikik Waterfall 2026-10-28 17:14:36</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000058985.jpg" target="_blank"><img src="files/1000058985.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000058992.jpg" target="_blank"><img src="files/1000058992.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000058986.jpg" target="_blank"><img src="files/1000058986.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /></td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">542 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">97 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">1.8 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 06:53:36</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#162706938</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000058985.jpg</lc:attachment>
+		<lc:attachment>files/1000058992.jpg</lc:attachment>
+		<lc:attachment>files/1000058986.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4363367,-9.1004633,542.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-10-28T17:15:08Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Dareki CRC Church 2026-10-28 17:30:38</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000059000.jpg" target="_blank"><img src="files/1000059000.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000059002.jpg" target="_blank"><img src="files/1000059002.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Building in use
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">550 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">3.4 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">140 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.3 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 06:53:36</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#2065512128</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000059000.jpg</lc:attachment>
+		<lc:attachment>files/1000059002.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4335366,-9.0989426,550.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-10-28T17:30:45Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Dareki Elementary School 2026-10-28 17:27:07</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000058998.jpg" target="_blank"><img src="files/1000058998.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000058997.jpg" target="_blank"><img src="files/1000058997.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Classes ceased around April this year.
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">548 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.1 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">6 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.3 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 06:53:36</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-277861440</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000058998.jpg</lc:attachment>
+		<lc:attachment>files/1000058997.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4339481,-9.0991224,548.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-10-28T17:27:22Z</when>
+	</gx:TimeStamp>
+</Placemark>
+<Placemark>
+	<name>Old Site of Dareki Aidpost 2026-10-28 17:45:34</name>
+	<description><![CDATA[<!-- desc_gen:start -->
+<font color="black"><table width="100%"><tr><td width="100%" align="center"><a href="files/1000059005.jpg" target="_blank"><img src="files/1000059005.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000059007.jpg" target="_blank"><img src="files/1000059007.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br /><a href="files/1000059006.jpg" target="_blank"><img src="files/1000059006.jpg" width="60px" align="right" style="border: 3px white solid;"></a><br /><br />
+<!-- desc_user:start -->
+Closed
+<!-- desc_user:end -->
+</td></tr><tr><td colspan="1"><hr></td></tr><tr><td><table width="100%"><tr><td align="left" valign="center"><small><b>Altitude</b></small></td><td align="center" valign="center">552 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Speed</b></small></td><td align="center" valign="center">0.0 km/h</td></tr>
+<tr><td align="left" valign="center"><small><b>Azimuth</b></small></td><td align="center" valign="center">184 °</td></tr>
+<tr><td align="left" valign="center"><small><b>Accuracy</b></small></td><td align="center" valign="center">2.1 m</td></tr>
+<tr><td align="left" valign="center"><small><b>Created</b></small></td><td align="center" valign="center">2026-11-20 06:53:36</td></tr>
+</table></td></tr><tr><td><table width="100%"></table></td></tr></table></font>
+<!-- desc_gen:end -->]]></description>
+	<styleUrl>#-121225942</styleUrl>
+	<ExtendedData xmlns:lc="https://www.locusmap.app">
+		<lc:attachment>files/1000059005.jpg</lc:attachment>
+		<lc:attachment>files/1000059007.jpg</lc:attachment>
+		<lc:attachment>files/1000059006.jpg</lc:attachment>
+	</ExtendedData>
+>	<Point>
+		<coordinates>148.4310883,-9.1005383,552.00</coordinates>
+	</Point>
+	<gx:TimeStamp>
+		<when>2026-10-28T17:45:53Z</when>
+	</gx:TimeStamp>
+</Placemark>
+</Document>
+</kml>
